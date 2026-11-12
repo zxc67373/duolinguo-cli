@@ -6,7 +6,7 @@ from rich.console import Console
 from rich.panel import Panel
 from rich.table import Table
 
-from . import config
+from . import books, config, db, gamify
 from .quiz import MCQ_EN2ZH, MCQ_ZH2EN, Question
 
 console = Console()
@@ -152,6 +152,73 @@ def print_recent_table(rows: list[dict]) -> None:
             "✓" if r["goal_met"] else "",
         )
     console.print(table)
+
+
+# ---------------------------------------------------------------- 交互菜单
+
+
+def show_stats(conn) -> None:
+    """渲染完整统计视图（学习概况 + 近 7 天 + 当前词书关卡进度）。"""
+    books.ensure_builtins(conn)
+    today = db.today_str()
+    goal = gamify.get_goal(conn)
+    daily = db.get_daily(conn, today)
+    print_stats_overview(
+        streak=gamify.calc_streak(conn, today),
+        xp_total=db.total_xp(conn),
+        done=gamify.words_done_today(conn, today),
+        goal=goal,
+        answered=daily["answered"] if daily else 0,
+        correct=daily["correct"] if daily else 0,
+    )
+    recent = conn.execute("SELECT * FROM daily_stats ORDER BY date DESC LIMIT 7").fetchall()
+    print_recent_table([dict(r) for r in reversed(recent)])
+    book = books.resolve_current_book(conn)
+    if book:
+        console.print()
+        print_unit_table(book["name"], books.unit_progress(conn, book["id"]))
+
+
+def print_main_menu(
+    book_name: str | None,
+    unit: int,
+    streak: int,
+    xp_total: int,
+    done: int,
+    goal: int,
+    items: list[tuple[str, str]],
+) -> None:
+    """交互主菜单：状态行 + 编号选项。"""
+    if book_name:
+        status = (
+            f"[bold]{book_name}[/] · 关卡 {unit} · 连胜 [bold yellow]{streak}[/] 天"
+            f" · 总 XP {xp_total} · 今日 [cyan]{_bar(done, goal)}[/] {done}/{goal}"
+        )
+    else:
+        status = "[yellow]还没有词书，先按 5 导入词表[/]"
+    lines = [status, ""]
+    lines += [f"  [cyan]{key}[/]. {label}" for key, label in items]
+    console.print(Panel("\n".join(lines), title="duolinguo", border_style="blue"))
+
+
+def print_numbered_books(rows: list[dict], current_slug: str | None) -> None:
+    """切换词书用：带编号的词书列表。"""
+    for i, r in enumerate(rows, start=1):
+        mark = " [green]● 当前[/]" if r["slug"] == current_slug else ""
+        console.print(
+            f"  [cyan]{i}[/]. {r['name']}[dim]（{r['slug']} · {r['word_count']} 词）[/]{mark}"
+        )
+
+
+def print_import_result(book, added: int, errors: list[str]) -> None:
+    """导入结果（成功词数 + 跳过的坏行）。"""
+    console.print(f"[green]导入成功[/]：{book['name']}（{book['slug']}），新增 {added} 词")
+    if errors:
+        console.print(f"[yellow]跳过 {len(errors)} 行[/]：")
+        for err in errors[:10]:
+            console.print(f"  - {err}")
+        if len(errors) > 10:
+            console.print(f"  …… 其余 {len(errors) - 10} 行略")
 
 
 def print_summary(r) -> None:

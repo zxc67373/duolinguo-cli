@@ -101,3 +101,24 @@ def test_settings_roundtrip(conn):
     db.set_setting(conn, "daily_goal", "40")
     conn.commit()
     assert db.get_setting(conn, "daily_goal") == "40"
+
+
+def test_apply_setting_valid(conn, sample_book):
+    db.apply_setting(conn, "daily_goal", "30")
+    assert db.get_setting(conn, "daily_goal") == "30"
+    db.apply_setting(conn, "current_book", "test_book")
+    assert db.get_setting(conn, "current_book") == "test_book"
+
+
+def test_apply_setting_validation(conn):
+    with pytest.raises(ValueError, match="正整数"):
+        db.apply_setting(conn, "daily_goal", "0")
+    with pytest.raises(ValueError, match="正整数"):
+        db.apply_setting(conn, "daily_goal", "abc")
+    with pytest.raises(ValueError, match="词书不存在"):
+        db.apply_setting(conn, "current_book", "nope")
+    with pytest.raises(ValueError, match="未知配置项"):
+        db.apply_setting(conn, "hacker", "1")
+    # 全部被拒绝，无一落库
+    assert db.get_setting(conn, "daily_goal") is None
+    assert db.get_setting(conn, "current_book") is None

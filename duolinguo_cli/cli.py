@@ -6,16 +6,14 @@ from pathlib import Path
 
 import click
 
-from . import __version__, books, config, db, gamify, session
+from . import __version__, books, config, db, gamify, menu, session
 from .display import (
     console,
     print_books_table,
-    print_recent_table,
-    print_stats_overview,
+    print_import_result,
     print_unit_table,
+    show_stats,
 )
-
-CONFIG_KEYS = ("daily_goal", "current_book")
 
 
 def _resolve_book(conn, book_slug: str | None):
@@ -50,9 +48,12 @@ def _run(conn, book, *, mode: str, count: int | None, goal: int | None) -> None:
 @click.version_option(version=__version__, prog_name="duolinguo")
 @click.pass_context
 def cli(ctx: click.Context) -> None:
-    """duolinguo — 多邻国风格的命令行背单词工具。"""
+    """duolinguo — 多邻国风格的命令行背单词工具。
+
+    不带子命令直接运行时，进入交互式菜单。
+    """
     if ctx.invoked_subcommand is None:
-        ctx.invoke(learn)
+        menu.run_menu()
 
 
 # ---------------------------------------------------------------- 学习
@@ -93,26 +94,7 @@ def stats() -> None:
     """学习统计：连胜、XP、每日进度、关卡进度。"""
     conn = db.get_conn()
     try:
-        books.ensure_builtins(conn)
-        today = db.today_str()
-        goal = gamify.get_goal(conn)
-        daily = db.get_daily(conn, today)
-        print_stats_overview(
-            streak=gamify.calc_streak(conn, today),
-            xp_total=db.total_xp(conn),
-            done=gamify.words_done_today(conn, today),
-            goal=goal,
-            answered=daily["answered"] if daily else 0,
-            correct=daily["correct"] if daily else 0,
-        )
-        recent = conn.execute(
-            "SELECT * FROM daily_stats ORDER BY date DESC LIMIT 7"
-        ).fetchall()
-        print_recent_table([dict(r) for r in reversed(recent)])
-        book = books.resolve_current_book(conn)
-        if book:
-            console.print()
-            print_unit_table(book["name"], books.unit_progress(conn, book["id"]))
+        show_stats(conn)
     finally:
         conn.close()
 
@@ -138,8 +120,10 @@ def config_cmd(key: str | None, value: str | None) -> None:
                 console.print(f"[cyan]{k}[/] = {v}")
             return
 
-        if key not in CONFIG_KEYS:
-            raise click.ClickException(f"未知配置项：{key}（可选：{', '.join(CONFIG_KEYS)}）")
+        if key not in db.CONFIG_KEYS:
+            raise click.ClickException(
+                f"未知配置项：{key}（可选：{', '.join(db.CONFIG_KEYS)}）"
+            )
 
         if value is None:
             current = db.get_setting(conn, key)
@@ -148,15 +132,11 @@ def config_cmd(key: str | None, value: str | None) -> None:
             console.print(f"[cyan]{key}[/] = {current or '（未设置）'}")
             return
 
-        if key == "daily_goal":
-            if not value.isdigit() or int(value) < 1:
-                raise click.ClickException("daily_goal 必须是正整数")
-        else:  # current_book
-            books.ensure_builtins(conn)
-            if not db.get_book(conn, value):
-                raise click.ClickException(f"词书不存在：{value}")
-        db.set_setting(conn, key, value)
-        conn.commit()
+        books.ensure_builtins(conn)  # current_book 校验前确保内置词书已入库
+        try:
+            db.apply_setting(conn, key, value)
+        except ValueError as e:
+            raise click.ClickException(str(e)) from e
         console.print(f"[green]已设置[/] {key} = {value}")
     finally:
         conn.close()
@@ -227,10 +207,4 @@ def books_import(path: str, name: str | None) -> None:
         raise click.ClickException(str(e)) from e
     finally:
         conn.close()
-    console.print(f"[green]导入成功[/]：{book['name']}（{book['slug']}），新增 {added} 词")
-    if errors:
-        console.print(f"[yellow]跳过 {len(errors)} 行[/]：")
-        for err in errors[:10]:
-            console.print(f"  - {err}")
-        if len(errors) > 10:
-            console.print(f"  …… 其余 {len(errors) - 10} 行略")
+    print_import_result(book, added, errors)

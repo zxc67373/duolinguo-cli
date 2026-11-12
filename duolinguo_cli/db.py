@@ -290,3 +290,24 @@ def set_setting(conn: sqlite3.Connection, key: str, value: str) -> None:
         "ON CONFLICT(key) DO UPDATE SET value = excluded.value",
         (key, value),
     )
+
+
+# 可修改的配置项
+CONFIG_KEYS = ("daily_goal", "current_book")
+
+
+def apply_setting(conn: sqlite3.Connection, key: str, value: str) -> None:
+    """校验并保存设置（含提交）；非法值抛 ValueError（中文说明）。
+
+    注意：current_book 校验只查库，调用方如需内置词书请先 ensure_builtins。
+    """
+    if key not in CONFIG_KEYS:
+        raise ValueError(f"未知配置项：{key}（可选：{', '.join(CONFIG_KEYS)}）")
+    if key == "daily_goal":
+        if not value.isdigit() or int(value) < 1:
+            raise ValueError("daily_goal 必须是正整数")
+    else:  # current_book
+        if not get_book(conn, value):
+            raise ValueError(f"词书不存在：{value}")
+    set_setting(conn, key, value)
+    conn.commit()
