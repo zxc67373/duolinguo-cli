@@ -3,10 +3,12 @@
 from __future__ import annotations
 
 import csv
+import hashlib
 import io
 import json
 import re
 import sqlite3
+from functools import lru_cache
 from pathlib import Path
 
 from . import config, db
@@ -14,36 +16,91 @@ from . import config, db
 VALID_SOURCES = ("builtin", "imported")
 
 
+@lru_cache(maxsize=8)
+def _load_json_file(path_str: str) -> dict:
+    """解析单个词书 JSON（进程内缓存；调用方只读，勿修改返回值）。"""
+    data = json.loads(Path(path_str).read_text(encoding="utf-8"))
+    for key in ("slug", "name", "words"):
+        if key not in data:
+            raise ValueError(f"{Path(path_str).name}: 缺少字段 {key}")
+    return data
+
+
 def load_builtin_jsons() -> list[dict]:
     """读取 words_data/ 下所有内置词书 JSON（结构自检后返回）。"""
-    books = []
     if not config.WORDS_DATA_DIR.is_dir():
-        return books
+        return []
+    books = []
     for path in sorted(config.WORDS_DATA_DIR.glob("*.json")):
-        data = json.loads(path.read_text(encoding="utf-8"))
-        for key in ("slug", "name", "words"):
-            if key not in data:
-                raise ValueError(f"{path.name}: 缺少字段 {key}")
+        data = dict(_load_json_file(str(path)))  # 浅拷贝：可安全附加 _path
         data["_path"] = path.name
         books.append(data)
     return books
 
 
+def _order_marker(words: list[dict]) -> str:
+    """词序指纹：词序变化时触发单元重排迁移。"""
+    h = hashlib.md5()
+    for w in words:
+        h.update(w["word"].lower().encode("utf-8"))
+        h.update(b"\x00")
+    return h.hexdigest()
+
+
 def ensure_builtins(conn: sqlite3.Connection) -> int:
-    """把尚未入库的内置词书导入数据库（按 slug 幂等），返回新导入的词书数。"""
+    """确保内置词书入库（按 slug 幂等），返回新导入的词书数。
+
+    若 JSON 词序变化（如改为按词频排序），自动重排已有词的 unit 分组——
+    word 主键与 word_progress 不动，学习进度完整保留。
+    """
     created = 0
     for data in load_builtin_jsons():
-        if db.get_book(conn, data["slug"]):
+        unit_size = data.get("unit_size", config.UNIT_SIZE)
+        marker = _order_marker(data["words"])
+        marker_key = f"book_order:{data['slug']}"
+        book = db.get_book(conn, data["slug"])
+        if book is None:
+            book_id = db.insert_book(
+                conn,
+                name=data["name"],
+                slug=data["slug"],
+                source="builtin",
+                description=data.get("description", ""),
+            )
+            db.insert_words(conn, book_id, data["words"], unit_size)
+            db.set_setting(conn, marker_key, marker)
+            created += 1
             continue
-        book_id = db.insert_book(
-            conn,
-            name=data["name"],
-            slug=data["slug"],
-            source="builtin",
-            description=data.get("description", ""),
-        )
-        db.insert_words(conn, book_id, data["words"], data.get("unit_size", config.UNIT_SIZE))
-        created += 1
+
+        if db.get_setting(conn, marker_key) == marker:
+            continue  # 词序未变，跳过
+
+        # 词序变化 → 按新顺序重排单元（进度按 word 保留）
+        existing = {
+            r["word"]: (r["id"], r["unit"])
+            for r in conn.execute(
+                "SELECT word, id, unit FROM words WHERE book_id = ?", (book["id"],)
+            )
+        }
+        for i, entry in enumerate(data["words"]):
+            unit = i // unit_size + 1
+            row = existing.get(entry["word"])
+            if row is None:
+                conn.execute(
+                    "INSERT INTO words (book_id, word, phonetic, meaning, example, unit) "
+                    "VALUES (?, ?, ?, ?, ?, ?)",
+                    (
+                        book["id"],
+                        entry["word"],
+                        entry.get("phonetic", ""),
+                        entry["meaning"],
+                        entry.get("example", ""),
+                        unit,
+                    ),
+                )
+            elif row[1] != unit:
+                conn.execute("UPDATE words SET unit = ? WHERE id = ?", (unit, row[0]))
+        db.set_setting(conn, marker_key, marker)
     conn.commit()
     return created
 

@@ -191,3 +191,55 @@ def test_unit_progress(conn, sample_book):
     progress = books.unit_progress(conn, sample_book["id"])
     assert progress[0]["learned"] == 1
     assert progress[1]["learned"] == 0
+
+
+# ---------------------------------------------------------------- 词序迁移
+
+
+def test_ensure_builtins_unit_migration(tmp_path, monkeypatch, conn):
+    """JSON 词序变化 → 自动重排单元，学习进度（word_progress）保留。"""
+    data_dir = tmp_path / "wd_mig"
+    data_dir.mkdir()
+    path = data_dir / "mig.json"
+
+    def write(words):
+        path.write_text(
+            json.dumps(
+                {"slug": "mig", "name": "迁移词书", "unit_size": 3, "words": words},
+                ensure_ascii=False,
+            ),
+            encoding="utf-8",
+        )
+
+    def units_of():
+        rows = conn.execute(
+            "SELECT w.word, w.unit FROM words w JOIN books b ON b.id = w.book_id "
+            "WHERE b.slug = 'mig' ORDER BY w.id"
+        ).fetchall()
+        return {r["word"]: r["unit"] for r in rows}
+
+    words_v1 = [{"word": f"w{i}", "meaning": f"释义{i}"} for i in range(6)]
+    write(words_v1)
+    monkeypatch.setattr(config, "WORDS_DATA_DIR", data_dir)
+    assert books.ensure_builtins(conn) == 1  # 首次导入
+    assert units_of() == {"w0": 1, "w1": 1, "w2": 1, "w3": 2, "w4": 2, "w5": 2}
+
+    # 给 w0 记一条学习进度
+    wid = conn.execute("SELECT id FROM words WHERE word = 'w0'").fetchone()["id"]
+    db.upsert_progress(conn, wid, "learning", 2.5, 1, 1, 0, "2999-01-01", "2026-01-01")
+    conn.commit()
+
+    # 模拟"改为词频顺序"：词序倒置
+    write(list(reversed(words_v1)))
+    books._load_json_file.cache_clear()  # 同路径改写需清进程缓存
+    assert books.ensure_builtins(conn) == 0  # 书已存在，不新建
+    assert units_of() == {"w5": 1, "w4": 1, "w3": 1, "w2": 2, "w1": 2, "w0": 2}
+
+    # 进度跟着 word 主键走，完好无损
+    progress = db.get_progress(conn, wid)
+    assert progress is not None
+    assert progress["status"] == "learning"
+
+    # marker 已更新：再跑一次是无操作
+    assert books.ensure_builtins(conn) == 0
+    assert units_of() == {"w5": 1, "w4": 1, "w3": 1, "w2": 2, "w1": 2, "w0": 2}

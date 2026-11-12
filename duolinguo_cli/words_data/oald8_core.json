@@ -1,9 +1,1229 @@
 {
  "slug": "oald8_core",
  "name": "牛津高阶进阶词",
- "description": "牛津高阶英汉双解（第8版）进阶词，已剔除四六级/托福/GRE/COCA 常用词，繁体释义（来源：english-wordlists/OALD8_abridged_edited.txt）",
+ "description": "牛津高阶英汉双解（第8版）进阶词，已剔除四六级/托福/GRE/COCA 常用词，繁体释义（来源：english-wordlists/OALD8_abridged_edited.txt），按 COCA 词频排序",
  "unit_size": 20,
  "words": [
+  {
+   "word": "quickly",
+   "phonetic": "/ˈkwɪkli/",
+   "meaning": "1.迅速地；很快地 2.不久；立即"
+  },
+  {
+   "word": "terms",
+   "phonetic": "/tɜːrmz/",
+   "meaning": "1.（協議、合同等的）條件，條款 2.（交易的）條件；價錢；費用 3.表達方式；措辭；說法"
+  },
+  {
+   "word": "growing",
+   "phonetic": "/ˈɡroʊɪŋ/",
+   "meaning": "增加的；增長的；增強的"
+  },
+  {
+   "word": "united",
+   "phonetic": "/juˈnaɪtɪd/",
+   "meaning": "1.(國家)聯合的；統一的 2.(人或群體)和諧的；一致的；團結的 3.（用於團隊和公司名稱）"
+  },
+  {
+   "word": "fourth",
+   "phonetic": "/fɔːrθ/",
+   "meaning": "ordinal number 第四 noun (especially NAmE)=quarter"
+  },
+  {
+   "word": "remaining",
+   "phonetic": "/rɪˈmeɪnɪŋ/",
+   "meaning": "仍需做的；還需處理的"
+  },
+  {
+   "word": "testing",
+   "phonetic": "/ˈtestɪŋ/",
+   "meaning": "試驗；測試；檢查 adjective (問題或情況)棘手的；傷腦筋的；難應付的"
+  },
+  {
+   "word": "developing",
+   "phonetic": "/dɪˈveləpɪŋ/",
+   "meaning": "(國家、社會等)發展中的"
+  },
+  {
+   "word": "surprising",
+   "phonetic": "/sərˈpraɪzɪŋ/",
+   "meaning": "令人吃驚的；使人驚奇的；出人意料的；奇怪的"
+  },
+  {
+   "word": "working",
+   "phonetic": "/ˈwɜːrkɪŋ/",
+   "meaning": "1.有工作的；有職業的 2.做工的；從事體力勞動的 3.工作上的；工作時間的 4.（早餐或午餐等）邊吃邊談公事的 5.初步的；暫定的 6.尚可應付工作的；基本夠用的 7.（機械部件）操縱用的，用於啟動的 8.（議會票數）足夠多數的 noun 1.（機器、系統、組織等的）運作，工作方法 2.（礦山或採石場的）礦，巷道，作業區"
+  },
+  {
+   "word": "standing",
+   "phonetic": "/ˈstændɪŋ/",
+   "meaning": "1.長期存在的；永久性的；常設的 2.站着進行的 noun 1.地位；級別；身分；名聲 2.持續時間 3.（運動員或運動隊比賽成績的）排名，名次"
+  },
+  {
+   "word": "trading",
+   "phonetic": "/ˈtreɪdɪŋ/",
+   "meaning": "貿易；經商；營業；交易"
+  },
+  {
+   "word": "sixth",
+   "phonetic": "/sɪksθ/",
+   "meaning": "ordinal number 第六 noun 六分之一"
+  },
+  {
+   "word": "re",
+   "phonetic": "/riː/",
+   "meaning": "（用於商業信函等開頭介紹主題或回覆電子郵件）關於，事由"
+  },
+  {
+   "word": "walking",
+   "phonetic": "/ˈwɔːkɪŋ/",
+   "meaning": "1.(especially BrE)行走；步行；散步；徒步旅行 2.競走 adjective (informal)似人的；活的"
+  },
+  {
+   "word": "reporting",
+   "phonetic": "/rɪˈpɔːrtɪŋ/",
+   "meaning": "新聞報道"
+  },
+  {
+   "word": "eating",
+   "phonetic": "/ˈiːtɪŋ/",
+   "meaning": "吃；飲食"
+  },
+  {
+   "word": "seventh",
+   "phonetic": "/ˈsevnθ/",
+   "meaning": "ordinal number 第七 noun 七分之一"
+  },
+  {
+   "word": "expected",
+   "phonetic": "/ɪkˈspektɪd/",
+   "meaning": "預料的；預期的"
+  },
+  {
+   "word": "dancing",
+   "phonetic": "/ˈdænsɪŋ/",
+   "meaning": "跳舞；舞蹈"
+  },
+  {
+   "word": "architectural",
+   "phonetic": "/ˌɑːrkɪˈtektʃərəl/",
+   "meaning": "建築學的；建築方面的"
+  },
+  {
+   "word": "handling",
+   "phonetic": "/ˈhændlɪŋ/",
+   "meaning": "1.（對形勢、人、動物等的）處理，對付，對待 2.組織；控制；管理 3.（手的）觸摸，觸摸感覺，握，拿 4.（訂貨、送貨、訂票等的）費用，手續費 5.（車輛的）駕駛，操縱 6.(formal)運輸；運費"
+  },
+  {
+   "word": "cutting",
+   "phonetic": "/ˈkʌtɪŋ/",
+   "meaning": "1.(both BrE)剪報；雜誌剪輯資料 2.插枝，插條（從植物上截取的一段供扦插的枝條） 3.(BrE)（為修道路、鐵路或運河從高地開鑿出來的）狹窄通道，路塹，河牀 adjective 1.尖刻的；刻薄的；挖苦人的 2.(風)凜冽的；刺骨的"
+  },
+  {
+   "word": "visiting",
+   "phonetic": "/ˈvɪzɪtɪŋ/",
+   "meaning": "（指教授或講師）客座的"
+  },
+  {
+   "word": "coaching",
+   "phonetic": "/ˈkoʊtʃɪŋ/",
+   "meaning": "1.（體育運動、工作或技能的）訓練，培訓，指導 2.(especially BrE)（某科目上的）輔導"
+  },
+  {
+   "word": "failed",
+   "phonetic": "/feɪld/",
+   "meaning": "失敗的；不成功的"
+  },
+  {
+   "word": "grower",
+   "phonetic": "/ˈɡroʊər/",
+   "meaning": "1.栽培者；種植商；種植公司 2.（以…方式）生長的植物"
+  },
+  {
+   "word": "beating",
+   "phonetic": "/ˈbiːtɪŋ/",
+   "meaning": "1.狠打；揍；笞打 2.(informal)慘敗；嚴重受挫 3.有規律的敲打（聲）；有節奏的運動（聲）"
+  },
+  {
+   "word": "clove",
+   "phonetic": "/kloʊv/",
+   "meaning": "1.丁香（熱帶樹木的乾花，形似小釘子，用於烹飪調味，尤用作甜食的香料） 2.蒜瓣"
+  },
+  {
+   "word": "guiding",
+   "phonetic": "/ˈɡaɪdɪŋ/",
+   "meaning": "給予指導的；有影響的"
+  },
+  {
+   "word": "applied",
+   "phonetic": "/əˈplaɪd/",
+   "meaning": "(尤指學科)應用的；實用的"
+  },
+  {
+   "word": "singing",
+   "phonetic": "/ˈsɪŋɪŋ/",
+   "meaning": "唱歌；歌唱"
+  },
+  {
+   "word": "matching",
+   "phonetic": "/ˈmætʃɪŋ/",
+   "meaning": "(衣服、材料、物件等)（顏色、形狀、款式等）相同的，相稱的，相配的"
+  },
+  {
+   "word": "governing",
+   "phonetic": "/ˈɡʌvərnɪŋ/",
+   "meaning": "統治的；控制的；管理的；治理的"
+  },
+  {
+   "word": "rep",
+   "phonetic": "/rep/",
+   "meaning": "1.=sales representative, representative 2.代表；發言人 3.(informal)保留劇目輪演（全寫為 repertory）"
+  },
+  {
+   "word": "lingering",
+   "phonetic": "/ˈlɪŋɡərɪŋ/",
+   "meaning": "拖延的；纏綿的；緩慢消失的；遲遲不去的"
+  },
+  {
+   "word": "climbing",
+   "phonetic": "/ˈklaɪmɪŋ/",
+   "meaning": "登山運動；攀岩活動"
+  },
+  {
+   "word": "signing",
+   "phonetic": "/ˈsaɪnɪŋ/",
+   "meaning": "1.簽署；簽字 2.(BrE)（運動隊、唱片公司或電影公司的）簽約受聘者，簽約受雇者 3.簽約聘用，簽約雇用（安排某人加入運動隊、唱片公司或電影公司） 4.手勢語的使用"
+  },
+  {
+   "word": "hmm",
+   "phonetic": "/m/",
+   "meaning": "（書寫形式，表示有疑慮或猶豫時發出的聲音）呣，嗯，唔，哼"
+  },
+  {
+   "word": "planting",
+   "phonetic": "/ˈplæntɪŋ/",
+   "meaning": "種植；栽種；栽種物"
+  },
+  {
+   "word": "unrelated",
+   "phonetic": "/ˌʌnrɪˈleɪtɪd/",
+   "meaning": "1.無關聯的；不相關的 2.(人、動物等)不屬於同一家族（或同一科等）的；無親緣關係的"
+  },
+  {
+   "word": "tenth",
+   "phonetic": "/tenθ/",
+   "meaning": "ordinal number 第十 noun 十分之一"
+  },
+  {
+   "word": "loading",
+   "phonetic": "/ˈloʊdɪŋ/",
+   "meaning": "1.(AustralE, NZE)附加工資（因有特別技能或資格） 2.附加費用"
+  },
+  {
+   "word": "proven",
+   "phonetic": "/ˈproʊvn/",
+   "meaning": "被證明的；已證實的"
+  },
+  {
+   "word": "paid",
+   "phonetic": "/peɪd/",
+   "meaning": "1.(工作等)有償的；付費的 2.(人)有報酬的；有薪金的"
+  },
+  {
+   "word": "comforting",
+   "phonetic": "/ˈkʌmfərtɪŋ/",
+   "meaning": "令人安慰的"
+  },
+  {
+   "word": "painfully",
+   "phonetic": "/ˈpeɪnfəli/",
+   "meaning": "1.非常地；令人痛苦地；令人煩惱地 2.使人疼痛地；令人苦惱地 3.吃力地；艱難地"
+  },
+  {
+   "word": "computing",
+   "phonetic": "/kəmˈpjuːtɪŋ/",
+   "meaning": "計算；計算機技術；信息處理技術"
+  },
+  {
+   "word": "fallen",
+   "phonetic": "/ˈfɔːlən/",
+   "meaning": "1.倒下的；落下的；落在地上的 2.(formal)陣亡的"
+  },
+  {
+   "word": "grouping",
+   "phonetic": "/ˈɡruːpɪŋ/",
+   "meaning": "1.小集團；小團體；小圈子 2.分組；歸類"
+  },
+  {
+   "word": "famed",
+   "phonetic": "/feɪmd/",
+   "meaning": "famed(for sth)著名的"
+  },
+  {
+   "word": "attempted",
+   "phonetic": "/əˈtemptɪd/",
+   "meaning": "(犯罪等)未遂的"
+  },
+  {
+   "word": "divorced",
+   "phonetic": "/dɪˈvɔːrst/",
+   "meaning": "1.離婚的；離異的 2.divorced from sth(formal)表現得不受影響的；脫離…的"
+  },
+  {
+   "word": "chilling",
+   "phonetic": "/ˈtʃɪlɪŋ/",
+   "meaning": "（常與殘暴有關）令人恐懼的，令人害怕的"
+  },
+  {
+   "word": "pricing",
+   "phonetic": "/ˈpraɪsɪŋ/",
+   "meaning": "定價；作價；計價"
+  },
+  {
+   "word": "decidedly",
+   "phonetic": "/dɪˈsaɪdɪdli/",
+   "meaning": "1.(與形容詞或副詞連用)確實；肯定；顯然 2.(BrE)果斷地；堅決地；堅定地"
+  },
+  {
+   "word": "unfinished",
+   "phonetic": "/ʌnˈfɪnɪʃt/",
+   "meaning": "未做完的；未完成的"
+  },
+  {
+   "word": "coping",
+   "phonetic": "/ˈkoʊpɪŋ/",
+   "meaning": "(建)牆壓頂"
+  },
+  {
+   "word": "co-op",
+   "phonetic": "",
+   "meaning": "(informal)合作商店；合作社；合作性商業機構"
+  },
+  {
+   "word": "universally",
+   "phonetic": "/ˌjuːnɪˈvɜːrsəli/",
+   "meaning": "1.全體地；一致地；共同地 2.到處；隨時隨地；在各種情況下"
+  },
+  {
+   "word": "raising",
+   "phonetic": "/ˈreɪzɪŋ/",
+   "meaning": "增加；提高"
+  },
+  {
+   "word": "advancing",
+   "phonetic": "/ədˈvænsɪŋ/",
+   "meaning": "年事漸高"
+  },
+  {
+   "word": "intimidating",
+   "phonetic": "/ɪnˈtɪmɪdeɪtɪŋ/",
+   "meaning": "嚇人的；令人膽怯的"
+  },
+  {
+   "word": "cut-off",
+   "phonetic": "",
+   "meaning": "1.截止點；界限 2.剪短的褲子 adjective (褲子)褲腿剪短的"
+  },
+  {
+   "word": "stuck",
+   "phonetic": "/stʌk/",
+   "meaning": "1.動不了；無法移動；卡住；陷住 2.陷（入）；困（於） 3. stuck(on sth)被難住；答不上來；卡殼 4. stuck(for sth)不知所措；（為某事）犯愁 5. stuck with sb/sth(informal)擺脫不了；甩不掉"
+  },
+  {
+   "word": "limiting",
+   "phonetic": "/ˈlɪmɪtɪŋ/",
+   "meaning": "限制性的"
+  },
+  {
+   "word": "managed",
+   "phonetic": "/ˈmænɪdʒd/",
+   "meaning": "妥善照看的；受監管的；受監督的"
+  },
+  {
+   "word": "twenty-first",
+   "phonetic": "",
+   "meaning": "(informal) (especially BrE)*21 歲生日； 21 歲生日慶典"
+  },
+  {
+   "word": "warm-up",
+   "phonetic": "",
+   "meaning": "1.（體育運動等前的）適應性活動，準備活動；熱身練習 2.暖場表演（正式表演開始前上演的短小音樂、喜劇等節目）"
+  },
+  {
+   "word": "purchasing",
+   "phonetic": "/ˈpɜːrtʃəsɪŋ/",
+   "meaning": "(商)購買；採購"
+  },
+  {
+   "word": "understandably",
+   "phonetic": "/ˌʌndərˈstændəbli/",
+   "meaning": "可以理解地；正常地；合乎情理地"
+  },
+  {
+   "word": "progressively",
+   "phonetic": "/prəˈɡresɪvli/",
+   "meaning": "(常與比較級連用)持續穩定地；逐步地；愈益"
+  },
+  {
+   "word": "adopted",
+   "phonetic": "/əˈdɑːptɪd/",
+   "meaning": "1.收養的；領養的 2.所選擇居住的；移居的"
+  },
+  {
+   "word": "gal",
+   "phonetic": "/ɡæl/",
+   "meaning": "(old-fashioned, informal) (especially NAmE)女孩；姑娘；女子"
+  },
+  {
+   "word": "unspoken",
+   "phonetic": "/ˌʌnˈspoʊkən/",
+   "meaning": "(formal)未說出的；未表達的；默契的；心照不宣的"
+  },
+  {
+   "word": "changed",
+   "phonetic": "/tʃeɪndʒd/",
+   "meaning": "(人或情況)與以前截然不同的；變化大的；已變的"
+  },
+  {
+   "word": "neglected",
+   "phonetic": "/nɪˈɡlektɪd/",
+   "meaning": "被忽略的；被忽視的；未被重視的"
+  },
+  {
+   "word": "realistically",
+   "phonetic": "/ˌriːəˈlɪstɪkli/",
+   "meaning": "1.（表明你認為實際實現的可能性）如實地，實際地 2.切合實際地；明智地 3.逼真地；栩栩如生地"
+  },
+  {
+   "word": "rented",
+   "phonetic": "/ˈrentɪd/",
+   "meaning": "租用的；租借的"
+  },
+  {
+   "word": "contrasting",
+   "phonetic": "/kənˈtræstɪŋ/",
+   "meaning": "（在式樣、顏色或態度上）極不相同的，差異大的"
+  },
+  {
+   "word": "y'all",
+   "phonetic": "/jɔːl/",
+   "meaning": "=you-all"
+  },
+  {
+   "word": "probing",
+   "phonetic": "/ˈproʊbɪŋ/",
+   "meaning": "1.探查性的；追根究底的 2.逼視的；仔細觀察的"
+  },
+  {
+   "word": "burnt",
+   "phonetic": "/bɜːrnt/",
+   "meaning": "燒壞的；燒傷的；燙傷的；灼傷的"
+  },
+  {
+   "word": "suspiciously",
+   "phonetic": "/səˈspɪʃəsli/",
+   "meaning": "1.懷疑地；有疑心地 2.令人懷疑地；形跡（或神色等）可疑地 3.以懷疑的態度；不信任地"
+  },
+  {
+   "word": "oppressed",
+   "phonetic": "/əˈprest/",
+   "meaning": "1.被壓迫的；受迫害的 2.被壓迫者"
+  },
+  {
+   "word": "bluntly",
+   "phonetic": "/ˈblʌntli/",
+   "meaning": "直言地；單刀直入地"
+  },
+  {
+   "word": "prized",
+   "phonetic": "/praɪzd/",
+   "meaning": "珍貴的；寶貴的"
+  },
+  {
+   "word": "faithfully",
+   "phonetic": "/ˈfeɪθfəli/",
+   "meaning": "1.準確地；如實地；仔細地 2.忠實地；忠誠地"
+  },
+  {
+   "word": "unsalted",
+   "phonetic": "/ʌnˈsɔːltɪd/",
+   "meaning": "(尤指食物)未放鹽的；不加鹽的"
+  },
+  {
+   "word": "tasting",
+   "phonetic": "/ˈteɪstɪŋ/",
+   "meaning": "品嚐會"
+  },
+  {
+   "word": "purposely",
+   "phonetic": "/ˈpɜːrpəsli/",
+   "meaning": "故意地；蓄意地"
+  },
+  {
+   "word": "pairing",
+   "phonetic": "/ˈperɪŋ/",
+   "meaning": "1.結對的兩個人（或物）；配對；搭配 2.配對，結對（英國議會中來自不同政黨的兩名議員約定放棄投票從而不必參加辯論進行表決）"
+  },
+  {
+   "word": "drained",
+   "phonetic": "/dreɪnd/",
+   "meaning": "精疲力竭；無精打采"
+  },
+  {
+   "word": "intervening",
+   "phonetic": "/ˌɪntərˈviːnɪŋ/",
+   "meaning": "發生於其間的；介於中間的"
+  },
+  {
+   "word": "individualized",
+   "phonetic": "/ˌɪndɪˈvɪdʒuəlaɪzd/",
+   "meaning": "個性化的；與個人（或個體）有關的"
+  },
+  {
+   "word": "pointedly",
+   "phonetic": "/ˈpɔɪntɪdli/",
+   "meaning": "明確地；尖銳地；直言不諱地"
+  },
+  {
+   "word": "roasting",
+   "phonetic": "/ˈroʊstɪŋ/",
+   "meaning": "1.用於烤炙（或烘焙）的 2.燥熱的；灼熱的 noun (slang)（一女多男的）亂交"
+  },
+  {
+   "word": "elongated",
+   "phonetic": "/ɪˈlɔːŋɡeɪtɪd/",
+   "meaning": "細長的；拉得又細又長的"
+  },
+  {
+   "word": "over-the-counter",
+   "phonetic": "",
+   "meaning": "1.(藥品)無需處方可買到的；非處方的 2.(商)(NAmE)(股票及證券)場外交易的"
+  },
+  {
+   "word": "lighted",
+   "phonetic": "/ˈlaɪtɪd/",
+   "meaning": "1.點燃的；燃燒的 2.燈火通明的；燈光照亮的"
+  },
+  {
+   "word": "doc",
+   "phonetic": "/dɑːk/",
+   "meaning": "(informal) (especially NAmE)（稱呼或談論時用語）醫生，大夫"
+  },
+  {
+   "word": "computational",
+   "phonetic": "/ˌkɑːmpjuˈteɪʃənl/",
+   "meaning": "使用計算機的；與計算機有關的"
+  },
+  {
+   "word": "broadband",
+   "phonetic": "/ˈbrɔːdbænd/",
+   "meaning": "1.(術語)寬頻帶；寬波段 2.（互聯網的）寬帶連接，寬頻連接"
+  },
+  {
+   "word": "darkly",
+   "phonetic": "/ˈdɑːrkli/",
+   "meaning": "1.威脅地；險惡地；負面地 2.漆黑地；烏黑地"
+  },
+  {
+   "word": "pre-war",
+   "phonetic": "",
+   "meaning": "戰前的；（尤指）第二次世界大戰以前的"
+  },
+  {
+   "word": "responsibly",
+   "phonetic": "/rɪˈspɑːnsəbli/",
+   "meaning": "明事理地；認真負責地；可信賴地"
+  },
+  {
+   "word": "cheaply",
+   "phonetic": "/ˈtʃiːpli/",
+   "meaning": "便宜地；廉價地；低廉地"
+  },
+  {
+   "word": "ordering",
+   "phonetic": "/ˈɔːrdərɪŋ/",
+   "meaning": "次序；組合；排列"
+  },
+  {
+   "word": "posting",
+   "phonetic": "/ˈpoʊstɪŋ/",
+   "meaning": "1.(especially BrE)派駐 2.=post"
+  },
+  {
+   "word": "gloved",
+   "phonetic": "/ɡlʌvd/",
+   "meaning": "(手)戴着手套的"
+  },
+  {
+   "word": "alarmed",
+   "phonetic": "/əˈlɑːrmd/",
+   "meaning": "1.擔心；害怕 2.有警報裝置"
+  },
+  {
+   "word": "co-opt",
+   "phonetic": "",
+   "meaning": "1.（經所有成員同意）增選（某人）為委員 2.拉攏；籠絡"
+  },
+  {
+   "word": "pager",
+   "phonetic": "/ˈpeɪdʒər/",
+   "meaning": "尋呼機；傳呼機； BP 機"
+  },
+  {
+   "word": "arched",
+   "phonetic": "/ɑːrtʃt/",
+   "meaning": "拱形的；弧形的"
+  },
+  {
+   "word": "vat",
+   "phonetic": "/væt/",
+   "meaning": "（尤指工業用）大桶，大盆，甕，缸，罐"
+  },
+  {
+   "word": "chives",
+   "phonetic": "/tʃaɪvz/",
+   "meaning": "細香葱，四季葱（長細葉，開紫色花，味似洋葱）"
+  },
+  {
+   "word": "coolly",
+   "phonetic": "/ˈkuːlli/",
+   "meaning": "1.冷漠地；冷淡地 2.冷靜地；沉着地"
+  },
+  {
+   "word": "coded",
+   "phonetic": "/ˈkoʊdɪd/",
+   "meaning": "1.密碼的；暗碼的；編碼的 2.間接表達的"
+  },
+  {
+   "word": "drumming",
+   "phonetic": "/ˈdrʌmɪŋ/",
+   "meaning": "1.擊鼓；鼓聲 2.擊鼓似的咚咚聲；似擊鼓一樣連續不停的感覺"
+  },
+  {
+   "word": "absently",
+   "phonetic": "/ˈæbsəntli/",
+   "meaning": "心不在焉地；出神地"
+  },
+  {
+   "word": "inflatable",
+   "phonetic": "/ɪnˈfleɪtəbl/",
+   "meaning": "需充氣的 noun 1.充氣小艇 2.充氣玩具；大型充氣宣傳品"
+  },
+  {
+   "word": "entry-level",
+   "phonetic": "",
+   "meaning": "1.(產品)適合初級用戶的；入門級的 2.(工作)（公司中）最初級的"
+  },
+  {
+   "word": "cross-border",
+   "phonetic": "",
+   "meaning": "跨越國境的"
+  },
+  {
+   "word": "laughing",
+   "phonetic": "/ˈlæfɪŋ/",
+   "meaning": "笑的；帶笑意的"
+  },
+  {
+   "word": "exhausting",
+   "phonetic": "/ɪɡˈzɔːstɪŋ/",
+   "meaning": "使人疲憊不堪的；令人筋疲力盡的"
+  },
+  {
+   "word": "three-way",
+   "phonetic": "",
+   "meaning": "三方面的；三向的；三人參加的"
+  },
+  {
+   "word": "high-priced",
+   "phonetic": "",
+   "meaning": "昂貴的；高價的"
+  },
+  {
+   "word": "out-of-state",
+   "phonetic": "",
+   "meaning": "(US)外州的；州外的"
+  },
+  {
+   "word": "cluttered",
+   "phonetic": "/ˈklʌtərd/",
+   "meaning": "(figurative)cluttered(up) (with sb/sth)雜亂的；凌亂的；擠滿的"
+  },
+  {
+   "word": "stay-at-home",
+   "phonetic": "",
+   "meaning": "(informal, often disapproving)不愛出門的人；戀家的人 adjective 全職照顧家庭的"
+  },
+  {
+   "word": "insulated",
+   "phonetic": "/ˈɪnsəleɪtɪd/",
+   "meaning": "有隔熱（或隔音、絕緣）保護的"
+  },
+  {
+   "word": "tortured",
+   "phonetic": "/ˈtɔːrtʃərd/",
+   "meaning": "遭受重創的；飽受煎熬的"
+  },
+  {
+   "word": "sworn",
+   "phonetic": "/swɔːrn/",
+   "meaning": "1.（尤指在法庭上）宣過誓的，宣誓證明的 2. sworn enemies不共戴天的仇敵"
+  },
+  {
+   "word": "shaking",
+   "phonetic": "/ˈʃeɪkɪŋ/",
+   "meaning": "搖動；抖動；顫動"
+  },
+  {
+   "word": "resounding",
+   "phonetic": "/rɪˈzaʊndɪŋ/",
+   "meaning": "1.巨大的；令人矚目的 2.(聲音)響亮的；嘹亮的；回響的"
+  },
+  {
+   "word": "golfing",
+   "phonetic": "/ˈɡɑːlfɪŋ/",
+   "meaning": "打高爾夫球的；與高爾夫球有關的"
+  },
+  {
+   "word": "archetypal",
+   "phonetic": "/ˌɑːrkiˈtaɪpl/",
+   "meaning": "典型的"
+  },
+  {
+   "word": "motorized",
+   "phonetic": "/ˈmoʊtəraɪzd/",
+   "meaning": "1.有引擎的；機動的 2.(部隊等)使用機動車的；摩托化的；機動化的"
+  },
+  {
+   "word": "creeping",
+   "phonetic": "/ˈkriːpɪŋ/",
+   "meaning": "(壞事)（不知不覺地）逐漸發生的，緩慢行進的"
+  },
+  {
+   "word": "powered",
+   "phonetic": "/ˈpaʊərd/",
+   "meaning": "(通常構成複合詞)由…驅動的；電動的"
+  },
+  {
+   "word": "biz",
+   "phonetic": "/bɪz/",
+   "meaning": "(informal)生意；（尤指）娛樂業"
+  },
+  {
+   "word": "margarita",
+   "phonetic": "/ˌmɑːrɡəˈriːtə/",
+   "meaning": "瑪格麗特酒（用果汁與墨西哥龍舌蘭酒調製而成）"
+  },
+  {
+   "word": "demeaning",
+   "phonetic": "/dɪˈmiːnɪŋ/",
+   "meaning": "降低身分的；失去尊嚴的"
+  },
+  {
+   "word": "second-class",
+   "phonetic": "",
+   "meaning": "1.(disapproving)次要的；無足輕重的 2.（質量、標準等）二流的，次等的 3.（車廂、船艙等）二等的 4.第二類的（英國郵件等級，投遞較第一類慢，郵資也較低） 5.第二類的（美國郵件等級，用於投遞報刊） 6.二級優等的（英國大學學位）"
+  },
+  {
+   "word": "embattled",
+   "phonetic": "/ɪmˈbætld/",
+   "meaning": "1.被困擾的；處境艱難的；危機四伏的 2.(軍隊、城市等)捲入戰爭的；被敵人包圍的"
+  },
+  {
+   "word": "windowless",
+   "phonetic": "/ˈwɪndoʊləs/",
+   "meaning": "無窗的"
+  },
+  {
+   "word": "semi-automatic",
+   "phonetic": "",
+   "meaning": "(槍)半自動的"
+  },
+  {
+   "word": "protectionism",
+   "phonetic": "/prəˈtekʃənɪzəm/",
+   "meaning": "（貿易）保護主義"
+  },
+  {
+   "word": "unanticipated",
+   "phonetic": "/ˌʌnænˈtɪsɪpeɪtɪd/",
+   "meaning": "(formal)沒想到的；未預料到的"
+  },
+  {
+   "word": "upsetting",
+   "phonetic": "/ʌpˈsetɪŋ/",
+   "meaning": "令人不快（或憂慮、苦惱）的"
+  },
+  {
+   "word": "high-resolution",
+   "phonetic": "",
+   "meaning": "(照片、計算機或電視屏幕的圖像)高清晰度的；高分辨率的"
+  },
+  {
+   "word": "milling",
+   "phonetic": "/ˈmɪlɪŋ/",
+   "meaning": "(人)成群亂轉的"
+  },
+  {
+   "word": "all-important",
+   "phonetic": "",
+   "meaning": "極重要的"
+  },
+  {
+   "word": "betting",
+   "phonetic": "/ˈbetɪŋ/",
+   "meaning": "打賭；賭錢"
+  },
+  {
+   "word": "functionality",
+   "phonetic": "/ˌfʌŋkʃəˈnæləti/",
+   "meaning": "1.實用；符合實際 2.設計目的；設計功能 3.(計)（計算機或電子系統的）功能"
+  },
+  {
+   "word": "cam",
+   "phonetic": "/kæm/",
+   "meaning": "凸輪（把圓周運動轉變為上下或前後運動的機械部件）"
+  },
+  {
+   "word": "worksheet",
+   "phonetic": "/ˈwɜːrkʃiːt/",
+   "meaning": "1.（學生做的）活頁練習題 2.工作記錄（或進度）表"
+  },
+  {
+   "word": "dot-com",
+   "phonetic": "/ˌdɑːt ˈkɑːm/",
+   "meaning": "（尤指網址末尾為 .com 的）網絡公司，網路公司"
+  },
+  {
+   "word": "mandated",
+   "phonetic": "/ˈmændeɪtɪd/",
+   "meaning": "1.(國家)委託別國管轄的；託管的 2.依法的；按法律要求的 3.獲得授權的"
+  },
+  {
+   "word": "cross-legged",
+   "phonetic": "/ˌkrɔːs ˈleɡd/",
+   "meaning": "盤腿"
+  },
+  {
+   "word": "free-standing",
+   "phonetic": "",
+   "meaning": "1.自力支撑的；無依附的；獨立的 2.單獨的；獨立的"
+  },
+  {
+   "word": "crosstalk",
+   "phonetic": "/ˈkrɔːstɔːk/",
+   "meaning": "(術語)（通訊系統的）串話，串擾"
+  },
+  {
+   "word": "mirrored",
+   "phonetic": "/ˈmɪrərd/",
+   "meaning": "有鏡子的；像鏡子的"
+  },
+  {
+   "word": "numbered",
+   "phonetic": "",
+   "meaning": "編號的"
+  },
+  {
+   "word": "enforcer",
+   "phonetic": "/ɪnˈfɔːrsər/",
+   "meaning": "實施者；強制執行者"
+  },
+  {
+   "word": "bruising",
+   "phonetic": "/ˈbruːzɪŋ/",
+   "meaning": "艱難討厭的；繁重麻煩的"
+  },
+  {
+   "word": "supremely",
+   "phonetic": "/suːˈpriːmli/",
+   "meaning": "極其；極為"
+  },
+  {
+   "word": "peculiarly",
+   "phonetic": "/pɪˈkjuːliərli/",
+   "meaning": "1.很；不尋常地；特別 2.獨特地；特有地 3.奇怪地；異常地"
+  },
+  {
+   "word": "second-generation",
+   "phonetic": "",
+   "meaning": "1.（移民後裔等）第二代的 2.(產品、技術等)第二代的（更先進或改進了的）"
+  },
+  {
+   "word": "criminally",
+   "phonetic": "/ˈkrɪmɪnəli/",
+   "meaning": "刑法上；刑事上；在犯罪方面"
+  },
+  {
+   "word": "sizzling",
+   "phonetic": "/ˈsɪzlɪŋ/",
+   "meaning": "1.酷熱的 2.熱烈的；激情迸發的"
+  },
+  {
+   "word": "life-saving",
+   "phonetic": "",
+   "meaning": "救命的；救生的 noun （對溺水者的）救生術"
+  },
+  {
+   "word": "psi",
+   "phonetic": "/psaɪ/",
+   "meaning": "希臘字母表的第 23 個字母"
+  },
+  {
+   "word": "enforced",
+   "phonetic": "/ɪnˈfɔːrst/",
+   "meaning": "強迫的；強制性的"
+  },
+  {
+   "word": "ravages",
+   "phonetic": "/ˈrævɪdʒɪz/",
+   "meaning": "(formal)[plural]the ravages of sth破壞；損害；毀壞"
+  },
+  {
+   "word": "non-white",
+   "phonetic": "",
+   "meaning": "非白種人"
+  },
+  {
+   "word": "exclusionary",
+   "phonetic": "/ɪkˈskluːʒənri/",
+   "meaning": "(formal)排斥（性）的；排除在外的"
+  },
+  {
+   "word": "accredited",
+   "phonetic": "/əˈkredɪtɪd/",
+   "meaning": "1.人 2.鑒定合格的；達到標準的"
+  },
+  {
+   "word": "horse-drawn",
+   "phonetic": "",
+   "meaning": "(車輛)馬拉的"
+  },
+  {
+   "word": "blurred",
+   "phonetic": "/blɜːrd/",
+   "meaning": "1.模糊不清的 2.記不清的 3.難以區分的；模稜兩可的"
+  },
+  {
+   "word": "singularly",
+   "phonetic": "/ˈsɪŋɡjələrli/",
+   "meaning": "(formal)非常；特別；異常地"
+  },
+  {
+   "word": "unchanging",
+   "phonetic": "/ʌnˈtʃeɪndʒɪŋ/",
+   "meaning": "永恆的；不變的"
+  },
+  {
+   "word": "digitize",
+   "phonetic": "/ˈdɪdʒɪtaɪz/",
+   "meaning": "digitize sth（使數據）數字化，數位化"
+  },
+  {
+   "word": "single-minded",
+   "phonetic": "",
+   "meaning": "一心一意的；專心致志的"
+  },
+  {
+   "word": "prepaid",
+   "phonetic": "/ˌpriːˈpeɪd/",
+   "meaning": "預付款的；資費已付的"
+  },
+  {
+   "word": "self-expression",
+   "phonetic": "",
+   "meaning": "自我表現，自我表達（尤指通過寫作、繪畫、舞蹈等活動）"
+  },
+  {
+   "word": "coal-fired",
+   "phonetic": "",
+   "meaning": "用煤作燃料的；燒煤的"
+  },
+  {
+   "word": "readjust",
+   "phonetic": "/ˌriːəˈdʒʌst/",
+   "meaning": "1.重新適應；再適應 2.稍作改變；微調"
+  },
+  {
+   "word": "weightless",
+   "phonetic": "/ˈweɪtləs/",
+   "meaning": "無重量的；似無重量的；失重的"
+  },
+  {
+   "word": "coveralls",
+   "phonetic": "/ˈkʌvərɔːlz/",
+   "meaning": "(NAmE)工裝連衣褲；工裝服"
+  },
+  {
+   "word": "feel-good",
+   "phonetic": "",
+   "meaning": "使人愉悅的"
+  },
+  {
+   "word": "low-lying",
+   "phonetic": "",
+   "meaning": "(土地)低的；低窪的"
+  },
+  {
+   "word": "connectedness",
+   "phonetic": "/kəˈnektɪdnəs/",
+   "meaning": "connectedness(to/with sb/sth)相關感；歸屬感"
+  },
+  {
+   "word": "declared",
+   "phonetic": "/dɪˈklerd/",
+   "meaning": "公開宣佈（或聲明、表態）的"
+  },
+  {
+   "word": "unopened",
+   "phonetic": "/ʌnˈoʊpənd/",
+   "meaning": "未開啟的；未打開的"
+  },
+  {
+   "word": "reusable",
+   "phonetic": "/ˌriːˈjuːzəbl/",
+   "meaning": "可重複使用的；可再次使用的"
+  },
+  {
+   "word": "bulging",
+   "phonetic": "/ˈbʌldʒɪŋ/",
+   "meaning": "鼓起的；隆起的"
+  },
+  {
+   "word": "insulating",
+   "phonetic": "/ˈɪnsəleɪtɪŋ/",
+   "meaning": "起隔熱（或隔音、絕緣）作用的"
+  },
+  {
+   "word": "unrecognizable",
+   "phonetic": "/ˌʌnrekəɡˈnaɪzəbl/",
+   "meaning": "(人或事物)變得（或損壞得）難以辨認的；無法識別的"
+  },
+  {
+   "word": "no-brainer",
+   "phonetic": "",
+   "meaning": "(informal)無需用腦的事；容易的決定"
+  },
+  {
+   "word": "vanquished",
+   "phonetic": "/ˈvæŋkwɪʃt/",
+   "meaning": "(literary)戰敗者；被完全征服的人；敗陣者"
+  },
+  {
+   "word": "anti-aircraft",
+   "phonetic": "",
+   "meaning": "防空的"
+  },
+  {
+   "word": "five-star",
+   "phonetic": "",
+   "meaning": "1.五星級的（表示最優質） 2.(NAmE)（軍階）五星級的"
+  },
+  {
+   "word": "unharmed",
+   "phonetic": "/ʌnˈhɑːrmd/",
+   "meaning": "未受傷的；未受損害的"
+  },
+  {
+   "word": "misjudge",
+   "phonetic": "/ˌmɪsˈdʒʌdʒ/",
+   "meaning": "1.形成錯誤認識；錯看 2.對（時間、距離等）判斷錯誤"
+  },
+  {
+   "word": "hurried",
+   "phonetic": "/ˈhɜːrid/",
+   "meaning": "匆忙完成的；倉促而就的"
+  },
+  {
+   "word": "you-all",
+   "phonetic": "/ˈjuː ɔːl/",
+   "meaning": "(informal)（尤用於美國南部）你們"
+  },
+  {
+   "word": "undersecretary",
+   "phonetic": "/ˌʌndərˈsekrəteri/",
+   "meaning": "1.（英國）政務次官 2.（英國）副大臣，次長 3.（美國）副部長，副國務卿"
+  },
+  {
+   "word": "uncertainly",
+   "phonetic": "/ʌnˈsɜːrtnli/",
+   "meaning": "猶豫地；遲疑地"
+  },
+  {
+   "word": "run-in",
+   "phonetic": "",
+   "meaning": "1.(informal)爭論；爭吵；衝突 2.(BrE)=run-up"
+  },
+  {
+   "word": "furnished",
+   "phonetic": "/ˈfɜːrnɪʃt/",
+   "meaning": "(房屋、房間等)配備傢具的"
+  },
+  {
+   "word": "empty-handed",
+   "phonetic": "",
+   "meaning": "一無所獲；空手"
+  },
+  {
+   "word": "reconstructive",
+   "phonetic": "/ˌriːkənˈstrʌktɪv/",
+   "meaning": "(醫療)修復的；整形的；復原的"
+  },
+  {
+   "word": "searcher",
+   "phonetic": "/ˈsɜːrtʃər/",
+   "meaning": "1.搜索者；查找者 2.(計)檢索工具；搜索軟件；搜索引擎；搜尋器"
+  },
+  {
+   "word": "jump-start",
+   "phonetic": "",
+   "meaning": "1.用跨接引線啟動（汽車發動機） 2.全力啟動；加快開展"
+  },
+  {
+   "word": "suitably",
+   "phonetic": "/ˈsuːtəbli/",
+   "meaning": "1.合適地；適宜地；適當地 2.如你所料地；自然"
+  },
+  {
+   "word": "high-flying",
+   "phonetic": "",
+   "meaning": "1.十分成功的 2.在高空飛行的"
+  },
+  {
+   "word": "rooted",
+   "phonetic": "/ˈruːtɪd/",
+   "meaning": "1.rooted in sth根源在於；由…產生 2.固定在某地的；穩固的；根深蒂固的 3.(AustralE) (slang)疲憊不堪的；筋疲力盡的 4.(AustralE) (slang)老舊無用的；破得不能用的"
+  },
+  {
+   "word": "soapy",
+   "phonetic": "/ˈsoʊpi/",
+   "meaning": "1.滿是肥皂的；塗滿肥皂的 2.有肥皂味的；摸着像肥皂的"
+  },
+  {
+   "word": "yellowish",
+   "phonetic": "/ˈjeloʊɪʃ/",
+   "meaning": "微黃色的；發黃的"
+  },
+  {
+   "word": "divider",
+   "phonetic": "/dɪˈvaɪdər/",
+   "meaning": "1.分隔物；分開物 2.分線規；兩腳規"
+  },
+  {
+   "word": "self-taught",
+   "phonetic": "",
+   "meaning": "自學的；自修的"
+  },
+  {
+   "word": "discontinuity",
+   "phonetic": "/ˌdɪsˌkɑːntəˈnuːəti/",
+   "meaning": "1.不連貫；不連續 2.中斷；間斷；停頓"
+  },
+  {
+   "word": "sagebrush",
+   "phonetic": "/ˈseɪdʒbrʌʃ/",
+   "meaning": "灌木蒿；灌木蒿叢"
+  },
+  {
+   "word": "vitally",
+   "phonetic": "/ˈvaɪtəli/",
+   "meaning": "極其；絕對"
+  },
+  {
+   "word": "disapproving",
+   "phonetic": "/ˌdɪsəˈpruːvɪŋ/",
+   "meaning": "不贊成的；表示反對的；不以為然的"
+  },
+  {
+   "word": "third-generation",
+   "phonetic": "",
+   "meaning": "1.第三代移動通信技術的 2.第三代技術的"
+  },
+  {
+   "word": "skewed",
+   "phonetic": "/skjuːd/",
+   "meaning": "1.(信息)歪曲的；有偏頗的；不準確的 2.偏向（或偏重）…的 3.偏的；斜的；歪的"
+  },
+  {
+   "word": "snow-covered",
+   "phonetic": "",
+   "meaning": "被雪覆蓋的"
+  },
+  {
+   "word": "second-degree",
+   "phonetic": "",
+   "meaning": "1.(especially NAmE)第二等級（謀殺、人身侵犯或入室盜竊等罪） 2.二度（燒傷）"
+  },
+  {
+   "word": "bot",
+   "phonetic": "/bɑːt/",
+   "meaning": "(計)自動程序；機器人程式"
+  },
+  {
+   "word": "out-of-town",
+   "phonetic": "",
+   "meaning": "1.城外的；郊野的 2.外地的；外來的"
+  },
+  {
+   "word": "smarts",
+   "phonetic": "/smɑːrts/",
+   "meaning": "(NAmE) (informal)智慧；聰明才智"
+  },
+  {
+   "word": "rudely",
+   "phonetic": "/ˈruːdli/",
+   "meaning": "1.粗魯地；無禮地 2.突然地；猛烈地；突如其來地"
+  },
+  {
+   "word": "canoeing",
+   "phonetic": "/kəˈnuːɪŋ/",
+   "meaning": "划獨木舟運動（或比賽）"
+  },
+  {
+   "word": "uninvited",
+   "phonetic": "/ˌʌnɪnˈvaɪtɪd/",
+   "meaning": "未經要求的；未獲邀請的；不速而至的"
+  },
+  {
+   "word": "store-bought",
+   "phonetic": "",
+   "meaning": "(NAmE)從商店買的（而非家裏做的）"
+  },
+  {
+   "word": "high-definition",
+   "phonetic": "",
+   "meaning": "(術語)高清晰度的；高分辨率的"
+  },
+  {
+   "word": "stalking",
+   "phonetic": "/ˈstɔːkɪŋ/",
+   "meaning": "跟踪罪"
+  },
+  {
+   "word": "florentine",
+   "phonetic": "/ˈflɔːrəntiːn/",
+   "meaning": "(食物)佛羅倫薩式的；（上桌時）放在菠菜上的 noun （一面有巧克力的）乾果餅乾"
+  },
+  {
+   "word": "escaped",
+   "phonetic": "/ɪˈskeɪpt/",
+   "meaning": "逃跑了的"
+  },
+  {
+   "word": "estrangement",
+   "phonetic": "/ɪˈstreɪndʒmənt/",
+   "meaning": "(formal)疏遠（的一段時間）；分居（期）"
+  },
+  {
+   "word": "muddled",
+   "phonetic": "/ˈmʌdld/",
+   "meaning": "(especially BrE)糊塗的；困惑的；混亂的"
+  },
+  {
+   "word": "shouting",
+   "phonetic": "/ˈʃaʊtɪŋ/",
+   "meaning": "（多人的）叫喊，叫嚷"
+  },
   {
    "word": "aardvark",
    "phonetic": "/ˈɑːrdvɑːrk/",
@@ -145,11 +1365,6 @@
    "meaning": "(BrE)[intransitive]abseil(down, off, etc. sth)繞繩下降（用繩纏繞着身體，雙腳蹬陡坡或峭壁自己放繩下滑）"
   },
   {
-   "word": "absently",
-   "phonetic": "/ˈæbsəntli/",
-   "meaning": "心不在焉地；出神地"
-  },
-  {
    "word": "absent-minded",
    "phonetic": "",
    "meaning": "健忘的；心不在焉的"
@@ -253,11 +1468,6 @@
    "word": "accoutrements",
    "phonetic": "/əˈkuːtrəmənts/",
    "meaning": "US also（某項活動所需的）裝備，配備"
-  },
-  {
-   "word": "accredited",
-   "phonetic": "/əˈkredɪtɪd/",
-   "meaning": "1.人 2.鑒定合格的；達到標準的"
   },
   {
    "word": "acculturate",
@@ -545,11 +1755,6 @@
    "meaning": "1.混合；摻和 2.摻入物"
   },
   {
-   "word": "adopted",
-   "phonetic": "/əˈdɑːptɪd/",
-   "meaning": "1.收養的；領養的 2.所選擇居住的；移居的"
-  },
-  {
    "word": "adopter",
    "phonetic": "/əˈdɑːptər/",
    "meaning": "1.收養者 2.（新技術）採用者"
@@ -568,11 +1773,6 @@
    "word": "adulteress",
    "phonetic": "/əˈdʌltərəs/",
    "meaning": "(formal)姦婦"
-  },
-  {
-   "word": "advancing",
-   "phonetic": "/ədˈvænsɪŋ/",
-   "meaning": "年事漸高"
   },
   {
    "word": "advantaged",
@@ -1105,11 +2305,6 @@
    "meaning": "(old use or humorous)（表示悲傷或遺憾）哎呀，唉"
   },
   {
-   "word": "alarmed",
-   "phonetic": "/əˈlɑːrmd/",
-   "meaning": "1.擔心；害怕 2.有警報裝置"
-  },
-  {
    "word": "alarmist",
    "phonetic": "/əˈlɑːrmɪst/",
    "meaning": "(disapproving)危言聳聽的；駭人的"
@@ -1243,11 +2438,6 @@
    "word": "all-encompassing",
    "phonetic": "",
    "meaning": "(formal)包羅萬象的；總括的"
-  },
-  {
-   "word": "all-important",
-   "phonetic": "",
-   "meaning": "極重要的"
   },
   {
    "word": "all-in",
@@ -1945,11 +3135,6 @@
    "meaning": "(信念或思想)人格化的；擬人化的"
   },
   {
-   "word": "anti-aircraft",
-   "phonetic": "",
-   "meaning": "防空的"
-  },
-  {
    "word": "antibacterial",
    "phonetic": "/ˌæntibækˈtɪriəl/",
    "meaning": "滅菌的；抗菌的"
@@ -2210,11 +3395,6 @@
    "meaning": "敷抹器；充填器"
   },
   {
-   "word": "applied",
-   "phonetic": "/əˈplaɪd/",
-   "meaning": "(尤指學科)應用的；實用的"
-  },
-  {
    "word": "apportion",
    "phonetic": "/əˈpɔːrʃn/",
    "meaning": "(formal)分配；分攤；分派"
@@ -2360,11 +3540,6 @@
    "meaning": "大公（舊時奧地利皇太子）"
   },
   {
-   "word": "arched",
-   "phonetic": "/ɑːrtʃt/",
-   "meaning": "拱形的；弧形的"
-  },
-  {
    "word": "arch-enemy",
    "phonetic": "",
    "meaning": "主要敵人；大敵；死敵"
@@ -2375,19 +3550,9 @@
    "meaning": "射箭術；射箭運動"
   },
   {
-   "word": "archetypal",
-   "phonetic": "/ˌɑːrkiˈtaɪpl/",
-   "meaning": "典型的"
-  },
-  {
    "word": "architectonic",
    "phonetic": "/ˌɑːrkɪtekˈtɑːnɪk/",
    "meaning": "(術語)建築（學）上的；建築師的"
-  },
-  {
-   "word": "architectural",
-   "phonetic": "/ˌɑːrkɪˈtektʃərəl/",
-   "meaning": "建築學的；建築方面的"
   },
   {
    "word": "architrave",
@@ -2908,11 +4073,6 @@
    "word": "attar",
    "phonetic": "/ˈætər/",
    "meaning": "（從玫瑰花瓣等中提取的）精油；玫瑰油"
-  },
-  {
-   "word": "attempted",
-   "phonetic": "/əˈtemptɪd/",
-   "meaning": "(犯罪等)未遂的"
   },
   {
    "word": "attender",
@@ -4480,11 +5640,6 @@
    "meaning": "(教宗)為（逝者）行宣福禮"
   },
   {
-   "word": "beating",
-   "phonetic": "/ˈbiːtɪŋ/",
-   "meaning": "1.狠打；揍；笞打 2.(informal)慘敗；嚴重受挫 3.有規律的敲打（聲）；有節奏的運動（聲）"
-  },
-  {
    "word": "beatitude",
    "phonetic": "/biˈætɪtuːd/",
    "meaning": "(《聖經》)八福，真福八端（耶穌的山中聖訓）"
@@ -4988,11 +6143,6 @@
    "word": "betterment",
    "phonetic": "/ˈbetərmənt/",
    "meaning": "(formal)改進；改善；改良"
-  },
-  {
-   "word": "betting",
-   "phonetic": "/ˈbetɪŋ/",
-   "meaning": "打賭；賭錢"
   },
   {
    "word": "betwixt",
@@ -5605,11 +6755,6 @@
    "meaning": "帳篷；臨時遮蔽處 verb 睡帳篷；睡在臨時遮蔽處"
   },
   {
-   "word": "biz",
-   "phonetic": "/bɪz/",
-   "meaning": "(informal)生意；（尤指）娛樂業"
-  },
-  {
    "word": "blab",
    "phonetic": "/blæb/",
    "meaning": "(informal)blab(to sb) (about sth)|blab(sth) (to sb)（向某人）透露秘密，告密"
@@ -6128,16 +7273,6 @@
    "word": "blunderbuss",
    "phonetic": "/ˈblʌndərbʌs/",
    "meaning": "（老式）大口徑槍；喇叭槍"
-  },
-  {
-   "word": "bluntly",
-   "phonetic": "/ˈblʌntli/",
-   "meaning": "直言地；單刀直入地"
-  },
-  {
-   "word": "blurred",
-   "phonetic": "/blɜːrd/",
-   "meaning": "1.模糊不清的 2.記不清的 3.難以區分的；模稜兩可的"
   },
   {
    "word": "blusher",
@@ -6733,11 +7868,6 @@
    "word": "bosun",
    "phonetic": "/ˈboʊsn/",
    "meaning": "水手長"
-  },
-  {
-   "word": "bot",
-   "phonetic": "/bɑːt/",
-   "meaning": "(計)自動程序；機器人程式"
   },
   {
    "word": "botheration",
@@ -7365,11 +8495,6 @@
    "meaning": "(informal)1.兄（或弟） 2.(especially NAmE)（對男子的友好稱呼）哥們兒，夥計"
   },
   {
-   "word": "broadband",
-   "phonetic": "/ˈbrɔːdbænd/",
-   "meaning": "1.(術語)寬頻帶；寬波段 2.（互聯網的）寬帶連接，寬頻連接"
-  },
-  {
    "word": "broad-brush",
    "phonetic": "",
    "meaning": "粗線條的；不考慮細節的"
@@ -7540,11 +8665,6 @@
    "meaning": "(informal)好勇鬥狠的彪形大漢"
   },
   {
-   "word": "bruising",
-   "phonetic": "/ˈbruːzɪŋ/",
-   "meaning": "艱難討厭的；繁重麻煩的"
-  },
-  {
    "word": "bruschetta",
    "phonetic": "/bruˈsketə/",
    "meaning": "(from Italian)（意大利）番茄塗油麫包片"
@@ -7688,11 +8808,6 @@
    "word": "bulgar",
    "phonetic": "/ˈbʌlɡər/",
    "meaning": "乾小麥，蒸穀麥（將小麥煮後烘乾）"
-  },
-  {
-   "word": "bulging",
-   "phonetic": "/ˈbʌldʒɪŋ/",
-   "meaning": "鼓起的；隆起的"
   },
   {
    "word": "bulldog",
@@ -7893,11 +9008,6 @@
    "word": "burnous",
    "phonetic": "/bɜːrˈnuːs/",
    "meaning": "布爾努斯袍（阿拉伯人穿的帶風帽長外衣）"
-  },
-  {
-   "word": "burnt",
-   "phonetic": "/bɜːrnt/",
-   "meaning": "燒壞的；燒傷的；燙傷的；灼傷的"
   },
   {
    "word": "burnt-out",
@@ -8450,11 +9560,6 @@
    "meaning": "(術語)花萼"
   },
   {
-   "word": "cam",
-   "phonetic": "/kæm/",
-   "meaning": "凸輪（把圓周運動轉變為上下或前後運動的機械部件）"
-  },
-  {
    "word": "camber",
    "phonetic": "/ˈkæmbər/",
    "meaning": "拱曲度（路面中間微拱的曲面）"
@@ -8608,11 +9713,6 @@
    "word": "cannula",
    "phonetic": "/ˈkænjʊlə/",
    "meaning": "(醫)（輸藥等的）套管，插管"
-  },
-  {
-   "word": "canoeing",
-   "phonetic": "/kəˈnuːɪŋ/",
-   "meaning": "划獨木舟運動（或比賽）"
   },
   {
    "word": "canoeist",
@@ -9660,11 +10760,6 @@
    "meaning": "可能變化的；易變的；常變的"
   },
   {
-   "word": "changed",
-   "phonetic": "/tʃeɪndʒd/",
-   "meaning": "(人或情況)與以前截然不同的；變化大的；已變的"
-  },
-  {
    "word": "changeless",
    "phonetic": "/ˈtʃeɪndʒləs/",
    "meaning": "(formal)永遠不變的；永恆的"
@@ -9883,11 +10978,6 @@
    "word": "cheapen",
    "phonetic": "/ˈtʃiːpən/",
    "meaning": "1.使喪失威信；使貶低 2.降低…的價格 3.使貶值；貶低"
-  },
-  {
-   "word": "cheaply",
-   "phonetic": "/ˈtʃiːpli/",
-   "meaning": "便宜地；廉價地；低廉地"
   },
   {
    "word": "cheapo",
@@ -10175,11 +11265,6 @@
    "meaning": "1.辣椒（經常在乾後製成辣椒粉） 2.=chilli con carne"
   },
   {
-   "word": "chilling",
-   "phonetic": "/ˈtʃɪlɪŋ/",
-   "meaning": "（常與殘暴有關）令人恐懼的，令人害怕的"
-  },
-  {
    "word": "chillout",
    "phonetic": "/ˈtʃɪlaʊt/",
    "meaning": "舒放音樂（節奏平緩、讓人放鬆的電子音樂）"
@@ -10298,11 +11383,6 @@
    "word": "chivalry",
    "phonetic": "/ˈʃɪvəlri/",
    "meaning": "1.（尤指男人對女人的）彬彬有禮，殷勤，體貼 2.（中世紀的）騎士制度"
-  },
-  {
-   "word": "chives",
-   "phonetic": "/tʃaɪvz/",
-   "meaning": "細香葱，四季葱（長細葉，開紫色花，味似洋葱）"
   },
   {
    "word": "chivvy",
@@ -10950,11 +12030,6 @@
    "meaning": "(BrE)認錯；（爭論中）改變立場，讓步"
   },
   {
-   "word": "climbing",
-   "phonetic": "/ˈklaɪmɪŋ/",
-   "meaning": "登山運動；攀岩活動"
-  },
-  {
    "word": "clime",
    "phonetic": "/klaɪm/",
    "meaning": "(literary or humorous)（具有某種氣候的）地區，地帶；氣候帶"
@@ -11115,11 +12190,6 @@
    "meaning": "(formal)服裝製造（或銷售）商；衣料商"
   },
   {
-   "word": "clove",
-   "phonetic": "/kloʊv/",
-   "meaning": "1.丁香（熱帶樹木的乾花，形似小釘子，用於烹飪調味，尤用作甜食的香料） 2.蒜瓣"
-  },
-  {
    "word": "cloverleaf",
    "phonetic": "/ˈkloʊvərliːf/",
    "meaning": "(NAmE)四葉苜蓿葉形立交路口；葉形交流道"
@@ -11170,16 +12240,6 @@
    "meaning": "(informal) (especially NAmE)笨重的"
   },
   {
-   "word": "cluttered",
-   "phonetic": "/ˈklʌtərd/",
-   "meaning": "(figurative)cluttered(up) (with sb/sth)雜亂的；凌亂的；擠滿的"
-  },
-  {
-   "word": "coaching",
-   "phonetic": "/ˈkoʊtʃɪŋ/",
-   "meaning": "1.（體育運動、工作或技能的）訓練，培訓，指導 2.(especially BrE)（某科目上的）輔導"
-  },
-  {
    "word": "coachload",
    "phonetic": "/ˈkoʊtʃloʊd/",
    "meaning": "(BrE)（乘同一長途客車旅遊的）團體旅客"
@@ -11208,11 +12268,6 @@
    "word": "coalfield",
    "phonetic": "/ˈkoʊlfiːld/",
    "meaning": "煤田"
-  },
-  {
-   "word": "coal-fired",
-   "phonetic": "",
-   "meaning": "用煤作燃料的；燒煤的"
   },
   {
    "word": "coalhouse",
@@ -11388,11 +12443,6 @@
    "word": "cocoyam",
    "phonetic": "/ˈkoʊkoʊjæm/",
    "meaning": "(WAfrE)芋頭"
-  },
-  {
-   "word": "coded",
-   "phonetic": "/ˈkoʊdɪd/",
-   "meaning": "1.密碼的；暗碼的；編碼的 2.間接表達的"
   },
   {
    "word": "codeine",
@@ -11700,11 +12750,6 @@
    "meaning": "(old-fashioned)果仁糖果；蜜餞"
   },
   {
-   "word": "comforting",
-   "phonetic": "/ˈkʌmfərtɪŋ/",
-   "meaning": "令人安慰的"
-  },
-  {
    "word": "comfortless",
    "phonetic": "/ˈkʌmfərtləs/",
    "meaning": "(formal)沒有舒適設施的"
@@ -11910,19 +12955,9 @@
    "meaning": "有失體面的；不宜泄露的"
   },
   {
-   "word": "computational",
-   "phonetic": "/ˌkɑːmpjuˈteɪʃənl/",
-   "meaning": "使用計算機的；與計算機有關的"
-  },
-  {
    "word": "computer-literate",
    "phonetic": "",
    "meaning": "能熟練使用計算機的；會用電腦的"
-  },
-  {
-   "word": "computing",
-   "phonetic": "/kəmˈpjuːtɪŋ/",
-   "meaning": "計算；計算機技術；信息處理技術"
   },
   {
    "word": "conation",
@@ -12205,11 +13240,6 @@
    "meaning": "1.七葉樹果 2.康克戲（兒童遊戲，雙方用繫在繩上的七葉果輪流互擊，以擊破對方的七葉果）"
   },
   {
-   "word": "connectedness",
-   "phonetic": "/kəˈnektɪdnəs/",
-   "meaning": "connectedness(to/with sb/sth)相關感；歸屬感"
-  },
-  {
    "word": "connective",
    "phonetic": "/kəˈnektɪv/",
    "meaning": "(醫)連接的；聯結的 noun (語法)連接詞；關聯詞"
@@ -12430,11 +13460,6 @@
    "meaning": "1.（用於句首或從句的開頭以引出對比）相反，在另一方面 2.以相反的方式"
   },
   {
-   "word": "contrasting",
-   "phonetic": "/kənˈtræstɪŋ/",
-   "meaning": "（在式樣、顏色或態度上）極不相同的，差異大的"
-  },
-  {
    "word": "contrastive",
    "phonetic": "/kənˈtræstɪv/",
    "meaning": "(語言)作對比研究的"
@@ -12585,19 +13610,9 @@
    "meaning": "(old-fashioned, taboo)苦力（含冒犯意，指東方國家裏沒有專門技能或未受過訓練的工人）"
   },
   {
-   "word": "coolly",
-   "phonetic": "/ˈkuːlli/",
-   "meaning": "1.冷漠地；冷淡地 2.冷靜地；沉着地"
-  },
-  {
    "word": "coon",
    "phonetic": "/kuːn/",
    "meaning": "(taboo, slang)（冒犯語，指黑人）黑鬼"
-  },
-  {
-   "word": "co-op",
-   "phonetic": "",
-   "meaning": "(informal)合作商店；合作社；合作性商業機構"
   },
   {
    "word": "cooper",
@@ -12605,19 +13620,9 @@
    "meaning": "製桶工人；箍桶匠"
   },
   {
-   "word": "co-opt",
-   "phonetic": "",
-   "meaning": "1.（經所有成員同意）增選（某人）為委員 2.拉攏；籠絡"
-  },
-  {
    "word": "coot",
    "phonetic": "/kuːt/",
    "meaning": "1.蹼雞（黑色水鳥，額和喙為白色） 2.(NAmE) (informal)笨蛋；傻瓜"
-  },
-  {
-   "word": "coping",
-   "phonetic": "/ˈkoʊpɪŋ/",
-   "meaning": "(建)牆壓頂"
   },
   {
    "word": "cop-out",
@@ -13140,11 +14145,6 @@
    "meaning": "(化)(化學鍵)共價的"
   },
   {
-   "word": "coveralls",
-   "phonetic": "/ˈkʌvərɔːlz/",
-   "meaning": "(NAmE)工裝連衣褲；工裝服"
-  },
-  {
    "word": "coverlet",
    "phonetic": "/ˈkʌvərlət/",
    "meaning": "(old-fashioned)牀罩"
@@ -13395,11 +14395,6 @@
    "meaning": "蔓生植物；攀緣植物"
   },
   {
-   "word": "creeping",
-   "phonetic": "/ˈkriːpɪŋ/",
-   "meaning": "(壞事)（不知不覺地）逐漸發生的，緩慢行進的"
-  },
-  {
    "word": "creepy-crawly",
    "phonetic": "/ˌkriːpi ˈkrɔːli/",
    "meaning": "(informal)（使人厭惡的）爬蟲，蠕蟲"
@@ -13478,11 +14473,6 @@
    "word": "crikey",
    "phonetic": "/ˈkraɪki/",
    "meaning": "(BrE) (old-fashioned, informal)（驚訝或惱怒時說）哎呀，噯喲，唷"
-  },
-  {
-   "word": "criminally",
-   "phonetic": "/ˈkrɪmɪnəli/",
-   "meaning": "刑法上；刑事上；在犯罪方面"
   },
   {
    "word": "criminology",
@@ -13580,11 +14570,6 @@
    "meaning": "(BrE)（英國上議院的）無黨派議員，中立議員"
   },
   {
-   "word": "cross-border",
-   "phonetic": "",
-   "meaning": "跨越國境的"
-  },
-  {
    "word": "crossbow",
    "phonetic": "/ˈkrɔːsboʊ/",
    "meaning": "弩；弩弓；十字弓"
@@ -13645,11 +14630,6 @@
    "meaning": "(醫)交叉感染"
   },
   {
-   "word": "cross-legged",
-   "phonetic": "/ˌkrɔːs ˈleɡd/",
-   "meaning": "盤腿"
-  },
-  {
    "word": "crosspiece",
    "phonetic": "/ˈkrɔːspiːs/",
    "meaning": "(術語)橫檔；橫杆"
@@ -13683,11 +14663,6 @@
    "word": "cross-selling",
    "phonetic": "",
    "meaning": "(商)交叉銷售（向現有顧客推銷另一產品）"
-  },
-  {
-   "word": "crosstalk",
-   "phonetic": "/ˈkrɔːstɔːk/",
-   "meaning": "(術語)（通訊系統的）串話，串擾"
   },
   {
    "word": "crosstown",
@@ -14120,11 +15095,6 @@
    "meaning": "1.厚肉片；（尤指羊或豬）肉排 2.(構成複合詞)（肉、魚肉、蔬菜等剁碎後外裹麪包屑做成的）炸餅"
   },
   {
-   "word": "cut-off",
-   "phonetic": "",
-   "meaning": "1.截止點；界限 2.剪短的褲子 adjective (褲子)褲腿剪短的"
-  },
-  {
    "word": "cut-out",
    "phonetic": "",
    "meaning": "1.（從紙、木等）剪下的圖樣 2.（電流的）斷流器，保險裝置"
@@ -14138,11 +15108,6 @@
    "word": "cut-throat",
    "phonetic": "",
    "meaning": "(活動)競爭激烈的；殘酷無情的；不公的"
-  },
-  {
-   "word": "cutting",
-   "phonetic": "/ˈkʌtɪŋ/",
-   "meaning": "1.(both BrE)剪報；雜誌剪輯資料 2.插枝，插條（從植物上截取的一段供扦插的枝條） 3.(BrE)（為修道路、鐵路或運河從高地開鑿出來的）狹窄通道，路塹，河牀 adjective 1.尖刻的；刻薄的；挖苦人的 2.(風)凜冽的；刺骨的"
   },
   {
    "word": "cuttlefish",
@@ -14390,11 +15355,6 @@
    "meaning": "1.（空手道或柔道的）段 2.入段的空手道（或柔道）選手"
   },
   {
-   "word": "dancing",
-   "phonetic": "/ˈdænsɪŋ/",
-   "meaning": "跳舞；舞蹈"
-  },
-  {
    "word": "dandified",
    "phonetic": "/ˈdændɪfaɪd/",
    "meaning": "(old-fashioned, disapproving)(男子)講究衣着和外表的；好打扮的；油頭粉面的"
@@ -14423,11 +15383,6 @@
    "word": "darkling",
    "phonetic": "/ˈdɑːrklɪŋ/",
    "meaning": "(literary)漸暗的；昏暗的；黑暗的"
-  },
-  {
-   "word": "darkly",
-   "phonetic": "/ˈdɑːrkli/",
-   "meaning": "1.威脅地；險惡地；負面地 2.漆黑地；烏黑地"
   },
   {
    "word": "darmstadtium",
@@ -14650,11 +15605,6 @@
    "meaning": "1.明顯的；明白無誤的；確實無疑的 2.(especially BrE)堅定的；堅決的；果斷的"
   },
   {
-   "word": "decidedly",
-   "phonetic": "/dɪˈsaɪdɪdli/",
-   "meaning": "1.(與形容詞或副詞連用)確實；肯定；顯然 2.(BrE)果斷地；堅決地；堅定地"
-  },
-  {
    "word": "decider",
    "phonetic": "/dɪˈsaɪdər/",
    "meaning": "決勝局；決賽"
@@ -14698,11 +15648,6 @@
    "word": "declamatory",
    "phonetic": "/dɪˈklæmətɔːri/",
    "meaning": "(formal)慷慨陳辭的；雄辯演說的"
-  },
-  {
-   "word": "declared",
-   "phonetic": "/dɪˈklerd/",
-   "meaning": "公開宣佈（或聲明、表態）的"
   },
   {
    "word": "declension",
@@ -14988,11 +15933,6 @@
    "word": "demarcation",
    "phonetic": "/ˌdiːmɑːrˈkeɪʃn/",
    "meaning": "（工種、人群、土地等的）劃分，區分，界線"
-  },
-  {
-   "word": "demeaning",
-   "phonetic": "/dɪˈmiːnɪŋ/",
-   "meaning": "降低身分的；失去尊嚴的"
   },
   {
    "word": "demerge",
@@ -15355,11 +16295,6 @@
    "meaning": "(化)氘，重氫（氫的同位素）"
   },
   {
-   "word": "developing",
-   "phonetic": "/dɪˈveləpɪŋ/",
-   "meaning": "(國家、社會等)發展中的"
-  },
-  {
    "word": "devilish",
    "phonetic": "/ˈdevəlɪʃ/",
    "meaning": "1.殘忍邪惡的；惡毒的 2.魔鬼似的，惡魔似的（但具吸引力）"
@@ -15630,11 +16565,6 @@
    "meaning": "(醫)洋地黃（一種強心劑）；強心苷"
   },
   {
-   "word": "digitize",
-   "phonetic": "/ˈdɪdʒɪtaɪz/",
-   "meaning": "digitize sth（使數據）數字化，數位化"
-  },
-  {
    "word": "diglossia",
    "phonetic": "/daɪˈɡlɔːsiə/",
    "meaning": "(語言)雙語現象，雙變體現象（兩種語言或一種語言的兩種變體並存於一個語言集體中）"
@@ -15885,11 +16815,6 @@
    "meaning": "(formal)（對不道德的人或事）反對，不認可"
   },
   {
-   "word": "disapproving",
-   "phonetic": "/ˌdɪsəˈpruːvɪŋ/",
-   "meaning": "不贊成的；表示反對的；不以為然的"
-  },
-  {
    "word": "disassembler",
    "phonetic": "/ˌdɪsəˈsemblər/",
    "meaning": "(計)反彙編程序；反組譯器"
@@ -15933,11 +16858,6 @@
    "word": "discontented",
    "phonetic": "/ˌdɪskənˈtentɪd/",
    "meaning": "discontented(with sth)不滿的；不滿足的"
-  },
-  {
-   "word": "discontinuity",
-   "phonetic": "/ˌdɪsˌkɑːntəˈnuːəti/",
-   "meaning": "1.不連貫；不連續 2.中斷；間斷；停頓"
   },
   {
    "word": "discontinuous",
@@ -16325,11 +17245,6 @@
    "meaning": "(財)轉讓股份；撤銷投資"
   },
   {
-   "word": "divider",
-   "phonetic": "/dɪˈvaɪdər/",
-   "meaning": "1.分隔物；分開物 2.分線規；兩腳規"
-  },
-  {
    "word": "divisible",
    "phonetic": "/dɪˈvɪzəbl/",
    "meaning": "[not before noun]divisible(by sth)可除；可除盡"
@@ -16338,11 +17253,6 @@
    "word": "divisor",
    "phonetic": "/dɪˈvaɪzər/",
    "meaning": "(數)除數；除子"
-  },
-  {
-   "word": "divorced",
-   "phonetic": "/dɪˈvɔːrst/",
-   "meaning": "1.離婚的；離異的 2.divorced from sth(formal)表現得不受影響的；脫離…的"
   },
   {
    "word": "divorcee",
@@ -16358,11 +17268,6 @@
    "word": "djinn",
    "phonetic": "/dʒɪn/",
    "meaning": "（阿拉伯神話）神怪，神靈，精靈"
-  },
-  {
-   "word": "doc",
-   "phonetic": "/dɑːk/",
-   "meaning": "(informal) (especially NAmE)（稱呼或談論時用語）醫生，大夫"
   },
   {
    "word": "docent",
@@ -16740,11 +17645,6 @@
    "meaning": "(BrE)（供流浪者投宿的）廉價客店"
   },
   {
-   "word": "dot-com",
-   "phonetic": "/ˌdɑːt ˈkɑːm/",
-   "meaning": "（尤指網址末尾為 .com 的）網絡公司，網路公司"
-  },
-  {
    "word": "dotty",
    "phonetic": "/ˈdɑːti/",
    "meaning": "(old-fashioned) (BrE informal)1.瘋瘋癲癲的；半痴的；低能的 2.迷戀；充滿熱情；着迷"
@@ -17023,11 +17923,6 @@
    "word": "dragster",
    "phonetic": "/ˈdræɡstər/",
    "meaning": "參加短程高速賽的賽車"
-  },
-  {
-   "word": "drained",
-   "phonetic": "/dreɪnd/",
-   "meaning": "精疲力竭；無精打采"
   },
   {
    "word": "drainpipe",
@@ -17353,11 +18248,6 @@
    "word": "drumlin",
    "phonetic": "/ˈdrʌmlɪn/",
    "meaning": "(地)（冰川形成的）鼓丘"
-  },
-  {
-   "word": "drumming",
-   "phonetic": "/ˈdrʌmɪŋ/",
-   "meaning": "1.擊鼓；鼓聲 2.擊鼓似的咚咚聲；似擊鼓一樣連續不停的感覺"
   },
   {
    "word": "drumstick",
@@ -17860,11 +18750,6 @@
    "meaning": "(廚房)可供用餐的"
   },
   {
-   "word": "eating",
-   "phonetic": "/ˈiːtɪŋ/",
-   "meaning": "吃；飲食"
-  },
-  {
    "word": "eats",
    "phonetic": "/iːts/",
    "meaning": "(informal)（尤指聚會上的）小吃"
@@ -18300,11 +19185,6 @@
    "meaning": "(術語)橢圓"
   },
   {
-   "word": "elongated",
-   "phonetic": "/ɪˈlɔːŋɡeɪtɪd/",
-   "meaning": "細長的；拉得又細又長的"
-  },
-  {
    "word": "elope",
    "phonetic": "/ɪˈloʊp/",
    "meaning": "[intransitive]elope(with sb)私奔"
@@ -18313,11 +19193,6 @@
    "word": "elver",
    "phonetic": "/ˈelvər/",
    "meaning": "幼鰻"
-  },
-  {
-   "word": "embattled",
-   "phonetic": "/ɪmˈbætld/",
-   "meaning": "1.被困擾的；處境艱難的；危機四伏的 2.(軍隊、城市等)捲入戰爭的；被敵人包圍的"
   },
   {
    "word": "embolism",
@@ -18423,11 +19298,6 @@
    "word": "empties",
    "phonetic": "/ˈemptiz/",
    "meaning": "空瓶；空玻璃杯"
-  },
-  {
-   "word": "empty-handed",
-   "phonetic": "",
-   "meaning": "一無所獲；空手"
   },
   {
    "word": "empty-headed",
@@ -18620,16 +19490,6 @@
    "meaning": "1.擁抱；摟抱 2.包起；圍住；裹住"
   },
   {
-   "word": "enforced",
-   "phonetic": "/ɪnˈfɔːrst/",
-   "meaning": "強迫的；強制性的"
-  },
-  {
-   "word": "enforcer",
-   "phonetic": "/ɪnˈfɔːrsər/",
-   "meaning": "實施者；強制執行者"
-  },
-  {
    "word": "enfranchise",
    "phonetic": "/ɪnˈfræntʃaɪz/",
    "meaning": "(formal)enfranchise sb給（某人）選舉權"
@@ -18753,11 +19613,6 @@
    "word": "entropy",
    "phonetic": "/ˈentrəpi/",
    "meaning": "1.(術語)無序狀態測量法 2.(物)熵（系統或過程中不能用來做功的能量的度量） 3.無序狀態"
-  },
-  {
-   "word": "entry-level",
-   "phonetic": "",
-   "meaning": "1.(產品)適合初級用戶的；入門級的 2.(工作)（公司中）最初級的"
   },
   {
    "word": "enuresis",
@@ -18980,11 +19835,6 @@
    "meaning": "（常指危險或愚蠢的）冒險行為，惡作劇"
   },
   {
-   "word": "escaped",
-   "phonetic": "/ɪˈskeɪpt/",
-   "meaning": "逃跑了的"
-  },
-  {
    "word": "escapee",
    "phonetic": "/ɪˌskeɪˈpiː/",
    "meaning": "(formal)逃亡者；脫逃的動物；（尤指）逃犯"
@@ -19043,11 +19893,6 @@
    "word": "ester",
    "phonetic": "/ˈestər/",
    "meaning": "(化)酯（由有機酸和乙醇形成的芳香物質）"
-  },
-  {
-   "word": "estrangement",
-   "phonetic": "/ɪˈstreɪndʒmənt/",
-   "meaning": "(formal)疏遠（的一段時間）；分居（期）"
   },
   {
    "word": "estrus",
@@ -19225,11 +20070,6 @@
    "meaning": "(人或動物)易激動的；易興奮的"
   },
   {
-   "word": "exclusionary",
-   "phonetic": "/ɪkˈskluːʒənri/",
-   "meaning": "(formal)排斥（性）的；排除在外的"
-  },
-  {
    "word": "excommunicate",
    "phonetic": "/ˌekskəˈmjuːnɪkeɪt/",
    "meaning": "excommunicate sb (for sth)絕罰（開除教籍）（尤指天主教）"
@@ -19298,11 +20138,6 @@
    "word": "exfoliate",
    "phonetic": "/eksˈfoʊlieɪt/",
    "meaning": "exfoliate(sth)使表皮剝脫"
-  },
-  {
-   "word": "exhausting",
-   "phonetic": "/ɪɡˈzɔːstɪŋ/",
-   "meaning": "使人疲憊不堪的；令人筋疲力盡的"
   },
   {
    "word": "exhibitionism",
@@ -19388,11 +20223,6 @@
    "word": "expansionism",
    "phonetic": "/ɪkˈspænʃənɪzəm/",
    "meaning": "(sometimes disapproving)擴張主義；擴張政策"
-  },
-  {
-   "word": "expected",
-   "phonetic": "/ɪkˈspektɪd/",
-   "meaning": "預料的；預期的"
   },
   {
    "word": "expectorant",
@@ -19695,11 +20525,6 @@
    "meaning": "(SAfrE)推筒子，押寶（一種對所選點數押錢賭博的遊戲）"
   },
   {
-   "word": "failed",
-   "phonetic": "/feɪld/",
-   "meaning": "失敗的；不成功的"
-  },
-  {
    "word": "fain",
    "phonetic": "/feɪn/",
    "meaning": "(old use)欣然；樂意地"
@@ -19745,11 +20570,6 @@
    "meaning": "童話的；童話式的"
   },
   {
-   "word": "faithfully",
-   "phonetic": "/ˈfeɪθfəli/",
-   "meaning": "1.準確地；如實地；仔細地 2.忠實地；忠誠地"
-  },
-  {
    "word": "faithless",
    "phonetic": "/ˈfeɪθləs/",
    "meaning": "(formal)不忠誠的；不可信任的；不可信賴的"
@@ -19790,11 +20610,6 @@
    "meaning": "應變計劃；退路"
   },
   {
-   "word": "fallen",
-   "phonetic": "/ˈfɔːlən/",
-   "meaning": "1.倒下的；落下的；落在地上的 2.(formal)陣亡的"
-  },
-  {
    "word": "falling-out",
    "phonetic": "",
    "meaning": "(informal)失和；鬧翻"
@@ -19823,11 +20638,6 @@
    "word": "falsity",
    "phonetic": "/ˈfɔːlsəti/",
    "meaning": "虛假；不真實；錯誤"
-  },
-  {
-   "word": "famed",
-   "phonetic": "/feɪmd/",
-   "meaning": "famed(for sth)著名的"
   },
   {
    "word": "familiarly",
@@ -20098,11 +20908,6 @@
    "word": "feeler",
    "phonetic": "/ˈfiːlər/",
    "meaning": "（某些昆蟲和貝殼動物的）觸角，觸鬚"
-  },
-  {
-   "word": "feel-good",
-   "phonetic": "",
-   "meaning": "使人愉悅的"
   },
   {
    "word": "feelingly",
@@ -20690,11 +21495,6 @@
    "meaning": "英式牆手球（用手或球拍對牆擊球，流行於英國公學）"
   },
   {
-   "word": "five-star",
-   "phonetic": "",
-   "meaning": "1.五星級的（表示最優質） 2.(NAmE)（軍階）五星級的"
-  },
-  {
    "word": "fixated",
    "phonetic": "/fɪkˈseɪtɪd/",
    "meaning": "fixated(on sb/sth)（對…）異常依戀，固戀"
@@ -21108,11 +21908,6 @@
    "word": "flophouse",
    "phonetic": "/ˈflɑːphaʊs/",
    "meaning": "(NAmE)（供流浪者投宿的）廉價客店"
-  },
-  {
-   "word": "florentine",
-   "phonetic": "/ˈflɔːrəntiːn/",
-   "meaning": "(食物)佛羅倫薩式的；（上桌時）放在菠菜上的 noun （一面有巧克力的）乾果餅乾"
   },
   {
    "word": "floret",
@@ -21790,11 +22585,6 @@
    "meaning": "(術語)(發電機或機動車)四衝程的"
   },
   {
-   "word": "fourth",
-   "phonetic": "/fɔːrθ/",
-   "meaning": "ordinal number 第四 noun (especially NAmE)=quarter"
-  },
-  {
    "word": "fourthly",
    "phonetic": "/ˈfɔːrθli/",
    "meaning": "（用於列舉）第四"
@@ -22008,11 +22798,6 @@
    "word": "freesia",
    "phonetic": "/ˈfriːʒə/",
    "meaning": "小蒼蘭（花有香味，呈黃、粉紅、白或紫色）"
-  },
-  {
-   "word": "free-standing",
-   "phonetic": "",
-   "meaning": "1.自力支撑的；無依附的；獨立的 2.單獨的；獨立的"
   },
   {
    "word": "freethinker",
@@ -22400,11 +23185,6 @@
    "meaning": "功能主義，實用建築主義（主張建築或物品設計首要的是用途而不是外觀）"
   },
   {
-   "word": "functionality",
-   "phonetic": "/ˌfʌŋkʃəˈnæləti/",
-   "meaning": "1.實用；符合實際 2.設計目的；設計功能 3.(計)（計算機或電子系統的）功能"
-  },
-  {
    "word": "functor",
    "phonetic": "/ˈfʌŋktər/",
    "meaning": "1.(數)函子 2.(語法)=function word"
@@ -22473,11 +23253,6 @@
    "word": "furlough",
    "phonetic": "/ˈfɜːrloʊ/",
    "meaning": "1.（尤指在國外服役士兵的）休假（許可） 2.(NAmE)（犯人的）准假 3.(NAmE)（通常因發不出工資而給的）准假"
-  },
-  {
-   "word": "furnished",
-   "phonetic": "/ˈfɜːrnɪʃt/",
-   "meaning": "(房屋、房間等)配備傢具的"
   },
   {
    "word": "furore",
@@ -22633,11 +23408,6 @@
    "word": "gaiter",
    "phonetic": "/ˈɡeɪtər/",
    "meaning": "綁腿，護腿（舊時為男士所穿，現主要為徒步者或登山者所穿）"
-  },
-  {
-   "word": "gal",
-   "phonetic": "/ɡæl/",
-   "meaning": "(old-fashioned, informal) (especially NAmE)女孩；姑娘；女子"
   },
   {
    "word": "galah",
@@ -23665,11 +24435,6 @@
    "meaning": "(解)聲門"
   },
   {
-   "word": "gloved",
-   "phonetic": "/ɡlʌvd/",
-   "meaning": "(手)戴着手套的"
-  },
-  {
    "word": "glowstick",
    "phonetic": "/ˈɡloʊstɪk/",
    "meaning": "熒光棒"
@@ -24000,11 +24765,6 @@
    "meaning": "1.(猶太傳說)有生命的泥人 2.機器人"
   },
   {
-   "word": "golfing",
-   "phonetic": "/ˈɡɑːlfɪŋ/",
-   "meaning": "打高爾夫球的；與高爾夫球有關的"
-  },
-  {
    "word": "golliwog",
    "phonetic": "/ˈɡɑːliwɑːɡ/",
    "meaning": "黑臉短髮布娃娃（現在常被認為會冒犯黑人）"
@@ -24233,11 +24993,6 @@
    "word": "governess",
    "phonetic": "/ˈɡʌvərnəs/",
    "meaning": "（尤指舊時的）家庭女教師"
-  },
-  {
-   "word": "governing",
-   "phonetic": "/ˈɡʌvərnɪŋ/",
-   "meaning": "統治的；控制的；管理的；治理的"
   },
   {
    "word": "gowned",
@@ -24695,11 +25450,6 @@
    "meaning": "(formal)groundswell(of sth)（群體情緒的）迅速高漲"
   },
   {
-   "word": "grouping",
-   "phonetic": "/ˈɡruːpɪŋ/",
-   "meaning": "1.小集團；小團體；小圈子 2.分組；歸類"
-  },
-  {
    "word": "groupware",
    "phonetic": "/ˈɡruːpwer/",
    "meaning": "(計)群件，協同件，組件，小組軟體（協調網絡小組工作的軟件平台）"
@@ -24713,16 +25463,6 @@
    "word": "growbag",
    "phonetic": "/ˈɡroʊbæɡ/",
    "meaning": "栽培袋，植物生長袋（盛滿泥土的大塑料袋）"
-  },
-  {
-   "word": "grower",
-   "phonetic": "/ˈɡroʊər/",
-   "meaning": "1.栽培者；種植商；種植公司 2.（以…方式）生長的植物"
-  },
-  {
-   "word": "growing",
-   "phonetic": "/ˈɡroʊɪŋ/",
-   "meaning": "增加的；增長的；增強的"
   },
   {
    "word": "groyne",
@@ -24828,11 +25568,6 @@
    "word": "guff",
    "phonetic": "/ɡʌf/",
    "meaning": "(informal)胡思亂想；胡說八道；愚蠢的想法；蠢話"
-  },
-  {
-   "word": "guiding",
-   "phonetic": "/ˈɡaɪdɪŋ/",
-   "meaning": "給予指導的；有影響的"
   },
   {
    "word": "guilder",
@@ -25563,11 +26298,6 @@
    "word": "handjob",
    "phonetic": "/ˈhænddʒɑːb/",
    "meaning": "(taboo, slang)（對男性的）手淫"
-  },
-  {
-   "word": "handling",
-   "phonetic": "/ˈhændlɪŋ/",
-   "meaning": "1.（對形勢、人、動物等的）處理，對付，對待 2.組織；控制；管理 3.（手的）觸摸，觸摸感覺，握，拿 4.（訂貨、送貨、訂票等的）費用，手續費 5.（車輛的）駕駛，操縱 6.(formal)運輸；運費"
   },
   {
    "word": "handmaiden",
@@ -26720,11 +27450,6 @@
    "meaning": "1.極好的；高級的 2.上流社會的"
   },
   {
-   "word": "high-definition",
-   "phonetic": "",
-   "meaning": "(術語)高清晰度的；高分辨率的"
-  },
-  {
    "word": "higher",
    "phonetic": "/ˈhaɪər/",
    "meaning": "高等級的；級別較高的；較重要的"
@@ -26748,11 +27473,6 @@
    "word": "high-flyer",
    "phonetic": "",
    "meaning": "有抱負有能力的人；有能耐的人"
-  },
-  {
-   "word": "high-flying",
-   "phonetic": "",
-   "meaning": "1.十分成功的 2.在高空飛行的"
   },
   {
    "word": "high-grade",
@@ -26793,16 +27513,6 @@
    "word": "high-octane",
    "phonetic": "",
    "meaning": "1.(發動機燃料)優質的；高辛烷值的 2.(informal)充滿活力的；強有力的"
-  },
-  {
-   "word": "high-priced",
-   "phonetic": "",
-   "meaning": "昂貴的；高價的"
-  },
-  {
-   "word": "high-resolution",
-   "phonetic": "",
-   "meaning": "(照片、計算機或電視屏幕的圖像)高清晰度的；高分辨率的"
   },
   {
    "word": "high-security",
@@ -26958,11 +27668,6 @@
    "word": "hiya",
    "phonetic": "/ˈhaɪjə/",
    "meaning": "（非正式招呼語）嗨，你好"
-  },
-  {
-   "word": "hmm",
-   "phonetic": "/m/",
-   "meaning": "（書寫形式，表示有疑慮或猶豫時發出的聲音）呣，嗯，唔，哼"
   },
   {
    "word": "hoagie",
@@ -27480,11 +28185,6 @@
    "meaning": "(BrE)運馬車；運馬拖車"
   },
   {
-   "word": "horse-drawn",
-   "phonetic": "",
-   "meaning": "(車輛)馬拉的"
-  },
-  {
    "word": "horseflesh",
    "phonetic": "/ˈhɔːrsfleʃ/",
    "meaning": "（尤指買賣的）馬匹"
@@ -27938,11 +28638,6 @@
    "word": "hurly-burly",
    "phonetic": "/ˈhɜːrli bɜːrli/",
    "meaning": "騷動；喧鬧"
-  },
-  {
-   "word": "hurried",
-   "phonetic": "/ˈhɜːrid/",
-   "meaning": "匆忙完成的；倉促而就的"
   },
   {
    "word": "hush-hush",
@@ -29020,11 +29715,6 @@
    "meaning": "individualize sth使個性化；使因人（或因地等）而異"
   },
   {
-   "word": "individualized",
-   "phonetic": "/ˌɪndɪˈvɪdʒuəlaɪzd/",
-   "meaning": "個性化的；與個人（或個體）有關的"
-  },
-  {
    "word": "individuate",
    "phonetic": "/ˌɪndɪˈvɪdʒueɪt/",
    "meaning": "(formal)individuate sb/sth使個性化；使有明顯特色"
@@ -29203,11 +29893,6 @@
    "word": "inflammable",
    "phonetic": "/ɪnˈflæməbl/",
    "meaning": "1.(especially BrE)=flammable 2.易激動的；易激怒的"
-  },
-  {
-   "word": "inflatable",
-   "phonetic": "/ɪnˈfleɪtəbl/",
-   "meaning": "需充氣的 noun 1.充氣小艇 2.充氣玩具；大型充氣宣傳品"
   },
   {
    "word": "inflect",
@@ -29520,16 +30205,6 @@
    "meaning": "(formal)不服從命令；抗命；犯上"
   },
   {
-   "word": "insulated",
-   "phonetic": "/ˈɪnsəleɪtɪd/",
-   "meaning": "有隔熱（或隔音、絕緣）保護的"
-  },
-  {
-   "word": "insulating",
-   "phonetic": "/ˈɪnsəleɪtɪŋ/",
-   "meaning": "起隔熱（或隔音、絕緣）作用的"
-  },
-  {
    "word": "insupportable",
    "phonetic": "/ˌɪnsəˈpɔːrtəbl/",
    "meaning": "難以接受的；棘手的"
@@ -29745,11 +30420,6 @@
    "meaning": "(術語)（尤指文學文本之間的）互文性"
   },
   {
-   "word": "intervening",
-   "phonetic": "/ˌɪntərˈviːnɪŋ/",
-   "meaning": "發生於其間的；介於中間的"
-  },
-  {
    "word": "interventionism",
    "phonetic": "/ˌɪntərˈvenʃənɪzəm/",
    "meaning": "政府干預（政策）"
@@ -29768,11 +30438,6 @@
    "word": "intimidated",
    "phonetic": "/ɪnˈtɪmɪdeɪtɪd/",
    "meaning": "膽怯；怯場"
-  },
-  {
-   "word": "intimidating",
-   "phonetic": "/ɪnˈtɪmɪdeɪtɪŋ/",
-   "meaning": "嚇人的；令人膽怯的"
   },
   {
    "word": "intimidatory",
@@ -30688,11 +31353,6 @@
    "word": "jump-off",
    "phonetic": "",
    "meaning": "(超越障礙賽馬運動)加賽決勝負"
-  },
-  {
-   "word": "jump-start",
-   "phonetic": "",
-   "meaning": "1.用跨接引線啟動（汽車發動機） 2.全力啟動；加快開展"
   },
   {
    "word": "jungli",
@@ -32155,11 +32815,6 @@
    "meaning": "(formal)稱讚的；讚美的；頌揚的"
   },
   {
-   "word": "laughing",
-   "phonetic": "/ˈlæfɪŋ/",
-   "meaning": "笑的；帶笑意的"
-  },
-  {
    "word": "laughingly",
    "phonetic": "/ˈlæfɪŋli/",
    "meaning": "1.帶笑地；笑着 2.（表示用詞）荒唐可笑"
@@ -32865,11 +33520,6 @@
    "meaning": "1.救助物；救命物 2.(AustralE, NZE)=lifeguard"
   },
   {
-   "word": "life-saving",
-   "phonetic": "",
-   "meaning": "救命的；救生的 noun （對溺水者的）救生術"
-  },
-  {
    "word": "lifespan",
    "phonetic": "/ˈlaɪfspæn/",
    "meaning": "壽命；可持續年限；有效期"
@@ -32893,11 +33543,6 @@
    "word": "light-coloured",
    "phonetic": "",
    "meaning": "淺色的；淡色的"
-  },
-  {
-   "word": "lighted",
-   "phonetic": "/ˈlaɪtɪd/",
-   "meaning": "1.點燃的；燃燒的 2.燈火通明的；燈光照亮的"
   },
   {
    "word": "light-fingered",
@@ -32955,11 +33600,6 @@
    "meaning": "(BrE)（管道等內的）水垢"
   },
   {
-   "word": "limiting",
-   "phonetic": "/ˈlɪmɪtɪŋ/",
-   "meaning": "限制性的"
-  },
-  {
    "word": "limpet",
    "phonetic": "/ˈlɪmpɪt/",
    "meaning": "帽貝，鑰孔䗩（依附在岩石上）"
@@ -33003,11 +33643,6 @@
    "word": "ling",
    "phonetic": "/lɪŋ/",
    "meaning": "帚石楠（低矮灌木，生長在荒野裏）"
-  },
-  {
-   "word": "lingering",
-   "phonetic": "/ˈlɪŋɡərɪŋ/",
-   "meaning": "拖延的；纏綿的；緩慢消失的；遲遲不去的"
   },
   {
    "word": "liniment",
@@ -33183,11 +33818,6 @@
    "word": "lo",
    "phonetic": "/loʊ/",
    "meaning": "(old use or humorous)（引起對令人驚訝的事的注意）瞧，看哪"
-  },
-  {
-   "word": "loading",
-   "phonetic": "/ˈloʊdɪŋ/",
-   "meaning": "1.(AustralE, NZE)附加工資（因有特別技能或資格） 2.附加費用"
   },
   {
    "word": "load-shedding",
@@ -33753,11 +34383,6 @@
    "word": "lowlights",
    "phonetic": "/ˈloʊlaɪts/",
    "meaning": "顏色較暗的染髮部位"
-  },
-  {
-   "word": "low-lying",
-   "phonetic": "",
-   "meaning": "(土地)低的；低窪的"
   },
   {
    "word": "low-maintenance",
@@ -34450,11 +35075,6 @@
    "meaning": "(old-fashioned) (WAfrE)（帶頂棚的）小卡車，小客車"
   },
   {
-   "word": "managed",
-   "phonetic": "/ˈmænɪdʒd/",
-   "meaning": "妥善照看的；受監管的；受監督的"
-  },
-  {
    "word": "manageress",
    "phonetic": "/ˌmænɪdʒəˈres/",
    "meaning": "(BrE) (becoming old-fashioned)女經理；女老闆"
@@ -34473,11 +35093,6 @@
    "word": "mandarin",
    "phonetic": "/ˈmændərɪn/",
    "meaning": "1.政界要員；（尤指）內務官員 2.（舊時）中國政府高級官吏 3.普通話 4.柑橘"
-  },
-  {
-   "word": "mandated",
-   "phonetic": "/ˈmændeɪtɪd/",
-   "meaning": "1.(國家)委託別國管轄的；託管的 2.依法的；按法律要求的 3.獲得授權的"
   },
   {
    "word": "mandazi",
@@ -34698,11 +35313,6 @@
    "word": "marchioness",
    "phonetic": "/ˌmɑːrʃəˈnes/",
    "meaning": "1.女侯爵 2.侯爵夫人"
-  },
-  {
-   "word": "margarita",
-   "phonetic": "/ˌmɑːrɡəˈriːtə/",
-   "meaning": "瑪格麗特酒（用果汁與墨西哥龍舌蘭酒調製而成）"
   },
   {
    "word": "marginalia",
@@ -34948,11 +35558,6 @@
    "word": "matchbox",
    "phonetic": "/ˈmætʃbɑːks/",
    "meaning": "火柴盒"
-  },
-  {
-   "word": "matching",
-   "phonetic": "/ˈmætʃɪŋ/",
-   "meaning": "(衣服、材料、物件等)（顏色、形狀、款式等）相同的，相稱的，相配的"
   },
   {
    "word": "matchmaker",
@@ -35995,11 +36600,6 @@
    "meaning": "1.女帽業 2.（商店的）帽類"
   },
   {
-   "word": "milling",
-   "phonetic": "/ˈmɪlɪŋ/",
-   "meaning": "(人)成群亂轉的"
-  },
-  {
    "word": "millionairess",
    "phonetic": "/ˌmɪljəˈnerəs/",
    "meaning": "(old-fashioned)女百萬富翁"
@@ -36300,11 +36900,6 @@
    "meaning": "（從天花板懸掛、產生燈光效果的）鏡面球，反光球"
   },
   {
-   "word": "mirrored",
-   "phonetic": "/ˈmɪrərd/",
-   "meaning": "有鏡子的；像鏡子的"
-  },
-  {
    "word": "mirthless",
    "phonetic": "/ˈmɜːrθləs/",
    "meaning": "(formal)不快樂的；憂鬱的"
@@ -36458,11 +37053,6 @@
    "word": "mishmash",
    "phonetic": "/ˈmɪʃmæʃ/",
    "meaning": "(informal, usually disapproving)混雜物（或樣式等）；雜燴"
-  },
-  {
-   "word": "misjudge",
-   "phonetic": "/ˌmɪsˈdʒʌdʒ/",
-   "meaning": "1.形成錯誤認識；錯看 2.對（時間、距離等）判斷錯誤"
   },
   {
    "word": "mislay",
@@ -37175,11 +37765,6 @@
    "meaning": "開汽車的"
   },
   {
-   "word": "motorized",
-   "phonetic": "/ˈmoʊtəraɪzd/",
-   "meaning": "1.有引擎的；機動的 2.(部隊等)使用機動車的；摩托化的；機動化的"
-  },
-  {
    "word": "motormouth",
    "phonetic": "/ˈmoʊtərmaʊθ/",
    "meaning": "(informal)說話大聲且健談者；喋喋不休的人"
@@ -37303,11 +37888,6 @@
    "word": "mudbath",
    "phonetic": "/ˈmʌdbæθ/",
    "meaning": "1.泥浴（用於減輕風濕症狀等） 2.泥沼；泥濘地"
-  },
-  {
-   "word": "muddled",
-   "phonetic": "/ˈmʌdld/",
-   "meaning": "(especially BrE)糊塗的；困惑的；混亂的"
   },
   {
    "word": "muddle-headed",
@@ -38220,11 +38800,6 @@
    "meaning": "(old-fashioned)無用的人；懶漢"
   },
   {
-   "word": "neglected",
-   "phonetic": "/nɪˈɡlektɪd/",
-   "meaning": "被忽略的；被忽視的；未被重視的"
-  },
-  {
    "word": "negligee",
    "phonetic": "/ˌneɡlɪˈʒeɪ/",
    "meaning": "（質地輕薄的）女式晨衣"
@@ -38700,11 +39275,6 @@
    "meaning": "鍩（放射性化學元素）"
   },
   {
-   "word": "no-brainer",
-   "phonetic": "",
-   "meaning": "(informal)無需用腦的事；容易的決定"
-  },
-  {
    "word": "nocturne",
    "phonetic": "/ˈnɑːktɜːrn/",
    "meaning": "夜曲（主要為鋼琴曲）"
@@ -39100,11 +39670,6 @@
    "meaning": "1.（政策）非暴力的，不訴諸武力的 2.（行為）非暴力的"
   },
   {
-   "word": "non-white",
-   "phonetic": "",
-   "meaning": "非白種人"
-  },
-  {
    "word": "nooky",
    "phonetic": "/ˈnʊki/",
    "meaning": "(slang)性行為；性交"
@@ -39358,11 +39923,6 @@
    "word": "nullity",
    "phonetic": "/ˈnʌləti/",
    "meaning": "(律)無法律約束力；無效；無法律效力的事物"
-  },
-  {
-   "word": "numbered",
-   "phonetic": "",
-   "meaning": "編號的"
   },
   {
    "word": "numberless",
@@ -40290,11 +40850,6 @@
    "meaning": "(often disapproving)機會主義的；投機的；見風轉舵的"
   },
   {
-   "word": "oppressed",
-   "phonetic": "/əˈprest/",
-   "meaning": "1.被壓迫的；受迫害的 2.被壓迫者"
-  },
-  {
    "word": "opprobrium",
    "phonetic": "/əˈproʊbriəm/",
    "meaning": "(formal)（眾人的）譴責，責難，抨擊"
@@ -40343,11 +40898,6 @@
    "word": "oratorical",
    "phonetic": "/ˌɔːrəˈtɔːrɪkl/",
    "meaning": "(formal, sometimes disapproving)演說的；講演術的"
-  },
-  {
-   "word": "ordering",
-   "phonetic": "/ˈɔːrdərɪŋ/",
-   "meaning": "次序；組合；排列"
   },
   {
    "word": "ordinal",
@@ -40640,19 +41190,9 @@
    "meaning": "（小額商務費用）墊付的"
   },
   {
-   "word": "out-of-state",
-   "phonetic": "",
-   "meaning": "(US)外州的；州外的"
-  },
-  {
    "word": "out-of-the-way",
    "phonetic": "",
    "meaning": "偏僻的；偏遠的"
-  },
-  {
-   "word": "out-of-town",
-   "phonetic": "",
-   "meaning": "1.城外的；郊野的 2.外地的；外來的"
   },
   {
    "word": "out-of-work",
@@ -41180,11 +41720,6 @@
    "meaning": "1.使用過度；（使）超負荷工作 2.（對人或機構）課稅過重，多收稅款"
   },
   {
-   "word": "over-the-counter",
-   "phonetic": "",
-   "meaning": "1.(藥品)無需處方可買到的；非處方的 2.(商)(NAmE)(股票及證券)場外交易的"
-  },
-  {
    "word": "overtired",
    "phonetic": "/ˌoʊvərˈtaɪərd/",
    "meaning": "勞累過度（而煩躁）的"
@@ -41455,11 +41990,6 @@
    "meaning": "1.especially in NAmE新娘的伴童；小男儐相 2.(old-fashioned)（旅館的）行李員，門童 3.女子齊肩內鬈髮；扣邊女式髮型"
   },
   {
-   "word": "pager",
-   "phonetic": "/ˈpeɪdʒər/",
-   "meaning": "尋呼機；傳呼機； BP 機"
-  },
-  {
    "word": "page-turner",
    "phonetic": "",
    "meaning": "(informal)令人欲罷不能的書；扣人心弦的讀物"
@@ -41485,19 +42015,9 @@
    "meaning": "（表示強烈不滿或不同意）哼！"
   },
   {
-   "word": "paid",
-   "phonetic": "/peɪd/",
-   "meaning": "1.(工作等)有償的；付費的 2.(人)有報酬的；有薪金的"
-  },
-  {
    "word": "paid-up",
    "phonetic": "",
    "meaning": "1.已付清會費的；已繳款的 2.(BrE) (informal)堅決支持的；付出全部心力的"
-  },
-  {
-   "word": "painfully",
-   "phonetic": "/ˈpeɪnfəli/",
-   "meaning": "1.非常地；令人痛苦地；令人煩惱地 2.使人疼痛地；令人苦惱地 3.吃力地；艱難地"
   },
   {
    "word": "paintball",
@@ -41523,11 +42043,6 @@
    "word": "paintwork",
    "phonetic": "/ˈpeɪntwɜːrk/",
    "meaning": "(especially BrE)漆面；油漆層"
-  },
-  {
-   "word": "pairing",
-   "phonetic": "/ˈperɪŋ/",
-   "meaning": "1.結對的兩個人（或物）；配對；搭配 2.配對，結對（英國議會中來自不同政黨的兩名議員約定放棄投票從而不必參加辯論進行表決）"
   },
   {
    "word": "paisa",
@@ -42543,11 +43058,6 @@
    "word": "pectoral",
    "phonetic": "/ˈpektərəl/",
    "meaning": "(解)胸部的；胸的 noun informal胸肌"
-  },
-  {
-   "word": "peculiarly",
-   "phonetic": "/pɪˈkjuːliərli/",
-   "meaning": "1.很；不尋常地；特別 2.獨特地；特有地 3.奇怪地；異常地"
   },
   {
    "word": "pedagogic",
@@ -44120,11 +44630,6 @@
    "meaning": "(解)蹠的；腳底的"
   },
   {
-   "word": "planting",
-   "phonetic": "/ˈplæntɪŋ/",
-   "meaning": "種植；栽種；栽種物"
-  },
-  {
    "word": "plasterboard",
    "phonetic": "/ˈplæstərbɔːrd/",
    "meaning": "灰泥板；紙面石膏板"
@@ -44533,11 +45038,6 @@
    "word": "pointe",
    "phonetic": "/pwæ̃t/",
    "meaning": "（芭蕾舞鞋的）硬鞋尖"
-  },
-  {
-   "word": "pointedly",
-   "phonetic": "/ˈpɔɪntɪdli/",
-   "meaning": "明確地；尖銳地；直言不諱地"
   },
   {
    "word": "pointillism",
@@ -45100,11 +45600,6 @@
    "meaning": "(地方或社會)後工業化的；不再依賴重工業的"
   },
   {
-   "word": "posting",
-   "phonetic": "/ˈpoʊstɪŋ/",
-   "meaning": "1.(especially BrE)派駐 2.=post"
-  },
-  {
    "word": "postmark",
    "phonetic": "/ˈpoʊstmɑːrk/",
    "meaning": "郵戳"
@@ -45278,11 +45773,6 @@
    "word": "power-down",
    "phonetic": "",
    "meaning": "（機器或系統的）停止運行（時間）"
-  },
-  {
-   "word": "powered",
-   "phonetic": "/ˈpaʊərd/",
-   "meaning": "(通常構成複合詞)由…驅動的；電動的"
   },
   {
    "word": "powerlifting",
@@ -45620,11 +46110,6 @@
    "meaning": "(商品，尤指食物)包裝好的；已包裝的"
   },
   {
-   "word": "prepaid",
-   "phonetic": "/ˌpriːˈpeɪd/",
-   "meaning": "預付款的；資費已付的"
-  },
-  {
    "word": "prepayment",
    "phonetic": "/ˌpriːˈpeɪmənt/",
    "meaning": "預先支付；預付款"
@@ -45800,11 +46285,6 @@
    "meaning": "(術語)（幼兒）前語言期的，習得語言能力前的"
   },
   {
-   "word": "pre-war",
-   "phonetic": "",
-   "meaning": "戰前的；（尤指）第二次世界大戰以前的"
-  },
-  {
    "word": "pre-wash",
    "phonetic": "",
    "meaning": "1.預洗（未使用或待售的布料或衣物） 2.（衣物主洗之前用洗衣機等）預洗 noun 1.（主洗之前的）預洗 2.（洗滌之前使用的）衣物除漬精"
@@ -45828,11 +46308,6 @@
    "word": "price-fixing",
    "phonetic": "",
    "meaning": "價格壟斷（公司之間協議不低於某價位銷售貨品）"
-  },
-  {
-   "word": "pricing",
-   "phonetic": "/ˈpraɪsɪŋ/",
-   "meaning": "定價；作價；計價"
   },
   {
    "word": "primitivism",
@@ -45920,11 +46395,6 @@
    "meaning": "女貞 （常綠灌木，常用作花園綠籬）"
   },
   {
-   "word": "prized",
-   "phonetic": "/praɪzd/",
-   "meaning": "珍貴的；寶貴的"
-  },
-  {
    "word": "prizefight",
    "phonetic": "/ˈpraɪzfaɪt/",
    "meaning": "職業拳擊賽"
@@ -45958,11 +46428,6 @@
    "word": "probationer",
    "phonetic": "/proʊˈbeɪʃnər/",
    "meaning": "1.試用員工 2.緩刑犯"
-  },
-  {
-   "word": "probing",
-   "phonetic": "/ˈproʊbɪŋ/",
-   "meaning": "1.探查性的；追根究底的 2.逼視的；仔細觀察的"
   },
   {
    "word": "probiotic",
@@ -46068,11 +46533,6 @@
    "word": "programmable",
    "phonetic": "/ˈproʊɡræməbl/",
    "meaning": "(計算機或電器)程控的；可編程序的；可程式化的"
-  },
-  {
-   "word": "progressively",
-   "phonetic": "/prəˈɡresɪvli/",
-   "meaning": "(常與比較級連用)持續穩定地；逐步地；愈益"
   },
   {
    "word": "prohibitionist",
@@ -46265,11 +46725,6 @@
    "meaning": "(生)蛋白（水解）酶"
   },
   {
-   "word": "protectionism",
-   "phonetic": "/prəˈtekʃənɪzəm/",
-   "meaning": "（貿易）保護主義"
-  },
-  {
    "word": "protectorate",
    "phonetic": "/prəˈtektərət/",
    "meaning": "1.受保護國；受保護領地 2.（一國對另一國的）保護關係"
@@ -46303,11 +46758,6 @@
    "word": "provable",
    "phonetic": "/ˈpruːvəbl/",
    "meaning": "可以證明的；能證實的"
-  },
-  {
-   "word": "proven",
-   "phonetic": "/ˈproʊvn/",
-   "meaning": "被證明的；已證實的"
   },
   {
    "word": "pro-verb",
@@ -46363,11 +46813,6 @@
    "word": "pseud",
    "phonetic": "/suːd/",
    "meaning": "(BrE) (informal, disapproving)假博士；冒牌學問家"
-  },
-  {
-   "word": "psi",
-   "phonetic": "/psaɪ/",
-   "meaning": "希臘字母表的第 23 個字母"
   },
   {
    "word": "psittacosis",
@@ -46665,11 +47110,6 @@
    "meaning": "木偶製作（或表演）藝術"
   },
   {
-   "word": "purchasing",
-   "phonetic": "/ˈpɜːrtʃəsɪŋ/",
-   "meaning": "(商)購買；採購"
-  },
-  {
    "word": "purdah",
    "phonetic": "/ˈpɜːrdə/",
    "meaning": "（某些穆斯林社會的）深閨制度"
@@ -46723,11 +47163,6 @@
    "word": "purposeless",
    "phonetic": "/ˈpɜːrpəsləs/",
    "meaning": "無目的的；無用的；無意義的"
-  },
-  {
-   "word": "purposely",
-   "phonetic": "/ˈpɜːrpəsli/",
-   "meaning": "故意地；蓄意地"
   },
   {
    "word": "purposive",
@@ -47043,11 +47478,6 @@
    "word": "quickie",
    "phonetic": "/ˈkwɪki/",
    "meaning": "(informal)1.簡短的事；短暫的事 2.瞬間完事的性交"
-  },
-  {
-   "word": "quickly",
-   "phonetic": "/ˈkwɪkli/",
-   "meaning": "1.迅速地；很快地 2.不久；立即"
   },
   {
    "word": "quicksand",
@@ -47395,11 +47825,6 @@
    "meaning": "防雨的"
   },
   {
-   "word": "raising",
-   "phonetic": "/ˈreɪzɪŋ/",
-   "meaning": "增加；提高"
-  },
-  {
    "word": "raita",
    "phonetic": "/ˈraɪtə/",
    "meaning": "（南亞）酸奶色拉，優格沙拉"
@@ -47615,11 +48040,6 @@
    "meaning": "(informal)1.淫穢的；下流的 2.(NAmE)骯髒的；邋遢的"
   },
   {
-   "word": "ravages",
-   "phonetic": "/ˈrævɪdʒɪz/",
-   "meaning": "(formal)[plural]the ravages of sth破壞；損害；毀壞"
-  },
-  {
    "word": "raver",
    "phonetic": "/ˈreɪvər/",
    "meaning": "(BrE) (informal)1.(often humorous)喜歡社交活動的人；喜歡尋歡作樂的人 2.參加狂歡聚會的人"
@@ -47670,11 +48090,6 @@
    "meaning": "(informal)令人眼花繚亂的活動"
   },
   {
-   "word": "re",
-   "phonetic": "/riː/",
-   "meaning": "（用於商業信函等開頭介紹主題或回覆電子郵件）關於，事由"
-  },
-  {
    "word": "reachable",
    "phonetic": "/ˈriːtʃəbl/",
    "meaning": "可及；可到達；夠得到"
@@ -47710,11 +48125,6 @@
    "meaning": "1.(計)（數據的）讀入，錄入 2.(NAmE)讀書會"
   },
   {
-   "word": "readjust",
-   "phonetic": "/ˌriːəˈdʒʌst/",
-   "meaning": "1.重新適應；再適應 2.稍作改變；微調"
-  },
-  {
    "word": "readmit",
    "phonetic": "/ˌriːədˈmɪt/",
    "meaning": "1.重新接納；允許再次加入 2.再次接收…住院"
@@ -47748,11 +48158,6 @@
    "word": "realia",
    "phonetic": "/reɪˈɑːliə/",
    "meaning": "實物教具（用於教學的日常用品）"
-  },
-  {
-   "word": "realistically",
-   "phonetic": "/ˌriːəˈlɪstɪkli/",
-   "meaning": "1.（表明你認為實際實現的可能性）如實地，實際地 2.切合實際地；明智地 3.逼真地；栩栩如生地"
   },
   {
    "word": "realizable",
@@ -47913,11 +48318,6 @@
    "word": "reconquer",
    "phonetic": "/ˌriːˈkɑːŋkər/",
    "meaning": "reconquer sth重新佔領（國家或城市）；再征服；奪回"
-  },
-  {
-   "word": "reconstructive",
-   "phonetic": "/ˌriːkənˈstrʌktɪv/",
-   "meaning": "(醫療)修復的；整形的；復原的"
   },
   {
    "word": "reconvene",
@@ -48375,11 +48775,6 @@
    "meaning": "(AustralE, NZE) (informal)親戚；親眷"
   },
   {
-   "word": "remaining",
-   "phonetic": "/rɪˈmeɪnɪŋ/",
-   "meaning": "仍需做的；還需處理的"
-  },
-  {
    "word": "remand",
    "phonetic": "/rɪˈmænd/",
    "meaning": "將（嫌疑人）還押候審 noun (BrE)還押；押候"
@@ -48450,11 +48845,6 @@
    "meaning": "凝乳酶（使牛奶或乾酪凝結的物質）"
   },
   {
-   "word": "rented",
-   "phonetic": "/ˈrentɪd/",
-   "meaning": "租用的；租借的"
-  },
-  {
    "word": "rent-free",
    "phonetic": "",
    "meaning": "免租金的；不收租金的"
@@ -48488,11 +48878,6 @@
    "word": "reorient",
    "phonetic": "/ˌriːˈɔːrient/",
    "meaning": "1.改變…的重點（或方向） 2.給（自己）重新定位"
-  },
-  {
-   "word": "rep",
-   "phonetic": "/rep/",
-   "meaning": "1.=sales representative, representative 2.代表；發言人 3.(informal)保留劇目輪演（全寫為 repertory）"
   },
   {
    "word": "repackage",
@@ -48548,11 +48933,6 @@
    "word": "replaceable",
    "phonetic": "/rɪˈpleɪsəbl/",
    "meaning": "可替換的；可代替的"
-  },
-  {
-   "word": "reporting",
-   "phonetic": "/rɪˈpɔːrtɪŋ/",
-   "meaning": "新聞報道"
   },
   {
    "word": "repossess",
@@ -48675,11 +49055,6 @@
    "meaning": "(術語)共鳴器；共鳴箱"
   },
   {
-   "word": "resounding",
-   "phonetic": "/rɪˈzaʊndɪŋ/",
-   "meaning": "1.巨大的；令人矚目的 2.(聲音)響亮的；嘹亮的；回響的"
-  },
-  {
    "word": "respire",
    "phonetic": "/rɪˈspaɪər/",
    "meaning": "(術語)呼吸"
@@ -48688,11 +49063,6 @@
    "word": "respirometer",
    "phonetic": "/ˌrespɪˈrɑːmɪtər/",
    "meaning": "(醫)呼吸計；呼吸測定計"
-  },
-  {
-   "word": "responsibly",
-   "phonetic": "/rɪˈspɑːnsəbli/",
-   "meaning": "明事理地；認真負責地；可信賴地"
   },
   {
    "word": "respray",
@@ -48833,11 +49203,6 @@
    "word": "reunify",
    "phonetic": "/ˌriːˈjuːnɪfaɪ/",
    "meaning": "[often passive]reunify sth重新統一"
-  },
-  {
-   "word": "reusable",
-   "phonetic": "/ˌriːˈjuːzəbl/",
-   "meaning": "可重複使用的；可再次使用的"
   },
   {
    "word": "revalue",
@@ -49400,11 +49765,6 @@
    "meaning": "毛色斑雜的動物（尤指馬）"
   },
   {
-   "word": "roasting",
-   "phonetic": "/ˈroʊstɪŋ/",
-   "meaning": "1.用於烤炙（或烘焙）的 2.燥熱的；灼熱的 noun (slang)（一女多男的）亂交"
-  },
-  {
    "word": "robocall",
    "phonetic": "/ˈroʊboʊkɔːl/",
    "meaning": "(NAmE) (informal, disapproving)機器人電話（自動撥號播放錄音信息的推銷電話）"
@@ -49573,11 +49933,6 @@
    "word": "roomful",
    "phonetic": "/ˈruːmfʊl/",
    "meaning": "滿屋子（東西或人）"
-  },
-  {
-   "word": "rooted",
-   "phonetic": "/ˈruːtɪd/",
-   "meaning": "1.rooted in sth根源在於；由…產生 2.固定在某地的；穩固的；根深蒂固的 3.(AustralE) (slang)疲憊不堪的；筋疲力盡的 4.(AustralE) (slang)老舊無用的；破得不能用的"
   },
   {
    "word": "rooter",
@@ -49885,11 +50240,6 @@
    "meaning": "(formal)無人管理的；無指導的；漫無目的的"
   },
   {
-   "word": "rudely",
-   "phonetic": "/ˈruːdli/",
-   "meaning": "1.粗魯地；無禮地 2.突然地；猛烈地；突如其來地"
-  },
-  {
    "word": "rudiments",
    "phonetic": "/ˈruːdɪmənts/",
    "meaning": "(formal)[plural]the rudiments(of sth)基礎；基本原理（或技能）"
@@ -49968,11 +50318,6 @@
    "word": "rune",
    "phonetic": "/ruːn/",
    "meaning": "1.如尼字母（屬於北歐古文字體系） 2.神秘的記號；有魔力的符號"
-  },
-  {
-   "word": "run-in",
-   "phonetic": "",
-   "meaning": "1.(informal)爭論；爭吵；衝突 2.(BrE)=run-up"
   },
   {
    "word": "runnel",
@@ -50188,11 +50533,6 @@
    "word": "safflower",
    "phonetic": "/ˈsæflaʊər/",
    "meaning": "紅花（籽油可用於烹飪）"
-  },
-  {
-   "word": "sagebrush",
-   "phonetic": "/ˈseɪdʒbrʌʃ/",
-   "meaning": "灌木蒿；灌木蒿叢"
   },
   {
    "word": "saggy",
@@ -51350,11 +51690,6 @@
    "meaning": "(計算機數據庫或網絡)可搜尋的；可檢索的"
   },
   {
-   "word": "searcher",
-   "phonetic": "/ˈsɜːrtʃər/",
-   "meaning": "1.搜索者；查找者 2.(計)檢索工具；搜索軟件；搜索引擎；搜尋器"
-  },
-  {
    "word": "searching",
    "phonetic": "/ˈsɜːrtʃɪŋ/",
    "meaning": "(眼神、問題等)深挖細究的；認真徹底的"
@@ -51445,24 +51780,9 @@
    "meaning": "贊成（或參與）脫離活動的；奉行分離主義的"
   },
   {
-   "word": "second-class",
-   "phonetic": "",
-   "meaning": "1.(disapproving)次要的；無足輕重的 2.（質量、標準等）二流的，次等的 3.（車廂、船艙等）二等的 4.第二類的（英國郵件等級，投遞較第一類慢，郵資也較低） 5.第二類的（美國郵件等級，用於投遞報刊） 6.二級優等的（英國大學學位）"
-  },
-  {
-   "word": "second-degree",
-   "phonetic": "",
-   "meaning": "1.(especially NAmE)第二等級（謀殺、人身侵犯或入室盜竊等罪） 2.二度（燒傷）"
-  },
-  {
    "word": "seconder",
    "phonetic": "/ˈsekəndər/",
    "meaning": "附議者；贊成者"
-  },
-  {
-   "word": "second-generation",
-   "phonetic": "",
-   "meaning": "1.（移民後裔等）第二代的 2.(產品、技術等)第二代的（更先進或改進了的）"
   },
   {
    "word": "second-guess",
@@ -51795,11 +52115,6 @@
    "meaning": "無須解釋的；明白易曉的；一目瞭然的"
   },
   {
-   "word": "self-expression",
-   "phonetic": "",
-   "meaning": "自我表現，自我表達（尤指通過寫作、繪畫、舞蹈等活動）"
-  },
-  {
    "word": "self-fulfilling",
    "phonetic": "",
    "meaning": "（預言等）自我應驗的，自我實現的"
@@ -51980,11 +52295,6 @@
    "meaning": "資金自給的；經濟獨立的"
   },
   {
-   "word": "self-taught",
-   "phonetic": "",
-   "meaning": "自學的；自修的"
-  },
-  {
    "word": "self-willed",
    "phonetic": "",
    "meaning": "(disapproving)任性的；固執的；倔強的"
@@ -52033,11 +52343,6 @@
    "word": "semi-arid",
    "phonetic": "",
    "meaning": "(術語)(土地或氣候)半乾旱的"
-  },
-  {
-   "word": "semi-automatic",
-   "phonetic": "",
-   "meaning": "(槍)半自動的"
   },
   {
    "word": "semibreve",
@@ -52330,11 +52635,6 @@
    "meaning": "(IndE)1.男僕；男傭 2.男社會福利工作者；男社工"
   },
   {
-   "word": "seventh",
-   "phonetic": "/ˈsevnθ/",
-   "meaning": "ordinal number 第七 noun 七分之一"
-  },
-  {
    "word": "severally",
    "phonetic": "/ˈsevrəli/",
    "meaning": "(formal or 律)各自；分別"
@@ -52433,11 +52733,6 @@
    "word": "shake-out",
    "phonetic": "",
    "meaning": "1.經濟衰退；經濟蕭條 2.=shake-up"
-  },
-  {
-   "word": "shaking",
-   "phonetic": "/ˈʃeɪkɪŋ/",
-   "meaning": "搖動；抖動；顫動"
   },
   {
    "word": "shallows",
@@ -53075,11 +53370,6 @@
    "meaning": "(尤指頭髮)齊肩的"
   },
   {
-   "word": "shouting",
-   "phonetic": "/ˈʃaʊtɪŋ/",
-   "meaning": "（多人的）叫喊，叫嚷"
-  },
-  {
    "word": "shout-out",
    "phonetic": "",
    "meaning": "(informal) (especially NAmE)公開道謝；當眾問候"
@@ -53440,11 +53730,6 @@
    "meaning": "(語言)所指（語言符號的意義）"
   },
   {
-   "word": "signing",
-   "phonetic": "/ˈsaɪnɪŋ/",
-   "meaning": "1.簽署；簽字 2.(BrE)（運動隊、唱片公司或電影公司的）簽約受聘者，簽約受雇者 3.簽約聘用，簽約雇用（安排某人加入運動隊、唱片公司或電影公司） 4.手勢語的使用"
-  },
-  {
    "word": "signpost",
    "phonetic": "/ˈsaɪnpoʊst/",
    "meaning": "路標 verb (BrE)1.設置路標 2.介紹（論證、講話等的）要點"
@@ -53550,11 +53835,6 @@
    "meaning": "眾人自娛歌唱會"
   },
   {
-   "word": "singing",
-   "phonetic": "/ˈsɪŋɪŋ/",
-   "meaning": "唱歌；歌唱"
-  },
-  {
    "word": "single-breasted",
    "phonetic": "",
    "meaning": "(上衣)單排扣的"
@@ -53568,11 +53848,6 @@
    "word": "single-handed",
    "phonetic": "",
    "meaning": "獨自；單槍匹馬地；獨立"
-  },
-  {
-   "word": "single-minded",
-   "phonetic": "",
-   "meaning": "一心一意的；專心致志的"
   },
   {
    "word": "singleness",
@@ -53603,11 +53878,6 @@
    "word": "sing-song",
    "phonetic": "",
    "meaning": "1.(BrE)=singalong 2.聲音起伏的說話腔調 adjective 說話音調起伏的"
-  },
-  {
-   "word": "singularly",
-   "phonetic": "/ˈsɪŋɡjələrli/",
-   "meaning": "(formal)非常；特別；異常地"
   },
   {
    "word": "sinker",
@@ -53705,19 +53975,9 @@
    "meaning": "(especially NAmE)六發左輪手槍"
   },
   {
-   "word": "sixth",
-   "phonetic": "/sɪksθ/",
-   "meaning": "ordinal number 第六 noun 六分之一"
-  },
-  {
    "word": "sixth-former",
    "phonetic": "",
    "meaning": "(BrE)第六學級學生"
-  },
-  {
-   "word": "sizzling",
-   "phonetic": "/ˈsɪzlɪŋ/",
-   "meaning": "1.酷熱的 2.熱烈的；激情迸發的"
   },
   {
    "word": "sjambok",
@@ -53763,11 +54023,6 @@
    "word": "skewbald",
    "phonetic": "/ˈskjuːbɔːld/",
    "meaning": "(馬)白花斑的（通常不帶黑色）"
-  },
-  {
-   "word": "skewed",
-   "phonetic": "/skjuːd/",
-   "meaning": "1.(信息)歪曲的；有偏頗的；不準確的 2.偏向（或偏重）…的 3.偏的；斜的；歪的"
   },
   {
    "word": "skew-whiff",
@@ -54270,11 +54525,6 @@
    "meaning": "(informal) (especially BrE)很快的（地）；迅速的（地）"
   },
   {
-   "word": "smarts",
-   "phonetic": "/smɑːrts/",
-   "meaning": "(NAmE) (informal)智慧；聰明才智"
-  },
-  {
    "word": "smash-and-grab",
    "phonetic": "",
    "meaning": "(BrE)砸櫥窗搶劫的"
@@ -54585,11 +54835,6 @@
    "meaning": "(literary)(山)頂部被雪覆蓋的"
   },
   {
-   "word": "snow-covered",
-   "phonetic": "",
-   "meaning": "被雪覆蓋的"
-  },
-  {
    "word": "snowdrop",
    "phonetic": "/ˈsnoʊdrɑːp/",
    "meaning": "雪花蓮（早春開白花）"
@@ -54638,11 +54883,6 @@
    "word": "soapstone",
    "phonetic": "/ˈsoʊpstoʊn/",
    "meaning": "皂石（質軟，用作裝飾材料）"
-  },
-  {
-   "word": "soapy",
-   "phonetic": "/ˈsoʊpi/",
-   "meaning": "1.滿是肥皂的；塗滿肥皂的 2.有肥皂味的；摸着像肥皂的"
   },
   {
    "word": "soaraway",
@@ -56000,11 +56240,6 @@
    "meaning": "石筍（向上生長）"
   },
   {
-   "word": "stalking",
-   "phonetic": "/ˈstɔːkɪŋ/",
-   "meaning": "跟踪罪"
-  },
-  {
    "word": "stallholder",
    "phonetic": "/ˈstɔːlhoʊldər/",
    "meaning": "(BrE)攤販；貨攤主"
@@ -56033,11 +56268,6 @@
    "word": "standee",
    "phonetic": "/stænˈdiː/",
    "meaning": "(NAmE, ScotE)站立者；站立乘客；站票觀眾"
-  },
-  {
-   "word": "standing",
-   "phonetic": "/ˈstændɪŋ/",
-   "meaning": "1.長期存在的；永久性的；常設的 2.站着進行的 noun 1.地位；級別；身分；名聲 2.持續時間 3.（運動員或運動隊比賽成績的）排名，名次"
   },
   {
    "word": "stand-off",
@@ -56198,11 +56428,6 @@
    "word": "statuette",
    "phonetic": "/ˌstætʃuˈet/",
    "meaning": "小雕像；小塑像"
-  },
-  {
-   "word": "stay-at-home",
-   "phonetic": "",
-   "meaning": "(informal, often disapproving)不愛出門的人；戀家的人 adjective 全職照顧家庭的"
   },
   {
    "word": "staycation",
@@ -56695,11 +56920,6 @@
    "meaning": "（賽跑等記時用的）秒錶，跑錶，碼錶"
   },
   {
-   "word": "store-bought",
-   "phonetic": "",
-   "meaning": "(NAmE)從商店買的（而非家裏做的）"
-  },
-  {
    "word": "store-brand",
    "phonetic": "",
    "meaning": "(US)店家商標的，自有品牌的（指產品以商店自定的品牌出售）"
@@ -57008,11 +57228,6 @@
    "word": "strychnine",
    "phonetic": "/ˈstrɪkniːn/",
    "meaning": "士的寧；馬錢子鹼"
-  },
-  {
-   "word": "stuck",
-   "phonetic": "/stʌk/",
-   "meaning": "1.動不了；無法移動；卡住；陷住 2.陷（入）；困（於） 3. stuck(on sth)被難住；答不上來；卡殼 4. stuck(for sth)不知所措；（為某事）犯愁 5. stuck with sb/sth(informal)擺脫不了；甩不掉"
   },
   {
    "word": "stuck-up",
@@ -57388,11 +57603,6 @@
    "word": "suggestible",
    "phonetic": "/səˈdʒestəbl/",
    "meaning": "易受他人影響的"
-  },
-  {
-   "word": "suitably",
-   "phonetic": "/ˈsuːtəbli/",
-   "meaning": "1.合適地；適宜地；適當地 2.如你所料地；自然"
   },
   {
    "word": "suited",
@@ -57780,11 +57990,6 @@
    "meaning": "(語音)超音段的（與單個語音相對的重音和音調等語音特徵）"
   },
   {
-   "word": "supremely",
-   "phonetic": "/suːˈpriːmli/",
-   "meaning": "極其；極為"
-  },
-  {
    "word": "supremo",
    "phonetic": "/suːˈpriːmoʊ/",
    "meaning": "(BrE) (informal)（企業或活動的）最高領導人，總管，總指揮"
@@ -57850,11 +58055,6 @@
    "meaning": "（教士和唱詩班穿的）白色罩衣"
   },
   {
-   "word": "surprising",
-   "phonetic": "/sərˈpraɪzɪŋ/",
-   "meaning": "令人吃驚的；使人驚奇的；出人意料的；奇怪的"
-  },
-  {
    "word": "surrealistic",
    "phonetic": "/səˌriːəˈlɪstɪk/",
    "meaning": "1. 2.超現實主義的"
@@ -57883,11 +58083,6 @@
    "word": "suspender",
    "phonetic": "/səˈspendər/",
    "meaning": "1.(BrE)吊襪帶 2. suspenders(NAmE)吊褲帶；背帶"
-  },
-  {
-   "word": "suspiciously",
-   "phonetic": "/səˈspɪʃəsli/",
-   "meaning": "1.懷疑地；有疑心地 2.令人懷疑地；形跡（或神色等）可疑地 3.以懷疑的態度；不信任地"
   },
   {
    "word": "suss",
@@ -58123,11 +58318,6 @@
    "word": "swordsmanship",
    "phonetic": "/ˈsɔːrdzmənʃɪp/",
    "meaning": "劍術"
-  },
-  {
-   "word": "sworn",
-   "phonetic": "/swɔːrn/",
-   "meaning": "1.（尤指在法庭上）宣過誓的，宣誓證明的 2. sworn enemies不共戴天的仇敵"
   },
   {
    "word": "swot",
@@ -58735,11 +58925,6 @@
    "meaning": "1.試味員；品酒師；品茶員 2.(informal) (especially BrE)（供嘗試的）小樣品"
   },
   {
-   "word": "tasting",
-   "phonetic": "/ˈteɪstɪŋ/",
-   "meaning": "品嚐會"
-  },
-  {
    "word": "tat",
    "phonetic": "/tæt/",
    "meaning": "(BrE) (informal)劣質貨"
@@ -59265,11 +59450,6 @@
    "meaning": "由帳篷組成的；帳篷狀的"
   },
   {
-   "word": "tenth",
-   "phonetic": "/tenθ/",
-   "meaning": "ordinal number 第十 noun 十分之一"
-  },
-  {
    "word": "tepee",
    "phonetic": "/ˈtiːpiː/",
    "meaning": "（美洲印第安人舊時使用的）圓錐形帳篷"
@@ -59313,11 +59493,6 @@
    "word": "termly",
    "phonetic": "/ˈtɜːrmli/",
    "meaning": "(BrE)每學期的"
-  },
-  {
-   "word": "terms",
-   "phonetic": "/tɜːrmz/",
-   "meaning": "1.（協議、合同等的）條件，條款 2.（交易的）條件；價錢；費用 3.表達方式；措辭；說法"
   },
   {
    "word": "term-time",
@@ -59383,11 +59558,6 @@
    "word": "testable",
    "phonetic": "/ˈtestəbl/",
    "meaning": "可檢驗的；可試驗的；可驗證的"
-  },
-  {
-   "word": "testing",
-   "phonetic": "/ˈtestɪŋ/",
-   "meaning": "試驗；測試；檢查 adjective (問題或情況)棘手的；傷腦筋的；難應付的"
   },
   {
    "word": "testis",
@@ -59675,11 +59845,6 @@
    "meaning": "1.三度（燒傷） 2.(NAmE)第三等級（謀殺、人身侵犯或搶劫等）"
   },
   {
-   "word": "third-generation",
-   "phonetic": "",
-   "meaning": "1.第三代移動通信技術的 2.第三代技術的"
-  },
-  {
    "word": "thirdly",
    "phonetic": "/ˈθɜːrdli/",
    "meaning": "（用於講話或文章中列舉事項）第三，第三點"
@@ -59788,11 +59953,6 @@
    "word": "three-star",
    "phonetic": "",
    "meaning": "1.（質量）三星級的 2.(NAmE)（軍銜）三星的"
-  },
-  {
-   "word": "three-way",
-   "phonetic": "",
-   "meaning": "三方面的；三向的；三人參加的"
   },
   {
    "word": "threnody",
@@ -60870,11 +61030,6 @@
    "meaning": "1.龜甲；龜板；玳瑁殼 2.（毛色為黃褐黑白相間的）家貓 3.（翅膀帶黃褐色斑點的）蛺蝶"
   },
   {
-   "word": "tortured",
-   "phonetic": "/ˈtɔːrtʃərd/",
-   "meaning": "遭受重創的；飽受煎熬的"
-  },
-  {
    "word": "tosa",
    "phonetic": "/ˈtoʊsə/",
    "meaning": "土佐鬥犬"
@@ -61073,11 +61228,6 @@
    "word": "trade-up",
    "phonetic": "",
    "meaning": "賣次買好；以次換好的買賣"
-  },
-  {
-   "word": "trading",
-   "phonetic": "/ˈtreɪdɪŋ/",
-   "meaning": "貿易；經商；營業；交易"
   },
   {
    "word": "traditionalism",
@@ -62030,11 +62180,6 @@
    "meaning": "(音)十二音體系的"
   },
   {
-   "word": "twenty-first",
-   "phonetic": "",
-   "meaning": "(informal) (especially BrE)*21 歲生日； 21 歲生日慶典"
-  },
-  {
    "word": "twerp",
    "phonetic": "/twɜːrp/",
    "meaning": "(old-fashioned, informal)笨蛋；討厭鬼"
@@ -62455,11 +62600,6 @@
    "meaning": "1.無可爭辯的；不容反對的 2.無答案的；無法回答的"
   },
   {
-   "word": "unanticipated",
-   "phonetic": "/ˌʌnænˈtɪsɪpeɪtɪd/",
-   "meaning": "(formal)沒想到的；未預料到的"
-  },
-  {
    "word": "unapologetic",
    "phonetic": "/ˌʌnəˌpɑːləˈdʒetɪk/",
    "meaning": "不致歉的；不道歉的"
@@ -62655,11 +62795,6 @@
    "meaning": "(formal)粗野地；粗暴無禮地"
   },
   {
-   "word": "uncertainly",
-   "phonetic": "/ʌnˈsɜːrtnli/",
-   "meaning": "猶豫地；遲疑地"
-  },
-  {
    "word": "unchallengeable",
    "phonetic": "/ʌnˈtʃælɪndʒəbl/",
    "meaning": "不可爭辯的；不容置辯的；不可挑戰的"
@@ -62668,11 +62803,6 @@
    "word": "unchangeable",
    "phonetic": "/ʌnˈtʃeɪndʒəbl/",
    "meaning": "不可改變的"
-  },
-  {
-   "word": "unchanging",
-   "phonetic": "/ʌnˈtʃeɪndʒɪŋ/",
-   "meaning": "永恆的；不變的"
   },
   {
    "word": "uncharitable",
@@ -63120,11 +63250,6 @@
    "meaning": "缺乏資源的；資金（或人手、材料等）不足的"
   },
   {
-   "word": "undersecretary",
-   "phonetic": "/ˌʌndərˈsekrəteri/",
-   "meaning": "1.（英國）政務次官 2.（英國）副大臣，次長 3.（美國）副部長，副國務卿"
-  },
-  {
    "word": "undersell",
    "phonetic": "/ˌʌndərˈsel/",
    "meaning": "1.以低於（競爭者）的價格出售；競價銷售 2.賠本出售；壓價銷售 3.降低人們對…的印象；貶損"
@@ -63168,11 +63293,6 @@
    "word": "understaffed",
    "phonetic": "/ˌʌndərˈstæft/",
    "meaning": "人員不足；人手太少"
-  },
-  {
-   "word": "understandably",
-   "phonetic": "/ˌʌndərˈstændəbli/",
-   "meaning": "可以理解地；正常地；合乎情理地"
   },
   {
    "word": "undertaker",
@@ -63470,11 +63590,6 @@
    "meaning": "1.（職位）空缺的 2.（談話中）停頓的 3.（糕餅）無餡的 4.(especially NAmE)（訂單）未交貨的"
   },
   {
-   "word": "unfinished",
-   "phonetic": "/ʌnˈfɪnɪʃt/",
-   "meaning": "未做完的；未完成的"
-  },
-  {
    "word": "unfitted",
    "phonetic": "/ʌnˈfɪtɪd/",
    "meaning": "(formal)unfitted for sth|unfitted to do sth不適於；不適合"
@@ -63593,11 +63708,6 @@
    "word": "unhand",
    "phonetic": "/ˌʌnˈhænd/",
    "meaning": "(old-fashioned or humorous)unhand sb放開某人的手"
-  },
-  {
-   "word": "unharmed",
-   "phonetic": "/ʌnˈhɑːrmd/",
-   "meaning": "未受傷的；未受損害的"
   },
   {
    "word": "unheard-of",
@@ -63775,11 +63885,6 @@
    "meaning": "不吸引人的；無趣的；無聊的"
   },
   {
-   "word": "uninvited",
-   "phonetic": "/ˌʌnɪnˈvaɪtɪd/",
-   "meaning": "未經要求的；未獲邀請的；不速而至的"
-  },
-  {
    "word": "uninviting",
    "phonetic": "/ˌʌnɪnˈvaɪtɪŋ/",
    "meaning": "無吸引力的；不誘人的"
@@ -63803,16 +63908,6 @@
    "word": "unisex",
    "phonetic": "/ˈjuːnɪseks/",
    "meaning": "男女皆宜的；不分性別的"
-  },
-  {
-   "word": "united",
-   "phonetic": "/juˈnaɪtɪd/",
-   "meaning": "1.(國家)聯合的；統一的 2.(人或群體)和諧的；一致的；團結的 3.（用於團隊和公司名稱）"
-  },
-  {
-   "word": "universally",
-   "phonetic": "/ˌjuːnɪˈvɜːrsəli/",
-   "meaning": "1.全體地；一致地；共同地 2.到處；隨時隨地；在各種情況下"
   },
   {
    "word": "unjustifiable",
@@ -63995,11 +64090,6 @@
    "meaning": "得不到；無法達到"
   },
   {
-   "word": "unopened",
-   "phonetic": "/ʌnˈoʊpənd/",
-   "meaning": "未開啟的；未打開的"
-  },
-  {
    "word": "unopposed",
    "phonetic": "/ˌʌnəˈpoʊzd/",
    "meaning": "無人反對；無阻撓"
@@ -64150,11 +64240,6 @@
    "meaning": "(formal)沒根據的；缺乏理性的；無緣無故的"
   },
   {
-   "word": "unrecognizable",
-   "phonetic": "/ˌʌnrekəɡˈnaɪzəbl/",
-   "meaning": "(人或事物)變得（或損壞得）難以辨認的；無法識別的"
-  },
-  {
    "word": "unreconstructed",
    "phonetic": "/ˌʌnriːkənˈstrʌktɪd/",
    "meaning": "(disapproving)(人及信仰)僵化的；頑固守舊的；不順應形勢的"
@@ -64168,11 +64253,6 @@
    "word": "unrefined",
    "phonetic": "/ˌʌnrɪˈfaɪnd/",
    "meaning": "1.(物質)未精製的；未提煉的 2.(人或行為)粗俗的；不文雅的；缺乏教養的"
-  },
-  {
-   "word": "unrelated",
-   "phonetic": "/ˌʌnrɪˈleɪtɪd/",
-   "meaning": "1.無關聯的；不相關的 2.(人、動物等)不屬於同一家族（或同一科等）的；無親緣關係的"
   },
   {
    "word": "unrelieved",
@@ -64263,11 +64343,6 @@
    "word": "unsaleable",
    "phonetic": "/ʌnˈseɪləbl/",
    "meaning": "無銷路的；難以售出的"
-  },
-  {
-   "word": "unsalted",
-   "phonetic": "/ʌnˈsɔːltɪd/",
-   "meaning": "(尤指食物)未放鹽的；不加鹽的"
   },
   {
    "word": "unsatisfied",
@@ -64403,11 +64478,6 @@
    "word": "unspectacular",
    "phonetic": "/ˌʌnspekˈtækjələr/",
    "meaning": "平凡的；平淡的；普通的"
-  },
-  {
-   "word": "unspoken",
-   "phonetic": "/ˌʌnˈspoʊkən/",
-   "meaning": "(formal)未說出的；未表達的；默契的；心照不宣的"
   },
   {
    "word": "unsporting",
@@ -64715,11 +64785,6 @@
    "meaning": "(商)向上端推銷（指勸說顧客購買更多或更貴的產品）"
   },
   {
-   "word": "upsetting",
-   "phonetic": "/ʌpˈsetɪŋ/",
-   "meaning": "令人不快（或憂慮、苦惱）的"
-  },
-  {
    "word": "upshift",
    "phonetic": "/ˈʌpʃɪft/",
    "meaning": "(NAmE)換高擋（開車等加速）"
@@ -65005,11 +65070,6 @@
    "meaning": "香草醛；香蘭素"
   },
   {
-   "word": "vanquished",
-   "phonetic": "/ˈvæŋkwɪʃt/",
-   "meaning": "(literary)戰敗者；被完全征服的人；敗陣者"
-  },
-  {
    "word": "vapourware",
    "phonetic": "/ˈveɪpərwer/",
    "meaning": "霧件，霧體（已做廣告但尚未上市的計算機程序或產品）"
@@ -65043,11 +65103,6 @@
    "word": "vassal",
    "phonetic": "/ˈvæsl/",
    "meaning": "1.封臣，家臣（中世紀為國王或其他權貴效忠的受封者） 2.附庸國；屬國"
-  },
-  {
-   "word": "vat",
-   "phonetic": "/væt/",
-   "meaning": "（尤指工業用）大桶，大盆，甕，缸，罐"
   },
   {
    "word": "vaudeville",
@@ -65485,16 +65540,6 @@
    "meaning": "(NAmE)[countable]台鉗；老虎鉗"
   },
   {
-   "word": "visiting",
-   "phonetic": "/ˈvɪzɪtɪŋ/",
-   "meaning": "（指教授或講師）客座的"
-  },
-  {
-   "word": "vitally",
-   "phonetic": "/ˈvaɪtəli/",
-   "meaning": "極其；絕對"
-  },
-  {
    "word": "vitals",
    "phonetic": "/ˈvaɪtlz/",
    "meaning": "(old-fashioned or humorous)（維持生命的）重要器官"
@@ -65815,11 +65860,6 @@
    "meaning": "(BrE) (informal)遛狗"
   },
   {
-   "word": "walking",
-   "phonetic": "/ˈwɔːkɪŋ/",
-   "meaning": "1.(especially BrE)行走；步行；散步；徒步旅行 2.競走 adjective (informal)似人的；活的"
-  },
-  {
    "word": "walk-on",
    "phonetic": "",
    "meaning": "（指戲劇或電影中無台詞的）小角色，龍套角色"
@@ -65998,11 +66038,6 @@
    "word": "warm-hearted",
    "phonetic": "",
    "meaning": "(人)熱心腸的；友好的；富有同情心的"
-  },
-  {
-   "word": "warm-up",
-   "phonetic": "",
-   "meaning": "1.（體育運動等前的）適應性活動，準備活動；熱身練習 2.暖場表演（正式表演開始前上演的短小音樂、喜劇等節目）"
   },
   {
    "word": "warpaint",
@@ -66463,11 +66498,6 @@
    "word": "weighting",
    "phonetic": "/ˈweɪtɪŋ/",
    "meaning": "1.(BrE)（發放給在生活費用高的地區工作的人的）額外津貼，生活補貼 2.加權值"
-  },
-  {
-   "word": "weightless",
-   "phonetic": "/ˈweɪtləs/",
-   "meaning": "無重量的；似無重量的；失重的"
   },
   {
    "word": "weightlifting",
@@ -67090,11 +67120,6 @@
    "meaning": "(formal)無風的；平靜的"
   },
   {
-   "word": "windowless",
-   "phonetic": "/ˈwɪndoʊləs/",
-   "meaning": "無窗的"
-  },
-  {
    "word": "windowpane",
    "phonetic": "/ˈwɪndoʊpeɪn/",
    "meaning": "（一塊）窗玻璃"
@@ -67540,11 +67565,6 @@
    "meaning": "(BrE)（英國舊時的）濟貧院，勞動救濟所"
   },
   {
-   "word": "working",
-   "phonetic": "/ˈwɜːrkɪŋ/",
-   "meaning": "1.有工作的；有職業的 2.做工的；從事體力勞動的 3.工作上的；工作時間的 4.（早餐或午餐等）邊吃邊談公事的 5.初步的；暫定的 6.尚可應付工作的；基本夠用的 7.（機械部件）操縱用的，用於啟動的 8.（議會票數）足夠多數的 noun 1.（機器、系統、組織等的）運作，工作方法 2.（礦山或採石場的）礦，巷道，作業區"
-  },
-  {
    "word": "workmanlike",
    "phonetic": "/ˈwɜːrkmənlaɪk/",
    "meaning": "技術嫺熟（但無新意）的"
@@ -67563,11 +67583,6 @@
    "word": "workroom",
    "phonetic": "/ˈwɜːrkruːm/",
    "meaning": "工作室；工作間；作坊"
-  },
-  {
-   "word": "worksheet",
-   "phonetic": "/ˈwɜːrkʃiːt/",
-   "meaning": "1.（學生做的）活頁練習題 2.工作記錄（或進度）表"
   },
   {
    "word": "work-shy",
@@ -67855,11 +67870,6 @@
    "meaning": "(AustralE, NZE) (informal)工作；艱苦勞作"
   },
   {
-   "word": "y'all",
-   "phonetic": "/jɔːl/",
-   "meaning": "=you-all"
-  },
-  {
    "word": "yang",
    "phonetic": "/jæŋ/",
    "meaning": "(from Chinese)（中國哲學）陽"
@@ -67923,11 +67933,6 @@
    "word": "yellowhammer",
    "phonetic": "/ˈjeloʊhæmər/",
    "meaning": "黃鵐（雄性的頭、頸和胸黃色）"
-  },
-  {
-   "word": "yellowish",
-   "phonetic": "/ˈjeloʊɪʃ/",
-   "meaning": "微黃色的；發黃的"
   },
   {
    "word": "yeomanry",
@@ -68048,11 +68053,6 @@
    "word": "yore",
    "phonetic": "/jɔːr/",
    "meaning": "of yore(old use or literary)long ago很久以前"
-  },
-  {
-   "word": "you-all",
-   "phonetic": "/ˈjuː ɔːl/",
-   "meaning": "(informal)（尤用於美國南部）你們"
   },
   {
    "word": "youngish",

@@ -143,6 +143,8 @@ def run_session(
         return result
 
     result.queued = len(queue)
+    # 会话内打乱：复习词与新词混合出题，不按块状顺序
+    rng.shuffle(queue)
     result.unit = gamify.current_unit(conn, book["id"])
     display.print_header(
         book_name=book["name"],

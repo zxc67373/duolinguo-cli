@@ -230,3 +230,33 @@ def test_run_session_invalid_input_reprompts(conn, sample_book, scripted):
     assert result.answered == 1
     assert result.correct == 1
     assert result.quit_early is True
+
+
+def test_run_session_shuffles_queue(conn, sample_book, monkeypatch):
+    """会话内打乱：复习+新词混合出题，集合不变、顺序打乱。"""
+    mark_due(conn, db.fetch_new(conn, sample_book["id"], 4), TODAY)
+    composed = [
+        row["id"]
+        for row, _ in session.compose_queue(conn, sample_book["id"], TODAY, count=8)
+    ]
+    assert len(composed) == 8  # 4 到期 + 4 新词
+
+    seen: list[int] = []
+    box: dict = {}
+
+    def spy(idx, total, q):
+        seen.append(q.word["id"])
+        box["q"] = q
+
+    monkeypatch.setattr(display, "print_question", spy)
+
+    def input_fn(prompt):
+        q = box["q"]
+        return q.answer if q.qtype == "spelling" else str(q.answer_index + 1)
+
+    result = session.run_session(
+        conn, sample_book, count=8, rng=random.Random(1), input_fn=input_fn
+    )
+    assert result.answered == 8
+    assert sorted(seen) == sorted(composed)  # 同一批词，一道不少
+    assert seen != composed  # 但顺序被打乱（种子固定 → 确定性断言）
