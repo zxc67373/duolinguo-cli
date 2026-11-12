@@ -6,7 +6,7 @@
 - 🔁 **智能复习**：简化 SM-2 间隔重复算法，答对拉长间隔、答错明天重来
 - 🔥 **游戏化**：每日目标、连胜 streak、经验值 XP、目标首达 +20
 - ✍️ **两种题型**：选择题（英译中 / 中译英）+ 拼写题；错词会话末强制拼写重练
-- 📚 **内置词书**：高中核心词 3364 词、大学英语四级 4539 词；支持导入 CSV/TXT
+- 📚 **内置词书 8 本共 57247 词**：高中 / 四级 / 六级 / 考研 / 托福 / GRE / COCA 频表 / 牛津高阶进阶；支持导入 CSV/TXT
 
 ## 安装
 
@@ -85,10 +85,20 @@ duolinguo config current_book cet4_core
 
 ## 内置词书来源
 
-词表数据整理自 [mahavivo/english-wordlists](https://github.com/mahavivo/english-wordlists)（已转换为项目 JSON 格式，非直接引用原文件）：
+词表数据整理自 [mahavivo/english-wordlists](https://github.com/mahavivo/english-wordlists)，已转换为项目 JSON 格式（`duolinguo_cli/words_data/`，非直接引用原文件）：
 
-- `highschool_core` — 高中英语参考词汇表（3446 词），释义由 NPEE / CET4 / COCA 词典交叉匹配（覆盖 3364 词）
-- `cet4_core` — 大学英语四级大纲词汇（4539 词，含音标与释义）
+| slug | 词书 | 词数 | 源文件 |
+|---|---|---|---|
+| `highschool_core` | 高中核心词 | 3364 | Highschool_edited（原表仅单词，释义由 NPEE/CET4/COCA 交叉匹配） |
+| `cet4_core` | 大学英语四级 | 4539 | CET4_edited |
+| `cet6_core` | 六级核心词 | 2219 | CET6_edited（精编版，含义项编号） |
+| `kaoyan_core` | 考研英语 | 5391 | NPEE_Wordlist |
+| `toefl_core` | 托福词汇 | 4510 | TOEFL |
+| `gre_core` | GRE 词汇 | 7724 | GRE_8000_Words |
+| `coca_core` | COCA 高频词 | 15851 | COCA_with_translation（按词频排序；86% 单词回填音标） |
+| `oald8_core` | 牛津高阶进阶词 | 13649 | OALD8_abridged_edited（繁体释义） |
+
+未收录：`CET_4+6_edited`（纯单词无释义）、`SUM_*`（四六级+托福+GRE 简单合并）、`GRE_abridged`/`GRE_delete_*`（与 GRE_8000 高度重叠）、`COCA_20000`（纯单词版，释义版已收录）。
 
 ## 开发
 
