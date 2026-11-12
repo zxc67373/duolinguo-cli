@@ -224,3 +224,15 @@ def test_notes_show_context_without_leaking():
     words[0]["example"] = "Nothing relevant here.  无关句。"
     q3 = quiz.build_question(words[0], words, quiz.SPELLING, rng=RNG)
     assert q3.note == ""
+
+
+def test_spelling_is_majority():
+    """拼写为主：复习词拼写占比 >50%，新词拼写占比也最高。"""
+    rng = random.Random(11)
+    for is_new, floor in ((True, 0.40), (False, 0.55)):
+        counts = {"spell": 0, "other": 0}
+        for _ in range(1000):
+            t = quiz.pick_qtype(is_new, True, has_example=True, rng=rng)
+            counts["spell" if t == quiz.SPELLING else "other"] += 1
+        share = counts["spell"] / 1000
+        assert share > floor, f"is_new={is_new} 拼写占比 {share:.0%} 低于预期"

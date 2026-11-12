@@ -11,9 +11,9 @@ MCQ_ZH2EN = "mcq_zh2en"  # 看中文选英文
 SPELLING = "spelling"  # 拼写
 CLOZE = "cloze"  # 例句填空（句中挖空，选词）
 
-# 题型权重：新词偏易、复习偏拼写；例句填空仅在词有例句时参与
-NEW_WEIGHTS = {MCQ_EN2ZH: 0.35, MCQ_ZH2EN: 0.20, SPELLING: 0.20, CLOZE: 0.25}
-REVIEW_WEIGHTS = {MCQ_EN2ZH: 0.30, MCQ_ZH2EN: 0.20, SPELLING: 0.35, CLOZE: 0.15}
+# 题型权重：拼写为主（记得牢），选择题辅助；例句填空仅在词有例句时参与
+NEW_WEIGHTS = {SPELLING: 0.45, MCQ_EN2ZH: 0.25, CLOZE: 0.20, MCQ_ZH2EN: 0.10}
+REVIEW_WEIGHTS = {SPELLING: 0.60, CLOZE: 0.15, MCQ_EN2ZH: 0.15, MCQ_ZH2EN: 0.10}
 
 DISTRACTOR_COUNT = 3  # 选择题干扰项数量
 
