@@ -1,9 +1,11 @@
-"""rich 展示层：表格、面板、进度条、即时反馈。"""
+"""展示层：纯命令行风格——无面板边框、无表格网格，只用颜色与对齐。
+
+摸鱼场景：输出低调紧凑，像普通命令行程序的输出。
+"""
 
 from __future__ import annotations
 
 from rich.console import Console
-from rich.panel import Panel
 from rich.table import Table
 
 from . import books, config, db, gamify
@@ -26,12 +28,17 @@ def _bar(done: int, goal: int, width: int = 10) -> str:
     return "█" * filled + "░" * (width - filled)
 
 
+def _table(title: str) -> Table:
+    """无边框表格：只靠列对齐，像命令行的对齐输出。"""
+    return Table(title=title, title_justify="left", box=None, header_style="bold", pad_edge=False)
+
+
 # ---------------------------------------------------------------- 词书表格
 
 
 def print_books_table(rows: list[dict], current_slug: str | None) -> None:
     """词书列表：名称、词数、已学、来源、当前标记。"""
-    table = Table(title="词书列表", show_lines=False)
+    table = _table("词书列表")
     table.add_column("slug", style="dim")
     table.add_column("名称")
     table.add_column("词数", justify="right")
@@ -51,19 +58,34 @@ def print_books_table(rows: list[dict], current_slug: str | None) -> None:
     console.print(table)
 
 
-def print_unit_table(book_name: str, units: list[dict]) -> None:
-    """词书详情：各关卡进度。"""
-    table = Table(title=f"{book_name} · 关卡进度")
+def print_unit_table(book_name: str, units: list[dict], full: bool = False) -> None:
+    """词书关卡进度。默认只展示到当前进度附近（避免长词书刷屏），full=True 全量。"""
+    if not units:
+        return
+    if full:
+        shown, hidden = units, 0
+    else:
+        last_active = max(
+            (u["unit"] for u in units if (u["learned"] or 0) > 0),
+            default=1,
+        )
+        keep_until = last_active + 2
+        shown = [u for u in units if u["unit"] <= keep_until or (u["learned"] or 0) > 0]
+        hidden = len(units) - len(shown)
+
+    table = _table(f"{book_name} · 关卡进度")
     table.add_column("关卡", justify="right")
     table.add_column("词数", justify="right")
     table.add_column("已学", justify="right")
     table.add_column("已掌握", justify="right")
     table.add_column("进度")
-    for u in units:
+    for u in shown:
         learned = u["learned"] or 0
         bar = "█" * learned + "░" * (u["total"] - learned)
         table.add_row(str(u["unit"]), str(u["total"]), str(learned), str(u["mastered"] or 0), bar)
     console.print(table)
+    if hidden > 0:
+        console.print(f"[dim]… 其余 {hidden} 关省略（duolinguo books show <slug> 查看全部）[/]")
 
 
 # ---------------------------------------------------------------- 学习会话
@@ -72,29 +94,27 @@ def print_unit_table(book_name: str, units: list[dict]) -> None:
 def print_header(
     book_name: str, unit: int, streak: int, xp_total: int, done: int, goal: int
 ) -> None:
-    """会话顶部状态条。"""
-    line1 = (
+    """会话顶部状态（单行）。"""
+    console.print()
+    console.print(
         f"[bold]{book_name}[/] · 关卡 {unit} · 连胜 [bold yellow]{streak}[/] 天"
-        f" · 总 XP {xp_total}"
+        f" · 总 XP {xp_total} · 今日 [cyan]{_bar(done, goal)}[/] {done}/{goal}"
     )
-    line2 = f"今日进度 [cyan]{_bar(done, goal)}[/] {done}/{goal}"
-    console.print(Panel(f"{line1}\n{line2}", title="duolinguo", border_style="blue"))
 
 
 def print_question(idx: int, total: int, q: Question) -> None:
-    """逐题面板：题型标签、题干、语境补充（例句/挖空句）、选项。"""
+    """一题：题型行 + 题干 + 语境（例句/挖空句）+ 选项，无边框。"""
     label = QTYPE_LABELS.get(q.qtype, q.qtype)
-    lines = [f"[bold]{q.prompt}[/]"]
+    console.print()
+    console.print(f"[dim]第 {idx}/{total} 题[/] · [bold]{label}[/]")
+    console.print(q.prompt)
     if q.note:
-        lines.append(f"[dim]{q.note}[/]")
+        console.print(f"[dim]{q.note}[/]")
     if q.options:
-        lines.append("")
         for i, opt in enumerate(q.options, start=1):
-            lines.append(f"  [cyan]{i}[/]. {opt}")
+            console.print(f"  [cyan]{i}[/]. {opt}")
     elif q.qtype == "spelling":
-        lines.append("")
-        lines.append("[dim]请拼写出对应的英文单词[/]")
-    console.print(Panel("\n".join(lines), title=f"第 {idx}/{total} 题 · {label}"))
+        console.print("[dim]请拼写出对应的英文单词[/]")
 
 
 def print_spelling_hint(hint: str) -> None:
@@ -124,18 +144,20 @@ def print_no_content(mode: str = "learn") -> None:
 def print_stats_overview(
     streak: int, xp_total: int, done: int, goal: int, answered: int, correct: int
 ) -> None:
-    """stats 总览面板。"""
+    """stats 总览（两行）。"""
     acc = f"{correct}/{answered}（{correct / answered:.0%}）" if answered else "0/0"
-    line1 = f"连胜 [bold yellow]{streak}[/] 天 · 总 XP [bold]{xp_total}[/]"
-    line2 = f"今日 [cyan]{_bar(done, goal)}[/] {done}/{goal} · 答题 {acc}"
-    console.print(Panel(f"{line1}\n{line2}", title="学习概况", border_style="blue"))
+    console.print("[bold]学习概况[/]")
+    console.print(
+        f"连胜 [bold yellow]{streak}[/] 天 · 总 XP [bold]{xp_total}[/]"
+        f" · 今日 [cyan]{_bar(done, goal)}[/] {done}/{goal} · 答题 {acc}"
+    )
 
 
 def print_recent_table(rows: list[dict]) -> None:
-    """近 N 天学习记录表（按日期升序）。"""
+    """近 N 天学习记录（按日期升序，无边框）。"""
     if not rows:
         return
-    table = Table(title="近期学习记录")
+    table = _table("近期学习记录")
     table.add_column("日期")
     table.add_column("新学", justify="right")
     table.add_column("复习", justify="right")
@@ -191,17 +213,18 @@ def print_main_menu(
     goal: int,
     items: list[tuple[str, str]],
 ) -> None:
-    """交互主菜单：状态行 + 编号选项。"""
+    """交互主菜单：状态行 + 编号选项，无边框。"""
     if book_name:
         status = (
-            f"[bold]{book_name}[/] · 关卡 {unit} · 连胜 [bold yellow]{streak}[/] 天"
-            f" · 总 XP {xp_total} · 今日 [cyan]{_bar(done, goal)}[/] {done}/{goal}"
+            f"[bold dim]duolinguo[/]  {book_name} · 关卡 {unit}"
+            f" · 连胜 [bold yellow]{streak}[/] 天 · XP {xp_total}"
+            f" · 今日 [cyan]{_bar(done, goal)}[/] {done}/{goal}"
         )
     else:
-        status = "[yellow]还没有词书，先按 5 导入词表[/]"
-    lines = [status, ""]
-    lines += [f"  [cyan]{key}[/]. {label}" for key, label in items]
-    console.print(Panel("\n".join(lines), title="duolinguo", border_style="blue"))
+        status = "[bold dim]duolinguo[/]  [yellow]还没有词书，先按 5 导入词表[/]"
+    console.print(status)
+    for key, label in items:
+        console.print(f"  [cyan]{key}[/]. {label}")
 
 
 def print_numbered_books(rows: list[dict], current_slug: str | None) -> None:
@@ -225,32 +248,30 @@ def print_import_result(book, added: int, errors: list[str]) -> None:
 
 
 def print_summary(r) -> None:
-    """会话总结面板（r 为 session.SessionResult）。"""
-    lines = []
+    """会话总结（r 为 session.SessionResult），无边框。"""
+    console.print()
+    console.print("[bold]本次学习完成[/]")
     total = r.answered
     acc = f"{r.correct}/{total}（{r.correct / total:.0%}）" if total else "0/0"
-    lines.append(f"答题 [bold]{acc}[/] · 新学 {r.new_learned} 词 · 复习 {r.reviews_done} 词")
+    console.print(f"答题 [bold]{acc}[/] · 新学 {r.new_learned} 词 · 复习 {r.reviews_done} 词")
     if r.retries:
-        lines.append(f"错词重练 {r.retries} 次")
-    lines.append(f"本次获得 [bold yellow]+{r.xp} XP[/]")
+        console.print(f"错词重练 {r.retries} 次")
+    console.print(f"本次获得 [bold yellow]+{r.xp} XP[/]")
     if r.quit_early:
-        lines.append("[dim]（提前退出，进度已保存）[/]")
+        console.print("[dim]（提前退出，进度已保存）[/]")
 
     remaining = max(0, r.goal - r.goal_done)
     if r.goal_met_now:
-        lines.append(f"🎉 每日目标达成！{r.goal_done}/{r.goal}（+{config.XP_GOAL_BONUS} XP 奖励）")
+        console.print(f"🎉 每日目标达成！{r.goal_done}/{r.goal}（+{config.XP_GOAL_BONUS} XP 奖励）")
     elif remaining:
-        lines.append(f"每日目标还差 [yellow]{remaining}[/] 词：{r.goal_done}/{r.goal}")
+        console.print(f"每日目标还差 [yellow]{remaining}[/] 词：{r.goal_done}/{r.goal}")
     else:
-        lines.append(f"每日目标已达成：{r.goal_done}/{r.goal}")
+        console.print(f"每日目标已达成：{r.goal_done}/{r.goal}")
 
-    lines.append(f"当前连胜 [bold yellow]{r.streak}[/] 天")
+    console.print(f"当前连胜 [bold yellow]{r.streak}[/] 天")
 
     if r.units_completed:
         for unit in r.units_completed:
-            lines.append(f"[bold green]🏆 关卡 {unit} 完成！+{config.XP_UNIT_BONUS} XP[/]")
+            console.print(f"[bold green]🏆 关卡 {unit} 完成！+{config.XP_UNIT_BONUS} XP[/]")
     else:
-        lines.append(f"当前关卡：{r.unit}")
-
-    style = "green" if r.goal_met_now or r.units_completed else "blue"
-    console.print(Panel("\n".join(lines), title="本次学习完成", border_style=style))
+        console.print(f"当前关卡：{r.unit}")

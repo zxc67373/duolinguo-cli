@@ -176,7 +176,7 @@ def books_show(slug: str) -> None:
         book = db.get_book(conn, slug)
         if not book:
             raise click.ClickException(f"词书不存在：{slug}")
-        print_unit_table(book["name"], books.unit_progress(conn, book["id"]))
+        print_unit_table(book["name"], books.unit_progress(conn, book["id"]), full=True)
     finally:
         conn.close()
 
