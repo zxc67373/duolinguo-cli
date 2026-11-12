@@ -16,6 +16,8 @@ def scripted_input(script: list[str]):
         state["q"] = q
 
     def input_fn(prompt):
+        if "重新输入" in prompt:  # 拼写订正循环：自动输入正确答案放行
+            return state["q"].answer
         if not state["script"]:
             return "0"  # 脚本耗尽 → 退出，避免挂死
         s = state["script"].pop(0)

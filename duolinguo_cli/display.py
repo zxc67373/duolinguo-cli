@@ -121,6 +121,22 @@ def print_spelling_hint(hint: str) -> None:
     console.print(f"[yellow]提示：[/]{hint or '（该词无音标）'}")
 
 
+def print_correction_begin(q: Question) -> None:
+    """拼写答错：给出正确答案，要求重新输入。"""
+    phonetic = q.word.get("phonetic", "")
+    extra = f"  {phonetic}" if phonetic else ""
+    console.print(f"[red]正确拼写：[/][bold]{q.answer}[/]{extra}")
+    console.print("[dim]请重新输入以继续[/]")
+
+
+def print_correction_retry() -> None:
+    console.print("[red]不对，再输入一次[/]")
+
+
+def print_correction_ok() -> None:
+    console.print("[green]✓ 正确[/]  继续下一题")
+
+
 def print_feedback(correct: bool, xp: int, q: Question, will_retry: bool) -> None:
     """即时反馈：答对绿色、答错红色并展示正确答案。"""
     if correct:

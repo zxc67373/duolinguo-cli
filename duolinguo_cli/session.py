@@ -64,7 +64,10 @@ def _all_words(conn: sqlite3.Connection, book_id: int) -> list[dict]:
 
 
 def _ask(q: quiz.Question, input_fn) -> tuple[bool, str]:
-    """向用户提问，返回 (是否答对, 作答原文)。q 退出抛 QuitSession。"""
+    """向用户提问，返回 (是否答对, 作答原文)。q 退出抛 QuitSession。
+
+    拼写答错会当场进入订正循环：显示正确答案，必须重新输入正确才放行。
+    """
     while True:
         if q.qtype == quiz.SPELLING:
             raw = input_fn("拼写这个单词（? 看提示 / q 退出）: ")
@@ -79,13 +82,32 @@ def _ask(q: quiz.Question, input_fn) -> tuple[bool, str]:
             if text == "?":
                 display.print_spelling_hint(q.hint)
                 continue
-            return quiz.grade_spelling(text, q.answer), text
+            ok = quiz.grade_spelling(text, q.answer)
+            if not ok:
+                _correct_spelling(q, input_fn)
+            return ok, text
 
         if text not in ("1", "2", "3", "4") or q.options is None:
             display.console.print("[yellow]请输入 1-4 之间的数字[/]")
             continue
         idx = int(text) - 1
         return idx == q.answer_index, q.options[idx]
+
+
+def _correct_spelling(q: quiz.Question, input_fn) -> None:
+    """拼写订正：显示答案后反复要求输入，输入正确才返回。"""
+    display.print_correction_begin(q)
+    while True:
+        raw = input_fn(f"重新输入 {q.answer}: ")
+        text = raw.strip()
+        if text.lower() == "q":
+            raise QuitSession
+        if not text:
+            continue  # 空输入不算，重新显示提示
+        if quiz.grade_spelling(text, q.answer):
+            display.print_correction_ok()
+            return
+        display.print_correction_retry()
 
 
 def _apply_answer(

@@ -86,6 +86,8 @@ def scripted(monkeypatch):
 
         def input_fn(self, prompt):
             self.calls += 1
+            if "重新输入" in prompt:  # 拼写订正循环：自动输入正确答案放行
+                return self.current.answer
             strategy = self.script.pop(0) if self.script else "correct"
             q = self.current
             if strategy == "q":
@@ -260,3 +262,77 @@ def test_run_session_shuffles_queue(conn, sample_book, monkeypatch):
     assert result.answered == 8
     assert sorted(seen) == sorted(composed)  # 同一批词，一道不少
     assert seen != composed  # 但顺序被打乱（种子固定 → 确定性断言）
+
+
+# ---------------------------------------------------------------- 拼写订正
+
+
+def _spelling_question(word_text="word01"):
+    from duolinguo_cli import quiz
+
+    return quiz.Question(
+        qtype=quiz.SPELLING,
+        word={"id": 1, "word": word_text, "phonetic": "/w1/", "meaning": "释义1"},
+        prompt="释义1",
+        answer=word_text,
+        hint="/w1/",
+    )
+
+
+def test_ask_spelling_wrong_then_corrected():
+    """拼写答错 → 显示答案 → 输入正确才放行；判分仍为错。"""
+    from duolinguo_cli.session import _ask
+
+    q = _spelling_question()
+    inputs = iter(["word01x", "word01"])  # 首答错 → 订正输入正确
+    correct, resp = _ask(q, lambda p: next(inputs))
+    assert correct is False
+    assert resp == "word01x"  # 判分以首次作答为准
+    # 订正过程消耗了第二次输入
+    try:
+        next(inputs)
+        raise AssertionError("订正后不应再有待答输入")
+    except StopIteration:
+        pass
+
+
+def test_ask_spelling_correction_retries_until_right():
+    """订正循环：空输入、错输入都不放行，直到输对才返回。"""
+    from duolinguo_cli.session import _ask
+
+    q = _spelling_question()
+    inputs = iter(["bad1", "", "nope", "word01"])  # 首答错 → 订正：空、错、对
+    correct, resp = _ask(q, lambda p: next(inputs))
+    assert correct is False and resp == "bad1"  # 判分以首次作答为准
+    with pytest.raises(StopIteration):  # 4 个输入全部按序消耗
+        next(inputs)
+
+
+def test_ask_spelling_quit_during_correction():
+    """订正过程中 q 退出 → 抛 QuitSession。"""
+    import pytest
+
+    from duolinguo_cli.session import QuitSession, _ask
+
+    q = _spelling_question()
+    inputs = iter(["bad", "q"])
+    with pytest.raises(QuitSession):
+        _ask(q, lambda p: next(inputs))
+
+
+def test_session_spelling_wrong_logged_once(conn, sample_book, scripted, monkeypatch):
+    """端到端：拼写答错触发订正；订正不重复记日志/SRS；错词仍进会话末重练。"""
+    monkeypatch.setattr(session.quiz, "pick_qtype", lambda *a, **k: session.quiz.SPELLING)
+    # Q1 答错（订正由 fixture 自动输对），其余答对
+    scripted.script = ["wrong"] + ["correct"] * 20
+    result = session.run_session(
+        conn, sample_book, count=8, rng=random.Random(1), input_fn=scripted.input_fn
+    )
+    assert result.answered == 9  # 8 主题 + 1 会话末重练（Q1 的词）
+    assert result.correct == 8  # 主题仅 Q1 错
+    assert result.retries == 1
+    logs = conn.execute(
+        "SELECT correct FROM review_log ORDER BY id"
+    ).fetchall()
+    assert len(logs) == 9  # 订正输入不产生额外日志
+    assert [r["correct"] for r in logs].count(0) == 1  # 只有首次作答记为错
