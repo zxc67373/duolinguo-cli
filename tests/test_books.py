@@ -8,7 +8,6 @@ import pytest
 
 from duolinguo_cli import books, config, db
 
-
 # ---------------------------------------------------------------- 解析
 
 
@@ -32,7 +31,11 @@ def test_parse_csv_three_and_four_columns():
 
 def test_parse_csv_header_and_bad_rows():
     entries, errors = books.parse_csv(
-        'word,phonetic,meaning\nabandon,/x/,v. 放弃\n,missing_word\nonlyoneword\nabandon,/x/,v. 放弃\n'
+        "word,phonetic,meaning\n"
+        "abandon,/x/,v. 放弃\n"
+        ",missing_word\n"
+        "onlyoneword\n"
+        "abandon,/x/,v. 放弃\n"
     )
     assert len(entries) == 2  # 表头跳过；重复词由导入去重处理，解析阶段保留
     assert len(errors) == 2
@@ -41,7 +44,7 @@ def test_parse_csv_header_and_bad_rows():
 
 def test_parse_csv_bom(tmp_path):
     p = tmp_path / "w.csv"
-    p.write_bytes("﻿word,meaning\nabandon,v. 放弃\n".encode("utf-8"))
+    p.write_bytes("﻿word,meaning\nabandon,v. 放弃\n".encode())
     entries, _ = books.parse_csv(p.read_text(encoding="utf-8-sig"))
     assert entries[0]["word"] == "abandon"
 

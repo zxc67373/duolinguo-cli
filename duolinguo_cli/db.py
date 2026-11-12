@@ -239,7 +239,8 @@ def add_review_log(
     response: str = "",
 ) -> None:
     conn.execute(
-        "INSERT INTO review_log (word_id, reviewed_at, qtype, correct, response) VALUES (?, ?, ?, ?, ?)",
+        "INSERT INTO review_log (word_id, reviewed_at, qtype, correct, response) "
+        "VALUES (?, ?, ?, ?, ?)",
         (word_id, reviewed_at, qtype, 1 if correct else 0, response),
     )
 

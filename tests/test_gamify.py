@@ -2,8 +2,6 @@
 
 from __future__ import annotations
 
-import pytest
-
 from duolinguo_cli import config, db, gamify
 from duolinguo_cli.quiz import MCQ_EN2ZH, SPELLING
 

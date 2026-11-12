@@ -49,8 +49,9 @@ def pick_distractors(
     """从同词书选 n 个干扰项：排除自身与同释义项，优先同单元（关卡邻近）。"""
     rng = rng or random
     others = [c for c in candidates if c["id"] != target["id"]]
-    same_unit = [c for c in others if c["unit"] == target["unit"] and c["meaning"] != target["meaning"]]
-    rest = [c for c in others if c["unit"] != target["unit"] and c["meaning"] != target["meaning"]]
+    distinct = [c for c in others if c["meaning"] != target["meaning"]]
+    same_unit = [c for c in distinct if c["unit"] == target["unit"]]
+    rest = [c for c in distinct if c["unit"] != target["unit"]]
     rng.shuffle(same_unit)
     rng.shuffle(rest)
     return (same_unit + rest)[:n]
