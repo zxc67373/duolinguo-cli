@@ -162,7 +162,9 @@ def run_session(
     try:
         for idx, (row, is_new) in enumerate(queue, start=1):
             target = dict(row)
-            qtype = quiz.pick_qtype(is_new, has_distractors, rng=rng)
+            qtype = quiz.pick_qtype(
+                is_new, has_distractors, has_example=bool(target.get("example")), rng=rng
+            )
             q = quiz.build_question(target, all_words, qtype, rng=rng)
             display.print_question(idx, len(queue), q)
             correct, response = _ask(q, input_fn)

@@ -243,3 +243,53 @@ def test_ensure_builtins_unit_migration(tmp_path, monkeypatch, conn):
     # marker 已更新：再跑一次是无操作
     assert books.ensure_builtins(conn) == 0
     assert units_of() == {"w5": 1, "w4": 1, "w3": 1, "w2": 2, "w1": 2, "w0": 2}
+
+
+def test_ensure_builtins_syncs_examples(tmp_path, monkeypatch, conn):
+    """JSON 例句变化 → 自动同步到库（word 主键不变）。"""
+    data_dir = tmp_path / "wd_ex"
+    data_dir.mkdir()
+    path = data_dir / "ex.json"
+    path.write_text(
+        json.dumps(
+            {
+                "slug": "ex",
+                "name": "例句书",
+                "unit_size": 10,
+                "words": [
+                    {"word": "alpha", "meaning": "甲", "example": "Alpha one.  甲一。"},
+                    {"word": "beta", "meaning": "乙"},  # 无例句
+                ],
+            },
+            ensure_ascii=False,
+        ),
+        encoding="utf-8",
+    )
+    monkeypatch.setattr(config, "WORDS_DATA_DIR", data_dir)
+    assert books.ensure_builtins(conn) == 1
+    rows = {r["word"]: r for r in conn.execute("SELECT * FROM words")}
+    assert rows["alpha"]["example"] == "Alpha one.  甲一。"
+    assert rows["beta"]["example"] == ""
+
+    # 改例句 → marker 变化 → 同步
+    path.write_text(
+        json.dumps(
+            {
+                "slug": "ex",
+                "name": "例句书",
+                "unit_size": 10,
+                "words": [
+                    {"word": "alpha", "meaning": "甲", "example": "Alpha two.  甲二。"},
+                    {"word": "beta", "meaning": "乙"},
+                ],
+            },
+            ensure_ascii=False,
+        ),
+        encoding="utf-8",
+    )
+    books._load_json_file.cache_clear()
+    assert books.ensure_builtins(conn) == 0
+    rows = {r["word"]: r for r in conn.execute("SELECT * FROM words")}
+    assert rows["alpha"]["example"] == "Alpha two.  甲二。"
+    # 例句同步不新建词、不动主键
+    assert len(rows) == 2

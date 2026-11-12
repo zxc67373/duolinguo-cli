@@ -154,3 +154,73 @@ def test_build_spelling_direct():
 )
 def test_grade_spelling(user, answer, expected):
     assert quiz.grade_spelling(user, answer) is expected
+
+
+# ---------------------------------------------------------------- 例句与填空
+
+
+def test_make_cloze():
+    blanked = quiz.make_cloze("We had to abandon the car.  我们不得不弃车。", "abandon")
+    assert blanked == "We had to ______ the car.  我们不得不弃车。"
+    assert quiz.make_cloze("Nothing here.  无。", "abandon") is None  # 句中无该词
+    assert quiz.make_cloze("", "abandon") is None
+    # 大小写不敏感
+    assert "______" in quiz.make_cloze("Abandon all hope.  放弃吧。", "abandon")
+
+
+def test_pick_qtype_example_gates_cloze():
+    rng = random.Random(3)
+    with_ex = {
+        quiz.pick_qtype(True, True, has_example=True, rng=rng) for _ in range(300)
+    }
+    assert quiz.CLOZE in with_ex
+    without = {
+        quiz.pick_qtype(True, True, has_example=False, rng=rng) for _ in range(300)
+    }
+    assert quiz.CLOZE not in without
+    assert quiz.SPELLING in without
+
+
+def test_build_cloze():
+    words = make_words(8)
+    words[0]["example"] = "This is word01 speaking.  这是示例句。"
+    q = quiz.build_question(words[0], words, quiz.CLOZE, rng=RNG)
+    assert q.qtype == quiz.CLOZE
+    assert "______" in q.prompt
+    assert "word01" not in q.prompt  # 目标词已挖去
+    assert q.options is not None and len(q.options) == 4
+    assert q.options[q.answer_index] == "word01"
+    assert "释义" in q.note
+
+
+def test_build_cloze_degrades_to_mcq():
+    """句中无目标词（屈折变化）→ 降级英译中。"""
+    words = make_words(8)
+    words[0]["example"] = "A sentence without the target.  没有目标词。"
+    q = quiz.build_question(words[0], words, quiz.CLOZE, rng=RNG)
+    assert q.qtype == quiz.MCQ_EN2ZH
+
+
+def test_build_cloze_degrades_to_spelling():
+    """干扰项不足 → 最终降级拼写。"""
+    words = make_words(3)
+    words[0]["example"] = "word01 appears here.  出现。"
+    q = quiz.build_question(words[0], words, quiz.CLOZE, rng=RNG)
+    assert q.qtype == quiz.SPELLING
+
+
+def test_notes_show_context_without_leaking():
+    words = make_words(8)
+    words[0]["example"] = "You should word01 carefully.  你应该……"
+    # 英译中：题干本含目标词 → 原句展示
+    q1 = quiz.build_question(words[0], words, quiz.MCQ_EN2ZH, rng=RNG)
+    assert q1.note == words[0]["example"]
+    # 中译英 / 拼写：挖空展示，答案词不可见
+    for qt in (quiz.MCQ_ZH2EN, quiz.SPELLING):
+        q = quiz.build_question(words[0], words, qt, rng=RNG)
+        assert "______" in q.note
+        assert "word01" not in q.note
+    # 例句挖不出空 → 不展示（宁缺勿泄）
+    words[0]["example"] = "Nothing relevant here.  无关句。"
+    q3 = quiz.build_question(words[0], words, quiz.SPELLING, rng=RNG)
+    assert q3.note == ""

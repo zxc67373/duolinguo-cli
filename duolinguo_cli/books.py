@@ -38,25 +38,27 @@ def load_builtin_jsons() -> list[dict]:
     return books
 
 
-def _order_marker(words: list[dict]) -> str:
-    """词序指纹：词序变化时触发单元重排迁移。"""
+def _content_marker(words: list[dict]) -> str:
+    """词序 + 例句指纹：JSON 内容变化时触发迁移（重排 unit / 同步例句）。"""
     h = hashlib.md5()
     for w in words:
         h.update(w["word"].lower().encode("utf-8"))
         h.update(b"\x00")
+        h.update(w.get("example", "").encode("utf-8"))
+        h.update(b"\x01")
     return h.hexdigest()
 
 
 def ensure_builtins(conn: sqlite3.Connection) -> int:
     """确保内置词书入库（按 slug 幂等），返回新导入的词书数。
 
-    若 JSON 词序变化（如改为按词频排序），自动重排已有词的 unit 分组——
+    若 JSON 词序/例句变化（如改为按词频排序、补充例句），自动同步到库——
     word 主键与 word_progress 不动，学习进度完整保留。
     """
     created = 0
     for data in load_builtin_jsons():
         unit_size = data.get("unit_size", config.UNIT_SIZE)
-        marker = _order_marker(data["words"])
+        marker = _content_marker(data["words"])
         marker_key = f"book_order:{data['slug']}"
         book = db.get_book(conn, data["slug"])
         if book is None:
@@ -73,17 +75,23 @@ def ensure_builtins(conn: sqlite3.Connection) -> int:
             continue
 
         if db.get_setting(conn, marker_key) == marker:
-            continue  # 词序未变，跳过
+            continue  # 内容未变，跳过
 
-        # 词序变化 → 按新顺序重排单元（进度按 word 保留）
+        # 内容变化 → 按新顺序重排单元、同步例句（进度按 word 保留）
+        if book["description"] != data.get("description", ""):
+            conn.execute(
+                "UPDATE books SET description = ? WHERE id = ?",
+                (data.get("description", ""), book["id"]),
+            )
         existing = {
-            r["word"]: (r["id"], r["unit"])
+            r["word"]: (r["id"], r["unit"], r["example"])
             for r in conn.execute(
-                "SELECT word, id, unit FROM words WHERE book_id = ?", (book["id"],)
+                "SELECT word, id, unit, example FROM words WHERE book_id = ?", (book["id"],)
             )
         }
         for i, entry in enumerate(data["words"]):
             unit = i // unit_size + 1
+            example = entry.get("example", "")
             row = existing.get(entry["word"])
             if row is None:
                 conn.execute(
@@ -94,12 +102,15 @@ def ensure_builtins(conn: sqlite3.Connection) -> int:
                         entry["word"],
                         entry.get("phonetic", ""),
                         entry["meaning"],
-                        entry.get("example", ""),
+                        example,
                         unit,
                     ),
                 )
-            elif row[1] != unit:
-                conn.execute("UPDATE words SET unit = ? WHERE id = ?", (unit, row[0]))
+            elif row[1] != unit or row[2] != example:
+                conn.execute(
+                    "UPDATE words SET unit = ?, example = ? WHERE id = ?",
+                    (unit, example, row[0]),
+                )
         db.set_setting(conn, marker_key, marker)
     conn.commit()
     return created

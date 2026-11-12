@@ -7,7 +7,7 @@ from rich.panel import Panel
 from rich.table import Table
 
 from . import books, config, db, gamify
-from .quiz import MCQ_EN2ZH, MCQ_ZH2EN, Question
+from .quiz import CLOZE, MCQ_EN2ZH, MCQ_ZH2EN, Question
 
 console = Console()
 
@@ -15,6 +15,7 @@ QTYPE_LABELS = {
     MCQ_EN2ZH: "英译中",
     MCQ_ZH2EN: "中译英",
     "spelling": "拼写",
+    CLOZE: "例句填空",
 }
 
 
@@ -81,9 +82,11 @@ def print_header(
 
 
 def print_question(idx: int, total: int, q: Question) -> None:
-    """逐题面板：题型标签、题干、选项。"""
+    """逐题面板：题型标签、题干、语境补充（例句/挖空句）、选项。"""
     label = QTYPE_LABELS.get(q.qtype, q.qtype)
     lines = [f"[bold]{q.prompt}[/]"]
+    if q.note:
+        lines.append(f"[dim]{q.note}[/]")
     if q.options:
         lines.append("")
         for i, opt in enumerate(q.options, start=1):
