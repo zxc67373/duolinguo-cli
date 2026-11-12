@@ -1,0 +1,103 @@
+"""存储层测试。"""
+
+from __future__ import annotations
+
+import pytest
+
+from duolinguo_cli import db
+
+
+def test_init_db_idempotent(conn):
+    db.init_db(conn)
+    db.init_db(conn)
+    tables = {
+        r["name"]
+        for r in conn.execute("SELECT name FROM sqlite_master WHERE type='table'").fetchall()
+    }
+    assert {"books", "words", "word_progress", "review_log", "daily_stats", "settings"} <= tables
+
+
+def test_insert_book_idempotent(conn):
+    id1 = db.insert_book(conn, "词书A", "book_a")
+    id2 = db.insert_book(conn, "词书A改名", "book_a")
+    assert id1 == id2
+    assert db.get_book(conn, "book_a")["name"] == "词书A"
+
+
+def test_insert_words_counts_and_units(conn, sample_book):
+    # 重复插入被忽略
+    added = db.insert_words(
+        conn, sample_book["id"], [{"word": "word01", "meaning": "释义1"}], unit_size=4
+    )
+    assert added == 0
+    total = conn.execute("SELECT COUNT(*) c FROM words").fetchone()["c"]
+    assert total == 8
+    units = {
+        r["unit"] for r in conn.execute("SELECT DISTINCT unit FROM words").fetchall()
+    }
+    assert units == {1, 2}
+
+
+def test_fetch_new_order_and_limit(conn, sample_book):
+    rows = db.fetch_new(conn, sample_book["id"], 3)
+    assert [r["word"] for r in rows] == ["word01", "word02", "word03"]
+    # 学过 word01 后它不再出现在新词里
+    db.upsert_progress(conn, rows[0]["id"], "learning", 2.5, 1, 1, 0, "2026-11-13", "2026-11-12")
+    conn.commit()
+    rows2 = db.fetch_new(conn, sample_book["id"], 3)
+    assert [r["word"] for r in rows2] == ["word02", "word03", "word04"]
+
+
+def test_fetch_due(conn, sample_book):
+    w1, w2 = db.fetch_new(conn, sample_book["id"], 2)
+    # w1 今天到期、w2 明天才到期、都不该出现在 new 之外的查询里若 status=new
+    db.upsert_progress(conn, w1["id"], "learning", 2.5, 1, 1, 0, "2026-11-12", "2026-11-11")
+    db.upsert_progress(conn, w2["id"], "learning", 2.5, 2, 1, 0, "2026-11-13", "2026-11-11")
+    conn.commit()
+    due = db.fetch_due(conn, sample_book["id"], "2026-11-12", 10)
+    assert [r["word"] for r in due] == ["word01"]
+    # 未学的词不算到期
+    assert all(r["word"] != "word03" for r in due)
+
+
+def test_upsert_progress_updates(conn, sample_book):
+    w = db.fetch_new(conn, sample_book["id"], 1)[0]
+    db.upsert_progress(conn, w["id"], "learning", 2.5, 0, 0, 0, "", "")
+    db.upsert_progress(conn, w["id"], "mastered", 2.7, 7, 3, 1, "2026-11-19", "2026-11-12")
+    conn.commit()
+    p = db.get_progress(conn, w["id"])
+    assert p["status"] == "mastered"
+    assert p["ease"] == pytest.approx(2.7)
+    assert p["lapses"] == 1
+
+
+def test_daily_stats_accumulate(conn):
+    db.bump_daily(conn, "2026-11-12", new_learned=5, answered=5, correct=4, xp_earned=20)
+    db.bump_daily(conn, "2026-11-12", reviews_done=3, answered=3, correct=3, xp_earned=15)
+    conn.commit()
+    row = db.get_daily(conn, "2026-11-12")
+    assert row["new_learned"] == 5
+    assert row["reviews_done"] == 3
+    assert row["answered"] == 8
+    assert row["xp_earned"] == 35
+    assert row["goal_met"] == 0
+
+
+def test_met_dates_and_total_xp(conn):
+    db.bump_daily(conn, "2026-11-10", xp_earned=30)
+    db.set_goal_met(conn, "2026-11-10")
+    db.bump_daily(conn, "2026-11-11", xp_earned=10)
+    db.set_goal_met(conn, "2026-11-11")
+    db.bump_daily(conn, "2026-11-12", xp_earned=5)
+    conn.commit()
+    assert db.met_dates(conn) == {"2026-11-10", "2026-11-11"}
+    assert db.total_xp(conn) == 45
+
+
+def test_settings_roundtrip(conn):
+    assert db.get_setting(conn, "daily_goal") is None
+    assert db.get_setting(conn, "daily_goal", "20") == "20"
+    db.set_setting(conn, "daily_goal", "30")
+    db.set_setting(conn, "daily_goal", "40")
+    conn.commit()
+    assert db.get_setting(conn, "daily_goal") == "40"
