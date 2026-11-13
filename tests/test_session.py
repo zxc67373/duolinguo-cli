@@ -424,3 +424,21 @@ def test_ask_mcq_rejects_unknown_text_then_accepts_number():
     inputs = iter(["zzz-not-an-option", str(q.answer_index + 1)])
     correct, resp = _ask(q, lambda p: next(inputs))
     assert correct is True and resp == q.answer
+
+
+def test_session_spelling_wrong_no_duplicate_error_line(
+    conn, sample_book, scripted, monkeypatch, capsys
+):
+    """拼写答错：订正流程收尾，不再追加“✗ 答错/稍后重练”重复反馈。"""
+    monkeypatch.setattr(session.quiz, "pick_qtype", lambda *a, **k: session.quiz.SPELLING)
+    scripted.script = ["wrong"] + ["correct"] * 20
+    session.run_session(
+        conn, sample_book, count=2, rng=random.Random(1), input_fn=scripted.input_fn
+    )
+    out = capsys.readouterr().out
+    assert "正确拼写" in out  # 订正流程存在
+    assert "✓ 正确" in out  # 订正完成确认
+    assert "✗ 答错" not in out  # 不再追加答错行
+    assert "稍后重练" not in out  # 不再提示重练（重练本身照常发生）
+    # 重练环节本身仍在
+    assert "订正 1/" in out

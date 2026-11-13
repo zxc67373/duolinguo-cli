@@ -242,7 +242,9 @@ def run_session(
             else:
                 result.reviews_done += 1
             result.xp += xp
-            display.print_feedback(correct, xp, q, will_retry=will_retry)
+            # 拼写答错的反馈已由订正流程给出（显示答案→重输→✓），不重复报错
+            if correct or q.qtype != quiz.SPELLING:
+                display.print_feedback(correct, xp, q, will_retry=will_retry)
             if unit_done:
                 display.console.print(
                     f"[bold green]🏆 关卡 {unit} 完成！+{config.XP_UNIT_BONUS} XP[/]"
@@ -276,7 +278,8 @@ def run_session(
             if correct:
                 result.correct += 1
             result.xp += xp
-            display.print_feedback(correct, xp, q, will_retry=False)
+            if correct or q.qtype != quiz.SPELLING:
+                display.print_feedback(correct, xp, q, will_retry=False)
 
     result.goal_done = gamify.words_done_today(conn, today)
     result.streak = gamify.calc_streak(conn, today)
