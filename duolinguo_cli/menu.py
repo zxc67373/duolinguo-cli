@@ -8,7 +8,7 @@ from __future__ import annotations
 
 from pathlib import Path
 
-from . import books, db, display, gamify, session
+from . import books, config, db, display, gamify, session
 
 MENU_ITEMS: list[tuple[str, str]] = [
     ("1", "开始今日学习（新词 + 复习）"),
@@ -49,11 +49,31 @@ def _render_menu(conn) -> None:
 
 
 def _learn(conn, mode: str, input_fn) -> None:
+    """学习直到达成每日目标：按批出题（每批最多 20），达标/学完/q 才停。"""
     book = _current_book(conn)
     if not book:
         display.console.print("[yellow]还没有词书，先按 5 导入词表[/]")
         return
-    session.run_session(conn, book, mode=mode, input_fn=input_fn)
+    while True:
+        today = db.today_str()
+        goal = gamify.get_goal(conn)
+        done = gamify.words_done_today(conn, today)
+        remaining = goal - done
+        # 已达标仍可加练一批（剩余未知时用默认批）；未达标按剩余量出题
+        count = min(config.DEFAULT_SESSION_COUNT, remaining) if remaining > 0 else (
+            config.DEFAULT_SESSION_COUNT
+        )
+        result = session.run_session(conn, book, mode=mode, count=count, input_fn=input_fn)
+        if result.quit_early:
+            break  # 用户主动退出，不再继续
+        done = gamify.words_done_today(conn, db.today_str())
+        if done >= gamify.get_goal(conn):
+            break  # 目标达成
+        if result.queued == 0:
+            break  # 没题可出（词书学完 / 无到期词）
+        display.console.print(
+            f"[dim]目标还差 {gamify.get_goal(conn) - done} 词，继续下一批…[/]"
+        )
 
 
 def _switch_book(conn, input_fn) -> None:

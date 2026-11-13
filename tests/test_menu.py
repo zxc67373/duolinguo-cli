@@ -135,3 +135,74 @@ def test_cli_bare_runs_menu(tmp_path, monkeypatch):
     assert result.exit_code == 0, result.output
     assert "duolinguo" in result.output
     assert "开始今日学习" in result.output
+
+
+def test_menu_learn_loops_until_goal(builtinless_conn, monkeypatch):
+    """进入学习后自动连批，直到达成每日目标才回菜单（不用手动多次进入）。"""
+    # 8 词小词书 + 目标 10：第一批 count=min(20,10)=10 → 出题 8（全学完）
+    # done=8 <10 → 第二批无题可出 → 自动结束回菜单
+    conn2 = builtinless_conn
+    db.insert_book(conn2, "循环书", "loop_book")
+    db.insert_words(
+        conn2,
+        db.get_book(conn2, "loop_book")["id"],
+        [{"word": f"w{i}", "meaning": f"释义{i}"} for i in range(1, 9)],
+        unit_size=20,
+    )
+    conn2.commit()
+    db.set_setting(conn2, "daily_goal", "10")
+    conn2.commit()
+
+    input_fn, fake_print = scripted_input(["1"] + ["correct"] * 8 + ["0"])
+    monkeypatch.setattr(display, "print_question", fake_print)
+    menu.run_menu(conn=conn2, input_fn=input_fn)
+
+    row = db.get_daily(conn2, db.today_str())
+    assert row is not None
+    assert row["answered"] == 8  # 两批合计：8 题后词书学完自然停
+    assert row["new_learned"] == 8
+
+
+def test_menu_learn_stops_at_goal_in_one_batch(builtinless_conn, monkeypatch):
+    """目标在一批内达成 → 达成即停，不进第二批。"""
+    conn2 = builtinless_conn
+    db.insert_book(conn2, "小词书", "small_book")
+    db.insert_words(
+        conn2,
+        db.get_book(conn2, "small_book")["id"],
+        [{"word": f"s{i}", "meaning": f"义{i}"} for i in range(1, 9)],
+        unit_size=20,
+    )
+    conn2.commit()
+    db.set_setting(conn2, "daily_goal", "3")
+    conn2.commit()
+
+    input_fn, fake_print = scripted_input(["1"] + ["correct"] * 3 + ["0"])
+    monkeypatch.setattr(display, "print_question", fake_print)
+    menu.run_menu(conn=conn2, input_fn=input_fn)
+
+    row = db.get_daily(conn2, db.today_str())
+    assert row["answered"] == 3  # 一批 3 题达标即停（count=min(20,3)）
+    assert row["new_learned"] == 3
+
+
+def test_menu_learn_quit_stops_loop(builtinless_conn, monkeypatch):
+    """学习中途 q 退出 → 整个目标循环终止回菜单。"""
+    conn2 = builtinless_conn
+    db.insert_book(conn2, "退出书", "quit_book")
+    db.insert_words(
+        conn2,
+        db.get_book(conn2, "quit_book")["id"],
+        [{"word": f"q{i}", "meaning": f"释{i}"} for i in range(1, 9)],
+        unit_size=20,
+    )
+    conn2.commit()
+    db.set_setting(conn2, "daily_goal", "100")
+    conn2.commit()
+
+    input_fn, fake_print = scripted_input(["1", "q", "0"])
+    monkeypatch.setattr(display, "print_question", fake_print)
+    menu.run_menu(conn=conn2, input_fn=input_fn)
+
+    row = db.get_daily(conn2, db.today_str())
+    assert row is None or row["answered"] == 0  # 第一题即退
