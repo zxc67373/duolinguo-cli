@@ -174,6 +174,8 @@ def run_session(
         db.set_setting(conn, "daily_goal", str(goal))
         conn.commit()
 
+    db.reevaluate_today_goal(conn, today, gamify.get_goal(conn))  # 目标改动自愈
+
     result = SessionResult(
         book_slug=book["slug"], book_name=book["name"], mode=mode, goal=gamify.get_goal(conn)
     )

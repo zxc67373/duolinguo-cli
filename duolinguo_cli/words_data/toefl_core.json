@@ -445,7 +445,8 @@
   {
    "word": "defense",
    "phonetic": "/di'fens/",
-   "meaning": "n.  防御，防卫"
+   "meaning": "n.  防御，防卫",
+   "example": "The team tightened its defense in the second half.  下半场球队加强了防守。"
   },
   {
    "word": "board",
@@ -462,7 +463,8 @@
   {
    "word": "behavior",
    "phonetic": "/bi'heivjə/",
-   "meaning": "n.  行为,举止"
+   "meaning": "n.  行为,举止",
+   "example": "His behavior improved after the warning.  警告之后他的行为有所改善。"
   },
   {
    "word": "deal",
@@ -551,7 +553,8 @@
   {
    "word": "decade",
    "phonetic": "/'dekeid/",
-   "meaning": "n.  十年"
+   "meaning": "n.  十年",
+   "example": "The last decade saw rapid growth.  过去十年增长迅速。"
   },
   {
    "word": "article",
@@ -856,7 +859,8 @@
   {
    "word": "democrat",
    "phonetic": "/'deməkræt/",
-   "meaning": "n. [Democrat]美国民主党人"
+   "meaning": "n. [Democrat]美国民主党人",
+   "example": "The democrat won the primary.  这位民主党人赢得了初选。"
   },
   {
    "word": "avoid",
@@ -1155,7 +1159,8 @@
   {
    "word": "senate",
    "phonetic": "/'senit/",
-   "meaning": "n.  参议院; 上院"
+   "meaning": "n.  参议院; 上院",
+   "example": "The senate debated the treaty.  参议院辩论了这项条约。"
   },
   {
    "word": "reform",
@@ -1640,7 +1645,8 @@
   {
    "word": "regular",
    "phonetic": "/'regjulə/",
-   "meaning": "a.  有规律的; 正常的; 经常的"
+   "meaning": "a.  有规律的; 正常的; 经常的",
+   "example": "Regular meals keep you energetic.  规律饮食让你有精神。"
   },
   {
    "word": "spread",
@@ -1771,7 +1777,8 @@
   {
    "word": "dangerous",
    "phonetic": "/'deindʒrəs/",
-   "meaning": "a.  危险的"
+   "meaning": "a.  危险的",
+   "example": "The intersection is dangerous in winter.  这个路口冬天很危险。"
   },
   {
    "word": "remind",
@@ -1890,7 +1897,8 @@
   {
    "word": "studio",
    "phonetic": "/'stju:diəu/",
-   "meaning": "n.  工作室，录音室"
+   "meaning": "n.  工作室，录音室",
+   "example": "The photographer works from a small studio.  摄影师在小工作室工作。"
   },
   {
    "word": "application",
@@ -2213,7 +2221,8 @@
   {
    "word": "notion",
    "phonetic": "/'nəuʃn/",
-   "meaning": "n.  概念，观念; 想法"
+   "meaning": "n.  概念，观念; 想法",
+   "example": "He clung to the notion that luck matters.  他坚持运气很重要的看法。"
   },
   {
    "word": "unique",
@@ -2830,7 +2839,8 @@
   {
    "word": "legislation",
    "phonetic": "/`ledʒis'leiʃn/",
-   "meaning": "n.  法律，法规; 立法"
+   "meaning": "n.  法律，法规; 立法",
+   "example": "The legislation took effect in June.  该法规六月生效。"
   },
   {
    "word": "celebrate",
@@ -2889,7 +2899,8 @@
   {
    "word": "physician",
    "phonetic": "/fə'ziʃən/",
-   "meaning": "n.  内科医生"
+   "meaning": "n.  内科医生",
+   "example": "The physician prescribed a mild medicine.  内科医生开了温和的药。"
   },
   {
    "word": "assess",
@@ -3260,7 +3271,8 @@
   {
    "word": "enable",
    "phonetic": "/i'neibl/",
-   "meaning": "vt.  使能够"
+   "meaning": "vt.  使能够",
+   "example": "The upgrade will enable faster charging.  升级后能实现更快充电。"
   },
   {
    "word": "saving",
@@ -3523,7 +3535,8 @@
   {
    "word": "analyze",
    "phonetic": "/'ænəlaiz/",
-   "meaning": "vt.  分析，研究"
+   "meaning": "vt.  分析，研究",
+   "example": "Analyze the data before drawing conclusions.  下结论前先分析数据。"
   },
   {
    "word": "attach",
@@ -3624,7 +3637,8 @@
   {
    "word": "commander",
    "phonetic": "/kə'ma:ndə/",
-   "meaning": "n.  司令官,指挥官"
+   "meaning": "n.  司令官,指挥官",
+   "example": "The commander ordered the troops to hold.  指挥官命令部队坚守。"
   },
   {
    "word": "peak",
@@ -3965,7 +3979,8 @@
   {
    "word": "protein",
    "phonetic": "/'prəuti:n/",
-   "meaning": "n.  蛋白质a.  蛋白质的"
+   "meaning": "n.  蛋白质a.  蛋白质的",
+   "example": "Fish and eggs are rich in protein.  鱼和鸡蛋富含蛋白质。"
   },
   {
    "word": "quit",
@@ -4078,7 +4093,8 @@
   {
    "word": "nevertheless",
    "phonetic": "/`nevəðə'les/",
-   "meaning": "adv. conj.  然而，不过"
+   "meaning": "adv. conj.  然而，不过",
+   "example": "It was late; nevertheless, he kept working.  时间晚了；尽管如此他还在干。"
   },
   {
    "word": "routine",
@@ -4101,7 +4117,8 @@
   {
    "word": "fiber",
    "phonetic": "/'faibə/",
-   "meaning": "n.  纤维; 光纤"
+   "meaning": "n.  纤维; 光纤",
+   "example": "Fiber-rich food aids digestion.  高纤维食物有助于消化。"
   },
   {
    "word": "snap",
@@ -4412,7 +4429,8 @@
   {
    "word": "statistics",
    "phonetic": "/stə'tistiks/",
-   "meaning": "n.  统计学,统计表"
+   "meaning": "n.  统计学,统计表",
+   "example": "Statistics reveal a clear trend.  统计数据揭示了明显趋势。"
   },
   {
    "word": "encounter",
@@ -4627,7 +4645,8 @@
   {
    "word": "testify",
    "phonetic": "/'testifai/",
-   "meaning": "vt. vi.  证明,作证,声明,表明"
+   "meaning": "vt. vi.  证明,作证,声明,表明",
+   "example": "The expert will testify tomorrow.  专家明天出庭作证。"
   },
   {
    "word": "mode",
@@ -4836,7 +4855,8 @@
   {
    "word": "license",
    "phonetic": "/'laisns/",
-   "meaning": "n.  许可证，执照; v.  给执照"
+   "meaning": "n.  许可证，执照; v.  给执照",
+   "example": "The license expires next month.  执照下月到期。"
   },
   {
    "word": "shelter",
@@ -5075,7 +5095,8 @@
   {
    "word": "celebrity",
    "phonetic": "/si'lebriti/",
-   "meaning": "n.  名声,名人"
+   "meaning": "n.  名声,名人",
+   "example": "A celebrity endorsed the product.  一位名人代言了该产品。"
   },
   {
    "word": "fantasy",
@@ -5158,7 +5179,8 @@
   {
    "word": "carbon",
    "phonetic": "/'ka:bən/",
-   "meaning": "n.  碳,副本,复写纸"
+   "meaning": "n.  碳,副本,复写纸",
+   "example": "Carbon dioxide traps heat.  二氧化碳会困住热量。"
   },
   {
    "word": "consume",
@@ -5481,7 +5503,8 @@
   {
    "word": "flavor",
    "phonetic": "/'fleivə/",
-   "meaning": "n.  滋味,香料vt.  加味于"
+   "meaning": "n.  滋味,香料vt.  加味于",
+   "example": "The spice adds flavor to the soup.  这香料给汤添了风味。"
   },
   {
    "word": "overlook",
@@ -5750,7 +5773,8 @@
   {
    "word": "ethics",
    "phonetic": "/'eθiks/",
-   "meaning": "n.  道德规范"
+   "meaning": "n.  道德规范",
+   "example": "The course covers research ethics.  这门课涵盖科研道德。"
   },
   {
    "word": "summit",
@@ -5905,7 +5929,8 @@
   {
    "word": "grocery",
    "phonetic": "/'grəusəri/",
-   "meaning": "n.  杂货店"
+   "meaning": "n.  杂货店",
+   "example": "We run out of grocery quickly.  我们的杂货很快吃完了。"
   },
   {
    "word": "exhibit",
@@ -6024,7 +6049,8 @@
   {
    "word": "soccer",
    "phonetic": "/'sɔkə/",
-   "meaning": "n.  足球"
+   "meaning": "n.  足球",
+   "example": "Soccer practice starts at four.  足球训练四点开始。"
   },
   {
    "word": "tunnel",
@@ -6137,7 +6163,8 @@
   {
    "word": "counseling",
    "phonetic": "/'kaunsəliŋ/",
-   "meaning": "n.  咨询服务"
+   "meaning": "n.  咨询服务",
+   "example": "She offers career counseling.  她提供职业咨询服务。"
   },
   {
    "word": "receiver",
@@ -6190,7 +6217,8 @@
   {
    "word": "surgeon",
    "phonetic": "/'sə:dʒən/",
-   "meaning": "n.  外科医师"
+   "meaning": "n.  外科医师",
+   "example": "The surgeon scrubbed in.  外科医生刷手准备手术。"
   },
   {
    "word": "counsel",
@@ -6411,7 +6439,8 @@
   {
    "word": "rumor",
    "phonetic": "/'ru:mə/",
-   "meaning": "n.  传闻，谣言"
+   "meaning": "n.  传闻，谣言",
+   "example": "The rumor turned out to be false.  谣言结果是假的。"
   },
   {
    "word": "swallow",
@@ -6566,7 +6595,8 @@
   {
    "word": "consistently",
    "phonetic": "/kən'sistəntli/",
-   "meaning": "adv.  一贯地"
+   "meaning": "adv.  一贯地",
+   "example": "He performs consistently well.  他一贯表现很好。"
   },
   {
    "word": "drift",
@@ -6697,7 +6727,8 @@
   {
    "word": "simultaneously",
    "phonetic": "/saiməl'teiniəsli/",
-   "meaning": "adv.  1 同时地2 同时地[with]"
+   "meaning": "adv.  1 同时地2 同时地[with]",
+   "example": "The two events happened simultaneously.  两件事同时发生。"
   },
   {
    "word": "trigger",
@@ -7002,7 +7033,8 @@
   {
    "word": "sodium",
    "phonetic": "/'səudiəm/",
-   "meaning": "n.  钠"
+   "meaning": "n.  钠",
+   "example": "Too much sodium raises blood pressure.  钠太多会升高血压。"
   },
   {
    "word": "delicate",
@@ -7139,7 +7171,8 @@
   {
    "word": "oxygen",
    "phonetic": "/'ɔksidʒən/",
-   "meaning": "n.  氧"
+   "meaning": "n.  氧",
+   "example": "Oxygen levels drop at high altitude.  高海拔氧气含量下降。"
   },
   {
    "word": "sum",
@@ -7384,7 +7417,8 @@
   {
    "word": "enroll",
    "phonetic": "/in'rəul/",
-   "meaning": "v.  (in)登记; 注册"
+   "meaning": "v.  (in)登记; 注册",
+   "example": "Enroll before the deadline.  在截止前报名。"
   },
   {
    "word": "diminish",
@@ -7533,7 +7567,8 @@
   {
    "word": "hardware",
    "phonetic": "/'hɑ:dwεə/",
-   "meaning": "n.  五金制品"
+   "meaning": "n.  五金制品",
+   "example": "The hardware store moved downtown.  五金店搬到市中心了。"
   },
   {
    "word": "continent",
@@ -7664,7 +7699,8 @@
   {
    "word": "gasoline",
    "phonetic": "/'gæsəli:n/",
-   "meaning": "n.  汽油"
+   "meaning": "n.  汽油",
+   "example": "Gasoline prices hit a record.  汽油价格创了新高。"
   },
   {
    "word": "stiff",
@@ -7747,7 +7783,8 @@
   {
    "word": "barn",
    "phonetic": "/bɑ:n/",
-   "meaning": "n.  谷仓; 牲口棚"
+   "meaning": "n.  谷仓; 牲口棚",
+   "example": "The barn stores the harvest.  谷仓里存着收成。"
   },
   {
    "word": "faint",
@@ -7884,7 +7921,8 @@
   {
    "word": "jewelry",
    "phonetic": "/'dʒu:əlri/",
-   "meaning": "n. [总称]首饰; 珠宝"
+   "meaning": "n. [总称]首饰; 珠宝",
+   "example": "The jewelry sparkled under the lights.  珠宝在灯光下闪闪发亮。"
   },
   {
    "word": "haul",
@@ -8003,7 +8041,8 @@
   {
    "word": "aluminum",
    "phonetic": "/'ælju'minjəm/",
-   "meaning": "n.  铝"
+   "meaning": "n.  铝",
+   "example": "Aluminum is light and strong.  铝既轻又坚固。"
   },
   {
    "word": "verdict",
@@ -8062,7 +8101,8 @@
   {
    "word": "mathematics",
    "phonetic": "/'mæθi'mætiks/",
-   "meaning": "n.  数学"
+   "meaning": "n.  数学",
+   "example": "Mathematics is the language of science.  数学是科学的语言。"
   },
   {
    "word": "mechanic",
@@ -8079,7 +8119,8 @@
   {
    "word": "creativity",
    "phonetic": "/`kri:ei'tiviti/",
-   "meaning": "n.  创造(力)"
+   "meaning": "n.  创造(力)",
+   "example": "The job demands creativity.  这份工作需要创造力。"
   },
   {
    "word": "underlying",
@@ -8108,7 +8149,8 @@
   {
    "word": "bureau",
    "phonetic": "/'bjuərəu/",
-   "meaning": "n.  局，署"
+   "meaning": "n.  局，署",
+   "example": "The bureau issued new guidelines.  该局发布了新指南。"
   },
   {
    "word": "utilize",
@@ -8257,7 +8299,8 @@
   {
    "word": "hockey",
    "phonetic": "/'hɔki/",
-   "meaning": "n.  曲棍球; 冰球"
+   "meaning": "n.  曲棍球; 冰球",
+   "example": "Hockey is popular in cold regions.  冰球在寒冷地区很流行。"
   },
   {
    "word": "persist",
@@ -8280,12 +8323,14 @@
   {
    "word": "consequently",
    "phonetic": "/'kɔnsikwəntli/",
-   "meaning": "adv.  因此，从而"
+   "meaning": "adv.  因此，从而",
+   "example": "He missed the bus; consequently, he was late.  他没赶上公交，结果迟到了。"
   },
   {
    "word": "legislature",
    "phonetic": "/'ledʒisleitʃə(r)/",
-   "meaning": "n.  立法机关"
+   "meaning": "n.  立法机关",
+   "example": "The legislature approved the budget.  立法机关批准了预算。"
   },
   {
    "word": "foster",
@@ -8482,7 +8527,8 @@
   {
    "word": "catalog",
    "phonetic": "/'kætəlɔg/",
-   "meaning": "n.  目录"
+   "meaning": "n.  目录",
+   "example": "Browse the catalog online.  在线浏览目录。"
   },
   {
    "word": "compel",
@@ -8709,12 +8755,14 @@
   {
    "word": "deem",
    "phonetic": "/di:m/",
-   "meaning": "vt. vi.  认为,相信"
+   "meaning": "vt. vi.  认为,相信",
+   "example": "The court deemed the contract valid.  法院认定合同有效。"
   },
   {
    "word": "artifact",
    "phonetic": "/'ɑ:tifækt/",
-   "meaning": "n.  人工制品; [常pl.  ]史前古器物"
+   "meaning": "n.  人工制品; [常pl.  ]史前古器物",
+   "example": "The artifact is four thousand years old.  这件文物有四千年历史。"
   },
   {
    "word": "sneak",
@@ -9127,7 +9175,8 @@
   {
    "word": "clay",
    "phonetic": "/klei/",
-   "meaning": "n.  泥土，粘土"
+   "meaning": "n.  泥土，粘土",
+   "example": "The figurine is made of clay.  这塑像是黏土做的。"
   },
   {
    "word": "fare",
@@ -9156,12 +9205,14 @@
   {
    "word": "molecule",
    "phonetic": "/'mɔlikju:l/",
-   "meaning": "n.  分子,些微"
+   "meaning": "n.  分子,些微",
+   "example": "A molecule of glucose has six carbons.  一个葡萄糖分子含六个碳。"
   },
   {
    "word": "favorable",
    "phonetic": "/'feivərəbl/",
-   "meaning": "a.  良好的; 赞成的; 有利的"
+   "meaning": "a.  良好的; 赞成的; 有利的",
+   "example": "The weather looks favorable for the launch.  天气看来适合发射。"
   },
   {
    "word": "overwhelm",
@@ -9184,7 +9235,8 @@
   {
    "word": "ironically",
    "phonetic": "/ai'rɔnikli/",
-   "meaning": "adv.  具有讽刺意味地; 嘲讽地"
+   "meaning": "adv.  具有讽刺意味地; 嘲讽地",
+   "example": "Ironically, the expert made a basic error.  讽刺的是，专家犯了个低级错误。"
   },
   {
    "word": "fatigue",
@@ -9231,7 +9283,8 @@
   {
    "word": "magnetic",
    "phonetic": "/mæg'netik/",
-   "meaning": "a.  磁(性)的"
+   "meaning": "a.  磁(性)的",
+   "example": "The magnetic stripe on the card stores data.  卡上的磁条存着数据。"
   },
   {
    "word": "depart",
@@ -9512,7 +9565,8 @@
   {
    "word": "plaintiff",
    "phonetic": "/'plentif/",
-   "meaning": "n.  原告"
+   "meaning": "n.  原告",
+   "example": "The plaintiff demanded compensation.  原告要求赔偿。"
   },
   {
    "word": "entertain",
@@ -9553,7 +9607,8 @@
   {
    "word": "skeptical",
    "phonetic": "/'skeptikl/",
-   "meaning": "adj.  1 a.  怀疑的,多疑的b.  [对…]怀疑的,不信的[about,of]2 无神论"
+   "meaning": "adj. 怀疑的；多疑的",
+   "example": "Reviewers were skeptical at first.  评审起初持怀疑态度。"
   },
   {
    "word": "suppress",
@@ -9612,7 +9667,8 @@
   {
    "word": "compassion",
    "phonetic": "/kəm'pæʃn/",
-   "meaning": "(U)  (真诚的) 同情 (心) ,怜悯 [on,upon,for]"
+   "meaning": "(U)  (真诚的) 同情 (心) ,怜悯 [on,upon,for]",
+   "example": "She treated the poor with compassion.  她同情地对待穷人。"
   },
   {
    "word": "beneficial",
@@ -9713,7 +9769,8 @@
   {
    "word": "inspect",
    "phonetic": "/in'spekt/",
-   "meaning": "vt.  检查,调查,监查vi.  检查"
+   "meaning": "vt.  检查,调查,监查vi.  检查",
+   "example": "Inspect the goods before signing.  签字前验货。"
   },
   {
    "word": "commentary",
@@ -9736,7 +9793,8 @@
   {
    "word": "fossil",
    "phonetic": "/'fɔsl/",
-   "meaning": "n.  化石; a.  陈腐的; 化石的"
+   "meaning": "n.  化石; a.  陈腐的; 化石的",
+   "example": "The fossil shows early fish forms.  化石展示了早期鱼类形态。"
   },
   {
    "word": "hover",
@@ -9771,7 +9829,8 @@
   {
    "word": "chat",
    "phonetic": "/tʃæt/",
-   "meaning": "n.  闲谈vi.  闲谈,聊天"
+   "meaning": "n.  闲谈vi.  闲谈,聊天",
+   "example": "We chatted over coffee.  我们边喝咖啡边聊天。"
   },
   {
    "word": "countless",
@@ -9890,7 +9949,8 @@
   {
    "word": "hydrogen",
    "phonetic": "/'haidrədʒən/",
-   "meaning": "n.  氢"
+   "meaning": "n.  氢",
+   "example": "Hydrogen fuels the rocket.  氢气为火箭提供燃料。"
   },
   {
    "word": "remedy",
@@ -9925,7 +9985,8 @@
   {
    "word": "soda",
    "phonetic": "/'səudə/",
-   "meaning": "n.  苏打; 碳酸水"
+   "meaning": "n.  苏打; 碳酸水",
+   "example": "Add soda to the batter.  面糊里加点苏打水。"
   },
   {
    "word": "advertise",
@@ -9984,7 +10045,8 @@
   {
    "word": "healing",
    "phonetic": "/'hi:liŋ/",
-   "meaning": "a.  有治疗功用的"
+   "meaning": "a.  有治疗功用的",
+   "example": "The healing process takes weeks.  愈合过程需要几周。"
   },
   {
    "word": "destiny",
@@ -10121,7 +10183,8 @@
   {
    "word": "comet",
    "phonetic": "/'kɔmit/",
-   "meaning": "n.  慧星"
+   "meaning": "n. 彗星",
+   "example": "A comet appeared once every 76 years.  彗星每 76 年出现一次。"
   },
   {
    "word": "choke",
@@ -10234,7 +10297,8 @@
   {
    "word": "correlate",
    "phonetic": "/'kɔrileit/",
-   "meaning": "n. 有相互关系的东西,相关物vt.  使有相互关系vi.  互相有关系"
+   "meaning": "n. 有相互关系的东西,相关物vt.  使有相互关系vi.  互相有关系",
+   "example": "Sleep correlates with memory.  睡眠与记忆力相关。"
   },
   {
    "word": "exile",
@@ -10251,7 +10315,8 @@
   {
    "word": "fountain",
    "phonetic": "/'fauntin/",
-   "meaning": "n.  喷泉"
+   "meaning": "n.  喷泉",
+   "example": "The fountain sprays water high.  喷泉把水喷得很高。"
   },
   {
    "word": "revive",
@@ -10262,7 +10327,8 @@
   {
    "word": "endangered",
    "phonetic": "/in'deindʒəd/",
-   "meaning": "a.  将要绝种的"
+   "meaning": "a.  将要绝种的",
+   "example": "The panda is an endangered species.  大熊猫是濒危物种。"
   },
   {
    "word": "comic",
@@ -10381,7 +10447,8 @@
   {
    "word": "allege",
    "phonetic": "/ə'ledʒ/",
-   "meaning": "vt.  宣称,申述,主张,断言"
+   "meaning": "vt.  宣称,申述,主张,断言",
+   "example": "The witness alleged bribery.  证人指控行贿。"
   },
   {
    "word": "alert",
@@ -10428,7 +10495,8 @@
   {
    "word": "odor",
    "phonetic": "/'əudə/",
-   "meaning": "n.  气味,名声,味"
+   "meaning": "n.  气味,名声,味",
+   "example": "An odor of smoke filled the hall.  大厅里弥漫着烟味。"
   },
   {
    "word": "grim",
@@ -10547,7 +10615,8 @@
   {
    "word": "congressman",
    "phonetic": "/'kɔŋgresmən/",
-   "meaning": "n.  国会议员,众议院议员"
+   "meaning": "n.  国会议员,众议院议员",
+   "example": "The congressman proposed a bill.  议员提出了一项议案。"
   },
   {
    "word": "penetrate",
@@ -10624,7 +10693,8 @@
   {
    "word": "lime",
    "phonetic": "/laim/",
-   "meaning": "n.  石灰"
+   "meaning": "n.  石灰",
+   "example": "Spread lime on the soil.  给土壤撒点石灰。"
   },
   {
    "word": "attendant",
@@ -10635,7 +10705,8 @@
   {
    "word": "fulfill",
    "phonetic": "/ful'fil/",
-   "meaning": "v.  履行; 符合"
+   "meaning": "v.  履行; 符合",
+   "example": "He fulfilled all the requirements.  他满足了所有要求。"
   },
   {
    "word": "atomic",
@@ -10652,7 +10723,8 @@
   {
    "word": "canyon",
    "phonetic": "/'kænjən/",
-   "meaning": "n.  峡谷"
+   "meaning": "n.  峡谷",
+   "example": "The canyon is two kilometers deep.  这峡谷有两公里深。"
   },
   {
    "word": "verse",
@@ -10783,12 +10855,14 @@
   {
    "word": "continually",
    "phonetic": "/kən'tinjuəli/",
-   "meaning": "ad.  不断地,频繁地"
+   "meaning": "ad.  不断地,频繁地",
+   "example": "The phone buzzed continually.  手机响个不停。"
   },
   {
    "word": "modem",
    "phonetic": "/'məudem/",
-   "meaning": "n.  调制解调器"
+   "meaning": "n.  调制解调器",
+   "example": "Restart the modem to reconnect.  重启调制解调器以重新连接。"
   },
   {
    "word": "applicant",
@@ -10823,7 +10897,8 @@
   {
    "word": "tenant",
    "phonetic": "/'tenənt/",
-   "meaning": "n.  承租人,房客,不动产占有人,居住者vt.  租借"
+   "meaning": "n.  承租人,房客,不动产占有人,居住者vt.  租借",
+   "example": "The tenant paid rent monthly.  房客按月付租。"
   },
   {
    "word": "omit",
@@ -10834,7 +10909,8 @@
   {
    "word": "corpse",
    "phonetic": "/kɔ:ps/",
-   "meaning": "n.  尸体"
+   "meaning": "n.  尸体",
+   "example": "The forensic team examined the corpse.  法医检查了尸体。"
   },
   {
    "word": "damp",
@@ -10857,7 +10933,8 @@
   {
    "word": "electron",
    "phonetic": "/i'lektrɔn/",
-   "meaning": "n.  电子"
+   "meaning": "n.  电子",
+   "example": "An electron carries a negative charge.  电子带负电荷。"
   },
   {
    "word": "cultivate",
@@ -10964,7 +11041,8 @@
   {
    "word": "calcium",
    "phonetic": "/'kælsiəm/",
-   "meaning": "n.  钙"
+   "meaning": "n.  钙",
+   "example": "Calcium strengthens bones.  钙强健骨骼。"
   },
   {
    "word": "substitute",
@@ -11311,7 +11389,8 @@
   {
    "word": "harbor",
    "phonetic": "/'hɑ:bə/",
-   "meaning": "n.  港口; v.  藏有"
+   "meaning": "n.  港口; v.  藏有",
+   "example": "The harbor is frozen in winter.  冬天港口结冰。"
   },
   {
    "word": "ignorance",
@@ -11418,7 +11497,8 @@
   {
    "word": "underscore",
    "phonetic": "/`ʌndə'skɔ:(r)/",
-   "meaning": "v.  强调"
+   "meaning": "v.  强调",
+   "example": "The report underscores the need for reform.  报告强调了改革的必要。"
   },
   {
    "word": "formulate",
@@ -11477,7 +11557,8 @@
   {
    "word": "armor",
    "phonetic": "/'ɑ:mə/",
-   "meaning": "n.  盔甲,装甲vt.  装甲"
+   "meaning": "n.  盔甲,装甲vt.  装甲",
+   "example": "The knight's armor was dented.  骑士的盔甲凹了一块。"
   },
   {
    "word": "stroll",
@@ -11488,7 +11569,8 @@
   {
    "word": "nitrogen",
    "phonetic": "/'naitrədʒən/",
-   "meaning": "n.  氮"
+   "meaning": "n.  氮",
+   "example": "Nitrogen makes up 78% of the air.  氮气占空气的 78%。"
   },
   {
    "word": "transparent",
@@ -11523,7 +11605,8 @@
   {
    "word": "Easter",
    "phonetic": "/'i:stə/",
-   "meaning": "n.  复活节"
+   "meaning": "n.  复活节",
+   "example": "We painted eggs for Easter.  我们为复活节染蛋。"
   },
   {
    "word": "intriguing",
@@ -11594,7 +11677,8 @@
   {
    "word": "erosion",
    "phonetic": "/i'rəuʒən/",
-   "meaning": "n.  腐蚀,冲蚀,侵蚀"
+   "meaning": "n.  腐蚀,冲蚀,侵蚀",
+   "example": "Wind erosion shaped the rocks.  风蚀塑造了岩石。"
   },
   {
    "word": "flush",
@@ -11629,7 +11713,8 @@
   {
    "word": "owl",
    "phonetic": "/aul/",
-   "meaning": "n.  猫头鹰"
+   "meaning": "n.  猫头鹰",
+   "example": "The owl hunted at dusk.  猫头鹰在黄昏狩猎。"
   },
   {
    "word": "petition",
@@ -11856,7 +11941,8 @@
   {
    "word": "mold",
    "phonetic": "/məuld/",
-   "meaning": "n.  模子,雏型,霉vt. vi.  形成,塑造,发霉"
+   "meaning": "n.  模子,雏型,霉vt. vi.  形成,塑造,发霉",
+   "example": "Bread grows mold in damp places.  面包在潮湿处会长霉。"
   },
   {
    "word": "avenue",
@@ -11903,7 +11989,8 @@
   {
    "word": "quilt",
    "phonetic": "/kwilt/",
-   "meaning": "n.  棉被; vt.  制成棉被"
+   "meaning": "n.  棉被; vt.  制成棉被",
+   "example": "The quilt kept us warm all night.  被子让我们整夜温暖。"
   },
   {
    "word": "sensible",
@@ -11944,7 +12031,8 @@
   {
    "word": "configuration",
    "phonetic": "/kən`figə'reiʃn/",
-   "meaning": "in.  构造，外形                                                                ʃn]"
+   "meaning": "n. 构造；外形；配置",
+   "example": "Check the network configuration.  检查网络配置。"
   },
   {
    "word": "newsletter",
@@ -11991,7 +12079,8 @@
   {
    "word": "endeavor",
    "phonetic": "/in'devə/",
-   "meaning": "n.  努力,尽力vi.  努力,尽力"
+   "meaning": "n.  努力,尽力vi.  努力,尽力",
+   "example": "Space exploration is a grand endeavor.  太空探索是伟大的事业。"
   },
   {
    "word": "credential",
@@ -12020,7 +12109,8 @@
   {
    "word": "livestock",
    "phonetic": "/'laivstɔk/",
-   "meaning": "n. [总称]家畜，牲畜"
+   "meaning": "n. [总称]家畜，牲畜",
+   "example": "The farmer feeds his livestock daily.  农夫每天喂牲口。"
   },
   {
    "word": "foam",
@@ -12031,7 +12121,8 @@
   {
    "word": "asteroid",
    "phonetic": "/'æstərɔid/",
-   "meaning": "n.  小行星"
+   "meaning": "n.  小行星",
+   "example": "The asteroid passed close to Earth.  小行星近距离掠过地球。"
   },
   {
    "word": "bald",
@@ -12264,7 +12355,8 @@
   {
    "word": "oyster",
    "phonetic": "/'ɔistə(r)/",
-   "meaning": "n.  牡蛎，蚝"
+   "meaning": "n.  牡蛎，蚝",
+   "example": "Oysters filter seawater.  牡蛎过滤海水。"
   },
   {
    "word": "volcano",
@@ -12425,7 +12517,8 @@
   {
    "word": "devastate",
    "phonetic": "/'devəsteit/",
-   "meaning": "vt.  毁坏"
+   "meaning": "vt.  毁坏",
+   "example": "The typhoon devastated the island.  台风摧毁了这座岛。"
   },
   {
    "word": "underestimate",
@@ -12508,7 +12601,8 @@
   {
    "word": "astronomy",
    "phonetic": "/əs'trɔnəmi/",
-   "meaning": "n.  天文学"
+   "meaning": "n.  天文学",
+   "example": "Astronomy combines physics and math.  天文学结合了物理和数学。"
   },
   {
    "word": "devotion",
@@ -12561,7 +12655,8 @@
   {
    "word": "turtle",
    "phonetic": "/'tə:tl/",
-   "meaning": "n.  海龟"
+   "meaning": "n.  海龟",
+   "example": "The turtle crawled back to the sea.  海龟爬回了大海。"
   },
   {
    "word": "sticky",
@@ -12704,7 +12799,8 @@
   {
    "word": "lettuce",
    "phonetic": "/'letis/",
-   "meaning": "n.  生菜; 莴苣"
+   "meaning": "n.  生菜; 莴苣",
+   "example": "Add fresh lettuce to the burger.  汉堡里加点生菜。"
   },
   {
    "word": "proximity",
@@ -12715,7 +12811,8 @@
   {
    "word": "brochure",
    "phonetic": "/'brəuʃə(r)/",
-   "meaning": "n.  小册子"
+   "meaning": "n.  小册子",
+   "example": "The brochure lists all destinations.  小册子列出了所有目的地。"
   },
   {
    "word": "perfume",
@@ -12960,7 +13057,8 @@
   {
    "word": "modeling",
    "phonetic": "/'mɔdliŋ/",
-   "meaning": "n.  立体感(表现法)"
+   "meaning": "n.  立体感(表现法)",
+   "example": "The modeling clay is soft.  橡皮泥很软。"
   },
   {
    "word": "linguistic",
@@ -13001,7 +13099,8 @@
   {
    "word": "anthropology",
    "phonetic": "/`ænθrə'pɔlədʒi/",
-   "meaning": "n.  人类学"
+   "meaning": "n.  人类学",
+   "example": "She majors in anthropology.  她主修人类学。"
   },
   {
    "word": "animated",
@@ -13024,7 +13123,8 @@
   {
    "word": "genetically",
    "phonetic": "/dʒi'netikli/",
-   "meaning": "adv.  由基因决定地，与遗传有关地"
+   "meaning": "adv.  由基因决定地，与遗传有关地",
+   "example": "The crop is genetically modified.  这作物是转基因的。"
   },
   {
    "word": "circular",
@@ -13089,7 +13189,8 @@
   {
    "word": "barbecue",
    "phonetic": "/'bɑ:bikju:/",
-   "meaning": "n.  烧烤野餐"
+   "meaning": "n.  烧烤野餐",
+   "example": "The barbecue lasted till midnight.  烧烤持续到午夜。"
   },
   {
    "word": "definite",
@@ -13178,7 +13279,8 @@
   {
    "word": "granite",
    "phonetic": "/'grænit/",
-   "meaning": "n.  花岗岩"
+   "meaning": "n.  花岗岩",
+   "example": "The countertop is polished granite.  台面是抛光花岗岩。"
   },
   {
    "word": "syrup",
@@ -13231,7 +13333,8 @@
   {
    "word": "prairie",
    "phonetic": "/'preəri/",
-   "meaning": "n.  大草原"
+   "meaning": "n.  大草原",
+   "example": "Buffalo once roamed the prairie.  野牛曾在草原上漫游。"
   },
   {
    "word": "surpass",
@@ -13266,7 +13369,8 @@
   {
    "word": "temporal",
    "phonetic": "/'tempərəl/",
-   "meaning": "a.  当时的,暂时的,太阳穴的,世俗的,现世的n.  世间万物,教会财产"
+   "meaning": "a.  当时的,暂时的,太阳穴的,世俗的,现世的n.  世间万物,教会财产",
+   "example": "The temple shows both sacred and temporal power.  寺庙体现了神权与世俗权力。"
   },
   {
    "word": "lunar",
@@ -13343,7 +13447,8 @@
   {
    "word": "destine",
    "phonetic": "/'destin/",
-   "meaning": "vt.  注定,预定"
+   "meaning": "vt.  注定,预定",
+   "example": "The ship was destined for Shanghai.  轮船开往上海。"
   },
   {
    "word": "descriptive",
@@ -13390,7 +13495,8 @@
   {
    "word": "marvelous",
    "phonetic": "/'ma:viləs/",
-   "meaning": "a.  令人惊异的,了不起的,不平常的"
+   "meaning": "a.  令人惊异的,了不起的,不平常的",
+   "example": "What a marvelous performance!  多么精彩的演出！"
   },
   {
    "word": "immunity",
@@ -13401,12 +13507,14 @@
   {
    "word": "tornado",
    "phonetic": "/tɔ:'neidəu/",
-   "meaning": "n.  飓风，龙卷风"
+   "meaning": "n.  飓风，龙卷风",
+   "example": "The tornado tore through the town.  龙卷风席卷了小镇。"
   },
   {
    "word": "buffalo",
    "phonetic": "/'bʌfələu/",
-   "meaning": "n.  水牛"
+   "meaning": "n.  水牛",
+   "example": "A herd of buffalo crossed the river.  一群水牛过了河。"
   },
   {
    "word": "nucleus",
@@ -13423,7 +13531,8 @@
   {
    "word": "shipment",
    "phonetic": "/'ʃipmənt/",
-   "meaning": "n.  装船,出货"
+   "meaning": "n.  装船,出货",
+   "example": "The shipment arrived without damage.  货物完好到达。"
   },
   {
    "word": "bud",
@@ -13458,7 +13567,8 @@
   {
    "word": "benign",
    "phonetic": "/bi'nain/",
-   "meaning": "a.  良性的"
+   "meaning": "a.  良性的",
+   "example": "The biopsy showed a benign growth.  活检显示良性增生。"
   },
   {
    "word": "lumber",
@@ -13481,7 +13591,8 @@
   {
    "word": "boulder",
    "phonetic": "/'bəuldə(r)/",
-   "meaning": "n.  大石头"
+   "meaning": "n.  大石头",
+   "example": "A boulder blocked the path.  一块巨石挡住了路。"
   },
   {
    "word": "coherent",
@@ -13504,7 +13615,8 @@
   {
    "word": "optimal",
    "phonetic": "/'ɔptiməl/",
-   "meaning": "a.  最佳的，最理想的"
+   "meaning": "a.  最佳的，最理想的",
+   "example": "Find the optimal solution for the problem.  为问题找到最优解。"
   },
   {
    "word": "staple",
@@ -13539,7 +13651,8 @@
   {
    "word": "canopy",
    "phonetic": "/'kænəpi/",
-   "meaning": "n.  天篷，遮篷"
+   "meaning": "n.  天篷，遮篷",
+   "example": "Sunlight filtered through the canopy.  阳光透过树冠洒下。"
   },
   {
    "word": "crumble",
@@ -13616,7 +13729,8 @@
   {
    "word": "cafeteria",
    "phonetic": "/`kæfi'tiəriə/",
-   "meaning": "n.  自助餐厅"
+   "meaning": "n.  自助餐厅",
+   "example": "The cafeteria offers three menus.  自助餐厅提供三种套餐。"
   },
   {
    "word": "ambiguous",
@@ -13627,7 +13741,8 @@
   {
    "word": "allocation",
    "phonetic": "/`ælə'keiʃn/",
-   "meaning": "n.  配给，分配"
+   "meaning": "n.  配给，分配",
+   "example": "The allocation of funds was debated.  资金分配被讨论了一番。"
   },
   {
    "word": "glide",
@@ -13722,7 +13837,8 @@
   {
    "word": "paralyze",
    "phonetic": "/'pærəlaiz/",
-   "meaning": "vt.  (使)麻痹"
+   "meaning": "vt.  (使)麻痹",
+   "example": "Fear can paralyze decision-making.  恐惧会瘫痪决策。"
   },
   {
    "word": "endanger",
@@ -13769,7 +13885,8 @@
   {
    "word": "cozy",
    "phonetic": "/'kəuzi/",
-   "meaning": "a.  舒适的,安逸的,惬意的"
+   "meaning": "a.  舒适的,安逸的,惬意的",
+   "example": "The cafe is small but cozy.  咖啡馆小但温馨。"
   },
   {
    "word": "groan",
@@ -13804,7 +13921,8 @@
   {
    "word": "hay",
    "phonetic": "/hei/",
-   "meaning": "n.  干草"
+   "meaning": "n.  干草",
+   "example": "The hay was baled for winter.  干草打捆备过冬。"
   },
   {
    "word": "dwarf",
@@ -13827,7 +13945,8 @@
   {
    "word": "maneuver",
    "phonetic": "/mə'nu:və/",
-   "meaning": "n.  演习,调遣,策略vi. vt.  调遣,演习,用计"
+   "meaning": "n.  演习,调遣,策略vi. vt.  调遣,演习,用计",
+   "example": "The boat made a tight maneuver.  船做了一个急转弯。"
   },
   {
    "word": "huddle",
@@ -13946,7 +14065,8 @@
   {
    "word": "mural",
    "phonetic": "/'mjuərəl/",
-   "meaning": "n.  壁画，壁饰"
+   "meaning": "n.  壁画，壁饰",
+   "example": "The mural covers the whole wall.  壁画覆盖了整面墙。"
   },
   {
    "word": "glue",
@@ -14047,7 +14167,8 @@
   {
    "word": "tariff",
    "phonetic": "/'tærif/",
-   "meaning": "n.  关税，税率"
+   "meaning": "n.  关税，税率",
+   "example": "The tariff on imports was lowered.  进口关税下调了。"
   },
   {
    "word": "foliage",
@@ -14232,7 +14353,8 @@
   {
    "word": "impair",
    "phonetic": "/im'pεə/",
-   "meaning": "vt.  损害,减少,削弱"
+   "meaning": "vt.  损害,减少,削弱",
+   "example": "Sleep deprivation impairs memory.  睡眠不足损害记忆。"
   },
   {
    "word": "fertile",
@@ -14297,7 +14419,8 @@
   {
    "word": "librarian",
    "phonetic": "/lai'breəriən/",
-   "meaning": "n.  图书管理员"
+   "meaning": "n.  图书管理员",
+   "example": "The librarian shelved the new books.  图书管理员把新书上架。"
   },
   {
    "word": "liberate",
@@ -14446,7 +14569,8 @@
   {
    "word": "playwright",
    "phonetic": "/'pleirait/",
-   "meaning": "n.  剧作家"
+   "meaning": "n.  剧作家",
+   "example": "The playwright won a Pulitzer.  这位剧作家获了普利策奖。"
   },
   {
    "word": "facade",
@@ -14457,7 +14581,8 @@
   {
    "word": "arrogant",
    "phonetic": "/'ærəgənt/",
-   "meaning": "a.  傲慢的,自大的"
+   "meaning": "a.  傲慢的,自大的",
+   "example": "His arrogant tone silenced the room.  他傲慢的语气让全场安静。"
   },
   {
    "word": "vent",
@@ -14474,7 +14599,8 @@
   {
    "word": "foresee",
    "phonetic": "/fɔ:'si:/",
-   "meaning": "vt.  预见,预知"
+   "meaning": "vt.  预见,预知",
+   "example": "We couldn't foresee the crash.  我们没料到崩盘。"
   },
   {
    "word": "wade",
@@ -14521,7 +14647,8 @@
   {
    "word": "genetics",
    "phonetic": "/dʒi'netiks/",
-   "meaning": "n.  遗传学"
+   "meaning": "n.  遗传学",
+   "example": "Genetics explains inherited traits.  遗传学解释了遗传特征。"
   },
   {
    "word": "perpetuate",
@@ -14646,7 +14773,8 @@
   {
    "word": "tentative",
    "phonetic": "/'tentətiv/",
-   "meaning": "n.  试验,假设a.  试验性质的,暂时的"
+   "meaning": "n.  试验,假设a.  试验性质的,暂时的",
+   "example": "The results are tentative.  结果还是初步的。"
   },
   {
    "word": "stagger",
@@ -14669,7 +14797,8 @@
   {
    "word": "constrain",
    "phonetic": "/kən'strein/",
-   "meaning": "vt.  强迫,勉强,驱使"
+   "meaning": "vt.  强迫,勉强,驱使",
+   "example": "Rules constrain what we can do.  规则限制了我们的行动。"
   },
   {
    "word": "ornament",
@@ -14692,7 +14821,8 @@
   {
    "word": "cubic",
    "phonetic": "/'kju:bik/",
-   "meaning": "a.  立方体的,立方的"
+   "meaning": "a.  立方体的,立方的",
+   "example": "The room measures ten cubic meters.  房间是十立方米。"
   },
   {
    "word": "gigantic",
@@ -14727,7 +14857,8 @@
   {
    "word": "lizard",
    "phonetic": "/'lizəd/",
-   "meaning": "n.  蜥蜴"
+   "meaning": "n.  蜥蜴",
+   "example": "A lizard sat on the warm wall.  一只蜥蜴趴在暖墙上。"
   },
   {
    "word": "marvel",
@@ -14744,7 +14875,8 @@
   {
    "word": "ceramic",
    "phonetic": "/si'ræmik/",
-   "meaning": "n. [常pl.  ]陶瓷器"
+   "meaning": "n. [常pl.  ]陶瓷器",
+   "example": "The artist fired the ceramic vase.  艺术家烧制了陶瓷花瓶。"
   },
   {
    "word": "convene",
@@ -14797,7 +14929,8 @@
   {
    "word": "glacier",
    "phonetic": "/'glæsjə/",
-   "meaning": "n.  冰河"
+   "meaning": "n.  冰河",
+   "example": "The glacier carved the valley.  冰川侵蚀出了山谷。"
   },
   {
    "word": "sediment",
@@ -15048,7 +15181,8 @@
   {
    "word": "pharmacy",
    "phonetic": "/'fɑ:məsi/",
-   "meaning": "n.  药店"
+   "meaning": "n.  药店",
+   "example": "The pharmacy is open all night.  药房整夜开门。"
   },
   {
    "word": "spiral",
@@ -15065,7 +15199,8 @@
   {
    "word": "plow",
    "phonetic": "/plau/",
-   "meaning": "n.  犁; vt.  耕作"
+   "meaning": "n.  犁; vt.  耕作",
+   "example": "The farmer plowed the field at dawn.  农夫黎明时犁了地。"
   },
   {
    "word": "blessed",
@@ -15160,7 +15295,8 @@
   {
    "word": "consciously",
    "phonetic": "/'kɔnʃəsli/",
-   "meaning": "adv.  有意识地，自觉地"
+   "meaning": "adv.  有意识地，自觉地",
+   "example": "We consciously reduced waste.  我们有意识地减少浪费。"
   },
   {
    "word": "aura",
@@ -15171,7 +15307,8 @@
   {
    "word": "petroleum",
    "phonetic": "/pə'trəuliəm/",
-   "meaning": "n.  石油"
+   "meaning": "n.  石油",
+   "example": "Petroleum refining needs high heat.  炼油需要高温。"
   },
   {
    "word": "flap",
@@ -15218,7 +15355,8 @@
   {
    "word": "dolphin",
    "phonetic": "/'dɔlfin/",
-   "meaning": "n.  海豚"
+   "meaning": "n.  海豚",
+   "example": "A dolphin jumped beside the boat.  海豚在船边跃起。"
   },
   {
    "word": "anatomy",
@@ -15259,7 +15397,8 @@
   {
    "word": "cosmos",
    "phonetic": "/'kɔzmɔs/",
-   "meaning": "n.  宇宙"
+   "meaning": "n.  宇宙",
+   "example": "The telescope looks deep into the cosmos.  望远镜深入观测宇宙。"
   },
   {
    "word": "converge",
@@ -15294,7 +15433,8 @@
   {
    "word": "arrogance",
    "phonetic": "/'ærəgəns/",
-   "meaning": "n.  傲慢态度,自大"
+   "meaning": "n.  傲慢态度,自大",
+   "example": "His arrogance annoyed the team.  他的傲慢惹恼了团队。"
   },
   {
    "word": "liaison",
@@ -15323,7 +15463,8 @@
   {
    "word": "evacuation",
    "phonetic": "/i`vækju'eiʃn/",
-   "meaning": "n.  撤离"
+   "meaning": "n.  撤离",
+   "example": "The evacuation took three hours.  疏散花了三个小时。"
   },
   {
    "word": "frank",
@@ -15358,7 +15499,8 @@
   {
    "word": "prosper",
    "phonetic": "/'prɔspə/",
-   "meaning": "vi.  繁荣; 成功"
+   "meaning": "vi.  繁荣; 成功",
+   "example": "The town prospered after the railway came.  铁路开通后小镇繁荣起来。"
   },
   {
    "word": "tread",
@@ -15393,7 +15535,8 @@
   {
    "word": "vapor",
    "phonetic": "/'veipə(r)/",
-   "meaning": "n.  (蒸)气，水汽"
+   "meaning": "n.  (蒸)气，水汽",
+   "example": "Water vapor rose from the cup.  水汽从杯子里升起。"
   },
   {
    "word": "excursion",
@@ -15416,7 +15559,8 @@
   {
    "word": "savor",
    "phonetic": "/'seivə/",
-   "meaning": "n.  1 味,香味; 风味2  情趣,趣味,兴趣,刺激 ɔ vt.   (慢慢地) 品尝"
+   "meaning": "n. 味道；风味；情趣 v. 品味；享有",
+   "example": "Savor the moment before it passes.  趁此刻好好品味。"
   },
   {
    "word": "satisfactory",
@@ -15427,7 +15571,8 @@
   {
    "word": "ledge",
    "phonetic": "/ledʒ/",
-   "meaning": "n.  突出之部分,暗礁,矿层"
+   "meaning": "n.  突出之部分,暗礁,矿层",
+   "example": "The bird nested on a ledge.  鸟在岩架上筑巢。"
   },
   {
    "word": "crooked",
@@ -15636,7 +15781,8 @@
   {
    "word": "archaeology",
    "phonetic": "/`ɑ:ki'ɔlədʒi/",
-   "meaning": "n.  考古学"
+   "meaning": "n.  考古学",
+   "example": "He studies archaeology in Egypt.  他在埃及学考古。"
   },
   {
    "word": "enclose",
@@ -15677,7 +15823,8 @@
   {
    "word": "sensory",
    "phonetic": "/'sensəri/",
-   "meaning": "a.  感觉的; 感官的"
+   "meaning": "a.  感觉的; 感官的",
+   "example": "The experiment tests sensory response.  实验测试感官反应。"
   },
   {
    "word": "noticeable",
@@ -15856,7 +16003,8 @@
   {
    "word": "meteor",
    "phonetic": "/'mi:tiə:/",
-   "meaning": "n.  流星"
+   "meaning": "n.  流星",
+   "example": "A meteor lit up the sky.  一颗流星照亮了天空。"
   },
   {
    "word": "mutation",
@@ -16041,12 +16189,14 @@
   {
    "word": "skeptic",
    "phonetic": "/'skeptik/",
-   "meaning": "n.  怀疑者,怀疑论者,无神论者"
+   "meaning": "n.  怀疑者,怀疑论者,无神论者",
+   "example": "The skeptic demanded evidence.  怀疑论者要求证据。"
   },
   {
    "word": "aerobic",
    "phonetic": "/eə'rəubik/",
-   "meaning": "a.  增氧健身法的; [pl.  ]n.  有氧运动"
+   "meaning": "a.  增氧健身法的; [pl.  ]n.  有氧运动",
+   "example": "Aerobic exercise strengthens the heart.  有氧运动强健心脏。"
   },
   {
    "word": "improvise",
@@ -16117,7 +16267,8 @@
   {
    "word": "forefront",
    "phonetic": "/'fɔ:frʌnt/",
-   "meaning": "n.  最前沿; 中心"
+   "meaning": "n.  最前沿; 中心",
+   "example": "The company is at the forefront of AI.  公司处于人工智能最前沿。"
   },
   {
    "word": "mundane",
@@ -16128,7 +16279,8 @@
   {
    "word": "prudent",
    "phonetic": "/'pru:dənt/",
-   "meaning": "a.  审慎的,三思而后行的,精明的,节俭的"
+   "meaning": "a.  审慎的,三思而后行的,精明的,节俭的",
+   "example": "It's prudent to keep some savings.  存点钱是明智的。"
   },
   {
    "word": "celestial",
@@ -16247,7 +16399,8 @@
   {
    "word": "soybean",
    "phonetic": "/'sɔibi:n/",
-   "meaning": "n.  大豆"
+   "meaning": "n.  大豆",
+   "example": "Soybean oil is widely used.  豆油被广泛使用。"
   },
   {
    "word": "apparel",
@@ -16276,7 +16429,8 @@
   {
    "word": "congestion",
    "phonetic": "/kən'dʒestʃn/",
-   "meaning": "n.  拥塞"
+   "meaning": "n.  拥塞",
+   "example": "Traffic congestion wastes hours.  交通拥堵浪费数小时。"
   },
   {
    "word": "sever",
@@ -16311,7 +16465,8 @@
   {
    "word": "pamphlet",
    "phonetic": "/'pæmflit/",
-   "meaning": "n.  小册子"
+   "meaning": "n.  小册子",
+   "example": "The pamphlet explains the vaccination.  小册子讲解了疫苗接种。"
   },
   {
    "word": "buckle",
@@ -16340,7 +16495,8 @@
   {
    "word": "puddle",
    "phonetic": "/'pʌdl/",
-   "meaning": "n.  水池,地上积水,水坑,胶土vt.  搅浊vi.  搅泥浆,在泥污中打滚,"
+   "meaning": "n. 水坑；泥洼",
+   "example": "The child jumped in the puddle.  孩子跳进了水坑。"
   },
   {
    "word": "soothe",
@@ -16399,7 +16555,8 @@
   {
    "word": "ceremonial",
    "phonetic": "/'seri'məunjəl/",
-   "meaning": "n.  仪式a.  正式的"
+   "meaning": "n.  仪式a.  正式的",
+   "example": "The ceremonial hall hosts weddings.  礼堂举办婚礼。"
   },
   {
    "word": "hamper",
@@ -16524,7 +16681,8 @@
   {
    "word": "fortress",
    "phonetic": "/'fɔ:tris/",
-   "meaning": "n.  城堡,要塞vt.  筑要塞,以要塞防守"
+   "meaning": "n.  城堡,要塞vt.  筑要塞,以要塞防守",
+   "example": "The fortress guarded the border.  要塞守卫着边境。"
   },
   {
    "word": "augment",
@@ -16547,7 +16705,8 @@
   {
    "word": "larva",
    "phonetic": "/'lɑ:və/",
-   "meaning": "n. [pl.  larvae]幼虫"
+   "meaning": "n. [pl.  larvae]幼虫",
+   "example": "The larva hatches from the egg.  幼虫从卵里孵出。"
   },
   {
    "word": "heed",
@@ -16564,7 +16723,8 @@
   {
    "word": "licensed",
    "phonetic": "/'laisnst/",
-   "meaning": "a.  得到许可的"
+   "meaning": "a.  得到许可的",
+   "example": "Only licensed pharmacists may sell drugs.  只有持照药剂师才能卖药。"
   },
   {
    "word": "console",
@@ -16653,7 +16813,8 @@
   {
    "word": "syllable",
    "phonetic": "/'siləbl/",
-   "meaning": "n.  音节"
+   "meaning": "n.  音节",
+   "example": "The word has three syllables.  这个词有三个音节。"
   },
   {
    "word": "inscribe",
@@ -16694,7 +16855,8 @@
   {
    "word": "limestone",
    "phonetic": "/'laimstəun/",
-   "meaning": "n.  石灰石"
+   "meaning": "n.  石灰石",
+   "example": "The cliffs are made of limestone.  崖壁是石灰岩。"
   },
   {
    "word": "pollute",
@@ -16711,7 +16873,8 @@
   {
    "word": "energize",
    "phonetic": "/'enə'dʒaiz/",
-   "meaning": "vt.  使活跃,给予精力"
+   "meaning": "vt.  使活跃,给予精力",
+   "example": "A short walk energizes the mind.  短暂散步能提神。"
   },
   {
    "word": "captive",
@@ -16800,7 +16963,8 @@
   {
    "word": "artisan",
    "phonetic": "/`ɑ:ti'zæn/",
-   "meaning": "n.  工匠，手艺人"
+   "meaning": "n.  工匠，手艺人",
+   "example": "The artisan carves wood by hand.  手艺人手工雕刻木头。"
   },
   {
    "word": "paramount",
@@ -16847,7 +17011,8 @@
   {
    "word": "orchid",
    "phonetic": "/'ɔ:kid/",
-   "meaning": "n.  兰花"
+   "meaning": "n.  兰花",
+   "example": "The orchid bloomed in the greenhouse.  兰花在温室里开了。"
   },
   {
    "word": "humiliate",
@@ -16858,7 +17023,8 @@
   {
    "word": "cactus",
    "phonetic": "/'kæktəs/",
-   "meaning": "n. [pl.  cacti]仙人掌"
+   "meaning": "n. [pl.  cacti]仙人掌",
+   "example": "A cactus stores water in its stem.  仙人掌在茎里存水。"
   },
   {
    "word": "numb",
@@ -16869,7 +17035,8 @@
   {
    "word": "gravitational",
    "phonetic": "/`grævi'teiʃənəl/",
-   "meaning": "a.  重力的，万有引力的"
+   "meaning": "a.  重力的，万有引力的",
+   "example": "Gravitational waves were detected in 2015.  引力波于 2015 年被探测到。"
   },
   {
    "word": "extinct",
@@ -16880,7 +17047,8 @@
   {
    "word": "gangster",
    "phonetic": "/'gæŋstə/",
-   "meaning": "n.  歹徒"
+   "meaning": "n.  歹徒",
+   "example": "The film is about a gangster.  这部电影讲的是黑帮。"
   },
   {
    "word": "sterile",
@@ -16891,7 +17059,8 @@
   {
    "word": "gorilla",
    "phonetic": "/gə'rilə/",
-   "meaning": "n.  大猩猩"
+   "meaning": "n.  大猩猩",
+   "example": "The gorilla beat its chest.  大猩猩捶着胸口。"
   },
   {
    "word": "impetus",
@@ -16932,7 +17101,8 @@
   {
    "word": "cultivation",
    "phonetic": "/'kʌlti'veiʃən/",
-   "meaning": "n.  教化,培养,耕作"
+   "meaning": "n.  教化,培养,耕作",
+   "example": "Rice cultivation needs much water.  种水稻需要大量水。"
   },
   {
    "word": "hustle",
@@ -16943,7 +17113,8 @@
   {
    "word": "posit",
    "phonetic": "/'pɔzit/",
-   "meaning": "v.  安排; 假定"
+   "meaning": "v.  安排; 假定",
+   "example": "The theory posits a fourth dimension.  该理论假定了第四维度。"
   },
   {
    "word": "ruthless",
@@ -17002,7 +17173,8 @@
   {
    "word": "undertaking",
    "phonetic": "/'ʌndə'teikiŋ/",
-   "meaning": "n.  事业,企业,保证"
+   "meaning": "n.  事业,企业,保证",
+   "example": "The bridge was a massive undertaking.  这座桥是浩大的工程。"
   },
   {
    "word": "assimilate",
@@ -17127,7 +17299,8 @@
   {
    "word": "ultraviolet",
    "phonetic": "/`ʌltrə'vaiəlit/",
-   "meaning": "a.  紫外(线)的"
+   "meaning": "a.  紫外(线)的",
+   "example": "Ultraviolet light sterilizes water.  紫外线能给水消毒。"
   },
   {
    "word": "ascend",
@@ -17156,7 +17329,8 @@
   {
    "word": "sulfur",
    "phonetic": "/'sʌlfə/",
-   "meaning": "n.  硫磺"
+   "meaning": "n.  硫磺",
+   "example": "Volcanoes release sulfur dioxide.  火山释放二氧化硫。"
   },
   {
    "word": "evade",
@@ -17245,12 +17419,14 @@
   {
    "word": "meager",
    "phonetic": "/'mi:gə(r)/",
-   "meaning": "a.  不足的，贫乏的"
+   "meaning": "a.  不足的，贫乏的",
+   "example": "They survived on a meager diet.  他们靠微薄的食物活了下来。"
   },
   {
    "word": "pollen",
    "phonetic": "/'pɔlin/",
-   "meaning": "n.  花粉"
+   "meaning": "n.  花粉",
+   "example": "Pollen triggers his allergies.  花粉引发他的过敏。"
   },
   {
    "word": "shear",
@@ -17261,7 +17437,8 @@
   {
    "word": "terrestrial",
    "phonetic": "/tə'restriəl/",
-   "meaning": "a.  陆地的，陆生的; 地球的"
+   "meaning": "a.  陆地的，陆生的; 地球的",
+   "example": "Earth is a terrestrial planet.  地球是一颗类地行星。"
   },
   {
    "word": "luminous",
@@ -17326,7 +17503,8 @@
   {
    "word": "thermometer",
    "phonetic": "/θə'mɔmitə/",
-   "meaning": "n.  温度计,体温计"
+   "meaning": "n.  温度计,体温计",
+   "example": "The thermometer reads 37 degrees.  体温计显示 37 度。"
   },
   {
    "word": "disdain",
@@ -17415,7 +17593,8 @@
   {
    "word": "silicon",
    "phonetic": "/'silikən/",
-   "meaning": "n.  硅"
+   "meaning": "n.  硅",
+   "example": "Silicon Valley leads in tech.  硅谷在科技领域领先。"
   },
   {
    "word": "denote",
@@ -17438,7 +17617,8 @@
   {
    "word": "receptor",
    "phonetic": "/ri'septə/",
-   "meaning": "n.  感受器"
+   "meaning": "n.  感受器",
+   "example": "The nerve receptor fired.  神经感受器被激活了。"
   },
   {
    "word": "greasy",
@@ -17461,12 +17641,14 @@
   {
    "word": "heading",
    "phonetic": "/'hediŋ/",
-   "meaning": "n.  标题"
+   "meaning": "n.  标题",
+   "example": "Choose a heading for the essay.  给文章选个标题。"
   },
   {
    "word": "vigor",
    "phonetic": "/'vigə/",
-   "meaning": "n.  精力,活力"
+   "meaning": "n.  精力,活力",
+   "example": "She plays with great vigor.  她打得很有活力。"
   },
   {
    "word": "quarry",
@@ -17537,7 +17719,8 @@
   {
    "word": "manure",
    "phonetic": "/mə'njuə/",
-   "meaning": "n.  肥料,粪肥vt.  施肥于"
+   "meaning": "n.  肥料,粪肥vt.  施肥于",
+   "example": "Manure enriches the soil.  粪肥能肥田。"
   },
   {
    "word": "bidding",
@@ -17620,12 +17803,14 @@
   {
    "word": "imprisonment",
    "phonetic": "/im'priznmənt/",
-   "meaning": "n.  监禁,下狱,坐牢"
+   "meaning": "n.  监禁,下狱,坐牢",
+   "example": "He faced ten years' imprisonment.  他面临十年监禁。"
   },
   {
    "word": "Gothic",
    "phonetic": "/'gɔθik/",
-   "meaning": "a.  哥特式的"
+   "meaning": "a.  哥特式的",
+   "example": "The cathedral is in Gothic style.  大教堂是哥特式风格。"
   },
   {
    "word": "humorous",
@@ -17696,7 +17881,8 @@
   {
    "word": "favored",
    "phonetic": "/'feivəd/",
-   "meaning": "a.  有利的; 受优待的，首选的"
+   "meaning": "a.  有利的; 受优待的，首选的",
+   "example": "The favored candidate won.  被看好的候选人赢了。"
   },
   {
    "word": "fret",
@@ -17707,7 +17893,8 @@
   {
    "word": "rigor",
    "phonetic": "/'rigə/",
-   "meaning": "n.  严格,严厉,苛刻,精确,严密"
+   "meaning": "n.  严格,严厉,苛刻,精确,严密",
+   "example": "The research is marked by rigor.  这研究以严谨著称。"
   },
   {
    "word": "flatter",
@@ -17760,12 +17947,14 @@
   {
    "word": "iceberg",
    "phonetic": "/'aisbə:g/",
-   "meaning": "n.  冰山,冷冰冰的人"
+   "meaning": "n.  冰山,冷冰冰的人",
+   "example": "Only a tenth of the iceberg shows.  冰山只露出十分之一。"
   },
   {
    "word": "rodent",
    "phonetic": "/'rəudənt/",
-   "meaning": "n.  啮齿目动物(如松鼠或海狸)"
+   "meaning": "n.  啮齿目动物(如松鼠或海狸)",
+   "example": "A rodent chewed the wires.  啃齿动物咬坏了电线。"
   },
   {
    "word": "yeast",
@@ -17794,7 +17983,8 @@
   {
    "word": "emblem",
    "phonetic": "/'embləm/",
-   "meaning": "n.  徽章"
+   "meaning": "n.  徽章",
+   "example": "The dove is an emblem of peace.  鸽子是和平的象征。"
   },
   {
    "word": "homage",
@@ -17823,7 +18013,8 @@
   {
    "word": "willow",
    "phonetic": "/'wiləu/",
-   "meaning": "n.  柳，柳树，柳木制品"
+   "meaning": "n.  柳，柳树，柳木制品",
+   "example": "A willow leans over the pond.  柳树倾斜在池塘上。"
   },
   {
    "word": "patronage",
@@ -17840,7 +18031,8 @@
   {
    "word": "rectangle",
    "phonetic": "/'rektæŋgl/",
-   "meaning": "n.  长方形,矩形"
+   "meaning": "n.  长方形,矩形",
+   "example": "The field is a rectangle.  场地是长方形的。"
   },
   {
    "word": "whim",
@@ -17857,7 +18049,8 @@
   {
    "word": "statesman",
    "phonetic": "/'steitsmən/",
-   "meaning": "n.  政治家"
+   "meaning": "n.  政治家",
+   "example": "The statesman urged restraint.  政治家敦促克制。"
   },
   {
    "word": "invaluable",
@@ -17934,17 +18127,20 @@
   {
    "word": "microbe",
    "phonetic": "/'maikrəub/",
-   "meaning": "n.  微生物，细菌"
+   "meaning": "n.  微生物，细菌",
+   "example": "Microbes live everywhere.  微生物无处不在。"
   },
   {
    "word": "neutron",
    "phonetic": "/'nju:trɔn/",
-   "meaning": "n.  中子"
+   "meaning": "n.  中子",
+   "example": "A neutron has no charge.  中子不带电。"
   },
   {
    "word": "pathology",
    "phonetic": "/pə'θɔlədʒi/",
-   "meaning": "n.  反常，变态"
+   "meaning": "n.  反常，变态",
+   "example": "He specializes in pathology.  他专攻病理学。"
   },
   {
    "word": "serene",
@@ -18033,7 +18229,8 @@
   {
    "word": "analogous",
    "phonetic": "/ə'næləgəs/",
-   "meaning": "a.  类似的,相似的"
+   "meaning": "a.  类似的,相似的",
+   "example": "The heart is analogous to a pump.  心脏类似于泵。"
   },
   {
    "word": "brittle",
@@ -18068,7 +18265,8 @@
   {
    "word": "thrift",
    "phonetic": "/θrift/",
-   "meaning": "n.  节约,繁荣"
+   "meaning": "n.  节约,繁荣",
+   "example": "Thrift is a traditional virtue.  节俭是传统美德。"
   },
   {
    "word": "rust",
@@ -18139,7 +18337,8 @@
   {
    "word": "balk",
    "phonetic": "/bɔ:k/",
-   "meaning": "n.  障碍,错误,失败vt.  阻止,突然停止,退缩vi.  逡巡不前"
+   "meaning": "n.  障碍,错误,失败vt.  阻止,突然停止,退缩vi.  逡巡不前",
+   "example": "The horse balked at the jump.  马在障碍前退缩了。"
   },
   {
    "word": "profess",
@@ -18150,7 +18349,8 @@
   {
    "word": "aquarium",
    "phonetic": "/ə'kweəriəm/",
-   "meaning": "n.  养鱼池; 水族馆"
+   "meaning": "n.  养鱼池; 水族馆",
+   "example": "The aquarium has rare fish.  水族馆有珍稀鱼类。"
   },
   {
    "word": "inception",
@@ -18215,7 +18415,8 @@
   {
    "word": "tendon",
    "phonetic": "/'tendʌn/",
-   "meaning": "n.  肌腱"
+   "meaning": "n.  肌腱",
+   "example": "The tendon was torn in the match.  肌腱在比赛中撕裂了。"
   },
   {
    "word": "interrogate",
@@ -18256,7 +18457,8 @@
   {
    "word": "zinc",
    "phonetic": "/ziŋk/",
-   "meaning": "n.  锌"
+   "meaning": "n.  锌",
+   "example": "Zinc deficiency slows growth.  缺锌会减缓生长。"
   },
   {
    "word": "mediocre",
@@ -18279,7 +18481,8 @@
   {
    "word": "melting",
    "phonetic": "/'meltiŋ/",
-   "meaning": "a.  融化的，溶化的"
+   "meaning": "a.  融化的，溶化的",
+   "example": "The glaciers are melting fast.  冰川正在快速融化。"
   },
   {
    "word": "admirable",
@@ -18296,7 +18499,8 @@
   {
    "word": "beforehand",
    "phonetic": "/bi'fɔ:hænd/",
-   "meaning": "ad.  预先"
+   "meaning": "ad.  预先",
+   "example": "Tell me beforehand if you're busy.  忙的话提前告诉我。"
   },
   {
    "word": "wring",
@@ -18307,7 +18511,8 @@
   {
    "word": "yen",
    "phonetic": "/jen/",
-   "meaning": "n.  日圆,瘾vi.  渴望"
+   "meaning": "n.  日圆,瘾vi.  渴望",
+   "example": "She had a yen for travel.  她渴望旅行。"
   },
   {
    "word": "tedious",
@@ -18324,7 +18529,8 @@
   {
    "word": "reptile",
    "phonetic": "/'reptail/",
-   "meaning": "n.  爬行动物"
+   "meaning": "n.  爬行动物",
+   "example": "A reptile suns itself on the rock.  爬行动物在岩石上晒太阳。"
   },
   {
    "word": "confound",
@@ -18371,7 +18577,8 @@
   {
    "word": "generously",
    "phonetic": "/'dʒenərəsli/",
-   "meaning": "adv.  1 慷慨地,大方地,不吝啬地2 [修饰整句] (真) 宽大ɔ 丰富地"
+   "meaning": "adv.  1 慷慨地,大方地,不吝啬地2 [修饰整句] (真) 宽大ɔ 丰富地",
+   "example": "He donated generously to the school.  他慷慨地向学校捐赠。"
   },
   {
    "word": "preferable",
@@ -18394,7 +18601,8 @@
   {
    "word": "reciprocal",
    "phonetic": "/ri'siprəkəl/",
-   "meaning": "a.  互惠的,相互的,彼此相反的,倒数的,相应的n.  倒数,互相起作用的事"
+   "meaning": "adj. 互惠的；相互的 n. 倒数",
+   "example": "Trade should be reciprocal.  贸易应当互惠。"
   },
   {
    "word": "guise",
@@ -18429,7 +18637,8 @@
   {
    "word": "skyscraper",
    "phonetic": "/'skai`skreipə/",
-   "meaning": "n.  摩天大楼"
+   "meaning": "n.  摩天大楼",
+   "example": "A skyscraper replaced the old theater.  摩天楼取代了老剧院。"
   },
   {
    "word": "erratic",
@@ -18494,7 +18703,8 @@
   {
    "word": "faucet",
    "phonetic": "/'fɔ:sit/",
-   "meaning": "n.  水龙头; 插口"
+   "meaning": "n.  水龙头; 插口",
+   "example": "The faucet dripped all night.  水龙头滴了一夜。"
   },
   {
    "word": "unearth",
@@ -18505,7 +18715,8 @@
   {
    "word": "caliber",
    "phonetic": "/'kæləbə/",
-   "meaning": "n.  口径,才干,器量"
+   "meaning": "n.  口径,才干,器量",
+   "example": "The department hires people of high caliber.  系里招高素质人才。"
   },
   {
    "word": "glean",
@@ -18576,7 +18787,8 @@
   {
    "word": "racing",
    "phonetic": "/'reisiŋ/",
-   "meaning": "n.  比赛，竞赛; a.  比赛的"
+   "meaning": "n.  比赛，竞赛; a.  比赛的",
+   "example": "He joined the racing club.  他加入了赛车俱乐部。"
   },
   {
    "word": "abstinence",
@@ -18605,7 +18817,8 @@
   {
    "word": "bison",
    "phonetic": "/'baisn/",
-   "meaning": "n.  美洲或欧洲的野牛"
+   "meaning": "n.  美洲或欧洲的野牛",
+   "example": "Bison once covered the plains.  野牛曾遍布草原。"
   },
   {
    "word": "cohesion",
@@ -18622,7 +18835,8 @@
   {
    "word": "centennial",
    "phonetic": "/sen'teniəl/",
-   "meaning": "n.  百年纪念"
+   "meaning": "n.  百年纪念",
+   "example": "The town celebrated its centennial.  小镇庆祝了百年纪念。"
   },
   {
    "word": "deport",
@@ -18651,7 +18865,8 @@
   {
    "word": "naturalist",
    "phonetic": "/'nætʃrəlist/",
-   "meaning": "n.  自然主义者，博物学家"
+   "meaning": "n.  自然主义者，博物学家",
+   "example": "The naturalist documented the birds.  博物学家记录了这些鸟。"
   },
   {
    "word": "detrimental",
@@ -18680,7 +18895,8 @@
   {
    "word": "leash",
    "phonetic": "/li:ʃ/",
-   "meaning": "n.  拴狗颈之皮带vt.  以皮带束缚,束缚"
+   "meaning": "n.  拴狗颈之皮带vt.  以皮带束缚,束缚",
+   "example": "Keep the dog on a leash.  给狗拴上牵引绳。"
   },
   {
    "word": "smother",
@@ -18733,7 +18949,8 @@
   {
    "word": "physiology",
    "phonetic": "/`fizi'ɔlədʒi/",
-   "meaning": "n.  生理学"
+   "meaning": "n.  生理学",
+   "example": "She teaches physiology.  她教生理学。"
   },
   {
    "word": "ascribe",
@@ -18750,7 +18967,8 @@
   {
    "word": "dormitory",
    "phonetic": "/'dɔ:mitri/",
-   "meaning": "n.  宿舍"
+   "meaning": "n.  宿舍",
+   "example": "The dormitory is close to the lab.  宿舍离实验室很近。"
   },
   {
    "word": "eject",
@@ -18779,7 +18997,8 @@
   {
    "word": "metabolic",
    "phonetic": "/`metə'bɔlik/",
-   "meaning": "a.  新陈代谢的"
+   "meaning": "a.  新陈代谢的",
+   "example": "Exercise boosts metabolic rate.  运动提高新陈代谢率。"
   },
   {
    "word": "shabby",
@@ -18832,7 +19051,8 @@
   {
    "word": "optimum",
    "phonetic": "/'ɔptimiəm/",
-   "meaning": "n.  最适宜a.  最适宜的"
+   "meaning": "n.  最适宜a.  最适宜的",
+   "example": "The optimum dose varies by person.  最佳剂量因人而异。"
   },
   {
    "word": "dagger",
@@ -18855,7 +19075,8 @@
   {
    "word": "burglar",
    "phonetic": "/'bə:glə/",
-   "meaning": "n.  窃贼"
+   "meaning": "n.  窃贼",
+   "example": "A burglar tried the window.  盗贼撬了窗户。"
   },
   {
    "word": "throng",
@@ -18878,7 +19099,8 @@
   {
    "word": "cavern",
    "phonetic": "/'kævən/",
-   "meaning": "n.  巨穴,洞窟vt.  放于山洞中,挖空"
+   "meaning": "n.  巨穴,洞窟vt.  放于山洞中,挖空",
+   "example": "The cavern echoes with water drops.  洞窟里回荡着滴水声。"
   },
   {
    "word": "prerequisite",
@@ -18913,7 +19135,8 @@
   {
    "word": "splendor",
    "phonetic": "/'splendə/",
-   "meaning": "((英))splen. dour['splend2] (U) [常 ~s]1 灿烂,光辉,光彩2;  华丽,堂"
+   "meaning": "n. 辉煌；壮丽；光彩",
+   "example": "The splendor of the palace amazed visitors.  宫殿的辉煌令游客惊叹。"
   },
   {
    "word": "meticulous",
@@ -18996,7 +19219,8 @@
   {
    "word": "divergent",
    "phonetic": "/dai'və:dʒənt/",
-   "meaning": "a.  分歧的"
+   "meaning": "a.  分歧的",
+   "example": "The two theories are divergent.  两种理论存在分歧。"
   },
   {
    "word": "forage",
@@ -19013,7 +19237,8 @@
   {
    "word": "thorn",
    "phonetic": "/θɔ:n/",
-   "meaning": "n.  刺，荆棘"
+   "meaning": "n.  刺，荆棘",
+   "example": "A thorn stuck in the tire.  一根刺扎进了轮胎。"
   },
   {
    "word": "ignition",
@@ -19270,7 +19495,8 @@
   {
    "word": "rodeo",
    "phonetic": "/rəu'deiəu/",
-   "meaning": "n.  牛仔竞技表演"
+   "meaning": "n.  牛仔竞技表演",
+   "example": "The rodeo attracts cowboys from everywhere.  牛仔竞技吸引各地牛仔。"
   },
   {
    "word": "hive",
@@ -19323,7 +19549,8 @@
   {
    "word": "microorganism",
    "phonetic": "/`maikrəu'ɔ:gənizəm/",
-   "meaning": "n.  微生物，细菌"
+   "meaning": "n.  微生物，细菌",
+   "example": "Microorganisms break down waste.  微生物分解废物。"
   },
   {
    "word": "purge",
@@ -19388,7 +19615,8 @@
   {
    "word": "squid",
    "phonetic": "/skwid/",
-   "meaning": "n.  鱿鱼"
+   "meaning": "n.  鱿鱼",
+   "example": "The squid shot ink at the predator.  鱿鱼向捕食者喷墨。"
   },
   {
    "word": "swan",
@@ -19405,7 +19633,8 @@
   {
    "word": "spaceship",
    "phonetic": "/'speisʃip/",
-   "meaning": "n.  太空船"
+   "meaning": "n.  太空船",
+   "example": "The spaceship entered lunar orbit.  宇宙飞船进入月球轨道。"
   },
   {
    "word": "tally",
@@ -19554,7 +19783,8 @@
   {
    "word": "locomotive",
    "phonetic": "/'ləukəməutiv/",
-   "meaning": "n.  机车; a.  运动的"
+   "meaning": "n.  机车; a.  运动的",
+   "example": "The locomotive pulled freight cars.  火车头牵引着货车厢。"
   },
   {
    "word": "utmost",
@@ -19589,7 +19819,8 @@
   {
    "word": "dogma",
    "phonetic": "/'dɔgmə/",
-   "meaning": "n.  教条"
+   "meaning": "n.  教条",
+   "example": "The party clings to old dogma.  该党固守旧教条。"
   },
   {
    "word": "adjunct",
@@ -19606,7 +19837,8 @@
   {
    "word": "bandit",
    "phonetic": "/'bændit/",
-   "meaning": "n.  强盗"
+   "meaning": "n.  强盗",
+   "example": "The bandit robbed the stagecoach.  强盗抢劫了公共马车。"
   },
   {
    "word": "protrude",
@@ -19647,7 +19879,8 @@
   {
    "word": "dissect",
    "phonetic": "/di'sekt/",
-   "meaning": "vt. vi.  解剖,切细"
+   "meaning": "vt. vi.  解剖,切细",
+   "example": "Students dissect a frog in class.  学生课上解剖青蛙。"
   },
   {
    "word": "cardinal",
@@ -19766,7 +19999,8 @@
   {
    "word": "tamper",
    "phonetic": "/'tæmpə/",
-   "meaning": "vi.  干预,玩弄,贿赂,窜改,削弱,损害vt.  窜改n.  捣棒,夯,填塞者"
+   "meaning": "vi.  干预,玩弄,贿赂,窜改,削弱,损害vt.  窜改n.  捣棒,夯,填塞者",
+   "example": "Don't tamper with the evidence.  不要篡改证据。"
   },
   {
    "word": "elective",
@@ -19831,7 +20065,8 @@
   {
    "word": "meteorite",
    "phonetic": "/'mi:tiərait/",
-   "meaning": "n.  流星，陨石"
+   "meaning": "n.  流星，陨石",
+   "example": "The meteorite left a crater.  陨石砸出了一个坑。"
   },
   {
    "word": "ravage",
@@ -19854,7 +20089,8 @@
   {
    "word": "amino",
    "phonetic": "/ə'mi:nəu/",
-   "meaning": "a.  氨基的"
+   "meaning": "a.  氨基的",
+   "example": "Amino acids build protein.  氨基酸构成蛋白质。"
   },
   {
    "word": "sculpt",
@@ -19871,12 +20107,14 @@
   {
    "word": "clamor",
    "phonetic": "/'klæmə/",
-   "meaning": "n.  喧闹,叫嚷,大声的要求vi. vt.  喧嚷,大声的要求"
+   "meaning": "n.  喧闹,叫嚷,大声的要求vi. vt.  喧嚷,大声的要求",
+   "example": "The clamor of the market filled the street.  街上满是集市的喧闹。"
   },
   {
    "word": "creed",
    "phonetic": "/kri:d/",
-   "meaning": "n.  教条,主义,纲领"
+   "meaning": "n.  教条,主义,纲领",
+   "example": "People of every creed live here.  各种信仰的人都住在这里。"
   },
   {
    "word": "latent",
@@ -19887,7 +20125,8 @@
   {
    "word": "instill",
    "phonetic": "/in'stil/",
-   "meaning": "vt.  1 将<思想、感情等>逐渐灌输给[某人],灌入 [脑子里] 徐徐教导[in]"
+   "meaning": "vt.  1 将<思想、感情等>逐渐灌输给[某人],灌入 [脑子里] 徐徐教导[in]",
+   "example": "Parents instill good habits early.  父母很早就培养好习惯。"
   },
   {
    "word": "disarray",
@@ -19934,7 +20173,8 @@
   {
    "word": "patriot",
    "phonetic": "/'pætriət/",
-   "meaning": "n.  爱国者"
+   "meaning": "n.  爱国者",
+   "example": "The patriot refused the bribe.  爱国者拒绝了贿赂。"
   },
   {
    "word": "clutter",
@@ -19981,7 +20221,8 @@
   {
    "word": "gorge",
    "phonetic": "/gɔ:dʒ/",
-   "meaning": "n.  峡谷,饱食,咽喉vi.  狼吞虎咽vt.  塞饱"
+   "meaning": "n.  峡谷,饱食,咽喉vi.  狼吞虎咽vt.  塞饱",
+   "example": "We gorged on fruit at the picnic.  我们野餐时猛吃水果。"
   },
   {
    "word": "counteract",
@@ -19992,7 +20233,8 @@
   {
    "word": "magnesium",
    "phonetic": "/mæg'ni:ziəm/",
-   "meaning": "n.  镁"
+   "meaning": "n.  镁",
+   "example": "Magnesium is essential for muscles.  镁对肌肉很重要。"
   },
   {
    "word": "agitate",
@@ -20021,7 +20263,8 @@
   {
    "word": "gull",
    "phonetic": "/gʌl/",
-   "meaning": "n.  鸥，海鸥"
+   "meaning": "n.  鸥，海鸥",
+   "example": "A gull stole the chips.  海鸥叼走了薯片。"
   },
   {
    "word": "bent",
@@ -20038,7 +20281,8 @@
   {
    "word": "potassium",
    "phonetic": "/pə'tæsiəm/",
-   "meaning": "n.  钾"
+   "meaning": "n.  钾",
+   "example": "Bananas are rich in potassium.  香蕉富含钾。"
   },
   {
    "word": "fable",
@@ -20067,12 +20311,14 @@
   {
    "word": "engraving",
    "phonetic": "/in'greiviŋ/",
-   "meaning": "n.  雕刻术; 版画"
+   "meaning": "n.  雕刻术; 版画",
+   "example": "The engraving shows the old city.  版画描绘了旧城。"
   },
   {
    "word": "grimly",
    "phonetic": "/'grimli/",
-   "meaning": "adv.  冷酷地"
+   "meaning": "adv.  冷酷地",
+   "example": "He grimly accepted the outcome.  他冷峻地接受了结果。"
   },
   {
    "word": "cumbersome",
@@ -20125,7 +20371,8 @@
   {
    "word": "skillful",
    "phonetic": "/'skilful/",
-   "meaning": "a.  熟练的,巧妙的"
+   "meaning": "a.  熟练的,巧妙的",
+   "example": "The skillful diver entered the water quietly.  技巧高超的跳水者悄然入水。"
   },
   {
    "word": "wry",
@@ -20172,7 +20419,8 @@
   {
    "word": "snowflake",
    "phonetic": "/'snəufleik/",
-   "meaning": "n.  雪花"
+   "meaning": "n.  雪花",
+   "example": "Each snowflake is unique.  每片雪花都独一无二。"
   },
   {
    "word": "negate",
@@ -20195,7 +20443,8 @@
   {
    "word": "pedagogy",
    "phonetic": "/'pedəgɔdʒi/",
-   "meaning": "n.  教育学，教学法"
+   "meaning": "n.  教育学，教学法",
+   "example": "She studied modern pedagogy.  她研究现代教学法。"
   },
   {
    "word": "concoct",
@@ -20224,7 +20473,8 @@
   {
    "word": "virtuous",
    "phonetic": "/'və:tjuəs/",
-   "meaning": "a.  有品德的,善良的,贞洁的,有效力的"
+   "meaning": "a.  有品德的,善良的,贞洁的,有效力的",
+   "example": "He led a virtuous life.  他一生品行端正。"
   },
   {
    "word": "mania",
@@ -20241,12 +20491,14 @@
   {
    "word": "emerald",
    "phonetic": "/'emərəld/",
-   "meaning": "n.  绿宝石"
+   "meaning": "n.  绿宝石",
+   "example": "The ring holds a green emerald.  戒指镶着绿宝石。"
   },
   {
    "word": "dazzle",
    "phonetic": "/'dæzl/",
-   "meaning": "vt. vi.  (使)眼花,眩耀n.  耀眼"
+   "meaning": "vt. vi.  (使)眼花,眩耀n.  耀眼",
+   "example": "The headlights dazzled the oncoming car.  车灯晃了对向来车。"
   },
   {
    "word": "aptitude",
@@ -20263,12 +20515,14 @@
   {
    "word": "healthful",
    "phonetic": "/'helθful/",
-   "meaning": "a.  有益健康的,使人健康的,卫生的"
+   "meaning": "a.  有益健康的,使人健康的,卫生的",
+   "example": "Walking is a healthful habit.  散步是有益健康的习惯。"
   },
   {
    "word": "tentacle",
    "phonetic": "/'tentəkl/",
-   "meaning": "n.  触角，触须"
+   "meaning": "n.  触角，触须",
+   "example": "The octopus grabbed with a tentacle.  章鱼用触手抓住了东西。"
   },
   {
    "word": "arduous",
@@ -20297,12 +20551,14 @@
   {
    "word": "legislate",
    "phonetic": "/'leedʒisleit/",
-   "meaning": "vi.  制定法律vt.  使依法成"
+   "meaning": "vi.  制定法律vt.  使依法成",
+   "example": "Parliament legislates on these matters.  议会就此立法。"
   },
   {
    "word": "calamity",
    "phonetic": "/kə'læmiti/",
-   "meaning": "n.  灾难,不幸事件"
+   "meaning": "n.  灾难,不幸事件",
+   "example": "The earthquake was a national calamity.  地震是国难。"
   },
   {
    "word": "conclusive",
@@ -20325,7 +20581,8 @@
   {
    "word": "ammonia",
    "phonetic": "/ə'məuniə/",
-   "meaning": "n.  氨，氨水"
+   "meaning": "n.  氨，氨水",
+   "example": "Ammonia has a sharp smell.  氨水有刺鼻气味。"
   },
   {
    "word": "astonish",
@@ -20354,7 +20611,8 @@
   {
    "word": "congregate",
    "phonetic": "/'kɔŋgrigeit/",
-   "meaning": "vt. vi.  (使)集合,(使)聚集a.  集合在一起的,集体的"
+   "meaning": "vt. vi.  (使)集合,(使)聚集a.  集合在一起的,集体的",
+   "example": "Fans congregate outside the stadium.  球迷聚集在体育场外。"
   },
   {
    "word": "revoke",
@@ -20389,12 +20647,14 @@
   {
    "word": "influenza",
    "phonetic": "/`influ'enzə/",
-   "meaning": "n.  流行性感冒"
+   "meaning": "n.  流行性感冒",
+   "example": "Influenza spreads quickly in winter.  流感在冬天传播快。"
   },
   {
    "word": "aperture",
    "phonetic": "/'æpətjuə/",
-   "meaning": "n.  孔,穴,孔径,光圈"
+   "meaning": "n.  孔,穴,孔径,光圈",
+   "example": "Widen the aperture for more light.  开大光圈进更多光。"
   },
   {
    "word": "subdue",
@@ -20453,7 +20713,8 @@
   {
    "word": "enactment",
    "phonetic": "/i'næktmənt/",
-   "meaning": "n.  制定"
+   "meaning": "n.  制定",
+   "example": "The enactment of the law took years.  该法的制定耗时数年。"
   },
   {
    "word": "strenuous",
@@ -20494,7 +20755,8 @@
   {
    "word": "chimpanzee",
    "phonetic": "/`tʃimpən'zi:/",
-   "meaning": "n.  黑猩猩"
+   "meaning": "n.  黑猩猩",
+   "example": "The chimpanzee used a stick to fish.  黑猩猩用棍子钓蚂蚁。"
   },
   {
    "word": "adherent",
@@ -20505,7 +20767,8 @@
   {
    "word": "homestead",
    "phonetic": "/'həumsted/",
-   "meaning": "n.  家园; 田产"
+   "meaning": "n.  家园; 田产",
+   "example": "The family kept the old homestead.  家里保住了老宅。"
   },
   {
    "word": "hasty",
@@ -20522,7 +20785,8 @@
   {
    "word": "accomplice",
    "phonetic": "/ə'kɔmplis/",
-   "meaning": "n.  共犯,同谋"
+   "meaning": "n.  共犯,同谋",
+   "example": "He was charged as an accomplice.  他被控为同谋。"
   },
   {
    "word": "aversion",
@@ -20533,7 +20797,8 @@
   {
    "word": "calculus",
    "phonetic": "/'kælkjuləs/",
-   "meaning": "n.  微积分学; 结石"
+   "meaning": "n.  微积分学; 结石",
+   "example": "He failed calculus twice.  他微积分挂了两次。"
   },
   {
    "word": "idiom",
@@ -20550,12 +20815,14 @@
   {
    "word": "serenity",
    "phonetic": "/si'reniti/",
-   "meaning": "n.  宁静,沉着,晴朗"
+   "meaning": "n.  宁静,沉着,晴朗",
+   "example": "The lake's serenity calmed us.  湖的宁静让我们平静下来。"
   },
   {
    "word": "composure",
    "phonetic": "/kəm'pəuʒə/",
-   "meaning": "n.  镇静,沉着"
+   "meaning": "n.  镇静,沉着",
+   "example": "She kept her composure under pressure.  她在压力下保持镇静。"
   },
   {
    "word": "equator",
@@ -20590,7 +20857,8 @@
   {
    "word": "microprocessor",
    "phonetic": "/maikrəu'prəusesə(r)/",
-   "meaning": "n.  微处理器"
+   "meaning": "n.  微处理器",
+   "example": "The microprocessor runs the device.  微处理器驱动着设备。"
   },
   {
    "word": "perilous",
@@ -20607,12 +20875,14 @@
   {
    "word": "culmination",
    "phonetic": "/'kʌlmə'neʃən/",
-   "meaning": "n.  顶点,极点,最高点"
+   "meaning": "n.  顶点,极点,最高点",
+   "example": "The award was the culmination of her work.  奖项是她工作的顶点。"
   },
   {
    "word": "baby-sit",
    "phonetic": "/'beibi,sit/",
-   "meaning": "vi.  担任临时保姆,照顾婴儿"
+   "meaning": "vi.  担任临时保姆,照顾婴儿",
+   "example": "She baby-sits on weekends.  她周末给人看孩子。"
   },
   {
    "word": "epoch",
@@ -20641,7 +20911,8 @@
   {
    "word": "algebra",
    "phonetic": "/'ældʒibrə/",
-   "meaning": "n.  代数学"
+   "meaning": "n.  代数学",
+   "example": "Algebra builds logical thinking.  代数培养逻辑思维。"
   },
   {
    "word": "imbue",
@@ -20670,7 +20941,8 @@
   {
    "word": "paraphrase",
    "phonetic": "/'pærəfreiz/",
-   "meaning": "n.  释义,解述,改写vt.  改写,解述vi.  释义"
+   "meaning": "n.  释义,解述,改写vt.  改写,解述vi.  释义",
+   "example": "Paraphrase the passage in your own words.  用自己的话改写这段。"
   },
   {
    "word": "shroud",
@@ -20705,7 +20977,8 @@
   {
    "word": "grazing",
    "phonetic": "/'greiziŋ/",
-   "meaning": "n.  放牧; 牧草"
+   "meaning": "n.  放牧; 牧草",
+   "example": "Cattle grazing kept the grass short.  牛群吃草把草踩短了。"
   },
   {
    "word": "treason",
@@ -20758,12 +21031,14 @@
   {
    "word": "caribou",
    "phonetic": "/'kæribu:/",
-   "meaning": "n.  北美产驯鹿"
+   "meaning": "n.  北美产驯鹿",
+   "example": "Caribou migrate in huge herds.  驯鹿成群迁徙。"
   },
   {
    "word": "auspice",
    "phonetic": "/'ɔ:spis/",
-   "meaning": "n.  赞助,主办,吉兆"
+   "meaning": "n.  赞助,主办,吉兆",
+   "example": "The festival was held under academic auspices.  节庆由学术界主办。"
   },
   {
    "word": "tranquil",
@@ -20786,12 +21061,14 @@
   {
    "word": "gymnasium",
    "phonetic": "/dʒim'neiziəm/",
-   "meaning": "n.  体育馆; 健身房"
+   "meaning": "n.  体育馆; 健身房",
+   "example": "The gymnasium doubles as a concert hall.  体育馆也当音乐厅。"
   },
   {
    "word": "topography",
    "phonetic": "/tə'pɔgrəfi/",
-   "meaning": "n.  地形"
+   "meaning": "n.  地形",
+   "example": "The topography of the region is rugged.  这地区地形崎岖。"
   },
   {
    "word": "evasion",
@@ -20868,7 +21145,8 @@
   {
    "word": "caterpillar",
    "phonetic": "/'kætəpilə/",
-   "meaning": "n.  毛虫，蝴蝶的幼虫"
+   "meaning": "n.  毛虫，蝴蝶的幼虫",
+   "example": "A caterpillar became a butterfly.  毛虫变成了蝴蝶。"
   },
   {
    "word": "blunder",
@@ -20915,7 +21193,8 @@
   {
    "word": "scuba",
    "phonetic": "/'sku:bə/",
-   "meaning": "n.  水中呼吸器"
+   "meaning": "n.  水中呼吸器",
+   "example": "We went scuba diving at the reef.  我们在礁石区水肺潜水。"
   },
   {
    "word": "molten",
@@ -21010,7 +21289,8 @@
   {
    "word": "debtor",
    "phonetic": "/'detə/",
-   "meaning": "n.  债务人,借主,借方"
+   "meaning": "n.  债务人,借主,借方",
+   "example": "The debtor missed two payments.  债务人欠了两期款。"
   },
   {
    "word": "chide",
@@ -21057,7 +21337,8 @@
   {
    "word": "diversification",
    "phonetic": "/dai`və:sifi'keiʃn/",
-   "meaning": "n.  多样化"
+   "meaning": "n.  多样化",
+   "example": "Diversification reduces risk.  多元化能降低风险。"
   },
   {
    "word": "sarcasm",
@@ -21068,7 +21349,8 @@
   {
    "word": "kerosene",
    "phonetic": "/'kerəsi:n/",
-   "meaning": "n.  煤油，火油"
+   "meaning": "n.  煤油，火油",
+   "example": "The lamp burns kerosene.  这灯烧煤油。"
   },
   {
    "word": "feign",
@@ -21091,12 +21373,14 @@
   {
    "word": "melodic",
    "phonetic": "/mi'lɔdik/",
-   "meaning": "a.  旋律的，曲调的; 音调优美的"
+   "meaning": "a.  旋律的，曲调的; 音调优美的",
+   "example": "The melody is slow and melodic.  旋律缓慢而优美。"
   },
   {
    "word": "saturation",
    "phonetic": "/`sætʃə'reiʃn/",
-   "meaning": "n.  饱和(状态)"
+   "meaning": "n.  饱和(状态)",
+   "example": "The market reached saturation.  市场达到了饱和。"
   },
   {
    "word": "porous",
@@ -21107,7 +21391,8 @@
   {
    "word": "choreographer",
    "phonetic": "/`kɔri'ɔgrəfə/",
-   "meaning": "n.  舞蹈指导"
+   "meaning": "n.  舞蹈指导",
+   "example": "The choreographer created new steps.  编舞设计了新舞步。"
   },
   {
    "word": "malice",
@@ -21160,7 +21445,8 @@
   {
    "word": "benefactor",
    "phonetic": "/'beni'fæktə/",
-   "meaning": "n.  恩人,捐助者,赠送者"
+   "meaning": "n.  恩人,捐助者,赠送者",
+   "example": "A benefactor funded the library.  一位赞助人资助了图书馆。"
   },
   {
    "word": "tacit",
@@ -21183,7 +21469,8 @@
   {
    "word": "abolition",
    "phonetic": "/`æbə'liʃən/",
-   "meaning": "n.  废除，废止"
+   "meaning": "n.  废除，废止",
+   "example": "The abolition of slavery changed history.  废奴改变了历史。"
   },
   {
    "word": "propriety",
@@ -21326,7 +21613,8 @@
   {
    "word": "corrosion",
    "phonetic": "/kə'rəuʒən/",
-   "meaning": "n.  腐蚀(状态)，侵蚀"
+   "meaning": "n.  腐蚀(状态)，侵蚀",
+   "example": "Rust is a form of corrosion.  铁锈是一种腐蚀。"
   },
   {
    "word": "retract",
@@ -21427,7 +21715,8 @@
   {
    "word": "willful",
    "phonetic": "/'wilfl/",
-   "meaning": "a.  任性的"
+   "meaning": "a.  任性的",
+   "example": "The child's willful behavior worried the parents.  孩子任性的行为让父母担心。"
   },
   {
    "word": "negligent",
@@ -21480,7 +21769,8 @@
   {
    "word": "crippling",
    "phonetic": "/'kripliŋ/",
-   "meaning": "a.  令人震惊的"
+   "meaning": "a.  令人震惊的",
+   "example": "The crippling debt forced closures.  沉重的债务迫使关门。"
   },
   {
    "word": "aristocrat",
@@ -21503,7 +21793,8 @@
   {
    "word": "soprano",
    "phonetic": "/sə'prɑ:nəu/",
-   "meaning": "n.  女高音"
+   "meaning": "n.  女高音",
+   "example": "The soprano hit a perfect high note.  女高音唱出了完美的高音。"
   },
   {
    "word": "ephemeral",
@@ -21514,7 +21805,8 @@
   {
    "word": "linguist",
    "phonetic": "/'liŋgwist/",
-   "meaning": "n.  语言学家"
+   "meaning": "n.  语言学家",
+   "example": "The linguist speaks nine languages.  语言学家会说九种语言。"
   },
   {
    "word": "fervent",
@@ -21561,7 +21853,8 @@
   {
    "word": "elm",
    "phonetic": "/elm/",
-   "meaning": "n.  榆树"
+   "meaning": "n.  榆树",
+   "example": "An old elm shades the yard.  一棵老榆树遮着院子。"
   },
   {
    "word": "supersede",
@@ -21632,12 +21925,14 @@
   {
    "word": "tenement",
    "phonetic": "/'tenəmənt/",
-   "meaning": "n.  廉租公寓"
+   "meaning": "n.  廉租公寓",
+   "example": "The tenement housed dozens of families.  这栋公寓楼住着几十户人家。"
   },
   {
    "word": "quasar",
    "phonetic": "/'kweizɑ:/",
-   "meaning": "n.  类星体"
+   "meaning": "n.  类星体",
+   "example": "A quasar shines brighter than a galaxy.  类星体比星系还亮。"
   },
   {
    "word": "foresight",
@@ -21684,7 +21979,8 @@
   {
    "word": "warily",
    "phonetic": "/'werəli/",
-   "meaning": "ad.  留心地,小心地"
+   "meaning": "ad.  留心地,小心地",
+   "example": "The animal approached warily.  动物小心翼翼地靠近。"
   },
   {
    "word": "cordial",
@@ -21701,7 +21997,8 @@
   {
    "word": "interject",
    "phonetic": "/intə'dʒekt/",
-   "meaning": "vt.  插嘴,突然插入"
+   "meaning": "vt.  插嘴,突然插入",
+   "example": "She interjected with a question.  她插嘴问了个问题。"
   },
   {
    "word": "painstaking",
@@ -21712,12 +22009,14 @@
   {
    "word": "cryptic",
    "phonetic": "/'kriptik/",
-   "meaning": "a.  秘密的,神秘的,含义模糊的,隐藏的"
+   "meaning": "a.  秘密的,神秘的,含义模糊的,隐藏的",
+   "example": "He gave a cryptic reply.  他给了个含糊的回答。"
   },
   {
    "word": "invalidate",
    "phonetic": "/in'vælideit/",
-   "meaning": "vt.  使无效"
+   "meaning": "vt.  使无效",
+   "example": "The error invalidates the result.  该错误使结果无效。"
   },
   {
    "word": "hospitable",
@@ -21788,7 +22087,8 @@
   {
    "word": "congested",
    "phonetic": "/kən'dʒestid/",
-   "meaning": "a.  拥挤的"
+   "meaning": "a.  拥挤的",
+   "example": "The congested road added an hour.  拥堵的路多花了一小时。"
   },
   {
    "word": "nimble",
@@ -21829,12 +22129,14 @@
   {
    "word": "spinning",
    "phonetic": "/'spiniŋ/",
-   "meaning": "a.  旋转的; n.  纺纱"
+   "meaning": "a.  旋转的; n.  纺纱",
+   "example": "The spinning wheel makes yarn.  纺车纺出线来。"
   },
   {
    "word": "stationery",
    "phonetic": "/'steiʃənəri/",
-   "meaning": "n.  文具,信纸"
+   "meaning": "n.  文具,信纸",
+   "example": "Buy envelopes and stationery.  买信封和文具。"
   },
   {
    "word": "vogue",
@@ -21857,7 +22159,8 @@
   {
    "word": "spontaneity",
    "phonetic": "/`spɔntə'neiəti/",
-   "meaning": "n.  自发性"
+   "meaning": "n.  自发性",
+   "example": "The speech lacked spontaneity.  演讲缺乏即兴感。"
   },
   {
    "word": "austerity",
@@ -21934,12 +22237,14 @@
   {
    "word": "grading",
    "phonetic": "/'greidiŋ/",
-   "meaning": "n.  评分; 等级"
+   "meaning": "n.  评分; 等级",
+   "example": "Grading the exams took all weekend.  改卷子占了整个周末。"
   },
   {
    "word": "affluence",
    "phonetic": "/'æfluəns/",
-   "meaning": "n.  富裕,富足,流入"
+   "meaning": "n.  富裕,富足,流入",
+   "example": "The region is known for its affluence.  这地区以富裕著称。"
   },
   {
    "word": "tycoon",
@@ -21950,7 +22255,8 @@
   {
    "word": "agility",
    "phonetic": "/ə'dʒiləti/",
-   "meaning": "n.  敏捷,灵活,轻快"
+   "meaning": "n.  敏捷,灵活,轻快",
+   "example": "The gymnast's agility impressed everyone.  体操运动员的敏捷令人赞叹。"
   },
   {
    "word": "additive",
@@ -22039,7 +22345,8 @@
   {
    "word": "ascending",
    "phonetic": "/ə'sendiŋ/",
-   "meaning": "a.  上升的，向上的"
+   "meaning": "a.  上升的，向上的",
+   "example": "We followed the ascending path.  我们沿着上行的小路走。"
   },
   {
    "word": "rubbish",
@@ -22080,12 +22387,14 @@
   {
    "word": "hummingbird",
    "phonetic": "/'hʌmiŋbə:d/",
-   "meaning": "n.  蜂鸟"
+   "meaning": "n.  蜂鸟",
+   "example": "A hummingbird hovered by the flower.  蜂鸟在花旁悬停。"
   },
   {
    "word": "nomadic",
    "phonetic": "/nəu'mædik/",
-   "meaning": "a.  游牧的"
+   "meaning": "a.  游牧的",
+   "example": "The nomadic tribe moves with the seasons.  游牧部落随季节迁徙。"
   },
   {
    "word": "secrete",
@@ -22120,7 +22429,8 @@
   {
    "word": "null",
    "phonetic": "/nʌl/",
-   "meaning": "a.  无效力的,无效的,无价值的n.  零,空,零迅号"
+   "meaning": "a.  无效力的,无效的,无价值的n.  零,空,零迅号",
+   "example": "The test result was null.  检测结果为阴性。"
   },
   {
    "word": "bicker",
@@ -22167,12 +22477,14 @@
   {
    "word": "pueblo",
    "phonetic": "/'pwebləu/",
-   "meaning": "n.  印第安人村庄"
+   "meaning": "n.  印第安人村庄",
+   "example": "The pueblo sits on a mesa.  村庄坐落在台地上。"
   },
   {
    "word": "invocation",
    "phonetic": "/invou'keiʃən/",
-   "meaning": "n.  祈祷,符咒"
+   "meaning": "n.  祈祷,符咒",
+   "example": "The ceremony began with an invocation.  典礼以祈祷开始。"
   },
   {
    "word": "twine",
@@ -22213,7 +22525,8 @@
   {
    "word": "scavenger",
    "phonetic": "/'skævindʒə/",
-   "meaning": "n.  清道夫; 食腐动物"
+   "meaning": "n.  清道夫; 食腐动物",
+   "example": "The scavenger feeds on dead animals.  食腐动物以腐肉为生。"
   },
   {
    "word": "mottled",
@@ -22230,7 +22543,8 @@
   {
    "word": "grasshopper",
    "phonetic": "/'grɑ:shɔpə(r)/",
-   "meaning": "n.  蚂蚱，蝗虫"
+   "meaning": "n.  蚂蚱，蝗虫",
+   "example": "A grasshopper leaped from the grass.  蚂蚱从草丛里跳了出来。"
   },
   {
    "word": "impervious",
@@ -22337,7 +22651,8 @@
   {
    "word": "giraffe",
    "phonetic": "/dʒi'rɑ:f/",
-   "meaning": "n.  长颈鹿"
+   "meaning": "n.  长颈鹿",
+   "example": "A giraffe eats from tall trees.  长颈鹿吃高处的树叶。"
   },
   {
    "word": "impropriety",
@@ -22348,7 +22663,8 @@
   {
    "word": "luster",
    "phonetic": "/'lʌstə/",
-   "meaning": "n.  光彩,荣誉,光泽vi.  有光泽,发亮vt.  使发光辉"
+   "meaning": "n.  光彩,荣誉,光泽vi.  有光泽,发亮vt.  使发光辉",
+   "example": "The pearl lost its luster.  珍珠失去了光泽。"
   },
   {
    "word": "barter",
@@ -22365,12 +22681,14 @@
   {
    "word": "conciliatory",
    "phonetic": "/kən'siliətəri/",
-   "meaning": "a.  安抚的,怀柔的,融和的"
+   "meaning": "a.  安抚的,怀柔的,融和的",
+   "example": "She took a conciliatory tone.  她用了和解的口吻。"
   },
   {
    "word": "gourd",
    "phonetic": "/guəd/",
-   "meaning": "n.  葫芦"
+   "meaning": "n.  葫芦",
+   "example": "The gourd hung from the vine.  葫芦挂在藤上。"
   },
   {
    "word": "steadfast",
@@ -22423,7 +22741,8 @@
   {
    "word": "linguistics",
    "phonetic": "/liŋ'gwistiks/",
-   "meaning": "n.  语言学"
+   "meaning": "n.  语言学",
+   "example": "Linguistics studies how language works.  语言学研究语言的运作。"
   },
   {
    "word": "slumber",
@@ -22452,7 +22771,8 @@
   {
    "word": "lichen",
    "phonetic": "/'laikən/",
-   "meaning": "n.  青苔，地衣"
+   "meaning": "n.  青苔，地衣",
+   "example": "Lichen covered the rocks.  岩石上长满了地衣。"
   },
   {
    "word": "fickle",
@@ -22487,7 +22807,8 @@
   {
    "word": "maxim",
    "phonetic": "/'mæksim/",
-   "meaning": "n.  格言,座右铭"
+   "meaning": "n.  格言,座右铭",
+   "example": "He lives by one maxim: never lie.  他信奉一条格言：永不撒谎。"
   },
   {
    "word": "genesis",
@@ -22594,12 +22915,14 @@
   {
    "word": "tantalize",
    "phonetic": "/'tæntl'aiz/",
-   "meaning": "vt.  逗弄,使干着急"
+   "meaning": "vt.  逗弄,使干着急",
+   "example": "The smell tantalized the hungry child.  香味逗得孩子直流口水。"
   },
   {
    "word": "tepid",
    "phonetic": "/'tepid/",
-   "meaning": "a.  微温的,温热的,不太热心的"
+   "meaning": "a.  微温的,温热的,不太热心的",
+   "example": "The tea was tepid.  茶是温的。"
   },
   {
    "word": "belittle",
@@ -22640,7 +22963,8 @@
   {
    "word": "indigent",
    "phonetic": "/'indidʒənt/",
-   "meaning": "a.  贫乏的,穷困的"
+   "meaning": "a.  贫乏的,穷困的",
+   "example": "The clinic serves the indigent.  诊所为贫困者服务。"
   },
   {
    "word": "invert",
@@ -22675,7 +22999,8 @@
   {
    "word": "engross",
    "phonetic": "/in'grəus/",
-   "meaning": "vt.  用大字体书写,独占,使全神贯注"
+   "meaning": "vt.  用大字体书写,独占,使全神贯注",
+   "example": "The novel engrossed me for days.  这本小说让我沉迷了几天。"
   },
   {
    "word": "dank",
@@ -22692,7 +23017,8 @@
   {
    "word": "disrespectful",
    "phonetic": "/disris'pektful/",
-   "meaning": "a.  失礼的,无礼的"
+   "meaning": "a.  失礼的,无礼的",
+   "example": "His disrespectful tone offended elders.  他无礼的语气冒犯了长辈。"
   },
   {
    "word": "incoherent",
@@ -22793,7 +23119,8 @@
   {
    "word": "arbitrator",
    "phonetic": "/'ɑ:bitreitə/",
-   "meaning": "n.  仲裁人,公断者"
+   "meaning": "n.  仲裁人,公断者",
+   "example": "The arbitrator settled the dispute.  仲裁人解决了争端。"
   },
   {
    "word": "indignity",
@@ -22804,7 +23131,8 @@
   {
    "word": "kiln",
    "phonetic": "/kiln/",
-   "meaning": "n.  (砖、石灰等的)窑，炉"
+   "meaning": "n.  (砖、石灰等的)窑，炉",
+   "example": "The brick kiln fired all night.  砖窑烧了一整夜。"
   },
   {
    "word": "dissimilar",
@@ -22827,7 +23155,8 @@
   {
    "word": "incessantly",
    "phonetic": "/in'sesntli/",
-   "meaning": "adv.  不断地"
+   "meaning": "adv.  不断地",
+   "example": "The baby cried incessantly.  婴儿哭个不停。"
   },
   {
    "word": "irrigate",
@@ -22886,7 +23215,8 @@
   {
    "word": "yelp",
    "phonetic": "/jelp/",
-   "meaning": "n.  叫吠,叫喊声vi.  叫吠,叫喊vt.  叫喊着说"
+   "meaning": "n.  叫吠,叫喊声vi.  叫吠,叫喊vt.  叫喊着说",
+   "example": "The dog yelped in pain.  狗疼得叫了一声。"
   },
   {
    "word": "elucidate",
@@ -22897,12 +23227,14 @@
   {
    "word": "lubricant",
    "phonetic": "/'lu:brikənt/",
-   "meaning": "n.  润滑剂"
+   "meaning": "n.  润滑剂",
+   "example": "Apply lubricant to the chain.  给链条上润滑剂。"
   },
   {
    "word": "octopus",
    "phonetic": "/'ɔktəpəs/",
-   "meaning": "n.  章鱼"
+   "meaning": "n.  章鱼",
+   "example": "An octopus changed its color.  章鱼变了个颜色。"
   },
   {
    "word": "wispy",
@@ -22943,7 +23275,8 @@
   {
    "word": "dogmatic",
    "phonetic": "/dɔg'mætik/",
-   "meaning": "a.  教条的,独断的"
+   "meaning": "a.  教条的,独断的",
+   "example": "He is dogmatic about the method.  他对这个方法很独断。"
   },
   {
    "word": "abreast",
@@ -22990,7 +23323,8 @@
   {
    "word": "quartz",
    "phonetic": "/kwɔ:ts/",
-   "meaning": "n.  石英"
+   "meaning": "n.  石英",
+   "example": "The quartz clock keeps perfect time.  石英钟走时精准。"
   },
   {
    "word": "evasive",
@@ -23025,7 +23359,8 @@
   {
    "word": "intoxicate",
    "phonetic": "/in'tɔksikeit/",
-   "meaning": "vt.  使陶醉,醉人"
+   "meaning": "vt.  使陶醉,醉人",
+   "example": "The views intoxicated our senses.  景色让我们陶醉。"
   },
   {
    "word": "extricate",
@@ -23036,7 +23371,8 @@
   {
    "word": "carp",
    "phonetic": "/kɑ:p/",
-   "meaning": "n.  鲤鱼"
+   "meaning": "n.  鲤鱼",
+   "example": "Carp swim in the pond.  鲤鱼在池塘里游。"
   },
   {
    "word": "meddle",
@@ -23059,22 +23395,26 @@
   {
    "word": "abhor",
    "phonetic": "/əb'hɔ:/",
-   "meaning": "vt.  憎恶,痛恨"
+   "meaning": "vt.  憎恶,痛恨",
+   "example": "He abhors cruelty to animals.  他痛恨虐待动物。"
   },
   {
    "word": "eloquence",
    "phonetic": "/'eləkwəns/",
-   "meaning": "n.  口才,雄辩术,雄辩"
+   "meaning": "n.  口才,雄辩术,雄辩",
+   "example": "Her eloquence moved the crowd.  她的口才打动了观众。"
   },
   {
    "word": "anomalous",
    "phonetic": "/ə'namələs/",
-   "meaning": "a.  不规则的,反常的"
+   "meaning": "a.  不规则的,反常的",
+   "example": "The anomaly puzzled the researchers.  异常现象难倒了研究者。"
   },
   {
    "word": "fowl",
    "phonetic": "/faul/",
-   "meaning": "n.  鸟,飞禽,家禽vi.  打鸟"
+   "meaning": "n.  鸟,飞禽,家禽vi.  打鸟",
+   "example": "The flock of fowl flew south.  鸟群飞向南方。"
   },
   {
    "word": "assuage",
@@ -23097,7 +23437,8 @@
   {
    "word": "longitude",
    "phonetic": "/'lɔndʒitju:d/",
-   "meaning": "n.  经度,经线"
+   "meaning": "n.  经度,经线",
+   "example": "Lines of longitude meet at the poles.  经线在两极相交。"
   },
   {
    "word": "glossary",
@@ -23108,7 +23449,8 @@
   {
    "word": "gratuitous",
    "phonetic": "/grə'tjuitəs/",
-   "meaning": "a.  免费的,无理由的"
+   "meaning": "a.  免费的,无理由的",
+   "example": "The violence in the film was gratuitous.  电影里的暴力毫无必要。"
   },
   {
    "word": "elapse",
@@ -23203,7 +23545,8 @@
   {
    "word": "topsoil",
    "phonetic": "/'tɔpsɔil/",
-   "meaning": "n.  表层土"
+   "meaning": "n.  表层土",
+   "example": "Topsoil was washed away by rain.  表土被雨水冲走了。"
   },
   {
    "word": "debatable",
@@ -23214,17 +23557,20 @@
   {
    "word": "impel",
    "phonetic": "/im'pel/",
-   "meaning": "vt.  推动,激励,驱使,逼迫"
+   "meaning": "vt.  推动,激励,驱使,逼迫",
+   "example": "Curiosity impelled him forward.  好奇心驱使他前进。"
   },
   {
    "word": "justly",
    "phonetic": "/'dʒʌstli/",
-   "meaning": "ad.  公正地,理由充分地,正当地"
+   "meaning": "ad.  公正地,理由充分地,正当地",
+   "example": "The reward was justly earned.  这奖励挣得光明正大。"
   },
   {
    "word": "condiment",
    "phonetic": "/'kɔndimənt/",
-   "meaning": "n.  调味品"
+   "meaning": "n.  调味品",
+   "example": "Salt is a common condiment.  盐是常见调味品。"
   },
   {
    "word": "absolve",
@@ -23235,7 +23581,8 @@
   {
    "word": "exasperate",
    "phonetic": "/ig'za:spəreit/",
-   "meaning": "vt.  使恼怒,激怒,恶化a.  恼怒的,激怒的,恶化的"
+   "meaning": "vt.  使恼怒,激怒,恶化a.  恼怒的,激怒的,恶化的",
+   "example": "The delays exasperate the passengers.  延误惹恼了乘客。"
   },
   {
    "word": "decorum",
@@ -23270,7 +23617,8 @@
   {
    "word": "corona",
    "phonetic": "/kə'rəunə/",
-   "meaning": "n.  日冕，光环"
+   "meaning": "n.  日冕，光环",
+   "example": "The corona was visible during the eclipse.  日食时能看到日冕。"
   },
   {
    "word": "retard",
@@ -23323,7 +23671,8 @@
   {
    "word": "cannibalism",
    "phonetic": "/'kænibəlizəm/",
-   "meaning": "n.  嗜食同类"
+   "meaning": "n.  嗜食同类",
+   "example": "Cannibalism occurs in some species.  某些物种存在同类相食。"
   },
   {
    "word": "gregarious",
@@ -23334,12 +23683,14 @@
   {
    "word": "dungeon",
    "phonetic": "/'dʌndʒən/",
-   "meaning": "n.  地牢"
+   "meaning": "n.  地牢",
+   "example": "The prisoner was thrown into a dungeon.  囚犯被扔进了地牢。"
   },
   {
    "word": "fortitude",
    "phonetic": "/'fɔ:titju:d/",
-   "meaning": "n.  刚毅,坚毅,不屈不挠"
+   "meaning": "n.  刚毅,坚毅,不屈不挠",
+   "example": "She faced illness with fortitude.  她以坚毅面对疾病。"
   },
   {
    "word": "adhesive",
@@ -23362,17 +23713,20 @@
   {
    "word": "holocaust",
    "phonetic": "/'hɔləkɔ:st/",
-   "meaning": "n.  烧全兽的祭"
+   "meaning": "n.  烧全兽的祭",
+   "example": "The book documents the holocaust.  这本书记录了那场大屠杀。"
   },
   {
    "word": "penicillin",
    "phonetic": "/`peni'silin/",
-   "meaning": "n.  青霉素"
+   "meaning": "n.  青霉素",
+   "example": "Penicillin revolutionized medicine.  青霉素彻底改变了医学。"
   },
   {
    "word": "exalt",
    "phonetic": "/ig'zɔ:lt/",
-   "meaning": "vt.  提升,提高,赞扬,使得意vi.  使人兴奋"
+   "meaning": "vt.  提升,提高,赞扬,使得意vi.  使人兴奋",
+   "example": "The poem exalts the heroes.  这首诗颂扬英雄。"
   },
   {
    "word": "subsist",
@@ -23389,7 +23743,8 @@
   {
    "word": "rebuke",
    "phonetic": "/ri'bju:k/",
-   "meaning": "n.  指责,谴责,非难vt.  斥责,指责,非难"
+   "meaning": "n.  指责,谴责,非难vt.  斥责,指责,非难",
+   "example": "The teacher rebuked the lazy student.  老师训斥了偷懒的学生。"
   },
   {
    "word": "incipient",
@@ -23424,7 +23779,8 @@
   {
    "word": "idiotic",
    "phonetic": "/'idi'atik/",
-   "meaning": "a.  白痴的,愚蠢的,呆头呆脑的"
+   "meaning": "a.  白痴的,愚蠢的,呆头呆脑的",
+   "example": "That was an idiotic mistake.  那是个愚蠢的错误。"
   },
   {
    "word": "hearsay",
@@ -23465,12 +23821,14 @@
   {
    "word": "consonant",
    "phonetic": "/'kɔnsənənt/",
-   "meaning": "a.  协调的"
+   "meaning": "a.  协调的",
+   "example": "Her actions are consonant with her words.  她言行一致。"
   },
   {
    "word": "delude",
    "phonetic": "/di'lu:d/",
-   "meaning": "vt.  迷惑,蛊惑"
+   "meaning": "vt.  迷惑,蛊惑",
+   "example": "Don't delude yourself with excuses.  别用借口欺骗自己。"
   },
   {
    "word": "grumpy",
@@ -23499,12 +23857,14 @@
   {
    "word": "pancreas",
    "phonetic": "/'pæŋkriəs/",
-   "meaning": "n.  胰腺"
+   "meaning": "n.  胰腺",
+   "example": "The pancreas produces insulin.  胰腺分泌胰岛素。"
   },
   {
    "word": "wick",
    "phonetic": "/wik/",
-   "meaning": "n.  (蜡烛、灯)芯"
+   "meaning": "n.  (蜡烛、灯)芯",
+   "example": "The wick burned down slowly.  灯芯慢慢烧短了。"
   },
   {
    "word": "respiration",
@@ -23521,7 +23881,8 @@
   {
    "word": "absorbing",
    "phonetic": "/əb'sɔ:biŋ/",
-   "meaning": "a.  吸引人的,非常有趣的"
+   "meaning": "a.  吸引人的,非常有趣的",
+   "example": "The documentary was absorbing.  纪录片引人入胜。"
   },
   {
    "word": "elation",
@@ -23592,12 +23953,14 @@
   {
    "word": "gist",
    "phonetic": "/dʒist/",
-   "meaning": "n.  要点,要旨,依据"
+   "meaning": "n.  要点,要旨,依据",
+   "example": "Give me the gist of the report.  给我讲讲报告的要点。"
   },
   {
    "word": "valor",
    "phonetic": "/'vælə/",
-   "meaning": "n.  英勇,刚勇,勇猛"
+   "meaning": "n.  英勇,刚勇,勇猛",
+   "example": "The soldier received a medal for valor.  士兵因英勇获勋。"
   },
   {
    "word": "ferment",
@@ -23608,17 +23971,20 @@
   {
    "word": "habitually",
    "phonetic": "/hə'bitjuəli/",
-   "meaning": "adv.  习惯地"
+   "meaning": "adv.  习惯地",
+   "example": "He habitually arrives early.  他习惯早到。"
   },
   {
    "word": "mason",
    "phonetic": "/'meisn/",
-   "meaning": "n.  泥瓦匠"
+   "meaning": "n.  泥瓦匠",
+   "example": "The mason built the brick wall.  泥瓦匠砌了这面砖墙。"
   },
   {
    "word": "flint",
    "phonetic": "/flint/",
-   "meaning": "n.  燧石，打火石"
+   "meaning": "n.  燧石，打火石",
+   "example": "Spark came from the flint.  燧石迸出了火花。"
   },
   {
    "word": "forerunner",
@@ -23647,27 +24013,32 @@
   {
    "word": "meditative",
    "phonetic": "/'mediteitiv/",
-   "meaning": "a.  默想的,耽于默想的,冥想的"
+   "meaning": "a.  默想的,耽于默想的,冥想的",
+   "example": "She has a meditative nature.  她有沉思的性情。"
   },
   {
    "word": "waddle",
    "phonetic": "/'wɔdl/",
-   "meaning": "vi.  1  <鸭、鹅等> 摇摇摆摆地走,蹒跚地走2  <肥胖者等>  (如鸭子般)"
+   "meaning": "vi.  1  <鸭、鹅等> 摇摇摆摆地走,蹒跚地走2  <肥胖者等>  (如鸭子般)",
+   "example": "The penguin waddled to the water.  企鹅摇摇摆摆走向水边。"
   },
   {
    "word": "insular",
    "phonetic": "/'insjulə/",
-   "meaning": "a.  岛的,岛民的,保守的,孤立的,岛特有的"
+   "meaning": "a.  岛的,岛民的,保守的,孤立的,岛特有的",
+   "example": "The islanders have an insular outlook.  岛民眼界较为封闭。"
   },
   {
    "word": "hatchet",
    "phonetic": "/'hætʃit/",
-   "meaning": "n.  斧头,手斧,战斧"
+   "meaning": "n.  斧头,手斧,战斧",
+   "example": "He carried a small hatchet.  他带了把小斧头。"
   },
   {
    "word": "sac",
    "phonetic": "/sæk/",
-   "meaning": "n.  囊，液囊"
+   "meaning": "n.  囊，液囊",
+   "example": "The sac stores nutrients.  囊储存养分。"
   },
   {
    "word": "acumen",
@@ -23678,17 +24049,20 @@
   {
    "word": "photosynthesis",
    "phonetic": "/`fəutəu'sinθəsis/",
-   "meaning": "n.  光合作用"
+   "meaning": "n.  光合作用",
+   "example": "Photosynthesis needs sunlight.  光合作用需要阳光。"
   },
   {
    "word": "salamander",
    "phonetic": "/'sæləmændə/",
-   "meaning": "n.  火蜥蜴"
+   "meaning": "n.  火蜥蜴",
+   "example": "A salamander hid under the log.  蝾螈藏在木头下。"
   },
   {
    "word": "biochemistry",
    "phonetic": "/'baiəu'kemistri/",
-   "meaning": "n.  生物化学"
+   "meaning": "n.  生物化学",
+   "example": "Biochemistry bridges biology and chemistry.  生物化学是生物与化学的桥梁。"
   },
   {
    "word": "decadence",
@@ -23741,7 +24115,8 @@
   {
    "word": "whir",
    "phonetic": "/wə:/",
-   "meaning": "n.  呼呼声,飕飕声vi.  作呼呼声,发飕飕声vt.  使呼呼响"
+   "meaning": "n.  呼呼声,飕飕声vi.  作呼呼声,发飕飕声vt.  使呼呼响",
+   "example": "The whir of the fan filled the room.  风扇的嗡嗡声充满了房间。"
   },
   {
    "word": "permissive",
@@ -23830,7 +24205,8 @@
   {
    "word": "impressively",
    "phonetic": "/im'presivli/",
-   "meaning": "adv.  令人难忘地"
+   "meaning": "adv.  令人难忘地",
+   "example": "She spoke impressively for a beginner.  作为初学者她讲得令人印象深刻。"
   },
   {
    "word": "dilate",
@@ -23895,12 +24271,14 @@
   {
    "word": "advisable",
    "phonetic": "/əd'vaizəbl/",
-   "meaning": "a.  适当的,明智的"
+   "meaning": "a.  适当的,明智的",
+   "example": "It's advisable to reserve a seat.  预留座位比较稳妥。"
   },
   {
    "word": "conservatory",
    "phonetic": "/kən'sə:vətouri/",
-   "meaning": "a.  保存性的,有保存力的n.  温室,音乐学校"
+   "meaning": "a.  保存性的,有保存力的n.  温室,音乐学校",
+   "example": "The conservatory grows tropical plants.  温室种着热带植物。"
   },
   {
    "word": "dusky",
@@ -23953,12 +24331,14 @@
   {
    "word": "hinterland",
    "phonetic": "/'hintəlænd/",
-   "meaning": "n.  内地，腹地; 内地贸易区"
+   "meaning": "n.  内地，腹地; 内地贸易区",
+   "example": "The city's hinterland supplies food.  城市的腹地供应粮食。"
   },
   {
    "word": "clipper",
    "phonetic": "/'klipə/",
-   "meaning": "n.  快速帆船"
+   "meaning": "n.  快速帆船",
+   "example": "The clipper sailed to China.  快帆船驶向中国。"
   },
   {
    "word": "incubate",
@@ -23969,7 +24349,8 @@
   {
    "word": "jellyfish",
    "phonetic": "/'dʒeli'fiʃ/",
-   "meaning": "n.  水母,海蜇,意志薄弱的人"
+   "meaning": "n.  水母,海蜇,意志薄弱的人",
+   "example": "A jellyfish stung my leg.  水母蛰了我的腿。"
   },
   {
    "word": "industrious",
@@ -24016,12 +24397,14 @@
   {
    "word": "deciduous",
    "phonetic": "/di'sidjuəs/",
-   "meaning": "a.  每年落叶的"
+   "meaning": "a.  每年落叶的",
+   "example": "Oak is a deciduous tree.  橡树是落叶乔木。"
   },
   {
    "word": "synopsis",
    "phonetic": "/si'nɔpsis/",
-   "meaning": "n.  概要,摘要,大意"
+   "meaning": "n.  概要,摘要,大意",
+   "example": "Write a synopsis of the novel.  写份小说梗概。"
   },
   {
    "word": "immutable",
@@ -24038,7 +24421,8 @@
   {
    "word": "fanaticism",
    "phonetic": "/fə'nætisizm/",
-   "meaning": "n.  狂热,盲信"
+   "meaning": "n.  狂热,盲信",
+   "example": "Blind fanaticism leads to trouble.  盲目狂热会带来麻烦。"
   },
   {
    "word": "transitory",
@@ -24067,7 +24451,8 @@
   {
    "word": "impassive",
    "phonetic": "/im'pæsiv/",
-   "meaning": "a.  无感情的,冷淡的,不动的,平静的"
+   "meaning": "a.  无感情的,冷淡的,不动的,平静的",
+   "example": "The judge remained impassive.  法官面无表情。"
   },
   {
    "word": "plumb",
@@ -24084,12 +24469,14 @@
   {
    "word": "unanimity",
    "phonetic": "/junə'niməti/",
-   "meaning": "n.  无异议,同意,一致"
+   "meaning": "n.  无异议,同意,一致",
+   "example": "The decision was reached by unanimity.  决议获得一致通过。"
   },
   {
    "word": "unsubstantiated",
    "phonetic": "/`ʌnsəb'stænʃieitid/",
-   "meaning": "a.  未经证实的"
+   "meaning": "a.  未经证实的",
+   "example": "The claim is unsubstantiated.  该说法未经证实。"
   },
   {
    "word": "mangle",
@@ -24160,12 +24547,14 @@
   {
    "word": "acrimony",
    "phonetic": "/'ækrə'məuni/",
-   "meaning": "n.  严厉,辛辣,刻毒"
+   "meaning": "n.  严厉,辛辣,刻毒",
+   "example": "The divorce was full of acrimony.  离婚充满了恶语相向。"
   },
   {
    "word": "addicted",
    "phonetic": "/ə'diktid/",
-   "meaning": "adj.  痴迷"
+   "meaning": "adj.  痴迷",
+   "example": "He is addicted to online games.  他沉迷网络游戏。"
   },
   {
    "word": "adroit",
@@ -24176,12 +24565,14 @@
   {
    "word": "afflicting",
    "phonetic": "/ə'fliktiŋ/",
-   "meaning": "adj.  痛苦的"
+   "meaning": "adj.  痛苦的",
+   "example": "Drought afflicts the region.  干旱折磨着这个地区。"
   },
   {
    "word": "alkali",
    "phonetic": "/'ælkəlai/",
-   "meaning": "n.  碱"
+   "meaning": "n.  碱",
+   "example": "The soil is too alkaline.  土壤碱性太强。"
   },
   {
    "word": "amalgamate",
@@ -24222,17 +24613,20 @@
   {
    "word": "ardor",
    "phonetic": "/'ardə/",
-   "meaning": "n.  热心,热情"
+   "meaning": "n.  热心,热情",
+   "example": "He showed ardor for the cause.  他表现出对事业的热情。"
   },
   {
    "word": "asperse",
    "phonetic": "/əs'pə:s/",
-   "meaning": "vt.  洒水,中伤,诽谤"
+   "meaning": "vt.  洒水,中伤,诽谤",
+   "example": "He aspersed his rival's reputation.  他诽谤对手的名誉。"
   },
   {
    "word": "aspersion",
    "phonetic": "/əs'pə:ʒən/",
-   "meaning": "n.  洒水,诽谤,中伤"
+   "meaning": "n.  洒水,诽谤,中伤",
+   "example": "The article cast aspersions on the mayor.  文章对市长横加指责。"
   },
   {
    "word": "assiduous",
@@ -24243,7 +24637,8 @@
   {
    "word": "atheism",
    "phonetic": "/'eiθiizm/",
-   "meaning": "n.  无神论"
+   "meaning": "n.  无神论",
+   "example": "The book explores atheism.  这本书探讨无神论。"
   },
   {
    "word": "auspicious",
@@ -24254,7 +24649,8 @@
   {
    "word": "autocrat",
    "phonetic": "/'ɔ:təkræt/",
-   "meaning": "n.  独裁者"
+   "meaning": "n.  独裁者",
+   "example": "The autocrat crushed all opposition.  独裁者镇压了一切反对派。"
   },
   {
    "word": "avarice",
@@ -24265,7 +24661,8 @@
   {
    "word": "avaricious",
    "phonetic": "/ævə'riʃəs/",
-   "meaning": "a.  贪财的,贪婪的"
+   "meaning": "a.  贪财的,贪婪的",
+   "example": "The avaricious landlord raised rents.  贪婪的房东涨了租。"
   },
   {
    "word": "avow",
@@ -24288,7 +24685,8 @@
   {
    "word": "befuddle",
    "phonetic": "/bi'fʌdl/",
-   "meaning": "vt.  使昏迷,使迷惑,使迷糊"
+   "meaning": "vt.  使昏迷,使迷惑,使迷糊",
+   "example": "The instructions befuddled the beginners.  说明把新手搞糊涂了。"
   },
   {
    "word": "beget",
@@ -24311,7 +24709,8 @@
   {
    "word": "bereave",
    "phonetic": "/bə'riv/",
-   "meaning": "vt.  剥夺,使失去"
+   "meaning": "vt.  剥夺,使失去",
+   "example": "The accident bereaved him of his family.  事故让他失去了家人。"
   },
   {
    "word": "bewilder",
@@ -24322,12 +24721,14 @@
   {
    "word": "bigoted",
    "phonetic": "/'bigətid/",
-   "meaning": "a.  固执己见的,执迷的,顽固的"
+   "meaning": "a.  固执己见的,执迷的,顽固的",
+   "example": "His bigoted views alienated friends.  他固执的观点疏远了朋友。"
   },
   {
    "word": "boastful",
    "phonetic": "/'boustful/",
-   "meaning": "a.  自夸的,自负,喜夸耀的"
+   "meaning": "a.  自夸的,自负,喜夸耀的",
+   "example": "He is boastful about his scores.  他对分数很爱吹。"
   },
   {
    "word": "bombastic",
@@ -24338,7 +24739,8 @@
   {
    "word": "botany",
    "phonetic": "/'bɔtəni/",
-   "meaning": "n.  植物学"
+   "meaning": "n.  植物学",
+   "example": "She studies botany at the university.  她在大学学植物学。"
   },
   {
    "word": "burnish",
@@ -24379,7 +24781,8 @@
   {
    "word": "cataclysm",
    "phonetic": "/'kætə'klizəm/",
-   "meaning": "n.  大洪水,地震,(社会政治的)大变动"
+   "meaning": "n.  大洪水,地震,(社会政治的)大变动",
+   "example": "The war was a social cataclysm.  那场战争是社会大动荡。"
   },
   {
    "word": "catching",
@@ -24390,17 +24793,20 @@
   {
    "word": "ceaseless",
    "phonetic": "/'si:slis/",
-   "meaning": "a.  不停的,不断的"
+   "meaning": "a.  不停的,不断的",
+   "example": "The ceaseless rain flooded the road.  不停的雨淹了路。"
   },
   {
    "word": "centigrade",
    "phonetic": "/'sentigreid/",
-   "meaning": "a.  分为百度的,摄氏的"
+   "meaning": "a.  分为百度的,摄氏的",
+   "example": "It was thirty-five degrees centigrade.  气温三十五摄氏度。"
   },
   {
    "word": "ceremonious",
    "phonetic": "/seri'mounjəs/",
-   "meaning": "a.  讲究仪式的,隆重的"
+   "meaning": "a.  讲究仪式的,隆重的",
+   "example": "The ceremonious welcome moved the guests.  隆重的欢迎让客人感动。"
   },
   {
    "word": "chary",
@@ -24441,7 +24847,8 @@
   {
    "word": "cogent",
    "phonetic": "/'kəudʒənt/",
-   "meaning": "a.  使人首肯的,使人信服的,切实的"
+   "meaning": "a.  使人首肯的,使人信服的,切实的",
+   "example": "He made a cogent argument.  他提出了令人信服的论点。"
   },
   {
    "word": "cohere",
@@ -24458,7 +24865,8 @@
   {
    "word": "commodious",
    "phonetic": "/kə'moudjəs/",
-   "meaning": "a.  宽敞的,方便的"
+   "meaning": "a.  宽敞的,方便的",
+   "example": "The apartment is commodious and bright.  公寓宽敞明亮。"
   },
   {
    "word": "composed",
@@ -24469,7 +24877,8 @@
   {
    "word": "concurrence",
    "phonetic": "/kən'kʌrəns/",
-   "meaning": "n.  赞同,意见一致,协力"
+   "meaning": "n.  赞同,意见一致,协力",
+   "example": "The plan has the concurrence of the board.  该计划获董事会赞同。"
   },
   {
    "word": "confederate",
@@ -24480,7 +24889,8 @@
   {
    "word": "congruity",
    "phonetic": "/kən'gruəti/",
-   "meaning": "n.  适合,一致,调和"
+   "meaning": "n.  适合,一致,调和",
+   "example": "There's a congruity between his words and deeds.  他言行一致。"
   },
   {
    "word": "connivance",
@@ -24503,12 +24913,14 @@
   {
    "word": "consort",
    "phonetic": "/'kɔnsɔ:t,kən'sɔ:t/",
-   "meaning": "n.  配偶,夫妻vi.  陪伴,结交,符合vt.  使配对"
+   "meaning": "n.  配偶,夫妻vi.  陪伴,结交,符合vt.  使配对",
+   "example": "The queen consort attended the ceremony.  王后出席了典礼。"
   },
   {
    "word": "contemn",
    "phonetic": "/kən'tem/",
-   "meaning": "vt.  侮辱,蔑视"
+   "meaning": "vt.  侮辱,蔑视",
+   "example": "He contemned public opinion.  他蔑视舆论。"
   },
   {
    "word": "contemptible",
@@ -24531,7 +24943,8 @@
   {
    "word": "controvert",
    "phonetic": "/'kɔntrə'və:t/",
-   "meaning": "vt.  议论,辩驳,驳击vi.  参加辩论"
+   "meaning": "vt.  议论,辩驳,驳击vi.  参加辩论",
+   "example": "The finding was controverted by experts.  该发现被专家驳斥。"
   },
   {
    "word": "corpulent",
@@ -24554,7 +24967,8 @@
   {
    "word": "credulous",
    "phonetic": "/'kredjuləs/",
-   "meaning": "a.  轻信的,易被瞒的,易受骗的"
+   "meaning": "a.  轻信的,易被瞒的,易受骗的",
+   "example": "Credulous people fall for scams.  轻信的人容易上当。"
   },
   {
    "word": "culpable",
@@ -24577,7 +24991,8 @@
   {
    "word": "deceitful",
    "phonetic": "/di'si:tful/",
-   "meaning": "a.  欺诈的"
+   "meaning": "a.  欺诈的",
+   "example": "His deceitful scheme was exposed.  他欺骗的阴谋被揭穿了。"
   },
   {
    "word": "decimal",
@@ -24594,7 +25009,8 @@
   {
    "word": "declivity",
    "phonetic": "/di'klivəti/",
-   "meaning": "n.  倾斜,下坡"
+   "meaning": "n.  倾斜,下坡",
+   "example": "The declivity led down to the river.  下坡通向河边。"
   },
   {
    "word": "defame",
@@ -24641,12 +25057,14 @@
   {
    "word": "derange",
    "phonetic": "/di'reindʒ/",
-   "meaning": "vt.  扰乱,使发狂"
+   "meaning": "vt.  扰乱,使发狂",
+   "example": "The noise deranged his thoughts.  噪音搅乱了他的思路。"
   },
   {
    "word": "designing",
    "phonetic": "/di'zainiŋ/",
-   "meaning": "(U) 1 设计;  构思,图案2 阴谋 adj.  有计划的;  有阴谋的"
+   "meaning": "n. 设计；阴谋 adj. 有心计的；蓄意的",
+   "example": "She had a designing smile.  她笑里藏刀。"
   },
   {
    "word": "desirous",
@@ -24663,7 +25081,8 @@
   {
    "word": "dexterous",
    "phonetic": "/'dekstərəs/",
-   "meaning": "a.  灵巧的,用右手的"
+   "meaning": "a.  灵巧的,用右手的",
+   "example": "The surgeon is dexterous with a scalpel.  外科医生刀法灵巧。"
   },
   {
    "word": "dignify",
@@ -24680,12 +25099,14 @@
   {
    "word": "disarming",
    "phonetic": "/dis'ɑ:miŋ/",
-   "meaning": "a.  似消除的,似解除警戒心的"
+   "meaning": "a.  似消除的,似解除警戒心的",
+   "example": "He has a disarming smile.  他有让人放下戒备的微笑。"
   },
   {
    "word": "disarrange",
    "phonetic": "/'disə'rendʒ/",
-   "meaning": "vt.  扰乱,搅乱,弄乱"
+   "meaning": "vt.  扰乱,搅乱,弄乱",
+   "example": "The wind disarranged the papers.  风把文件吹乱了。"
   },
   {
    "word": "disburse",
@@ -24720,17 +25141,20 @@
   {
    "word": "dissimulate",
    "phonetic": "/di'simjuleit/",
-   "meaning": "vt. vi.  掩饰,假装,装糊涂"
+   "meaning": "vt. vi.  掩饰,假装,装糊涂",
+   "example": "He dissimulated his fear.  他掩饰了恐惧。"
   },
   {
    "word": "distillation",
    "phonetic": "/'distl'eʃən/",
-   "meaning": "n.  蒸馏"
+   "meaning": "n.  蒸馏",
+   "example": "Distillation purifies the liquid.  蒸馏能净化液体。"
   },
   {
    "word": "disunite",
    "phonetic": "/'disju'nait/",
-   "meaning": "vt.  使分离,不和"
+   "meaning": "vt.  使分离,不和",
+   "example": "The quarrel disunited the family.  争吵让家庭失和。"
   },
   {
    "word": "doleful",
@@ -24747,7 +25171,8 @@
   {
    "word": "downcast",
    "phonetic": "/'daun'ka:st/",
-   "meaning": "a.  气馁的,悲哀的"
+   "meaning": "a.  气馁的,悲哀的",
+   "example": "She looked downcast after the loss.  失败后她垂头丧气。"
   },
   {
    "word": "downhearted",
@@ -24758,7 +25183,8 @@
   {
    "word": "ductile",
    "phonetic": "/'dʌktl/",
-   "meaning": "a.  易延展的,柔软的,易教导的"
+   "meaning": "a.  易延展的,柔软的,易教导的",
+   "example": "Gold is ductile and malleable.  金子延展性好、可锻打。"
   },
   {
    "word": "economize",
@@ -24769,7 +25195,8 @@
   {
    "word": "edify",
    "phonetic": "/'edifai/",
-   "meaning": "vt.  启迪,熏陶,教诲"
+   "meaning": "vt.  启迪,熏陶,教诲",
+   "example": "The fable edifies young readers.  寓言启迪年轻读者。"
   },
   {
    "word": "efface",
@@ -24780,22 +25207,26 @@
   {
    "word": "effectuate",
    "phonetic": "/ə'fektʃu'et/",
-   "meaning": "vt.  招致,实行,完成"
+   "meaning": "vt.  招致,实行,完成",
+   "example": "They effectuated the plan quickly.  他们迅速落实了计划。"
   },
   {
    "word": "effuse",
    "phonetic": "/e'fjuz/",
-   "meaning": "vt. vi.  涌出,流出,泻出"
+   "meaning": "vt. vi.  涌出,流出,泻出",
+   "example": "Light effused from the window.  光从窗口涌出。"
   },
   {
    "word": "egoist",
    "phonetic": "/'egouist/",
-   "meaning": "n.  自我主义者"
+   "meaning": "n.  自我主义者",
+   "example": "Nobody likes an egoist.  没人喜欢自私的人。"
   },
   {
    "word": "emaciate",
    "phonetic": "/i'meiʃieit/",
-   "meaning": "vt.  使消瘦,使憔悴vi.  消瘦"
+   "meaning": "vt.  使消瘦,使憔悴vi.  消瘦",
+   "example": "Illness emaciated the patient.  疾病把病人拖得消瘦。"
   },
   {
    "word": "emaciated",
@@ -24806,7 +25237,8 @@
   {
    "word": "embalm",
    "phonetic": "/im'bam/",
-   "meaning": "vt.  以药物防腐,铭记于心,使不朽"
+   "meaning": "vt.  以药物防腐,铭记于心,使不朽",
+   "example": "Ancient Egyptians embalmed the dead.  古埃及人给死者防腐。"
   },
   {
    "word": "embezzle",
@@ -24829,7 +25261,8 @@
   {
    "word": "enervate",
    "phonetic": "/'enə'veit/",
-   "meaning": "vt.  使衰弱a.  衰弱的,无力的"
+   "meaning": "vt.  使衰弱a.  衰弱的,无力的",
+   "example": "The heat enervates everyone.  高温让人浑身无力。"
   },
   {
    "word": "engrossed",
@@ -24840,22 +25273,26 @@
   {
    "word": "enrapture",
    "phonetic": "/in'ræptʃə/",
-   "meaning": "vt.  使狂喜"
+   "meaning": "vt.  使狂喜",
+   "example": "The music enraptured the audience.  音乐让听众如痴如醉。"
   },
   {
    "word": "enthrall",
    "phonetic": "/in'θrɔl/",
-   "meaning": "vt.  迷惑,奴役,迷住"
+   "meaning": "vt.  迷惑,奴役,迷住",
+   "example": "The magician enthralled the crowd.  魔术师迷住了观众。"
   },
   {
    "word": "entitled",
    "phonetic": "/in'taitld/",
-   "meaning": "v.  给. . . 权力,给与标题,使有资格,给与标题,给与名称; vbl.  给. ."
+   "meaning": "v. 使有资格；给……命名；给……权利",
+   "example": "The pass entitles you to free entry.  这张票让你免费入场。"
   },
   {
    "word": "entrap",
    "phonetic": "/in'træp/",
-   "meaning": "vt.  骗入,诱捕,使陷入"
+   "meaning": "vt.  骗入,诱捕,使陷入",
+   "example": "The suspect was entrapped into confessing.  嫌疑人被诱供了。"
   },
   {
    "word": "equivocate",
@@ -24878,12 +25315,14 @@
   {
    "word": "euphonious",
    "phonetic": "/ju:'founiəs/",
-   "meaning": "a.  音响好的,悦耳的,和谐的"
+   "meaning": "a.  音响好的,悦耳的,和谐的",
+   "example": "The euphonious voice calmed the room.  悦耳的声音让全场安静。"
   },
   {
    "word": "exhume",
    "phonetic": "/eks'hju:m/",
-   "meaning": "vt.  掘出,发掘"
+   "meaning": "vt.  掘出,发掘",
+   "example": "The body was exhumed for re-examination.  尸体被掘出重检。"
   },
   {
    "word": "expedient",
@@ -24936,7 +25375,8 @@
   {
    "word": "factious",
    "phonetic": "/'fækʃəs/",
-   "meaning": "a.  好搞派系的,好捣乱的"
+   "meaning": "a.  好搞派系的,好捣乱的",
+   "example": "Factious groups blocked the reform.  派系斗争阻碍了改革。"
   },
   {
    "word": "fallible",
@@ -24947,12 +25387,14 @@
   {
    "word": "famish",
    "phonetic": "/'fæmiʃ/",
-   "meaning": "vt.  使挨饿vi.  饥饿,挨饿"
+   "meaning": "vt.  使挨饿vi.  饥饿,挨饿",
+   "example": "The explorers were famished.  探险者们饿坏了。"
   },
   {
    "word": "fatalism",
    "phonetic": "/'fetl'izəm/",
-   "meaning": "n.  宿命论"
+   "meaning": "n.  宿命论",
+   "example": "He accepted his fate with fatalism.  他以宿命论接受了命运。"
   },
   {
    "word": "fatuous",
@@ -24963,7 +25405,8 @@
   {
    "word": "fermentation",
    "phonetic": "/'fə:men'teiʃn/",
-   "meaning": "(U) 1 发酵 (作用) 2 骚动,人心的动摇,激动"
+   "meaning": "(U) 1 发酵 (作用) 2 骚动,人心的动摇,激动",
+   "example": "Fermentation turns sugar into alcohol.  发酵把糖变成酒精。"
   },
   {
    "word": "ferret",
@@ -24998,7 +25441,8 @@
   {
    "word": "finch",
    "phonetic": "/fintʃ/",
-   "meaning": "n.  雀类"
+   "meaning": "n.  雀类",
+   "example": "A finch sang in the bush.  一只雀在灌木里唱歌。"
   },
   {
    "word": "fitful",
@@ -25051,12 +25495,14 @@
   {
    "word": "frowzy",
    "phonetic": "/'frauzi/",
-   "meaning": "a.  不整洁的,有臭味的,很闷的"
+   "meaning": "a.  不整洁的,有臭味的,很闷的",
+   "example": "The frowzy room needed cleaning.  肮脏的房间该打扫了。"
   },
   {
    "word": "fulminate",
    "phonetic": "/'fʌlmə'net/",
-   "meaning": "vt.  使爆发,以严词谴责vi.  爆炸,怒喝,电闪n.  雷酸盐,雷汞"
+   "meaning": "vt.  使爆发,以严词谴责vi.  爆炸,怒喝,电闪n.  雷酸盐,雷汞",
+   "example": "Critics fulminated against the decision.  评论家猛烈抨击该决定。"
   },
   {
    "word": "gabble",
@@ -25091,12 +25537,14 @@
   {
    "word": "gentry",
    "phonetic": "/'dʒentri/",
-   "meaning": "n.  贵族们"
+   "meaning": "n.  贵族们",
+   "example": "The local gentry funded the school.  当地乡绅资助了学校。"
   },
   {
    "word": "gibe",
    "phonetic": "/dʒaib/",
-   "meaning": "vt. vi.  嘲笑n.  嘲笑"
+   "meaning": "vt. vi.  嘲笑n.  嘲笑",
+   "example": "They gibed at his old shoes.  他们嘲笑他的旧鞋。"
   },
   {
    "word": "gild",
@@ -25113,12 +25561,14 @@
   {
    "word": "gleeful",
    "phonetic": "/'gli:fl/",
-   "meaning": "a.  愉快的"
+   "meaning": "a.  愉快的",
+   "example": "The children were gleeful at the sight of snow.  孩子们看到雪很兴奋。"
   },
   {
    "word": "grieved",
    "phonetic": "/gri:vd/",
-   "meaning": "adj.  忧伤"
+   "meaning": "adj.  忧伤",
+   "example": "She was grieved by the news.  她因消息而悲伤。"
   },
   {
    "word": "grouchy",
@@ -25141,7 +25591,8 @@
   {
    "word": "hardheaded",
    "phonetic": "/hɑ:d'hedid/",
-   "meaning": "a.  冷静的,脚踏实地的,无懈可击的"
+   "meaning": "a.  冷静的,脚踏实地的,无懈可击的",
+   "example": "The hardheaded negotiator held firm.  务实的谈判者寸步不让。"
   },
   {
    "word": "harry",
@@ -25170,7 +25621,8 @@
   {
    "word": "heirship",
    "phonetic": "/'εəʃip/",
-   "meaning": "(U) 继承人之地位[权利]"
+   "meaning": "(U) 继承人之地位[权利]",
+   "example": "The heirship was disputed in court.  继承权在法庭上被争议。"
   },
   {
    "word": "heredity",
@@ -25247,12 +25699,14 @@
   {
    "word": "impressionism",
    "phonetic": "/im'preʃən'izəm/",
-   "meaning": "n.  印象主义,印象派,印象批评"
+   "meaning": "n.  印象主义,印象派,印象批评",
+   "example": "Impressionism changed painting forever.  印象派永远改变了绘画。"
   },
   {
    "word": "improvident",
    "phonetic": "/im'prɔvidənt/",
-   "meaning": "a.  无远见的,浪费的"
+   "meaning": "a.  无远见的,浪费的",
+   "example": "His improvident spending emptied the savings.  他挥霍无度花光了积蓄。"
   },
   {
    "word": "imprudent",
@@ -25293,7 +25747,8 @@
   {
    "word": "incongruity",
    "phonetic": "/'inkaŋ'gruəti/",
-   "meaning": "n.  不调和,不一致,不配合"
+   "meaning": "n.  不调和,不一致,不配合",
+   "example": "There's an incongruity in his story.  他的故事有不协调之处。"
   },
   {
    "word": "incorruptible",
@@ -25304,12 +25759,14 @@
   {
    "word": "incredulity",
    "phonetic": "/'inkrə'djuləti/",
-   "meaning": "n.  不易相信,深疑,怀疑心"
+   "meaning": "n.  不易相信,深疑,怀疑心",
+   "example": "He listened in incredulity.  他难以置信地听着。"
   },
   {
    "word": "incriminate",
    "phonetic": "/in'krimə'net/",
-   "meaning": "vt.  归罪,使负罪,控告"
+   "meaning": "vt.  归罪,使负罪,控告",
+   "example": "The tape could incriminate him.  录音带可能使他入罪。"
   },
   {
    "word": "indefatigable",
@@ -25320,7 +25777,8 @@
   {
    "word": "indemnity",
    "phonetic": "/in'demnəti/",
-   "meaning": "n.  赔偿,补偿,保护"
+   "meaning": "n.  赔偿,补偿,保护",
+   "example": "The contract includes an indemnity clause.  合同含赔偿条款。"
   },
   {
    "word": "indent",
@@ -25439,7 +25897,8 @@
   {
    "word": "malcontent",
    "phonetic": "/'mælkəntent/",
-   "meaning": "a.  抱不平的,不满的,不服的n.  不满现状的人"
+   "meaning": "a.  抱不平的,不满的,不服的n.  不满现状的人",
+   "example": "The malcontents plotted against the king.  不满者密谋反对国王。"
   },
   {
    "word": "malign",
@@ -25450,7 +25909,8 @@
   {
    "word": "mammals",
    "phonetic": "/'mæmlz/",
-   "meaning": "n.  哺乳动物"
+   "meaning": "n.  哺乳动物",
+   "example": "Mammals are warm-blooded animals.  哺乳动物是恒温动物。"
   },
   {
    "word": "manifold",
@@ -25473,17 +25933,20 @@
   {
    "word": "mechanics",
    "phonetic": "/mi'kæniks/",
-   "meaning": "n.  机械学,技巧,力学"
+   "meaning": "n.  机械学,技巧,力学",
+   "example": "Mechanics explains how machines work.  力学解释机器如何运转。"
   },
   {
    "word": "mimicry",
    "phonetic": "/'mimikri/",
-   "meaning": "n.  模仿"
+   "meaning": "n.  模仿",
+   "example": "Mimicry helps insects survive.  模拟帮助昆虫生存。"
   },
   {
    "word": "miser",
    "phonetic": "/'maizə/",
-   "meaning": "n.  守财奴,吝啬鬼,凿井机"
+   "meaning": "n.  守财奴,吝啬鬼,凿井机",
+   "example": "The miser hoarded gold coins.  守财奴囤积金币。"
   },
   {
    "word": "miserly",
@@ -25494,17 +25957,20 @@
   {
    "word": "mollify",
    "phonetic": "/'mɔlifai/",
-   "meaning": "vt.  平息,缓和,减轻,使镇静"
+   "meaning": "vt.  平息,缓和,减轻,使镇静",
+   "example": "A gift mollified the angry customer.  礼物安抚了生气的顾客。"
   },
   {
    "word": "munificent",
    "phonetic": "/mju:'nifisnt/",
-   "meaning": "a.  宽宏的,慷慨的"
+   "meaning": "a.  宽宏的,慷慨的",
+   "example": "A munificent donor built the hospital.  慷慨的捐赠者建了这家医院。"
   },
   {
    "word": "nutriment",
    "phonetic": "/'nju:trimənt/",
-   "meaning": "n.  营养物,食物,营养素"
+   "meaning": "n.  营养物,食物,营养素",
+   "example": "The soup is full of nutriment.  汤里营养丰富。"
   },
   {
    "word": "obliging",
@@ -25521,12 +25987,14 @@
   {
    "word": "offhand",
    "phonetic": "/'ɔf'hænd/",
-   "meaning": "a.  即时的,即席的,无准备的ad.  即时地,即席地,随便地"
+   "meaning": "a.  即时的,即席的,无准备的ad.  即时地,即席地,随便地",
+   "example": "He made an offhand remark.  他随口说了句。"
   },
   {
    "word": "opulence",
    "phonetic": "/apjələns/",
-   "meaning": "n.  丰裕,丰富,丰饶"
+   "meaning": "n.  丰裕,丰富,丰饶",
+   "example": "The opulence of the palace stunned visitors.  宫殿的奢华令游客咋舌。"
   },
   {
    "word": "oracle",
@@ -25537,7 +26005,8 @@
   {
    "word": "oration",
    "phonetic": "/ɔ'reiʃən/",
-   "meaning": "n.  演说,致辞,叙述法"
+   "meaning": "n.  演说,致辞,叙述法",
+   "example": "The politician delivered a ringing oration.  政客发表了铿锵的演说。"
   },
   {
    "word": "outwit",
@@ -25554,27 +26023,32 @@
   {
    "word": "penury",
    "phonetic": "/'penjuri/",
-   "meaning": "n.  贫困,贫穷"
+   "meaning": "n.  贫困,贫穷",
+   "example": "The family lived in penury.  这家人生活在贫困中。"
   },
   {
    "word": "pervert",
    "phonetic": "/pə:'və:t/",
-   "meaning": "vt.  使堕落,歪曲,滥用n.  堕落者,反常者"
+   "meaning": "vt.  使堕落,歪曲,滥用n.  堕落者,反常者",
+   "example": "The law was perverted for gain.  法律被徇私滥用。"
   },
   {
    "word": "petrify",
    "phonetic": "/'petrifai/",
-   "meaning": "vt.  1 使…化为石,使…石化;  使…坚硬 [僵硬] 2 使<人心>变无情 [顽固]"
+   "meaning": "vt.  1 使…化为石,使…石化;  使…坚硬 [僵硬] 2 使<人心>变无情 [顽固]",
+   "example": "The spider petrified her.  蜘蛛把她吓僵了。"
   },
   {
    "word": "phonetics",
    "phonetic": "/fəu'netiks/",
-   "meaning": "n.  语音学,发音学"
+   "meaning": "n.  语音学,发音学",
+   "example": "Phonetics studies speech sounds.  语音学研究语音。"
   },
   {
    "word": "pilferage",
    "phonetic": "/'pilfəridʒ/",
-   "meaning": "n.  1 小窃行为,小盗窃2 (U)失窃之损失;  失窃品"
+   "meaning": "n.  1 小窃行为,小盗窃2 (U)失窃之损失;  失窃品",
+   "example": "Pilferage costs the store thousands.  顺手牵羊让店里损失数千。"
   },
   {
    "word": "ponderous",
@@ -25585,7 +26059,8 @@
   {
    "word": "preeminent",
    "phonetic": "/pri:'eminənt/",
-   "meaning": "a.  优秀的,超群的,卓越的"
+   "meaning": "a.  优秀的,超群的,卓越的",
+   "example": "She is a preeminent expert.  她是杰出的专家。"
   },
   {
    "word": "presumptuous",
@@ -25620,12 +26095,14 @@
   {
    "word": "protract",
    "phonetic": "/prə'trækt/",
-   "meaning": "vt.  延长,托长,伸出,绘制"
+   "meaning": "vt.  延长,托长,伸出,绘制",
+   "example": "They protracted the negotiations.  他们拖延了谈判。"
   },
   {
    "word": "provident",
    "phonetic": "/'prɔvidənt/",
-   "meaning": "a.  有先见之明的,有远虑的,节俭的"
+   "meaning": "a.  有先见之明的,有远虑的,节俭的",
+   "example": "A provident man saves for winter.  有远见的人为冬天存粮。"
   },
   {
    "word": "punctual",
@@ -25642,7 +26119,8 @@
   {
    "word": "rashly",
    "phonetic": "/'ræʃli/",
-   "meaning": "ad.  轻率地,无见识地"
+   "meaning": "ad.  轻率地,无见识地",
+   "example": "He rashly quit his job.  他轻率地辞了职。"
   },
   {
    "word": "ravenous",
@@ -25653,7 +26131,8 @@
   {
    "word": "ravish",
    "phonetic": "/'ræviʃ/",
-   "meaning": "vt.  强夺,从人间夺走,使出神,强奸"
+   "meaning": "vt.  强夺,从人间夺走,使出神,强奸",
+   "example": "The melody ravished the listeners.  旋律让听众陶醉。"
   },
   {
    "word": "recluse",
@@ -25676,7 +26155,8 @@
   {
    "word": "resolved",
    "phonetic": "/ri'zɔlvd/",
-   "meaning": "a.  下定决心的,断然的"
+   "meaning": "a.  下定决心的,断然的",
+   "example": "She was resolved to finish first.  她决心第一个完成。"
   },
   {
    "word": "ruminate",
@@ -25693,7 +26173,8 @@
   {
    "word": "savings",
    "phonetic": "/'seiviŋz/",
-   "meaning": "n.  储金"
+   "meaning": "n.  储金",
+   "example": "Her savings paid the deposit.  她的存款付了定金。"
   },
   {
    "word": "scanty",
@@ -25734,7 +26215,8 @@
   {
    "word": "silica",
    "phonetic": "/'silikə/",
-   "meaning": "n.  硅石,无水硅酸,硅土"
+   "meaning": "n.  硅石,无水硅酸,硅土",
+   "example": "Silica is the main component of sand.  二氧化硅是沙子的主要成分。"
   },
   {
    "word": "singe",
@@ -25751,7 +26233,8 @@
   {
    "word": "slag",
    "phonetic": "/slæg/",
-   "meaning": "n.  熔渣,铁屑,矿渣vt.  使变成熔渣vi.  变熔渣"
+   "meaning": "n.  熔渣,铁屑,矿渣vt.  使变成熔渣vi.  变熔渣",
+   "example": "The furnace poured out slag.  炉里流出矿渣。"
   },
   {
    "word": "slander",
@@ -25786,7 +26269,8 @@
   {
    "word": "spineless",
    "phonetic": "/'spainlis/",
-   "meaning": "a.  无脊椎的,没有骨气的,懦弱的"
+   "meaning": "a.  无脊椎的,没有骨气的,懦弱的",
+   "example": "The spineless official gave in.  软弱的官员让步了。"
   },
   {
    "word": "stodgy",
@@ -25815,7 +26299,8 @@
   {
    "word": "tactics",
    "phonetic": "/'tæktiks/",
-   "meaning": "n.  用兵学,战术,兵法"
+   "meaning": "n.  用兵学,战术,兵法",
+   "example": "The general changed his tactics.  将军改变了战术。"
   },
   {
    "word": "tardy",
@@ -25832,12 +26317,14 @@
   {
    "word": "temperance",
    "phonetic": "/'tempərəns/",
-   "meaning": "a.  温暖的,温和的,有节制的"
+   "meaning": "a.  温暖的,温和的,有节制的",
+   "example": "Temperance means moderation in drinking.  节制意味着饮酒适度。"
   },
   {
    "word": "tilted",
    "phonetic": "/tiltid/",
-   "meaning": "adj.  倾斜的"
+   "meaning": "adj.  倾斜的",
+   "example": "The picture was tilted.  画挂歪了。"
   },
   {
    "word": "torpid",
@@ -25848,7 +26335,8 @@
   {
    "word": "torturous",
    "phonetic": "/'tɔ:tʃərəs/",
-   "meaning": "a.  拷问的,痛苦的"
+   "meaning": "a.  拷问的,痛苦的",
+   "example": "The torturous climb took all day.  痛苦的攀登花了一整天。"
   },
   {
    "word": "tractable",
@@ -25883,12 +26371,14 @@
   {
    "word": "unseemly",
    "phonetic": "/ʌn'si:mli/",
-   "meaning": "a.  不体面的,不相配的,不好看的"
+   "meaning": "a.  不体面的,不相配的,不好看的",
+   "example": "The unseemly quarrel embarrassed everyone.  不体面的争吵让所有人尴尬。"
   },
   {
    "word": "unshaken",
    "phonetic": "/ʌn'ʃeikən/",
-   "meaning": "a.  坚决的,不动摇的,泰然自若的"
+   "meaning": "a.  坚决的,不动摇的,泰然自若的",
+   "example": "He remained unshaken by the threat.  他面对威胁毫不动摇。"
   },
   {
    "word": "vanquish",
@@ -25899,7 +26389,8 @@
   {
    "word": "vehemence",
    "phonetic": "/'vi:iməns/",
-   "meaning": "n.  热烈,激烈"
+   "meaning": "n.  热烈,激烈",
+   "example": "She spoke with vehemence.  她激烈地说道。"
   },
   {
    "word": "vehement",
@@ -25916,12 +26407,14 @@
   {
    "word": "vulgarity",
    "phonetic": "/vʌl'gærəti/",
-   "meaning": "n.  粗俗,粗鄙,粗话"
+   "meaning": "n.  粗俗,粗鄙,粗话",
+   "example": "His vulgarity shocked the hosts.  他的粗俗让主人们震惊。"
   },
   {
    "word": "ware",
    "phonetic": "/wεə/",
-   "meaning": "n.  制品,器具,陶器,商品vt.  留心,小心a.  知道的,意识到的"
+   "meaning": "n. 商品；器皿（常作复数）",
+   "example": "The shop sells glassware and metalware.  店里卖玻璃器皿和金属器皿。"
   },
   {
    "word": "wheedle",
@@ -25944,42 +26437,50 @@
   {
    "word": "alchemist",
    "phonetic": "/'ælkəmist/",
-   "meaning": "n.  炼金术士"
+   "meaning": "n.  炼金术士",
+   "example": "The alchemist sought to make gold.  炼金术士想炼出金子。"
   },
   {
    "word": "alga",
    "phonetic": "/'ælgə/",
-   "meaning": "n. [pl.  algae]藻类，海藻"
+   "meaning": "n. [pl.  algae]藻类，海藻",
+   "example": "Alga grows on the pond's surface.  藻类在池塘水面生长。"
   },
   {
    "word": "Babylonian",
    "phonetic": "/`bæbi'ləunjən/",
-   "meaning": "a.  巴比伦的"
+   "meaning": "a.  巴比伦的",
+   "example": "The Babylonian empire once ruled Mesopotamia.  巴比伦帝国曾统治美索不达米亚。"
   },
   {
    "word": "backlighting",
    "phonetic": "/'bæklaitiŋ/",
-   "meaning": "n.  逆光"
+   "meaning": "n.  逆光",
+   "example": "Backlighting made the subject a silhouette.  逆光让主体成了剪影。"
   },
   {
    "word": "burgeon",
    "phonetic": "/'bə:dʒən/",
-   "meaning": "vi.  迅速成长，发展"
+   "meaning": "vi.  迅速成长，发展",
+   "example": "The tech sector burgeoned in the 90s.  科技业在九十年代蓬勃发展。"
   },
   {
    "word": "cascara",
    "phonetic": "/kæ'skɑ:rə/",
-   "meaning": "n.  缓泻剂"
+   "meaning": "n.  缓泻剂",
+   "example": "Cascara is a natural laxative.  番泻叶是天然泻药。"
   },
   {
    "word": "chronical",
    "phonetic": "/'krɔnikl/",
-   "meaning": "a.  慢性的，延续很长的"
+   "meaning": "a.  慢性的，延续很长的",
+   "example": "He suffers from chronic bronchitis.  他患有慢性支气管炎。"
   },
   {
    "word": "coexist",
    "phonetic": "/`kəuig'zist/",
-   "meaning": "vi.  共存"
+   "meaning": "vi.  共存",
+   "example": "Different beliefs can coexist.  不同信仰可以共存。"
   },
   {
    "word": "combustible",
@@ -25990,22 +26491,26 @@
   {
    "word": "conductivity",
    "phonetic": "/`kɔndʌk'tiviti/",
-   "meaning": "n.  传导性"
+   "meaning": "n.  传导性",
+   "example": "Copper has high conductivity.  铜的导电性强。"
   },
   {
    "word": "confederacy",
    "phonetic": "/kən'fedərəsi/",
-   "meaning": "n.  联盟"
+   "meaning": "n.  联盟",
+   "example": "The confederacy of states formed a union.  邦联组成了联邦。"
   },
   {
    "word": "constricted",
    "phonetic": "/kən'striktid/",
-   "meaning": "a.  狭窄的; 收缩的"
+   "meaning": "a.  狭窄的; 收缩的",
+   "example": "The constricted passage slowed traffic.  狭窄的通道让车流变慢。"
   },
   {
    "word": "crisscross",
    "phonetic": "/'kriskrɔs/",
-   "meaning": "vt.  交叉往来"
+   "meaning": "vt.  交叉往来",
+   "example": "Railways crisscross the country.  铁路纵横交错穿过全国。"
   },
   {
    "word": "criterion",
@@ -26016,12 +26521,14 @@
   {
    "word": "crustacean",
    "phonetic": "/krʌ'steiʃn/",
-   "meaning": "n.  甲壳类动物"
+   "meaning": "n.  甲壳类动物",
+   "example": "Crustaceans include crabs and shrimp.  甲壳类包括螃蟹和虾。"
   },
   {
    "word": "cuneiform",
    "phonetic": "/'kju:nifɔ:m/",
-   "meaning": "a.  楔性的; n.  楔形文字"
+   "meaning": "a.  楔性的; n.  楔形文字",
+   "example": "Cuneiform is one of the oldest scripts.  楔形文字是最古老的文字之一。"
   },
   {
    "word": "deform",
@@ -26050,12 +26557,14 @@
   {
    "word": "flagellum",
    "phonetic": "/flə'dʒeləm/",
-   "meaning": "n. [pl.  flagella]鞭毛"
+   "meaning": "n. [pl.  flagella]鞭毛",
+   "example": "The bacterium moves with a flagellum.  细菌靠鞭毛运动。"
   },
   {
    "word": "flavoring",
    "phonetic": "/'fleivəriŋ/",
-   "meaning": "n.  调味(品、料)"
+   "meaning": "n.  调味(品、料)",
+   "example": "Add vanilla flavoring to the cream.  奶油里加香草调味料。"
   },
   {
    "word": "foreshorten",
@@ -26066,7 +26575,8 @@
   {
    "word": "gemstone",
    "phonetic": "/'dʒem`stəun/",
-   "meaning": "n.  经雕琢的宝石"
+   "meaning": "n.  经雕琢的宝石",
+   "example": "The gemstone was cut into facets.  宝石被切割成刻面。"
   },
   {
    "word": "girder",
@@ -26083,17 +26593,20 @@
   {
    "word": "hibernation",
    "phonetic": "/`haibə'neiʃn/",
-   "meaning": "n.  冬眠; 进入冬眠状态"
+   "meaning": "n.  冬眠; 进入冬眠状态",
+   "example": "Bears enter hibernation in winter.  熊冬天进入冬眠。"
   },
   {
    "word": "hieratic",
    "phonetic": "/haiə'rætik/",
-   "meaning": "a.  僧侣的，僧侣用的"
+   "meaning": "a.  僧侣的，僧侣用的",
+   "example": "The hieratic script was used by priests.  僧侣使用圣书体文字。"
   },
   {
    "word": "hieroglyph",
    "phonetic": "/'haiərəglif/",
-   "meaning": "n.  象形文字"
+   "meaning": "n.  象形文字",
+   "example": "The hieroglyph tells a royal story.  象形文字讲述着王室故事。"
   },
   {
    "word": "homing",
@@ -26104,17 +26617,20 @@
   {
    "word": "hominid",
    "phonetic": "/'hɔminid/",
-   "meaning": "n. a.  原始人类(的)"
+   "meaning": "n. a.  原始人类(的)",
+   "example": "Hominids walked upright millions of years ago.  古人类数百万年前就直立行走。"
   },
   {
    "word": "hydrothermal",
    "phonetic": "/`haidrə'θə:məl/",
-   "meaning": "a.  热液的"
+   "meaning": "a.  热液的",
+   "example": "Hydrothermal vents host unique life.  热液喷口孕育独特生命。"
   },
   {
    "word": "imagist",
    "phonetic": "/'imədʒist/",
-   "meaning": "a.  意象派的; n.  意象派诗人"
+   "meaning": "a.  意象派的; n.  意象派诗人",
+   "example": "The imagist poet wrote about objects.  意象派诗人描写物体。"
   },
   {
    "word": "impermeable",
@@ -26125,12 +26641,14 @@
   {
    "word": "inactivate",
    "phonetic": "/in'æktiveit/",
-   "meaning": "vt.  使不活动，使不活跃"
+   "meaning": "vt.  使不活动，使不活跃",
+   "example": "The vaccine inactivates the virus.  疫苗使病毒失去活性。"
   },
   {
    "word": "inanity",
    "phonetic": "/i'nænəti/",
-   "meaning": "n.  空虚"
+   "meaning": "n.  空虚",
+   "example": "He was bored by the inanity of the talk.  他厌烦了谈话的空洞。"
   },
   {
    "word": "incinerate",
@@ -26153,12 +26671,14 @@
   {
    "word": "Jupiter",
    "phonetic": "/'dʒu:pitə/",
-   "meaning": "n.  木星"
+   "meaning": "n.  木星",
+   "example": "Jupiter is the largest planet.  木星是最大的行星。"
   },
   {
    "word": "landmass",
    "phonetic": "/'lændmæs/",
-   "meaning": "n.  地块; 大片陆地"
+   "meaning": "n.  地块; 大片陆地",
+   "example": "The landmass drifted over millions of years.  陆块漂移了数百万年。"
   },
   {
    "word": "legible",
@@ -26169,37 +26689,44 @@
   {
    "word": "lethargy",
    "phonetic": "/'leθədʒi/",
-   "meaning": "n.  死气沉沉"
+   "meaning": "n.  死气沉沉",
+   "example": "The heat caused a lethargy in the office.  高温让办公室无精打采。"
   },
   {
    "word": "lipid",
    "phonetic": "/'lipid/",
-   "meaning": "n.  油脂"
+   "meaning": "n.  油脂",
+   "example": "Lipids store energy in the body.  脂质在体内储存能量。"
   },
   {
    "word": "lithosphere",
    "phonetic": "/'liθəsfiə/",
-   "meaning": "n.  岩石圈"
+   "meaning": "n.  岩石圈",
+   "example": "The lithosphere floats on the mantle.  岩石圈浮在地幔上。"
   },
   {
    "word": "locomotion",
    "phonetic": "/`ləukə'məuʃn/",
-   "meaning": "n.  移动; 运动"
+   "meaning": "n.  移动; 运动",
+   "example": "Snail locomotion is slow.  蜗牛的移动很慢。"
   },
   {
    "word": "maglev",
    "phonetic": "/'mæglev/",
-   "meaning": "n.  磁力悬浮火车"
+   "meaning": "n.  磁力悬浮火车",
+   "example": "The maglev train reaches 430 km/h.  磁悬浮列车时速达 430 公里。"
   },
   {
    "word": "magma",
    "phonetic": "/'mægmə/",
-   "meaning": "n.  岩浆"
+   "meaning": "n.  岩浆",
+   "example": "Magma rose toward the surface.  岩浆涌向地表。"
   },
   {
    "word": "mechanist",
    "phonetic": "/'mekənist/",
-   "meaning": "n.  机械论者"
+   "meaning": "n.  机械论者",
+   "example": "The mechanist viewed the body as a machine.  机械论者把身体看作机器。"
   },
   {
    "word": "mechanize",
@@ -26210,17 +26737,20 @@
   {
    "word": "melodie",
    "phonetic": "/meilɔ'di:/",
-   "meaning": "n.  小旋律歌曲"
+   "meaning": "n.  小旋律歌曲",
+   "example": "The composer wrote a delicate melodie.  作曲家写了首精致的小旋律。"
   },
   {
    "word": "mercantile",
    "phonetic": "/'mə:kəntail/",
-   "meaning": "a.  商业的"
+   "meaning": "a.  商业的",
+   "example": "The mercantile district bustles at dawn.  商贸区黎明时繁忙起来。"
   },
   {
    "word": "meteorology",
    "phonetic": "/`mi:tiə'rɔlədʒi/",
-   "meaning": "n.  气象学"
+   "meaning": "n.  气象学",
+   "example": "Meteorology predicts the weather.  气象学预报天气。"
   },
   {
    "word": "mime",
@@ -26231,12 +26761,14 @@
   {
    "word": "musicologist",
    "phonetic": "/`mju:zi'kɔlədʒist/",
-   "meaning": "n.  音乐学者"
+   "meaning": "n.  音乐学者",
+   "example": "The musicologist studied folk songs.  音乐学者研究民歌。"
   },
   {
    "word": "neoclassical",
    "phonetic": "/`ni:əu'klæsikl/",
-   "meaning": "a.  新古典主义的"
+   "meaning": "a.  新古典主义的",
+   "example": "The building has a neoclassical facade.  这建筑有新古典主义立面。"
   },
   {
    "word": "neolithic",
@@ -26247,12 +26779,14 @@
   {
    "word": "notate",
    "phonetic": "/'nəuteit/",
-   "meaning": "vt.  以符号表示，把…写成记号(或标志)"
+   "meaning": "vt.  以符号表示，把…写成记号(或标志)",
+   "example": "She notated the melody on paper.  她把旋律记在纸上。"
   },
   {
    "word": "oceanographer",
    "phonetic": "/`əuʃə'nɔgrəfə/",
-   "meaning": "n.  海洋学者"
+   "meaning": "n.  海洋学者",
+   "example": "The oceanographer mapped the seafloor.  海洋学家绘制了海底地图。"
   },
   {
    "word": "olfactory",
@@ -26263,17 +26797,20 @@
   {
    "word": "opal",
    "phonetic": "/'əupl/",
-   "meaning": "n.  猫眼石"
+   "meaning": "n.  猫眼石",
+   "example": "The opal shimmered with colors.  猫眼石闪着五彩光。"
   },
   {
    "word": "outgas",
    "phonetic": "/`aut'gæs/",
-   "meaning": "vt.  除去…的气"
+   "meaning": "vt.  除去…的气",
+   "example": "The new carpet may outgas for weeks.  新地毯可能会释放气味好几周。"
   },
   {
    "word": "outrageously",
    "phonetic": "/aut'reidʒəsli/",
-   "meaning": "adv.  令人不可容忍地"
+   "meaning": "adv.  令人不可容忍地",
+   "example": "The hotel charged outrageously.  这酒店收费高得离谱。"
   },
   {
    "word": "pants",
@@ -26290,17 +26827,20 @@
   {
    "word": "pheromone",
    "phonetic": "/'ferəməun/",
-   "meaning": "n.  信息素"
+   "meaning": "n.  信息素",
+   "example": "Ants communicate by pheromone.  蚂蚁靠信息素交流。"
   },
   {
    "word": "photodissociation",
    "phonetic": "/fəutəudi`səuʃi'eiʃən/",
-   "meaning": "n.  光解(作用)"
+   "meaning": "n.  光解(作用)",
+   "example": "Photodissociation breaks molecules apart.  光解作用把分子拆开。"
   },
   {
    "word": "plankton",
    "phonetic": "/'plæŋktən/",
-   "meaning": "n.  浮游生物"
+   "meaning": "n.  浮游生物",
+   "example": "Plankton feeds the ocean food chain.  浮游生物供养海洋食物链。"
   },
   {
    "word": "platitude",
@@ -26317,7 +26857,8 @@
   {
    "word": "pollinate",
    "phonetic": "/'pɔlineit/",
-   "meaning": "v.  给…传授花粉"
+   "meaning": "v.  给…传授花粉",
+   "example": "Bees pollinate the flowers.  蜜蜂给花传粉。"
   },
   {
    "word": "polygon",
@@ -26328,17 +26869,20 @@
   {
    "word": "prohibitively",
    "phonetic": "/prə'hibətivli/",
-   "meaning": "ad.  (价格)极高地"
+   "meaning": "ad.  (价格)极高地",
+   "example": "The price is prohibitively high.  价格高得吓人。"
   },
   {
    "word": "proofread",
    "phonetic": "/'pru:fri:d/",
-   "meaning": "vt.  校对，校正"
+   "meaning": "vt.  校对，校正",
+   "example": "Proofread the essay before submitting.  提交前校对论文。"
   },
   {
    "word": "rayon",
    "phonetic": "/'reiɔn/",
-   "meaning": "n.  人造丝，人造纤维"
+   "meaning": "n.  人造丝，人造纤维",
+   "example": "The shirt is made of rayon.  这衬衫是人造丝的。"
   },
   {
    "word": "rhinoceros",
@@ -26349,32 +26893,38 @@
   {
    "word": "roe",
    "phonetic": "/rəu/",
-   "meaning": "n.  雌鱼腹中的鱼卵"
+   "meaning": "n.  雌鱼腹中的鱼卵",
+   "example": "Salmon roe is a delicacy.  三文鱼籽是美味。"
   },
   {
    "word": "satiric",
    "phonetic": "/sə'tirik/",
-   "meaning": "a.  (=satirical)讽刺的"
+   "meaning": "a.  (=satirical)讽刺的",
+   "example": "The play is sharp and satiric.  这部戏尖锐而辛辣。"
   },
   {
    "word": "Saturn",
    "phonetic": "/'sætən/",
-   "meaning": "n.  土星"
+   "meaning": "n.  土星",
+   "example": "Saturn has beautiful rings.  土星有美丽的光环。"
   },
   {
    "word": "seismograph",
    "phonetic": "/'saizməgrɑ:f/",
-   "meaning": "n.  地震仪"
+   "meaning": "n.  地震仪",
+   "example": "The seismograph recorded the quake.  地震仪记录了地震。"
   },
   {
    "word": "seismology",
    "phonetic": "/saiz'mɔlədʒi/",
-   "meaning": "n.  地震学"
+   "meaning": "n.  地震学",
+   "example": "Seismology studies earthquakes.  地震学研究地震。"
   },
   {
    "word": "sequoia",
    "phonetic": "/si'kwɔiə/",
-   "meaning": "n.  美洲杉"
+   "meaning": "n.  美洲杉",
+   "example": "Sequoias can live thousands of years.  红杉能活数千年。"
   },
   {
    "word": "sinuous",
@@ -26391,52 +26941,62 @@
   {
    "word": "sled",
    "phonetic": "/sled/",
-   "meaning": "n.  雪橇"
+   "meaning": "n.  雪橇",
+   "example": "The children rode a sled downhill.  孩子们坐雪橇滑下山。"
   },
   {
    "word": "sledding",
    "phonetic": "/'slediŋ/",
-   "meaning": "n.  滑雪"
+   "meaning": "n.  滑雪",
+   "example": "We went sledding after the storm.  风暴后我们去滑雪橇。"
   },
   {
    "word": "solder",
    "phonetic": "/'sɔldə/",
-   "meaning": "v.  焊接"
+   "meaning": "v.  焊接",
+   "example": "Solder the two wires together.  把两根线焊在一起。"
   },
   {
    "word": "spiny",
    "phonetic": "/'spaini/",
-   "meaning": "a.  长满刺的，带刺的"
+   "meaning": "a.  长满刺的，带刺的",
+   "example": "The cactus is spiny and tough.  仙人掌多刺而坚韧。"
   },
   {
    "word": "spun",
    "phonetic": "/spʌn/",
-   "meaning": "a.  拉成丝的"
+   "meaning": "a.  拉成丝的",
+   "example": "The cotton was spun into thread.  棉花被纺成了线。"
   },
   {
    "word": "stagecoach",
    "phonetic": "/'steidʒkəutʃ/",
-   "meaning": "n.  公共马车"
+   "meaning": "n.  公共马车",
+   "example": "The stagecoach rattled along.  公共马车哐当哐当地走着。"
   },
   {
    "word": "staggered",
    "phonetic": "/'stægəd/",
-   "meaning": "a.  交错的"
+   "meaning": "a.  交错的",
+   "example": "The stores have staggered hours.  商店错峰营业。"
   },
   {
    "word": "subspecies",
    "phonetic": "/'sʌbspi:ʃi:z/",
-   "meaning": "n.  亚种"
+   "meaning": "n.  亚种",
+   "example": "The tiger has several subspecies.  虎有若干亚种。"
   },
   {
    "word": "suffragist",
    "phonetic": "/'sʌfrədʒist/",
-   "meaning": "n.  妇女政权论者"
+   "meaning": "n.  妇女政权论者",
+   "example": "The suffragist campaigned for voting rights.  妇女参政论者为选举权奔走。"
   },
   {
    "word": "tectonics",
    "phonetic": "/tek'tɔniks/",
-   "meaning": "n.  构造地质学"
+   "meaning": "n.  构造地质学",
+   "example": "Plate tectonics explains the moving crust.  板块构造解释了地壳运动。"
   },
   {
    "word": "tedium",
@@ -26477,12 +27037,14 @@
   {
    "word": "unconsolidated",
    "phonetic": "/`ʌnkən'sɔlideitid/",
-   "meaning": "a.  松散的，疏松的"
+   "meaning": "a.  松散的，疏松的",
+   "example": "The sediment is unconsolidated.  沉积物是松散的。"
   },
   {
    "word": "untamed",
    "phonetic": "/ʌn'teimd/",
-   "meaning": "a.  难控驭的"
+   "meaning": "a.  难控驭的",
+   "example": "The untamed horse broke free.  野马挣脱了缰绳。"
   },
   {
    "word": "uppermost",
@@ -26493,12 +27055,14 @@
   {
    "word": "watercourse",
    "phonetic": "/'wɔ:təkɔ:s/",
-   "meaning": "n.  水道，河道"
+   "meaning": "n.  水道，河道",
+   "example": "The watercourse dried up in summer.  河道夏天干涸了。"
   },
   {
    "word": "weathering",
    "phonetic": "/'weðəriŋ/",
-   "meaning": "n.  侵蚀，风化"
+   "meaning": "n.  侵蚀，风化",
+   "example": "Weathering broke the rock apart.  风化把岩石分解了。"
   }
  ]
 }

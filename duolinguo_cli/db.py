@@ -299,9 +299,29 @@ def set_setting(conn: sqlite3.Connection, key: str, value: str) -> None:
 CONFIG_KEYS = ("daily_goal", "current_book")
 
 
+def reevaluate_today_goal(conn: sqlite3.Connection, date_str: str, goal: int) -> None:
+    """按当前目标重算某日达成状态（自愈：改目标/展示时调用）。
+
+    - 已达标但字数不足新目标 → 清除 goal_met（已发 XP 不追回）
+    - 未标记但已达新目标 → 补发首达标记与 +20 XP（与 gamify.check_goal 同规则）
+    """
+    row = get_daily(conn, date_str)
+    if not row:
+        return
+    done = row["new_learned"] + row["reviews_done"]
+    if done >= goal and not row["goal_met"]:
+        set_goal_met(conn, date_str)
+        bump_daily(conn, date_str, xp_earned=config.XP_GOAL_BONUS)
+        conn.commit()
+    elif done < goal and row["goal_met"]:
+        conn.execute("UPDATE daily_stats SET goal_met = 0 WHERE date = ?", (date_str,))
+        conn.commit()
+
+
 def apply_setting(conn: sqlite3.Connection, key: str, value: str) -> None:
     """校验并保存设置（含提交）；非法值抛 ValueError（中文说明）。
 
+    修改 daily_goal 会立即按新目标重算今日达成状态。
     注意：current_book 校验只查库，调用方如需内置词书请先 ensure_builtins。
     """
     if key not in CONFIG_KEYS:
@@ -313,4 +333,6 @@ def apply_setting(conn: sqlite3.Connection, key: str, value: str) -> None:
         if not get_book(conn, value):
             raise ValueError(f"词书不存在：{value}")
     set_setting(conn, key, value)
+    if key == "daily_goal":
+        reevaluate_today_goal(conn, today_str(), int(value))
     conn.commit()

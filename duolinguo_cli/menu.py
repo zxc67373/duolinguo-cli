@@ -35,6 +35,7 @@ def _current_book(conn):
 def _render_menu(conn) -> None:
     today = db.today_str()
     goal = gamify.get_goal(conn)
+    db.reevaluate_today_goal(conn, today, goal)  # 连胜/目标展示自愈
     book = _current_book(conn)
     display.print_main_menu(
         book_name=book["name"] if book else None,
@@ -97,6 +98,7 @@ def _settings(conn, input_fn) -> None:
     settings = {
         r["key"]: r["value"]
         for r in conn.execute("SELECT key, value FROM settings ORDER BY key").fetchall()
+        if r["key"] in db.CONFIG_KEYS  # 隐藏 book_order/unit_bonus 等内部标记
     }
     settings.setdefault("daily_goal", str(gamify.get_goal(conn)))
     current = _current_book(conn)

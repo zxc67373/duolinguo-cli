@@ -212,6 +212,7 @@ def show_stats(conn) -> None:
     books.ensure_builtins(conn)
     today = db.today_str()
     goal = gamify.get_goal(conn)
+    db.reevaluate_today_goal(conn, today, goal)  # 目标改动自愈，避免陈旧 ✓
     daily = db.get_daily(conn, today)
     print_stats_overview(
         streak=gamify.calc_streak(conn, today),

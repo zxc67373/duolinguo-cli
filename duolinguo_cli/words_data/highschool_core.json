@@ -463,7 +463,8 @@
   {
    "word": "these",
    "phonetic": "/ðiːz/",
-   "meaning": "pron.&a.[this的复数]这些;这些人(东西)"
+   "meaning": "pron.&a.[this的复数]这些;这些人(东西)",
+   "example": "These shoes are too small.  这双鞋太小了。"
   },
   {
    "word": "want",
@@ -570,7 +571,8 @@
   {
    "word": "those",
    "phonetic": "/ðəuz/",
-   "meaning": "pron./a.[that的复数]那些;那些人(东西)"
+   "meaning": "pron./a.[that的复数]那些;那些人(东西)",
+   "example": "Those birds migrate south in winter.  那些鸟冬天南迁。"
   },
   {
    "word": "tell",
@@ -1937,7 +1939,8 @@
   {
    "word": "teacher",
    "phonetic": "/ˈtiːtʃə/",
-   "meaning": "n.教师(员),老(导)师"
+   "meaning": "n.教师(员),老(导)师",
+   "example": "The teacher wrote on the blackboard.  老师在黑板上写字。"
   },
   {
    "word": "force",
@@ -2008,7 +2011,8 @@
   {
    "word": "toward",
    "phonetic": "/təˈwɔːd/",
-   "meaning": "prep.(towards)朝,向;将近;对于;为了"
+   "meaning": "prep.(towards)朝,向;将近;对于;为了",
+   "example": "He walked toward the school gate.  他朝校门走去。"
   },
   {
    "word": "able",
@@ -2751,7 +2755,8 @@
   {
    "word": "center",
    "phonetic": "",
-   "meaning": "n. 中心，中央；中锋；中心点；vi. 居中，被置于中心；vt. 集中，使聚集在一点；定中心；adj. 中央的，位在正中的；n. (Center)人名；(英)森特"
+   "meaning": "n. 中心，中央；中锋；中心点；vi. 居中，被置于中心；vt. 集中，使聚集在一点；定中心；adj. 中央的，位在正中的；n. (Center)人名；(英)森特",
+   "example": "The mall is in the city center.  商场在市中心。"
   },
   {
    "word": "couple",
@@ -2768,7 +2773,8 @@
   {
    "word": "hit",
    "phonetic": "/hit/",
-   "meaning": "v.打,击;碰撞 n.击中;成功而风行一时的事物"
+   "meaning": "v.打,击;碰撞 n.击中;成功而风行一时的事物",
+   "example": "The typhoon hit the coast at night.  台风夜里登陆了海岸。"
   },
   {
    "word": "base",
@@ -3343,7 +3349,8 @@
   {
    "word": "defense",
    "phonetic": "/di'fens/",
-   "meaning": "n. 防卫，防护；防御措施；防守；vt. 谋划抵御"
+   "meaning": "n. 防卫，防护；防御措施；防守；vt. 谋划抵御",
+   "example": "The team's defense was solid.  这支队的防守很稳固。"
   },
   {
    "word": "anyone",
@@ -3432,7 +3439,8 @@
   {
    "word": "behavior",
    "phonetic": "/biˈheivjə/",
-   "meaning": "n.(behaviour)行为,举止;(机器等)运转情况"
+   "meaning": "n.(behaviour)行为,举止;(机器等)运转情况",
+   "example": "Good behavior earns praise.  好的行为赢得表扬。"
   },
   {
    "word": "deal",
@@ -3557,7 +3565,8 @@
   {
    "word": "color",
    "phonetic": "/ˈkʌlə/",
-   "meaning": "n.(=colour)颜色;颜料;肤色 v.给…着色"
+   "meaning": "n.(=colour)颜色;颜料;肤色 v.给…着色",
+   "example": "What color is the sky at sunset?  日落时天空是什么颜色？"
   },
   {
    "word": "store",
@@ -3688,7 +3697,8 @@
   {
    "word": "decade",
    "phonetic": "/ˈdekeid/",
-   "meaning": "n.十年"
+   "meaning": "n.十年",
+   "example": "The city changed a lot in a decade.  十年间这座城市变化很大。"
   },
   {
    "word": "article",
@@ -3861,7 +3871,8 @@
   {
    "word": "meeting",
    "phonetic": "/ˈmiːtiŋ/",
-   "meaning": "n.会议,集合,汇合,会见,接见,汇合点"
+   "meaning": "n.会议,集合,汇合,会见,接见,汇合点",
+   "example": "I have a meeting at three.  我三点有个会。"
   },
   {
    "word": "determine",
@@ -4016,7 +4027,8 @@
   {
    "word": "everybody",
    "phonetic": "/ˈevri,bədi/",
-   "meaning": "pron.(everyone)每人,人人"
+   "meaning": "pron.(everyone)每人,人人",
+   "example": "Everybody likes the new teacher.  大家都喜欢新老师。"
   },
   {
    "word": "physical",
@@ -4099,12 +4111,14 @@
   {
    "word": "forward",
    "phonetic": "/ˈfɔːwəd/",
-   "meaning": "ad.(also forwards)向前 a.向前的 v.转交"
+   "meaning": "ad.(also forwards)向前 a.向前的 v.转交",
+   "example": "Step forward to shake hands.  上前握手。"
   },
   {
    "word": "lawyer",
    "phonetic": "/ˈlɔːjə/",
-   "meaning": "n.律师"
+   "meaning": "n.律师",
+   "example": "Her dream is to be a lawyer.  她的梦想是当律师。"
   },
   {
    "word": "present",
@@ -4871,7 +4885,8 @@
   {
    "word": "somebody",
    "phonetic": "/ˈsʌm,bɔdi,-bʌ-/",
-   "meaning": "pron.某人,有人 n.重要人物"
+   "meaning": "pron.某人,有人 n.重要人物",
+   "example": "Somebody is knocking at the door.  有人在敲门。"
   },
   {
    "word": "magazine",
@@ -5092,7 +5107,8 @@
   {
    "word": "collection",
    "phonetic": "/kəˈlekʃən/",
-   "meaning": "n.收藏(品),收集(物)"
+   "meaning": "n.收藏(品),收集(物)",
+   "example": "The museum has a fine collection.  博物馆有很好的收藏。"
   },
   {
    "word": "modern",
@@ -5259,7 +5275,8 @@
   {
    "word": "western",
    "phonetic": "/ˈwestən/",
-   "meaning": "a.西方的,西部的"
+   "meaning": "a.西方的,西部的",
+   "example": "Western festivals are popular with young people.  西方节日在年轻人中很流行。"
   },
   {
    "word": "relate",
@@ -5420,7 +5437,8 @@
   {
    "word": "restaurant",
    "phonetic": "/ˈrestərɔŋ, -rɔnt/",
-   "meaning": "n.餐馆,饭店"
+   "meaning": "n.餐馆,饭店",
+   "example": "The restaurant is always crowded.  这家餐厅总是很挤。"
   },
   {
    "word": "judge",
@@ -5479,7 +5497,8 @@
   {
    "word": "neighborhood",
    "phonetic": "/ˈneibəhud/",
-   "meaning": "n.(neighbourhood)邻居;四邻,街道"
+   "meaning": "n.(neighbourhood)邻居;四邻,街道",
+   "example": "It's a friendly neighborhood.  这是个友好的街区。"
   },
   {
    "word": "troop",
@@ -5568,7 +5587,8 @@
   {
    "word": "labor",
    "phonetic": "",
-   "meaning": "n.(labour)工作,劳动;劳力 v.劳动,苦干"
+   "meaning": "n.(labour)工作,劳动;劳力 v.劳动,苦干",
+   "example": "Hard labor builds character.  辛勤劳动塑造品格。"
   },
   {
    "word": "refer",
@@ -6089,7 +6109,8 @@
   {
    "word": "reporter",
    "phonetic": "/riˈpɔːtə/",
-   "meaning": "n.报告人,通讯员;记者,报导者"
+   "meaning": "n.报告人,通讯员;记者,报导者",
+   "example": "The reporter interviewed the winner.  记者采访了获胜者。"
   },
   {
    "word": "deliver",
@@ -6448,7 +6469,8 @@
   {
    "word": "regular",
    "phonetic": "/ˈreɡjulə/",
-   "meaning": "a.有规律的;整齐的,匀称的,正规的,正式的"
+   "meaning": "a.有规律的;整齐的,匀称的,正规的,正式的",
+   "example": "Regular practice makes progress.  规律练习带来进步。"
   },
   {
    "word": "spread",
@@ -6459,7 +6481,8 @@
   {
    "word": "chairman",
    "phonetic": "/ˈtʃεəmən/",
-   "meaning": "n.主席,议长,会长,董事长"
+   "meaning": "n.主席,议长,会长,董事长",
+   "example": "The chairman announced the results.  主席宣布了结果。"
   },
   {
    "word": "baseball",
@@ -6494,7 +6517,8 @@
   {
    "word": "anybody",
    "phonetic": "/ˈeni,bɔdi/",
-   "meaning": "pron.(否定句)任何人;(肯定句)随便哪个人"
+   "meaning": "pron.(否定句)任何人;(肯定句)随便哪个人",
+   "example": "Anybody can enter the contest.  任何人都可以参加比赛。"
   },
   {
    "word": "murder",
@@ -6733,7 +6757,8 @@
   {
    "word": "neighbor",
    "phonetic": "/ˈneibə/",
-   "meaning": "n.(neighbour)邻居"
+   "meaning": "n.(neighbour)邻居",
+   "example": "My neighbor plays the piano.  我邻居弹钢琴。"
   },
   {
    "word": "function",
@@ -6792,7 +6817,8 @@
   {
    "word": "dangerous",
    "phonetic": "/ˈdeindʒərəs/",
-   "meaning": "a.危险的,不安全的"
+   "meaning": "a.危险的,不安全的",
+   "example": "It's dangerous to swim alone.  独自游泳很危险。"
   },
   {
    "word": "remind",
@@ -6827,7 +6853,8 @@
   {
    "word": "Internet",
    "phonetic": "/ˈintənet/",
-   "meaning": "n.[the～]国际互联网,因特网"
+   "meaning": "n.[the～]国际互联网,因特网",
+   "example": "The Internet connects billions of people.  互联网连接着数十亿人。"
   },
   {
    "word": "healthy",
@@ -7036,7 +7063,8 @@
   {
    "word": "studio",
    "phonetic": "/ˈstjuːdiəu, ˈstuː-/",
-   "meaning": "n.画室;播音室;(电影)制片厂"
+   "meaning": "n.画室;播音室;(电影)制片厂",
+   "example": "The artist has a bright studio.  画家有间明亮的画室。"
   },
   {
    "word": "train",
@@ -7155,7 +7183,8 @@
   {
    "word": "theater",
    "phonetic": "/ˈθiətə, ˈθiːə-/",
-   "meaning": "n.(theatre)戏院;戏剧;阶梯教室"
+   "meaning": "n.(theatre)戏院;戏剧;阶梯教室",
+   "example": "The theater was full last night.  昨晚剧场满座。"
   },
   {
    "word": "shut",
@@ -7400,7 +7429,8 @@
   {
    "word": "favorite",
    "phonetic": "/ˈfeivərit/",
-   "meaning": "n.(favourite)最喜欢的人或物 a.喜爱的"
+   "meaning": "n.(favourite)最喜欢的人或物 a.喜爱的",
+   "example": "What's your favorite subject?  你最喜欢哪门课？"
   },
   {
    "word": "explore",
@@ -7783,7 +7813,8 @@
   {
    "word": "e-mail",
    "phonetic": "",
-   "meaning": "n.(electronic mail)电子信函,电子邮件"
+   "meaning": "n.(electronic mail)电子信函,电子邮件",
+   "example": "I got an e-mail from my pen pal.  我收到了笔友的电子邮件。"
   },
   {
    "word": "thinking",
@@ -7878,7 +7909,8 @@
   {
    "word": "thick",
    "phonetic": "/θik/",
-   "meaning": "a.厚的,粗的,稠的,浓的 ad.厚,浓,密"
+   "meaning": "a.厚的,粗的,稠的,浓的 ad.厚,浓,密",
+   "example": "The dictionary is very thick.  这本词典很厚。"
   },
   {
    "word": "cash",
@@ -7913,7 +7945,8 @@
   {
    "word": "link",
    "phonetic": "/liŋk/",
-   "meaning": "v.连接,联系 n.环节,链环"
+   "meaning": "v.连接,联系 n.环节,链环",
+   "example": "This link leads to the article.  这个链接通向那篇文章。"
   },
   {
    "word": "stress",
@@ -8194,7 +8227,8 @@
   {
    "word": "basketball",
    "phonetic": "/ˈbɑːskitbɔːl, ˈbæs-/",
-   "meaning": "n.篮球,篮球运动"
+   "meaning": "n.篮球,篮球运动",
+   "example": "Our team won the basketball game.  我们队赢了篮球赛。"
   },
   {
    "word": "golf",
@@ -8301,7 +8335,8 @@
   {
    "word": "except",
    "phonetic": "/ikˈsept/",
-   "meaning": "prep.除…之外 v.除外;反对"
+   "meaning": "prep.除…之外 v.除外;反对",
+   "example": "Everyone was late except Lily.  除了莉莉，所有人都迟到了。"
   },
   {
    "word": "conservative",
@@ -8414,7 +8449,8 @@
   {
    "word": "telephone",
    "phonetic": "/ˈtelifəun/",
-   "meaning": "n.电话,电话机 v.打电话"
+   "meaning": "n.电话,电话机 v.打电话",
+   "example": "Answer the telephone, please.  请接一下电话。"
   },
   {
    "word": "attract",
@@ -8563,7 +8599,8 @@
   {
    "word": "hero",
    "phonetic": "/ˈhiərəu/",
-   "meaning": "n.英雄,勇士;男主角,男主人公"
+   "meaning": "n.英雄,勇士;男主角,男主人公",
+   "example": "The hero in the film never gives up.  电影里的英雄从不放弃。"
   },
   {
    "word": "cloud",
@@ -8634,7 +8671,8 @@
   {
    "word": "gray",
    "phonetic": "/grei/",
-   "meaning": "a.灰色的 n.灰色"
+   "meaning": "a.灰色的 n.灰色",
+   "example": "He has gray hair now.  他现在头发花白了。"
   },
   {
    "word": "dish",
@@ -9023,7 +9061,8 @@
   {
    "word": "physician",
    "phonetic": "/fiˈziʃən/",
-   "meaning": "n.内科医生"
+   "meaning": "n.内科医生",
+   "example": "See a physician if the fever continues.  发烧不退要看内科医生。"
   },
   {
    "word": "assess",
@@ -9142,7 +9181,8 @@
   {
    "word": "honor",
    "phonetic": "/ˈɔnə/",
-   "meaning": "n.(honour)尊敬,敬意;荣誉,光荣 v.尊敬"
+   "meaning": "n.(honour)尊敬,敬意;荣誉,光荣 v.尊敬",
+   "example": "It's an honor to represent our school.  代表我校是荣幸。"
   },
   {
    "word": "passenger",
@@ -9939,7 +9979,8 @@
   {
    "word": "Asian",
    "phonetic": "/ˈei∫ən/",
-   "meaning": "a.亚洲的 n.亚洲人"
+   "meaning": "a.亚洲的 n.亚洲人",
+   "example": "Asian countries hold a summit every year.  亚洲国家每年举行峰会。"
   },
   {
    "word": "entertainment",
@@ -10088,7 +10129,8 @@
   {
    "word": "tomato",
    "phonetic": "/təˈmɑːtəu, -ˈmei-/",
-   "meaning": "n.西红柿"
+   "meaning": "n.西红柿",
+   "example": "Tomato and egg is a classic dish.  番茄炒蛋是经典菜。"
   },
   {
    "word": "butter",
@@ -10195,7 +10237,8 @@
   {
    "word": "educator",
    "phonetic": "",
-   "meaning": "n. 教育家；教育工作者；教师"
+   "meaning": "n. 教育家；教育工作者；教师",
+   "example": "The educator devoted her life to teaching.  这位教育家毕生献身教育。"
   },
   {
    "word": "relative",
@@ -10404,7 +10447,8 @@
   {
    "word": "grandmother",
    "phonetic": "/ˈɡrænd,mʌðə/",
-   "meaning": "n.祖母,外祖母"
+   "meaning": "n.祖母,外祖母",
+   "example": "My grandmother can read English.  我奶奶能看懂英文。"
   },
   {
    "word": "enterprise",
@@ -10415,7 +10459,8 @@
   {
    "word": "favor",
    "phonetic": "/ˈfeivə/",
-   "meaning": "n.(favour)好感;喜爱;关切v.赞成,支持,偏爱"
+   "meaning": "n.(favour)好感;喜爱;关切v.赞成,支持,偏爱",
+   "example": "Do me a favor and close the door.  帮我关下门。"
   },
   {
    "word": "stomach",
@@ -10654,7 +10699,8 @@
   {
    "word": "criteria",
    "phonetic": "/krai'tiəriə/",
-   "meaning": "n. 标准，条件（criterion的复数）"
+   "meaning": "n. 标准，条件（criterion的复数）",
+   "example": "What are the criteria for selection?  选拔的标准是什么？"
   },
   {
    "word": "via",
@@ -10695,7 +10741,8 @@
   {
    "word": "fiber",
    "phonetic": "/ˈfaibə/",
-   "meaning": "n.(fibre)纤维;构造;纤维制品"
+   "meaning": "n.(fibre)纤维;构造;纤维制品",
+   "example": "Vegetables are full of fiber.  蔬菜富含纤维。"
   },
   {
    "word": "switch",
@@ -10862,7 +10909,8 @@
   {
    "word": "darkness",
    "phonetic": "",
-   "meaning": "n. 黑暗；模糊；无知；阴郁"
+   "meaning": "n. 黑暗；模糊；无知；阴郁",
+   "example": "The room fell into darkness.  房间陷入了黑暗。"
   },
   {
    "word": "clothing",
@@ -11023,7 +11071,8 @@
   {
    "word": "statistics",
    "phonetic": "/stə'tistiks/",
-   "meaning": "n. 统计；统计学；[统计] 统计资料"
+   "meaning": "n. 统计；统计学；[统计] 统计资料",
+   "example": "Statistics show prices are falling.  统计数据显示物价在下降。"
   },
   {
    "word": "shopping",
@@ -11418,7 +11467,8 @@
   {
    "word": "license",
    "phonetic": "/ˈlaisəns/",
-   "meaning": "n.(licence)许可证,执照 v.准许,认可"
+   "meaning": "n.(licence)许可证,执照 v.准许,认可",
+   "example": "A driver's license is required.  需要驾照。"
   },
   {
    "word": "shelter",
@@ -11447,7 +11497,8 @@
   {
    "word": "net",
    "phonetic": "/net/",
-   "meaning": "n.网,网状物 v.用网捕,使落网 a.纯净的"
+   "meaning": "n.网,网状物 v.用网捕,使落网 a.纯净的",
+   "example": "The butterfly got caught in the net.  蝴蝶被网住了。"
   },
   {
    "word": "funeral",
@@ -11560,7 +11611,8 @@
   {
    "word": "poet",
    "phonetic": "/ˈpəuit/",
-   "meaning": "n.诗人"
+   "meaning": "n.诗人",
+   "example": "The poet lived a quiet life.  诗人过着安静的生活。"
   },
   {
    "word": "comfort",
@@ -11643,7 +11695,8 @@
   {
    "word": "grandfather",
    "phonetic": "/ˈgrændˌfɑːðə/",
-   "meaning": "n.祖父；外祖父"
+   "meaning": "n.祖父；外祖父",
+   "example": "My grandfather built this house.  这房子是我爷爷盖的。"
   },
   {
    "word": "wisdom",
@@ -11726,7 +11779,8 @@
   {
    "word": "math",
    "phonetic": "",
-   "meaning": "n. 数学（等于mathematics）；n. (Math)人名；(德)马特；(柬)马；(英)马思"
+   "meaning": "n. 数学（等于mathematics）；n. (Math)人名；(德)马特；(柬)马；(英)马思",
+   "example": "Math is my strongest subject.  数学是我最强的科目。"
   },
   {
    "word": "shade",
@@ -11791,7 +11845,8 @@
   {
    "word": "carbon",
    "phonetic": "/ˈkɑːbən/",
-   "meaning": "n.碳"
+   "meaning": "n.碳",
+   "example": "Reduce your carbon footprint.  减少你的碳足迹。"
   },
   {
    "word": "consume",
@@ -11952,7 +12007,8 @@
   {
    "word": "tent",
    "phonetic": "/tent/",
-   "meaning": "n.帐篷"
+   "meaning": "n.帐篷",
+   "example": "The tent leaked when it rained.  下雨时帐篷漏水了。"
   },
   {
    "word": "examination",
@@ -11981,7 +12037,8 @@
   {
    "word": "tennis",
    "phonetic": "/ˈtenis/",
-   "meaning": "n.网球"
+   "meaning": "n.网球",
+   "example": "Tennis is played with a racket.  网球要用球拍打。"
   },
   {
    "word": "menu",
@@ -12004,7 +12061,8 @@
   {
    "word": "humor",
    "phonetic": "/ˈhjuːmə/",
-   "meaning": "n.(humour)幽默,诙谐"
+   "meaning": "n.(humour)幽默,诙谐",
+   "example": "She has a great sense of humor.  她很有幽默感。"
   },
   {
    "word": "loud",
@@ -12093,7 +12151,8 @@
   {
    "word": "taxpayer",
    "phonetic": "/ˈtækspeiә/",
-   "meaning": "n. 纳税人；所收租金只够支付地产税的建筑物"
+   "meaning": "n. 纳税人；所收租金只够支付地产税的建筑物",
+   "example": "Taxpayer money funded the project.  这项目用的是纳税人的钱。"
   },
   {
    "word": "eager",
@@ -12548,7 +12607,8 @@
   {
    "word": "grocery",
    "phonetic": "/ˈgrəusəri/",
-   "meaning": "n.食品杂货店"
+   "meaning": "n.食品杂货店",
+   "example": "We buy grocery on Saturdays.  我们周六买杂货。"
   },
   {
    "word": "blanket",
@@ -12595,7 +12655,8 @@
   {
    "word": "painter",
    "phonetic": "/ˈpeintə/",
-   "meaning": "n.漆工,画家"
+   "meaning": "n.漆工,画家",
+   "example": "The painter covered the wall with blue.  画家把墙刷成了蓝色。"
   },
   {
    "word": "pie",
@@ -12690,7 +12751,8 @@
   {
    "word": "soccer",
    "phonetic": "/ˈsɔkə/",
-   "meaning": "n.足球"
+   "meaning": "n.足球",
+   "example": "My brother plays soccer after school.  我弟弟放学后踢足球。"
   },
   {
    "word": "lap",
@@ -12809,7 +12871,8 @@
   {
    "word": "northwest",
    "phonetic": "/ˌnɔːθˈwest/",
-   "meaning": "n.西北方,西北部a.西北的ad.向西北,在西北"
+   "meaning": "n.西北方,西北部a.西北的ad.向西北,在西北",
+   "example": "The wind comes from the northwest.  风从西北来。"
   },
   {
    "word": "receiver",
@@ -12844,7 +12907,8 @@
   {
    "word": "surgeon",
    "phonetic": "/ˈsəːdʒən/",
-   "meaning": "n.外科医生"
+   "meaning": "n.外科医生",
+   "example": "The surgeon saved his life.  外科医生救了他的命。"
   },
   {
    "word": "physics",
@@ -13053,7 +13117,8 @@
   {
    "word": "airplane",
    "phonetic": "/ˈeəˌplein/",
-   "meaning": "n.飞机"
+   "meaning": "n.飞机",
+   "example": "The airplane flew above the clouds.  飞机飞在云层之上。"
   },
   {
    "word": "duck",
@@ -13160,7 +13225,8 @@
   {
    "word": "flood",
    "phonetic": "/flʌd/",
-   "meaning": "n.洪水,水灾 v.淹没,发大水,泛滥"
+   "meaning": "n.洪水,水灾 v.淹没,发大水,泛滥",
+   "example": "The flood ruined the harvest.  洪水毁了收成。"
   },
   {
    "word": "pen",
@@ -13207,7 +13273,8 @@
   {
    "word": "bacteria",
    "phonetic": "/bækˈtiəriə/",
-   "meaning": "n.细菌"
+   "meaning": "n.细菌",
+   "example": "Wash your hands to kill bacteria.  洗手以杀灭细菌。"
   },
   {
    "word": "questionnaire",
@@ -13236,7 +13303,8 @@
   {
    "word": "temple",
    "phonetic": "/ˈtempl/",
-   "meaning": "n.庙宇,神殿,寺;太阳穴"
+   "meaning": "n.庙宇,神殿,寺;太阳穴",
+   "example": "The temple sits on a hilltop.  寺庙坐落在山顶。"
   },
   {
    "word": "suck",
@@ -13259,7 +13327,8 @@
   {
    "word": "wrist",
    "phonetic": "/rist/",
-   "meaning": "n.腕,腕关节"
+   "meaning": "n.腕,腕关节",
+   "example": "He broke his wrist in the game.  他在比赛中摔断了手腕。"
   },
   {
    "word": "curtain",
@@ -13468,7 +13537,8 @@
   {
    "word": "astronomer",
    "phonetic": "",
-   "meaning": "n. 天文学家"
+   "meaning": "n. 天文学家",
+   "example": "The astronomer discovered a new star.  天文学家发现了一颗新星。"
   },
   {
    "word": "apologize",
@@ -13509,7 +13579,8 @@
   {
    "word": "disk",
    "phonetic": "/disk/",
-   "meaning": "n.圆盘，唱片；磁盘"
+   "meaning": "n.圆盘，唱片；磁盘",
+   "example": "Insert the disk to install.  插入磁盘进行安装。"
   },
   {
    "word": "shame",
@@ -13520,17 +13591,20 @@
   {
    "word": "sidewalk",
    "phonetic": "/ˈsaidwɒːk/",
-   "meaning": "n. 人行道"
+   "meaning": "n. 人行道",
+   "example": "Kids drew on the sidewalk with chalk.  孩子们用粉笔在人行道上画画。"
   },
   {
    "word": "Olympics",
    "phonetic": "/әuˈlimpiks/",
-   "meaning": "n. 奥林匹克运动会"
+   "meaning": "n. 奥林匹克运动会",
+   "example": "The Olympics are held every four years.  奥运会每四年举办一次。"
   },
   {
    "word": "signature",
    "phonetic": "/ˈsignətʃə/",
-   "meaning": "n.签名,署名,签字"
+   "meaning": "n.签名,署名,签字",
+   "example": "Sign at the bottom for your signature.  在下方签名。"
   },
   {
    "word": "pleasant",
@@ -13589,7 +13663,8 @@
   {
    "word": "traveler",
    "phonetic": "/ˈtrævlә/",
-   "meaning": "n. 旅行者；旅客；旅行推销员（等于traveller）"
+   "meaning": "n. 旅行者；旅客；旅行推销员（等于traveller）",
+   "example": "The traveler wrote in his journal.  旅行者在日记里写着。"
   },
   {
    "word": "click",
@@ -13648,7 +13723,8 @@
   {
    "word": "ankle",
    "phonetic": "/ˈæŋkl/",
-   "meaning": "n.足踝,踝关节"
+   "meaning": "n.足踝,踝关节",
+   "example": "Her ankle was badly swollen.  她的脚踝肿得厉害。"
   },
   {
    "word": "rescue",
@@ -13701,7 +13777,8 @@
   {
    "word": "oxygen",
    "phonetic": "/ˈɔksidʒən/",
-   "meaning": "n.氧,氧气"
+   "meaning": "n.氧,氧气",
+   "example": "Trees produce oxygen.  树木产生氧气。"
   },
   {
    "word": "handsome",
@@ -14198,7 +14275,8 @@
   {
    "word": "northeast",
    "phonetic": "/ˌnɔːθˈiːst/",
-   "meaning": "n.东北 a.东北方的 ad.向东北,在东北"
+   "meaning": "n.东北 a.东北方的 ad.向东北,在东北",
+   "example": "The northeast gets heavy snow.  东北地区雪很大。"
   },
   {
    "word": "shallow",
@@ -14227,7 +14305,8 @@
   {
    "word": "refrigerator",
    "phonetic": "/riˈfridʒəreitə/",
-   "meaning": "n.冰箱，冷藏库"
+   "meaning": "n.冰箱，冷藏库",
+   "example": "The food is in the refrigerator.  食物在冰箱里。"
   },
   {
    "word": "nest",
@@ -14286,7 +14365,8 @@
   {
    "word": "homeland",
    "phonetic": "",
-   "meaning": "n. 祖国；故乡"
+   "meaning": "n. 祖国；故乡",
+   "example": "He returned to his homeland after years abroad.  海外多年后他回到了祖国。"
   },
   {
    "word": "wolf",
@@ -14297,7 +14377,8 @@
   {
    "word": "cartoon",
    "phonetic": "/kɑːˈtuːn/",
-   "meaning": "n.漫画,幽默画;动画片"
+   "meaning": "n.漫画,幽默画;动画片",
+   "example": "My favorite cartoon airs on Saturday.  我最喜欢的动画片周六播出。"
   },
   {
    "word": "bless",
@@ -14350,12 +14431,14 @@
   {
    "word": "jewelry",
    "phonetic": "/ˈdʒuːəlri/",
-   "meaning": "n.(jewllery)(总称)珠宝"
+   "meaning": "n.(jewllery)(总称)珠宝",
+   "example": "She inherited her mother's jewelry.  她继承了母亲的珠宝。"
   },
   {
    "word": "afterward",
    "phonetic": "/ˈɑːftəwəd, ˈæf-/",
-   "meaning": "ad.(afterwards)以后,后来"
+   "meaning": "ad.(afterwards)以后,后来",
+   "example": "We rested afterward.  之后我们休息了。"
   },
   {
    "word": "ruin",
@@ -14378,7 +14461,8 @@
   {
    "word": "drawer",
    "phonetic": "/drɔː/",
-   "meaning": "n.抽屉"
+   "meaning": "n.抽屉",
+   "example": "Socks are in the drawer.  袜子在抽屉里。"
   },
   {
    "word": "sheep",
@@ -14437,7 +14521,8 @@
   {
    "word": "aluminum",
    "phonetic": "/əˈljuːminəm/",
-   "meaning": "n.(aluminium)铝"
+   "meaning": "n.(aluminium)铝",
+   "example": "The window frames are aluminum.  窗框是铝制的。"
   },
   {
    "word": "ministry",
@@ -14478,7 +14563,8 @@
   {
    "word": "mathematics",
    "phonetic": "/ˌmæθiˈmætiks/",
-   "meaning": "n.数学"
+   "meaning": "n.数学",
+   "example": "She excels in mathematics.  她数学成绩优异。"
   },
   {
    "word": "jar",
@@ -14657,7 +14743,8 @@
   {
    "word": "elephant",
    "phonetic": "/ˈelifənt/",
-   "meaning": "n.(动物)象"
+   "meaning": "n.(动物)象",
+   "example": "An elephant never forgets.  大象记忆力极好。"
   },
   {
    "word": "foster",
@@ -14716,7 +14803,8 @@
   {
    "word": "stove",
    "phonetic": "/stəuv/",
-   "meaning": "n.炉子,火炉"
+   "meaning": "n.炉子,火炉",
+   "example": "The stove is still warm.  炉子还有余温。"
   },
   {
    "word": "alike",
@@ -14727,7 +14815,8 @@
   {
    "word": "grandchild",
    "phonetic": "",
-   "meaning": "n. 孙子；孙女；外孙；外孙女"
+   "meaning": "n. 孙子；孙女；外孙；外孙女",
+   "example": "Her grandchild visits every week.  她孙辈每周都来看她。"
   },
   {
    "word": "dam",
@@ -14738,7 +14827,8 @@
   {
    "word": "surrounding",
    "phonetic": "/sәˈraundiŋ/",
-   "meaning": "adj. 周围的，附近的；n. 环境，周围的事物"
+   "meaning": "adj. 周围的，附近的；n. 环境，周围的事物",
+   "example": "The surrounding hills are green.  周围的山丘一片翠绿。"
   },
   {
    "word": "patent",
@@ -14917,7 +15007,8 @@
   {
    "word": "robot",
    "phonetic": "/ˈrəubɔt, -bət, ˈrɔbət/",
-   "meaning": "n.机器人,自动机械"
+   "meaning": "n.机器人,自动机械",
+   "example": "The robot can walk and talk.  机器人会走路会说话。"
   },
   {
    "word": "dip",
@@ -15120,7 +15211,8 @@
   {
    "word": "supermarket",
    "phonetic": "/ˈsjuːpə,mɑːkit/",
-   "meaning": "n.超级市场"
+   "meaning": "n.超级市场",
+   "example": "The supermarket is two blocks away.  超市在两个街区外。"
   },
   {
    "word": "mobile",
@@ -15131,7 +15223,8 @@
   {
    "word": "widow",
    "phonetic": "/ˈwidəu/",
-   "meaning": "n.寡妇"
+   "meaning": "n.寡妇",
+   "example": "The widow lived with her son.  寡妇和儿子住在一起。"
   },
   {
    "word": "deposit",
@@ -15226,7 +15319,8 @@
   {
    "word": "warmth",
    "phonetic": "/wɔːmθ/",
-   "meaning": "n.暖和,温暖;热心,热情"
+   "meaning": "n.暖和,温暖;热心,热情",
+   "example": "The warmth of the blanket felt good.  毯子的温暖很舒服。"
   },
   {
    "word": "headache",
@@ -15237,7 +15331,8 @@
   {
    "word": "policeman",
    "phonetic": "/pəˈliːsmən/",
-   "meaning": "n.警察"
+   "meaning": "n.警察",
+   "example": "The policeman helped the old man cross.  警察扶老人过了马路。"
   },
   {
    "word": "suitable",
@@ -15278,7 +15373,8 @@
   {
    "word": "clay",
    "phonetic": "/klei/",
-   "meaning": "n.粘土,泥土"
+   "meaning": "n.粘土,泥土",
+   "example": "The pot is made of local clay.  罐子是本地黏土做的。"
   },
   {
    "word": "balloon",
@@ -15313,7 +15409,8 @@
   {
    "word": "sofa",
    "phonetic": "/ˈsəufə/",
-   "meaning": "n.长沙发,沙发"
+   "meaning": "n.长沙发,沙发",
+   "example": "The sofa faces the TV.  沙发对着电视。"
   },
   {
    "word": "sweater",
@@ -15420,7 +15517,8 @@
   {
    "word": "foreigner",
    "phonetic": "/ˈfɔrinə/",
-   "meaning": "n.外国人"
+   "meaning": "n.外国人",
+   "example": "The foreigner asked for directions.  外国人问了路。"
   },
   {
    "word": "convenience",
@@ -15515,7 +15613,8 @@
   {
    "word": "skeptical",
    "phonetic": "/ˈskeptikəl/",
-   "meaning": "a.怀疑的 [英]sceptical"
+   "meaning": "a.怀疑的 [英]sceptical",
+   "example": "I'm skeptical about the shortcut.  我对这条捷径持怀疑态度。"
   },
   {
    "word": "unfortunate",
@@ -15592,12 +15691,14 @@
   {
    "word": "thief",
    "phonetic": "/θiːf/",
-   "meaning": "n.(thieves)贼;小偷"
+   "meaning": "n.(thieves)贼;小偷",
+   "example": "The thief snatched her bag.  小偷抢了她的包。"
   },
   {
    "word": "autumn",
    "phonetic": "/ˈɔːtəm/",
-   "meaning": "n.秋,秋季;成熟期,渐衰期"
+   "meaning": "n.秋,秋季;成熟期,渐衰期",
+   "example": "Autumn brings cool breezes.  秋天带来凉风。"
   },
   {
    "word": "vague",
@@ -15614,12 +15715,14 @@
   {
    "word": "inspect",
    "phonetic": "/inˈspekt/",
-   "meaning": "vt.检查,调查,视察"
+   "meaning": "vt.检查,调查,视察",
+   "example": "Teachers inspect homework daily.  老师每天检查作业。"
   },
   {
    "word": "sailor",
    "phonetic": "/ˈseilə/",
-   "meaning": "n.水手,海员"
+   "meaning": "n.水手,海员",
+   "example": "The sailor read the stars.  水手看着星星导航。"
   },
   {
    "word": "suspension",
@@ -15648,7 +15751,8 @@
   {
    "word": "chat",
    "phonetic": "/tʃæt/",
-   "meaning": "v./n.闲谈,聊天"
+   "meaning": "v./n.闲谈,聊天",
+   "example": "We chatted during the break.  我们休息时聊了天。"
   },
   {
    "word": "pupil",
@@ -15689,7 +15793,8 @@
   {
    "word": "hydrogen",
    "phonetic": "/ˈhaidrədʒən/",
-   "meaning": "n.氢"
+   "meaning": "n.氢",
+   "example": "Hydrogen is the lightest gas.  氢气是最轻的气体。"
   },
   {
    "word": "vinegar",
@@ -15868,7 +15973,8 @@
   {
    "word": "classmate",
    "phonetic": "/ˈklɑːsmeit/",
-   "meaning": "(名)同班同学"
+   "meaning": "(名)同班同学",
+   "example": "My classmate lent me a pen.  同学借了支笔给我。"
   },
   {
    "word": "acute",
@@ -15885,7 +15991,8 @@
   {
    "word": "fountain",
    "phonetic": "/ˈfauntin/",
-   "meaning": "n.泉水,喷泉,源泉"
+   "meaning": "n.泉水,喷泉,源泉",
+   "example": "The fountain is in the center of the square.  喷泉在广场中央。"
   },
   {
    "word": "sour",
@@ -16022,7 +16129,8 @@
   {
    "word": "theirs",
    "phonetic": "/ðεəz/",
-   "meaning": "pron.[they的物主代词]他(她、它)们的"
+   "meaning": "pron.[they的物主代词]他(她、它)们的",
+   "example": "The blue bag is theirs.  蓝色的包是他们的。"
   },
   {
    "word": "tin",
@@ -16051,12 +16159,14 @@
   {
    "word": "waiter",
    "phonetic": "/weitə/",
-   "meaning": "n.侍者,服务员"
+   "meaning": "n.侍者,服务员",
+   "example": "The waiter poured us tea.  服务员给我们倒了茶。"
   },
   {
    "word": "downstairs",
    "phonetic": "/ˈdaunˈstεəz/",
-   "meaning": "ad.在楼下,往楼下"
+   "meaning": "ad.在楼下,往楼下",
+   "example": "The TV is downstairs.  电视在楼下。"
   },
   {
    "word": "rigid",
@@ -16073,12 +16183,14 @@
   {
    "word": "hometown",
    "phonetic": "/hәumˈtaun/",
-   "meaning": "n. 家乡；故乡"
+   "meaning": "n. 家乡；故乡",
+   "example": "I miss my hometown in spring.  春天我想念家乡。"
   },
   {
    "word": "settler",
    "phonetic": "/ˈsetlә/",
-   "meaning": "n. 移居者；殖民者；n. (Settler)人名；(德)泽特勒"
+   "meaning": "n. 移居者；殖民者；n. (Settler)人名；(德)泽特勒",
+   "example": "The settlers built a small village.  定居者建了个小村庄。"
   },
   {
    "word": "polite",
@@ -16101,7 +16213,8 @@
   {
    "word": "sadness",
    "phonetic": "/ˈsædnis/",
-   "meaning": "n.悲痛，悲哀"
+   "meaning": "n.悲痛，悲哀",
+   "example": "There was sadness in her voice.  她的声音里带着悲伤。"
   },
   {
    "word": "enthusiastic",
@@ -16112,7 +16225,8 @@
   {
    "word": "modem",
    "phonetic": "/'məudem/",
-   "meaning": "n. 调制解调器（等于modulator-demodulator）"
+   "meaning": "n. 调制解调器（等于modulator-demodulator）",
+   "example": "The modem connects us to the network.  调制解调器把我们连上网络。"
   },
   {
    "word": "supper",
@@ -16153,12 +16267,14 @@
   {
    "word": "goose",
    "phonetic": "/ɡuːs/",
-   "meaning": "n.(pl.geese)鹅,雌鹅,鹅肉"
+   "meaning": "n.(pl.geese)鹅,雌鹅,鹅肉",
+   "example": "A goose is a large water bird.  鹅是一种大型水鸟。"
   },
   {
    "word": "keyboard",
    "phonetic": "/ˈkiːbɔːd/",
-   "meaning": "n.键盘 vt.用键盘输入(信息)"
+   "meaning": "n.键盘 vt.用键盘输入(信息)",
+   "example": "Press any key on the keyboard.  按键盘上任意键。"
   },
   {
    "word": "vivid",
@@ -16169,7 +16285,8 @@
   {
    "word": "frighten",
    "phonetic": "/ˈfraitən/",
-   "meaning": "v.使惊恐"
+   "meaning": "v.使惊恐",
+   "example": "Don't frighten the baby.  别吓着宝宝。"
   },
   {
    "word": "poison",
@@ -16204,7 +16321,8 @@
   {
    "word": "physicist",
    "phonetic": "/ˈfizisist/",
-   "meaning": "n.物理学家"
+   "meaning": "n.物理学家",
+   "example": "The physicist won a prize.  这位物理学家获了奖。"
   },
   {
    "word": "vocabulary",
@@ -16329,7 +16447,8 @@
   {
    "word": "astronaut",
    "phonetic": "/ˈæstrənɔːt/",
-   "meaning": "n.太空人,太空旅行者"
+   "meaning": "n.太空人,太空旅行者",
+   "example": "The astronaut took a spacewalk.  宇航员进行了太空行走。"
   },
   {
    "word": "useless",
@@ -16484,7 +16603,8 @@
   {
    "word": "harbor",
    "phonetic": "/ˈhɑːbə/",
-   "meaning": "n.(harbour)海港;避难所 v.隐匿,窝藏"
+   "meaning": "n.(harbour)海港;避难所 v.隐匿,窝藏",
+   "example": "Ships wait in the harbor.  轮船在港口等候。"
   },
   {
    "word": "foolish",
@@ -16519,7 +16639,8 @@
   {
    "word": "ant",
    "phonetic": "/ænt/",
-   "meaning": "n.蚁;蚂蚁"
+   "meaning": "n.蚁;蚂蚁",
+   "example": "An ant carries food home.  蚂蚁把食物搬回家。"
   },
   {
    "word": "harmful",
@@ -16554,7 +16675,8 @@
   {
    "word": "courtyard",
    "phonetic": "/ˈkɔːt,jɑːd/",
-   "meaning": "n.院子,庭院,天井"
+   "meaning": "n.院子,庭院,天井",
+   "example": "The courtyard is shaded by trees.  院子被树荫遮着。"
   },
   {
    "word": "corrupt",
@@ -16565,7 +16687,8 @@
   {
    "word": "castle",
    "phonetic": "/ˈkɑːsl, ˈkæ-/",
-   "meaning": "n.城堡;(国际象棋中的)车"
+   "meaning": "n.城堡;(国际象棋中的)车",
+   "example": "Tourists visit the castle every day.  游客每天参观城堡。"
   },
   {
    "word": "parallel",
@@ -16630,12 +16753,14 @@
   {
    "word": "Easter",
    "phonetic": "/ˈiːstə/",
-   "meaning": "n.复活节"
+   "meaning": "n.复活节",
+   "example": "Children get eggs at Easter.  复活节孩子们得到彩蛋。"
   },
   {
    "word": "paragraph",
    "phonetic": "/ˈpærəɡrɑːf, -ɡræf/",
-   "meaning": "n.段,节;小新闻,短评"
+   "meaning": "n.段,节;小新闻,短评",
+   "example": "Answer in one paragraph.  用一段话回答。"
   },
   {
    "word": "recreation",
@@ -16706,7 +16831,8 @@
   {
    "word": "recorder",
    "phonetic": "/riˈkɔːdə/",
-   "meaning": "n.记录员;录音机"
+   "meaning": "n.记录员;录音机",
+   "example": "The recorder captured the song.  录音机录下了这首歌。"
   },
   {
    "word": "maid",
@@ -16717,7 +16843,8 @@
   {
    "word": "motorcycle",
    "phonetic": "/ˈmәutәsaikl/",
-   "meaning": "n. 摩托车；机动车；vi. 骑摩托车"
+   "meaning": "n. 摩托车；机动车；vi. 骑摩托车",
+   "example": "He rides a motorcycle to work.  他骑摩托车上班。"
   },
   {
    "word": "unbelievable",
@@ -16746,22 +16873,26 @@
   {
    "word": "mustard",
    "phonetic": "/ˈmʌstәd/",
-   "meaning": "n. 芥末；芥菜；深黄色；强烈的兴趣；n. (Mustard)人名；(英)马斯塔德"
+   "meaning": "n. 芥末；芥菜；深黄色；强烈的兴趣；n. (Mustard)人名；(英)马斯塔德",
+   "example": "Add a little mustard to the sauce.  酱汁里加点芥末。"
   },
   {
    "word": "villager",
    "phonetic": "",
-   "meaning": "n. 乡村居民，村民"
+   "meaning": "n. 乡村居民，村民",
+   "example": "The villager offered us water.  村民给我们端来了水。"
   },
   {
    "word": "garment",
    "phonetic": "/ˈɡɑːmənt/",
-   "meaning": "n.(一件)衣服"
+   "meaning": "n.(一件)衣服",
+   "example": "This garment is made of silk.  这件衣服是丝绸的。"
   },
   {
    "word": "kindergarten",
    "phonetic": "/ˈkaindnis/",
-   "meaning": "n.幼儿园"
+   "meaning": "n.幼儿园",
+   "example": "The kindergarten has a big yard.  幼儿园有个大院子。"
   },
   {
    "word": "Arctic",
@@ -16772,7 +16903,8 @@
   {
    "word": "quilt",
    "phonetic": "/kwilt/",
-   "meaning": "n.被子"
+   "meaning": "n.被子",
+   "example": "The quilt was sewn by hand.  被子是手工缝的。"
   },
   {
    "word": "pyramid",
@@ -16801,7 +16933,8 @@
   {
    "word": "freeway",
    "phonetic": "",
-   "meaning": "n. 高速公路"
+   "meaning": "n. 高速公路",
+   "example": "The freeway was jammed.  高速堵车了。"
   },
   {
    "word": "multiply",
@@ -16842,7 +16975,8 @@
   {
    "word": "tomb",
    "phonetic": "/tuːm/",
-   "meaning": "n.坟,冢"
+   "meaning": "n.坟,冢",
+   "example": "The tomb was sealed for centuries.  这座墓密封了几个世纪。"
   },
   {
    "word": "straightforward",
@@ -16871,7 +17005,8 @@
   {
    "word": "mainland",
    "phonetic": "/ˈmeinlənd/",
-   "meaning": "n.大陆,本土"
+   "meaning": "n.大陆,本土",
+   "example": "The island is a short boat ride from the mainland.  坐船很快能到大陆。"
   },
   {
    "word": "turning",
@@ -16936,7 +17071,8 @@
   {
    "word": "eagle",
    "phonetic": "/ˈiːɡl/",
-   "meaning": "n.鹰"
+   "meaning": "n.鹰",
+   "example": "An eagle caught a fish.  鹰抓到了一条鱼。"
   },
   {
    "word": "tense",
@@ -16965,7 +17101,8 @@
   {
    "word": "zoo",
    "phonetic": "/zuː/",
-   "meaning": "n.动物园"
+   "meaning": "n.动物园",
+   "example": "The zoo has a new lion.  动物园来了新狮子。"
   },
   {
    "word": "disadvantage",
@@ -17018,7 +17155,8 @@
   {
    "word": "communist",
    "phonetic": "/ˈkɔmjunist/",
-   "meaning": "n.共产党员"
+   "meaning": "n.共产党员",
+   "example": "The communist party was founded in 1921.  共产党成立于 1921 年。"
   },
   {
    "word": "awesome",
@@ -17029,12 +17167,14 @@
   {
    "word": "novelist",
    "phonetic": "",
-   "meaning": "n. 小说家"
+   "meaning": "n. 小说家",
+   "example": "The novelist based the story on real events.  小说家以真实事件为素材创作。"
   },
   {
    "word": "nephew",
    "phonetic": "/ˈnefjuː, ˈnev-/",
-   "meaning": "n.侄子,外甥"
+   "meaning": "n.侄子,外甥",
+   "example": "My nephew is in primary school.  我侄子上小学。"
   },
   {
    "word": "glare",
@@ -17057,7 +17197,8 @@
   {
    "word": "download",
    "phonetic": "",
-   "meaning": "vt. [计] 下载"
+   "meaning": "vt. [计] 下载",
+   "example": "Download the file from the link.  从链接下载文件。"
   },
   {
    "word": "handy",
@@ -17068,12 +17209,14 @@
   {
    "word": "flashlight",
    "phonetic": "/ˈflæʃlait/",
-   "meaning": "n. 手电筒；闪光灯"
+   "meaning": "n. 手电筒；闪光灯",
+   "example": "Shine the flashlight into the cave.  用手电照进山洞。"
   },
   {
    "word": "waitress",
    "phonetic": "/ˈweitris/",
-   "meaning": "n.女侍者,女服务员"
+   "meaning": "n.女侍者,女服务员",
+   "example": "The waitress wrote down our order.  女服务员记下了我们点的菜。"
   },
   {
    "word": "recite",
@@ -17126,7 +17269,8 @@
   {
    "word": "astronomy",
    "phonetic": "/əˈstrɔnəmi/",
-   "meaning": "n.天文学"
+   "meaning": "n.天文学",
+   "example": "She chose astronomy as her major.  她选了天文学专业。"
   },
   {
    "word": "devotion",
@@ -17161,7 +17305,8 @@
   {
    "word": "underwear",
    "phonetic": "",
-   "meaning": "n. 内衣物"
+   "meaning": "n. 内衣物",
+   "example": "Pack a change of underwear.  带一套换洗内衣。"
   },
   {
    "word": "carriage",
@@ -17178,7 +17323,8 @@
   {
    "word": "tractor",
    "phonetic": "/ˈtræktə/",
-   "meaning": "n.拖拉机,牵引车"
+   "meaning": "n.拖拉机,牵引车",
+   "example": "The tractor ploughed the field.  拖拉机耕了地。"
   },
   {
    "word": "postpone",
@@ -17225,7 +17371,8 @@
   {
    "word": "brochure",
    "phonetic": "/ˈbruʃə/",
-   "meaning": "n.小册子"
+   "meaning": "n.小册子",
+   "example": "The brochure shows the tour plan.  小册子上是旅游方案。"
   },
   {
    "word": "perfume",
@@ -17266,7 +17413,8 @@
   {
    "word": "grandson",
    "phonetic": "/ˈgrændsʌn/",
-   "meaning": "n.孙子，外孙子"
+   "meaning": "n.孙子，外孙子",
+   "example": "My grandson loves dinosaurs.  我孙子喜欢恐龙。"
   },
   {
    "word": "messy",
@@ -17289,7 +17437,8 @@
   {
    "word": "violin",
    "phonetic": "/ˌvaiəˈlin/",
-   "meaning": "n.小提琴"
+   "meaning": "n.小提琴",
+   "example": "She practices the violin daily.  她每天练小提琴。"
   },
   {
    "word": "rag",
@@ -17354,7 +17503,8 @@
   {
    "word": "tiger",
    "phonetic": "/ˈtaiɡə/",
-   "meaning": "n.虎;老虎"
+   "meaning": "n.虎;老虎",
+   "example": "A tiger roared in the forest.  一只老虎在林中咆哮。"
   },
   {
    "word": "allocate",
@@ -17377,12 +17527,14 @@
   {
    "word": "barbecue",
    "phonetic": "/ˈbɑːbikjuː/",
-   "meaning": "n.烤肉;烤肉用的台架 vt.炙烤(肉等)"
+   "meaning": "n.烤肉;烤肉用的台架 vt.炙烤(肉等)",
+   "example": "We held a barbecue by the lake.  我们在湖边烧烤。"
   },
   {
    "word": "translator",
    "phonetic": "",
-   "meaning": "n. 译者；翻译器"
+   "meaning": "n. 译者；翻译器",
+   "example": "The translator rendered it into Chinese.  译者把它译成了中文。"
   },
   {
    "word": "gradual",
@@ -17435,7 +17587,8 @@
   {
    "word": "pear",
    "phonetic": "/pεə/",
-   "meaning": "n.梨子,梨树"
+   "meaning": "n.梨子,梨树",
+   "example": "Pears ripen in autumn.  梨在秋天成熟。"
   },
   {
    "word": "contradict",
@@ -17482,7 +17635,8 @@
   {
    "word": "postcard",
    "phonetic": "",
-   "meaning": "n.明信片"
+   "meaning": "n.明信片",
+   "example": "I bought postcards for my friends.  我给朋友们买了明信片。"
   },
   {
    "word": "hardship",
@@ -17511,12 +17665,14 @@
   {
    "word": "chess",
    "phonetic": "/tʃes/",
-   "meaning": "n.棋,国际象棋"
+   "meaning": "n.棋,国际象棋",
+   "example": "We taught the kids to play chess.  我们教孩子们下国际象棋。"
   },
   {
    "word": "camel",
    "phonetic": "/ˈkæməl/",
-   "meaning": "n.骆驼"
+   "meaning": "n.骆驼",
+   "example": "A camel can carry heavy loads.  骆驼能驮重物。"
   },
   {
    "word": "worthwhile",
@@ -17527,7 +17683,8 @@
   {
    "word": "irrigation",
    "phonetic": "/ˌɪrɪˈɡeɪʃən/",
-   "meaning": "n. 灌溉；[临床] 冲洗；冲洗法"
+   "meaning": "n. 灌溉；[临床] 冲洗；冲洗法",
+   "example": "Irrigation saved the crops.  灌溉救了庄稼。"
   },
   {
    "word": "cabbage",
@@ -17550,12 +17707,14 @@
   {
    "word": "emperor",
    "phonetic": "/ˈempərə/",
-   "meaning": "n.皇帝"
+   "meaning": "n.皇帝",
+   "example": "The emperor lived behind high walls.  皇帝住在高墙之内。"
   },
   {
    "word": "cafeteria",
    "phonetic": "/ˌkæfiˈtiəriə/",
-   "meaning": "n.自助食堂"
+   "meaning": "n.自助食堂",
+   "example": "The cafeteria serves noodles at noon.  自助餐厅中午卖面条。"
   },
   {
    "word": "ambiguous",
@@ -17566,7 +17725,8 @@
   {
    "word": "communism",
    "phonetic": "/ˈkɔmjunizəm/",
-   "meaning": "n.共产主义"
+   "meaning": "n.共产主义",
+   "example": "They discussed communism in class.  课上他们讨论了共产主义。"
   },
   {
    "word": "fry",
@@ -17589,7 +17749,8 @@
   {
    "word": "cozy",
    "phonetic": "/ˈkәuzi/",
-   "meaning": "n. 保温罩；vt. 蒙骗；抚慰；adj. 舒适的；安逸的"
+   "meaning": "n. 保温罩；vt. 蒙骗；抚慰；adj. 舒适的；安逸的",
+   "example": "The cabin is small but cozy.  小屋不大但很温馨。"
   },
   {
    "word": "dusk",
@@ -17618,7 +17779,8 @@
   {
    "word": "socialism",
    "phonetic": "/ˈsəuʃəlizəm/",
-   "meaning": "n.社会主义"
+   "meaning": "n.社会主义",
+   "example": "The textbook explains socialism.  课本讲解了社会主义。"
   },
   {
    "word": "glue",
@@ -17725,12 +17887,14 @@
   {
    "word": "contradictory",
    "phonetic": "/,kɔntrə'diktəri/",
-   "meaning": "adj. 矛盾的；反对的；反驳的；抗辩的；n. 对立物；矛盾因素"
+   "meaning": "adj. 矛盾的；反对的；反驳的；抗辩的；n. 对立物；矛盾因素",
+   "example": "His statements are contradictory.  他的说法自相矛盾。"
   },
   {
    "word": "madame",
    "phonetic": "/mɑːˈdɑːm, ˈmædəm/",
-   "meaning": "n.(madam)夫人,太太,女士"
+   "meaning": "n.(madam)夫人,太太,女士",
+   "example": "Madame Curie won two Nobel Prizes.  居里夫人两获诺贝尔奖。"
   },
   {
    "word": "merry",
@@ -17765,12 +17929,14 @@
   {
    "word": "niece",
    "phonetic": "/niːs/",
-   "meaning": "n.侄女,甥女"
+   "meaning": "n.侄女,甥女",
+   "example": "My niece is four years old.  我侄女四岁。"
   },
   {
    "word": "hamburger",
    "phonetic": "/ˈhæmbəːɡə/",
-   "meaning": "n.汉堡包,牛肉饼"
+   "meaning": "n.汉堡包,牛肉饼",
+   "example": "I'll have a hamburger, please.  请给我一个汉堡包。"
   },
   {
    "word": "abolish",
@@ -17781,7 +17947,8 @@
   {
    "word": "capsule",
    "phonetic": "/ˈkæpsjuːl/",
-   "meaning": "n.胶囊;太空舱"
+   "meaning": "n.胶囊;太空舱",
+   "example": "Swallow the capsule with water.  用水送服胶囊。"
   },
   {
    "word": "autonomous",
@@ -17792,7 +17959,8 @@
   {
    "word": "librarian",
    "phonetic": "/laiˈbrεəriən/",
-   "meaning": "n.图书管理员"
+   "meaning": "n.图书管理员",
+   "example": "Ask the librarian for help.  找图书管理员帮忙。"
   },
   {
    "word": "preview",
@@ -17845,7 +18013,8 @@
   {
    "word": "foresee",
    "phonetic": "/fɔːˈsiː/",
-   "meaning": "v.预见,预知"
+   "meaning": "v.预见,预知",
+   "example": "I couldn't foresee this change.  我没料到这个变化。"
   },
   {
    "word": "oneself",
@@ -17898,7 +18067,8 @@
   {
    "word": "tentative",
    "phonetic": "/ˈtentətiv/",
-   "meaning": "a.试探性的,暂时的;犹豫不决的"
+   "meaning": "a.试探性的,暂时的;犹豫不决的",
+   "example": "We reached a tentative agreement.  我们达成了初步协议。"
   },
   {
    "word": "ache",
@@ -17939,7 +18109,8 @@
   {
    "word": "cubic",
    "phonetic": "/ˈkjuːbik/",
-   "meaning": "a.立方形的；立方的"
+   "meaning": "a.立方形的；立方的",
+   "example": "The box has a cubic shape.  盒子是立方体形的。"
   },
   {
    "word": "fingernail",
@@ -17950,7 +18121,8 @@
   {
    "word": "tailor",
    "phonetic": "/ˈteilə/",
-   "meaning": "n.裁缝 v.缝制,剪裁"
+   "meaning": "n.裁缝 v.缝制,剪裁",
+   "example": "The tailor altered the jacket.  裁缝改了夹克。"
   },
   {
    "word": "comprehension",
@@ -17967,7 +18139,8 @@
   {
    "word": "fireworks",
    "phonetic": "",
-   "meaning": "n. 烟火（firework的复数形式）；激烈争论"
+   "meaning": "n. 烟火（firework的复数形式）；激烈争论",
+   "example": "We watched the fireworks by the river.  我们在河边看烟花。"
   },
   {
    "word": "pardon",
@@ -17978,7 +18151,8 @@
   {
    "word": "walnut",
    "phonetic": "/ˈwɒːlnәt/",
-   "meaning": "n. 胡桃；胡桃木；adj. 胡桃科植物的"
+   "meaning": "n. 胡桃；胡桃木；adj. 胡桃科植物的",
+   "example": "Walnuts are good for the brain.  核桃对大脑好。"
   },
   {
    "word": "geometry",
@@ -17995,7 +18169,8 @@
   {
    "word": "volleyball",
    "phonetic": "/ˈvɔlibɔːl/",
-   "meaning": "n.排球"
+   "meaning": "n.排球",
+   "example": "They won the volleyball final.  他们赢了排球决赛。"
   },
   {
    "word": "radioactive",
@@ -18078,7 +18253,8 @@
   {
    "word": "carpenter",
    "phonetic": "/ˈkɑːpəntə/",
-   "meaning": "n.木工,木匠"
+   "meaning": "n.木工,木匠",
+   "example": "The carpenter fixed the door.  木匠修好了门。"
   },
   {
    "word": "biscuit",
@@ -18089,12 +18265,14 @@
   {
    "word": "bakery",
    "phonetic": "",
-   "meaning": "n. 面包店"
+   "meaning": "n. 面包店",
+   "example": "The bakery smells of fresh bread.  面包店飘着新鲜面包香。"
   },
   {
    "word": "apron",
    "phonetic": "/'eiprən/",
-   "meaning": "n. 围裙；[航] 停机坪；舞台口；vt. 着围裙于；围绕；n. (Apron)人名；(俄)阿普龙"
+   "meaning": "n. 围裙；[航] 停机坪；舞台口；vt. 着围裙于；围绕；n. (Apron)人名；(俄)阿普龙",
+   "example": "She tied on an apron to cook.  她系上围裙做饭。"
   },
   {
    "word": "thunder",
@@ -18177,7 +18355,8 @@
   {
    "word": "stainless",
    "phonetic": "",
-   "meaning": "adj. 不锈的；纯洁的，未被玷污的；无瑕疵的"
+   "meaning": "adj. 不锈的；纯洁的，未被玷污的；无瑕疵的",
+   "example": "The pots are stainless steel.  这些锅是不锈钢的。"
   },
   {
    "word": "misunderstand",
@@ -18212,12 +18391,14 @@
   {
    "word": "lantern",
    "phonetic": "/ˈlæntən/",
-   "meaning": "n.灯,灯笼"
+   "meaning": "n.灯,灯笼",
+   "example": "Red lanterns decorated the street.  红灯笼装点了街道。"
   },
   {
    "word": "dorm",
    "phonetic": "/dɔːm/",
-   "meaning": "n.(dormitory)[美][口]宿舍"
+   "meaning": "n.(dormitory)[美][口]宿舍",
+   "example": "The dorm has four beds.  宿舍有四张床。"
   },
   {
    "word": "jog",
@@ -18246,7 +18427,8 @@
   {
    "word": "congratulate",
    "phonetic": "/kənˈɡrætʃu,leit/",
-   "meaning": "v.(on)祝贺,向…致贺词"
+   "meaning": "v.(on)祝贺,向…致贺词",
+   "example": "Let me congratulate you.  让我祝贺你。"
   },
   {
    "word": "grammar",
@@ -18269,7 +18451,8 @@
   {
    "word": "thankful",
    "phonetic": "",
-   "meaning": "adj. 感谢的；欣慰的"
+   "meaning": "adj. 感谢的；欣慰的",
+   "example": "I'm thankful for your help.  感谢你的帮助。"
   },
   {
    "word": "diploma",
@@ -18328,7 +18511,8 @@
   {
    "word": "granddaughter",
    "phonetic": "/ˈgrændɔːtə(r)/",
-   "meaning": "n.孙女，外孙女"
+   "meaning": "n.孙女，外孙女",
+   "example": "My granddaughter loves music.  我孙女喜欢音乐。"
   },
   {
    "word": "accustomed",
@@ -18351,7 +18535,8 @@
   {
    "word": "housewife",
    "phonetic": "/ˈhauswaif/",
-   "meaning": "n.家庭主妇"
+   "meaning": "n.家庭主妇",
+   "example": "She is a part-time housewife.  她是兼职家庭主妇。"
   },
   {
    "word": "outward",
@@ -18488,7 +18673,8 @@
   {
    "word": "mailbox",
    "phonetic": "/ˈmeilbɒks/",
-   "meaning": "n. 邮箱；邮筒"
+   "meaning": "n. 邮箱；邮筒",
+   "example": "Check the mailbox for letters.  查看信箱有没有信。"
   },
   {
    "word": "outgoing",
@@ -18541,12 +18727,14 @@
   {
    "word": "caption",
    "phonetic": "/ˈkæpʃən/",
-   "meaning": "n. 标题；字幕；说明；逮捕；vt. 加上说明；加上标题"
+   "meaning": "n. 标题；字幕；说明；逮捕；vt. 加上说明；加上标题",
+   "example": "The caption explains the photo.  说明文字解释了这张照片。"
   },
   {
    "word": "crossroads",
    "phonetic": "",
-   "meaning": "n. 十字路口；交叉路口；聚会的中心地点"
+   "meaning": "n. 十字路口；交叉路口；聚会的中心地点",
+   "example": "The town sits at a crossroads.  这座小城位于十字路口。"
   },
   {
    "word": "allergic",
@@ -18557,12 +18745,14 @@
   {
    "word": "barber",
    "phonetic": "/ˈbɑːbə/",
-   "meaning": "n.理发师 vt.为…理发修整 vi.当理发师"
+   "meaning": "n.理发师 vt.为…理发修整 vi.当理发师",
+   "example": "The barber trimmed my hair.  理发师给我修了头发。"
   },
   {
    "word": "chemist",
    "phonetic": "/ˈkemist/",
-   "meaning": "n.化学家;药剂师"
+   "meaning": "n.化学家;药剂师",
+   "example": "The chemist made a new mixture.  化学家配了种新混合物。"
   },
   {
    "word": "rainfall",
@@ -18633,7 +18823,8 @@
   {
    "word": "broom",
    "phonetic": "/bruːm/",
-   "meaning": "n.扫帚"
+   "meaning": "n.扫帚",
+   "example": "The broom leans by the door.  扫帚靠在门边。"
   },
   {
    "word": "bandage",
@@ -18674,7 +18865,8 @@
   {
    "word": "cyclist",
    "phonetic": "",
-   "meaning": "n. 骑自行车的人"
+   "meaning": "n. 骑自行车的人",
+   "example": "The cyclist hit the curb.  骑车人撞上了路缘。"
   },
   {
    "word": "amuse",
@@ -18697,7 +18889,8 @@
   {
    "word": "bathtub",
    "phonetic": "/ˈbɑːθtʌb/",
-   "meaning": "n. 浴缸"
+   "meaning": "n. 浴缸",
+   "example": "The bathtub needs cleaning.  浴缸该清理了。"
   },
   {
    "word": "troublesome",
@@ -18732,12 +18925,14 @@
   {
    "word": "melon",
    "phonetic": "/ˈmelən/",
-   "meaning": "n.甜瓜"
+   "meaning": "n.甜瓜",
+   "example": "Cut the melon into slices.  把瓜切成片。"
   },
   {
    "word": "worn",
    "phonetic": "/wɒːn/",
-   "meaning": "adj. 疲倦的；用旧的；v. 穿；磨损（wear的过去分词）；佩戴；n. (Worn)人名；(柬)翁；(英、葡)沃恩"
+   "meaning": "adj. 疲倦的；用旧的；v. 穿；磨损（wear的过去分词）；佩戴；n. (Worn)人名；(柬)翁；(英、葡)沃恩",
+   "example": "His shoes are worn out.  他的鞋穿破了。"
   },
   {
    "word": "anyhow",
@@ -18772,12 +18967,14 @@
   {
    "word": "rectangle",
    "phonetic": "/ˈrek,tæŋɡl/",
-   "meaning": "n.[数]矩形, 长方形"
+   "meaning": "n.[数]矩形, 长方形",
+   "example": "The picture is a rectangle.  这幅画是长方形的。"
   },
   {
    "word": "statesman",
    "phonetic": "/ˈsteitsmən/",
-   "meaning": "n.政治家,国务活动家"
+   "meaning": "n.政治家,国务活动家",
+   "example": "The statesman spoke for peace.  这位政治家为和平发声。"
   },
   {
    "word": "poisonous",
@@ -18818,7 +19015,8 @@
   {
    "word": "receptionist",
    "phonetic": "",
-   "meaning": "n. 接待员；传达员"
+   "meaning": "n. 接待员；传达员",
+   "example": "The receptionist checked us in.  接待员给我们办了入住。"
   },
   {
    "word": "unbearable",
@@ -18829,7 +19027,8 @@
   {
    "word": "hostess",
    "phonetic": "/ˈhəustis/",
-   "meaning": "n.女主人,女主持人"
+   "meaning": "n.女主人,女主持人",
+   "example": "The hostess welcomed the guests.  女主人迎接客人。"
   },
   {
    "word": "sow",
@@ -18840,7 +19039,8 @@
   {
    "word": "zipper",
    "phonetic": "",
-   "meaning": "n. 拉链；vi. 拉上拉链；vt. 用拉链扣上；n. (Zipper)人名；(英、德)齐珀"
+   "meaning": "n. 拉链；vi. 拉上拉链；vt. 用拉链扣上；n. (Zipper)人名；(英、德)齐珀",
+   "example": "The zipper on my bag broke.  我包的拉链坏了。"
   },
   {
    "word": "gymnastics",
@@ -18869,17 +19069,20 @@
   {
    "word": "skyscraper",
    "phonetic": "/ˈskai,skreipə/",
-   "meaning": "n.摩天大楼"
+   "meaning": "n.摩天大楼",
+   "example": "A skyscraper stands on the riverside.  河边立着一座摩天楼。"
   },
   {
    "word": "thunderstorm",
    "phonetic": "/ˈθʌndәstɒːm/",
-   "meaning": "n. [气象] 雷暴；雷暴雨；大雷雨"
+   "meaning": "n. [气象] 雷暴；雷暴雨；大雷雨",
+   "example": "The thunderstorm knocked out power.  雷暴把电打停了。"
   },
   {
    "word": "eggplant",
    "phonetic": "",
-   "meaning": "n. 茄子；adj. 深紫色的"
+   "meaning": "n. 茄子；adj. 深紫色的",
+   "example": "Stir-fry the eggplant with garlic.  茄子和蒜一起炒。"
   },
   {
    "word": "whichever",
@@ -18896,7 +19099,8 @@
   {
    "word": "centimeter",
    "phonetic": "",
-   "meaning": "n. [计量] 厘米；[计量] 公分"
+   "meaning": "n. [计量] 厘米；[计量] 公分",
+   "example": "The snail moves one centimeter a minute.  蜗牛每分钟爬一厘米。"
   },
   {
    "word": "bungalow",
@@ -18931,7 +19135,8 @@
   {
    "word": "jeep",
    "phonetic": "",
-   "meaning": "n. 吉普车"
+   "meaning": "n. 吉普车",
+   "example": "The jeep climbed the dirt road.  吉普车爬上了土路。"
   },
   {
    "word": "breathless",
@@ -18942,12 +19147,14 @@
   {
    "word": "dormitory",
    "phonetic": "/ˈdɔːmitri/",
-   "meaning": "n.集体寝室；宿舍"
+   "meaning": "n.集体寝室；宿舍",
+   "example": "The dormitory has two hundred rooms.  宿舍楼有两百间房。"
   },
   {
    "word": "watermelon",
    "phonetic": "/ˈwɒtә.melәn/",
-   "meaning": "n. 西瓜"
+   "meaning": "n. 西瓜",
+   "example": "Watermelon is sweet in summer.  夏天的西瓜很甜。"
   },
   {
    "word": "shabby",
@@ -18964,12 +19171,14 @@
   {
    "word": "burglar",
    "phonetic": "/ˈbəːɡlə/",
-   "meaning": "n.(入室行窃的)盗贼"
+   "meaning": "n.(入室行窃的)盗贼",
+   "example": "The burglar broke in at night.  盗贼夜里闯了进来。"
   },
   {
    "word": "mommy",
    "phonetic": "",
-   "meaning": "n. 妈咪"
+   "meaning": "n. 妈咪",
+   "example": "The toddler held his mommy's hand.  幼儿牵着妈妈的手。"
   },
   {
    "word": "quarrel",
@@ -18980,7 +19189,8 @@
   {
    "word": "grandma",
    "phonetic": "/ˈgrændmɑː/",
-   "meaning": "n. 奶奶；外婆"
+   "meaning": "n. 奶奶；外婆",
+   "example": "Grandma knitted me a scarf.  奶奶给我织了条围巾。"
   },
   {
    "word": "further",
@@ -19003,17 +19213,20 @@
   {
    "word": "liter",
    "phonetic": "/ˈliːtə/",
-   "meaning": "n.升(容量单位)"
+   "meaning": "n.升(容量单位)",
+   "example": "Add half a liter of milk.  加半升牛奶。"
   },
   {
    "word": "birthplace",
    "phonetic": "/ˈbәːθpleis/",
-   "meaning": "n. 出生地；发源地"
+   "meaning": "n. 出生地；发源地",
+   "example": "Kunming is the birthplace of many artists.  昆明是许多艺术家的出生地。"
   },
   {
    "word": "lemonade",
    "phonetic": "",
-   "meaning": "n. 柠檬水"
+   "meaning": "n. 柠檬水",
+   "example": "She made fresh lemonade.  她做了鲜榨柠檬水。"
   },
   {
    "word": "unconditional",
@@ -19024,17 +19237,20 @@
   {
    "word": "rooster",
    "phonetic": "/ˈruːstә/",
-   "meaning": "n. 公鸡；狂妄自负的人"
+   "meaning": "n. 公鸡；狂妄自负的人",
+   "example": "The rooster crows at dawn.  公鸡黎明打鸣。"
   },
   {
    "word": "spaceship",
    "phonetic": "/ˈspeisʃip/",
-   "meaning": "n.宇宙飞船"
+   "meaning": "n.宇宙飞船",
+   "example": "The spaceship landed safely.  宇宙飞船安全着陆。"
   },
   {
    "word": "spoken",
    "phonetic": "/ˈspәukәn/",
-   "meaning": "adj. 口语的，口头的；v. 说（speak的过去分词）"
+   "meaning": "adj. 口语的，口头的；v. 说（speak的过去分词）",
+   "example": "Spoken English differs from written English.  口语英语不同于书面语。"
   },
   {
    "word": "riddle",
@@ -19057,7 +19273,8 @@
   {
    "word": "handbag",
    "phonetic": "/ˈhændbæg/",
-   "meaning": "n. 手提包"
+   "meaning": "n. 手提包",
+   "example": "She left her handbag on the table.  她把手包落在了桌上。"
   },
   {
    "word": "fluent",
@@ -19074,7 +19291,8 @@
   {
    "word": "Buddhism",
    "phonetic": "/ˈbudizm/",
-   "meaning": "n. 佛教"
+   "meaning": "n. 佛教",
+   "example": "Buddhism spread across Asia.  佛教传遍了亚洲。"
   },
   {
    "word": "bent",
@@ -19085,7 +19303,8 @@
   {
    "word": "seaside",
    "phonetic": "/ˈsiːsaid/",
-   "meaning": "n.海滨,海边"
+   "meaning": "n.海滨,海边",
+   "example": "We spent a day at the seaside.  我们在海边玩了一天。"
   },
   {
    "word": "bravery",
@@ -19138,7 +19357,8 @@
   {
    "word": "millimeter",
    "phonetic": "/ˈmili,miːtə/",
-   "meaning": "n.(millimetre)毫米"
+   "meaning": "n.(millimetre)毫米",
+   "example": "The tolerance is half a millimeter.  公差是半毫米。"
   },
   {
    "word": "foggy",
@@ -19149,7 +19369,8 @@
   {
    "word": "overcoat",
    "phonetic": "/ˈəuvəkəut/",
-   "meaning": "n.外衣,大衣"
+   "meaning": "n.外衣,大衣",
+   "example": "Hang your overcoat by the door.  把大衣挂在门边。"
   },
   {
    "word": "mistaken",
@@ -19172,7 +19393,8 @@
   {
    "word": "shopkeeper",
    "phonetic": "/ˈʃɔp,kiːpə/",
-   "meaning": "n.店主,老板"
+   "meaning": "n.店主,老板",
+   "example": "The shopkeeper knows me by name.  店主记得我的名字。"
   },
   {
    "word": "analyse",
@@ -19189,12 +19411,14 @@
   {
    "word": "algebra",
    "phonetic": "/'ældʒibrə/",
-   "meaning": "n. 代数学"
+   "meaning": "n. 代数学",
+   "example": "Algebra was hard for me at first.  代数一开始对我很难。"
   },
   {
    "word": "teapot",
    "phonetic": "/ˈtiːpɒt/",
-   "meaning": "n. 茶壶；小题大做"
+   "meaning": "n. 茶壶；小题大做",
+   "example": "The teapot is still hot.  茶壶还是热的。"
   },
   {
    "word": "smog",
@@ -19211,17 +19435,20 @@
   {
    "word": "gymnasium",
    "phonetic": "/dʒimˈneiziəm/",
-   "meaning": "n.(gym)体育馆,健身房"
+   "meaning": "n.(gym)体育馆,健身房",
+   "example": "The gymnasium holds a thousand people.  体育馆能容纳一千人。"
   },
   {
    "word": "fluency",
    "phonetic": "",
-   "meaning": "n. （语言、文章）流利；（技能）娴熟；n. 流畅度（写作演讲等）"
+   "meaning": "n. （语言、文章）流利；（技能）娴熟；n. 流畅度（写作演讲等）",
+   "example": "Reading improves your fluency.  阅读提高流利度。"
   },
   {
    "word": "seaweed",
    "phonetic": "/ˈsiːwiːd/",
-   "meaning": "n. 海藻，海草"
+   "meaning": "n. 海藻，海草",
+   "example": "Seaweed washes up on the beach.  海藻被冲上沙滩。"
   },
   {
    "word": "postage",
@@ -19232,7 +19459,8 @@
   {
    "word": "blackboard",
    "phonetic": "/ˈblækbɔːd/",
-   "meaning": "n.黑板"
+   "meaning": "n.黑板",
+   "example": "Clean the blackboard after class.  课后擦黑板。"
   },
   {
    "word": "stout",
@@ -19249,7 +19477,8 @@
   {
    "word": "tortoise",
    "phonetic": "/ˈtɔːtəs/",
-   "meaning": "n.龟，乌龟"
+   "meaning": "n.龟，乌龟",
+   "example": "The tortoise won the race.  乌龟赢了比赛。"
   },
   {
    "word": "mummy",
@@ -19278,7 +19507,8 @@
   {
    "word": "violinist",
    "phonetic": "",
-   "meaning": "n. 小提琴演奏者，小提琴家"
+   "meaning": "n. 小提琴演奏者，小提琴家",
+   "example": "The violinist played beautifully.  小提琴手拉得很美。"
   },
   {
    "word": "strait",
@@ -19289,7 +19519,8 @@
   {
    "word": "toothbrush",
    "phonetic": "/ˈtuːθbrʌʃ/",
-   "meaning": "n. 牙刷"
+   "meaning": "n. 牙刷",
+   "example": "Change your toothbrush every three months.  每三个月换一次牙刷。"
   },
   {
    "word": "appendix",
@@ -19300,12 +19531,14 @@
   {
    "word": "zebra",
    "phonetic": "/ˈziːbrə/",
-   "meaning": "n.斑马"
+   "meaning": "n.斑马",
+   "example": "A zebra has stripes.  斑马身上有条纹。"
   },
   {
    "word": "coke",
    "phonetic": "/kәuk/",
-   "meaning": "n.焦炭;可口可乐(COCA-COLA)的缩写"
+   "meaning": "n.焦炭;可口可乐(COCA-COLA)的缩写",
+   "example": "I'd like a coke, please.  请给我一杯可乐。"
   },
   {
    "word": "mum",
@@ -19316,7 +19549,8 @@
   {
    "word": "sparrow",
    "phonetic": "/ˈspærəu/",
-   "meaning": "n.麻雀"
+   "meaning": "n.麻雀",
+   "example": "A sparrow hopped on the ground.  一只麻雀在地上跳。"
   },
   {
    "word": "toothpaste",
@@ -19327,17 +19561,20 @@
   {
    "word": "cheers",
    "phonetic": "/tʃiәz/",
-   "meaning": "v. 感谢；谢谢；再见"
+   "meaning": "v. 感谢；谢谢；再见",
+   "example": "Cheers! Here's to the new year.  干杯！为新年干杯。"
   },
   {
    "word": "grocer",
    "phonetic": "/ˈɡrəusə/",
-   "meaning": "n.食品商,杂货商"
+   "meaning": "n.食品商,杂货商",
+   "example": "The grocer sells fresh milk.  杂货商卖鲜奶。"
   },
   {
    "word": "judgement",
    "phonetic": "/ˈdʒʌdʒmənt/",
-   "meaning": "n.(judgment)审判,判决;判断(力);看法,意见"
+   "meaning": "n.(judgment)审判,判决;判断(力);看法,意见",
+   "example": "Use your judgement and decide.  用你的判断力决定。"
   },
   {
    "word": "labour",
@@ -19354,7 +19591,8 @@
   {
    "word": "panda",
    "phonetic": "/ˈpændə/",
-   "meaning": "n.熊猫"
+   "meaning": "n.熊猫",
+   "example": "The panda ate quietly.  大熊猫安静地吃着。"
   },
   {
    "word": "ripen",
@@ -19371,7 +19609,8 @@
   {
    "word": "tram",
    "phonetic": "/træm/",
-   "meaning": "n.有轨电车"
+   "meaning": "n.有轨电车",
+   "example": "The tram stops at the next station.  电车下一站停。"
   },
   {
    "word": "rubbish",
@@ -19382,7 +19621,8 @@
   {
    "word": "brewery",
    "phonetic": "",
-   "meaning": "n. 啤酒厂"
+   "meaning": "n. 啤酒厂",
+   "example": "The brewery offers tours.  啤酒厂提供参观。"
   },
   {
    "word": "raincoat",
@@ -19393,7 +19633,8 @@
   {
    "word": "bingo",
    "phonetic": "/ˈbiŋgәu/",
-   "meaning": "n. 宾戈游戏；n. (Bingo)人名；(日)备后(姓)"
+   "meaning": "n. 宾戈游戏；n. (Bingo)人名；(日)备后(姓)",
+   "example": "We played bingo at the party.  派对上我们玩了宾果。"
   },
   {
    "word": "pronunciation",
@@ -19404,12 +19645,14 @@
   {
    "word": "rugby",
    "phonetic": "/ˈrʌgbi/",
-   "meaning": "n. 英式橄榄球；拉格比（英格兰中部的城市）"
+   "meaning": "n. 英式橄榄球；拉格比（英格兰中部的城市）",
+   "example": "Rugby is a rough sport.  橄榄球是项激烈的运动。"
   },
   {
    "word": "giraffe",
    "phonetic": "/dʒi'rɑ:f/",
-   "meaning": "n. 长颈鹿"
+   "meaning": "n. 长颈鹿",
+   "example": "A giraffe ate leaves from a tall tree.  长颈鹿吃着高树的叶子。"
   },
   {
    "word": "canteen",
@@ -19426,17 +19669,20 @@
   {
    "word": "chairwoman",
    "phonetic": "/ˈtʃєәwumәn/",
-   "meaning": "n. 女主席；女议长"
+   "meaning": "n. 女主席；女议长",
+   "example": "The chairwoman opened the session.  女主席宣布会议开幕。"
   },
   {
    "word": "kangaroo",
    "phonetic": "/,kæŋɡə'ru:/",
-   "meaning": "n. 袋鼠"
+   "meaning": "n. 袋鼠",
+   "example": "A kangaroo jumped across the road.  一只袋鼠跳过马路。"
   },
   {
    "word": "housework",
    "phonetic": "/ˈhauswəːk/",
-   "meaning": "n.家务,家事(不可数)"
+   "meaning": "n.家务,家事(不可数)",
+   "example": "Housework takes time every day.  家务每天都要花时间。"
   },
   {
    "word": "punctuation",
@@ -19447,7 +19693,8 @@
   {
    "word": "schoolgirl",
    "phonetic": "/ˈskuːlgәːl/",
-   "meaning": "n. 女学生"
+   "meaning": "n. 女学生",
+   "example": "The schoolgirl won the prize.  女学生得了奖。"
   },
   {
    "word": "sightseeing",
@@ -19470,7 +19717,8 @@
   {
    "word": "dialog",
    "phonetic": "/ˈdaiəlɔɡ/",
-   "meaning": "n.(dialogue)对话,对白"
+   "meaning": "n.(dialogue)对话,对白",
+   "example": "The dialog between them lasted hours.  他们俩的对话持续了几小时。"
   },
   {
    "word": "moustache",
@@ -19487,7 +19735,8 @@
   {
    "word": "grandpa",
    "phonetic": "/ˈgrænpɑː, ˈgrændpɑː/",
-   "meaning": "n. 爷爷；外公"
+   "meaning": "n. 爷爷；外公",
+   "example": "Grandpa tells war stories.  爷爷讲战争年代的故事。"
   },
   {
    "word": "eraser",
@@ -19498,12 +19747,14 @@
   {
    "word": "woolen",
    "phonetic": "",
-   "meaning": "adj. 羊毛的；羊毛制的；n. 毛织品"
+   "meaning": "adj. 羊毛的；羊毛制的；n. 毛织品",
+   "example": "She wore a woolen sweater.  她穿着羊毛衫。"
   },
   {
    "word": "headmaster",
    "phonetic": "/ˈhedˈmɑːstə/",
-   "meaning": "n.校长"
+   "meaning": "n.校长",
+   "example": "The headmaster gave a speech.  校长讲了话。"
   },
   {
    "word": "madam",
@@ -19514,17 +19765,20 @@
   {
    "word": "ice-cream",
    "phonetic": "/ˈaiskriːm/",
-   "meaning": "n.冰淇淋"
+   "meaning": "n.冰淇淋",
+   "example": "Ice-cream melts in the sun.  冰淇淋在太阳下会化。"
   },
   {
    "word": "thermos",
    "phonetic": "/ˈθәːmәs/",
-   "meaning": "n. 热水瓶"
+   "meaning": "n. 热水瓶",
+   "example": "Fill the thermos with hot water.  热水壶里灌上热水。"
   },
   {
    "word": "skateboard",
    "phonetic": "/ˈskeitbɔːd/",
-   "meaning": "n. 溜冰板；vi. 用滑板滑行"
+   "meaning": "n. 溜冰板；vi. 用滑板滑行",
+   "example": "He learned to skateboard at ten.  他十岁学的滑板。"
   },
   {
    "word": "considerate",
@@ -19553,42 +19807,50 @@
   {
    "word": "Africa",
    "phonetic": "/ˈæfrikə/",
-   "meaning": "n.非洲"
+   "meaning": "n.非洲",
+   "example": "Africa is rich in wildlife.  非洲野生动物资源丰富。"
   },
   {
    "word": "America",
    "phonetic": "/əˈmerikə/",
-   "meaning": "n.美洲；美国"
+   "meaning": "n.美洲；美国",
+   "example": "America spans many time zones.  美洲跨越多个时区。"
   },
   {
    "word": "Asia",
    "phonetic": "/ˈei∫ə/",
-   "meaning": "n.亚洲"
+   "meaning": "n.亚洲",
+   "example": "Asia is the largest continent.  亚洲是最大的大洲。"
   },
   {
    "word": "Atlantic",
    "phonetic": "/ətˈlæntik/",
-   "meaning": "a.大西洋的 n.大西洋"
+   "meaning": "a.大西洋的 n.大西洋",
+   "example": "The Titanic sank in the Atlantic.  泰坦尼克号沉没在大西洋。"
   },
   {
    "word": "badminton",
    "phonetic": "/ˈbædmintən/",
-   "meaning": "n.羽毛球"
+   "meaning": "n.羽毛球",
+   "example": "Badminton is an Olympic sport.  羽毛球是奥运项目。"
   },
   {
    "word": "cent",
    "phonetic": "/sent/",
-   "meaning": "n.分(币);百 per cent百分之"
+   "meaning": "n.分(币);百 per cent百分之",
+   "example": "The notebook costs ninety-nine cents.  笔记本九十九美分。"
   },
   {
    "word": "centigrade",
    "phonetic": "/ˈsentiɡreid/",
-   "meaning": "n./a.摄氏温度计(的);百分度(的)"
+   "meaning": "n./a.摄氏温度计(的);百分度(的)",
+   "example": "Water freezes at zero centigrade.  水在零摄氏度结冰。"
   },
   {
    "word": "centimetre",
    "phonetic": "/ˈsenti,miːtə/",
-   "meaning": "n.(centimeter)厘米"
+   "meaning": "n.(centimeter)厘米",
+   "example": "The ruler is twenty centimetres long.  这把尺二十厘米长。"
   },
   {
    "word": "centre",
@@ -19641,7 +19903,8 @@
   {
    "word": "Europe",
    "phonetic": "/ˈjuərəp/",
-   "meaning": "n.欧洲"
+   "meaning": "n.欧洲",
+   "example": "Europe has many small countries.  欧洲有很多小国。"
   },
   {
    "word": "favour",
@@ -19676,7 +19939,8 @@
   {
    "word": "goods",
    "phonetic": "/ɡudz/",
-   "meaning": "n.(pl.)货物,商品"
+   "meaning": "n.(pl.)货物,商品",
+   "example": "The goods were damaged in transit.  货物在运输中受损。"
   },
   {
    "word": "grey",
@@ -19711,7 +19975,8 @@
   {
    "word": "kilometer",
    "phonetic": "/ˈkiləmiːtə/",
-   "meaning": "n.千米，公里"
+   "meaning": "n.千米，公里",
+   "example": "Run one kilometer every morning.  每天早上跑一公里。"
   },
   {
    "word": "litre",
@@ -19728,7 +19993,8 @@
   {
    "word": "maths",
    "phonetic": "/mæθs/",
-   "meaning": "n.(mathematics/math)数学"
+   "meaning": "n.(mathematics/math)数学",
+   "example": "She tops the class in maths.  她数学全班第一。"
   },
   {
    "word": "means",
@@ -19751,7 +20017,8 @@
   {
    "word": "millimetre",
    "phonetic": "/ˈmiliˌmiːtə(r)/",
-   "meaning": "n.毫米"
+   "meaning": "n.毫米",
+   "example": "The gap is a millimetre wide.  缝隙有一毫米宽。"
   },
   {
    "word": "mutton",
@@ -19774,7 +20041,8 @@
   {
    "word": "Oceania",
    "phonetic": "/ˌəu∫iˈeiniə/",
-   "meaning": "n.大洋洲"
+   "meaning": "n.大洋洲",
+   "example": "Oceania includes Australia and New Zealand.  大洋洲包括澳大利亚和新西兰。"
   },
   {
    "word": "outwards",
@@ -19785,12 +20053,14 @@
   {
    "word": "ox",
    "phonetic": "/ɔks/",
-   "meaning": "n.牛,公牛"
+   "meaning": "n.牛,公牛",
+   "example": "An ox pulled the cart slowly.  一头牛拉着车缓缓前行。"
   },
   {
    "word": "Pacific",
    "phonetic": "/pəˈsifik/",
-   "meaning": "a.和平的 n.太平洋"
+   "meaning": "a.和平的 n.太平洋",
+   "example": "Japan lies on the Pacific Rim.  日本位于太平洋沿岸。"
   },
   {
    "word": "passer-by",
@@ -19831,7 +20101,8 @@
   {
    "word": "postman",
    "phonetic": "/ˈpəustmən/",
-   "meaning": "n.邮递员"
+   "meaning": "n.邮递员",
+   "example": "The postman left a parcel.  邮递员留下了包裹。"
   },
   {
    "word": "practise",
@@ -19854,17 +20125,20 @@
   {
    "word": "radium",
    "phonetic": "/ˈreidjəm/",
-   "meaning": "n.镭"
+   "meaning": "n.镭",
+   "example": "Radium glows in the dark.  镭在黑暗中发光。"
   },
   {
    "word": "realise",
    "phonetic": "/ˈriəlaiz, ˈriː-/",
-   "meaning": "v.(realize)认识到,体会到;实现"
+   "meaning": "v.(realize)认识到,体会到;实现",
+   "example": "I didn't realise it was so late.  我没意识到已经这么晚。"
   },
   {
    "word": "retell",
    "phonetic": "/ˈriːˈtel/",
-   "meaning": "vt.再讲，重述，复述"
+   "meaning": "vt.再讲，重述，复述",
+   "example": "Retell the story in English.  用英语复述这个故事。"
   },
   {
    "word": "roundabout",
@@ -19875,7 +20149,8 @@
   {
    "word": "stewardess",
    "phonetic": "/ˈstjuːədis/",
-   "meaning": "n.空中小姐，女乘务员"
+   "meaning": "n.空中小姐，女乘务员",
+   "example": "The stewardess offered a blanket.  空姐递来了毯子。"
   },
   {
    "word": "theatre",
@@ -19898,7 +20173,8 @@
   {
    "word": "typist",
    "phonetic": "/ˈtaipist/",
-   "meaning": "n.打字员"
+   "meaning": "n.打字员",
+   "example": "The typist finished the report.  打字员完成了报告。"
   },
   {
    "word": "tyre",

@@ -4,7 +4,7 @@ from __future__ import annotations
 
 import pytest
 
-from duolinguo_cli import db
+from duolinguo_cli import config, db
 
 
 def test_init_db_idempotent(conn):
@@ -122,3 +122,44 @@ def test_apply_setting_validation(conn):
     # 全部被拒绝，无一落库
     assert db.get_setting(conn, "daily_goal") is None
     assert db.get_setting(conn, "current_book") is None
+
+
+def test_reevaluate_today_goal(conn):
+    """目标变更后重算今日达成：提高→清除旧✓；降低→补达标记+奖励。"""
+    today = db.today_str()
+    # 今天已按旧目标(20)达标
+    db.bump_daily(conn, today, new_learned=20, answered=20, correct=16, xp_earned=100)
+    db.set_goal_met(conn, today)
+    db.bump_daily(conn, today, xp_earned=config.XP_GOAL_BONUS)
+    conn.commit()
+
+    # 目标提高到 100：75<100 → 清除达成标记，已发 XP 不追回
+    db.reevaluate_today_goal(conn, today, 100)
+    row = db.get_daily(conn, today)
+    assert row["goal_met"] == 0
+    assert row["xp_earned"] == 100 + config.XP_GOAL_BONUS
+
+    # 目标降回 10：20≥10 → 补达标记 + 再发一次奖励
+    db.reevaluate_today_goal(conn, today, 10)
+    row = db.get_daily(conn, today)
+    assert row["goal_met"] == 1
+    assert row["xp_earned"] == 100 + 2 * config.XP_GOAL_BONUS
+
+    # 幂等：重复调用不再变化
+    db.reevaluate_today_goal(conn, today, 10)
+    row = db.get_daily(conn, today)
+    assert row["xp_earned"] == 100 + 2 * config.XP_GOAL_BONUS
+
+
+def test_apply_setting_reevaluates_goal(conn):
+    """通过 apply_setting 改 daily_goal 同样触发今日重算。"""
+    today = db.today_str()
+    db.bump_daily(conn, today, new_learned=20, reviews_done=0, answered=20, correct=15,
+                  xp_earned=100)
+    db.set_goal_met(conn, today)
+    conn.commit()
+    db.apply_setting(conn, "daily_goal", "50")  # 提高目标 → 20<50 → 清除
+    assert db.get_setting(conn, "daily_goal") == "50"
+    assert db.get_daily(conn, today)["goal_met"] == 0
+    db.apply_setting(conn, "daily_goal", "15")  # 降低 → 20≥15 → 恢复
+    assert db.get_daily(conn, today)["goal_met"] == 1

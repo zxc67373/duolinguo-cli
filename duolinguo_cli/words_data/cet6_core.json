@@ -133,7 +133,8 @@
   {
    "word": "behavior",
    "phonetic": "/biˈheivjә/",
-   "meaning": "n. 行为，举止"
+   "meaning": "n. 行为，举止",
+   "example": "His behavior at work improved after the talk.  谈话之后他的工作表现好转了。"
   },
   {
    "word": "performance",
@@ -198,7 +199,8 @@
   {
    "word": "decade",
    "phonetic": "/ˈdekeɪd/",
-   "meaning": "n. 十年，十"
+   "meaning": "n. 十年，十",
+   "example": "Prices doubled in a decade.  价格十年间翻了一倍。"
   },
   {
    "word": "stock",
@@ -611,7 +613,8 @@
   {
    "word": "participant",
    "phonetic": "/pɑːˈtɪsɪpənt/",
-   "meaning": "n. 参与者，参加者"
+   "meaning": "n. 参与者，参加者",
+   "example": "Every participant received a certificate.  每位参与者都拿到了证书。"
   },
   {
    "word": "reform",
@@ -1336,7 +1339,8 @@
   {
    "word": "notion",
    "phonetic": "/ˈnəʊʃən/",
-   "meaning": "n. 1. 概念，观念 2. 想法，见解 3. 打算，意图"
+   "meaning": "n. 1. 概念，观念 2. 想法，见解 3. 打算，意图",
+   "example": "I have no notion of what he means.  我完全不懂他是什么意思。"
   },
   {
    "word": "emergency",
@@ -1689,7 +1693,8 @@
   {
    "word": "legislation",
    "phonetic": "/ˌledʒɪsˈleɪʃən/",
-   "meaning": "n. 立法，制定法律"
+   "meaning": "n. 立法，制定法律",
+   "example": "Parliament passed new legislation on privacy.  议会通过了新的隐私立法。"
   },
   {
    "word": "achievement",
@@ -2528,7 +2533,8 @@
   {
    "word": "protein",
    "phonetic": "/ˈprəʊtiːn/",
-   "meaning": "n. 蛋白质"
+   "meaning": "n. 蛋白质",
+   "example": "Fish is an excellent source of protein.  鱼是优质蛋白质来源。"
   },
   {
    "word": "absence",
@@ -2545,7 +2551,8 @@
   {
    "word": "historian",
    "phonetic": "/hiˈstɒːriәn/",
-   "meaning": "n. 历史学家，记事者"
+   "meaning": "n. 历史学家，记事者",
+   "example": "The historian spent years in the archives.  这位历史学家在档案馆待了好几年。"
   },
   {
    "word": "negotiate",
@@ -2940,7 +2947,8 @@
   {
    "word": "testify",
    "phonetic": "/ˈtestɪfaɪ/",
-   "meaning": "v. 1. 作证，证实 2. 表明，证明"
+   "meaning": "v. 1. 作证，证实 2. 表明，证明",
+   "example": "The witness testified against the defendant.  证人作了不利于被告的证词。"
   },
   {
    "word": "imply",
@@ -2993,7 +3001,8 @@
   {
    "word": "offense",
    "phonetic": "/әˈfens/",
-   "meaning": "n. 1. 犯罪 2 冒犯，伤感情 3. 攻击"
+   "meaning": "n. 1. 犯罪 2 冒犯，伤感情 3. 攻击",
+   "example": "The comment was an offense to good taste.  这句话冒犯了良好的品味。"
   },
   {
    "word": "counter",
@@ -3628,7 +3637,8 @@
   {
    "word": "furthermore",
    "phonetic": "/ˌfəːðəˈmɔː/",
-   "meaning": "adv. 再者，此外，并且"
+   "meaning": "adv. 再者，此外，并且",
+   "example": "The room is small; furthermore, it's noisy.  我房间小，而且很吵。"
   },
   {
    "word": "mortgage",
@@ -3855,7 +3865,8 @@
   {
    "word": "defendant",
    "phonetic": "/dɪˈfendənt/",
-   "meaning": "n. 被告"
+   "meaning": "n. 被告",
+   "example": "The defendant pleaded not guilty.  被告表示不认罪。"
   },
   {
    "word": "tunnel",
@@ -3968,7 +3979,8 @@
   {
    "word": "surgeon",
    "phonetic": "/ˈsɜːdʒən/",
-   "meaning": "n. 外科医生"
+   "meaning": "n. 外科医生",
+   "example": "The surgeon washed her hands carefully.  外科医生仔细洗了手。"
   },
   {
    "word": "rape",
@@ -4279,7 +4291,8 @@
   {
    "word": "bacteria",
    "phonetic": "/bækˈtɪərɪə/",
-   "meaning": "n. 细菌"
+   "meaning": "n. 细菌",
+   "example": "Bacteria grow fastest in warm places.  细菌在温暖处繁殖最快。"
   },
   {
    "word": "questionnaire",
@@ -4662,12 +4675,14 @@
   {
    "word": "oxygen",
    "phonetic": "/ˈɒksɪdʒən/",
-   "meaning": "n. 氧气"
+   "meaning": "n. 氧气",
+   "example": "Patients were given extra oxygen.  病人被给予了额外的氧气。"
   },
   {
    "word": "provided",
    "phonetic": "/prəˈvaɪdɪd/",
-   "meaning": "conj. 以…为条件，假如"
+   "meaning": "conj. 以…为条件，假如",
+   "example": "We'll camp provided it doesn't rain.  只要不下雨我们就露营。"
   },
   {
    "word": "promising",
@@ -4798,7 +4813,8 @@
   {
    "word": "enroll",
    "phonetic": "/inˈrәul/",
-   "meaning": "v. 登记，使加入，注册"
+   "meaning": "v. 登记，使加入，注册",
+   "example": "She enrolled in an evening course.  她报名参加了一门夜校课程。"
   },
   {
    "word": "diminish",
@@ -5193,7 +5209,8 @@
   {
    "word": "thigh",
    "phonetic": "/θaɪ/",
-   "meaning": "n. 股，大腿"
+   "meaning": "n. 股，大腿",
+   "example": "He pulled a muscle in his thigh.  他大腿肌肉拉伤了。"
   },
   {
    "word": "bull",
@@ -5402,7 +5419,8 @@
   {
    "word": "cocaine",
    "phonetic": "/kəʊˈkeɪn/",
-   "meaning": "n. 可卡因"
+   "meaning": "n. 可卡因",
+   "example": "Cocaine is a dangerous illegal drug.  可卡因是危险的非法毒品。"
   },
   {
    "word": "illusion",
@@ -5491,7 +5509,8 @@
   {
    "word": "consequently",
    "phonetic": "/ˈkɒnsɪkwəntlɪ/",
-   "meaning": "adv. 因而，所以"
+   "meaning": "adv. 因而，所以",
+   "example": "He was late; consequently, he missed the opening.  他迟到了，因此错过了开场。"
   },
   {
    "word": "foster",
@@ -5622,7 +5641,8 @@
   {
    "word": "thanksgiving",
    "phonetic": "/ˈθæŋksˌgiviŋ/",
-   "meaning": "n. 感谢，感恩"
+   "meaning": "n. 感谢，感恩",
+   "example": "The family gathers for Thanksgiving dinner.  全家人聚在一起吃感恩节晚餐。"
   },
   {
    "word": "scent",
@@ -5747,12 +5767,14 @@
   {
    "word": "specialty",
    "phonetic": "/ˈspeʃәlti/",
-   "meaning": "n. 1. 专业，专长 2. 特产，特制品 a. 专门的，独立的"
+   "meaning": "n. 1. 专业，专长 2. 特产，特制品 a. 专门的，独立的",
+   "example": "Her specialty is children's literature.  她的专长是儿童文学。"
   },
   {
    "word": "deem",
    "phonetic": "/diːm/",
-   "meaning": "v. 认为，相信，视为"
+   "meaning": "v. 认为，相信，视为",
+   "example": "The plan was deemed too risky.  该方案被认为风险太高。"
   },
   {
    "word": "sneak",
@@ -5793,7 +5815,8 @@
   {
    "word": "cemetery",
    "phonetic": "/ˈsemɪtrɪ/",
-   "meaning": "n. 墓地，公墓"
+   "meaning": "n. 墓地，公墓",
+   "example": "The cemetery is quiet at dusk.  黄昏时墓地很安静。"
   },
   {
    "word": "likelihood",
@@ -6104,7 +6127,8 @@
   {
    "word": "molecule",
    "phonetic": "/ˈmɒlɪkjuːl/",
-   "meaning": "n. 分子，微粒"
+   "meaning": "n. 分子，微粒",
+   "example": "A molecule of water has three atoms.  一个水分子有三个原子。"
   },
   {
    "word": "premium",
@@ -6169,7 +6193,8 @@
   {
    "word": "magnetic",
    "phonetic": "/mæɡˈnetɪk/",
-   "meaning": "adj. 1. 磁的，有磁性的 2. 有吸引力的，有魅力的"
+   "meaning": "adj. 1. 磁的，有磁性的 2. 有吸引力的，有魅力的",
+   "example": "The compass needle is magnetic.  指南针的指针有磁性。"
   },
   {
    "word": "mutter",
@@ -6372,7 +6397,8 @@
   {
    "word": "skeptical",
    "phonetic": "/ˈskeptɪkəl/",
-   "meaning": "adj. 怀疑的，多疑的"
+   "meaning": "adj. 怀疑的，多疑的",
+   "example": "Scientists remain skeptical about the claims.  科学家们对这些说法仍持怀疑态度。"
   },
   {
    "word": "scrutiny",
@@ -6407,7 +6433,8 @@
   {
    "word": "bureaucracy",
    "phonetic": "/bjʊəˈrɒkrəsɪ/",
-   "meaning": "n. 1. 官僚制度，官僚体制 2. 官僚作风"
+   "meaning": "n. 1. 官僚制度，官僚体制 2. 官僚作风",
+   "example": "The bureaucracy slows everything down.  官僚作风把什么都拖慢了。"
   },
   {
    "word": "beneficial",
@@ -6496,7 +6523,8 @@
   {
    "word": "fossil",
    "phonetic": "/ˈfɒsəl/",
-   "meaning": "n. 化石"
+   "meaning": "n. 化石",
+   "example": "They dug up a fossil of an ancient fish.  他们挖出了一条古鱼的化石。"
   },
   {
    "word": "hover",
@@ -6705,7 +6733,8 @@
   {
    "word": "psychiatrist",
    "phonetic": "/saɪˈkaɪətrɪst/",
-   "meaning": "n. 精神病医生，精神病学者"
+   "meaning": "n. 精神病医生，精神病学者",
+   "example": "She saw a psychiatrist for her anxiety.  她因为焦虑去看了精神科医生。"
   },
   {
    "word": "snack",
@@ -6764,7 +6793,8 @@
   {
    "word": "comet",
    "phonetic": "/ˈkɒmɪt/",
-   "meaning": "n. 彗星"
+   "meaning": "n. 彗星",
+   "example": "A comet passed close to Earth last night.  昨晚一颗彗星近距离掠过地球。"
   },
   {
    "word": "cocktail",
@@ -6799,7 +6829,8 @@
   {
    "word": "motel",
    "phonetic": "/məʊˈtel/",
-   "meaning": "n. 汽车旅馆"
+   "meaning": "n. 汽车旅馆",
+   "example": "We stayed at a motel by the highway.  我们住在高速公路旁的汽车旅馆。"
   },
   {
    "word": "hatred",
@@ -6834,7 +6865,8 @@
   {
    "word": "correlate",
    "phonetic": "/ˈkɒrəleɪt/",
-   "meaning": "n. 有相互关系的东西，相关物 v. 使有相互关系，互相有关系"
+   "meaning": "n. 有相互关系的东西，相关物 v. 使有相互关系，互相有关系",
+   "example": "Sleep and health are closely correlated.  睡眠与健康密切相关。"
   },
   {
    "word": "exile",
@@ -6935,7 +6967,8 @@
   {
    "word": "cane",
    "phonetic": "/keɪn/",
-   "meaning": "n. 1. 细长而有节的茎 2. 手杖"
+   "meaning": "n. 1. 细长而有节的茎 2. 手杖",
+   "example": "The old man walked with a cane.  老人拄着手杖走路。"
   },
   {
    "word": "forge",
@@ -6970,7 +7003,8 @@
   {
    "word": "allege",
    "phonetic": "/əˈledʒ/",
-   "meaning": "v. (在提不出证明的情况下)断言，声称"
+   "meaning": "v. (在提不出证明的情况下)断言，声称",
+   "example": "The media alleged that he had lied.  媒体声称他撒了谎。"
   },
   {
    "word": "alert",
@@ -6999,7 +7033,8 @@
   {
    "word": "odor",
    "phonetic": "/ˈәudә/",
-   "meaning": "n. 1. 气味，香味 2. 名声 3. 意味"
+   "meaning": "n. 1. 气味，香味 2. 名声 3. 意味",
+   "example": "An odor of gas filled the kitchen.  厨房里充满了煤气味。"
   },
   {
    "word": "outbreak",
@@ -7136,7 +7171,8 @@
   {
    "word": "reassure",
    "phonetic": "/ˌriːəˈʃɔː/",
-   "meaning": "v. 使放心，使消除疑虑"
+   "meaning": "v. 使放心，使消除疑虑",
+   "example": "The doctor reassured the anxious mother.  医生让焦虑的母亲放了心。"
   },
   {
    "word": "discard",
@@ -7183,7 +7219,8 @@
   {
    "word": "fulfill",
    "phonetic": "/fulˈfil/",
-   "meaning": "v. 1. 实行，完成 2. 实践，履行"
+   "meaning": "v. 1. 实行，完成 2. 实践，履行",
+   "example": "He fulfilled his promise at last.  他最终履行了诺言。"
   },
   {
    "word": "successor",
@@ -7344,12 +7381,14 @@
   {
    "word": "tenant",
    "phonetic": "/ˈtenənt/",
-   "meaning": "n. 房客，佃户，承租人"
+   "meaning": "n. 房客，佃户，承租人",
+   "example": "The tenant complained about the noise.  房客抱怨噪音太大。"
   },
   {
    "word": "corpse",
    "phonetic": "/kɔːps/",
-   "meaning": "n. 尸体"
+   "meaning": "n. 尸体",
+   "example": "The police found a corpse in the river.  警方在河里发现了一具尸体。"
   },
   {
    "word": "certainty",
@@ -7372,7 +7411,8 @@
   {
    "word": "electron",
    "phonetic": "/ɪˈlektrɒn/",
-   "meaning": "n. 电子"
+   "meaning": "n. 电子",
+   "example": "Electrons orbit the nucleus of an atom.  电子围绕原子核运转。"
   },
   {
    "word": "luxury",
@@ -7461,7 +7501,8 @@
   {
    "word": "calcium",
    "phonetic": "/ˈkælsɪəm/",
-   "meaning": "n. 钙"
+   "meaning": "n. 钙",
+   "example": "Milk gives you calcium.  牛奶给你补钙。"
   },
   {
    "word": "substitute",
@@ -7802,7 +7843,8 @@
   {
    "word": "armor",
    "phonetic": "/ˈɑːmә/",
-   "meaning": "n. 盔甲，潜水服，装甲 v. 为……装甲"
+   "meaning": "n. 盔甲，潜水服，装甲 v. 为……装甲",
+   "example": "The knights wore heavy armor.  骑士们穿着沉重的盔甲。"
   },
   {
    "word": "stroll",
@@ -7825,7 +7867,8 @@
   {
    "word": "Easter",
    "phonetic": "/ˈiːstə/",
-   "meaning": "n. 复活节"
+   "meaning": "n. 复活节",
+   "example": "Children hunt for eggs at Easter.  复活节孩子们找彩蛋。"
   },
   {
    "word": "classification",
@@ -7836,7 +7879,8 @@
   {
    "word": "paragraph",
    "phonetic": "/pærəɡræɑːf/",
-   "meaning": "n. 段，段落"
+   "meaning": "n. 段，段落",
+   "example": "Summarize each paragraph in one sentence.  用一句话概括每一段。"
   },
   {
    "word": "recreation",
@@ -7901,7 +7945,8 @@
   {
    "word": "erosion",
    "phonetic": "/ɪˈrəʊʒən/",
-   "meaning": "n. 侵蚀，腐蚀"
+   "meaning": "n. 侵蚀，腐蚀",
+   "example": "The cliffs are damaged by erosion.  崖壁被侵蚀破坏了。"
   },
   {
    "word": "flush",
@@ -7936,7 +7981,8 @@
   {
    "word": "owl",
    "phonetic": "/aʊl/",
-   "meaning": "n. 猫头鹰"
+   "meaning": "n. 猫头鹰",
+   "example": "An owl hooted from the old oak.  一只猫头鹰在老橡树上咕咕叫。"
   },
   {
    "word": "slash",
@@ -8001,7 +8047,8 @@
   {
    "word": "embed",
    "phonetic": "/ɪmˈbed/",
-   "meaning": "v. 把…嵌入，埋入，埋置"
+   "meaning": "v. 把…嵌入，埋入，埋置",
+   "example": "The chip is embedded in the card.  芯片嵌在卡片里。"
   },
   {
    "word": "linen",
@@ -8012,7 +8059,8 @@
   {
    "word": "ozone",
    "phonetic": "/ˈəʊzəʊn/",
-   "meaning": "n. 臭氧"
+   "meaning": "n. 臭氧",
+   "example": "The ozone layer protects us from UV rays.  臭氧层保护我们免受紫外线伤害。"
   },
   {
    "word": "elevate",
@@ -8155,7 +8203,8 @@
   {
    "word": "garment",
    "phonetic": "/ˈɡɑːmənt/",
-   "meaning": "n. 1. (一件)衣服(指长袍，外套)  2. (pl)服装，衣着 3. 外衣"
+   "meaning": "n. 1. (一件)衣服(指长袍，外套)  2. (pl)服装，衣着 3. 外衣",
+   "example": "She runs a garment shop.  她开了一家服装店。"
   },
   {
    "word": "notify",
@@ -8232,7 +8281,8 @@
   {
    "word": "configuration",
    "phonetic": "/kənˌfɪɡəˈreɪʃə/",
-   "meaning": "n. 构造，外形，布置，结构"
+   "meaning": "n. 构造，外形，布置，结构",
+   "example": "The network configuration is stored here.  网络配置存在这里。"
   },
   {
    "word": "clash",
@@ -8285,7 +8335,8 @@
   {
    "word": "endeavor",
    "phonetic": "/inˈdevә/",
-   "meaning": "n. 努力，尝试 v. 努力，尽力"
+   "meaning": "n. 努力，尝试 v. 努力，尽力",
+   "example": "We will endeavor to finish on time.  我们会努力按时完成。"
   },
   {
    "word": "fling",
@@ -8356,7 +8407,8 @@
   {
    "word": "standpoint",
    "phonetic": "/ˈstændpɔɪnt/",
-   "meaning": "n. 立场，立脚点，观点"
+   "meaning": "n. 立场，立脚点，观点",
+   "example": "From a practical standpoint, it works.  从实际角度看，这行得通。"
   },
   {
    "word": "tug",
@@ -8439,7 +8491,8 @@
   {
    "word": "eagle",
    "phonetic": "/ˈiːɡl/",
-   "meaning": "n. 鹰，雕"
+   "meaning": "n. 鹰，雕",
+   "example": "An eagle soared above the cliffs.  一只鹰在崖壁上空翱翔。"
   },
   {
    "word": "disturbance",
@@ -8642,7 +8695,8 @@
   {
    "word": "terrace",
    "phonetic": "/ˈterəs/",
-   "meaning": "n. 1. 梯田，台地 2. (梯级宽且矮的)台阶(如看台) 3. 排房(设计相同的一排房屋)"
+   "meaning": "n. 梯田；台地；一排相连的房屋",
+   "example": "The hillside is covered with terraces.  山坡上满是梯田。"
   },
   {
    "word": "resent",
@@ -8755,7 +8809,8 @@
   {
    "word": "orient",
    "phonetic": "/ˈɔːrɪent/",
-   "meaning": "v. 1. 使适应 2. 确定位置"
+   "meaning": "v. 1. 使适应 2. 确定位置",
+   "example": "Give students time to orient themselves.  给学生时间适应新环境。"
   },
   {
    "word": "imaginary",
@@ -9102,7 +9157,8 @@
   {
    "word": "paradox",
    "phonetic": "/ˈpærədɒks/",
-   "meaning": "n. 自相矛盾的事物(思想、言论等)"
+   "meaning": "n. 自相矛盾的事物(思想、言论等)",
+   "example": "It's a paradox that he works all day yet earns little.  他整天工作却挣得少，真是矛盾。"
   },
   {
    "word": "mourn",
@@ -9347,7 +9403,8 @@
   {
    "word": "shipment",
    "phonetic": "/ˈʃɪpmənt/",
-   "meaning": "n. 1. 装船，装运 2. 装运的货物量"
+   "meaning": "n. 1. 装船，装运 2. 装运的货物量",
+   "example": "The shipment arrived a day late.  货物晚到了一天。"
   },
   {
    "word": "bud",
@@ -9376,7 +9433,8 @@
   {
    "word": "irrigation",
    "phonetic": "/ˌɪrɪˈɡeɪʃən/",
-   "meaning": "n. 1. 灌溉，水利 2. 冲洗法"
+   "meaning": "n. 1. 灌溉，水利 2. 冲洗法",
+   "example": "Drip irrigation saves water.  滴灌很省水。"
   },
   {
    "word": "slack",
@@ -9477,7 +9535,8 @@
   {
    "word": "cafeteria",
    "phonetic": "/ˌkæfəˈtɪərɪə/",
-   "meaning": "n. 自助餐厅"
+   "meaning": "n. 自助餐厅",
+   "example": "Lunch is served in the cafeteria.  午餐在自助餐厅供应。"
   },
   {
    "word": "ambiguous",
@@ -9542,7 +9601,8 @@
   {
    "word": "paralyze",
    "phonetic": "/ˈpærәlaiz/",
-   "meaning": "vt. 瘫痪，使麻痹"
+   "meaning": "vt. 瘫痪，使麻痹",
+   "example": "The storm paralyzed the city's transport.  风暴瘫痪了全城交通。"
   },
   {
    "word": "embarrass",
@@ -9577,12 +9637,14 @@
   {
    "word": "napkin",
    "phonetic": "/ˈnæpkɪn/",
-   "meaning": "n. 餐巾"
+   "meaning": "n. 餐巾",
+   "example": "Tuck the napkin under your chin.  把餐巾塞在下巴下面。"
   },
   {
    "word": "cozy",
    "phonetic": "/ˈkәuzi/",
-   "meaning": "a. 舒适的，安逸的，惬意的 v. 取悦，献殷勤"
+   "meaning": "a. 舒适的，安逸的，惬意的 v. 取悦，献殷勤",
+   "example": "The little room feels cozy in winter.  冬天里这小房间很温馨。"
   },
   {
    "word": "groan",
@@ -9623,7 +9685,8 @@
   {
    "word": "maneuver",
    "phonetic": "/mәˈnuːvә/",
-   "meaning": "n. 演习，调遣，策略 v. 调遣，演习，用计"
+   "meaning": "n. 演习，调遣，策略 v. 调遣，演习，用计",
+   "example": "The ship made a sharp maneuver to avoid the rock.  轮船急转避开礁石。"
   },
   {
    "word": "huddle",
@@ -9718,7 +9781,8 @@
   {
    "word": "chord",
    "phonetic": "/kɔːd/",
-   "meaning": "n. 1. 和弦，和音 2. (几何的)弦"
+   "meaning": "n. 1. 和弦，和音 2. (几何的)弦",
+   "example": "She strummed a chord on the guitar.  她在吉他上扫了个和弦。"
   },
   {
    "word": "veto",
@@ -9789,7 +9853,8 @@
   {
    "word": "tariff",
    "phonetic": "/ˈtærɪf/",
-   "meaning": "n. 1. 关税 2. (酒店、餐馆等的)价目表"
+   "meaning": "n. 1. 关税 2. (酒店、餐馆等的)价目表",
+   "example": "The government raised the tariff on steel.  政府提高了钢铁关税。"
   },
   {
    "word": "dispatch",
@@ -9920,7 +9985,8 @@
   {
    "word": "impair",
    "phonetic": "/ɪmˈpeə/",
-   "meaning": "v. 损害，削弱"
+   "meaning": "v. 损害，削弱",
+   "example": "Lack of sleep impairs judgment.  睡眠不足会损害判断力。"
   },
   {
    "word": "frantic",
@@ -9973,7 +10039,8 @@
   {
    "word": "capsule",
    "phonetic": "/ˈkæpsjuːl/",
-   "meaning": "n. 1. 药丸，胶囊 2. 太空舱"
+   "meaning": "n. 1. 药丸，胶囊 2. 太空舱",
+   "example": "Take two capsules after meals.  饭后服两粒胶囊。"
   },
   {
    "word": "autonomous",
@@ -9990,12 +10057,14 @@
   {
    "word": "lever",
    "phonetic": "/ˈliːvə/",
-   "meaning": "n. 1. 杠杆 2. 手段  v. 用杠杆撬动"
+   "meaning": "n. 1. 杠杆 2. 手段  v. 用杠杆撬动",
+   "example": "Pull the lever to open the gate.  拉动手柄开门。"
   },
   {
    "word": "liner",
    "phonetic": "/ˈlainə(r)/",
-   "meaning": "1 [ˈlaɪnə] n. 1. 大客轮 2. 班机，班船"
+   "meaning": "n. 大客轮；班机；班船",
+   "example": "The ocean liner crossed the Atlantic.  这艘远洋客轮横渡了大西洋。"
   },
   {
    "word": "prophet",
@@ -10144,7 +10213,8 @@
   {
    "word": "arrogant",
    "phonetic": "/ˈærəɡənt/",
-   "meaning": "adj·傲慢无礼的，骄傲自大的"
+   "meaning": "adj. 傲慢无礼的；骄傲自大的",
+   "example": "His arrogant manner annoyed everyone.  他傲慢的态度惹恼了所有人。"
   },
   {
    "word": "vent",
@@ -10161,7 +10231,8 @@
   {
    "word": "foresee",
    "phonetic": "/fɔːˈsiː/",
-   "meaning": "v. 预见，预矢口"
+   "meaning": "v. 预见；预知",
+   "example": "We couldn't foresee the consequences.  我们无法预见后果。"
   },
   {
    "word": "bracket",
@@ -10220,7 +10291,8 @@
   {
    "word": "cellar",
    "phonetic": "/ˈselə/",
-   "meaning": "n. 地窖"
+   "meaning": "n. 地窖",
+   "example": "The wine is kept in the cellar.  酒存放在地窖里。"
   },
   {
    "word": "recede",
@@ -10297,7 +10369,8 @@
   {
    "word": "tentative",
    "phonetic": "/ˈtentətɪv/",
-   "meaning": "adj. 1. 试探性的，临时性的 2. 踌躇的，无把握的"
+   "meaning": "adj. 1. 试探性的，临时性的 2. 踌躇的，无把握的",
+   "example": "We have a tentative agreement.  我们达成了初步协议。"
   },
   {
    "word": "stagger",
@@ -10314,7 +10387,8 @@
   {
    "word": "constrain",
    "phonetic": "/kənˈstreɪn/",
-   "meaning": "v. 强迫，强制"
+   "meaning": "v. 强迫，强制",
+   "example": "Budget limits constrain our choices.  预算限制约束了我们的选择。"
   },
   {
    "word": "ornament",
@@ -10361,7 +10435,8 @@
   {
    "word": "ceramic",
    "phonetic": "/sɪˈræmɪk/",
-   "meaning": "n. 制陶业，陶器，陶瓷工艺"
+   "meaning": "n. 制陶业，陶器，陶瓷工艺",
+   "example": "The floor is covered with ceramic tiles.  地面铺着瓷砖。"
   },
   {
    "word": "convene",
@@ -10504,7 +10579,8 @@
   {
    "word": "outset",
    "phonetic": "/ˈaʊtset/",
-   "meaning": "n. 开始，开端"
+   "meaning": "n. 开始，开端",
+   "example": "We agreed on this from the outset.  我们从一开始就同意这点。"
   },
   {
    "word": "repay",
@@ -10599,7 +10675,8 @@
   {
    "word": "physiological",
    "phonetic": "/‚fɪzɪə'lɒdʒɪkl/",
-   "meaning": "adj. 生理学的，生理的，生理机能的"
+   "meaning": "adj. 生理学的，生理的，生理机能的",
+   "example": "Sleep has physiological benefits.  睡眠对生理有益。"
   },
   {
    "word": "preclude",
@@ -10664,7 +10741,8 @@
   {
    "word": "dolphin",
    "phonetic": "/ˈdɒlfɪn/",
-   "meaning": "n. 海豚"
+   "meaning": "n. 海豚",
+   "example": "A dolphin jumped out of the water.  一只海豚跃出水面。"
   },
   {
    "word": "fragrance",
@@ -10795,7 +10873,8 @@
   {
    "word": "cucumber",
    "phonetic": "/ˈkjuːkʌmbə/",
-   "meaning": "n. 黄瓜"
+   "meaning": "n. 黄瓜",
+   "example": "Add some cucumber to the salad.  沙拉里加点黄瓜。"
   },
   {
    "word": "groove",
@@ -10824,7 +10903,8 @@
   {
    "word": "slaughter",
    "phonetic": "/ˈslɔːtə/",
-   "meaning": "n. & v. 屠宰，屠杀"
+   "meaning": "n. & v. 屠宰，屠杀",
+   "example": "The cattle were sent to slaughter.  牛被送去了屠宰场。"
   },
   {
    "word": "retrospect",
@@ -10883,7 +10963,8 @@
   {
    "word": "cannon",
    "phonetic": "/ˈkænən/",
-   "meaning": "n. 大炮"
+   "meaning": "n. 大炮",
+   "example": "The cannon boomed across the valley.  大炮的轰鸣回荡在山谷。"
   },
   {
    "word": "multitude",
@@ -11158,7 +11239,8 @@
   {
    "word": "visualize",
    "phonetic": "/ˈvɪʒʊəlaɪz/",
-   "meaning": "v. 想象，设想"
+   "meaning": "v. 想象，设想",
+   "example": "Close your eyes and visualize the scene.  闭上眼睛想象那幅画面。"
   },
   {
    "word": "symphony",
@@ -11253,7 +11335,8 @@
   {
    "word": "pamphlet",
    "phonetic": "/ˌpænəˈsɪə/",
-   "meaning": "n. 小册子"
+   "meaning": "n. 小册子",
+   "example": "Pick up a free pamphlet at the desk.  在前台拿份免费小册子。"
   },
   {
    "word": "salute",
@@ -11264,7 +11347,8 @@
   {
    "word": "oriental",
    "phonetic": "/ˌɔːrɪˈentəl/",
-   "meaning": "adj. 东方的，来自东方的 n. 东方人"
+   "meaning": "adj. 东方的，来自东方的 n. 东方人",
+   "example": "The museum has oriental carpets on display.  博物馆展出着东方地毯。"
   },
   {
    "word": "clasp",
@@ -11287,7 +11371,8 @@
   {
    "word": "blush",
    "phonetic": "/blʌʃ/",
-   "meaning": "n. 脸红 v. 感到羞愧"
+   "meaning": "n. 脸红 v. 感到羞愧",
+   "example": "She blushed at the compliment.  听到赞美她脸红了。"
   },
   {
    "word": "despise",
@@ -11304,7 +11389,8 @@
   {
    "word": "pilgrim",
    "phonetic": "/ˈpɪlɡrɪm/",
-   "meaning": "n. 朝圣者，香客"
+   "meaning": "n. 朝圣者，香客",
+   "example": "Pilgrims walked to the holy city.  朝圣者步行前往圣城。"
   },
   {
    "word": "shutter",
@@ -11345,7 +11431,8 @@
   {
    "word": "caption",
    "phonetic": "/ˈkæpʃən/",
-   "meaning": "n. 图片上的说明文字，(报刊文章的)标题"
+   "meaning": "n. 图片上的说明文字，(报刊文章的)标题",
+   "example": "Add a caption under the photo.  在照片下面加一行说明。"
   },
   {
    "word": "safeguard",
@@ -11428,7 +11515,8 @@
   {
    "word": "duplicate",
    "phonetic": "/ˈdjuːplikət/",
-   "meaning": "1 [ˈdjuːplɪkət] adj. &n. 完全一样(的)，复制(的)，副本(的)  || in dupli-cate一式两份的(地)"
+   "meaning": "adj. 完全相同的；复制的 n. 副本；复制品 v. 复制",
+   "example": "Please keep a copy as a duplicate.  请留一份副本。"
   },
   {
    "word": "hysterical",
@@ -11613,7 +11701,8 @@
   {
    "word": "ultraviolet",
    "phonetic": "/ˌʌltrəˈvaɪələt/",
-   "meaning": "adj. 1. 紫外的 2. 紫外线的"
+   "meaning": "adj. 1. 紫外的 2. 紫外线的",
+   "example": "Ultraviolet light kills bacteria.  紫外线能杀菌。"
   },
   {
    "word": "ascend",
@@ -11636,7 +11725,8 @@
   {
    "word": "rectangular",
    "phonetic": "/rekˈtæŋɡjʊlə/",
-   "meaning": "adj. 长方形的，矩形的"
+   "meaning": "adj. 长方形的，矩形的",
+   "example": "The room is rectangular in shape.  房间是长方形的。"
   },
   {
    "word": "ensue",
@@ -11647,7 +11737,8 @@
   {
    "word": "sulfur",
    "phonetic": "/ˈsʌlfә/",
-   "meaning": "n. 硫，硫磺 v. 用硫磺处理"
+   "meaning": "n. 硫，硫磺 v. 用硫磺处理",
+   "example": "The volcano emitted sulfur dioxide.  火山喷出了二氧化硫。"
   },
   {
    "word": "persuasion",
@@ -11766,7 +11857,8 @@
   {
    "word": "silicon",
    "phonetic": "/ˈsɪlɪkən/",
-   "meaning": "n. 硅"
+   "meaning": "n. 硅",
+   "example": "Silicon is used in computer chips.  硅用于制造电脑芯片。"
   },
   {
    "word": "denote",
@@ -11921,7 +12013,8 @@
   {
    "word": "statesman",
    "phonetic": "/ˈsteɪtsmən/",
-   "meaning": "n. 政治家，政治领导人"
+   "meaning": "n. 政治家，政治领导人",
+   "example": "The statesman devoted his life to peace.  这位政治家毕生致力于和平。"
   },
   {
    "word": "invaluable",
@@ -11986,12 +12079,14 @@
   {
    "word": "proficiency",
    "phonetic": "/prəˈfɪʃənsɪ/",
-   "meaning": "n. 精通，熟练"
+   "meaning": "n. 精通，熟练",
+   "example": "Her proficiency in English improved.  她的英语熟练度提高了。"
   },
   {
    "word": "installment",
    "phonetic": "/inˈstɒːlmәnt/",
-   "meaning": "n. 1. 就职，装设 2. 分期付款"
+   "meaning": "n. 1. 就职，装设 2. 分期付款",
+   "example": "We paid for the car in installments.  我们分期付款买了车。"
   },
   {
    "word": "necessitate",
@@ -12104,12 +12199,14 @@
   {
    "word": "zinc",
    "phonetic": "/zɪŋk/",
-   "meaning": "n. 锌"
+   "meaning": "n. 锌",
+   "example": "Zinc is used to protect iron from rust.  锌用来防止铁生锈。"
   },
   {
    "word": "beforehand",
    "phonetic": "/bɪˈfɔːhænd/",
-   "meaning": "adv. 预先，事先"
+   "meaning": "adv. 预先，事先",
+   "example": "Let me know beforehand if you can't come.  来不了请提前告诉我。"
   },
   {
    "word": "tedious",
@@ -12132,7 +12229,8 @@
   {
    "word": "reciprocal",
    "phonetic": "/rɪˈsɪprəkəl/",
-   "meaning": "adj. 互惠的，相互的"
+   "meaning": "adj. 互惠的，相互的",
+   "example": "The two countries signed a reciprocal trade deal.  两国签了互惠贸易协定。"
   },
   {
    "word": "sparkle",
@@ -12149,7 +12247,8 @@
   {
    "word": "booklet",
    "phonetic": "/ˈbʊklɪt/",
-   "meaning": "n. 小册子"
+   "meaning": "n. 小册子",
+   "example": "The booklet explains the rules.  这本小册子说明了规则。"
   },
   {
    "word": "expend",
@@ -12250,7 +12349,8 @@
   {
    "word": "optimum",
    "phonetic": "/ˈɒptɪməm/",
-   "meaning": "adj. 最适宜的，最佳的"
+   "meaning": "adj. 最适宜的，最佳的",
+   "example": "The optimum temperature is 25 degrees.  最佳温度是 25 度。"
   },
   {
    "word": "shrewd",
@@ -12297,7 +12397,8 @@
   {
    "word": "thorn",
    "phonetic": "/θɔːn/",
-   "meaning": "n. 1. 刺，棘 2. 荆棘"
+   "meaning": "n. 1. 刺，棘 2. 荆棘",
+   "example": "A thorn stuck in my finger.  一根刺扎进了我手指。"
   },
   {
    "word": "repel",
@@ -12428,7 +12529,8 @@
   {
    "word": "penguin",
    "phonetic": "/ˈpeŋɡwɪn/",
-   "meaning": "n. 企鹅"
+   "meaning": "n. 企鹅",
+   "example": "Penguins cannot fly but they swim well.  企鹅不会飞但很会游泳。"
   },
   {
    "word": "streamline",
@@ -12445,7 +12547,8 @@
   {
    "word": "locomotive",
    "phonetic": "/ˌləʊkəˈməʊtɪv/",
-   "meaning": "adj. 移动的，机动的 n. 火车头"
+   "meaning": "adj. 移动的，机动的 n. 火车头",
+   "example": "The locomotive pulled forty wagons.  火车头拖了四十节车厢。"
   },
   {
    "word": "utmost",
@@ -12528,7 +12631,8 @@
   {
    "word": "patriot",
    "phonetic": "/ˈpætrɪət/",
-   "meaning": "n. 爱国者，爱国主义者"
+   "meaning": "n. 爱国者，爱国主义者",
+   "example": "The patriot loved his country deeply.  这位爱国者深爱着祖国。"
   },
   {
    "word": "doubtless",
@@ -12551,7 +12655,8 @@
   {
    "word": "indignation",
    "phonetic": "/ˌɪndɪɡˈneɪʃən/",
-   "meaning": "n. 愤怒，愤慨，义愤"
+   "meaning": "n. 愤怒，愤慨，义愤",
+   "example": "The betrayal caused public indignation.  背叛引发了公愤。"
   },
   {
    "word": "refresh",
@@ -12574,7 +12679,8 @@
   {
    "word": "dazzle",
    "phonetic": "/ˈdæzl/",
-   "meaning": "v. 1. 使眼花，耀眼 2. 使惊奇，使倾倒 n. 闪耀，耀眼"
+   "meaning": "v. 1. 使眼花，耀眼 2. 使惊奇，使倾倒 n. 闪耀，耀眼",
+   "example": "The lights dazzled the drivers.  灯光晃得司机睁不开眼。"
   },
   {
    "word": "appease",
@@ -12717,7 +12823,8 @@
   {
    "word": "transistor",
    "phonetic": "/tærnˈzɪstə/",
-   "meaning": "n. 1. 晶体管 2. 晶体管收音机"
+   "meaning": "n. 1. 晶体管 2. 晶体管收音机",
+   "example": "The old radio uses a transistor.  这台旧收音机用的是晶体管。"
   },
   {
    "word": "periodical",
@@ -12740,7 +12847,8 @@
   {
    "word": "electrician",
    "phonetic": "/ɪˌlekˈtrɪʃən/",
-   "meaning": "n. 电器技师，电工，电气专家"
+   "meaning": "n. 电器技师，电工，电气专家",
+   "example": "The electrician fixed the wiring.  电工修好了线路。"
   },
   {
    "word": "deduce",
@@ -12823,7 +12931,8 @@
   {
    "word": "resultant",
    "phonetic": "/rɪˈzʌltənt/",
-   "meaning": "adj. 因而发生的，必然发生的"
+   "meaning": "adj. 因而发生的，必然发生的",
+   "example": "The resultant damage was severe.  造成的损坏很严重。"
   },
   {
    "word": "bibliography",
@@ -12954,12 +13063,14 @@
   {
    "word": "commonwealth",
    "phonetic": "/ˈkɒmənwelθ/",
-   "meaning": "n. 1. 全体国民 2. 国家，共和国 3. 联邦"
+   "meaning": "n. 1. 全体国民 2. 国家，共和国 3. 联邦",
+   "example": "The commonwealth includes fifty states.  该联邦包含五十个州。"
   },
   {
    "word": "layman",
    "phonetic": "/ˈleɪmən/",
-   "meaning": "n. 门外汉"
+   "meaning": "n. 门外汉",
+   "example": "Explain it so a layman can understand.  解释得让外行也能听懂。"
   },
   {
    "word": "hitherto",
@@ -12994,7 +13105,8 @@
   {
    "word": "quartz",
    "phonetic": "/kwɔːts/",
-   "meaning": "n. 石英"
+   "meaning": "n. 石英",
+   "example": "The watch has a quartz movement.  这块表是石英机芯。"
   },
   {
    "word": "elapse",
@@ -13077,7 +13189,8 @@
   {
    "word": "air-condition",
    "phonetic": "/ˈeәkәnˌdiʃən/",
-   "meaning": "v. 设以空调设备，用空调调节"
+   "meaning": "v. 设以空调设备，用空调调节",
+   "example": "We air-condition the office in summer.  夏天我们给办公室开空调。"
   },
   {
    "word": "bewilder",
@@ -13118,7 +13231,8 @@
   {
    "word": "distill",
    "phonetic": "/disˈtil/",
-   "meaning": "v. 1. 蒸馏 2. 提炼"
+   "meaning": "v. 1. 蒸馏 2. 提炼",
+   "example": "They distill alcohol from grain.  他们从谷物中蒸馏酒精。"
   },
   {
    "word": "dole",
@@ -13129,7 +13243,8 @@
   {
    "word": "esthetic",
    "phonetic": "/esˈθetik/",
-   "meaning": "a. 审美的，感觉的"
+   "meaning": "a. 审美的，感觉的",
+   "example": "The building has a modern aesthetic.  这座建筑有现代审美感。"
   },
   {
    "word": "isle",
@@ -13140,12 +13255,14 @@
   {
    "word": "lubricate",
    "phonetic": "/ˈluːbrɪkeɪt/",
-   "meaning": "v. 1. 使润滑，给…上油 2. 起润滑作用"
+   "meaning": "v. 1. 使润滑，给…上油 2. 起润滑作用",
+   "example": "Lubricate the chain every month.  每月给链条上油。"
   },
   {
    "word": "minibus",
    "phonetic": "/ˈmɪnɪbʌs/",
-   "meaning": "n. 小型公共汽车，小巴"
+   "meaning": "n. 小型公共汽车，小巴",
+   "example": "A minibus picked us up at the station.  小巴在车站接了我们。"
   },
   {
    "word": "nil",
@@ -13156,7 +13273,8 @@
   {
    "word": "overpass",
    "phonetic": "/ˈәuvәpɑːs/",
-   "meaning": "n. 天桥，立交桥 v. 超越，胜过"
+   "meaning": "n. 天桥，立交桥 v. 超越，胜过",
+   "example": "Go straight and turn at the overpass.  直行到立交桥处转弯。"
   },
   {
    "word": "practicable",
@@ -13167,7 +13285,8 @@
   {
    "word": "quart",
    "phonetic": "/kwɔːt/",
-   "meaning": "n. 夸脱"
+   "meaning": "n. 夸脱",
+   "example": "Add a quart of water to the soup.  汤里加一夸脱水。"
   },
   {
    "word": "situated",
@@ -13178,7 +13297,8 @@
   {
    "word": "telecommunication",
    "phonetic": "/ˈtelikәmjuːniˈkeiʃәn/",
-   "meaning": "n. 电讯，远距离通讯，无线电通讯"
+   "meaning": "n. 电讯，远距离通讯，无线电通讯",
+   "example": "Satellites enable global telecommunication.  卫星实现了全球电信通信。"
   },
   {
    "word": "ventilate",

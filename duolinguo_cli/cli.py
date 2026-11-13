@@ -111,7 +111,7 @@ def config_cmd(key: str | None, value: str | None) -> None:
     try:
         if key is None:
             rows = conn.execute("SELECT key, value FROM settings ORDER BY key").fetchall()
-            settings = {r["key"]: r["value"] for r in rows}
+            settings = {r["key"]: r["value"] for r in rows if r["key"] in db.CONFIG_KEYS}
             settings.setdefault("daily_goal", str(gamify.get_goal(conn)))
             if not settings:
                 console.print("[dim]暂无设置[/]")
