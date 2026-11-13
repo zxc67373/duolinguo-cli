@@ -1,0 +1,2689 @@
+{
+ "slug": "daily_core",
+ "name": "日常英语",
+ "description": "日常口语主题分类词汇，按主题分关卡（称呼/数字/颜色/食物…）（来源：FunctionFun/English-Words 日常分类高频词）",
+ "unit_size": 20,
+ "words": [
+  {
+   "word": "Mom",
+   "phonetic": "/mɑːm/",
+   "meaning": "n. 妈妈；n. (Mom)人名；(柬)蒙",
+   "unit": 1,
+   "example": "[as form of address] Aw, Mom, why can't I go?  哦，妈妈，为甚么我不能去？"
+  },
+  {
+   "word": "Dad",
+   "phonetic": "/dæd/",
+   "meaning": "n. 爸爸；爹爹；n. (Dad)人名；(孟、巴基、阿富)达德；(泰)达",
+   "unit": 1,
+   "example": "It was lovely to see your mum and dad at the school concert last night.  很高兴昨天晚上在学校音乐会上见到你爸妈。"
+  },
+  {
+   "word": "Grandma",
+   "phonetic": "/ˈgrændmɑː/",
+   "meaning": "n. 奶奶；外婆",
+   "unit": 1,
+   "example": "Grandma tells us stories every night.  奶奶每晚给我们讲故事。"
+  },
+  {
+   "word": "Grandpa",
+   "phonetic": "/ˈgrænpɑː, ˈgrændpɑː/",
+   "meaning": "n. 爷爷；外公",
+   "unit": 1,
+   "example": "My grandpa takes a walk after dinner.  爷爷晚饭后去散步。"
+  },
+  {
+   "word": "Uncle",
+   "phonetic": "/ˈʌŋkl/",
+   "meaning": "n.伯父，叔父，舅父",
+   "unit": 1,
+   "example": "I've got several uncles and aunts.  我有几个叔叔和姑姑。"
+  },
+  {
+   "word": "Aunt",
+   "phonetic": "/ɑːnt/",
+   "meaning": "n.伯母，婶母，姑母",
+   "unit": 1,
+   "example": "Auntie Camille  卡米尔姑妈"
+  },
+  {
+   "word": "Brother",
+   "phonetic": "/ˈbrʌðə/",
+   "meaning": "n.兄弟；同事，同胞",
+   "unit": 1,
+   "example": "Do you have any brothers and sisters?  你有兄弟姐妹吗？"
+  },
+  {
+   "word": "Sister",
+   "phonetic": "/ˈsistə/",
+   "meaning": "n.姐妹，姐，妹",
+   "unit": 1,
+   "example": "Sophie and Emily are sisters.  苏菲和艾蜜莉是姐妹。"
+  },
+  {
+   "word": "Cousin",
+   "phonetic": "/ˈkʌzn/",
+   "meaning": "n.堂(或表)兄弟(姐妹)",
+   "unit": 1,
+   "example": "My brother's wife and I both had babies around the same time, so the cousins are very close in age.  我嫂子和我差不多同时生了孩子，因此这对表兄妹年纪相若。"
+  },
+  {
+   "word": "Friend",
+   "phonetic": "/frend/",
+   "meaning": "n.朋友，友人",
+   "unit": 1,
+   "example": "She's my best/oldest/closest friend - we've known each other since we were five.  她是我最要好／交情最久／最亲密的朋友——我们五岁的时候就认识了。"
+  },
+  {
+   "word": "Teacher",
+   "phonetic": "/ˈtiːt∫ə/",
+   "meaning": "n.教师，老师，先生",
+   "unit": 1,
+   "example": "Our teacher is very patient with us.  我们的老师对我们很有耐心。"
+  },
+  {
+   "word": "Doctor",
+   "phonetic": "/ˈdɔktə/",
+   "meaning": "n.医生，医师；博士",
+   "unit": 1,
+   "example": "The doctor prescribed some pills.  医生开了一些药。"
+  },
+  {
+   "word": "Nurse",
+   "phonetic": "/nəːs/",
+   "meaning": "n.保姆；护士 vt.看护",
+   "unit": 1,
+   "example": "He worked as a nurse in a psychiatric hospital.  他在精神病院当护士。"
+  },
+  {
+   "word": "Boss",
+   "phonetic": "/bɔs/",
+   "meaning": "n.老板，上司 vt.指挥",
+   "unit": 1,
+   "example": "She was the boss of a large international company.  她是一家大型跨国公司的老板。"
+  },
+  {
+   "word": "Colleague",
+   "phonetic": "/ˈkɔliːg/",
+   "meaning": "n.同事，同僚",
+   "unit": 1,
+   "example": "We're entertaining some colleagues of Ben's tonight.  今晚我们要招待本的几位同事。UK noun countable"
+  },
+  {
+   "word": "Neighbor",
+   "phonetic": "/ˈneibə/",
+   "meaning": "n.(neighbour)邻居",
+   "unit": 1,
+   "example": "My neighbor waters my plants when I travel.  我旅行时邻居帮我浇花。"
+  },
+  {
+   "word": "Stranger",
+   "phonetic": "/ˈstreindʒə/",
+   "meaning": "n.陌生人；新来者",
+   "unit": 1,
+   "example": "My mother always warned me not to talk to strangers.  我母亲总是告诫我不要和陌生人讲话。"
+  },
+  {
+   "word": "Sir",
+   "phonetic": "/səː(r)/",
+   "meaning": "n.先生，阁下；…爵士",
+   "unit": 1,
+   "example": "Would you like to see the menu, sir?  您要看看菜单吗，先生?"
+  },
+  {
+   "word": "Madam",
+   "phonetic": "/ˈmædəm/",
+   "meaning": "n.夫人，女士，太太",
+   "unit": 1,
+   "example": "[as form of address] May I carry your cases for you, Madam?  需要帮您提箱子吗，夫人？"
+  },
+  {
+   "word": "One",
+   "phonetic": "/wʌn/",
+   "meaning": "num.一 pron.一个人",
+   "unit": 2,
+   "example": "You've got three bags and I've only got one.  你有3个袋子，我只有1个。"
+  },
+  {
+   "word": "Two",
+   "phonetic": "/tuː/",
+   "meaning": "num.二，两个",
+   "unit": 2,
+   "example": "They've got two houses.  他们有两幢房子。"
+  },
+  {
+   "word": "Three",
+   "phonetic": "/θriː/",
+   "meaning": "num.三，三个",
+   "unit": 2,
+   "example": "I've got three sisters.  我有三个姐妹。"
+  },
+  {
+   "word": "Four",
+   "phonetic": "/fɔː/",
+   "meaning": "num.四，四个，第四",
+   "unit": 2,
+   "example": "Most animals have four legs.  大多数动物都有四条腿。"
+  },
+  {
+   "word": "Five",
+   "phonetic": "/faiv/",
+   "meaning": "num.五，五个，第五",
+   "unit": 2,
+   "example": "Five, four, three, two, one, blast-off!  五，四，三，二，一，点火！"
+  },
+  {
+   "word": "Six",
+   "phonetic": "/siks/",
+   "meaning": "num.六，六个",
+   "unit": 2,
+   "example": "Look for a bus with a number six on the front of it.  找一辆前面有数字六的公车。"
+  },
+  {
+   "word": "Seven",
+   "phonetic": "/ˈsevən/",
+   "meaning": "num.七，七个(人或物)",
+   "unit": 2,
+   "example": "The restaurant opens for dinner at seven o'clock.  餐厅在七点钟开门供应晚餐。"
+  },
+  {
+   "word": "Eight",
+   "phonetic": "/eit/",
+   "meaning": "num.八，八个，第八",
+   "unit": 2,
+   "example": "She was eight years old when her family moved here.  八岁那年，她家搬到了这里。"
+  },
+  {
+   "word": "Nine",
+   "phonetic": "/nain/",
+   "meaning": "num.九，九个",
+   "unit": 2,
+   "example": "The birthday girl was wearing a badge with a nine on it.  过生日的女孩戴着一个上面有9字的徽章。"
+  },
+  {
+   "word": "Ten",
+   "phonetic": "/ten/",
+   "meaning": "num.十，十个",
+   "unit": 2,
+   "example": "We have hired a minibus to take ten people to the party on Friday.  我们租了一辆小巴士在星期五带十个人去参加聚会。"
+  },
+  {
+   "word": "Eleven",
+   "phonetic": "/iˈlevən/",
+   "meaning": "num.十一，十一个",
+   "unit": 2,
+   "example": "There are eleven girls in my class and fifteen boys.  我班上有11个女生和15个男生。noun countable [+ sing/pl verb]"
+  },
+  {
+   "word": "Twelve",
+   "phonetic": "/twelv/",
+   "meaning": "num.十二，十二个",
+   "unit": 2,
+   "example": "a twelve-seater minibus  12座的小巴"
+  },
+  {
+   "word": "Thirteen",
+   "phonetic": "/ˈθəːˈtiːn/",
+   "meaning": "num.十三，十三个",
+   "unit": 2,
+   "example": "Some people think that thirteen is an unlucky number.  一些人认为十三是个不吉利的数字。"
+  },
+  {
+   "word": "Fourteen",
+   "phonetic": "/ˈfɔːˈtiːn/",
+   "meaning": "num.十四，第十四",
+   "unit": 2,
+   "example": "Her baby is fourteen months old.  她的孩子14个月大了。"
+  },
+  {
+   "word": "Fifteen",
+   "phonetic": "/ˈfifˈtiːn/",
+   "meaning": "num.十五；十五个",
+   "unit": 2,
+   "example": "\"How many books were returned?\" \"Fifteen (books).\"  “还回了多少本书？”“15本。”"
+  },
+  {
+   "word": "Sixteen",
+   "phonetic": "/ˈsiksˈtiːn/",
+   "meaning": "num.十六，十六个",
+   "unit": 2,
+   "example": "We've got sixteen (people) coming for lunch.  我们有16个人来吃午饭。"
+  },
+  {
+   "word": "Seventeen",
+   "phonetic": "/ˈsevənˈtiːn/",
+   "meaning": "num.十七，十七个",
+   "unit": 2,
+   "example": "Is that a seventeen on the front of that bus?  那辆公车的前面是不是写着17？"
+  },
+  {
+   "word": "Eighteen",
+   "phonetic": "/ˈeiˈtiːn/",
+   "meaning": "num.十八，十八个",
+   "unit": 2,
+   "example": "an eighteen-storey building  一座十八层建筑物"
+  },
+  {
+   "word": "Nineteen",
+   "phonetic": "/ˈnainˈtiːn/",
+   "meaning": "num.十九，十九个",
+   "unit": 2,
+   "example": "Simson, aged nineteen, was convicted on two charges of burglary.  19岁的西姆森被判两项盗窃罪罪成。"
+  },
+  {
+   "word": "Twenty",
+   "phonetic": "/ˈtwenti/",
+   "meaning": "num.二十，二十个",
+   "unit": 2,
+   "example": "space for twenty people  可容纳20个人的空间"
+  },
+  {
+   "word": "Thirty",
+   "phonetic": "/ˈθəːti/",
+   "meaning": "num.三十，三十个",
+   "unit": 2,
+   "example": "She got married when she was thirty (years old).  她三十岁时结婚的。"
+  },
+  {
+   "word": "Forty",
+   "phonetic": "/ˈfɔːti/",
+   "meaning": "num.四十，第四十",
+   "unit": 2,
+   "example": "He looks about forty.  他看上去40岁上下。"
+  },
+  {
+   "word": "Fifty",
+   "phonetic": "/ˈfifti/",
+   "meaning": "num.五十，五十个",
+   "unit": 2,
+   "example": "\"How fast were they driving?\" \"They were doing fifty (miles an hour).\"  “他们当时的车速有多快？”“他们的时速达到了50英里。”"
+  },
+  {
+   "word": "Sixty",
+   "phonetic": "/ˈsiksti/",
+   "meaning": "num.六十，六十个",
+   "unit": 2,
+   "example": "There are sixty (people) coming to the wedding.  有60人来参加婚礼。noun"
+  },
+  {
+   "word": "Seventy",
+   "phonetic": "/ˈsevənti/",
+   "meaning": "num.七十，七十个",
+   "unit": 2,
+   "example": "This house was built seventy years ago.  这栋房子建于70年前。"
+  },
+  {
+   "word": "Eighty",
+   "phonetic": "/ˈeiti/",
+   "meaning": "num.八十，八十个",
+   "unit": 2,
+   "example": "They've invited eighty (guests) to the wedding.  他们邀请了80个（客）人参加他们的婚礼。"
+  },
+  {
+   "word": "Ninety",
+   "phonetic": "/ˈnainti/",
+   "meaning": "num.九十，九十个",
+   "unit": 2,
+   "example": "Ninety percent of the people surveyed were in favour.  90%的被访者表示赞成。UK number"
+  },
+  {
+   "word": "Hundred",
+   "phonetic": "/ˈhʌndrəd/",
+   "meaning": "[ˈhʌndrid], num.百，百个 n.许多",
+   "unit": 2,
+   "example": "We've driven a/one hundred miles in the last two hours.  这两个小时我们已经开了100英哩了。"
+  },
+  {
+   "word": "Thousand",
+   "phonetic": "/ˈθauzənd/",
+   "meaning": "num.千，千个 n.无数",
+   "unit": 2,
+   "example": "I've got a thousand things to do before we go on holiday.  我们去渡假前，我还有很多事情要做。"
+  },
+  {
+   "word": "Million",
+   "phonetic": "/ˈmiljən/",
+   "meaning": "num.百万 n.许多",
+   "unit": 2,
+   "example": "She got eight million dollars for appearing in that film.  她出演那部电影拿到了800万美元的片酬。"
+  },
+  {
+   "word": "First",
+   "phonetic": "/fəːst/",
+   "meaning": "num.第一 ad.最初",
+   "unit": 2,
+   "example": "This is my first visit to New York.  这是我第一次到纽约。"
+  },
+  {
+   "word": "Second",
+   "phonetic": "/ˈsekənd/",
+   "meaning": "num.第二 a.二等的",
+   "unit": 2,
+   "example": "Is Brian her first or second child?  布莱恩是她的第一个还是第二个孩子？"
+  },
+  {
+   "word": "Third",
+   "phonetic": "/θəːd/",
+   "meaning": "num.第三；三分之一",
+   "unit": 2,
+   "example": "She came third in the exam.  她在考试中得了第三名。UK ordinal number"
+  },
+  {
+   "word": "Fourth",
+   "phonetic": "/fɔːθ/",
+   "meaning": "num.第四，四分之一",
+   "unit": 2,
+   "example": "My birthday is on the fourth of December.  我的生日是12月4日。"
+  },
+  {
+   "word": "Fifth",
+   "phonetic": "/fifθ/",
+   "meaning": "num.第五 n.五分之一",
+   "unit": 2,
+   "example": "Tomorrow is the fifth (of September).  明天是（9月）5号。ordinal number"
+  },
+  {
+   "word": "Red",
+   "phonetic": "/red/",
+   "meaning": "a.红色的 n.红色",
+   "unit": 3,
+   "example": "The dress was bright red.  这件连衣裙是鲜红色的。"
+  },
+  {
+   "word": "Blue",
+   "phonetic": "/bluː/",
+   "meaning": "a.蓝色的 n.蓝色",
+   "unit": 3,
+   "example": "Her hands were blue with cold (= slightly blue because of the cold).  她的手冻得发青。adjective"
+  },
+  {
+   "word": "Green",
+   "phonetic": "/griːn/",
+   "meaning": "a.绿色的 n.绿色",
+   "unit": 3,
+   "example": "He used to be a Liberal, but now he's a Green.  他以前是自由党成员，但是现在加入绿党了。"
+  },
+  {
+   "word": "Yellow",
+   "phonetic": "/ˈjeləu/",
+   "meaning": "a.黄(色)的 n.黄(色)",
+   "unit": 3,
+   "example": "It was early autumn and the leaves were turning yellow.  正值初秋时节，树叶开始转黄。"
+  },
+  {
+   "word": "Black",
+   "phonetic": "/blæk/",
+   "meaning": "a.黑色的；黑暗的",
+   "unit": 3,
+   "example": "The future looked black.  未来希望渺茫。"
+  },
+  {
+   "word": "White",
+   "phonetic": "/(h)wait/",
+   "meaning": "a.白的 n.白色",
+   "unit": 3,
+   "example": "He's white-haired now.  他现在头发都已经白了。"
+  },
+  {
+   "word": "Gray",
+   "phonetic": "/grei/",
+   "meaning": "a.灰色的 n.灰色",
+   "unit": 3,
+   "example": "The sky turned gray before the storm.  暴风雨来临前天空变成了灰色。"
+  },
+  {
+   "word": "Brown",
+   "phonetic": "/braun/",
+   "meaning": "n.褐色，棕色",
+   "unit": 3,
+   "example": "Both my parents have curly brown hair.  我的父母都有一头棕色的鬈发。verb intransitive or transitive"
+  },
+  {
+   "word": "Pink",
+   "phonetic": "/piŋk/",
+   "meaning": "n.粉红色 a.粉红色的",
+   "unit": 3,
+   "example": "Have you been in the sun? Your nose is a bit pink.  你晒太阳了吗？你的鼻子有点发红。adjective"
+  },
+  {
+   "word": "Purple",
+   "phonetic": "/ˈpəːpl/",
+   "meaning": "n.紫色 a.紫的",
+   "unit": 3,
+   "example": "Despite occasional patches of purple prose , the book is mostly clear and incisive.  这本书尽管偶尔有几段词藻华丽的文句，但总体来讲文风简洁明了。UK noun countable or uncountable"
+  },
+  {
+   "word": "Orange",
+   "phonetic": "/ˈɔrindʒ/",
+   "meaning": "n.橙(树)；柑(树)",
+   "unit": 3,
+   "example": "The setting sun filled the sky with a deep orange glow.  落日的余晖将天空染成了橙红色。UK noun countable or uncountable"
+  },
+  {
+   "word": "Gold",
+   "phonetic": "/gəuld/",
+   "meaning": "n.金；钱财 a.金制的",
+   "unit": 3,
+   "example": "He's running so well, surely he'll take the gold.  他跑得很出色，肯定能拿金牌UK adjective"
+  },
+  {
+   "word": "Silver",
+   "phonetic": "/ˈsilvə/",
+   "meaning": "n.银；银子；银器",
+   "unit": 3,
+   "example": "We gave Alison and Tom a dish made of solid silver as a wedding present.  我们送给爱丽森和汤姆一个纯银盘子作为结婚礼物。"
+  },
+  {
+   "word": "Beige",
+   "phonetic": "/beiʒ/",
+   "meaning": "n. 米黄色；adj. 浅褐色的；米黄色的；枯燥乏味的；n. (Beige)人名；(法)贝热",
+   "unit": 3,
+   "example": "She painted the walls beige.  她把墙刷成了米色。"
+  },
+  {
+   "word": "Navy",
+   "phonetic": "/ˈneivi/",
+   "meaning": "n.海军",
+   "unit": 3,
+   "example": "My brother is an officer in the Navy.  我兄弟是海军军官。"
+  },
+  {
+   "word": "Olive",
+   "phonetic": "/ˈɒlɪv/",
+   "meaning": "n. 1. 橄榄 2. 橄榄绿",
+   "unit": 3,
+   "example": "He held out an olive branch to the opposition by releasing 42 political prisoners.  他释放了42名政治犯，以此向反对派表达了和解的愿望。"
+  },
+  {
+   "word": "Cyan",
+   "phonetic": "/ˈsaɪən/",
+   "meaning": "(術語)藍綠色，青色（用於印刷）",
+   "unit": 3,
+   "example": "The logo uses cyan and white.  这个标志用了青色和白色。"
+  },
+  {
+   "word": "Magenta",
+   "phonetic": "/mə'dʒentə/",
+   "meaning": "n./a.紫红色(的)；n.紫红色的染料",
+   "unit": 3,
+   "example": "The printer needs magenta ink.  打印机需要品红色墨水。"
+  },
+  {
+   "word": "Rice",
+   "phonetic": "/rais/",
+   "meaning": "n.稻，米，饭",
+   "unit": 4,
+   "example": "Do you prefer brown rice or white rice?  你喜欢吃糙米还是精米？"
+  },
+  {
+   "word": "Noodle",
+   "phonetic": "/ˈnuːdl/",
+   "meaning": "n.(常用复数)面条",
+   "unit": 4,
+   "example": "egg/rice noodles  鸡蛋面／米粉"
+  },
+  {
+   "word": "Bread",
+   "phonetic": "/bred/",
+   "meaning": "n.面包；食物，粮食",
+   "unit": 4,
+   "example": "This bread is fresh/stale.  这面包是新鲜的／变味了。"
+  },
+  {
+   "word": "Egg",
+   "phonetic": "/eg/",
+   "meaning": "n.蛋，鸡蛋，卵",
+   "unit": 4,
+   "example": "How do you like your eggs - fried or boiled?  鸡蛋你想怎样吃？是吃煎的还是煮的？"
+  },
+  {
+   "word": "Milk",
+   "phonetic": "/milk/",
+   "meaning": "n.乳，牛奶 vt.挤(奶)",
+   "unit": 4,
+   "example": "Breast/Mother's milk is the best nourishment for a baby.  母乳是婴儿最好的营养品。"
+  },
+  {
+   "word": "Meat",
+   "phonetic": "/miːt/",
+   "meaning": "n.肉",
+   "unit": 4,
+   "example": "It was a nicely written article and quite amusing but there wasn't much meat to it.  这是篇文笔优美又饶有趣味的文章，但没甚么实质内容。noun"
+  },
+  {
+   "word": "Chicken",
+   "phonetic": "/ˈt∫ikin/",
+   "meaning": "n.小鸡，小鸟；鸡肉",
+   "unit": 4,
+   "example": "We're having roast/fried chicken for dinner.  晚饭我们吃烤鸡／炸鸡。noun"
+  },
+  {
+   "word": "Fish",
+   "phonetic": "/fi∫/",
+   "meaning": "n.鱼，鱼肉 vi.钓鱼",
+   "unit": 4,
+   "example": "Several large fish live in the pond.  池塘里有几条大鱼。"
+  },
+  {
+   "word": "Beef",
+   "phonetic": "/biːf/",
+   "meaning": "n.牛肉；菜牛",
+   "unit": 4,
+   "example": "The spaghetti sauce is made with UK minced / US ground beef.  这种意粉的调味汁是用牛肉碎做成的。"
+  },
+  {
+   "word": "Pork",
+   "phonetic": "/pɔːk/",
+   "meaning": "n.猪肉",
+   "unit": 4,
+   "example": "a pork chop  猪排"
+  },
+  {
+   "word": "Vegetable",
+   "phonetic": "/ˈvedʒitəbl/",
+   "meaning": "n.植物；蔬菜",
+   "unit": 4,
+   "example": "The potato is the most popular vegetable in Britain.  在英国，马铃薯是最受欢迎的蔬菜。"
+  },
+  {
+   "word": "Fruit",
+   "phonetic": "/fruːt/",
+   "meaning": "n.水果；果实；成果",
+   "unit": 4,
+   "example": "Apricots are the one fruit I don't like.  水果中只有杏子是我不爱吃的。"
+  },
+  {
+   "word": "Apple",
+   "phonetic": "/ˈæpl/",
+   "meaning": "n.苹果，苹果树",
+   "unit": 4,
+   "example": "His youngest daughter was the apple of his eye.  他的小女儿是他的心肝宝贝。noun countable or uncountable"
+  },
+  {
+   "word": "Banana",
+   "phonetic": "/bəˈnɑːnə/",
+   "meaning": "n.香蕉；芭蕉属植物",
+   "unit": 4,
+   "example": "a bunch of bananas  一串香蕉"
+  },
+  {
+   "word": "Grape",
+   "phonetic": "/greip/",
+   "meaning": "n.葡萄；葡萄藤",
+   "unit": 4,
+   "example": "black/white/red/green grapes  紫／白／红／绿葡萄"
+  },
+  {
+   "word": "Watermelon",
+   "phonetic": "/ˈwɒtә.melәn/",
+   "meaning": "n. 西瓜",
+   "unit": 4,
+   "example": "We shared a watermelon in summer.  夏天我们一起吃西瓜。"
+  },
+  {
+   "word": "Potato",
+   "phonetic": "/pəˈteitəu/",
+   "meaning": "n.马铃薯，土豆",
+   "unit": 4,
+   "example": "boiled/roasted/fried potatoes  煮／烤／炸马铃薯"
+  },
+  {
+   "word": "Tomato",
+   "phonetic": "/təˈmɑːtəu/",
+   "meaning": "n.番茄，西红柿",
+   "unit": 4,
+   "example": "Tomato soup is my favorite.  番茄汤是我的最爱。"
+  },
+  {
+   "word": "Carrot",
+   "phonetic": "/ˈkærət/",
+   "meaning": "n.胡罗卜",
+   "unit": 4,
+   "example": "Sometimes I just have to resort to the carrot and stick approach with my children.  有时候我只能对我的孩子采取软硬兼施的办法。"
+  },
+  {
+   "word": "Salad",
+   "phonetic": "/ˈsæləd/",
+   "meaning": "n.色拉；莴苣，生菜",
+   "unit": 4,
+   "example": "Toss (= Mix) the salad with a vinaigrette dressing.  用油醋酱调味料拌沙拉。"
+  },
+  {
+   "word": "Soup",
+   "phonetic": "/suːp/",
+   "meaning": "n.汤",
+   "unit": 4,
+   "example": "Would you like a bowl of soup?  你要不要来碗汤？noun countable or uncountable"
+  },
+  {
+   "word": "Coffee",
+   "phonetic": "/ˈkɔfi/",
+   "meaning": "n.咖啡，咖啡茶",
+   "unit": 4,
+   "example": "Would you get some coffee when you go shopping?  你去买东西时买点咖啡好吗？"
+  },
+  {
+   "word": "Tea",
+   "phonetic": "/tiː/",
+   "meaning": "n.茶；茶叶；茶树",
+   "unit": 4,
+   "example": "I'd love a cup of tea, please.  请给我来一杯茶。"
+  },
+  {
+   "word": "Juice",
+   "phonetic": "/dʒuːs/",
+   "meaning": "n.(水果等)汁，液",
+   "unit": 4,
+   "example": "Fry the meat first to seal in the juices.  先把肉煎一煎锁住肉汁。noun"
+  },
+  {
+   "word": "Coke",
+   "phonetic": "/kәuk/",
+   "meaning": "n.焦炭;可口可乐(COCA-COLA)的缩写",
+   "unit": 4,
+   "example": "I'd like a Coke with ice, please.  请给我一杯加冰可乐。"
+  },
+  {
+   "word": "Pizza",
+   "phonetic": "/ˈpiːtsə/",
+   "meaning": "n. 比萨饼（一种涂有乳酪和番茄酱的意大利式有馅烘饼）；n. (Pizza)人名；(意)皮扎",
+   "unit": 4,
+   "example": "a slice of pizza  一块比萨"
+  },
+  {
+   "word": "Hamburger",
+   "phonetic": "/ˈhæmbəːgə/",
+   "meaning": "n.汉堡包，牛肉饼",
+   "unit": 4,
+   "example": "He ate a hamburger for lunch.  他午餐吃了一个汉堡包。"
+  },
+  {
+   "word": "Sandwich",
+   "phonetic": "/ˈsænwidʒ/",
+   "meaning": "n.三明治 vt.夹入",
+   "unit": 4,
+   "example": "On the train I was sandwiched between two very large men.  在火车上，我被两个壮汉夹在中间。verb"
+  },
+  {
+   "word": "Pen",
+   "phonetic": "/pen/",
+   "meaning": "n.钢笔，自来水笔",
+   "unit": 5,
+   "example": "Don't write in (= using a) pen, or you won't be able to rub out any mistakes you make.  不要用钢笔写，否则写错就擦不掉了。noun countable"
+  },
+  {
+   "word": "Pencil",
+   "phonetic": "/ˈpensl/",
+   "meaning": "n.铅笔",
+   "unit": 5,
+   "example": "He sat with his pencil poised , ready to take notes.  他坐着，手里拿着铅笔准备写笔记。"
+  },
+  {
+   "word": "Book",
+   "phonetic": "/buk/",
+   "meaning": "n.书，书籍 vt.预定",
+   "unit": 5,
+   "example": "She wrote a book on car maintenance.  她写了一本关于汽车保养的书。"
+  },
+  {
+   "word": "Notebook",
+   "phonetic": "/ˈnəutbuk/",
+   "meaning": "n.笔记本，期票簿",
+   "unit": 5,
+   "example": "She was jotting things down in a little notebook.  她在一个小笔记本上匆匆记了些东西。UK noun countable"
+  },
+  {
+   "word": "Phone",
+   "phonetic": "/fəun/",
+   "meaning": "n.电话，电话机；耳机",
+   "unit": 5,
+   "example": "Just then, his mobile phone rang.  就在那时，他的手机响了。"
+  },
+  {
+   "word": "Computer",
+   "phonetic": "/kəmˈpjuːtə/",
+   "meaning": "n.计算机，电脑",
+   "unit": 5,
+   "example": "All our customer orders are handled by computer.  我们所有顾客的订单都是用电脑来处理的。"
+  },
+  {
+   "word": "Laptop",
+   "phonetic": "/ˈlæptɔp/",
+   "meaning": "n.膝上型电脑",
+   "unit": 5,
+   "example": "I take my laptop to the cafe.  我带着笔记本电脑去咖啡馆。"
+  },
+  {
+   "word": "Watch",
+   "phonetic": "/wɔt∫/",
+   "meaning": "vt.&vi.观看 n.手表",
+   "unit": 5,
+   "example": "He spent the entire afternoon watching a cricket match.  他整个下午都在看一场板球比赛。"
+  },
+  {
+   "word": "Glasses",
+   "phonetic": "/ˈɡlæsɪz/",
+   "meaning": "n. 眼镜",
+   "unit": 5,
+   "example": "I can't read without my glasses.  不戴眼镜我看不清。"
+  },
+  {
+   "word": "Bag",
+   "phonetic": "/bæg/",
+   "meaning": "n.袋，包，钱包，背包",
+   "unit": 5,
+   "example": "Don't eat that whole bag of (= the amount the bag contains) sweets at once.  不要一次就把整袋糖吃完。"
+  },
+  {
+   "word": "Wallet",
+   "phonetic": "/ˈwɔlit/",
+   "meaning": "n.钱包，皮夹子",
+   "unit": 5,
+   "example": "He pulled out a big fat wallet stuffed with bank notes.  他掏出一个塞满钞票的鼓鼓囊囊的大钱包。    Compare purse     (also document wallet)"
+  },
+  {
+   "word": "Key",
+   "phonetic": "/kiː/",
+   "meaning": "n.钥匙；键；答案",
+   "unit": 5,
+   "example": "The song changes key halfway through.  歌曲在中间部分调子变了。"
+  },
+  {
+   "word": "Cup",
+   "phonetic": "/kʌp/",
+   "meaning": "n.杯子；(一)杯；奖杯",
+   "unit": 5,
+   "example": "Sheila won this cup in the school squash championship.  这奖杯是希拉参加学校的壁球锦标赛获得的。"
+  },
+  {
+   "word": "Plate",
+   "phonetic": "/pleit/",
+   "meaning": "n.板，片，盘 vt.电镀",
+   "unit": 5,
+   "example": "There's still lots of food on your plate.  你的盘子里还有很多食物。"
+  },
+  {
+   "word": "Bowl",
+   "phonetic": "/bəul/",
+   "meaning": "n.碗，钵；碗状物",
+   "unit": 5,
+   "example": "She eats a bowl (= the contents of a bowl) of cereal every morning.  她每天早上吃一碗麦片。"
+  },
+  {
+   "word": "Spoon",
+   "phonetic": "/spuːn/",
+   "meaning": "n.匙，调羹",
+   "unit": 5,
+   "example": "He spooned the mush into the baby's open mouth.  他用杓舀了玉米粥喂到婴儿张开的嘴里。"
+  },
+  {
+   "word": "Fork",
+   "phonetic": "/fɔːk/",
+   "meaning": "n.餐叉；叉；分叉",
+   "unit": 5,
+   "example": "a knife and fork.  一副刀叉UK noun countable"
+  },
+  {
+   "word": "Knife",
+   "phonetic": "/naif/",
+   "meaning": "n.小刀，刀，餐刀",
+   "unit": 5,
+   "example": "He drew/pulled a knife and stabbed her.  他拔出刀，刺中了她。noun countable (plural knives)"
+  },
+  {
+   "word": "Toothbrush",
+   "phonetic": "/ˈtuːθbrʌʃ/",
+   "meaning": "n. 牙刷",
+   "unit": 5,
+   "example": "Brush your teeth twice a day.  每天刷两次牙。"
+  },
+  {
+   "word": "Towel",
+   "phonetic": "/ˈtauəl/",
+   "meaning": "n.毛巾，手巾",
+   "unit": 5,
+   "example": "She came downstairs after her shower, wrapped in a towel.  她淋浴后裹着毛巾走下楼来。"
+  },
+  {
+   "word": "Soap",
+   "phonetic": "/səup/",
+   "meaning": "n.肥皂",
+   "unit": 5,
+   "example": "She bought me a box of prettily coloured soaps.  她买了一箱颜色漂亮的肥皂给我。"
+  },
+  {
+   "word": "Shampoo",
+   "phonetic": "/∫æmˈpuː/",
+   "meaning": "vt.用洗发剂洗 n.洗头",
+   "unit": 5,
+   "example": "Directions: wet hair, apply shampoo and massage into a rich lather.  使用说明：润湿头发，涂上洗发精并轻揉头发至产生大量的泡沫。"
+  },
+  {
+   "word": "Shirt",
+   "phonetic": "/∫əːt/",
+   "meaning": "n.(男式)衬衫",
+   "unit": 6,
+   "example": "You've spilled something down your shirt front.  你把甚么东西洒在衬衫前襟上了。"
+  },
+  {
+   "word": "T-shirt",
+   "phonetic": "/ˈtiː,ʃәːt/",
+   "meaning": "n. 短袖圆领汗衫",
+   "unit": 6,
+   "example": "She was wearing jeans and a T-shirt.  她穿着牛仔裤和T恤。"
+  },
+  {
+   "word": "Pants",
+   "phonetic": "/pænts/",
+   "meaning": "n.裤子, 短裤",
+   "unit": 6,
+   "example": "Sunbathing bores the pants off me.  晒太阳真把我烦死了。plural noun"
+  },
+  {
+   "word": "Shorts",
+   "phonetic": "/ʃɔːrts/",
+   "meaning": "n. 短裤；n. (Shorts)人名；(英)肖茨",
+   "unit": 6,
+   "example": "She put on a pair of shorts and a T-shirt.  她穿上短裤和T恤"
+  },
+  {
+   "word": "Skirt",
+   "phonetic": "/skəːt/",
+   "meaning": "n.女裙；边缘；郊区",
+   "unit": 6,
+   "example": "Take the road which skirts (round) the village, not the one which goes through it.  沿村边的那条路走，不要走穿过村庄的那条路。"
+  },
+  {
+   "word": "Dress",
+   "phonetic": "/dres/",
+   "meaning": "n.女服，童装；服装",
+   "unit": 6,
+   "example": "The queen, in full ceremonial dress, presided over the ceremony.  女王身着礼服盛装主持仪式。verb"
+  },
+  {
+   "word": "Coat",
+   "phonetic": "/kəut/",
+   "meaning": "n.外套，上衣；表皮",
+   "unit": 6,
+   "example": "Do your coat up, Joe, or you'll freeze.  扣好外套，乔，不然你会冻坏的。"
+  },
+  {
+   "word": "Jacket",
+   "phonetic": "/ˈdʒækit/",
+   "meaning": "n.短上衣，茄克衫",
+   "unit": 6,
+   "example": "The keys are in my jacket pocket.  锁匙在我的夹克口袋里。noun countable"
+  },
+  {
+   "word": "Sweater",
+   "phonetic": "/ˈswetə/",
+   "meaning": "n.厚运动衫，毛线衫",
+   "unit": 6,
+   "example": "Put a sweater on if you're cold.  如果你觉得冷就穿件毛线衫吧。"
+  },
+  {
+   "word": "Hoodie",
+   "phonetic": "/ˈhʊdi/",
+   "meaning": "n. 连帽衫；卫衣",
+   "unit": 6,
+   "example": "It's cold outside, wear a hoodie.  外面冷，穿件连帽衫。"
+  },
+  {
+   "word": "Socks",
+   "phonetic": "/sɑːks/",
+   "meaning": "n. 袜子",
+   "unit": 6,
+   "example": "These socks are warm and soft.  这双袜子又暖又软。"
+  },
+  {
+   "word": "Shoes",
+   "phonetic": "/ʃuːz/",
+   "meaning": "n. 鞋",
+   "unit": 6,
+   "example": "Take off your shoes at the door.  在门口把鞋脱掉。"
+  },
+  {
+   "word": "Hat",
+   "phonetic": "/hæt/",
+   "meaning": "n.帽子(一般指有边的)",
+   "unit": 6,
+   "example": "This is me with my manager's hat on talking.  我这是以经理的身份在讲话。noun countable"
+  },
+  {
+   "word": "Cap",
+   "phonetic": "/kæp/",
+   "meaning": "n.帽子，便帽；帽状物",
+   "unit": 6,
+   "example": "Davis has 17 Scottish caps (= has played for Scotland 17 times).  戴维斯17次代表苏格兰参赛。"
+  },
+  {
+   "word": "Scarf",
+   "phonetic": "/skɑːf/",
+   "meaning": "n.围巾，头巾；领带",
+   "unit": 6,
+   "example": "a knitted/woollen/silk scarf  针织／羊毛／丝绸围巾UK verb transitive    US for"
+  },
+  {
+   "word": "Gloves",
+   "phonetic": "/ɡlʌvz/",
+   "meaning": "n. 手套",
+   "unit": 6,
+   "example": "Wear gloves before you go out.  出门之前戴上手套。"
+  },
+  {
+   "word": "Belt",
+   "phonetic": "/belt/",
+   "meaning": "n.带，腰带；皮带；区",
+   "unit": 6,
+   "example": "She fastened her belt tightly around her waist.  她把腰带束紧。"
+  },
+  {
+   "word": "Tie",
+   "phonetic": "/tai/",
+   "meaning": "n.领带；联系 vt.系",
+   "unit": 6,
+   "example": "Could you tie this piece of string for me?  你能帮我把这个绳子打个结吗？"
+  },
+  {
+   "word": "Home",
+   "phonetic": "/həum/",
+   "meaning": "n.家；家乡 a.家庭的",
+   "unit": 7,
+   "example": "The senator has two homes - an apartment in Washington and a house in Colorado.  这位参议员有两个家——一个是位于华盛顿的公寓，另一个是科罗拉多的家。"
+  },
+  {
+   "word": "School",
+   "phonetic": "/skuːl/",
+   "meaning": "n.学校；学院；学派",
+   "unit": 7,
+   "example": "They're building a new school in the village.  他们正在村里建一座新学校。"
+  },
+  {
+   "word": "Office",
+   "phonetic": "/ˈɔfis/",
+   "meaning": "n.办公室；处，局，社",
+   "unit": 7,
+   "example": "They've got offices in Paris, London and Madrid.  他们在巴黎、伦敦和马德里都设有办事处。UK noun"
+  },
+  {
+   "word": "Hospital",
+   "phonetic": "/ˈhɔspitl/",
+   "meaning": "n.医院",
+   "unit": 7,
+   "example": "a general/children's/maternity hospital  综合／儿童／妇产医院"
+  },
+  {
+   "word": "Park",
+   "phonetic": "/pɑːk/",
+   "meaning": "n.公园；停车场",
+   "unit": 7,
+   "example": "We watched the joggers in the park.  我们在公园里看别人慢跑。"
+  },
+  {
+   "word": "Store",
+   "phonetic": "/stɔː/",
+   "meaning": "n.贮藏；贮存品；商店",
+   "unit": 7,
+   "example": "He's got an impressively large store of wine in his cellar.  他的酒窖里储存了数量惊人的葡萄酒。"
+  },
+  {
+   "word": "Supermarket",
+   "phonetic": "/ˈsjuːpəˌmɑːkit/",
+   "meaning": "n.超级市场",
+   "unit": 7,
+   "example": "I shop at the supermarket every weekend.  我每周末去超市买东西。"
+  },
+  {
+   "word": "Restaurant",
+   "phonetic": "/ˈrestərənt/",
+   "meaning": "n.餐馆，饭店，菜馆",
+   "unit": 7,
+   "example": "We had dinner at a new restaurant.  我们在一家新餐厅吃了晚饭。"
+  },
+  {
+   "word": "Bank",
+   "phonetic": "/bæŋk/",
+   "meaning": "n.银行；库；岩，堤",
+   "unit": 7,
+   "example": "High street banks have been accused of exploiting small firms.  大型银行被指责剥削小企业。"
+  },
+  {
+   "word": "Library",
+   "phonetic": "/ˈlaibrəri/",
+   "meaning": "n.图书馆；藏书",
+   "unit": 7,
+   "example": "a public/university library  公共／大学图书馆"
+  },
+  {
+   "word": "Cinema",
+   "phonetic": "/ˈsinimə/",
+   "meaning": "n.电影院；电影，影片",
+   "unit": 7,
+   "example": "The town no longer has a cinema.  小镇已不再有电影院了。"
+  },
+  {
+   "word": "Station",
+   "phonetic": "/ˈstei∫ən/",
+   "meaning": "n.站，台，所，局",
+   "unit": 7,
+   "example": "Our office is near the station.  我们的办事处在火车站附近。"
+  },
+  {
+   "word": "Airport",
+   "phonetic": "/ˈeəpɔːt/",
+   "meaning": "n.机场，航空站",
+   "unit": 7,
+   "example": "an international airport  国际机场"
+  },
+  {
+   "word": "Hotel",
+   "phonetic": "/həuˈtel/",
+   "meaning": "n.旅馆",
+   "unit": 7,
+   "example": "We stayed in/at a hotel on the seafront.  我们住在一家滨海饭店。"
+  },
+  {
+   "word": "Street",
+   "phonetic": "/striːt/",
+   "meaning": "n.街，街道；行车道",
+   "unit": 7,
+   "example": "The streets were strewn with rubbish after the carnival.  狂欢节过后，街上到处是垃圾。"
+  },
+  {
+   "word": "Road",
+   "phonetic": "/rəud/",
+   "meaning": "n.路，道路，公路",
+   "unit": 7,
+   "example": "We live on a busy/quiet road.  我们住在一条繁忙／僻静的公路边。"
+  },
+  {
+   "word": "Left",
+   "phonetic": "/left/",
+   "meaning": "a.左边的 ad.在左边",
+   "unit": 7,
+   "example": "His left eye was heavily bandaged.  他的左眼被严严实实地包扎了起来。"
+  },
+  {
+   "word": "Right",
+   "phonetic": "/rait/",
+   "meaning": "a.正确的 ad.对，正好",
+   "unit": 7,
+   "example": "You got three answers right and two wrong.  你答对了三道题，错了两道。"
+  },
+  {
+   "word": "Front",
+   "phonetic": "/frʌnt/",
+   "meaning": "a.前面的 n.前部",
+   "unit": 7,
+   "example": "The National Front is an extremely right-wing political party in Britain.  民族阵线是英国极端右翼政党组织。"
+  },
+  {
+   "word": "Back",
+   "phonetic": "/bæk/",
+   "meaning": "ad.在后；回原处；回",
+   "unit": 7,
+   "example": "When you take the scissors, remember to put them back.  用完剪刀后，记着要放回原处。"
+  },
+  {
+   "word": "Up",
+   "phonetic": "/ʌp/",
+   "meaning": "ad.向上；起床，起来",
+   "unit": 7,
+   "example": "Put those books up on the top shelf.  把那些书放到书架顶层。"
+  },
+  {
+   "word": "Down",
+   "phonetic": "/daun/",
+   "meaning": "ad.向下，在下面",
+   "unit": 7,
+   "example": "Is this UKlift/ USelevator going down?  这部电梯是向下开的吗？"
+  },
+  {
+   "word": "Inside",
+   "phonetic": "/ˈinˈsaid/",
+   "meaning": "prep.在…里面 n.内部",
+   "unit": 7,
+   "example": "Did you clean the inside of the car?  你把车内擦干净了吗？"
+  },
+  {
+   "word": "Outside",
+   "phonetic": "/ˈautˈsaid/",
+   "meaning": "n.外部；外表 a.外部的",
+   "unit": 7,
+   "example": "It was a lovely day outside.  外面的天气真好。"
+  },
+  {
+   "word": "Near",
+   "phonetic": "/niə/",
+   "meaning": "ad.近，接近 a.近的",
+   "unit": 7,
+   "example": "Is there a train station near here?  这附近有火车站吗？"
+  },
+  {
+   "word": "Far",
+   "phonetic": "/fɑː/",
+   "meaning": "a.远的 ad.远，遥远",
+   "unit": 7,
+   "example": "How far is it from Australia to New Zealand?  从澳大利亚到纽西兰有多远？"
+  },
+  {
+   "word": "Morning",
+   "phonetic": "/ˈmɔːniŋ/",
+   "meaning": "n.早晨，上午",
+   "unit": 8,
+   "example": "She only works in the mornings.  她只在上午工作。"
+  },
+  {
+   "word": "Afternoon",
+   "phonetic": "/ˈɑːftəˈnuːn/",
+   "meaning": "n.下午，午后",
+   "unit": 8,
+   "example": "It was a sunny afternoon.  那是一个阳光明媚的下午。"
+  },
+  {
+   "word": "Evening",
+   "phonetic": "/ˈiːvniŋ/",
+   "meaning": "n.傍晚，黄昏，晚上",
+   "unit": 8,
+   "example": "Thank you for such a lovely evening.  多谢你的款待，让我渡过了一个如此美妙的夜晚。"
+  },
+  {
+   "word": "Night",
+   "phonetic": "/nait/",
+   "meaning": "n.夜，夜间",
+   "unit": 8,
+   "example": "It gets cold at night.  夜间天气转凉。"
+  },
+  {
+   "word": "Day",
+   "phonetic": "/dei/",
+   "meaning": "n.(一)天，白昼，白天",
+   "unit": 8,
+   "example": "January has 31 days.  一月份有31天。"
+  },
+  {
+   "word": "Week",
+   "phonetic": "/wiːk/",
+   "meaning": "n.星期，周",
+   "unit": 8,
+   "example": "We go to the cinema about once a week.  我们大约一周去看一次电影。"
+  },
+  {
+   "word": "Month",
+   "phonetic": "/mʌnθ/",
+   "meaning": "n.月，月份",
+   "unit": 8,
+   "example": "I'll be away for a month from mid-June to mid-July.  我会在6月中旬至7月中旬离开一个月。"
+  },
+  {
+   "word": "Year",
+   "phonetic": "/jəː/",
+   "meaning": "n.年；年年",
+   "unit": 8,
+   "example": "Annette worked in Italy for two years.  安妮特在义大利工作了两年。"
+  },
+  {
+   "word": "Hour",
+   "phonetic": "/ˈauə/",
+   "meaning": "n.小时；时间，时刻",
+   "unit": 8,
+   "example": "The exam lasted an hour and a half.  考试持续了一个半小时。"
+  },
+  {
+   "word": "Minute",
+   "phonetic": "/ˈminit/",
+   "meaning": "n.分，分钟；一会儿",
+   "unit": 8,
+   "example": "It takes me twenty minutes to get to work.  我上班路上要花20分钟。"
+  },
+  {
+   "word": "Today",
+   "phonetic": "/təˈdei/",
+   "meaning": "ad.在今天；现在",
+   "unit": 8,
+   "example": "What's the date today?  今天几号？"
+  },
+  {
+   "word": "Yesterday",
+   "phonetic": "/ˈjestədi/",
+   "meaning": "n.&ad.昨天，昨日",
+   "unit": 8,
+   "example": "He rang yesterday while you were out.  昨天你外出时他打电话来了。"
+  },
+  {
+   "word": "Tomorrow",
+   "phonetic": "/təˈmɔrəu/",
+   "meaning": "ad.在明天 n.明天",
+   "unit": 8,
+   "example": "I've arranged to see Rachel tomorrow night.  我已经安排好明天晚上去看雷切尔。"
+  },
+  {
+   "word": "Monday",
+   "phonetic": "/ˈmʌndei/",
+   "meaning": "n.星期一",
+   "unit": 8,
+   "example": "Term doesn't start this Monday (= the first one from now) , it starts (on) Monday week (= the second one from now).  不是接下来这个周一开学，是再下个周一。"
+  },
+  {
+   "word": "Tuesday",
+   "phonetic": "/ˈtjuːzdi/",
+   "meaning": "n.星期二",
+   "unit": 8,
+   "example": "We'll meet at eight on Tuesday.  我们周二八点见。"
+  },
+  {
+   "word": "Wednesday",
+   "phonetic": "/ˈwenzdei/",
+   "meaning": "n.星期三",
+   "unit": 8,
+   "example": "Did you say the meeting is on Wednesday?  你是说会议在星期三开吗？"
+  },
+  {
+   "word": "Thursday",
+   "phonetic": "/ˈθəːzdi/",
+   "meaning": "n.星期四",
+   "unit": 8,
+   "example": "We meet on the second Thursday of every month.  我们每个月的第二个星期四见面。"
+  },
+  {
+   "word": "Friday",
+   "phonetic": "/ˈfraidi/",
+   "meaning": "n.星期五",
+   "unit": 8,
+   "example": "Shall we go to the theatre on Friday?  我们星期五去看戏怎么样？"
+  },
+  {
+   "word": "Saturday",
+   "phonetic": "/ˈsætədi/",
+   "meaning": "n.星期六",
+   "unit": 8,
+   "example": "He's leaving on Saturday.  他星期六出发。"
+  },
+  {
+   "word": "Sunday",
+   "phonetic": "/ˈsʌndi/",
+   "meaning": "n.星期日，礼拜日",
+   "unit": 8,
+   "example": "They go to church on Sundays.  他们星期天去教堂。"
+  },
+  {
+   "word": "Spring",
+   "phonetic": "/spriŋ/",
+   "meaning": "vi.跳，跃 n.跳跃；泉",
+   "unit": 8,
+   "example": "Many bulbs bloom in (the) spring.  很多球茎植物春天开花。"
+  },
+  {
+   "word": "Summer",
+   "phonetic": "/ˈsʌmə/",
+   "meaning": "n.夏，夏季",
+   "unit": 8,
+   "example": "We have breakfast on the balcony in (the) summer.  夏天，我们在阳台上吃早饭。"
+  },
+  {
+   "word": "Autumn",
+   "phonetic": "/ˈɔːtəm/",
+   "meaning": "n.秋，秋季",
+   "unit": 8,
+   "example": "Leaves turn red and gold in autumn.  秋天树叶变成红色和金色。"
+  },
+  {
+   "word": "Winter",
+   "phonetic": "/ˈwintə/",
+   "meaning": "n.冬天，冬季",
+   "unit": 8,
+   "example": "Last winter we went skiing.  去年冬天我们去滑雪了。"
+  },
+  {
+   "word": "Go",
+   "phonetic": "/gəu/",
+   "meaning": "vi.去；走；变为",
+   "unit": 9,
+   "example": "We went into the house.  我们走进了那座房子。"
+  },
+  {
+   "word": "Come",
+   "phonetic": "/kʌm/",
+   "meaning": "vi.来，来到；出现",
+   "unit": 9,
+   "example": "Are you coming with me?  你跟我来吗？"
+  },
+  {
+   "word": "Walk",
+   "phonetic": "/wɔːk/",
+   "meaning": "vi.&n.走，步行",
+   "unit": 9,
+   "example": "He walks two kilometres to work every morning.  他每天早晨步行两公里去上班。"
+  },
+  {
+   "word": "Run",
+   "phonetic": "/rʌn/",
+   "meaning": "vi.跑，奔；行驶；流",
+   "unit": 9,
+   "example": "The sheep ran away/off in fright.  羊受惊跑掉了。"
+  },
+  {
+   "word": "Jump",
+   "phonetic": "/dʒʌmp/",
+   "meaning": "vi.跳；暴涨 vt.跳过",
+   "unit": 9,
+   "example": "The children were jumping up and down with excitement.  孩子都兴奋地跳来跳去。"
+  },
+  {
+   "word": "Eat",
+   "phonetic": "/iːt/",
+   "meaning": "vt.吃，喝 vi.吃饭",
+   "unit": 9,
+   "example": "Do you eat meat?  你吃肉吗？"
+  },
+  {
+   "word": "Drink",
+   "phonetic": "/driŋk/",
+   "meaning": "vt.饮 vi.喝 n.饮料",
+   "unit": 9,
+   "example": "Would you like a drink of water/tea/juice?  你想喝点水／茶／果汁吗？"
+  },
+  {
+   "word": "Sleep",
+   "phonetic": "/sliːp/",
+   "meaning": "n.睡眠 vi.睡 vt.睡",
+   "unit": 9,
+   "example": "You'll find that your baby usually goes to sleep after a feed.  你会发现你的孩子通常吃饱后就睡了。"
+  },
+  {
+   "word": "Wake",
+   "phonetic": "/weik/",
+   "meaning": "vi.醒，醒来 vt.唤醒",
+   "unit": 9,
+   "example": "Did you wake at all during the night?  夜里你一点都没醒吗？"
+  },
+  {
+   "word": "Work",
+   "phonetic": "/wəːk/",
+   "meaning": "n.工作；职业 vi.工作",
+   "unit": 9,
+   "example": "I've got so much work to do.  我有一大堆工作要做。"
+  },
+  {
+   "word": "Study",
+   "phonetic": "/ˈstʌdi/",
+   "meaning": "n.学习，研究 vt.学",
+   "unit": 9,
+   "example": "Next term we shall study plants and how they grow.  下个学期我们将学习植物及其生长过程。"
+  },
+  {
+   "word": "Read",
+   "phonetic": "/riːd/",
+   "meaning": "vt.读，看懂 vi.读",
+   "unit": 9,
+   "example": "He spent a pleasant afternoon reading (the newspaper/a book).  他一下午都在阅读（报纸／书），过得很开心。"
+  },
+  {
+   "word": "Write",
+   "phonetic": "/rait/",
+   "meaning": "vt.书写；写 vi.写",
+   "unit": 9,
+   "example": "Did you write off for tickets?  你写信索取门票了吗？ (wrote, written or old use writ)"
+  },
+  {
+   "word": "Listen",
+   "phonetic": "/ˈlisn/",
+   "meaning": "vi.听，留神听；听从",
+   "unit": 9,
+   "example": "What kind of music do you listen to ?  你听哪一类的音乐？"
+  },
+  {
+   "word": "Speak",
+   "phonetic": "/spiːk/",
+   "meaning": "vi.说话；发言 vt.说",
+   "unit": 9,
+   "example": "Would you mind speaking more slowly, please?  请你再说慢点，好吗？"
+  },
+  {
+   "word": "Talk",
+   "phonetic": "/tɔːk/",
+   "meaning": "vi.讲话 vt.谈论",
+   "unit": 9,
+   "example": "We were just talking about Simon's new girlfriend.  我们刚才在谈论赛门的新女友。"
+  },
+  {
+   "word": "See",
+   "phonetic": "/siː/",
+   "meaning": "vt.看见；遇见；看出",
+   "unit": 9,
+   "example": "Turn the light on so I can see.  打开灯，这样我才看得到。"
+  },
+  {
+   "word": "Look",
+   "phonetic": "/luk/",
+   "meaning": "vi.看，显得 n.看",
+   "unit": 9,
+   "example": "Look! There's grandma.  看！祖母在那里。"
+  },
+  {
+   "word": "Buy",
+   "phonetic": "/bai/",
+   "meaning": "vt.买，购买 vi.买",
+   "unit": 9,
+   "example": "Eventually she had saved enough money to buy a small car.  她最终存够了买一辆小汽车的钱。"
+  },
+  {
+   "word": "Sell",
+   "phonetic": "/sel/",
+   "meaning": "vt.&vi.卖，销售",
+   "unit": 9,
+   "example": "We'll be selling the tickets at/for £50 each.  我们每张票将卖50英镑。"
+  },
+  {
+   "word": "Take",
+   "phonetic": "/teik/",
+   "meaning": "vt.拿；抓；拿走；吃",
+   "unit": 9,
+   "example": "Has anything been taken (= stolen) ?  丢了甚么东西吗？"
+  },
+  {
+   "word": "Bring",
+   "phonetic": "/briŋ/",
+   "meaning": "vt.带来；引出；促使",
+   "unit": 9,
+   "example": "Can you help me bring in (= take into the house) the shopping?  你能帮我把买的东西拿进屋里吗？"
+  },
+  {
+   "word": "Make",
+   "phonetic": "/meik/",
+   "meaning": "vt.使；做，制造",
+   "unit": 9,
+   "example": "Shall I make some coffee?  我煮些咖啡好吗？"
+  },
+  {
+   "word": "Do",
+   "phonetic": "/duː/",
+   "meaning": "aux.v. vt.做，干，办",
+   "unit": 9,
+   "example": "That was a really stupid thing to do.  那么做真是太愚蠢了。"
+  },
+  {
+   "word": "Clean",
+   "phonetic": "/kliːn/",
+   "meaning": "a.清洁的；纯洁的",
+   "unit": 9,
+   "example": "Make sure your hands are clean before you have your dinner.  饭前一定要把手洗干净。"
+  },
+  {
+   "word": "Wash",
+   "phonetic": "/wɔ∫/",
+   "meaning": "vt.洗；冲出 vi.洗涤",
+   "unit": 9,
+   "example": "These sheets need washing.  这些床单需要洗洗。"
+  },
+  {
+   "word": "Cook",
+   "phonetic": "/kuk/",
+   "meaning": "vt.烹调，煮 vt.烧菜",
+   "unit": 9,
+   "example": "Let the fish cook for half an hour before you add the wine.  先把鱼煮半个小时再加入酒。verb"
+  },
+  {
+   "word": "Play",
+   "phonetic": "/plei/",
+   "meaning": "vi.玩，游戏；演奏",
+   "unit": 9,
+   "example": "The children spent the afternoon playing in the garden.  孩子们下午在花园里玩耍。"
+  },
+  {
+   "word": "Sing",
+   "phonetic": "/siŋ/",
+   "meaning": "vi.&vt.唱，演唱",
+   "unit": 9,
+   "example": "The children sang two songs by Schubert at the school concert.  在学校音乐会上，孩子们演唱了舒伯特的两首歌曲。"
+  },
+  {
+   "word": "Dance",
+   "phonetic": "/ˈdɑːns/",
+   "meaning": "vi.跳舞；摇晃 n.舞",
+   "unit": 9,
+   "example": "We danced all night.  我们跳了一夜的舞。"
+  },
+  {
+   "word": "Laugh",
+   "phonetic": "/lɑːf/",
+   "meaning": "vi.笑，发笑 n.笑",
+   "unit": 9,
+   "example": "They laughed at her jokes.  听了她讲的笑话他们都笑了。"
+  },
+  {
+   "word": "Cry",
+   "phonetic": "/krai/",
+   "meaning": "vi.哭，哭泣；叫喊",
+   "unit": 9,
+   "example": "\"There, there, don't cry,\" she said.  “好啦，好啦，别哭了，”她说道。"
+  },
+  {
+   "word": "Sunny",
+   "phonetic": "/ˈsʌni/",
+   "meaning": "a.阳光充足的；快活的",
+   "unit": 10,
+   "example": "We're having the party in the garden, so I'm praying it'll be sunny.  我们要在花园里举行聚会，所以我正祈祷那天会阳光明媚。adjective"
+  },
+  {
+   "word": "Rainy",
+   "phonetic": "/ˈreini/",
+   "meaning": "a.下雨的，多雨的",
+   "unit": 10,
+   "example": "We had three rainy days on holiday, but otherwise it was sunny.  我们渡假时遇到三个雨天，不过其他的日子都是阳光明媚。adjective"
+  },
+  {
+   "word": "Cloudy",
+   "phonetic": "/ˈklaudi/",
+   "meaning": "a.多云的；云一般的",
+   "unit": 10,
+   "example": "Scotland will be cloudy with wintry showers.  苏格兰将会转阴，且有寒冷的阵雨。"
+  },
+  {
+   "word": "Windy",
+   "phonetic": "/'windi/",
+   "meaning": "adj. 多风的，有风的；腹胀的；吹牛的",
+   "unit": 10,
+   "example": "It was a windy night.  那是个多风的夜晚。"
+  },
+  {
+   "word": "Snowy",
+   "phonetic": "/ˈsnəui/",
+   "meaning": "a.雪的，下雪的",
+   "unit": 10,
+   "example": "We've had a very snowy winter this year.  今年我们过了一个多雪的冬天。"
+  },
+  {
+   "word": "Foggy",
+   "phonetic": "/ˈfɔːɡi/",
+   "meaning": "adj. 有雾的；模糊的，朦胧的",
+   "unit": 10,
+   "example": "a cold, foggy day  寒冷多雾的一天UK adjective"
+  },
+  {
+   "word": "Hot",
+   "phonetic": "/hɔt/",
+   "meaning": "a.热的；刺激的；辣的",
+   "unit": 10,
+   "example": "It's too hot in here, can we turn down the heating?  这里面太热了，我们能把暖气关小点吗？"
+  },
+  {
+   "word": "Cold",
+   "phonetic": "/kəuld/",
+   "meaning": "a.冷的；冷淡的 n.冷",
+   "unit": 10,
+   "example": "My feet are so cold.  我的双脚冰冷。"
+  },
+  {
+   "word": "Warm",
+   "phonetic": "/wɔːm/",
+   "meaning": "a.温暖的；热烈的",
+   "unit": 10,
+   "example": "Are you warm enough or do you want the fire on?  你暖不暖和，要不要生火？"
+  },
+  {
+   "word": "Cool",
+   "phonetic": "/kuːl/",
+   "meaning": "a.凉的，冷静的",
+   "unit": 10,
+   "example": "It was a lovely cool evening.  那是个凉爽的夜晚。"
+  },
+  {
+   "word": "Dry",
+   "phonetic": "/drai/",
+   "meaning": "a.干的，干燥的",
+   "unit": 10,
+   "example": "These plants grow well in dry soil/a dry climate.  这些植物适宜在干旱的土壤里／气候条件下生长。"
+  },
+  {
+   "word": "Wet",
+   "phonetic": "/wet/",
+   "meaning": "a.湿的；下雨的",
+   "unit": 10,
+   "example": "My bike got wet in the rain.  我的脚踏车在雨中淋湿了。"
+  },
+  {
+   "word": "Storm",
+   "phonetic": "/stɔːm/",
+   "meaning": "n.风暴；暴(风)雨",
+   "unit": 10,
+   "example": "They're still clearing up the storm damage.  他们还在清理风暴留下的残局。UK noun"
+  },
+  {
+   "word": "Rainbow",
+   "phonetic": "/ˈreinbəu/",
+   "meaning": "n.虹，彩虹",
+   "unit": 10,
+   "example": "The tropical butterfly's wings were shimmering with all the colours of the rainbow.  热带蝴蝶的翅膀像彩虹一样闪烁着五彩缤纷的色彩。"
+  },
+  {
+   "word": "Thunder",
+   "phonetic": "/ˈθʌndə/",
+   "meaning": "n.雷 vi.打雷 vt.吼出",
+   "unit": 10,
+   "example": "The sky grew dark and it started to thunder.  天色变暗，开始打雷了。"
+  },
+  {
+   "word": "Lightning",
+   "phonetic": "/ˈlaitniŋ/",
+   "meaning": "[ˈlaitniŋ]n.闪电，闪电放电",
+   "unit": 10,
+   "example": "That tree was struck by lightning.  那棵树被闪电击中了。"
+  },
+  {
+   "word": "Happy",
+   "phonetic": "/ˈhæpi/",
+   "meaning": "a.快乐的；幸福的",
+   "unit": 11,
+   "example": "She looks so happy.  她看起来非常快乐。"
+  },
+  {
+   "word": "Sad",
+   "phonetic": "/sæd/",
+   "meaning": "a.悲哀的，令人悲痛的",
+   "unit": 11,
+   "example": "I've just received some very sad news.  我刚刚得到一些令人伤心的消息。"
+  },
+  {
+   "word": "Angry",
+   "phonetic": "/ˈæŋgri/",
+   "meaning": "a.愤怒的，生气的",
+   "unit": 11,
+   "example": "He's really angry at/with me for upsetting Sophie.  因为我惹了索菲，他很生我的气。"
+  },
+  {
+   "word": "Excited",
+   "phonetic": "/ikˈsaitid/",
+   "meaning": "adj. 兴奋的；激动的；活跃的；v. 激动；唤起（excite的过去分词）",
+   "unit": 11,
+   "example": "Are you getting excited about your holiday?  要去渡假了，你是不是很兴奋啊？"
+  },
+  {
+   "word": "Tired",
+   "phonetic": "/ˈtaiəd/",
+   "meaning": "a.疲劳的；厌倦的",
+   "unit": 11,
+   "example": "My legs are tired.  我的腿酸了。"
+  },
+  {
+   "word": "Scared",
+   "phonetic": "/skeәd/",
+   "meaning": "adj. 害怕的；v. 使害怕（scare的过去分词）",
+   "unit": 11,
+   "example": "He's scared of spiders.  他害怕蜘蛛。"
+  },
+  {
+   "word": "Surprised",
+   "phonetic": "/sәˈpraizd/",
+   "meaning": "adj. 感到惊讶的，出人意料的；v. 使惊奇（surprise的过去分词形式）",
+   "unit": 11,
+   "example": "We were very surprised at the result.  这个结果让我们觉得很意外。"
+  },
+  {
+   "word": "Bored",
+   "phonetic": "/bɔːrd/",
+   "meaning": "adj. 无聊的；无趣的；烦人的；v. 使厌烦（bore的过去式）；烦扰",
+   "unit": 11,
+   "example": "It was a cold, wet day and the children were bored.  那是一个阴冷而潮湿的日子，孩子们都很无聊。"
+  },
+  {
+   "word": "Shy",
+   "phonetic": "/∫ai/",
+   "meaning": "a.易受惊的；害羞的",
+   "unit": 11,
+   "example": "He was too shy to ask her to dance with him.  他太害羞了，不敢邀请她跳舞。"
+  },
+  {
+   "word": "Proud",
+   "phonetic": "/praud/",
+   "meaning": "a.骄傲的；自豪的",
+   "unit": 11,
+   "example": "You must be very proud of your son.  你一定为你的儿子感到非常自豪。"
+  },
+  {
+   "word": "Joyful",
+   "phonetic": "/ˈdʒɔiful/",
+   "meaning": "a.十分喜悦的，快乐的",
+   "unit": 11,
+   "example": "Christmas is such a joyful time of year.  圣诞节是一年中令人快乐的时节。"
+  },
+  {
+   "word": "Delighted",
+   "phonetic": "/diˈlaitid/",
+   "meaning": "adj. 高兴的；欣喜的；v. 使…兴高采烈；感到快乐（delight的过去分词）",
+   "unit": 11,
+   "example": "We're delighted with our new house.  我们对新房子非常满意。"
+  },
+  {
+   "word": "Cheerful",
+   "phonetic": "/ˈt∫iəful/",
+   "meaning": "a.快乐的，愉快的",
+   "unit": 11,
+   "example": "He's usually fairly cheerful.  他总是乐呵呵的。"
+  },
+  {
+   "word": "Optimistic",
+   "phonetic": "/ˌɔptiˈmistik/",
+   "meaning": "a.乐观/乐观主义的",
+   "unit": 11,
+   "example": "She is optimistic about her chances of winning a gold medal.  她对赢得金牌很乐观。"
+  },
+  {
+   "word": "Confident",
+   "phonetic": "/ˈkɔnfidənt/",
+   "meaning": "n.确信的，自信的",
+   "unit": 11,
+   "example": "Be a bit more confident in yourself!  你应该再自信一点！"
+  },
+  {
+   "word": "Grateful",
+   "phonetic": "/ˈgreitful/",
+   "meaning": "a.感激的；令人愉快的",
+   "unit": 11,
+   "example": "I'm so grateful (to you) for all that you've done.  你为我做了这一切，我（对你）真是感激不尽。"
+  },
+  {
+   "word": "Hopeful",
+   "phonetic": "/ˈhəupful/",
+   "meaning": "a.有希望的",
+   "unit": 11,
+   "example": "He was hopeful about the outcome of the meeting.  他对会议的结果充满希望。"
+  },
+  {
+   "word": "Enthusiastic",
+   "phonetic": "/inθjuːziˈæstik/",
+   "meaning": "a.热情的，热心的",
+   "unit": 11,
+   "example": "You don't seem very enthusiastic about the party - don't you want to go tonight?  你好像对这个派对不怎么热衷——你今晚不想去了吗？"
+  },
+  {
+   "word": "Loving",
+   "phonetic": "/ˈlʌviŋ/",
+   "meaning": "adj. 亲爱的；钟情的；忠诚的；n. (Loving)人名；(英、瑞典)洛文",
+   "unit": 11,
+   "example": "He's a very loving child.  他是个非常有爱心的孩子。"
+  },
+  {
+   "word": "Satisfied",
+   "phonetic": "/ˈsætisfaiәd/",
+   "meaning": "adj. 感到满意的；v. 使满意（satisfy的过去式）",
+   "unit": 11,
+   "example": "Some people are never satisfied!  有些人永远不会满足！"
+  },
+  {
+   "word": "Unhappy",
+   "phonetic": "/ʌnˈhæpi/",
+   "meaning": "a.不幸福的，不快乐的",
+   "unit": 11,
+   "example": "That's enough to make anyone unhappy.  所有人都会为此忧伤。"
+  },
+  {
+   "word": "Depressed",
+   "phonetic": "/di'prest/",
+   "meaning": "adj. 沮丧的；萧条的；压低的；v. 使沮丧；使萧条（depress的过去式和过去分词形式）；压低",
+   "unit": 11,
+   "example": "He seemed a bit depressed about his work situation.  他似乎对自己的工作状况有些沮丧。"
+  },
+  {
+   "word": "Frustrated",
+   "phonetic": "/frʌˈstreitid/",
+   "meaning": "adj. 失意的，挫败的；泄气的；v. 挫败；阻挠（frustrate的过去式和过去分词形式）",
+   "unit": 11,
+   "example": "Are you feeling frustrated in your present job?  你做现在这份工作感觉失意吗？"
+  },
+  {
+   "word": "Anxious",
+   "phonetic": "/ˈæŋk∫əs/",
+   "meaning": "a.忧虑的；渴望的",
+   "unit": 11,
+   "example": "My mother always gets a bit anxious if we don't arrive when we say we will.  如果我们说好回家却没有回去，我母亲总会有些担心。"
+  },
+  {
+   "word": "Worried",
+   "phonetic": "/ˈwɜːrid/",
+   "meaning": "adj. 担心的",
+   "unit": 11,
+   "example": "She was sitting behind her desk with a worried expression/look on her face.  她坐在桌子后面，神色焦急。"
+  },
+  {
+   "word": "Nervous",
+   "phonetic": "/ˈnəːvəs/",
+   "meaning": "a.神经的；易激动的",
+   "unit": 11,
+   "example": "Do you feel/get nervous during exams?  考试时，你感到紧张吗？"
+  },
+  {
+   "word": "Disappointed",
+   "phonetic": "/ˌdisәˈpɒintid/",
+   "meaning": "adj. 失望的，沮丧的；受挫折的",
+   "unit": 11,
+   "example": "We were deeply disappointed at/about the result.  我们对这个结果深感失望。"
+  },
+  {
+   "word": "Annoyed",
+   "phonetic": "/ə'nɔid/",
+   "meaning": "a.  生气的",
+   "unit": 11,
+   "example": "He was annoyed at the way she tried to take over the whole meeting.  她试图操控整个会议，这使他很恼火。"
+  },
+  {
+   "word": "Embarrassed",
+   "phonetic": "/imˈbærәst/",
+   "meaning": "adj. 尴尬的；窘迫的；v. 使...困窘；使...局促不安（embarrass的过去分词形式）",
+   "unit": 11,
+   "example": "She felt embarrassed about undressing in front of the doctor.  在医生面前脱衣服让她觉得很尴尬。"
+  },
+  {
+   "word": "Lonely",
+   "phonetic": "/ˈləunli/",
+   "meaning": "a.孤独的；荒凉的",
+   "unit": 11,
+   "example": "She gets lonely now that all the kids have left home.  现在孩子们都离开了家，她感到有些孤独。"
+  },
+  {
+   "word": "Curious",
+   "phonetic": "/ˈkjuəriəs/",
+   "meaning": "a.好奇的；稀奇古怪的",
+   "unit": 11,
+   "example": "Babies are curious about everything around them.  婴儿对周围的一切都很好奇。"
+  },
+  {
+   "word": "Confused",
+   "phonetic": "/kәnˈfjuːzd/",
+   "meaning": "adj. 困惑的；混乱的；糊涂的；v. 困惑（confuse的过去式）",
+   "unit": 11,
+   "example": "Grandfather gets quite confused sometimes, and doesn't even know what day it is.  祖父有的时候很糊涂，甚至不知道当天是星期几。"
+  },
+  {
+   "word": "Amazed",
+   "phonetic": "/ə'meizd/",
+   "meaning": "a.  吃惊的,惊奇的",
+   "unit": 11,
+   "example": "She was amazed at how calm she felt after the accident.  事故发生后她是如此镇定，这让她自己都觉得惊奇。"
+  },
+  {
+   "word": "Ashamed",
+   "phonetic": "/əˈ∫eimd/",
+   "meaning": "a.惭愧(的)；羞耻(的)",
+   "unit": 11,
+   "example": "You've got nothing to be ashamed of.  你没有需要对甚么感到内疚的。"
+  },
+  {
+   "word": "Jealous",
+   "phonetic": "/ˈdʒeləs/",
+   "meaning": "a.妒忌的；猜疑的",
+   "unit": 11,
+   "example": "He had always been very jealous of his brother's good looks.  他总是很妒忌他哥哥帅气的长相。"
+  },
+  {
+   "word": "Sympathetic",
+   "phonetic": "/ˌsimpəˈθetik/",
+   "meaning": "a.同情的；和谐的",
+   "unit": 11,
+   "example": "He suffers from back trouble too, so he was very sympathetic about my problem.  他自己也受背痛的困扰，所以对我的烦恼深表同情。"
+  },
+  {
+   "word": "Determined",
+   "phonetic": "/dɪˈtɜːrmɪnd/",
+   "meaning": "adj. 决定了的；坚决的；v. 决定；断定（determine的过去分词）",
+   "unit": 11,
+   "example": "She's sure to get the job she wants - she's a very determined person.  她肯定会得到她想要的那份工作——她是个意志很坚定的人。"
+  },
+  {
+   "word": "Relieved",
+   "phonetic": "/ri'li:vd/",
+   "meaning": "adj.  宽心的",
+   "unit": 11,
+   "example": "He was relieved to see Jeannie reach the other side of the river safely.  看到珍妮安全到达河对岸，他心头一块石头落了地。"
+  },
+  {
+   "word": "Guilty",
+   "phonetic": "/ˈgilti/",
+   "meaning": "a.内疚的；有罪的",
+   "unit": 11,
+   "example": "She must have done something wrong, because she's looking so guilty.  她一定是做错甚么事了，因为她一脸愧疚。"
+  },
+  {
+   "word": "Impatient",
+   "phonetic": "/imˈpei∫ənt/",
+   "meaning": "a.不耐烦的，急躁的",
+   "unit": 11,
+   "example": "He's a good teacher, but inclined to be a bit impatient with slow learners.  他是个好老师，但对学得慢的学生却总有些不耐烦。"
+  },
+  {
+   "word": "Circle",
+   "phonetic": "/ˈsəːkl/",
+   "meaning": "n.圆，圆周；圈子",
+   "unit": 12,
+   "example": "Coloured paper was cut into circles, squares and triangles.  彩纸被剪成了圆形、正方形和三角形。"
+  },
+  {
+   "word": "Rectangle",
+   "phonetic": "/ˈrek,tæŋɡl/",
+   "meaning": "n.[数]矩形, 长方形",
+   "unit": 12,
+   "example": "A door is usually a rectangle.  门通常是个长方形。"
+  },
+  {
+   "word": "Triangle",
+   "phonetic": "/ˈtraiæŋgl/",
+   "meaning": "n.三角(形)",
+   "unit": 12,
+   "example": "Which earrings did you buy in the end - the triangles or the circles?  最后你买了甚么样的耳环——三角形的还是圆的？"
+  },
+  {
+   "word": "Square",
+   "phonetic": "/skweə/",
+   "meaning": "n.正方形；广场",
+   "unit": 12,
+   "example": "First draw a square.  首先画一个正方形。"
+  },
+  {
+   "word": "Oval",
+   "phonetic": "/ˈəuvəl/",
+   "meaning": "a.卵形的,椭圆形的 n.卵形,椭圆形",
+   "unit": 12,
+   "example": "an oval mirror  椭圆形镜子"
+  },
+  {
+   "word": "Sphere",
+   "phonetic": "/sfiə/",
+   "meaning": "n.球，圆体；范围",
+   "unit": 12,
+   "example": "Doctors have replaced the top of his hip bone with a metal sphere.  医生们用一个金属球替换了他的髋骨顶端。UK noun countable"
+  },
+  {
+   "word": "Cube",
+   "phonetic": "/kjuːb/",
+   "meaning": "n.立方形；立方",
+   "unit": 12,
+   "example": "Cut the cheese into small cubes.  将起司切成小方块。noun countable"
+  },
+  {
+   "word": "Cylinder",
+   "phonetic": "/ˈsilində/",
+   "meaning": "n.圆筒,圆锥体;汽缸",
+   "unit": 12,
+   "example": "Deep-sea divers carry cylinders (= containers) of oxygen on their backs.  深海潜水员背上背有氧气筒。UK noun countable"
+  },
+  {
+   "word": "Cone",
+   "phonetic": "/kəun/",
+   "meaning": "n.  圆锥体,球果vt.  使成锥形",
+   "unit": 12,
+   "example": "Part of the road had been coned off for repair work.  部分道路用锥形路标封闭起来以便维修。"
+  },
+  {
+   "word": "Line",
+   "phonetic": "/lain/",
+   "meaning": "n.线；排；路线；线条",
+   "unit": 12,
+   "example": "Sign your name on the dotted line.  请在虚线处签名。"
+  },
+  {
+   "word": "Angle",
+   "phonetic": "/ˈæŋgl/",
+   "meaning": "n.角，角度",
+   "unit": 12,
+   "example": "The interior angles of a square are right angles or angles of 90 degrees.  正方形的内角是直角，即90度角。"
+  },
+  {
+   "word": "Length",
+   "phonetic": "/leŋθ/",
+   "meaning": "n.长，长度；一段",
+   "unit": 12,
+   "example": "The boat is ten metres in length.  这条船长十米。"
+  },
+  {
+   "word": "Width",
+   "phonetic": "/widθ/",
+   "meaning": "n.宽阔，广阔；宽度",
+   "unit": 12,
+   "example": "It is 5 metres in width.  它的宽度是五米。"
+  },
+  {
+   "word": "Height",
+   "phonetic": "/hait/",
+   "meaning": "n.高，高度；高处",
+   "unit": 12,
+   "example": "The sheer height of New York's skyscrapers is so impressive.  纽约的摩天大楼光高度就气势非凡。"
+  },
+  {
+   "word": "Depth",
+   "phonetic": "/depθ/",
+   "meaning": "n.深度；深厚；深处",
+   "unit": 12,
+   "example": "There are very few fish at depths (= distances below the surface) below 3000 metres.  水下3000米处很少有鱼。"
+  },
+  {
+   "word": "Area",
+   "phonetic": "/ˈeəriə/",
+   "meaning": "n.面积；地区；领域",
+   "unit": 12,
+   "example": "All areas of the country will have some rain tonight.  今晚全国所有地区都将有降雨。"
+  },
+  {
+   "word": "Volume",
+   "phonetic": "/ˈvɔljuːm/",
+   "meaning": "n.卷，册；容积；音量",
+   "unit": 12,
+   "example": "Which of these bottles do you think has the greater volume?  你认为这些瓶子中哪个容积最大？"
+  },
+  {
+   "word": "Perimeter",
+   "phonetic": "/pə'rimitə/",
+   "meaning": "n. 周长；周界；[眼科] 视野计",
+   "unit": 12,
+   "example": "Protesters cut a hole in the perimeter fence.  抗议人士在周围的栅栏上破开了一个洞。"
+  },
+  {
+   "word": "Radius",
+   "phonetic": "/ˈreidjəs/",
+   "meaning": "n.半径",
+   "unit": 12,
+   "example": "The radius of this wheel is 30 cm.  这个轮子的半径是30厘米。"
+  },
+  {
+   "word": "Diameter",
+   "phonetic": "/daiˈæmitə/",
+   "meaning": "n.直径",
+   "unit": 12,
+   "example": "The diameter measures twice the radius.  直径是半径的两倍。"
+  },
+  {
+   "word": "Circumference",
+   "phonetic": "/səˈkʌmfərəns/",
+   "meaning": "n.圆周，周长，圆周线",
+   "unit": 12,
+   "example": "the circumference of a circle/an orange  圆／橙的周长"
+  },
+  {
+   "word": "Edge",
+   "phonetic": "/edʒ/",
+   "meaning": "n.边缘，边；刀口",
+   "unit": 12,
+   "example": "He'd piped fresh cream around the edge of the cake.  他用鲜奶油沿蛋糕边挤花。"
+  },
+  {
+   "word": "Corner",
+   "phonetic": "/ˈkɔːnə/",
+   "meaning": "n.角；犄角；边远地区",
+   "unit": 12,
+   "example": "You drive round corners too fast - just slow down a bit!  你转弯时开得太快——稍微放慢一点！"
+  },
+  {
+   "word": "Surface",
+   "phonetic": "/ˈsəːfis/",
+   "meaning": "n.地面，表面；外表",
+   "unit": 12,
+   "example": "Tropical rain forests used to cover 10% of the Earth's surface.  以前，地球表面的10%都被热带雨林所覆盖。"
+  },
+  {
+   "word": "Dog",
+   "phonetic": "/dɔg/",
+   "meaning": "n.狗，犬，犬科动物",
+   "unit": 13,
+   "example": "We could hear dogs barking in the distance.  我们可以听到远处的狗叫声。UK noun countable"
+  },
+  {
+   "word": "Rabbit",
+   "phonetic": "/ˈræbit/",
+   "meaning": "n.兔子，野兔",
+   "unit": 13,
+   "example": "He's always rabbiting on about his stamp collection.  他总是没完没了地说他的集邮。"
+  },
+  {
+   "word": "Cat",
+   "phonetic": "/kæt/",
+   "meaning": "n.猫，猫科，猫皮",
+   "unit": 13,
+   "example": "As kids we used to fight like cat and dog.  小时候，我们总是吵吵闹闹的。noun countable"
+  },
+  {
+   "word": "Cow",
+   "phonetic": "/kau/",
+   "meaning": "n.母牛，奶牛；母兽",
+   "unit": 13,
+   "example": "You stupid cow!  你这个蠢婆娘！noun"
+  },
+  {
+   "word": "Pig",
+   "phonetic": "/pig/",
+   "meaning": "n.猪，小猪，野猪",
+   "unit": 13,
+   "example": "The meat produced from a pig is called pork, bacon or ham.  从猪身上取得的食用肉品有鲜猪肉、熏咸肉和火腿。"
+  },
+  {
+   "word": "Sheep",
+   "phonetic": "/∫iːp/",
+   "meaning": "n.羊，绵羊",
+   "unit": 13,
+   "example": "The farmer has several large flocks (= groups) of long-haired sheep.  这位农夫养着好几大群长毛绵羊。"
+  },
+  {
+   "word": "Horse",
+   "phonetic": "/hɔːs/",
+   "meaning": "n.马；马科动物",
+   "unit": 13,
+   "example": "He spends all his money on the horses.  他把所有的钱都花在赌马上了。UK noun"
+  },
+  {
+   "word": "Duck",
+   "phonetic": "/dʌk/",
+   "meaning": "n.鸭，雌鸭；鸭肉",
+   "unit": 13,
+   "example": "[as form of address] Come and sit beside me, duck.  过来坐我边上，乖乖。noun"
+  },
+  {
+   "word": "Goose",
+   "phonetic": "/guːs/",
+   "meaning": "n.鹅，雌鹅",
+   "unit": 13,
+   "example": "A goose is swimming in the lake.  一只鹅正在湖里游泳。"
+  },
+  {
+   "word": "Bird",
+   "phonetic": "/bəːd/",
+   "meaning": "n.鸟，禽",
+   "unit": 13,
+   "example": "Most birds lay eggs in the spring.  大多数鸟类都在春天产卵。"
+  },
+  {
+   "word": "Mouse",
+   "phonetic": "/maus/",
+   "meaning": "n.鼠，耗子",
+   "unit": 13,
+   "example": "a field mouse  田鼠"
+  },
+  {
+   "word": "Elephant",
+   "phonetic": "/ˈelifənt/",
+   "meaning": "n.象",
+   "unit": 13,
+   "example": "The elephant is the largest land animal.  大象是最大的陆地动物。"
+  },
+  {
+   "word": "Tiger",
+   "phonetic": "/ˈtaigə/",
+   "meaning": "n.虎",
+   "unit": 13,
+   "example": "A tiger is sleeping in the forest.  一只老虎正在森林里睡觉。"
+  },
+  {
+   "word": "Lion",
+   "phonetic": "/ˈlaiən/",
+   "meaning": "n.狮子；勇猛的人",
+   "unit": 13,
+   "example": "Reputable charities spend the lion's share of donations on aid and a tiny fraction on administration.  声誉好的慈善机构将捐款的大部分都花在援助上，只有极少部分用于管理。"
+  },
+  {
+   "word": "Monkey",
+   "phonetic": "/mʌŋki/",
+   "meaning": "n.猴子，猿",
+   "unit": 13,
+   "example": "They ate all the cakes, the monkeys.  他们吃掉了所有的蛋糕，这些捣蛋鬼。"
+  },
+  {
+   "word": "Panda",
+   "phonetic": "/ˈpændə/",
+   "meaning": "n.小猫熊；猫熊",
+   "unit": 13,
+   "example": "The panda eats bamboo every day.  大熊猫每天吃竹子。"
+  },
+  {
+   "word": "Bear",
+   "phonetic": "/beə/",
+   "meaning": "n.熊；粗鲁的人",
+   "unit": 13,
+   "example": "The strain must have been enormous but she bore it well.  当时压力一定很大，但她承受得了。"
+  },
+  {
+   "word": "Fox",
+   "phonetic": "/fɔːks/",
+   "meaning": "n.狐狸；狡猾的人",
+   "unit": 13,
+   "example": "He's a cunning/sly/wily old fox.  他是一个狡猾／阴险／诡计多端的老狐狸。UK noun"
+  },
+  {
+   "word": "Wolf",
+   "phonetic": "/wulf/",
+   "meaning": "n.狼",
+   "unit": 13,
+   "example": "Wolves hunt in groups known as packs.  狼群集体觅食。"
+  },
+  {
+   "word": "Deer",
+   "phonetic": "/diə/",
+   "meaning": "n.鹿",
+   "unit": 13,
+   "example": "a herd of deer  一群鹿"
+  },
+  {
+   "word": "Snake",
+   "phonetic": "/sneik/",
+   "meaning": "n.蛇",
+   "unit": 13,
+   "example": "He's terrified of being bitten by a snake.  他很害怕被蛇咬。"
+  },
+  {
+   "word": "Frog",
+   "phonetic": "/frɔg/",
+   "meaning": "n.蛙",
+   "unit": 13,
+   "example": "Frogs make a low noise called a croak.  青蛙会发出“呱呱”的低沉叫声。"
+  },
+  {
+   "word": "Bee",
+   "phonetic": "/biː/",
+   "meaning": "n.蜂，密蜂；忙碌的人",
+   "unit": 13,
+   "example": "My arm swelled up where I was stung by a bee.  我手臂上被蜜蜂螫的地方肿了起来。"
+  },
+  {
+   "word": "Butterfly",
+   "phonetic": "/ˈbʌtəflai/",
+   "meaning": "n.蝴蝶",
+   "unit": 13,
+   "example": "She's such a social butterfly.  她可真是个交际花。UK noun countable"
+  },
+  {
+   "word": "Turtle",
+   "phonetic": "/'tə:tl/",
+   "meaning": "n.  海龟",
+   "unit": 13,
+   "example": "The turtle moves slowly but steadily.  乌龟走得慢但是很稳。"
+  },
+  {
+   "word": "Ant",
+   "phonetic": "/ænt/",
+   "meaning": "n.蚂蚁",
+   "unit": 13,
+   "example": "An ant carries food back to its nest.  蚂蚁把食物搬回巢穴。"
+  },
+  {
+   "word": "Spider",
+   "phonetic": "/ˈspaidə/",
+   "meaning": "n.蜘蛛",
+   "unit": 13,
+   "example": "a spider's web  蛛网"
+  },
+  {
+   "word": "Dragonfly",
+   "phonetic": "/ˈdræɡɡflaɪ/",
+   "meaning": "n. 蜻蜓",
+   "unit": 13,
+   "example": "A dragonfly sat on the leaf.  一只蜻蜓停在了叶子上。"
+  },
+  {
+   "word": "Steamed bun",
+   "phonetic": "/stiːmd bʌn/",
+   "meaning": "n. 馒头；包子",
+   "unit": 14,
+   "example": "I had a steamed bun for breakfast.  我早饭吃了一个包子。"
+  },
+  {
+   "word": "Dumpling",
+   "phonetic": "/ˈdʌmplɪŋ/",
+   "meaning": "1.小麪糰；湯糰；餃子 2.小麪糰；水果湯糰；水果布丁",
+   "unit": 14,
+   "example": "apple dumplings  苹果布丁"
+  },
+  {
+   "word": "Fried rice",
+   "phonetic": "/fraɪd raɪs/",
+   "meaning": "n. 炒饭",
+   "unit": 14,
+   "example": "Fried rice tastes better with eggs.  蛋炒饭更好吃。"
+  },
+  {
+   "word": "Fried noodles",
+   "phonetic": "/fraɪd ˈnuːdlz/",
+   "meaning": "n. 炒面；炒面条",
+   "unit": 14,
+   "example": "He ordered fried noodles for lunch.  他午餐点了炒面。"
+  },
+  {
+   "word": "Sushi",
+   "phonetic": "/ˈsuːʃi/",
+   "meaning": "n. 寿司（生鱼片冷饭团）",
+   "unit": 14,
+   "example": "Sushi is popular in Japan.  寿司在日本很受欢迎。"
+  },
+  {
+   "word": "Cake",
+   "phonetic": "/keik/",
+   "meaning": "n.饼，糕，蛋糕",
+   "unit": 14,
+   "example": "Would you like a piece of/a slice of/some cake?  你想来块／片／点蛋糕吗？"
+  },
+  {
+   "word": "Cookie",
+   "phonetic": "/ˈkʊki/",
+   "meaning": "n. 饼干；小甜点",
+   "unit": 14,
+   "example": "She's a smart/tough cookie.  她是个聪明／顽强的人。noun countable"
+  },
+  {
+   "word": "Cheese",
+   "phonetic": "/t∫iːz/",
+   "meaning": "n.乳酪，干酪",
+   "unit": 14,
+   "example": "Would you like a slice/piece of cheese with your bread?  你想要块起司配面包吃吗？"
+  },
+  {
+   "word": "Chocolate",
+   "phonetic": "/ˈt∫ɔkəlit/",
+   "meaning": "n.巧克力；巧克力糖",
+   "unit": 14,
+   "example": "a bar of chocolate  一条巧克力"
+  },
+  {
+   "word": "Ice cream",
+   "phonetic": "/ˈaɪs kriːm/",
+   "meaning": "n. 冰淇淋",
+   "unit": 14,
+   "example": "a tub of ice cream  一盒霜淇淋"
+  },
+  {
+   "word": "Water",
+   "phonetic": "/ˈwɔːtə/",
+   "meaning": "n.水 vt.使湿，灌溉",
+   "unit": 14,
+   "example": "Can I have a drop of water in my whiskey, please?  请在我的威士卡里加一点水，好吗？"
+  },
+  {
+   "word": "Server",
+   "phonetic": "/ˈsәːvә/",
+   "meaning": "n. 发球员；服伺者；服勤者；伺候者；n. (Server)人名；(土)塞尔韦尔",
+   "unit": 15,
+   "example": "a client/network/file server  客户／网路／档案伺服器UK noun countable"
+  },
+  {
+   "word": "CPU",
+   "phonetic": "/ˌsiː piː ˈjuː/",
+   "meaning": "abbr. 中央处理机（Central Processing Unit）",
+   "unit": 15,
+   "example": "The CPU is the brain of the computer.  CPU 是计算机的大脑。"
+  },
+  {
+   "word": "Memory",
+   "phonetic": "/ˈmeməri/",
+   "meaning": "n.记忆；回忆；存储",
+   "unit": 15,
+   "example": "After the accident he suffered from loss of memory/memory loss.  意外发生之后，他丧失了记忆力。"
+  },
+  {
+   "word": "Hard drive",
+   "phonetic": "/hɑːrd draɪv/",
+   "meaning": "n. 硬盘",
+   "unit": 15,
+   "example": "Save the files to the hard drive.  把文件保存到硬盘里。"
+  },
+  {
+   "word": "SSD",
+   "phonetic": "/ˌes es ˈdiː/",
+   "meaning": "n. 固态硬盘（solid-state drive）",
+   "unit": 15,
+   "example": "An SSD makes the laptop start faster.  固态硬盘让笔记本启动更快。"
+  },
+  {
+   "word": "Internet",
+   "phonetic": "/ˈintənet/",
+   "meaning": "n.[the～]国际互联网,因特网",
+   "unit": 15,
+   "example": "The Internet connects the whole world.  互联网连接着整个世界。"
+  },
+  {
+   "word": "Website",
+   "phonetic": "/ˈwebsaɪt/",
+   "meaning": "n. 网站（全球资讯网的主机站）",
+   "unit": 15,
+   "example": "For more information about other Cambridge publications, visit our website at www.cambridge.org.  欲知剑桥大学出版社其他图书详情，请访问我们的网站 www.cambridge.org。"
+  },
+  {
+   "word": "Webpage",
+   "phonetic": "/ˈwebpeɪdʒ/",
+   "meaning": "n. 网页",
+   "unit": 15,
+   "example": "This webpage loads very quickly.  这个网页加载非常快。"
+  },
+  {
+   "word": "Browser",
+   "phonetic": "/ˈbraʊzər/",
+   "meaning": "n. [计] 浏览器；吃嫩叶的动物；浏览书本的人",
+   "unit": 15,
+   "example": "a Web browser  网页浏览器UK noun countable"
+  },
+  {
+   "word": "Search engine",
+   "phonetic": "/ˈsɜːrtʃ endʒɪn/",
+   "meaning": "n. 搜索引擎",
+   "unit": 15,
+   "example": "Google is a popular search engine.  谷歌是常用的搜索引擎。"
+  },
+  {
+   "word": "Email",
+   "phonetic": "/ˈiːmeɪl/",
+   "meaning": "n. 电子邮件 v. 发电子邮件",
+   "unit": 15,
+   "example": "You can contact us by email or fax.  你可以透过电子邮件或者传真联系我们。"
+  },
+  {
+   "word": "Network",
+   "phonetic": "/ˈnetwəːk/",
+   "meaning": "n.网状物；网络",
+   "unit": 15,
+   "example": "Massive investment is needed to modernise the country's telephone network.  全国电话网路实现现代化需要巨额投资。"
+  },
+  {
+   "word": "Wi-Fi",
+   "phonetic": "/ˈwaɪfaɪ/",
+   "meaning": "n. 无线网络",
+   "unit": 15,
+   "example": "The Wi-Fi password is on the wall.  无线网络的密码写在墙上。"
+  },
+  {
+   "word": "Interface",
+   "phonetic": "/ˈintəfeis/",
+   "meaning": "n.接合部位,分界面 v.(使)互相联系",
+   "unit": 15,
+   "example": "My computer has a network interface, which allows me to get to other computers.  我的电脑有网路介面，可以与其他电脑连在一起。"
+  },
+  {
+   "word": "UI",
+   "phonetic": "/ˌjuː ˈaɪ/",
+   "meaning": "n. 界面（user interface）",
+   "unit": 15,
+   "example": "The app has a clean and simple UI.  这个应用的界面简洁明了。"
+  },
+  {
+   "word": "UX",
+   "phonetic": "/ˌjuː ˈeks/",
+   "meaning": "n. 用户体验（user experience）",
+   "unit": 15,
+   "example": "Good UX makes users happy.  好的用户体验会让用户开心。"
+  },
+  {
+   "word": "Design",
+   "phonetic": "/diˈzain/",
+   "meaning": "vt.设计 n.设计；图样",
+   "unit": 15,
+   "example": "Who designed this building/dress/furniture?  是谁设计这座建筑物／这款裙子／这套家俱？"
+  },
+  {
+   "word": "Layout",
+   "phonetic": "/ˈleiˌaut/",
+   "meaning": "n.布局，安排，设计",
+   "unit": 15,
+   "example": "Application forms vary greatly in layout and length.  申请表在格式和篇幅上差别很大。"
+  },
+  {
+   "word": "Button",
+   "phonetic": "/ˈbʌtn/",
+   "meaning": "n.扣子；按钮 vt.扣紧",
+   "unit": 15,
+   "example": "He inserted the cassette and pressed the 'play' button.  他插入卡式带，按下“播放”按钮。UK noun countable"
+  },
+  {
+   "word": "Menu",
+   "phonetic": "/ˈmenjuː/",
+   "meaning": "n.菜单；饭菜，菜肴",
+   "unit": 15,
+   "example": "The waiter brought the menu and the wine list.  侍者拿来了菜单和酒单。"
+  },
+  {
+   "word": "Icon",
+   "phonetic": "/'aikɔn/",
+   "meaning": "n. 图标；偶像；肖像，画像；圣像",
+   "unit": 15,
+   "example": "Marilyn Monroe and James Dean are still icons for many young people.  玛丽莲‧梦露和詹姆斯‧狄恩仍是许多年轻人的偶像。UK noun countable"
+  },
+  {
+   "word": "Navigation",
+   "phonetic": "/ˌnæviˈgei∫ən/",
+   "meaning": "n.航行;航海术;导航",
+   "unit": 15,
+   "example": "In the past, navigation depended on a knowledge of the positions of the stars.  过去，导航在很大程度上依靠对星星位置的认识。"
+  },
+  {
+   "word": "Form",
+   "phonetic": "/fɔːm/",
+   "meaning": "n.形式；形状 vt.形成",
+   "unit": 15,
+   "example": "She formed the clay into a small bowl.  她把陶土捏成了一只小碗。"
+  },
+  {
+   "word": "Programming",
+   "phonetic": "/ˈprәugræmiŋ/",
+   "meaning": "n. 设计，规划；编制程序，[计] 程序编制",
+   "unit": 15,
+   "example": "Programming takes practice.  编程需要多练习。"
+  },
+  {
+   "word": "Coding",
+   "phonetic": "/ˈkәudiŋ/",
+   "meaning": "n. 译码；v. 把…编码（code的ing形式）",
+   "unit": 15,
+   "example": "Kids can learn coding at school.  孩子们可以在学校学编程。"
+  },
+  {
+   "word": "Code",
+   "phonetic": "/kəud/",
+   "meaning": "n.准则；法典；代码",
+   "unit": 15,
+   "example": "The message was written in code.  电报是用密码写的。"
+  },
+  {
+   "word": "Language",
+   "phonetic": "/ˈlæŋgwidʒ/",
+   "meaning": "n.语言，语言课程",
+   "unit": 15,
+   "example": "She does research into how children acquire language.  她研究儿童是如何习得语言的。"
+  },
+  {
+   "word": "Syntax",
+   "phonetic": "/ˈsintæks/",
+   "meaning": "n. 语法；句法；有秩序的排列",
+   "unit": 15,
+   "example": "Watch your syntax when you write code.  写代码时注意语法。"
+  },
+  {
+   "word": "Variable",
+   "phonetic": "/ˈveəriəbl/",
+   "meaning": "a.易变的 n.变量",
+   "unit": 15,
+   "example": "British weather is perhaps at its most variable in the spring.  在英国，春季的天气可能是最变幻莫测的。UK noun countable specialized"
+  },
+  {
+   "word": "Function",
+   "phonetic": "/ˈfʌŋk∫ən/",
+   "meaning": "n.功能；职务；函数",
+   "unit": 15,
+   "example": "The function of the veins is to carry blood to the heart.  静脉的功能是将血液输送回心脏。"
+  },
+  {
+   "word": "Class",
+   "phonetic": "/klɑːs/",
+   "meaning": "n.班，班级；阶级",
+   "unit": 15,
+   "example": "Which class are you in this year?  今年你在哪个班？"
+  },
+  {
+   "word": "Object",
+   "phonetic": "/ˈɔbdʒikt/",
+   "meaning": "n.物，物体；目的",
+   "unit": 15,
+   "example": "Look, there's a strange object in the sky!  看，天上有个奇怪的东西！noun UK GRAMMAR  文法"
+  },
+  {
+   "word": "Loop",
+   "phonetic": "/luːp/",
+   "meaning": "n.圈，环，环孔",
+   "unit": 15,
+   "example": "The tape ran in a continuous loop, repeating the same songs over and over.  这盒磁带处于回圈播放状态，反反复复地播放那几首歌曲。"
+  },
+  {
+   "word": "Conditional",
+   "phonetic": "/kənˈdɪʃənl/",
+   "meaning": "adj. 有条件的；假定的；n. 条件句；条件语",
+   "unit": 15,
+   "example": "'If I won a lot of money, I'd go travelling' is an example of a conditional (sentence).  If I won a lot of money, I'd go travelling 是条件句的一个例子。adjective noun specialized"
+  },
+  {
+   "word": "Array",
+   "phonetic": "/əˈrei/",
+   "meaning": "n.大量;排列;盛装 v.列阵;装扮;排列",
+   "unit": 15,
+   "example": "There was a splendid array of food on the table.  满桌子都是美味佳肴。"
+  },
+  {
+   "word": "Database",
+   "phonetic": "/ˈdeitəbeis/",
+   "meaning": "n.(databank)数据库",
+   "unit": 15,
+   "example": "We're linked to the on-line database at our head office.  我们连接到总部的线上资料库。"
+  },
+  {
+   "word": "Algorithm",
+   "phonetic": "/ˈælgәriðm/",
+   "meaning": "n. [计][数] 算法，运算法则",
+   "unit": 15,
+   "example": "This algorithm sorts the data quickly.  这个算法能快速排序数据。"
+  },
+  {
+   "word": "Framework",
+   "phonetic": "/ˈfreimwəːk/",
+   "meaning": "n.框架，构架，结构",
+   "unit": 15,
+   "example": "a legal framework for resolving disputes  解决争端的法律体系"
+  },
+  {
+   "word": "Debug",
+   "phonetic": "/ˌdiːˈbʌɡ/",
+   "meaning": "(計)debug sth排錯；調試；除錯",
+   "unit": 15,
+   "example": "Security officers had debugged the room before the meeting.  保安人员在开会前已检查房间，以防有人安放窃听装置。"
+  },
+  {
+   "word": "Test",
+   "phonetic": "/test/",
+   "meaning": "n.&vt.试验；检验",
+   "unit": 15,
+   "example": "The class are doing/having a spelling test today.  今天班里有一个拼写测验。"
+  },
+  {
+   "word": "Compile",
+   "phonetic": "/kəmˈpail/",
+   "meaning": "vt.编辑，编制，搜集",
+   "unit": 15,
+   "example": "We're compiling some facts and figures for a documentary on the subject.  我们正在为一部有关这个主题的纪录片汇集资料。verb transitive"
+  },
+  {
+   "word": "Deploy",
+   "phonetic": "/dɪˈplɔɪ/",
+   "meaning": "vt. 配置；展开；使疏开；vi. 部署；展开；n. 部署",
+   "unit": 15,
+   "example": "The company is reconsidering the way in which it deploys its resources/staff.  詃公司在重新考虑其资源／员工的使用之道。"
+  }
+ ]
+}

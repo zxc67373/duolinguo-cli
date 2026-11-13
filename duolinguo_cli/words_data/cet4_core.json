@@ -30,7 +30,7 @@
   },
   {
    "word": "a",
-   "phonetic": "",
+   "phonetic": "/ei/",
    "meaning": "art.一(个)；每一(个)",
    "example": "I've bought a car.  我买了辆汽车。"
   },
@@ -3350,7 +3350,7 @@
   },
   {
    "word": "hundred",
-   "phonetic": "",
+   "phonetic": "/ˈhʌndrəd/",
    "meaning": "[ˈhʌndrid], num.百，百个 n.许多",
    "example": "We've driven a/one hundred miles in the last two hours.  这两个小时我们已经开了100英哩了。"
   },
@@ -5478,7 +5478,7 @@
   },
   {
    "word": "yard",
-   "phonetic": "",
+   "phonetic": "/jɑːd/",
    "meaning": "n.院子，庭院；场地",
    "example": "The house has a small yard at the back.  这所房子后面有个小院。"
   },
@@ -7400,7 +7400,7 @@
   {
    "word": "suit",
    "phonetic": "/sjuːt/",
-   "meaning": "n.起拆，诉讼 vt.适合",
+   "meaning": "n. 诉讼；套装；西装 vt. 适合；相配",
    "example": "All the businessmen were wearing pinstripe suits.  所有商人都穿着细条纹套装。"
   },
   {
@@ -11667,7 +11667,7 @@
   },
   {
    "word": "so-called",
-   "phonetic": "",
+   "phonetic": "/ˈsəuˈkɔːld/",
    "meaning": "a.所谓的，号称的",
    "example": "It was one of his so-called friends who supplied him with the drugs that killed him.  是他一个所谓的朋友提供毒品给他，让他因此丧命。"
   },
@@ -18230,7 +18230,7 @@
   },
   {
    "word": "well-known",
-   "phonetic": "",
+   "phonetic": "/ˈwelˈnəun/",
    "meaning": "a.众所周知的，出名的"
   },
   {
@@ -18629,7 +18629,7 @@
   },
   {
    "word": "lightning",
-   "phonetic": "",
+   "phonetic": "/ˈlaitniŋ/",
    "meaning": "[ˈlaitniŋ]n.闪电，闪电放电",
    "example": "That tree was struck by lightning.  那棵树被闪电击中了。"
   },
@@ -22631,7 +22631,7 @@
   },
   {
    "word": "secondly",
-   "phonetic": "",
+   "phonetic": "/ˈsekәndli/",
    "meaning": "ad.第二(点)；其次"
   },
   {
@@ -26174,7 +26174,7 @@
   },
   {
    "word": "soluble",
-   "phonetic": "",
+   "phonetic": "/ˈsɒljʊbl/",
    "meaning": "[ˈsɔljubl]a.可溶的；可以解决的",
    "example": "soluble aspirins  可溶阿斯匹灵    Opposite insoluble"
   },

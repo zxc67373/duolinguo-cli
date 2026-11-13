@@ -145,10 +145,13 @@ def insert_words(
     entries: list[dict],
     unit_size: int = config.UNIT_SIZE,
 ) -> int:
-    """批量插入单词（忽略重复），返回新增条数。unit 按每 unit_size 词一关自动切分。"""
+    """批量插入单词（忽略重复），返回新增条数。
+
+    词条可带显式 unit（主题类词书按分类分关卡）；否则按每 unit_size 词一关切分。
+    """
     added = 0
     for i, e in enumerate(entries):
-        unit = i // unit_size + 1
+        unit = e.get("unit") or i // unit_size + 1
         cur = conn.execute(
             """
             INSERT OR IGNORE INTO words (book_id, word, phonetic, meaning, example, unit)

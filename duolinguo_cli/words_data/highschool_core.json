@@ -6,7 +6,7 @@
  "words": [
   {
    "word": "the",
-   "phonetic": "",
+   "phonetic": "/ðə/",
    "meaning": "art.这(那)个;这(那)些(指特定的人或物)",
    "example": "Please would you pass the salt.  请你把盐递给我。"
   },
@@ -180,7 +180,7 @@
   },
   {
    "word": "as",
-   "phonetic": "",
+   "phonetic": "/æz/",
    "meaning": "ad.同样地 conj.由于;像...一样 prep.作为",
    "example": "She'll soon be as tall as her mother.  她很快就会和她母亲一样高了。"
   },
@@ -222,7 +222,7 @@
   },
   {
    "word": "if",
-   "phonetic": "",
+   "phonetic": "/if/",
    "meaning": "conj.(用于连接宾语从句)是否;是不是",
    "example": "I'll pay you double if you get the work finished by Friday.  如果你周五前完工，我付你双倍的报酬。"
   },
@@ -246,7 +246,7 @@
   },
   {
    "word": "my",
-   "phonetic": "",
+   "phonetic": "/mai/",
    "meaning": "pron.(I的所有格)我的",
    "example": "It wasn't my fault.  这不是我的错。"
   },
@@ -3342,7 +3342,7 @@
   },
   {
    "word": "defense",
-   "phonetic": "",
+   "phonetic": "/di'fens/",
    "meaning": "n. 防卫，防护；防御措施；防守；vt. 谋划抵御"
   },
   {
@@ -3794,7 +3794,7 @@
   },
   {
    "word": "media",
-   "phonetic": "",
+   "phonetic": "/'mi:diə/",
    "meaning": "n. 媒体；媒质（medium的复数）；血管中层；浊塞音；中脉",
    "example": "The issue has been much discussed in the media.  大众媒体对这件事讨论得很多。"
   },
@@ -4162,7 +4162,7 @@
   },
   {
    "word": "OK",
-   "phonetic": "",
+   "phonetic": "/ˈәuˈkei/",
    "meaning": "adj. 好的；不错的；adv. 行；很好；int. 好；可以；vt. 对…表示同意；n. 同意",
    "example": "You need to add a bit more vinegar, OK?  你需要多加点醋，明白吗？"
   },
@@ -6022,7 +6022,7 @@
   },
   {
    "word": "Christian",
-   "phonetic": "",
+   "phonetic": "/ˈkristjən/",
    "meaning": "n.基督教徒 a.基督教徒的",
    "example": "a Christian charity/organization  基督教慈善团体／机构"
   },
@@ -6423,7 +6423,7 @@
   },
   {
    "word": "Christmas",
-   "phonetic": "",
+   "phonetic": "/ˈkrisməs/",
    "meaning": "n.圣诞节",
    "example": "We're going to my mother's for Christmas.  我们要去我母亲家过圣诞节。"
   },
@@ -7213,7 +7213,7 @@
   },
   {
    "word": "assessment",
-   "phonetic": "",
+   "phonetic": "/ə'sesmənt/",
    "meaning": "n. 评定；估价",
    "example": "Would you say that is a fair assessment of the situation?  你认为那是对形势的合理评估吗？"
   },
@@ -7231,7 +7231,7 @@
   },
   {
    "word": "northern",
-   "phonetic": "",
+   "phonetic": "/ˈnɔːðən/",
    "meaning": "a.北方的,北部的",
    "example": "northern Europe  北欧"
   },
@@ -7357,7 +7357,7 @@
   },
   {
    "word": "urban",
-   "phonetic": "",
+   "phonetic": "/ˈɜːbən/",
    "meaning": "adj. 城市的；住在都市的；n. (Urban)人名；(西)乌尔万；(斯洛伐)乌尔班；(德、俄、罗、匈、塞、波、捷、瑞典、意)乌尔班；(英)厄本；(法)于尔邦",
    "example": "urban development  城市发展"
   },
@@ -7500,7 +7500,7 @@
   },
   {
    "word": "commitment",
-   "phonetic": "",
+   "phonetic": "/kəˈmɪtmənt/",
    "meaning": "n. 承诺，保证；委托；承担义务；献身",
    "example": "She is known chiefly for her commitment to nuclear disarmament.  她主要以全力支持核裁军运动而闻名。"
   },
@@ -8025,7 +8025,7 @@
   },
   {
    "word": "Catholic",
-   "phonetic": "",
+   "phonetic": "/ˈkæθәlik/",
    "meaning": "a.天主教的 n.天主教徒",
    "example": "Is he (a) Catholic?  他是天主教徒吗？"
   },
@@ -8424,7 +8424,7 @@
   },
   {
    "word": "bedroom",
-   "phonetic": "",
+   "phonetic": "/ˈbedrum/",
    "meaning": "n. 卧室；adj. 两性关系的；城郊住宅区的",
    "example": "Our home has three bedrooms.  我们家有三间卧房。adjective [before noun]"
   },
@@ -8526,7 +8526,7 @@
   },
   {
    "word": "judgment",
-   "phonetic": "",
+   "phonetic": "/'dʒʌdʒmənt/",
    "meaning": "n. 判断；裁判；判决书；辨别力",
    "example": "I'm going to reserve judgment (on the decision) (= not say whether I think it is good or bad) for the time being.  我将暂时（对这项决定）保留看法。"
   },
@@ -8722,7 +8722,7 @@
   },
   {
    "word": "tired",
-   "phonetic": "",
+   "phonetic": "/ˈtaiəd/",
    "meaning": "a.疲劳的;厌倦的",
    "example": "My legs are tired.  我的腿酸了。"
   },
@@ -8746,7 +8746,7 @@
   },
   {
    "word": "abortion",
-   "phonetic": "",
+   "phonetic": "/әˈbɒːʃәn/",
    "meaning": "n. 流产，堕胎，小产；流产的胎儿；（计划等）失败，夭折",
    "example": "She decided to have/get an abortion.  她决定做人工流产。"
   },
@@ -8866,7 +8866,7 @@
   },
   {
    "word": "AIDS",
-   "phonetic": "",
+   "phonetic": "/eidz/",
    "meaning": "abbr. 获得性免疫缺乏综合征；艾滋病（Acquired Immune Deficiency Syndrome）",
    "example": "In Britain, AIDS tests are now performed on all people who offer to become blood donors.  在英国，现在所有志愿捐血的人都要进行爱滋病病毒检测。"
   },
@@ -9111,7 +9111,7 @@
   },
   {
    "word": "illegal",
-   "phonetic": "",
+   "phonetic": "/iˈliːgəl/",
    "meaning": "a.不合法的,非法的",
    "example": "Prostitution is illegal in some countries.  卖淫在某些国家是不合法的。"
   },
@@ -9740,7 +9740,7 @@
   },
   {
    "word": "elect",
-   "phonetic": "",
+   "phonetic": "/iˈlekt/",
    "meaning": "v.选举,推选;选择,作出选择",
    "example": "The Government is elected for a five-year term of office.  政府由选举产生，执政期为五年。"
   },
@@ -10653,7 +10653,7 @@
   },
   {
    "word": "criteria",
-   "phonetic": "",
+   "phonetic": "/krai'tiəriə/",
    "meaning": "n. 标准，条件（criterion的复数）"
   },
   {
@@ -10896,7 +10896,7 @@
   },
   {
    "word": "found",
-   "phonetic": "",
+   "phonetic": "/faund/",
    "meaning": "vt.建立;创立;创办;使有根据;铸造;熔制",
    "example": "York was founded by the Romans in the year 71 AD.  约克是西元71年由古罗马人兴建的。"
   },
@@ -10986,7 +10986,7 @@
   },
   {
    "word": "virus",
-   "phonetic": "",
+   "phonetic": "/'vaiərəs/",
    "meaning": "n. [病毒] 病毒；恶毒；毒害；n. (Virus)人名；(西)比鲁斯",
    "example": "Evidence suggested that the AIDS virus was spreading very quickly among the heterosexual community.  有证据表明爱滋病病毒正在异性恋群体中迅速传播。"
   },
@@ -11022,7 +11022,7 @@
   },
   {
    "word": "statistics",
-   "phonetic": "",
+   "phonetic": "/stə'tistiks/",
    "meaning": "n. 统计；统计学；[统计] 统计资料"
   },
   {
@@ -11081,7 +11081,7 @@
   },
   {
    "word": "translate",
-   "phonetic": "",
+   "phonetic": "/trænsˈleit/",
    "meaning": "v.翻译,解释;转化,",
    "example": "We were asked to translate a list of sentences.  我们被要求翻译一组句子。"
   },
@@ -11099,7 +11099,7 @@
   },
   {
    "word": "Olympic",
-   "phonetic": "",
+   "phonetic": "/әuˈlimpik/",
    "meaning": "adj. 奥林匹斯山的，奥林匹亚的；奥林匹克的",
    "example": "the International Olympic Committee  国际奥委会"
   },
@@ -11165,7 +11165,7 @@
   },
   {
    "word": "tournament",
-   "phonetic": "",
+   "phonetic": "/'tɔ:nəmənt/",
    "meaning": "n. 锦标赛，联赛；比赛",
    "example": "They were defeated in the first round of the tournament.  他们在锦标赛的第一轮就被打败了。"
   },
@@ -11243,7 +11243,7 @@
   },
   {
    "word": "dialogue",
-   "phonetic": "",
+   "phonetic": "/'daiəlɔg/",
    "meaning": "n. 对话；意见交换；vi. 对话；vt. 用对话表达",
    "example": "The play contained some very snappy/witty dialogue.  这出戏里有一些非常俏皮／风趣的对白。"
   },
@@ -11475,7 +11475,7 @@
   },
   {
    "word": "presentation",
-   "phonetic": "",
+   "phonetic": "/ˌpreznˈteɪʃən/",
    "meaning": "n. 展示；描述，陈述；介绍；赠送",
    "example": "The speaker gave an interesting presentation on urban transport.  演讲者针对城市交通发表了有趣的谈话。"
   },
@@ -11523,7 +11523,7 @@
   },
   {
    "word": "violate",
-   "phonetic": "",
+   "phonetic": "/ˈvaɪəleɪt/",
    "meaning": "vt. 违反；侵犯，妨碍；亵渎",
    "example": "They were charged with violating federal law.  他们被控违犯了联邦法律。"
   },
@@ -11873,7 +11873,7 @@
   },
   {
    "word": "friendship",
-   "phonetic": "",
+   "phonetic": "/ˈfrend∫ip/",
    "meaning": "n.友谊,友好",
    "example": "Their friendship goes back to when they were at school together.  他们的友谊可追溯到学生时代。"
   },
@@ -12092,7 +12092,7 @@
   },
   {
    "word": "taxpayer",
-   "phonetic": "",
+   "phonetic": "/ˈtækspeiә/",
    "meaning": "n. 纳税人；所收租金只够支付地产税的建筑物"
   },
   {
@@ -12103,7 +12103,7 @@
   },
   {
    "word": "motivation",
-   "phonetic": "",
+   "phonetic": "/'məuti'veiʃən/",
    "meaning": "n. 动机；积极性；推动",
    "example": "He's a bright enough student - he just lacks motivation.  他是个很聪明的学生，只是不够积极。"
   },
@@ -12211,7 +12211,7 @@
   },
   {
    "word": "discrimination",
-   "phonetic": "",
+   "phonetic": "/dis'krimi'neiʃən/",
    "meaning": "n. 歧视；区别，辨别；识别力",
    "example": "Until 1986 most companies would not even allow women to take the examinations, but such blatant discrimination is now disappearing.  直至1986年大多数公司甚至还不允许女性参加这种考试，但目前这种明目张胆的歧视做法正在消失。noun uncountable"
   },
@@ -12718,7 +12718,7 @@
   },
   {
    "word": "rose",
-   "phonetic": "",
+   "phonetic": "/rəuz/",
    "meaning": "n.玫瑰,蔷薇",
    "example": "She sent him a bunch of red roses.  她送了他一束红玫瑰。UK noun countable"
   },
@@ -12825,7 +12825,7 @@
   },
   {
    "word": "interrupt",
-   "phonetic": "",
+   "phonetic": "/ˌintəˈrʌpt/",
    "meaning": "v.中断,遮断,阻碍;打断(话),打扰",
    "example": "She tried to explain what had happened but he kept interrupting her.  她试图解释所发生的事情，但他不停地打断她。"
   },
@@ -12854,7 +12854,7 @@
   },
   {
    "word": "jeans",
-   "phonetic": "",
+   "phonetic": "/dʒi:nz/",
    "meaning": "n.牛仔裤(又称blue jeans, dungarees等)",
    "example": "jeans and a T-shirt  牛仔裤和T恤"
   },
@@ -12896,7 +12896,7 @@
   },
   {
    "word": "rent",
-   "phonetic": "",
+   "phonetic": "/rent/",
    "meaning": "v.租,租赁 n.租金",
    "example": "Rents here are ridiculously high/low.  这里的房租高／低得出奇。"
   },
@@ -12920,7 +12920,7 @@
   },
   {
    "word": "pleased",
-   "phonetic": "",
+   "phonetic": "/pliːzd/",
    "meaning": "adj. 高兴的；喜欢的；乐意做某事；v. 满意；愿意（please的过去分词形式）",
    "example": "Are you pleased about John's promotion?  约翰升职了，你开心吗？"
   },
@@ -12998,7 +12998,7 @@
   },
   {
    "word": "T-shirt",
-   "phonetic": "",
+   "phonetic": "/ˈtiː,ʃәːt/",
    "meaning": "n. 短袖圆领汗衫",
    "example": "She was wearing jeans and a T-shirt.  她穿着牛仔裤和T恤。"
   },
@@ -13519,12 +13519,12 @@
   },
   {
    "word": "sidewalk",
-   "phonetic": "",
+   "phonetic": "/ˈsaidwɒːk/",
    "meaning": "n. 人行道"
   },
   {
    "word": "Olympics",
-   "phonetic": "",
+   "phonetic": "/әuˈlimpiks/",
    "meaning": "n. 奥林匹克运动会"
   },
   {
@@ -13558,7 +13558,7 @@
   },
   {
    "word": "rebuild",
-   "phonetic": "",
+   "phonetic": "/riˈbild/",
    "meaning": "vt. 重建；改造，重新组装；复原；vi. 重建",
    "example": "The cathedral was completely rebuilt in 1425 after it had been destroyed by fire.  这座大教堂毁于火灾，于1425年得以全面重建。"
   },
@@ -13588,7 +13588,7 @@
   },
   {
    "word": "traveler",
-   "phonetic": "",
+   "phonetic": "/ˈtrævlә/",
    "meaning": "n. 旅行者；旅客；旅行推销员（等于traveller）"
   },
   {
@@ -13945,7 +13945,7 @@
   },
   {
    "word": "disappointed",
-   "phonetic": "",
+   "phonetic": "/ˌdisәˈpɒintid/",
    "meaning": "adj. 失望的，沮丧的；受挫折的",
    "example": "We were deeply disappointed at/about the result.  我们对这个结果深感失望。"
   },
@@ -14371,7 +14371,7 @@
   },
   {
    "word": "bush",
-   "phonetic": "",
+   "phonetic": "/bu∫/",
    "meaning": "n.灌木(丛)",
    "example": "The baby was born with a surprising bush of black hair.  令人吃惊的是，这个婴儿生下来就长着浓密的黑发。noun"
   },
@@ -14697,7 +14697,7 @@
   },
   {
    "word": "accessible",
-   "phonetic": "",
+   "phonetic": "/ək'sesəbl/",
    "meaning": "adj. 易接近的；可进入的；可理解的",
    "example": "The resort is easily accessible by road, rail and air.  这个旅游胜地交通便利，坐汽车、火车和飞机都可以到达。"
   },
@@ -14737,7 +14737,7 @@
   },
   {
    "word": "surrounding",
-   "phonetic": "",
+   "phonetic": "/sәˈraundiŋ/",
    "meaning": "adj. 周围的，附近的；n. 环境，周围的事物"
   },
   {
@@ -15017,7 +15017,7 @@
   },
   {
    "word": "deliberately",
-   "phonetic": "",
+   "phonetic": "/di'libəritli/",
    "meaning": "adv. 故意地；谨慎地；慎重地",
    "example": "I'm sure he says these things deliberately to annoy me.  我敢肯定他是故意说这些来气我的。"
   },
@@ -15053,7 +15053,7 @@
   },
   {
    "word": "transport",
-   "phonetic": "",
+   "phonetic": "/trænsˈpɔːt/",
    "meaning": "v.运输,运送,搬运n.运输;运输系统,运载工具",
    "example": "The company will arrange transport from the airport.  公司将安排从机场起的运输。"
   },
@@ -15347,7 +15347,7 @@
   },
   {
    "word": "disturbing",
-   "phonetic": "",
+   "phonetic": "/disˈtәːbiŋ/",
    "meaning": "adj. 令人不安的；烦扰的；v. 干扰；打断（disturb的ing形式）",
    "example": "The Home Secretary described the latest crime figures as 'disturbing'.  内政部长声称最近的犯罪数目“令人担忧”。"
   },
@@ -15448,7 +15448,7 @@
   },
   {
    "word": "boring",
-   "phonetic": "",
+   "phonetic": "/'bɔ:riŋ/",
    "meaning": "adj. 无聊的；令人厌烦的；n. 钻孔；v. 钻孔；使厌烦；挖空（bore的ing形式）；n. (Boring)人名；(英、瑞典)博林",
    "example": "She finds opera boring.  她觉得歌剧很乏味。"
   },
@@ -15623,7 +15623,7 @@
   },
   {
    "word": "suspension",
-   "phonetic": "",
+   "phonetic": "/səˈspenʃən/",
    "meaning": "n. 悬浮；暂停；停职",
    "example": "The suspension of fighting is to take effect at 6 am on Monday.  停战协定于周一早上六点生效。"
   },
@@ -15783,13 +15783,13 @@
   },
   {
    "word": "competence",
-   "phonetic": "",
+   "phonetic": "/ˈkɒmpɪtəns/",
    "meaning": "n. 能力，胜任；权限；作证能力；足以过舒适生活的收入",
    "example": "Her competence as a teacher is unquestionable.  她的执教能力无可置疑。"
   },
   {
    "word": "adaptation",
-   "phonetic": "",
+   "phonetic": "/'ædæp'teiʃən/",
    "meaning": "n. 适应；改编；改编本，改写本",
    "example": "Evolution occurs as a result of adaptation to new environments.  进化是生物适应新环境的结果。"
   },
@@ -15919,7 +15919,7 @@
   },
   {
    "word": "breakthrough",
-   "phonetic": "",
+   "phonetic": "/ˈbreɪkθruː/",
    "meaning": "n. 突破；突破性进展",
    "example": "Scientists are hoping for a breakthrough in the search for a cure for cancer.  科学家们希望在治愈癌症的研究上取得突破。"
   },
@@ -15949,13 +15949,13 @@
   },
   {
    "word": "dinosaur",
-   "phonetic": "",
+   "phonetic": "/'dainəsɔ(r)/",
    "meaning": "n. 恐龙；过时、落伍的人或事物",
    "example": "This typewriter's a bit of a dinosaur, isn't it?  这种打字机有点过时了，是吗？"
   },
   {
    "word": "choir",
-   "phonetic": "",
+   "phonetic": "/'kwaiə/",
    "meaning": "n. 唱诗班；合唱队；舞蹈队；vt. 合唱；vi. 合唱",
    "example": "He sings in the church choir.  他在教堂唱诗班唱歌。"
   },
@@ -16003,7 +16003,7 @@
   },
   {
    "word": "grill",
-   "phonetic": "",
+   "phonetic": "/ɡril/",
    "meaning": "vt. 烧，烤；vi. 拷问，严加盘问；n. 烤架，铁格子；烤肉；n. (Grill)人名；(法、德、罗、捷、匈、瑞典、英)格里尔",
    "example": "After being grilled by the police for two days, Johnson signed a confession.  被警方审问了两天后，约翰逊在供状上签字认罪。"
   },
@@ -16072,12 +16072,12 @@
   },
   {
    "word": "hometown",
-   "phonetic": "",
+   "phonetic": "/hәumˈtaun/",
    "meaning": "n. 家乡；故乡"
   },
   {
    "word": "settler",
-   "phonetic": "",
+   "phonetic": "/ˈsetlә/",
    "meaning": "n. 移居者；殖民者；n. (Settler)人名；(德)泽特勒"
   },
   {
@@ -16111,7 +16111,7 @@
   },
   {
    "word": "modem",
-   "phonetic": "",
+   "phonetic": "/'məudem/",
    "meaning": "n. 调制解调器（等于modulator-demodulator）"
   },
   {
@@ -16122,7 +16122,7 @@
   },
   {
    "word": "applicant",
-   "phonetic": "",
+   "phonetic": "/'æplikənt/",
    "meaning": "n. 申请人，申请者；请求者",
    "example": "How many applicants did you have for the job?  申请这份工作的有多少人？"
   },
@@ -16134,7 +16134,7 @@
   },
   {
    "word": "visa",
-   "phonetic": "",
+   "phonetic": "/ˈviːzə/",
    "meaning": "n. 签证；vt. 签发签证；n. (Visa)人名；(塞、芬)维萨",
    "example": "We travelled to Argentina on a tourist visa.  我们持旅游签证到阿根廷旅行。"
   },
@@ -16214,7 +16214,7 @@
   },
   {
    "word": "maple",
-   "phonetic": "",
+   "phonetic": "/'meipl/",
    "meaning": "n. 枫树；淡棕色；n. (Maple)人名；(英)梅普尔；(法)马普勒",
    "example": "a maple leaf  枫叶"
   },
@@ -16268,7 +16268,7 @@
   },
   {
    "word": "suitcase",
-   "phonetic": "",
+   "phonetic": "/'sju:tkeis/",
    "meaning": "n. [轻] 手提箱；衣箱",
    "example": "Have you packed/unpacked your suitcase yet?  你把衣物都放进手提箱了吗／从手提箱里拿出来了吗?"
   },
@@ -16393,7 +16393,7 @@
   },
   {
    "word": "dioxide",
-   "phonetic": "",
+   "phonetic": "/dai'ɔksaid/",
    "meaning": "n. 二氧化物",
    "example": "carbon/sulphur dioxide  二氧化碳／硫"
   },
@@ -16423,13 +16423,13 @@
   },
   {
    "word": "facial",
-   "phonetic": "",
+   "phonetic": "/'feiʃl/",
    "meaning": "adj. 面部的，表面的；脸的，面部用的；n. 美容，美颜；脸部按摩",
    "example": "Beauty treatments range from an eyelash tint at £8 to a deep cleansing facial costing £58.  美容护理服务价格不一，包括收费8英镑的染睫毛和收费58英镑的面部深层清洁。"
   },
   {
    "word": "X-ray",
-   "phonetic": "",
+   "phonetic": "/ˈeksˈrei/",
    "meaning": "n.X射线,X光",
    "example": "The X-ray showed a slight irregularity in one lung.  X光照片显示有一叶肺有点不正常。"
   },
@@ -16575,7 +16575,7 @@
   },
   {
    "word": "microwave",
-   "phonetic": "",
+   "phonetic": "/'maikrəweiv/",
    "meaning": "n. 微波",
    "example": "Put the fish in the microwave and it'll only take 5 minutes.  把鱼放到微波炉里，只需五分钟就可以了。"
   },
@@ -16629,7 +16629,7 @@
   },
   {
    "word": "Easter",
-   "phonetic": "",
+   "phonetic": "/ˈiːstə/",
    "meaning": "n.复活节"
   },
   {
@@ -16716,12 +16716,12 @@
   },
   {
    "word": "motorcycle",
-   "phonetic": "",
+   "phonetic": "/ˈmәutәsaikl/",
    "meaning": "n. 摩托车；机动车；vi. 骑摩托车"
   },
   {
    "word": "unbelievable",
-   "phonetic": "",
+   "phonetic": "/ˌʌnbiˈliːvәbl/",
    "meaning": "adj. 难以置信的；不可信的",
    "example": "She eats an unbelievable amount of food.  她的食量惊人。"
   },
@@ -16745,7 +16745,7 @@
   },
   {
    "word": "mustard",
-   "phonetic": "",
+   "phonetic": "/ˈmʌstәd/",
    "meaning": "n. 芥末；芥菜；深黄色；强烈的兴趣；n. (Mustard)人名；(英)马斯塔德"
   },
   {
@@ -16765,7 +16765,7 @@
   },
   {
    "word": "Arctic",
-   "phonetic": "",
+   "phonetic": "/'ɑ:ktik/",
    "meaning": "adj. 北极的；极寒的；n. 北极圈；御寒防水套鞋；n. (Arctic)人名；(英)阿克蒂克",
    "example": "Polar bears live in the Arctic.  北极熊生活在北极地区。UK adjective"
   },
@@ -17044,7 +17044,7 @@
   },
   {
    "word": "freezing",
-   "phonetic": "",
+   "phonetic": "/ˈfriːziŋ/",
    "meaning": "adj. 冰冻的；严寒的；冷冻用的",
    "example": "It 's freezing in here - can I close the window?  这里冷极了——我把窗户关上可以吗？"
   },
@@ -17067,7 +17067,7 @@
   },
   {
    "word": "flashlight",
-   "phonetic": "",
+   "phonetic": "/ˈflæʃlait/",
    "meaning": "n. 手电筒；闪光灯"
   },
   {
@@ -17083,7 +17083,7 @@
   },
   {
    "word": "cuisine",
-   "phonetic": "",
+   "phonetic": "/kwi'zi:n/",
    "meaning": "n. 烹饪，烹调法；n. (Cuisine)人名；(法)屈西纳",
    "example": "French cuisine  法式烹饪"
   },
@@ -17130,7 +17130,7 @@
   },
   {
    "word": "devotion",
-   "phonetic": "",
+   "phonetic": "/di'vəuʃən/",
    "meaning": "n. 献身，奉献；忠诚；热爱",
    "example": "He inspired respect and devotion from his pupils.  他赢得了学生们的尊敬和爱戴。"
   },
@@ -17206,7 +17206,7 @@
   },
   {
    "word": "cleaner",
-   "phonetic": "",
+   "phonetic": "/ˈkliːnә/",
    "meaning": "n. [化工] 清洁剂；清洁工；干洗店；干洗商；洗洁器",
    "example": "Chris has an evening job as an office cleaner.  克里斯有份晚上的工作，做办公室的清洁工。"
   },
@@ -17235,7 +17235,7 @@
   },
   {
    "word": "delighted",
-   "phonetic": "",
+   "phonetic": "/diˈlaitid/",
    "meaning": "adj. 高兴的；欣喜的；v. 使…兴高采烈；感到快乐（delight的过去分词）",
    "example": "We're delighted with our new house.  我们对新房子非常满意。"
   },
@@ -17253,7 +17253,7 @@
   },
   {
    "word": "overweight",
-   "phonetic": "",
+   "phonetic": "/ˈәuvәˈweit/",
    "meaning": "adj. 超重的；过重的；vt. 使负担过重；n. 超重",
    "example": "He used to be very overweight.  他曾经很胖。"
   },
@@ -17270,13 +17270,13 @@
   },
   {
    "word": "messy",
-   "phonetic": "",
+   "phonetic": "/'mesi/",
    "meaning": "adj. 凌乱的，散乱的；肮脏的，污秽的；麻烦的",
    "example": "His bedroom's always messy.  他的卧室总是凌乱不堪。"
   },
   {
    "word": "smoker",
-   "phonetic": "",
+   "phonetic": "/ˈsmәukә/",
    "meaning": "n. 吸烟者；薰制工；n. (Smoker)人名；(英)斯莫克尔",
    "example": "Chris is a light/heavy smoker (= smokes a little/a lot each day).  克里斯是个烟瘾很小／很重的人。"
   },
@@ -17329,7 +17329,7 @@
   },
   {
    "word": "amusement",
-   "phonetic": "",
+   "phonetic": "/ə'mju:zmənt/",
    "meaning": "n. 消遣，娱乐；乐趣",
    "example": "She looked at him with amusement.  她忍俊不禁地看着他。"
   },
@@ -17428,7 +17428,7 @@
   },
   {
    "word": "paperwork",
-   "phonetic": "",
+   "phonetic": "/ˈpeipәwәːk/",
    "meaning": "n. 文书工作",
    "example": "I've kept all the paperwork for the car.  我把这辆汽车的所有资料都保存下来。"
   },
@@ -17445,7 +17445,7 @@
   },
   {
    "word": "chant",
-   "phonetic": "",
+   "phonetic": "/tʃɑːnt/",
    "meaning": "n. 圣歌；赞美诗；vt. 唱；诵扬；vi. 唱歌；反复地唱歌；n. (Chant)人名；(英)钱特",
    "example": "The crowd were chanting the name of their football team.  人群正反覆呼唤着自己足球队的名字。"
   },
@@ -17469,7 +17469,7 @@
   },
   {
    "word": "adolescence",
-   "phonetic": "",
+   "phonetic": "/`ædə'lesns/",
    "meaning": "n. 青春期",
    "example": "a troubled adolescence  经历坎坷的青春期"
   },
@@ -17526,7 +17526,7 @@
   },
   {
    "word": "irrigation",
-   "phonetic": "",
+   "phonetic": "/ˌɪrɪˈɡeɪʃən/",
    "meaning": "n. 灌溉；[临床] 冲洗；冲洗法"
   },
   {
@@ -17588,7 +17588,7 @@
   },
   {
    "word": "cozy",
-   "phonetic": "",
+   "phonetic": "/ˈkәuzi/",
    "meaning": "n. 保温罩；vt. 蒙骗；抚慰；adj. 舒适的；安逸的"
   },
   {
@@ -17646,7 +17646,7 @@
   },
   {
    "word": "pancake",
-   "phonetic": "",
+   "phonetic": "/ˈpænkeik/",
    "meaning": "n. 薄烤饼；粉饼；平降（全称pancake landing）；vi. 平坠着陆；平展；vt. 使平坠著陆；使平展",
    "example": "Do you want a sweet pancake or a savoury one?  你想吃甜的薄煎饼还是咸的？"
   },
@@ -17724,7 +17724,7 @@
   },
   {
    "word": "contradictory",
-   "phonetic": "",
+   "phonetic": "/,kɔntrə'diktəri/",
    "meaning": "adj. 矛盾的；反对的；反驳的；抗辩的；n. 对立物；矛盾因素"
   },
   {
@@ -17785,7 +17785,7 @@
   },
   {
    "word": "autonomous",
-   "phonetic": "",
+   "phonetic": "/ɔːˈtɒnəməs/",
    "meaning": "adj. 自治的；自主的；自发的",
    "example": "an autonomous region/province/republic/council  自治地区／省／共和国／委员会"
   },
@@ -17796,7 +17796,7 @@
   },
   {
    "word": "preview",
-   "phonetic": "",
+   "phonetic": "/ˈpriːvjuː/",
    "meaning": "n. 预览；试映；事先查看；vt. 预览；预演；事先查看",
    "example": "Miller's new play is previewing (= being performed publicly before it officially opens) at the Theatre Royal tomorrow.  米勒的新剧将于明天在皇家剧院预演。"
   },
@@ -17926,7 +17926,7 @@
   },
   {
    "word": "offshore",
-   "phonetic": "",
+   "phonetic": "/ɒːfˈʃɒː/",
    "meaning": "adj. 离岸的；[海洋] 近海的；吹向海面的；adv. 向海面，向海",
    "example": "The wind was blowing offshore.  风吹向海面。UK adjective"
   },
@@ -17943,7 +17943,7 @@
   },
   {
    "word": "fingernail",
-   "phonetic": "",
+   "phonetic": "/ˈfiŋgәneil/",
    "meaning": "n. 手指甲",
    "example": "She had long red fingernails.  她留着长长的指甲并涂成了红色。"
   },
@@ -17977,7 +17977,7 @@
   },
   {
    "word": "walnut",
-   "phonetic": "",
+   "phonetic": "/ˈwɒːlnәt/",
    "meaning": "n. 胡桃；胡桃木；adj. 胡桃科植物的"
   },
   {
@@ -18071,7 +18071,7 @@
   },
   {
    "word": "souvenir",
-   "phonetic": "",
+   "phonetic": "/'su:vəniə/",
    "meaning": "n. 纪念品；礼物；vt. 把…留作纪念",
    "example": "He bought a model of a red London bus as a souvenir of his trip to London.  他买了一个红色的伦敦公车模型，作为他伦敦之行的纪念。"
   },
@@ -18093,7 +18093,7 @@
   },
   {
    "word": "apron",
-   "phonetic": "",
+   "phonetic": "/'eiprən/",
    "meaning": "n. 围裙；[航] 停机坪；舞台口；vt. 着围裙于；围绕；n. (Apron)人名；(俄)阿普龙"
   },
   {
@@ -18104,7 +18104,7 @@
   },
   {
    "word": "swap",
-   "phonetic": "",
+   "phonetic": "/swɒp/",
    "meaning": "n. 交换；交换之物；vt. 与...交换；以...作交换；vi. 交换；交易",
    "example": "When you've finished reading your book, and I've finished mine, shall we swap?  我们看完各自的书之后，交换一下，好吗?"
   },
@@ -18164,7 +18164,7 @@
   },
   {
    "word": "bamboo",
-   "phonetic": "",
+   "phonetic": "/bæmˈbuː/",
    "meaning": "n. 竹，竹子；vt. 为…装上篾条；adj. 竹制的；土著居民的",
    "example": "Use bamboo canes to support tomato plants.  用竹条支撑番茄幼苗。"
   },
@@ -18279,7 +18279,7 @@
   },
   {
    "word": "tasty",
-   "phonetic": "",
+   "phonetic": "/'teisti/",
    "meaning": "adj. 美味的；高雅的；有趣的；n. 可口的东西；引人入胜的东西",
    "example": "This soup is very tasty.  这汤味道好极了。adjective"
   },
@@ -18321,7 +18321,7 @@
   },
   {
    "word": "referee",
-   "phonetic": "",
+   "phonetic": "/ˌrefəˈriː/",
    "meaning": "n. 裁判员；调解人；介绍人；vi. 仲裁；担任裁判；vt. 为…当裁判；调停",
    "example": "Liverpool only lost the game because the referee was biased.  利物浦队输掉了比赛就是因为裁判员偏袒对手。"
   },
@@ -18409,7 +18409,7 @@
   },
   {
    "word": "outspoken",
-   "phonetic": "",
+   "phonetic": "/aut'spoukən/",
    "meaning": "adj. 坦率的，直言不讳的",
    "example": "Mr Masack is an outspoken critic of the present government.  马塞克先生是一位对现政府直言不讳的批评家。"
   },
@@ -18421,13 +18421,13 @@
   },
   {
    "word": "popcorn",
-   "phonetic": "",
+   "phonetic": "/ˈpɒpkɒːn/",
    "meaning": "n. 爆米花，爆玉米花",
    "example": "a tub of popcorn  一桶爆米花"
   },
   {
    "word": "windy",
-   "phonetic": "",
+   "phonetic": "/'windi/",
    "meaning": "adj. 多风的，有风的；腹胀的；吹牛的",
    "example": "It was a windy night.  那是个多风的夜晚。"
   },
@@ -18463,7 +18463,7 @@
   },
   {
    "word": "cocoa",
-   "phonetic": "",
+   "phonetic": "/ˈkәukәu/",
    "meaning": "n. 可可粉；可可豆；可可饮料；深褐色",
    "example": "a nice hot mug of cocoa  一杯香喷喷的热可哥饮料"
   },
@@ -18475,7 +18475,7 @@
   },
   {
    "word": "unrest",
-   "phonetic": "",
+   "phonetic": "/ˌʌnˈrest/",
    "meaning": "n. 不安；动荡的局面；不安的状态",
    "example": "It is feared that the civil unrest we are now witnessing in this country could lead to full-scale civil war.  我们害怕现在国内出现的骚乱会升级为全面内战。"
   },
@@ -18487,12 +18487,12 @@
   },
   {
    "word": "mailbox",
-   "phonetic": "",
+   "phonetic": "/ˈmeilbɒks/",
    "meaning": "n. 邮箱；邮筒"
   },
   {
    "word": "outgoing",
-   "phonetic": "",
+   "phonetic": "/'autɡəuiŋ/",
    "meaning": "adj. 对人友好的，开朗的；出发的，外出的；即将离职的；乐于助人的；n. 外出；流出；开支；v. 超过；优于（outgo的ing形式）",
    "example": "Outgoing flights are booked until January 15th.  离境航班一直预订到1月15日。"
   },
@@ -18510,7 +18510,7 @@
   },
   {
    "word": "motto",
-   "phonetic": "",
+   "phonetic": "/'mɔtəu/",
    "meaning": "n. 座右铭，格言；箴言；n. (Motto)人名；(英)莫托；(意、西)莫托",
    "example": "Her motto is \"Work hard, play hard\".  她的座右铭是“努力工作，痛快玩乐”。"
   },
@@ -18534,13 +18534,13 @@
   },
   {
    "word": "pineapple",
-   "phonetic": "",
+   "phonetic": "/ˈpain.æpl/",
    "meaning": "n. [园艺] 菠萝；[园艺] 凤梨；adj. 凤梨科的",
    "example": "tinned pineapples  罐头凤梨"
   },
   {
    "word": "caption",
-   "phonetic": "",
+   "phonetic": "/ˈkæpʃən/",
    "meaning": "n. 标题；字幕；说明；逮捕；vt. 加上说明；加上标题"
   },
   {
@@ -18550,7 +18550,7 @@
   },
   {
    "word": "allergic",
-   "phonetic": "",
+   "phonetic": "/ə'lə:dʒik/",
    "meaning": "adj. 对…过敏的；对…极讨厌的",
    "example": "I'm allergic to cats.  我对猫过敏。"
   },
@@ -18566,7 +18566,7 @@
   },
   {
    "word": "rainfall",
-   "phonetic": "",
+   "phonetic": "/'reinfɔ:l/",
    "meaning": "n. 降雨；降雨量",
    "example": "Heavy rainfall ruined the match.  大雨让这场比赛泡了汤。"
   },
@@ -18690,13 +18690,13 @@
   },
   {
    "word": "armchair",
-   "phonetic": "",
+   "phonetic": "/ˌɑːmˈtʃєә/",
    "meaning": "n. 扶手椅，单人沙发；adj. 不切实际的",
    "example": "She sat in an armchair by the fire, reading a newspaper.  她坐在火炉旁的扶手椅上看报纸。UK adjective [before noun]"
   },
   {
    "word": "bathtub",
-   "phonetic": "",
+   "phonetic": "/ˈbɑːθtʌb/",
    "meaning": "n. 浴缸"
   },
   {
@@ -18736,7 +18736,7 @@
   },
   {
    "word": "worn",
-   "phonetic": "",
+   "phonetic": "/wɒːn/",
    "meaning": "adj. 疲倦的；用旧的；v. 穿；磨损（wear的过去分词）；佩戴；n. (Worn)人名；(柬)翁；(英、葡)沃恩"
   },
   {
@@ -18793,13 +18793,13 @@
   },
   {
    "word": "sincerely",
-   "phonetic": "",
+   "phonetic": "/sinˈsiәli/",
    "meaning": "adv. 真诚地；由衷地，诚恳地",
    "example": "I'm sincerely grateful.  我衷心地感谢。"
   },
   {
    "word": "rhyme",
-   "phonetic": "",
+   "phonetic": "/raim/",
    "meaning": "n. 韵律；韵脚；韵文；押韵词；vt. 使押韵；用韵诗表达；把…写作诗；vi. 押韵；作押韵诗",
    "example": "'Blue' and 'flew' rhyme.  blue 和 flew 押韵。"
   },
@@ -18844,13 +18844,13 @@
   },
   {
    "word": "gymnastics",
-   "phonetic": "",
+   "phonetic": "/dʒimˈnæstiks/",
    "meaning": "n. 体操；体育；体操运动",
    "example": "figurative Legal arguments require incredible mental/verbal gymnastics (= the ability to think/speak cleverly and quickly).  法庭辩论需要非凡的机智／语言表达能力。"
   },
   {
    "word": "admirable",
-   "phonetic": "",
+   "phonetic": "/'ædmərəbl/",
    "meaning": "adj. 令人钦佩的；极好的；值得赞扬的",
    "example": "The police did an admirable job in keeping the fans calm.  警方在控制球迷的激动情绪方面表现可嘉。"
   },
@@ -18873,7 +18873,7 @@
   },
   {
    "word": "thunderstorm",
-   "phonetic": "",
+   "phonetic": "/ˈθʌndәstɒːm/",
    "meaning": "n. [气象] 雷暴；雷暴雨；大雷雨"
   },
   {
@@ -18900,7 +18900,7 @@
   },
   {
    "word": "bungalow",
-   "phonetic": "",
+   "phonetic": "/ˈbʌŋgәlәu/",
    "meaning": "n. 平房；小屋",
    "example": "It was a seaside town filled with small white bungalows.  那是个海边城镇，到处都是白色小平房。"
   },
@@ -18935,7 +18935,7 @@
   },
   {
    "word": "breathless",
-   "phonetic": "",
+   "phonetic": "/ˈbreθlis/",
    "meaning": "adj. 喘不过气来的；停止呼吸的",
    "example": "That one kiss had left her breathless with excitement.  那一个吻令她心跳得喘不过气来。"
   },
@@ -18946,7 +18946,7 @@
   },
   {
    "word": "watermelon",
-   "phonetic": "",
+   "phonetic": "/ˈwɒtә.melәn/",
    "meaning": "n. 西瓜"
   },
   {
@@ -18979,7 +18979,7 @@
   },
   {
    "word": "grandma",
-   "phonetic": "",
+   "phonetic": "/ˈgrændmɑː/",
    "meaning": "n. 奶奶；外婆"
   },
   {
@@ -19007,7 +19007,7 @@
   },
   {
    "word": "birthplace",
-   "phonetic": "",
+   "phonetic": "/ˈbәːθpleis/",
    "meaning": "n. 出生地；发源地"
   },
   {
@@ -19017,13 +19017,13 @@
   },
   {
    "word": "unconditional",
-   "phonetic": "",
+   "phonetic": "/ˌʌnkәnˈdiʃәnl/",
    "meaning": "adj. 无条件的；绝对的；无限制的",
    "example": "We demand the immediate and unconditional release of all political prisoners.  我们要求立即无条件释放所有的政治犯。"
   },
   {
    "word": "rooster",
-   "phonetic": "",
+   "phonetic": "/ˈruːstә/",
    "meaning": "n. 公鸡；狂妄自负的人"
   },
   {
@@ -19033,7 +19033,7 @@
   },
   {
    "word": "spoken",
-   "phonetic": "",
+   "phonetic": "/ˈspәukәn/",
    "meaning": "adj. 口语的，口头的；v. 说（speak的过去分词）"
   },
   {
@@ -19050,13 +19050,13 @@
   },
   {
    "word": "teamwork",
-   "phonetic": "",
+   "phonetic": "/ˈtiːmwәːk/",
    "meaning": "n. 团队合作；协力",
    "example": "Brilliant teamwork and old fashioned grit got the team a last minute point.  凭借着密切的配合和英勇顽强的斗志，该队在最后一刻得了一分。"
   },
   {
    "word": "handbag",
-   "phonetic": "",
+   "phonetic": "/ˈhændbæg/",
    "meaning": "n. 手提包"
   },
   {
@@ -19067,18 +19067,18 @@
   },
   {
    "word": "wag",
-   "phonetic": "",
+   "phonetic": "/wæg/",
    "meaning": "vt. 摇摆；摇动；饶舌；vi. 摆动；喋喋不休；蹒跚而行；n. 摇摆；爱说笑打趣的人",
    "example": "The little dog's tail wagged in delight.  那条小狗欢快地摇着尾巴。"
   },
   {
    "word": "Buddhism",
-   "phonetic": "",
+   "phonetic": "/ˈbudizm/",
    "meaning": "n. 佛教"
   },
   {
    "word": "bent",
-   "phonetic": "",
+   "phonetic": "/bent/",
    "meaning": "n. 爱好，嗜好；adj. 弯曲的；决心的；n. (Bent)人名；(英、西、丹、挪、印)本特",
    "example": "I'm not getting bent out of shape because people don't respect my opinion. I'm used to that.  我并不为人们不尊重我的意见而沮丧。我已经习惯了。noun only singular"
   },
@@ -19095,19 +19095,19 @@
   },
   {
    "word": "Antarctic",
-   "phonetic": "",
+   "phonetic": "/æn'tɑ:ktik/",
    "meaning": "n. 南极洲，南极地区；adj. 南极的",
    "example": "The protection of the Antarctic from commercial exploitation is an important goal of environmentalists.  环保主义者的一个重要目标就是防止对南极地区的商业开发。UK adjective"
   },
   {
    "word": "crayon",
-   "phonetic": "",
+   "phonetic": "/'kreiən/",
    "meaning": "n. 蜡笔，有色粉笔；vt. 以蜡笔作画，用颜色粉笔画；n. (Crayon)人名；(英)克雷恩",
    "example": "When I left her she was busy crayoning.  我离开时她正忙着用蜡笔画画。"
   },
   {
    "word": "mountainous",
-   "phonetic": "",
+   "phonetic": "/'mauntinəs/",
    "meaning": "adj. 多山的；巨大的；山一般的",
    "example": "a mountainous region  多山的地区"
   },
@@ -19188,12 +19188,12 @@
   },
   {
    "word": "algebra",
-   "phonetic": "",
+   "phonetic": "/'ældʒibrə/",
    "meaning": "n. 代数学"
   },
   {
    "word": "teapot",
-   "phonetic": "",
+   "phonetic": "/ˈtiːpɒt/",
    "meaning": "n. 茶壶；小题大做"
   },
   {
@@ -19220,7 +19220,7 @@
   },
   {
    "word": "seaweed",
-   "phonetic": "",
+   "phonetic": "/ˈsiːwiːd/",
    "meaning": "n. 海藻，海草"
   },
   {
@@ -19236,7 +19236,7 @@
   },
   {
    "word": "stout",
-   "phonetic": "",
+   "phonetic": "/staut/",
    "meaning": "adj. 结实的；矮胖的；勇敢的；激烈的；n. 矮胖子；烈性啤酒；n. (Stout)人名；(英)斯托特",
    "example": "Mrs Blower was the rather stout lady with the glasses.  布洛尔太太就是那个肥硕、戴眼镜的女人。adjective"
   },
@@ -19253,13 +19253,13 @@
   },
   {
    "word": "mummy",
-   "phonetic": "",
+   "phonetic": "/ˈmʌmi/",
    "meaning": "n. 妈妈；木乃伊；干瘪的人",
    "example": "[as form of address] I want to go home, Mummy.  我想回家，妈咪。"
   },
   {
    "word": "unfit",
-   "phonetic": "",
+   "phonetic": "/ˌʌnˈfit/",
    "meaning": "adj. 不适宜的；不合格的；不健康的；vt. 使不合格；使不相宜；使不胜任",
    "example": "The building was declared unfit for human habitation.  这座大楼被宣布不适合人们居住。"
   },
@@ -19282,13 +19282,13 @@
   },
   {
    "word": "strait",
-   "phonetic": "",
+   "phonetic": "/streit/",
    "meaning": "adj. 狭窄的；苦恼的；n. 海峡；困境；n. (Strait)人名；(英)斯特雷特",
    "example": "So many companies are in such dire/difficult straits that their prices have come right down.  许多公司财务状况极为窘迫，导致其股价直线下跌。"
   },
   {
    "word": "toothbrush",
-   "phonetic": "",
+   "phonetic": "/ˈtuːθbrʌʃ/",
    "meaning": "n. 牙刷"
   },
   {
@@ -19304,12 +19304,12 @@
   },
   {
    "word": "coke",
-   "phonetic": "",
+   "phonetic": "/kәuk/",
    "meaning": "n.焦炭;可口可乐(COCA-COLA)的缩写"
   },
   {
    "word": "mum",
-   "phonetic": "",
+   "phonetic": "/mʌm/",
    "meaning": "adj. 沉默的；n. 妈妈（口语）；沉默；菊花；vi. 演哑剧；int. 别说话",
    "example": "All the mums and dads are invited to the school play at the end of the year.  年底时，所有的父母都获邀请到学校看演出。noun countable UK (US mom)"
   },
@@ -19320,13 +19320,13 @@
   },
   {
    "word": "toothpaste",
-   "phonetic": "",
+   "phonetic": "/ˈtuːθpeist/",
    "meaning": "n. 牙膏",
    "example": "a tube of toothpaste  一管牙膏"
   },
   {
    "word": "cheers",
-   "phonetic": "",
+   "phonetic": "/tʃiәz/",
    "meaning": "v. 感谢；谢谢；再见"
   },
   {
@@ -19392,7 +19392,7 @@
   },
   {
    "word": "bingo",
-   "phonetic": "",
+   "phonetic": "/ˈbiŋgәu/",
    "meaning": "n. 宾戈游戏；n. (Bingo)人名；(日)备后(姓)"
   },
   {
@@ -19403,12 +19403,12 @@
   },
   {
    "word": "rugby",
-   "phonetic": "",
+   "phonetic": "/ˈrʌgbi/",
    "meaning": "n. 英式橄榄球；拉格比（英格兰中部的城市）"
   },
   {
    "word": "giraffe",
-   "phonetic": "",
+   "phonetic": "/dʒi'rɑ:f/",
    "meaning": "n. 长颈鹿"
   },
   {
@@ -19425,12 +19425,12 @@
   },
   {
    "word": "chairwoman",
-   "phonetic": "",
+   "phonetic": "/ˈtʃєәwumәn/",
    "meaning": "n. 女主席；女议长"
   },
   {
    "word": "kangaroo",
-   "phonetic": "",
+   "phonetic": "/,kæŋɡə'ru:/",
    "meaning": "n. 袋鼠"
   },
   {
@@ -19440,13 +19440,13 @@
   },
   {
    "word": "punctuation",
-   "phonetic": "",
+   "phonetic": "/ˌpʌŋktʃuˈeiʃәn/",
    "meaning": "n. 标点；标点符号",
    "example": "His letter was completely without punctuation.  他的信里一个标点符号也没有。"
   },
   {
    "word": "schoolgirl",
-   "phonetic": "",
+   "phonetic": "/ˈskuːlgәːl/",
    "meaning": "n. 女学生"
   },
   {
@@ -19463,7 +19463,7 @@
   },
   {
    "word": "airspace",
-   "phonetic": "",
+   "phonetic": "/ˈєәspeis/",
    "meaning": "n. 空域；领空；空间",
    "example": "The government claimed that the plane had illegally entered its airspace.  该政府宣称这架飞机非法进入其领空。"
   },
@@ -19474,19 +19474,19 @@
   },
   {
    "word": "moustache",
-   "phonetic": "",
+   "phonetic": "/ˈmʌstæʃ/",
    "meaning": "n. 小胡子；髭；触须；n. (Moustache)人名；(法)穆斯塔什",
    "example": "Groucho Marx had a thick black moustache.  格鲁乔‧马克斯留着浓密的黑色八字须。"
   },
   {
    "word": "schoolboy",
-   "phonetic": "",
+   "phonetic": "/ˈskuːlbɒi/",
    "meaning": "n. 男学生；学童",
    "example": "As every schoolboy knows, the Earth revolves around the sun.  地球绕着太阳运行，这是小学生的常识。adjective [before noun]"
   },
   {
    "word": "grandpa",
-   "phonetic": "",
+   "phonetic": "/ˈgrænpɑː, ˈgrændpɑː/",
    "meaning": "n. 爷爷；外公"
   },
   {
@@ -19518,17 +19518,17 @@
   },
   {
    "word": "thermos",
-   "phonetic": "",
+   "phonetic": "/ˈθәːmәs/",
    "meaning": "n. 热水瓶"
   },
   {
    "word": "skateboard",
-   "phonetic": "",
+   "phonetic": "/ˈskeitbɔːd/",
    "meaning": "n. 溜冰板；vi. 用滑板滑行"
   },
   {
    "word": "considerate",
-   "phonetic": "",
+   "phonetic": "/kənˈsidərit/",
    "meaning": "a.考虑周到的,体谅的",
    "example": "It wasn't very considerate of you to drink all the milk.  牛奶全给你喝光了，真不关心别人。    Opposite inconsiderate"
   },

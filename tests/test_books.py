@@ -293,3 +293,96 @@ def test_ensure_builtins_syncs_examples(tmp_path, monkeypatch, conn):
     assert rows["alpha"]["example"] == "Alpha two.  甲二。"
     # 例句同步不新建词、不动主键
     assert len(rows) == 2
+
+
+# ---------------------------------------------------------------- 显式关卡
+
+
+def test_insert_words_explicit_units(conn):
+    """词条带 unit 字段（主题词书）→ 按显式关卡入库，不按 20 词切分。"""
+    bid = db.insert_book(conn, "主题书", "theme_book")
+    added = db.insert_words(
+        conn,
+        bid,
+        [
+            {"word": "mom", "meaning": "n.妈妈", "unit": 1},
+            {"word": "dad", "meaning": "n.爸爸", "unit": 1},
+            {"word": "red", "meaning": "adj.红色的", "unit": 2},
+            {"word": "blue", "meaning": "adj.蓝色的", "unit": 2},
+            {"word": "apple", "meaning": "n.苹果"},  # 无 unit → 按位置切
+            {"word": "banana", "meaning": "n.香蕉"},
+        ],
+        unit_size=5,
+    )
+    assert added == 6
+    rows = {r["word"]: r["unit"] for r in conn.execute("SELECT word, unit FROM words")}
+    # 显式 unit 优先；无 unit 的词条按全局位置切（apple 第5个→关1，banana 第6个→关2）
+    assert rows == {"mom": 1, "dad": 1, "red": 2, "blue": 2, "apple": 1, "banana": 2}
+
+
+def test_ensure_builtins_keeps_explicit_units(tmp_path, monkeypatch, conn):
+    """迁移重排时保留词条显式 unit（不被位置公式覆盖）。"""
+    data_dir = tmp_path / "wd_theme"
+    data_dir.mkdir()
+    path = data_dir / "theme.json"
+
+    def write(words):
+        path.write_text(
+            json.dumps(
+                {"slug": "theme", "name": "主题书", "unit_size": 20, "words": words},
+                ensure_ascii=False,
+            ),
+            encoding="utf-8",
+        )
+
+    words = [
+        {"word": "mom", "meaning": "n.妈妈", "unit": 1},
+        {"word": "red", "meaning": "adj.红色的", "unit": 2},
+        {"word": "run", "meaning": "v.跑", "unit": 3},
+    ]
+    write(words)
+    monkeypatch.setattr(config, "WORDS_DATA_DIR", data_dir)
+    assert books.ensure_builtins(conn) == 1
+    units = {r["word"]: r["unit"] for r in conn.execute("SELECT word, unit FROM words")}
+    assert units == {"mom": 1, "red": 2, "run": 3}
+
+    # 改词序（仍带显式 unit）→ 迁移后 unit 跟随词条而非位置
+    write([words[2], words[1], words[0]])
+    books._load_json_file.cache_clear()
+    assert books.ensure_builtins(conn) == 0
+    units = {r["word"]: r["unit"] for r in conn.execute("SELECT word, unit FROM words")}
+    assert units == {"mom": 1, "red": 2, "run": 3}  # 显式 unit 不被位置公式覆盖
+
+
+def test_ensure_builtins_syncs_meaning_and_phonetic(tmp_path, monkeypatch, conn):
+    """释义/音标修订（题库手工订正）也会同步到库。"""
+    data_dir = tmp_path / "wd_fix"
+    data_dir.mkdir()
+    path = data_dir / "fix.json"
+
+    def write(meaning, phonetic):
+        path.write_text(
+            json.dumps(
+                {
+                    "slug": "fix",
+                    "name": "订正书",
+                    "unit_size": 10,
+                    "words": [{"word": "suit", "phonetic": phonetic, "meaning": meaning}],
+                },
+                ensure_ascii=False,
+            ),
+            encoding="utf-8",
+        )
+
+    write("n.起拆，诉讼", "/sjuːt/")
+    monkeypatch.setattr(config, "WORDS_DATA_DIR", data_dir)
+    assert books.ensure_builtins(conn) == 1
+    row = conn.execute("SELECT * FROM words").fetchone()
+    assert "起拆" in row["meaning"]
+
+    write("n. 诉讼；套装 vt. 适合；相配", "/suːt/")  # 手工订正
+    books._load_json_file.cache_clear()
+    assert books.ensure_builtins(conn) == 0
+    row = conn.execute("SELECT * FROM words").fetchone()
+    assert row["meaning"] == "n. 诉讼；套装 vt. 适合；相配"
+    assert row["phonetic"] == "/suːt/"

@@ -6,7 +6,7 @@
  "words": [
   {
    "word": "the",
-   "phonetic": "",
+   "phonetic": "/ðə/",
    "meaning": "art.这(那)个;这(那)些(指特定的人或物)",
    "example": "Please would you pass the salt.  请你把盐递给我。"
   },
@@ -180,7 +180,7 @@
   },
   {
    "word": "as",
-   "phonetic": "",
+   "phonetic": "/æz/",
    "meaning": "ad.同样地 conj.由于;像...一样 prep.作为",
    "example": "She'll soon be as tall as her mother.  她很快就会和她母亲一样高了。"
   },
@@ -222,7 +222,7 @@
   },
   {
    "word": "if",
-   "phonetic": "",
+   "phonetic": "/if/",
    "meaning": "conj.(用于连接宾语从句)是否;是不是",
    "example": "I'll pay you double if you get the work finished by Friday.  如果你周五前完工，我付你双倍的报酬。"
   },
@@ -246,7 +246,7 @@
   },
   {
    "word": "my",
-   "phonetic": "",
+   "phonetic": "/mai/",
    "meaning": "pron.(I的所有格)我的",
    "example": "It wasn't my fault.  这不是我的错。"
   },
@@ -2546,7 +2546,7 @@
   },
   {
    "word": "according",
-   "phonetic": "",
+   "phonetic": "/әˈkɒːdiŋ/",
    "meaning": "to [əˈkɔːdiŋ tu] prep.据/照…(所说、所写);按…,视…"
   },
   {
@@ -6435,7 +6435,7 @@
   },
   {
    "word": "Christian",
-   "phonetic": "",
+   "phonetic": "/ˈkristjən/",
    "meaning": "n.基督教徒 a.基督教徒的",
    "example": "a Christian charity/organization  基督教慈善团体／机构"
   },
@@ -6902,7 +6902,7 @@
   },
   {
    "word": "Christmas",
-   "phonetic": "",
+   "phonetic": "/ˈkrisməs/",
    "meaning": "n.圣诞节",
    "example": "We're going to my mother's for Christmas.  我们要去我母亲家过圣诞节。"
   },
@@ -7830,7 +7830,7 @@
   },
   {
    "word": "northern",
-   "phonetic": "",
+   "phonetic": "/ˈnɔːðən/",
    "meaning": "a.北方的,北部的",
    "example": "northern Europe  北欧"
   },
@@ -8225,7 +8225,7 @@
   },
   {
    "word": "okay",
-   "phonetic": "",
+   "phonetic": "/əuˈkei/",
    "meaning": "a.(okey,OK,O.K.)好,行,不错 n.同意"
   },
   {
@@ -8742,7 +8742,7 @@
   },
   {
    "word": "Catholic",
-   "phonetic": "",
+   "phonetic": "/ˈkæθәlik/",
    "meaning": "a.天主教的 n.天主教徒",
    "example": "Is he (a) Catholic?  他是天主教徒吗？"
   },
@@ -9584,7 +9584,7 @@
   },
   {
    "word": "tired",
-   "phonetic": "",
+   "phonetic": "/ˈtaiəd/",
    "meaning": "a.疲劳的;厌倦的",
    "example": "My legs are tired.  我的腿酸了。"
   },
@@ -9842,7 +9842,7 @@
   },
   {
    "word": "unfortunately",
-   "phonetic": "",
+   "phonetic": "/ʌnˈfɔːtjunətli/",
    "meaning": "ad.不幸地",
    "example": "Unfortunately, I didn't have my credit card with me or I'd certainly have bought it.  很不凑巧，我没带信用卡，否则我肯定早买了。UK adverb"
   },
@@ -9978,7 +9978,7 @@
   },
   {
    "word": "lower",
-   "phonetic": "",
+   "phonetic": "/ˈləuə/",
    "meaning": "a.较低的,下级的,下游的 v.降下,放低",
    "example": "They lowered the coffin into the grave.  他们把棺材放入了墓穴。"
   },
@@ -10056,7 +10056,7 @@
   },
   {
    "word": "illegal",
-   "phonetic": "",
+   "phonetic": "/iˈliːgəl/",
    "meaning": "a.不合法的,非法的",
    "example": "Prostitution is illegal in some countries.  卖淫在某些国家是不合法的。"
   },
@@ -10594,7 +10594,7 @@
   },
   {
    "word": "leading",
-   "phonetic": "",
+   "phonetic": "/ˈliːdiŋ/",
    "meaning": "a.领导的,指导的;第一位的;最主要的",
    "example": "a leading expert on the country's ecology  研究该国生态的顶级专家"
   },
@@ -10629,7 +10629,7 @@
   },
   {
    "word": "saving",
-   "phonetic": "",
+   "phonetic": "/ˈseiviŋ/",
    "meaning": "n.挽救,救助,节约,储蓄;(pl.)储蓄金,存款",
    "example": "He spent all his savings on an expensive car.  他花了自己所有的存款买了一辆昂贵的汽车。"
   },
@@ -10917,7 +10917,7 @@
   },
   {
    "word": "elect",
-   "phonetic": "",
+   "phonetic": "/iˈlekt/",
    "meaning": "v.选举,推选;选择,作出选择",
    "example": "The Government is elected for a five-year term of office.  政府由选举产生，执政期为五年。"
   },
@@ -11139,7 +11139,7 @@
   },
   {
    "word": "transfer",
-   "phonetic": "",
+   "phonetic": "/trænsˈfəː/",
    "meaning": "vt./n.转移;转换;转让;过户;迁移;改乘",
    "example": "Black's transfer to an Italian football club came as a shock to Coventry supporters.  布莱克转会到义大利足球会，使考文垂队的球迷大为震惊。"
   },
@@ -12511,7 +12511,7 @@
   },
   {
    "word": "found",
-   "phonetic": "",
+   "phonetic": "/faund/",
    "meaning": "vt.建立;创立;创办;使有根据;铸造;熔制",
    "example": "York was founded by the Romans in the year 71 AD.  约克是西元71年由古罗马人兴建的。"
   },
@@ -12769,7 +12769,7 @@
   },
   {
    "word": "translate",
-   "phonetic": "",
+   "phonetic": "/trænsˈleit/",
    "meaning": "v.翻译,解释;转化,",
    "example": "We were asked to translate a list of sentences.  我们被要求翻译一组句子。"
   },
@@ -12834,7 +12834,7 @@
   },
   {
    "word": "Bible",
-   "phonetic": "",
+   "phonetic": "/ˈbaibl/",
    "meaning": "n.圣经",
    "example": "In the Bible it says that Adam and Eve were the first human beings.  《圣经》中写道，亚当和夏娃是人类的祖先。"
   },
@@ -13986,7 +13986,7 @@
   },
   {
    "word": "friendship",
-   "phonetic": "",
+   "phonetic": "/ˈfrend∫ip/",
    "meaning": "n.友谊,友好",
    "example": "Their friendship goes back to when they were at school together.  他们的友谊可追溯到学生时代。"
   },
@@ -14869,7 +14869,7 @@
   },
   {
    "word": "repeatedly",
-   "phonetic": "",
+   "phonetic": "/riˈpiːtidli/",
    "meaning": "ad.重复地,再三地",
    "example": "He telephoned repeatedly, begging her to return.  他一次又一次地打电话求她回来。"
   },
@@ -15067,7 +15067,7 @@
   },
   {
    "word": "nonetheless",
-   "phonetic": "",
+   "phonetic": "/ˌnʌnðəˈles/",
    "meaning": "ad.[nevertheless]虽然如此, 但是",
    "example": "There are serious problems in our country. Nonetheless, we feel this is a good time to return.  我们国家存在严重问题。但尽管如此，我们仍然觉得这是归国的好时机。"
   },
@@ -15377,7 +15377,7 @@
   },
   {
    "word": "rose",
-   "phonetic": "",
+   "phonetic": "/rəuz/",
    "meaning": "n.玫瑰,蔷薇",
    "example": "She sent him a bunch of red roses.  她送了他一束红玫瑰。UK noun countable"
   },
@@ -15538,7 +15538,7 @@
   },
   {
    "word": "interrupt",
-   "phonetic": "",
+   "phonetic": "/ˌintəˈrʌpt/",
    "meaning": "v.中断,遮断,阻碍;打断(话),打扰",
    "example": "She tried to explain what had happened but he kept interrupting her.  她试图解释所发生的事情，但他不停地打断她。"
   },
@@ -15597,7 +15597,7 @@
   },
   {
    "word": "jeans",
-   "phonetic": "",
+   "phonetic": "/dʒi:nz/",
    "meaning": "n.牛仔裤(又称blue jeans, dungarees等)",
    "example": "jeans and a T-shirt  牛仔裤和T恤"
   },
@@ -15675,7 +15675,7 @@
   },
   {
    "word": "rent",
-   "phonetic": "",
+   "phonetic": "/rent/",
    "meaning": "v.租,租赁 n.租金",
    "example": "Rents here are ridiculously high/low.  这里的房租高／低得出奇。"
   },
@@ -16058,7 +16058,7 @@
   },
   {
    "word": "seemingly",
-   "phonetic": "",
+   "phonetic": "/ˈsiːmɪŋlɪ/",
    "meaning": "ad.外观上,表面上",
    "example": "He remains confident and seemingly untroubled by his recent problems.  他依然自信如初，似乎没有被最近的问题所困扰。"
   },
@@ -17130,7 +17130,7 @@
   },
   {
    "word": "provided",
-   "phonetic": "",
+   "phonetic": "/prəːˈvaidid/",
    "meaning": "conj.倘若,只要,假如"
   },
   {
@@ -18324,7 +18324,7 @@
   },
   {
    "word": "bush",
-   "phonetic": "",
+   "phonetic": "/bu∫/",
    "meaning": "n.灌木(丛)",
    "example": "The baby was born with a surprising bush of black hair.  令人吃惊的是，这个婴儿生下来就长着浓密的黑发。noun"
   },
@@ -19237,7 +19237,7 @@
   },
   {
    "word": "Thanksgiving",
-   "phonetic": "",
+   "phonetic": "/ˈθæŋksˌgiviŋ/",
    "meaning": "n.感恩节"
   },
   {
@@ -19671,7 +19671,7 @@
   },
   {
    "word": "cling",
-   "phonetic": "",
+   "phonetic": "/klɪŋ/",
    "meaning": "v.(to)粘住;依附;坚持",
    "example": "We got so wet that our clothes clung to us.  我们湿透了，衣服紧紧地贴在身上。"
   },
@@ -19791,7 +19791,7 @@
   },
   {
    "word": "transport",
-   "phonetic": "",
+   "phonetic": "/trænsˈpɔːt/",
    "meaning": "v.运输,运送,搬运n.运输;运输系统,运载工具",
    "example": "The company will arrange transport from the airport.  公司将安排从机场起的运输。"
   },
@@ -19869,7 +19869,7 @@
   },
   {
    "word": "liver",
-   "phonetic": "",
+   "phonetic": "/ˈlivə/",
    "meaning": "n.肝,肝脏"
   },
   {
@@ -20613,7 +20613,7 @@
   },
   {
    "word": "dock",
-   "phonetic": "",
+   "phonetic": "/dɔk/",
    "meaning": "n.船坞,码头",
    "example": "The strike has led to the cancellation of some ferry services and left hundreds of passengers stranded at the docks.  罢工导致部分轮度停业，数百名旅客滞留码头。"
   },
@@ -22435,7 +22435,7 @@
   },
   {
    "word": "undoubtedly",
-   "phonetic": "",
+   "phonetic": "/ʌnˈdautidli/",
    "meaning": "ad.无疑,必定"
   },
   {
@@ -22724,7 +22724,7 @@
   },
   {
    "word": "dean",
-   "phonetic": "",
+   "phonetic": "/diːn/",
    "meaning": "n.(大学)院长;主持牧师; (基督教)教长",
    "example": "She is the new dean of the Faculty of Social Sciences.  她是社会科学学院的新任院长。"
   },
@@ -22944,7 +22944,7 @@
   },
   {
    "word": "X-ray",
-   "phonetic": "",
+   "phonetic": "/ˈeksˈrei/",
    "meaning": "n.X射线,X光",
    "example": "The X-ray showed a slight irregularity in one lung.  X光照片显示有一叶肺有点不正常。"
   },
@@ -23210,7 +23210,7 @@
   },
   {
    "word": "cafe",
-   "phonetic": "",
+   "phonetic": "/ˈkæfei/",
    "meaning": "n.咖啡馆,(小)餐馆"
   },
   {
@@ -23344,7 +23344,7 @@
   },
   {
    "word": "Easter",
-   "phonetic": "",
+   "phonetic": "/ˈiːstə/",
    "meaning": "n.复活节"
   },
   {
@@ -23426,7 +23426,7 @@
   },
   {
    "word": "sophomore",
-   "phonetic": "",
+   "phonetic": "/ˈsɒfәmɒː/",
    "meaning": "(中学、大学)二年级学生"
   },
   {
@@ -23921,7 +23921,7 @@
   },
   {
    "word": "humble",
-   "phonetic": "",
+   "phonetic": "/ˈhʌmbl/",
    "meaning": "a.谦卑的,恭顺的;地位低下的 v.降低,贬低",
    "example": "He's very humble about his success.  他对自己的成功十分谦虚。"
   },
@@ -24265,7 +24265,7 @@
   },
   {
    "word": "surroundings",
-   "phonetic": "",
+   "phonetic": "/səˈraundiŋz/",
    "meaning": "n.周围的事物,环境",
    "example": "Some butterflies blend in with their surroundings so that it's difficult to see them.  有些蝴蝶能和周围的环境融为一体，所以很难看见它们。"
   },
@@ -25594,7 +25594,7 @@
   },
   {
    "word": "marvelous",
-   "phonetic": "",
+   "phonetic": "/ˈmɑːvəl/",
    "meaning": "a.(marvellous)惊人的,奇迹般的,妙极的"
   },
   {
@@ -25897,7 +25897,7 @@
   },
   {
    "word": "invariably",
-   "phonetic": "",
+   "phonetic": "/inˈvєәriәbli/",
    "meaning": "ad.不变地,永恒地,总是",
    "example": "The train is invariably late.  火车总是延误。"
   },
@@ -25997,7 +25997,7 @@
   },
   {
    "word": "dwell",
-   "phonetic": "",
+   "phonetic": "/dwel/",
    "meaning": "v.住,居留",
    "example": "She dwelt in remote parts of Asia for many years.  她在亚洲偏远地区居住了很多年。 (dwelt or dwelled, dwelt or dwelled)    formal"
   },
@@ -26512,7 +26512,7 @@
   },
   {
    "word": "layout",
-   "phonetic": "",
+   "phonetic": "/ˈleiˌaut/",
    "meaning": "n.安排,布局,设计;规划图,布局图",
    "example": "Application forms vary greatly in layout and length.  申请表在格式和篇幅上差别很大。"
   },
@@ -27418,7 +27418,7 @@
   },
   {
    "word": "conversely",
-   "phonetic": "",
+   "phonetic": "/ˈkɔnvəːsli/",
    "meaning": "ad.相反地"
   },
   {
@@ -27588,7 +27588,7 @@
   },
   {
    "word": "hinder",
-   "phonetic": "",
+   "phonetic": "/ˈhɪndə/",
    "meaning": "v.(from)阻止,妨碍 a.后面的",
    "example": "High winds have hindered firefighters in their efforts to put out the blaze.  强风妨碍了消防队员扑灭大火。"
   },
@@ -27868,7 +27868,7 @@
   },
   {
    "word": "crow",
-   "phonetic": "",
+   "phonetic": "/krəu/",
    "meaning": "n.乌鸦 v./n.鸡啼,鸣叫",
    "example": "We were woken at dawn by a cock crowing repeatedly.  黎明时，我们被一阵阵的鸡啼声吵醒。"
   },
@@ -27897,7 +27897,7 @@
   },
   {
    "word": "temperament",
-   "phonetic": "",
+   "phonetic": "/ˈtemprəmənt/",
    "meaning": "n.气质,性格,性情;资质",
    "example": "a fiery temperament  暴躁的性情"
   },
@@ -27957,7 +27957,7 @@
   },
   {
    "word": "outskirts",
-   "phonetic": "",
+   "phonetic": "/'autskə:ts/",
    "meaning": "n.郊区"
   },
   {
@@ -28421,7 +28421,7 @@
   },
   {
    "word": "oriental",
-   "phonetic": "",
+   "phonetic": "/ˌɔ(ː)riˈentl/",
    "meaning": "a.东方的,东方诸国的 n.东方人"
   },
   {
@@ -28514,7 +28514,7 @@
   },
   {
    "word": "china",
-   "phonetic": "",
+   "phonetic": "/ˈt∫ainə/",
    "meaning": "n.瓷器",
    "example": "china plates  瓷碟"
   },
@@ -28690,7 +28690,7 @@
   },
   {
    "word": "hysterical",
-   "phonetic": "",
+   "phonetic": "/hɪˈsterɪkəl/",
    "meaning": "a.情绪异常激动的,歇斯底里的",
    "example": "Calm down, you're getting hysterical.  冷静下来，你太激动了。"
   },
@@ -28792,7 +28792,7 @@
   },
   {
    "word": "impetus",
-   "phonetic": "",
+   "phonetic": "/ˈɪmpɪtəs/",
    "meaning": "n.推动(力),促进",
    "example": "The recent publicity surrounding homelessness has given (a) fresh impetus to the cause.  最近围绕无家可归者的宣传对这项事业是一股新的推动力。"
   },
@@ -29186,7 +29186,7 @@
   },
   {
    "word": "oxide",
-   "phonetic": "",
+   "phonetic": "/ˈɒksaɪd/",
    "meaning": "n.[化]氧化物",
    "example": "iron oxide  氧化铁"
   },
@@ -29398,7 +29398,7 @@
   },
   {
    "word": "Marxist",
-   "phonetic": "",
+   "phonetic": "/ˈmɑːksist/",
    "meaning": "a.马克思主义的 n.马克思主义者"
   },
   {
@@ -30046,7 +30046,7 @@
   },
   {
    "word": "chancellor",
-   "phonetic": "",
+   "phonetic": "/'tʃɑ:nsələ/",
    "meaning": "n.(英)大臣;法官;(德、奥)总理;大学校长",
    "example": "Helmut Kohl became the first Chancellor of a united Germany in 1990.  赫尔穆特‧科尔于1990年成为德国统一后的首任总理。"
   },
@@ -30246,7 +30246,7 @@
   },
   {
    "word": "approximate",
-   "phonetic": "",
+   "phonetic": "/əˈprɔksimeit/",
    "meaning": "a.近似的 vi.(to)接近",
    "example": "The train's approximate time of arrival is 10.30.  这列火车大概在10点30分到站。"
   },
@@ -30462,7 +30462,7 @@
   },
   {
    "word": "renaissance",
-   "phonetic": "",
+   "phonetic": "/rɪˈneɪsəns/",
    "meaning": "n.[the R-]文艺复兴(时期);新生,复兴",
    "example": "Opera in Britain is enjoying a long-awaited renaissance.  在英国戏剧正在复兴，这是人们期待已久的好事。"
   },
@@ -30878,7 +30878,7 @@
   },
   {
    "word": "coke",
-   "phonetic": "",
+   "phonetic": "/kәuk/",
    "meaning": "n.焦炭;可口可乐(COCA-COLA)的缩写"
   },
   {
@@ -31277,7 +31277,7 @@
   },
   {
    "word": "considerate",
-   "phonetic": "",
+   "phonetic": "/kənˈsidərit/",
    "meaning": "a.考虑周到的,体谅的",
    "example": "It wasn't very considerate of you to drink all the milk.  牛奶全给你喝光了，真不关心别人。    Opposite inconsiderate"
   },
@@ -31294,7 +31294,7 @@
   },
   {
    "word": "fell",
-   "phonetic": "",
+   "phonetic": "/fel/",
    "meaning": "v.击倒;打倒(疾病等);砍伐a.凶猛的;可怕的",
    "example": "The boxer was felled by a punch to the head.  那名拳击手头部挨了一拳，被击倒在地。noun countable"
   },
@@ -31358,7 +31358,7 @@
   },
   {
    "word": "Negro",
-   "phonetic": "",
+   "phonetic": "/ˈniːgrəu/",
    "meaning": "n.黑人 a.黑人的"
   },
   {
@@ -31426,7 +31426,7 @@
   },
   {
    "word": "April",
-   "phonetic": "",
+   "phonetic": "/ˈeiprəl/",
    "meaning": "(名)四月",
    "example": "We came back in April.  我们四月份回来的。"
   },
@@ -31539,7 +31539,7 @@
   },
   {
    "word": "December",
-   "phonetic": "",
+   "phonetic": "/diˈsembə/",
    "meaning": "n.十二月",
    "example": "We went to Mexico on the twelfth of December/December the twelfth/ mainly USDecember twelfth.  12月12日我们去了墨西哥。"
   },
@@ -31590,7 +31590,7 @@
   },
   {
    "word": "February",
-   "phonetic": "",
+   "phonetic": "/ˈfebruəri/",
    "meaning": "n.二月",
    "example": "We moved house last February/are moving house next February.  我们在刚过去的二月搬家了／明年二月搬家。"
   },
@@ -31602,7 +31602,7 @@
   },
   {
    "word": "Friday",
-   "phonetic": "",
+   "phonetic": "/ˈfraidi/",
    "meaning": "n.星期五",
    "example": "Shall we go to the theatre on Friday?  我们星期五去看戏怎么样？"
   },
@@ -31657,19 +31657,19 @@
   },
   {
    "word": "January",
-   "phonetic": "",
+   "phonetic": "/ˈdʒænjuəri/",
    "meaning": "n.一月",
    "example": "Her father died in January.  她父亲于一月去世了。"
   },
   {
    "word": "July",
-   "phonetic": "",
+   "phonetic": "/dʒu(ː)ˈlai/",
    "meaning": "n.七月",
    "example": "Clea's birthday is on the eleventh of July/July the eleventh/ mainly USJuly eleventh.  克利的生日是7月11日。"
   },
   {
    "word": "June",
-   "phonetic": "",
+   "phonetic": "/dʒuːn/",
    "meaning": "n.六月",
    "example": "24(th) June/June 24(th)  6月24日"
   },
@@ -31736,7 +31736,7 @@
   },
   {
    "word": "Monday",
-   "phonetic": "",
+   "phonetic": "/ˈmʌndei/",
    "meaning": "n.星期一",
    "example": "Term doesn't start this Monday (= the first one from now) , it starts (on) Monday week (= the second one from now).  不是接下来这个周一开学，是再下个周一。"
   },
@@ -31754,13 +31754,13 @@
   },
   {
    "word": "November",
-   "phonetic": "",
+   "phonetic": "/nəuˈvembə/",
    "meaning": "n.十一月",
    "example": "Guy Fawkes' Night is on the fifth of November/November the fifth/ mainly USNovember fifth.  盖伊．福克斯之夜是在11月5日。"
   },
   {
    "word": "October",
-   "phonetic": "",
+   "phonetic": "/ɔkˈtəubə/",
    "meaning": "n.十月",
    "example": "We're leaving for Italy on October the ninth/the ninth of October] mainly USOctober ninth.  我们10月9日动身去义大利。"
   },
@@ -31874,7 +31874,7 @@
   },
   {
    "word": "Saturday",
-   "phonetic": "",
+   "phonetic": "/ˈsætədi/",
    "meaning": "n.星期六",
    "example": "He's leaving on Saturday.  他星期六出发。"
   },
@@ -31915,7 +31915,7 @@
   },
   {
    "word": "Sunday",
-   "phonetic": "",
+   "phonetic": "/ˈsʌndi/",
    "meaning": "n.星期日",
    "example": "They go to church on Sundays.  他们星期天去教堂。"
   },
@@ -31939,7 +31939,7 @@
   },
   {
    "word": "Tuesday",
-   "phonetic": "",
+   "phonetic": "/ˈtjuːzdi/",
    "meaning": "n.星期二",
    "example": "We'll meet at eight on Tuesday.  我们周二八点见。"
   },
@@ -31980,7 +31980,7 @@
   },
   {
    "word": "Wednesday",
-   "phonetic": "",
+   "phonetic": "/ˈwenzdei/",
    "meaning": "n.星期三",
    "example": "Did you say the meeting is on Wednesday?  你是说会议在星期三开吗？"
   },

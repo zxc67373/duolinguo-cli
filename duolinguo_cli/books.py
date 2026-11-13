@@ -39,13 +39,19 @@ def load_builtin_jsons() -> list[dict]:
 
 
 def _content_marker(words: list[dict]) -> str:
-    """词序 + 例句指纹：JSON 内容变化时触发迁移（重排 unit / 同步例句）。"""
+    """词条全内容指纹（词/关卡/音标/释义/例句）：JSON 任何修订都会触发同步。"""
     h = hashlib.md5()
     for w in words:
         h.update(w["word"].lower().encode("utf-8"))
         h.update(b"\x00")
-        h.update(w.get("example", "").encode("utf-8"))
+        h.update(str(w.get("unit", "")).encode("utf-8"))
         h.update(b"\x01")
+        h.update(w.get("phonetic", "").encode("utf-8"))
+        h.update(b"\x02")
+        h.update(w["meaning"].encode("utf-8"))
+        h.update(b"\x03")
+        h.update(w.get("example", "").encode("utf-8"))
+        h.update(b"\x04")
     return h.hexdigest()
 
 
@@ -84,32 +90,30 @@ def ensure_builtins(conn: sqlite3.Connection) -> int:
                 (data.get("description", ""), book["id"]),
             )
         existing = {
-            r["word"]: (r["id"], r["unit"], r["example"])
+            r["word"]: (r["id"], r["unit"], r["example"], r["phonetic"], r["meaning"])
             for r in conn.execute(
-                "SELECT word, id, unit, example FROM words WHERE book_id = ?", (book["id"],)
+                "SELECT word, id, unit, example, phonetic, meaning "
+                "FROM words WHERE book_id = ?",
+                (book["id"],),
             )
         }
         for i, entry in enumerate(data["words"]):
-            unit = i // unit_size + 1
+            unit = entry.get("unit") or i // unit_size + 1
             example = entry.get("example", "")
+            phonetic = entry.get("phonetic", "")
+            meaning = entry["meaning"]
             row = existing.get(entry["word"])
             if row is None:
                 conn.execute(
                     "INSERT INTO words (book_id, word, phonetic, meaning, example, unit) "
                     "VALUES (?, ?, ?, ?, ?, ?)",
-                    (
-                        book["id"],
-                        entry["word"],
-                        entry.get("phonetic", ""),
-                        entry["meaning"],
-                        example,
-                        unit,
-                    ),
+                    (book["id"], entry["word"], phonetic, meaning, example, unit),
                 )
-            elif row[1] != unit or row[2] != example:
+            elif (row[1], row[2], row[3], row[4]) != (unit, example, phonetic, meaning):
                 conn.execute(
-                    "UPDATE words SET unit = ?, example = ? WHERE id = ?",
-                    (unit, example, row[0]),
+                    "UPDATE words SET unit = ?, example = ?, phonetic = ?, meaning = ? "
+                    "WHERE id = ?",
+                    (unit, example, phonetic, meaning, row[0]),
                 )
         db.set_setting(conn, marker_key, marker)
     conn.commit()

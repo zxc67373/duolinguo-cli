@@ -459,7 +459,7 @@
   {
    "word": "y'all",
    "phonetic": "/jɔːl/",
-   "meaning": "=you-all",
+   "meaning": "pron. （非正式）你们；你们大家（= you all）",
    "example": "See y'all later.  大伙，再见。"
   },
   {
@@ -2502,7 +2502,7 @@
   {
    "word": "akimbo",
    "phonetic": "/əˈkɪmboʊ/",
-   "meaning": "adverb",
+   "meaning": "adv. 叉着腰（两臂弯曲、双手叉腰地站着）",
    "example": "He stood, arms akimbo, refusing to move.  他双手叉腰站在那里，不肯走开。"
   },
   {
@@ -3757,7 +3757,7 @@
   {
    "word": "arborist",
    "phonetic": "/ˈɑːrbərɪst/",
-   "meaning": "(formal)=tree surgeon"
+   "meaning": "n. 树木医生；树艺师（= tree surgeon）"
   },
   {
    "word": "arbour",
@@ -3969,7 +3969,7 @@
   {
    "word": "around-the-clock",
    "phonetic": "",
-   "meaning": "=round-the-clock"
+   "meaning": "adj./adv. 昼夜不停（的）；全天候（的）"
   },
   {
    "word": "arpeggio",
@@ -19993,7 +19993,7 @@
   {
    "word": "eff",
    "phonetic": "/ef/",
-   "meaning": "verb"
+   "meaning": "v. （粗话）咒骂（= fuck 的委婉说法）"
   },
   {
    "word": "effector",
@@ -27809,7 +27809,7 @@
   {
    "word": "hand-me-down",
    "phonetic": "",
-   "meaning": "(especially NAmE)=cast-off"
+   "meaning": "n. 传下来的旧物；别人穿过的旧衣 adj. 转赠的"
   },
   {
    "word": "hand-me-up",
@@ -42249,7 +42249,7 @@
   {
    "word": "nutraceutical",
    "phonetic": "/ˌnjuːtrəˈsuːtɪkl/",
-   "meaning": "=functional food"
+   "meaning": "n. 营养保健品；功能性食品补充剂"
   },
   {
    "word": "nymphet",
@@ -48100,7 +48100,7 @@
   {
    "word": "possum",
    "phonetic": "/ˈpɑːsəm/",
-   "meaning": "(AustralE, NZE or NAmE, informal)=opossum"
+   "meaning": "n. 负鼠（= opossum，澳新非正式说法）"
   },
   {
    "word": "postbag",
@@ -52326,7 +52326,7 @@
   {
    "word": "righty-ho",
    "phonetic": "/ˈraɪtihoʊ/",
-   "meaning": "(old-fashioned) (BrE informal)=righto"
+   "meaning": "int. （旧式英式口语）好的；行（= righto）"
   },
   {
    "word": "rig-out",
@@ -57000,7 +57000,7 @@
   {
    "word": "six-gun",
    "phonetic": "",
-   "meaning": "=six-shooter"
+   "meaning": "n. 六发左轮手枪"
   },
   {
    "word": "sixpence",
@@ -71634,7 +71634,7 @@
   {
    "word": "wringer",
    "phonetic": "/ˈrɪŋər/",
-   "meaning": "=mangle",
+   "meaning": "n. 绞衣机（= mangle）；绞榨机",
    "example": "Outside investigators will put the company's accounting practices through the wringer.  外来的调查人员将会对这家公司的会计工作严加审查。"
   },
   {
