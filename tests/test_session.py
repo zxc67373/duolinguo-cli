@@ -385,3 +385,42 @@ def test_ask_fullwidth_digit_answers_mcq():
     correct, resp = _ask(q, lambda p: fullwidth)
     assert correct is True
     assert resp == q.answer
+
+
+def test_ask_mcq_accepts_option_text():
+    """选择题直接输入选项原文（拼出单词）→ 等同选中该选项。"""
+    from duolinguo_cli import quiz
+    from duolinguo_cli.session import _ask
+
+    words = [
+        {"id": i, "word": f"w{i}", "phonetic": "", "meaning": f"释义{i}", "unit": 1}
+        for i in range(1, 9)
+    ]
+    q = quiz.build_question(words[0], words, quiz.MCQ_ZH2EN, rng=random.Random(5))
+    assert q.options is not None
+    # 输入正确单词原文（全角字母也认）→ 判对
+    fw = str.maketrans(
+        "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+        "ＡＢＣＤＥＦＧＨＩＪＫＬＭＮＯＰＱＲＳＴＵＶＷＸＹＺ",
+    )
+    correct, resp = _ask(q, lambda p: q.answer.upper().translate(fw))
+    assert correct is True and resp == q.answer
+    # 输入错误选项的原文 → 判错（仍算作选中该项）
+    wrong_opt = next(o for o in q.options if o != q.answer)
+    correct2, resp2 = _ask(q, lambda p: wrong_opt)
+    assert correct2 is False and resp2 == wrong_opt
+
+
+def test_ask_mcq_rejects_unknown_text_then_accepts_number():
+    """非选项内容 → 重问；再输数字正常作答。"""
+    from duolinguo_cli import quiz
+    from duolinguo_cli.session import _ask
+
+    words = [
+        {"id": i, "word": f"w{i}", "phonetic": "", "meaning": f"释义{i}", "unit": 1}
+        for i in range(1, 9)
+    ]
+    q = quiz.build_question(words[0], words, quiz.MCQ_EN2ZH, rng=random.Random(3))
+    inputs = iter(["zzz-not-an-option", str(q.answer_index + 1)])
+    correct, resp = _ask(q, lambda p: next(inputs))
+    assert correct is True and resp == q.answer

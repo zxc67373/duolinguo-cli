@@ -91,11 +91,27 @@ def _ask(q: quiz.Question, input_fn) -> tuple[bool, str]:
                 _correct_spelling(q, input_fn)
             return ok, text
 
-        if key not in ("1", "2", "3", "4") or q.options is None:
-            display.console.print("[yellow]请输入 1-4 之间的数字[/]")
+        # 选择题：输 1-4，或直接输入选项原文（如拼出目标单词）也算选中
+        idx = None
+        if q.options is not None:
+            if key in ("1", "2", "3", "4"):
+                idx = int(key) - 1
+            else:
+                idx = _match_option_text(q, key)
+        if idx is None or idx >= len(q.options or []):
+            display.console.print("[yellow]请输入 1-4，或直接输入选项内容[/]")
             continue
-        idx = int(key) - 1
         return idx == q.answer_index, q.options[idx]
+
+
+def _match_option_text(q: quiz.Question, key: str) -> int | None:
+    """按选项原文匹配（归一化后全等）：直接拼出/输入选项内容时命中其下标。"""
+    if not q.options:
+        return None
+    for i, opt in enumerate(q.options):
+        if quiz.normalize(opt) == key:
+            return i
+    return None
 
 
 def _correct_spelling(q: quiz.Question, input_fn) -> None:
