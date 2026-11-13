@@ -117,8 +117,17 @@ def print_question(idx: int, total: int, q: Question) -> None:
         console.print("[dim]请拼写出对应的英文单词[/]")
 
 
-def print_spelling_hint(hint: str) -> None:
-    console.print(f"[yellow]提示：[/]{hint or '（该词无音标）'}")
+def print_spelling_hint(q: Question, level: int = 1) -> None:
+    """拼写渐进提示：① 音标 ② 首字母+长度。任何时候不直接给答案。"""
+    phonetic = q.word.get("phonetic") or q.hint
+    if level <= 1 and phonetic:
+        console.print(f"[yellow]提示：[/]音标 {phonetic}")
+        return
+    word = q.answer
+    mask = word[0] + "_" * max(1, len(word) - 1)
+    console.print(
+        f"[yellow]提示：[/]首字母 [bold]{word[0]}[/]，共 {len(word)} 个字母：[bold]{mask}[/]"
+    )
 
 
 def print_correction_begin(q: Question) -> None:

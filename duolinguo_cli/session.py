@@ -67,30 +67,34 @@ def _ask(q: quiz.Question, input_fn) -> tuple[bool, str]:
     """向用户提问，返回 (是否答对, 作答原文)。q 退出抛 QuitSession。
 
     拼写答错会当场进入订正循环：显示正确答案，必须重新输入正确才放行。
+    提示为渐进式（? 请求，半/全角均可）：先音标、再首字母+长度，不直接给答案。
     """
+    hint_level = 0
     while True:
         if q.qtype == quiz.SPELLING:
             raw = input_fn("拼写这个单词（? 看提示 / q 退出）: ")
         else:
             raw = input_fn("选择 1-4（q 退出）: ")
         text = raw.strip()
+        key = quiz.normalize(text)  # 全角→半角等归一化，兼容中文输入法
 
-        if text.lower() == "q":
+        if key == "q":
             raise QuitSession
 
         if q.qtype == quiz.SPELLING:
-            if text == "?":
-                display.print_spelling_hint(q.hint)
+            if key == "?":
+                hint_level += 1
+                display.print_spelling_hint(q, hint_level)
                 continue
             ok = quiz.grade_spelling(text, q.answer)
             if not ok:
                 _correct_spelling(q, input_fn)
             return ok, text
 
-        if text not in ("1", "2", "3", "4") or q.options is None:
+        if key not in ("1", "2", "3", "4") or q.options is None:
             display.console.print("[yellow]请输入 1-4 之间的数字[/]")
             continue
-        idx = int(text) - 1
+        idx = int(key) - 1
         return idx == q.answer_index, q.options[idx]
 
 
@@ -100,7 +104,7 @@ def _correct_spelling(q: quiz.Question, input_fn) -> None:
     while True:
         raw = input_fn(f"重新输入 {q.answer}: ")
         text = raw.strip()
-        if text.lower() == "q":
+        if quiz.normalize(text) == "q":
             raise QuitSession
         if not text:
             continue  # 空输入不算，重新显示提示

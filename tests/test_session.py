@@ -336,3 +336,52 @@ def test_session_spelling_wrong_logged_once(conn, sample_book, scripted, monkeyp
     ).fetchall()
     assert len(logs) == 9  # 订正输入不产生额外日志
     assert [r["correct"] for r in logs].count(0) == 1  # 只有首次作答记为错
+
+
+# ---------------------------------------------------------------- 提示与全角输入
+
+
+def test_ask_fullwidth_question_mark_shows_hint(capsys):
+    """全角？触发提示而非判错；提示不包含完整答案。"""
+    from duolinguo_cli.session import _ask
+
+    q = _spelling_question()  # word01, 音标 /w1/
+    inputs = iter(["？", "word01"])  # 全角问号 → 提示 → 答对
+    correct, resp = _ask(q, lambda p: next(inputs))
+    assert correct is True and resp == "word01"
+    out = capsys.readouterr().out
+    assert "/w1/" in out  # 第 1 级提示：音标
+    assert "正确拼写" not in out  # 没有进入订正（未泄答案）
+    assert "word01" not in out  # 提示本身不含完整答案
+
+
+def test_ask_hint_progressive_without_answer(capsys):
+    """连续 ?：① 音标 ② 首字母+长度；两级都不给完整答案。"""
+    from duolinguo_cli.session import _ask
+
+    q = _spelling_question()
+    inputs = iter(["?", "?", "word01"])
+    correct, _ = _ask(q, lambda p: next(inputs))
+    out = capsys.readouterr().out
+    assert correct is True
+    assert "音标 /w1/" in out  # 第 1 级
+    assert "首字母" in out and "共 6 个字母" in out  # 第 2 级
+    assert "word01" not in out  # 任何一级都不亮答案
+    assert "正确拼写" not in out
+
+
+def test_ask_fullwidth_digit_answers_mcq():
+    """全角数字１-４同样能选中选项。"""
+    from duolinguo_cli import quiz
+    from duolinguo_cli.session import _ask
+
+    words = [
+        {"id": i, "word": f"w{i}", "phonetic": "", "meaning": f"释义{i}", "unit": 1}
+        for i in range(1, 9)
+    ]
+    q = quiz.build_question(words[0], words, quiz.MCQ_EN2ZH, rng=random.Random(5))
+    assert q.options is not None
+    fullwidth = chr(0xFF10 + (q.answer_index + 1))  # 半角数字 → 全角
+    correct, resp = _ask(q, lambda p: fullwidth)
+    assert correct is True
+    assert resp == q.answer

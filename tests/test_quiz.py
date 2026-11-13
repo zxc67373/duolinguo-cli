@@ -236,3 +236,12 @@ def test_spelling_is_majority():
             counts["spell" if t == quiz.SPELLING else "other"] += 1
         share = counts["spell"] / 1000
         assert share > floor, f"is_new={is_new} 拼写占比 {share:.0%} 低于预期"
+
+
+def test_grade_spelling_fullwidth():
+    """全角字母/数字（中文输入法）判分为对。"""
+    assert quiz.grade_spelling("ＳＴＲＡＴＥＧＹ", "strategy") is True
+    assert quiz.grade_spelling("Ｗｏｒｄ０１", "word01") is True
+    assert quiz.normalize("？") == "?"  # 全角问号 → 半角
+    assert quiz.normalize("１") == "1"  # 全角数字 → 半角
+    assert quiz.grade_spelling("strategy", "strategys") is False

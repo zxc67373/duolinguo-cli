@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import random
 import re
+import unicodedata
 from dataclasses import dataclass
 
 MCQ_EN2ZH = "mcq_en2zh"  # 看英文选中文
@@ -160,12 +161,15 @@ def build_question(
 
 
 def normalize(text: str) -> str:
-    """判分归一化：转小写并去掉全部空白（连字符/撇号保持敏感）。"""
-    return re.sub(r"\s+", "", text.strip().lower())
+    """判分/输入归一化：全角→半角（NFKC，兼容中文输入法）、转小写、去全部空白。
+
+    连字符/撇号保持敏感（well-known ≠ wellknown）。
+    """
+    return re.sub(r"\s+", "", unicodedata.normalize("NFKC", text).lower())
 
 
 def grade_spelling(user_input: str, answer: str) -> bool:
-    """拼写判分：忽略大小写与空白；空输入视为放弃（判错）。"""
+    """拼写判分：忽略大小写、全半角与空白；空输入视为放弃（判错）。"""
     if not user_input.strip():
         return False
     return normalize(user_input) == normalize(answer)
