@@ -12,9 +12,8 @@ MCQ_ZH2EN = "mcq_zh2en"  # 看中文选英文
 SPELLING = "spelling"  # 拼写
 CLOZE = "cloze"  # 例句填空（句中挖空，选词）
 
-# 题型权重：拼写为主（记得牢），选择题辅助；例句填空仅在词有例句时参与
-NEW_WEIGHTS = {SPELLING: 0.45, MCQ_EN2ZH: 0.25, CLOZE: 0.20, MCQ_ZH2EN: 0.10}
-REVIEW_WEIGHTS = {SPELLING: 0.60, CLOZE: 0.15, MCQ_EN2ZH: 0.15, MCQ_ZH2EN: 0.10}
+# 题型权重：四类题均衡（各 25%）；例句填空仅在词有例句时参与，缺例句自动重分配
+WEIGHTS = {MCQ_EN2ZH: 0.25, MCQ_ZH2EN: 0.25, SPELLING: 0.25, CLOZE: 0.25}
 
 DISTRACTOR_COUNT = 3  # 选择题干扰项数量
 
@@ -39,11 +38,14 @@ def pick_qtype(
     has_example: bool = False,
     rng: random.Random | None = None,
 ) -> str:
-    """按权重抽题型；词书太小（凑不齐干扰项）降级拼写、无例句不抽填空。"""
+    """按权重抽题型（四类均衡，is_new 暂不影响权重）。
+
+    词书太小（凑不齐干扰项）降级拼写；无例句不抽填空、权重自动重分配。
+    """
     if not has_distractors:
         return SPELLING
     rng = rng or random
-    weights = dict(NEW_WEIGHTS if is_new else REVIEW_WEIGHTS)
+    weights = dict(WEIGHTS)
     if not has_example:
         weights.pop(CLOZE, None)
     types = list(weights)

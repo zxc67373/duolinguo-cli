@@ -44,16 +44,19 @@ def test_pick_qtype_valid_types():
             assert t in (quiz.MCQ_EN2ZH, quiz.MCQ_ZH2EN, quiz.SPELLING)
 
 
-def test_pick_qtype_weights_shift():
-    """新词拼写题占比应明显低于复习词。"""
+def test_pick_qtype_balanced():
+    """四类题均衡：每种占比在 18%-32% 之间（1000 次抽样）。"""
     rng = random.Random(7)
-    new_spell = sum(
-        quiz.pick_qtype(True, True, rng=rng) == quiz.SPELLING for _ in range(1000)
-    )
-    rev_spell = sum(
-        quiz.pick_qtype(False, True, rng=rng) == quiz.SPELLING for _ in range(1000)
-    )
-    assert new_spell < rev_spell
+    for is_new in (True, False):
+        counts = {
+            t: 0 for t in (quiz.MCQ_EN2ZH, quiz.MCQ_ZH2EN, quiz.SPELLING, quiz.CLOZE)
+        }
+        for _ in range(1000):
+            counts[quiz.pick_qtype(is_new, True, has_example=True, rng=rng)] += 1
+        for t, c in counts.items():
+            assert 180 <= c <= 320, f"is_new={is_new} {t} 占比 {c/10:.0f}% 不均衡"
+        # 四类都必须出现
+        assert all(c > 0 for c in counts.values())
 
 
 # ---------------------------------------------------------------- 干扰项
@@ -225,17 +228,6 @@ def test_notes_show_context_without_leaking():
     q3 = quiz.build_question(words[0], words, quiz.SPELLING, rng=RNG)
     assert q3.note == ""
 
-
-def test_spelling_is_majority():
-    """拼写为主：复习词拼写占比 >50%，新词拼写占比也最高。"""
-    rng = random.Random(11)
-    for is_new, floor in ((True, 0.40), (False, 0.55)):
-        counts = {"spell": 0, "other": 0}
-        for _ in range(1000):
-            t = quiz.pick_qtype(is_new, True, has_example=True, rng=rng)
-            counts["spell" if t == quiz.SPELLING else "other"] += 1
-        share = counts["spell"] / 1000
-        assert share > floor, f"is_new={is_new} 拼写占比 {share:.0%} 低于预期"
 
 
 def test_grade_spelling_fullwidth():
