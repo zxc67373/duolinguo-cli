@@ -497,3 +497,20 @@ def test_compose_queue_recall_prefers_wrong_words(conn, sample_book):
             conn, sample_book["id"], TODAY, count=4, rng=random.Random(seed)
         )
         assert words[0]["id"] in {w["id"] for w, _ in q2}
+
+
+def test_forgetting_risk_report(conn, sample_book, scripted, monkeypatch):
+    """stats 的临近遗忘：学过的词按 FSRS 记忆概率升序返回 TOP。"""
+    from duolinguo_cli.display import _forgetting_risk
+
+    # 学 4 个词（答对）
+    scripted.script = ["correct"] * 4
+    session.run_session(
+        conn, sample_book, count=4, rng=random.Random(1), input_fn=scripted.input_fn
+    )
+    risk = _forgetting_risk(conn, sample_book["id"], TODAY, limit=10)
+    assert 0 < len(risk) <= 10
+    rs = [x["retrievability"] for x in risk]
+    assert rs == sorted(rs)  # 升序：最危险的在前
+    assert all(0 <= x["retrievability"] <= 1 for x in risk)
+    assert all("word" in x and "meaning" in x for x in risk)

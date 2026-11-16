@@ -127,6 +127,26 @@ def hint_ladder(q: Question) -> list[str]:
     return ladder
 
 
+def senses_of(meaning: str) -> list[str]:
+    """把合并释义拆成义项列表：编号优先（「1. … 2. …」），分号次之；拆不出返回整串。"""
+    if not meaning:
+        return []
+    parts = [p.strip() for p in re.split(r"\s*\d+\.\s*", meaning) if p.strip()]
+    # 孤立词性前缀（"n." / "vt."）并入其后第一段
+    if len(parts) >= 2 and re.fullmatch(r"[a-zA-Z]{1,4}\.?", parts[0]):
+        parts[1] = f"{parts[0]} {parts[1]}"
+        parts = parts[1:]
+    if len(parts) < 2:
+        parts = [p.strip() for p in re.split(r"[;；]", meaning) if len(p.strip()) >= 2]
+    return parts if parts else [meaning]
+
+
+def _pick_sense(meaning: str, rng: random.Random) -> str:
+    """随机取一个义项（单词义时即整串）。"""
+    senses = senses_of(meaning)
+    return rng.choice(senses) if len(senses) > 1 else senses[0]
+
+
 def build_question(
     target: dict,
     candidates: list[dict],
@@ -163,10 +183,16 @@ def build_question(
         if len(distractors) >= DISTRACTOR_COUNT:
             if qtype == MCQ_EN2ZH:
                 prompt = f"{word_text}  {phonetic}".strip()
-                answer = meaning
-                options = [d["meaning"] for d in distractors] + [meaning]
+                # 义项级出题：正确项随机取目标词的一个义项，干扰项各取其一个义项
+                answer = _pick_sense(meaning, rng)
+                options = [_pick_sense(d["meaning"], rng) for d in distractors] + [answer]
+                if len({normalize(o) for o in options}) < DISTRACTOR_COUNT + 1:
+                    # 义项撞车 → 回退整义出题
+                    answer = meaning
+                    options = [d["meaning"] for d in distractors] + [meaning]
             else:
-                prompt = meaning
+                # 提示用单个义项（更精细），选项仍是单词
+                prompt = _pick_sense(meaning, rng)
                 answer = word_text
                 options = [d["word"] for d in distractors] + [word_text]
             rng.shuffle(options)

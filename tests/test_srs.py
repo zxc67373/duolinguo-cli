@@ -1,106 +1,108 @@
-"""SRS（简化 SM-2）状态机测试。"""
+"""FSRS-6 调度测试。"""
 
 from __future__ import annotations
 
-import pytest
-
-from duolinguo_cli import config, srs
+from duolinguo_cli import srs
 
 TODAY = "2026-11-12"
 
 
-def test_new_word_correct():
+def test_fsrs_constants():
+    """官方默认参数：DECAY 与 90% 保持率下间隔≈稳定度。"""
+    assert srs.FSRS_W[20] == 0.1542
+    assert len(srs.FSRS_W) == 21
+    # S=2.3065（Good 初值）→ 间隔约 2 天
+    assert srs.next_interval(srs.initial_stability(srs.GOOD)) in (2, 3)
+    assert srs.next_interval(7.0) == 7  # 90% 保持率下 interval ≈ S
+
+
+def test_first_review_new_word():
+    new = srs.WordState()
+    # 答对（Good）：初值 S=w2≈2.31 → 间隔 2 天，尚未毕业
+    ok = srs.schedule(new, True, TODAY)
+    assert ok.interval_days == 2
+    assert ok.status == "learning"
+    assert ok.stability > 0 and 1 <= ok.difficulty <= 10
+    assert ok.due_at == "2026-11-14"
+    assert ok.reps == 1 and ok.lapses == 0
+
+    # 答错（Again）：S=w0=0.212 → 间隔 1 天
+    bad = srs.schedule(new, False, TODAY)
+    assert bad.interval_days == 1
+    assert bad.status == "learning"
+    assert bad.lapses == 1
+    assert bad.due_at == "2026-11-13"
+
+
+def test_stability_grows_and_graduates():
+    """连续答对（隔日复习）→ 稳定度增长 → 间隔≥7 毕业为已掌握。"""
     state = srs.WordState()
-    new = srs.schedule(state, True, TODAY)
-    assert new.status == "learning"
-    assert new.reps == 1
-    assert new.interval_days == 1
-    assert new.due_at == "2026-11-13"
-    assert new.lapses == 0
-    # 入参不被修改
-    assert state.reps == 0 and state.status == "new"
-
-
-def test_new_word_wrong():
-    state = srs.WordState()
-    new = srs.schedule(state, False, TODAY)
-    assert new.status == "learning"
-    assert new.reps == 0
-    assert new.lapses == 1
-    assert new.interval_days == 1
-    assert new.ease == pytest.approx(2.3)
-    assert new.due_at == "2026-11-13"
-
-
-def test_interval_ladder_and_graduation():
-    state = srs.WordState()
-    state = srs.schedule(state, True, TODAY)  # reps=1 → 1 天
-    assert (state.interval_days, state.status) == (1, "learning")
-    state = srs.schedule(state, True, TODAY)  # reps=2 → 3 天
-    assert (state.interval_days, state.status) == (3, "learning")
-    state = srs.schedule(state, True, TODAY)  # reps=3 → round(3*2.6)=8 天 ≥ 7 → 毕业
-    assert state.interval_days == 8
-    assert state.status == "mastered"
-    assert state.ease == pytest.approx(2.65)
-    assert state.due_at == "2026-11-20"
-
-
-def test_ease_bounds():
-    # 答错封底 1.3
-    state = srs.WordState()
+    # Good → interval 2（次日+2 天节奏复习）
+    state = srs.schedule(state, True, "2026-11-12")
+    assert state.interval_days == 2
+    # 第二次：隔 2 天复习
+    state = srs.schedule(state, True, "2026-11-14")
+    assert state.stability > 2.3
+    assert state.interval_days > 2
+    # 继续复习直到毕业
     for _ in range(10):
-        state = srs.schedule(state, False, TODAY)
-    assert state.ease == pytest.approx(config.EASE_MIN)
-    # 答对封顶 3.0
-    state = srs.WordState()
-    for _ in range(20):
-        state = srs.schedule(state, True, TODAY)
-    assert state.ease == pytest.approx(config.EASE_MAX)
+        from datetime import date, timedelta
+
+        d = date.fromisoformat("2026-11-14") + timedelta(days=state.interval_days)
+        state = srs.schedule(state, True, d.isoformat())
+    assert state.interval_days >= 7
+    assert state.status == "mastered"
 
 
-def test_interval_cap():
-    state = srs.WordState(status="mastered", ease=3.0, interval_days=90, reps=10)
-    new = srs.schedule(state, True, TODAY)
-    assert new.interval_days == config.INTERVAL_CAP
-    assert new.status == "mastered"
+def test_forgetting_resets():
+    """已掌握的词答错 → 稳定度回撤、间隔 1、回到 learning。"""
+    state = srs.WordState(stability=30.0, difficulty=3.0, interval_days=30, reps=10,
+                          last_reviewed_at="2026-10-13")  # 30 天没见
+    bad = srs.schedule(state, False, TODAY)
+    assert bad.interval_days == 1
+    assert bad.status == "learning"
+    assert bad.stability < 30.0
+    assert bad.lapses == 1
+    assert bad.due_at == "2026-11-13"
 
 
-def test_mastered_wrong_resets():
-    state = srs.WordState(status="mastered", ease=2.7, interval_days=15, reps=6, lapses=0)
-    new = srs.schedule(state, False, TODAY)
-    assert new.status == "learning"
-    assert new.reps == 0
-    assert new.interval_days == 1
-    assert new.lapses == 1
-    assert new.ease == pytest.approx(2.5)
-    assert new.due_at == "2026-11-13"
+def test_same_day_revisit_uses_short_term():
+    """同日再答（错词当场重练场景）→ 短期稳定度分支，不按长期遗忘回撤。"""
+    state = srs.WordState(stability=5.0, difficulty=3.0, interval_days=5,
+                          last_reviewed_at="2026-11-12 08:00:00")
+    same_day = srs.schedule(state, True, TODAY)  # days_since=0
+    assert same_day.stability >= 5.0  # 答对只增不减
+    assert same_day.due_at >= TODAY
 
 
-def test_graduate_boundary():
-    # 间隔恰好 7 → 毕业；6 → 未毕业
-    s7 = srs.schedule(srs.WordState(reps=2, interval_days=3, ease=2.4), True, TODAY)
-    assert s7.interval_days == 7  # round(3*2.4) = 7
-    assert s7.status == "mastered"
-    s6 = srs.schedule(srs.WordState(reps=2, interval_days=3, ease=2.0), True, TODAY)
-    assert s6.interval_days == 6  # round(3*2.0) = 6
-    assert s6.status == "learning"
+def test_legacy_sm2_data接入():
+    """旧 SM-2 数据（stability=0，有 interval）→ 以 interval 为 S 平滑接入。"""
+    legacy = srs.WordState(status="mastered", ease=2.7, interval_days=21, reps=8)
+    ok = srs.schedule(legacy, True, TODAY)
+    assert ok.stability >= 21.0  # 以旧间隔为稳定度起点
+    assert ok.interval_days >= 7
+    assert ok.status == "mastered"
+
+    # 旧词答错：回撤但不归零
+    bad = srs.schedule(legacy, False, TODAY)
+    assert bad.interval_days == 1
+    assert bad.stability < 21.0
+    assert bad.stability > 0
 
 
-def test_from_row():
-    row = {
-        "status": "learning",
-        "ease": 2.4,
-        "interval_days": 3,
-        "reps": 2,
-        "lapses": 1,
-        "due_at": "2026-11-15",
-    }
+def test_retrievability():
+    """R(t,S)：刚复习=1，随时间衰减，S 越小衰减越快。"""
+    assert srs.retrievability(0, 5.0) == 1.0
+    r1 = srs.retrievability(5, 5.0)
+    r2 = srs.retrievability(5, 20.0)
+    assert 0 < r1 < 1
+    assert r2 > r1  # 稳定度越高，遗忘越慢
+    assert srs.retrievability(10, 0) == 0
 
-    class FakeRow(dict):
-        def __getitem__(self, k):
-            return dict.__getitem__(self, k)
 
-    state = srs.WordState.from_row(FakeRow(row))
-    assert state.status == "learning"
-    assert state.ease == 2.4
-    assert state.lapses == 1
+def test_answer_wrong_interval_always_one():
+    """答错必明天见（无论原间隔多大）。"""
+    state = srs.WordState(stability=100.0, difficulty=2.0, interval_days=100,
+                          last_reviewed_at="2026-11-11")
+    bad = srs.schedule(state, False, TODAY)
+    assert bad.interval_days == 1

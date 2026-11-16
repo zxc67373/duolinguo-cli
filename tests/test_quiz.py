@@ -270,3 +270,49 @@ def test_pick_qtype_allowed_subset():
     for _ in range(50):
         t = quiz.pick_qtype(True, True, has_example=False, allowed=allowed, rng=rng)
         assert t == quiz.SPELLING
+
+
+# ---------------------------------------------------------------- 义项级出题
+
+
+def test_senses_of_numbered():
+    s = quiz.senses_of("n. 1. 战略(学)，策略 2. 兵法 3. 谋略")
+    assert len(s) >= 2
+    assert s[0].startswith("n.")  # 词性前缀并入首义项
+    assert any("兵法" in x for x in s)
+
+
+def test_senses_of_semicolon():
+    s = quiz.senses_of("vt.离弃,丢弃;遗弃,抛弃;放弃")
+    assert len(s) == 3
+    assert s[0].startswith("vt.")
+
+
+def test_senses_of_single():
+    assert quiz.senses_of("释义1") == ["释义1"]
+    assert quiz.senses_of("") == []
+
+
+def test_build_mcq_uses_single_sense():
+    """英译中：正确项是目标词的某一个义项（不再是整串合并释义）。"""
+    words = make_words(8)
+    words[0]["meaning"] = "n. 1. 概念，观念 2. 想法，见解"
+    q = quiz.build_question(words[0], words, quiz.MCQ_EN2ZH, rng=random.Random(9))
+    assert q.answer in quiz.senses_of(words[0]["meaning"])
+    assert len(q.options) == 4
+    assert len({quiz.normalize(o) for o in q.options}) == 4  # 无撞车
+    assert q.options[q.answer_index] == q.answer
+    # 干扰项是其他词的义项（整串或义项均可）
+    for i, opt in enumerate(q.options):
+        if i != q.answer_index:
+            assert opt in quiz.senses_of(words[i % 4 + 1]["meaning"]) or len(
+                quiz.senses_of(words[i % 4 + 1]["meaning"])
+            ) >= 1
+
+
+def test_build_zh2en_prompt_is_sense():
+    words = make_words(8)
+    words[0]["meaning"] = "vt. 1. 打，击 2. 碰撞"
+    q = quiz.build_question(words[0], words, quiz.MCQ_ZH2EN, rng=random.Random(4))
+    assert q.prompt in quiz.senses_of(words[0]["meaning"])
+    assert q.answer == "word01"

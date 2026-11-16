@@ -92,8 +92,17 @@ def get_conn(db_file: Path | None = None) -> sqlite3.Connection:
 
 
 def init_db(conn: sqlite3.Connection) -> None:
-    """建表（幂等）。"""
+    """建表（幂等）+ 增量列（FSRS 的 stability/difficulty）。"""
     conn.executescript(DDL)
+    cols = {r[1] for r in conn.execute("PRAGMA table_info(word_progress)")}
+    if "stability" not in cols:
+        conn.execute(
+            "ALTER TABLE word_progress ADD COLUMN stability REAL NOT NULL DEFAULT 0"
+        )
+    if "difficulty" not in cols:
+        conn.execute(
+            "ALTER TABLE word_progress ADD COLUMN difficulty REAL NOT NULL DEFAULT 0"
+        )
     conn.commit()
 
 
@@ -239,12 +248,15 @@ def upsert_progress(
     lapses: int,
     due_at: str,
     last_reviewed_at: str,
+    stability: float = 0.0,
+    difficulty: float = 0.0,
 ) -> None:
     conn.execute(
         """
         INSERT INTO word_progress
-            (word_id, status, ease, interval_days, reps, lapses, due_at, last_reviewed_at)
-        VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+            (word_id, status, ease, interval_days, reps, lapses, due_at,
+             last_reviewed_at, stability, difficulty)
+        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
         ON CONFLICT(word_id) DO UPDATE SET
             status = excluded.status,
             ease = excluded.ease,
@@ -252,9 +264,14 @@ def upsert_progress(
             reps = excluded.reps,
             lapses = excluded.lapses,
             due_at = excluded.due_at,
-            last_reviewed_at = excluded.last_reviewed_at
+            last_reviewed_at = excluded.last_reviewed_at,
+            stability = excluded.stability,
+            difficulty = excluded.difficulty
         """,
-        (word_id, status, ease, interval_days, reps, lapses, due_at, last_reviewed_at),
+        (
+            word_id, status, ease, interval_days, reps, lapses, due_at,
+            last_reviewed_at, stability, difficulty,
+        ),
     )
 
 

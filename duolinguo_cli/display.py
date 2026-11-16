@@ -5,10 +5,12 @@
 
 from __future__ import annotations
 
+from datetime import date
+
 from rich.console import Console
 from rich.table import Table
 
-from . import books, config, db, gamify
+from . import books, config, db, gamify, srs
 from .quiz import CLOZE, MCQ_EN2ZH, MCQ_ZH2EN, Question
 
 console = Console()
@@ -179,7 +181,7 @@ def print_stats_overview(
 
 
 def print_recent_table(rows: list[dict]) -> None:
-    """近 N 天学习记录（按日期升序，无边框）。"""
+    """近 N 天学习记录（按日期升序，无边框；正确率带条形图）。"""
     if not rows:
         return
     table = _table("近期学习记录")
@@ -187,11 +189,16 @@ def print_recent_table(rows: list[dict]) -> None:
     table.add_column("新学", justify="right")
     table.add_column("复习", justify="right")
     table.add_column("答题", justify="right")
-    table.add_column("正确率", justify="right")
+    table.add_column("正确率")
     table.add_column("XP", justify="right")
     table.add_column("目标")
     for r in rows:
-        acc = f"{r['correct'] / r['answered']:.0%}" if r["answered"] else "—"
+        if r["answered"]:
+            rate = r["correct"] / r["answered"]
+            bar = "█" * round(rate * 10) + "░" * (10 - round(rate * 10))
+            acc = f"{bar} {rate:.0%}（{r['correct']}/{r['answered']}）"
+        else:
+            acc = "—"
         table.add_row(
             r["date"],
             str(r["new_learned"]),
@@ -204,11 +211,63 @@ def print_recent_table(rows: list[dict]) -> None:
     console.print(table)
 
 
+def print_forgetting_risk(items: list[dict]) -> None:
+    """临近遗忘 TOP：当前记忆概率最低的已学词（越靠前越危险）。"""
+    if not items:
+        return
+    console.print("[bold]📉 临近遗忘（记忆概率最低的已学词）[/]")
+    for it in items:
+        r_pct = f"{it['retrievability']:.0%}"
+        if it["overdue_days"] > 0:
+            note = f"[red]逾期 {it['overdue_days']} 天[/]"
+        elif it["due_today"]:
+            note = "[yellow]今日到期[/]"
+        else:
+            note = ""
+        console.print(
+            f"  {it['word']}  [yellow]{r_pct}[/]  {it['meaning'][:18]}  {note}"
+        )
+
+
 # ---------------------------------------------------------------- 交互菜单
 
 
+def _forgetting_risk(conn, book_id: int, today: str, limit: int = 10) -> list[dict]:
+    """当前词书已学词按记忆概率升序取 TOP N（FSRS R(t,S) 估算）。"""
+    rows = conn.execute(
+        """
+        SELECT w.word, w.meaning, p.last_reviewed_at, p.due_at,
+               p.stability, p.interval_days
+        FROM word_progress p JOIN words w ON w.id = p.word_id
+        WHERE w.book_id = ? AND p.status != 'new'
+        """,
+        (book_id,),
+    ).fetchall()
+    today_d = date.fromisoformat(today)
+    items = []
+    for r in rows:
+        last = (r["last_reviewed_at"] or "")[:10]
+        elapsed = (today_d - date.fromisoformat(last)).days if last else 10**6
+        stability = r["stability"] or float(r["interval_days"] or 1)
+        R = srs.retrievability(elapsed, stability)
+        due = r["due_at"] or ""
+        items.append(
+            {
+                "word": r["word"],
+                "meaning": r["meaning"],
+                "retrievability": R,
+                "overdue_days": max(0, (today_d - date.fromisoformat(due)).days)
+                if due and due <= today
+                else 0,
+                "due_today": due == today,
+            }
+        )
+    items.sort(key=lambda x: x["retrievability"])
+    return items[:limit]
+
+
 def show_stats(conn) -> None:
-    """渲染完整统计视图（学习概况 + 近 7 天 + 当前词书关卡进度）。"""
+    """渲染完整统计视图（概况 + 临近遗忘 + 近 14 天 + 关卡进度）。"""
     books.ensure_builtins(conn)
     today = db.today_str()
     goal = gamify.get_goal(conn)
@@ -222,9 +281,16 @@ def show_stats(conn) -> None:
         answered=daily["answered"] if daily else 0,
         correct=daily["correct"] if daily else 0,
     )
-    recent = conn.execute("SELECT * FROM daily_stats ORDER BY date DESC LIMIT 7").fetchall()
-    print_recent_table([dict(r) for r in reversed(recent)])
     book = books.resolve_current_book(conn)
+    if book:
+        risk = _forgetting_risk(conn, book["id"], today)
+        if risk:
+            console.print()
+            print_forgetting_risk(risk)
+    recent = conn.execute(
+        "SELECT * FROM daily_stats ORDER BY date DESC LIMIT 14"
+    ).fetchall()
+    print_recent_table([dict(r) for r in reversed(recent)])
     if book:
         console.print()
         print_unit_table(book["name"], books.unit_progress(conn, book["id"]))

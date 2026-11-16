@@ -202,6 +202,8 @@ def _apply_answer(
         lapses=state.lapses,
         due_at=state.due_at,
         last_reviewed_at=db.now_str(),
+        stability=state.stability,
+        difficulty=state.difficulty,
     )
     db.add_review_log(conn, word_id, db.now_str(), qtype, correct, response)
 
