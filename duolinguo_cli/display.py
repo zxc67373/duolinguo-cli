@@ -103,13 +103,11 @@ def print_header(
 
 
 def print_question(idx: int, total: int, q: Question) -> None:
-    """一题：题型行 + 题干 + 语境（例句/挖空句）+ 选项，无边框。"""
+    """一题：题型行 + 题干 + 选项，无边框（语境走 ? 渐进提示）。"""
     label = QTYPE_LABELS.get(q.qtype, q.qtype)
     console.print()
     console.print(f"[dim]第 {idx}/{total} 题[/] · [bold]{label}[/]")
     console.print(q.prompt)
-    if q.note:
-        console.print(f"[dim]{q.note}[/]")
     if q.options:
         for i, opt in enumerate(q.options, start=1):
             console.print(f"  [cyan]{i}[/]. {opt}")
@@ -117,17 +115,19 @@ def print_question(idx: int, total: int, q: Question) -> None:
         console.print("[dim]请拼写出对应的英文单词[/]")
 
 
-def print_spelling_hint(q: Question, level: int = 1) -> None:
-    """拼写渐进提示：① 音标 ② 首字母+长度。任何时候不直接给答案。"""
-    phonetic = q.word.get("phonetic") or q.hint
-    if level <= 1 and phonetic:
-        console.print(f"[yellow]提示：[/]音标 {phonetic}")
-        return
-    word = q.answer
-    mask = word[0] + "_" * max(1, len(word) - 1)
-    console.print(
-        f"[yellow]提示：[/]首字母 [bold]{word[0]}[/]，共 {len(word)} 个字母：[bold]{mask}[/]"
-    )
+_CIRCLED = "①②③④⑤⑥⑦⑧⑨⑩"
+
+
+def print_hint(q: Question, level: int) -> None:
+    """按题型的渐进提示阶梯给出第 level 级提示；用尽后提示没有更多。"""
+    from .quiz import hint_ladder
+
+    ladder = hint_ladder(q)
+    if 1 <= level <= len(ladder):
+        mark = _CIRCLED[level - 1] if level <= len(_CIRCLED) else str(level)
+        console.print(f"[yellow]提示{mark}[/]：{ladder[level - 1]}")
+    else:
+        console.print("[dim]没有更多提示了，试着作答吧[/]")
 
 
 def print_correction_begin(q: Question) -> None:

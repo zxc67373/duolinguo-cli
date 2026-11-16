@@ -195,6 +195,31 @@ def fetch_due(conn: sqlite3.Connection, book_id: int, today: str, limit: int) ->
     ).fetchall()
 
 
+def fetch_recall_candidates(
+    conn: sqlite3.Connection, book_id: int, today: str
+) -> tuple[list[sqlite3.Row], list[sqlite3.Row]]:
+    """历史召回池：学过但今天没碰过的词（无论到期与否）→ (错题词, 其他词)。
+
+    错题优先返回，供 compose_queue 长期随机召回（10 天前的词/错题也能重现）。
+    """
+    rows = conn.execute(
+        """
+        SELECT w.* FROM word_progress p JOIN words w ON w.id = p.word_id
+        WHERE w.book_id = ? AND p.status != 'new'
+          AND substr(p.last_reviewed_at, 1, 10) < ?
+        ORDER BY w.unit, w.id
+        """,
+        (book_id, today),
+    ).fetchall()
+    wrong_ids = {
+        r["word_id"]
+        for r in conn.execute("SELECT DISTINCT word_id FROM review_log WHERE correct = 0")
+    }
+    priority = [r for r in rows if r["id"] in wrong_ids]
+    rest = [r for r in rows if r["id"] not in wrong_ids]
+    return priority, rest
+
+
 # ---------------------------------------------------------------- 单词进度
 
 

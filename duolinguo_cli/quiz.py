@@ -28,24 +28,26 @@ class Question:
     answer: str  # 正确答案文本
     options: list[str] | None = None  # 选项（选择题）
     answer_index: int | None = None  # 正确选项下标（选择题）
-    hint: str = ""  # 拼写题提示（音标）
-    note: str = ""  # 题面补充（例句/挖空句/释义），不参与判分
+    hint: str = ""  # 目标词音标（提示阶梯用）
 
 
 def pick_qtype(
     is_new: bool,
     has_distractors: bool,
     has_example: bool = False,
+    allowed: list[str] | None = None,
     rng: random.Random | None = None,
 ) -> str:
-    """按权重抽题型（四类均衡，is_new 暂不影响权重）。
+    """按权重抽题型（四类均衡；allowed 限定本批允许的题型子集）。
 
     词书太小（凑不齐干扰项）降级拼写；无例句不抽填空、权重自动重分配。
     """
     if not has_distractors:
         return SPELLING
     rng = rng or random
-    weights = dict(WEIGHTS)
+    weights = {
+        t: w for t, w in WEIGHTS.items() if allowed is None or t in allowed
+    }
     if not has_example:
         weights.pop(CLOZE, None)
     types = list(weights)
@@ -79,21 +81,50 @@ def make_cloze(example: str, word: str) -> str | None:
     return pattern.sub("______", example, count=1)
 
 
-def _note(qtype: str, example: str, word: str, meaning: str) -> str:
-    """题面补充：语境展示但不泄题。
+def hint_ladder(q: Question) -> list[str]:
+    """渐进提示阶梯（按题型）：第 n 次按 ? 给第 n 级，用尽为止。
 
-    - 英译中：原句直接展示（题干本来就含该词）
-    - 中译英/拼写：挖空句（看不到答案词）
-    - 填空：展示中文释义
+    - 英译中：①英文例句 → ②句子翻译 → ③首字母+长度
+    - 中译英/拼写：①音标 → ②挖空句 → ③首字母+长度
+    - 例句填空：①释义 → ②音标 → ③首字母+长度
+    缺例句/音标时自动跳过对应级别。
     """
-    if qtype == CLOZE:
-        return f"释义：{meaning}"
-    if not example:
-        return ""
-    if qtype == MCQ_EN2ZH:
-        return example
-    blanked = make_cloze(example, word)
-    return blanked or ""  # 挖不出空（例句无该词）则不展示，避免泄题
+    w = q.word
+    word = w["word"]
+    phon = w.get("phonetic") or q.hint or ""
+    example = w.get("example") or ""
+    meaning = w.get("meaning", "")
+    form = f"首字母 {word[0]}，共 {len(word)} 个字母：{word[0]}_{'_' * (len(word) - 1)}"
+
+    parts = re.split(r"\s{2,}", example, maxsplit=1) if example else []
+    sent_en = parts[0].strip() if parts else ""
+    sent_zh = parts[1].strip() if len(parts) > 1 else ""
+    blanked = make_cloze(example, word) or ""
+
+    if q.qtype == MCQ_EN2ZH:
+        ladder = []
+        if sent_en:
+            ladder.append(sent_en)
+        if sent_zh:
+            ladder.append(f"句子翻译：{sent_zh}")
+        ladder.append(form)
+        return ladder
+    if q.qtype in (MCQ_ZH2EN, SPELLING):
+        ladder = []
+        if phon:
+            ladder.append(f"音标 {phon}")
+        if blanked:
+            ladder.append(blanked)
+        ladder.append(form)
+        return ladder
+    # CLOZE
+    ladder = []
+    if meaning:
+        ladder.append(f"释义：{meaning}")
+    if phon:
+        ladder.append(f"音标 {phon}")
+    ladder.append(form)
+    return ladder
 
 
 def build_question(
@@ -123,7 +154,7 @@ def build_question(
                     answer=word_text,
                     options=options,
                     answer_index=options.index(word_text),
-                    note=_note(CLOZE, example, word_text, meaning),
+                    hint=phonetic,
                 )
         qtype = MCQ_EN2ZH  # 造不出填空 → 降级英译中（再判断干扰项）
 
@@ -146,7 +177,7 @@ def build_question(
                 answer=answer,
                 options=options,
                 answer_index=options.index(answer),
-                note=_note(qtype, example, word_text, meaning),
+                hint=phonetic,
             )
         qtype = SPELLING  # 凑不齐干扰项，降级
 
@@ -158,7 +189,6 @@ def build_question(
         options=None,
         answer_index=None,
         hint=phonetic,
-        note=_note(SPELLING, example, word_text, meaning),
     )
 
 

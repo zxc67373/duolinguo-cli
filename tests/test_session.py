@@ -23,18 +23,22 @@ def mark_due(conn, words, due_at):
 
 
 def test_compose_queue_review_priority(conn, sample_book):
-    """复习占一半名额，新词补足。"""
+    """核心=到期+新词（各占约一半），历史召回补足，无重复。"""
     due_words = db.fetch_new(conn, sample_book["id"], 4)
     mark_due(conn, due_words, TODAY)
-    queue = session.compose_queue(conn, sample_book["id"], TODAY, count=6)
+    queue = session.compose_queue(
+        conn, sample_book["id"], TODAY, count=6, rng=random.Random(0)
+    )
     assert len(queue) == 6
-    due_part = [w for w, is_new in queue if not is_new]
+    ids = [w["id"] for w, _ in queue]
+    assert len(ids) == len(set(ids))  # 无重复
     new_part = [w for w, is_new in queue if is_new]
-    assert len(due_part) == 3  # 6//2
+    not_new = [w for w, is_new in queue if not is_new]
     assert len(new_part) == 3
-    # 复习在前，且确实是已学词
+    assert len(not_new) == 3
+    # 非新词必须是学过的（历史召回/到期）
     learned_ids = {w["id"] for w in due_words}
-    assert all(w["id"] in learned_ids for w, _ in queue[:3])
+    assert all(w["id"] in learned_ids for w in not_new)
 
 
 def test_compose_queue_due_shortage_fills_with_new(conn, sample_book):
@@ -54,10 +58,16 @@ def test_compose_queue_new_exhausted_uses_more_due(conn, sample_book):
     assert all(not is_new for _, is_new in queue)
 
 
-def test_compose_queue_nothing_available(conn, sample_book):
-    # 词都学了但都没到期 → 空队列
+def test_compose_queue_random_recall_when_nothing_due(conn, sample_book):
+    """词都学了且都没到期 → 历史随机召回照样出题（10 天前的词也能重现）。"""
     mark_due(conn, db.fetch_new(conn, sample_book["id"], 10), "2999-01-01")
-    assert session.compose_queue(conn, sample_book["id"], TODAY, count=6) == []
+    queue = session.compose_queue(
+        conn, sample_book["id"], TODAY, count=6, rng=random.Random(0)
+    )
+    assert len(queue) == 6
+    assert all(not is_new for _, is_new in queue)  # 全是学过的词
+    ids = {w["id"] for w, _ in queue}
+    assert len(ids) == 6  # 无重复
 
 
 def test_compose_queue_review_mode(conn, sample_book):
@@ -208,8 +218,13 @@ def test_run_session_review_mode_only_due(conn, sample_book, scripted):
 
 
 def test_run_session_no_content(conn, sample_book):
-    # 全部学完且未到期 → 空队列分支
-    mark_due(conn, db.fetch_new(conn, sample_book["id"], 10), "2999-01-01")
+    # 全部学完（且都是今天刚学的，召回池排除今天）且未到期 → 空队列分支
+    now = db.now_str()
+    for w in db.fetch_new(conn, sample_book["id"], 10):
+        db.upsert_progress(
+            conn, w["id"], "learning", 2.5, 1, 1, 0, "2999-01-01", now
+        )
+    conn.commit()
     result = session.run_session(
         conn, sample_book, count=4, rng=random.Random(1), input_fn=lambda p: "q"
     )
@@ -442,3 +457,43 @@ def test_session_spelling_wrong_no_duplicate_error_line(
     assert "稍后重练" not in out  # 不再提示重练（重练本身照常发生）
     # 重练环节本身仍在
     assert "订正 1/" in out
+
+
+def test_run_session_samples_two_types(conn, sample_book, scripted, monkeypatch):
+    """每批随机抽 2 种题型，本批题目只出这 2 种。"""
+    scripted.script = ["correct"] * 8
+    result = session.run_session(
+        conn, sample_book, count=8, rng=random.Random(3), input_fn=scripted.input_fn
+    )
+    assert len(result.types) == 2
+    assert len(set(result.types)) == 2
+    # 本批日志里的题型 ⊆ 抽中的 2 种（无例句的词不会出填空，抽中填空时自动落到另一类）
+    logged = {
+        r["qtype"] for r in conn.execute("SELECT DISTINCT qtype FROM review_log")
+    }
+    assert logged <= set(result.types)
+
+
+def test_compose_queue_recall_prefers_wrong_words(conn, sample_book):
+    """错题优先进入历史召回名额。"""
+    words = db.fetch_new(conn, sample_book["id"], 8)
+    # 8 个词都之前学过；其中 word01 曾答错
+    for w in words:
+        db.upsert_progress(conn, w["id"], "learning", 2.5, 1, 1, 0, "2999-01-01",
+                           "2026-01-01 10:00:00")
+    db.add_review_log(conn, words[0]["id"], "2026-01-01 10:00:00", "spelling", False, "x")
+    conn.commit()
+    # count=4 → 召回名额 1：错题 word01 应占该名额（核心无到期无新词 → 全召回）
+    queue = session.compose_queue(
+        conn, sample_book["id"], TODAY, count=4, rng=random.Random(0)
+    )
+    assert len(queue) == 4
+    # 错题词一定在队列中且排在（非核心）召回里 —— 4全召回，错题优先
+    ids = [w["id"] for w, _ in queue]
+    assert words[0]["id"] in ids
+    # 多跑几个种子，错题始终在召回集合中
+    for seed in range(5):
+        q2 = session.compose_queue(
+            conn, sample_book["id"], TODAY, count=4, rng=random.Random(seed)
+        )
+        assert words[0]["id"] in {w["id"] for w, _ in q2}

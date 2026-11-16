@@ -34,26 +34,75 @@ class SessionResult:
     units_completed: list[int] = field(default_factory=list)
     quit_early: bool = False
     queued: int = 0
+    types: list[str] = field(default_factory=list)  # 本批抽中的题型（2 种）
 
 
 def compose_queue(
-    conn: sqlite3.Connection, book_id: int, today: str, count: int, mode: str = "learn"
+    conn: sqlite3.Connection,
+    book_id: int,
+    today: str,
+    count: int,
+    mode: str = "learn",
+    rng: random.Random | None = None,
 ) -> list[tuple[sqlite3.Row, bool]]:
     """编排学习队列，返回 [(词条行, 是否新词), ...]。
 
-    - learn：到期复习优先占一半名额，新词补足；新词不够时用剩余到期词补；
+    - learn：到期复习优先占一半核心名额，新词补足；核心预算预留约 1/4 给
+      「历史召回」——学过但今天没碰过的词（错题优先），到期再久也随机重现；
+      核心没用满时召回补足，召回池耗尽再用剩余到期/新词补；
     - review：只要到期复习词。
     """
     if mode == "review":
         due = db.fetch_due(conn, book_id, today, count)
         return [(row, False) for row in due]
 
+    rng = rng or random.Random()
+
+    # 历史召回池（今天之前学过/答过的词），错题在前
+    priority, rest = db.fetch_recall_candidates(conn, book_id, today)
+    rng.shuffle(priority)
+    rng.shuffle(rest)
+    history = priority + rest
+    recall_quota = min(count // 4, len(history))
+    core = count - recall_quota
+
+    # 核心：到期 + 新词（原有逻辑，预算 core）
     due = db.fetch_due(conn, book_id, today, count)
-    due_part = due[: count // 2]
-    need = count - len(due_part)
+    due_part = due[: core // 2]
+    need = core - len(due_part)
     new = db.fetch_new(conn, book_id, need)
-    extra_due = due[len(due_part) : len(due_part) + (need - len(new))]
-    return [(row, False) for row in due_part + extra_due] + [(row, True) for row in new]
+    extra_due = due[len(due_part) : len(due_part) + max(0, need - len(new))]
+    picked = list(due_part + extra_due)
+
+    queue: list[tuple[sqlite3.Row, bool]] = [(row, False) for row in picked]
+    queue += [(row, True) for row in new]
+    have = {r["id"] for r in picked} | {r["id"] for r in new}
+
+    # 历史召回补足（优先错题，长期随机重现）
+    for r in history:
+        if len(queue) >= count:
+            break
+        if r["id"] not in have:
+            queue.append((r, False))
+            have.add(r["id"])
+
+    # 仍不足（召回池也空）→ 剩余到期、新词兜底
+    if len(queue) < count:
+        for r in due:
+            if len(queue) >= count:
+                break
+            if r["id"] not in have:
+                queue.append((r, False))
+                have.add(r["id"])
+    if len(queue) < count:
+        # 多取一些并过滤已在队列的（避免取回首词就停）
+        for r in db.fetch_new(conn, book_id, count):
+            if len(queue) >= count:
+                break
+            if r["id"] not in have:
+                queue.append((r, True))
+                have.add(r["id"])
+    return queue
 
 
 def _all_words(conn: sqlite3.Connection, book_id: int) -> list[dict]:
@@ -66,26 +115,27 @@ def _all_words(conn: sqlite3.Connection, book_id: int) -> list[dict]:
 def _ask(q: quiz.Question, input_fn) -> tuple[bool, str]:
     """向用户提问，返回 (是否答对, 作答原文)。q 退出抛 QuitSession。
 
-    拼写答错会当场进入订正循环：显示正确答案，必须重新输入正确才放行。
-    提示为渐进式（? 请求，半/全角均可）：先音标、再首字母+长度，不直接给答案。
+    - `?`（半/全角均可）：所有题型通用的渐进提示，按题型阶梯逐级给，不直接给答案
+    - 拼写答错当场订正：显示答案，必须重新输入正确才放行
     """
     hint_level = 0
     while True:
         if q.qtype == quiz.SPELLING:
-            raw = input_fn("拼写这个单词（? 看提示 / q 退出）: ")
+            raw = input_fn("拼写这个单词（? 提示 / q 退出）: ")
         else:
-            raw = input_fn("选择 1-4（q 退出）: ")
+            raw = input_fn("选择 1-4（? 提示 / q 退出）: ")
         text = raw.strip()
         key = quiz.normalize(text)  # 全角→半角等归一化，兼容中文输入法
 
         if key == "q":
             raise QuitSession
 
+        if key == "?":
+            hint_level += 1
+            display.print_hint(q, hint_level)
+            continue
+
         if q.qtype == quiz.SPELLING:
-            if key == "?":
-                hint_level += 1
-                display.print_spelling_hint(q, hint_level)
-                continue
             ok = quiz.grade_spelling(text, q.answer)
             if not ok:
                 _correct_spelling(q, input_fn)
@@ -179,7 +229,11 @@ def run_session(
     result = SessionResult(
         book_slug=book["slug"], book_name=book["name"], mode=mode, goal=gamify.get_goal(conn)
     )
-    queue = compose_queue(conn, book["id"], today, count, mode)
+    # 本批从四类题型中随机抽 2 种（批间轮换，长期覆盖各类题型）
+    chosen_types = rng.sample(list(quiz.WEIGHTS), k=2)
+    result.types = chosen_types
+
+    queue = compose_queue(conn, book["id"], today, count, mode, rng=rng)
     if not queue:
         display.print_no_content(mode)
         result.streak = gamify.calc_streak(conn, today)
@@ -198,6 +252,8 @@ def run_session(
         done=gamify.words_done_today(conn, today),
         goal=result.goal,
     )
+    labels = "、".join(display.QTYPE_LABELS.get(t, t) for t in chosen_types)
+    display.console.print(f"[dim]本批题型：{labels}[/]")
 
     all_words = _all_words(conn, book["id"])
     has_distractors = len(all_words) >= 4
@@ -207,7 +263,11 @@ def run_session(
         for idx, (row, is_new) in enumerate(queue, start=1):
             target = dict(row)
             qtype = quiz.pick_qtype(
-                is_new, has_distractors, has_example=bool(target.get("example")), rng=rng
+                is_new,
+                has_distractors,
+                has_example=bool(target.get("example")),
+                allowed=chosen_types,
+                rng=rng,
             )
             q = quiz.build_question(target, all_words, qtype, rng=rng)
             display.print_question(idx, len(queue), q)

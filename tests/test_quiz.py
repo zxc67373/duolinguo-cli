@@ -193,7 +193,8 @@ def test_build_cloze():
     assert "word01" not in q.prompt  # 目标词已挖去
     assert q.options is not None and len(q.options) == 4
     assert q.options[q.answer_index] == "word01"
-    assert "释义" in q.note
+    assert q.hint == "/w1/"  # 音标进提示阶梯
+    assert quiz.hint_ladder(q)[0].startswith("释义")
 
 
 def test_build_cloze_degrades_to_mcq():
@@ -212,22 +213,40 @@ def test_build_cloze_degrades_to_spelling():
     assert q.qtype == quiz.SPELLING
 
 
-def test_notes_show_context_without_leaking():
+def test_hint_ladder_progressive_and_no_leak():
+    """渐进提示阶梯：逐级给、答案词不提前泄露。"""
     words = make_words(8)
-    words[0]["example"] = "You should word01 carefully.  你应该……"
-    # 英译中：题干本含目标词 → 原句展示
+    words[0]["example"] = "You should word01 carefully.  你应该仔细……"
+
+    # 英译中：①英文例句 → ②句子翻译 → ③首字母（逐级）
     q1 = quiz.build_question(words[0], words, quiz.MCQ_EN2ZH, rng=RNG)
-    assert q1.note == words[0]["example"]
-    # 中译英 / 拼写：挖空展示，答案词不可见
+    ladder1 = quiz.hint_ladder(q1)
+    assert ladder1[0] == "You should word01 carefully."  # L1 只有英文句
+    assert ladder1[1].startswith("句子翻译")  # L2 才给翻译
+    assert "word01" not in ladder1[2]  # L3 词形提示不含完整词
+
+    # 中译英/拼写：①音标 → ②挖空句 → ③首字母，任何一级不含完整答案词
     for qt in (quiz.MCQ_ZH2EN, quiz.SPELLING):
         q = quiz.build_question(words[0], words, qt, rng=RNG)
-        assert "______" in q.note
-        assert "word01" not in q.note
-    # 例句挖不出空 → 不展示（宁缺勿泄）
-    words[0]["example"] = "Nothing relevant here.  无关句。"
-    q3 = quiz.build_question(words[0], words, quiz.SPELLING, rng=RNG)
-    assert q3.note == ""
+        ladder = quiz.hint_ladder(q)
+        assert ladder[0].startswith("音标")
+        assert "______" in ladder[1]
+        assert all("word01" not in step for step in ladder)
 
+    # 填空：①释义 → ②音标 → ③首字母
+    qc = quiz.build_question(words[0], words, quiz.CLOZE, rng=RNG)
+    lc = quiz.hint_ladder(qc)
+    assert lc[0].startswith("释义")
+    assert lc[1].startswith("音标")
+    assert "首字母" in lc[2]
+
+    # 无例句 → 挖空句级别自动跳过；未挖空的句子绝不出现
+    words[0]["example"] = "Nothing relevant here.  无关句。"
+    qs = quiz.build_question(words[0], words, quiz.SPELLING, rng=RNG)
+    ls = quiz.hint_ladder(qs)
+    assert len(ls) == 2  # 音标 + 词形
+    assert ls[0].startswith("音标") and "首字母" in ls[1]
+    assert not any("无关句" in s for s in ls)
 
 
 def test_grade_spelling_fullwidth():
@@ -237,3 +256,17 @@ def test_grade_spelling_fullwidth():
     assert quiz.normalize("？") == "?"  # 全角问号 → 半角
     assert quiz.normalize("１") == "1"  # 全角数字 → 半角
     assert quiz.grade_spelling("strategy", "strategys") is False
+
+
+def test_pick_qtype_allowed_subset():
+    """allowed 限定本批题型：抽样只出允许的类型。"""
+    rng = random.Random(5)
+    allowed = [quiz.SPELLING, quiz.CLOZE]
+    for is_new in (True, False):
+        for _ in range(200):
+            t = quiz.pick_qtype(is_new, True, has_example=True, allowed=allowed, rng=rng)
+            assert t in allowed
+    # 无例句时填空被剔除 → 只剩另一允许类型
+    for _ in range(50):
+        t = quiz.pick_qtype(True, True, has_example=False, allowed=allowed, rng=rng)
+        assert t == quiz.SPELLING
