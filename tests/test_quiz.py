@@ -354,3 +354,23 @@ def test_multi_line_example_cloze_and_hints():
     words[1]["example"] = "Only one sentence here.  只有一句。"
     q2 = quiz.build_question(words[1], words, quiz.MCQ_ZH2EN, rng=RNG)
     assert not any(s.startswith("另例：") for s in quiz.hint_ladder(q2))
+
+
+def test_senses_of_double_bar_phrase():
+    """「||」短语边界切分：容纳 || admit of … 各自成义项。"""
+    m = "vt. (指在一范围内)可容纳(某人或某事) || admit of …容纳得下，有…的余地"
+    senses = quiz.senses_of(m)
+    assert len(senses) == 2
+    assert "可容纳" in senses[0]
+    assert "admit of" in senses[1]
+    assert "||" not in "".join(senses)
+
+
+def test_zh2en_prompt_blanks_answer_word_in_phrase():
+    """义项含目标词短语（admit of）时，题干挖空防泄题。"""
+    words = make_words(8)
+    words[0]["word"] = "admit"
+    words[0]["meaning"] = "vt. 承认 || admit of …容纳得下"
+    q = quiz.build_question(words[0], words, quiz.MCQ_ZH2EN, rng=random.Random(6))
+    assert q.answer == "admit"
+    assert "admit" not in q.prompt.lower().replace("______", "")  # 题干不露答案

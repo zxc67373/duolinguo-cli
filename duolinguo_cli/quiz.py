@@ -173,11 +173,15 @@ def senses_of(meaning: str) -> list[str]:
             parts = parts[1:]
         if len(parts) < 2:
             parts = [p.strip() for p in re.split(r"[;；]", section) if len(p.strip()) >= 2]
-        out.extend(parts if parts else [section])
-    # 段内完全拆不出编号/分号时，退化为整体
+        # 「||」短语边界再切（如 "…容纳 || admit of …容纳得下"）
+        finer: list[str] = []
+        for p in parts:
+            finer.extend(
+                seg.strip() for seg in re.split(r"\s*\|\|\s*", p) if seg.strip()
+            )
+        out.extend(finer if finer else parts)
     if not out:
         return [meaning]
-    # 合并后仍含未拆开的多词性粘连（如 "分配 n." 残留）时不再细分（保持简单）
     return out
 
 
@@ -231,8 +235,11 @@ def build_question(
                     answer = meaning
                     options = [d["meaning"] for d in distractors] + [meaning]
             else:
-                # 提示用单个义项（更精细），选项仍是单词
-                prompt = _pick_sense(meaning, rng)
+                # 题干用单个义项；若义项里含目标词（如短语 "admit of"）则挖空防泄题
+                sense = _pick_sense(meaning, rng)
+                prompt = re.sub(
+                    rf"\b{re.escape(word_text)}\b", "______", sense, flags=re.IGNORECASE
+                )
                 answer = word_text
                 options = [d["word"] for d in distractors] + [word_text]
             rng.shuffle(options)

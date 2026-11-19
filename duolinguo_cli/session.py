@@ -154,14 +154,51 @@ def _ask(q: quiz.Question, input_fn) -> tuple[bool, str]:
         return idx == q.answer_index, q.options[idx]
 
 
+def _within_one_edit(a: str, b: str) -> bool:
+    """两串归一化后编辑距离 ≤1（允许打错一个字母）。"""
+    if a == b:
+        return True
+    if abs(len(a) - len(b)) > 1:
+        return False
+    # 标准 Levensitstein，长度差≤1 提前剪枝
+    if len(a) == len(b):
+        diffs = sum(1 for x, y in zip(a, b, strict=True) if x != y)
+        return diffs == 1
+    if len(a) > len(b):
+        a, b = b, a
+    # a 比 b 短 1：逐位对齐允许一次插入/删除
+    i = j = 0
+    skipped = False
+    while i < len(a) and j < len(b):
+        if a[i] == b[j]:
+            i += 1
+            j += 1
+        else:
+            if skipped:
+                return False
+            skipped = True
+            j += 1
+    return True
+
+
 def _match_option_text(q: quiz.Question, key: str) -> int | None:
-    """按选项原文匹配（归一化后全等）：直接拼出/输入选项内容时命中其下标。"""
+    """按选项原文匹配：先精确（归一化全等），再容错（距离≤1 且唯一命中）。
+
+    允许直接拼出选项单词，拼错一个字母也能认（如 epecific → specific）。
+    """
     if not q.options:
         return None
-    for i, opt in enumerate(q.options):
-        if quiz.normalize(opt) == key:
-            return i
-    return None
+    exact = [i for i, opt in enumerate(q.options) if quiz.normalize(opt) == key]
+    if exact:
+        return exact[0]
+    if len(key) < 5:
+        return None  # 太短不做容错，误伤率高
+    fuzzy = [
+        i
+        for i, opt in enumerate(q.options)
+        if _within_one_edit(key, quiz.normalize(opt))
+    ]
+    return fuzzy[0] if len(fuzzy) == 1 else None
 
 
 def _correct_spelling(q: quiz.Question, input_fn) -> None:
