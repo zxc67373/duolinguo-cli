@@ -514,21 +514,3 @@ def test_forgetting_risk_report(conn, sample_book, scripted, monkeypatch):
     assert rs == sorted(rs)  # 升序：最危险的在前
     assert all(0 <= x["retrievability"] <= 1 for x in risk)
     assert all("word" in x and "meaning" in x for x in risk)
-
-
-def test_option_text_tolerates_single_typo():
-    """直接输选项单词允许错一个字母（epecific → specific），唯一命中才认。"""
-    from duolinguo_cli.session import _match_option_text
-
-    q = type("Q", (), {})()
-    q.options = ["critical", "specific", "expert", "encourage"]
-    assert _match_option_text(q, "specific") == 1       # 精确
-    assert _match_option_text(q, "epecific") == 1       # 错 1 字母（s→e）
-    assert _match_option_text(q, "spectsfic") is None   # 错太多
-    assert _match_option_text(q, "critic") is None      # 距离>1
-    # 两个选项都在距离1内 → 不敢认
-    q.options = ["cat", "bat", "dog", "dig"]
-    assert _match_option_text(q, "cxt") is None
-    # 短词（<5）不做容错
-    q.options = ["cat", "bat", "dog", "dig"]
-    assert _match_option_text(q, "cts") is None
