@@ -71,23 +71,33 @@ def pick_distractors(
     return (same_unit + rest)[:n]
 
 
+def example_lines(example: str) -> list[str]:
+    """例句字段按行拆分（首行=主例句，其余=另例）。"""
+    return [ln.strip() for ln in (example or "").split("\n") if ln.strip()]
+
+
 def make_cloze(example: str, word: str) -> str | None:
-    """把例句中的目标词挖空；句中无该词（屈折变化等）返回 None。"""
+    """把例句中的目标词挖空；句中无该词（屈折变化等）返回 None。
+
+    多行例句时取第一句含目标词的行。
+    """
     if not example or not word:
         return None
+    lines = example_lines(example)
     pattern = re.compile(rf"\b{re.escape(word)}\b", re.IGNORECASE)
-    if not pattern.search(example):
+    target_line = next((ln for ln in lines if pattern.search(ln)), None)
+    if target_line is None:
         return None
-    return pattern.sub("______", example, count=1)
+    return pattern.sub("______", target_line, count=1)
 
 
 def hint_ladder(q: Question) -> list[str]:
     """渐进提示阶梯（按题型）：第 n 次按 ? 给第 n 级，用尽为止。
 
-    - 英译中：①英文例句 → ②句子翻译 → ③首字母+长度
-    - 中译英/拼写：①音标 → ②挖空句 → ③首字母+长度
-    - 例句填空：①释义 → ②音标 → ③首字母+长度
-    缺例句/音标时自动跳过对应级别。
+    - 英译中：①英文例句 → ②句子翻译 → ③其他例句 → ④首字母+长度
+    - 中译英/拼写：①音标 → ②挖空句 → ③其他例句 → ④首字母+长度
+    - 例句填空：①释义 → ②音标 → ③其他例句 → ④首字母+长度
+    缺例句/音标/另例时自动跳过对应级别。
     """
     w = q.word
     word = w["word"]
@@ -96,10 +106,14 @@ def hint_ladder(q: Question) -> list[str]:
     meaning = w.get("meaning", "")
     form = f"首字母 {word[0]}，共 {len(word)} 个字母：{word[0]}_{'_' * (len(word) - 1)}"
 
-    parts = re.split(r"\s{2,}", example, maxsplit=1) if example else []
+    lines = example_lines(example)
+    primary = lines[0] if lines else ""
+    others = lines[1:]
+    parts = re.split(r"\s{2,}", primary, maxsplit=1) if primary else []
     sent_en = parts[0].strip() if parts else ""
     sent_zh = parts[1].strip() if len(parts) > 1 else ""
     blanked = make_cloze(example, word) or ""
+    more = "\n".join(f"另例：{ln}" for ln in others) if others else ""
 
     if q.qtype == MCQ_EN2ZH:
         ladder = []
@@ -107,6 +121,8 @@ def hint_ladder(q: Question) -> list[str]:
             ladder.append(sent_en)
         if sent_zh:
             ladder.append(f"句子翻译：{sent_zh}")
+        if more:
+            ladder.append(more)
         ladder.append(form)
         return ladder
     if q.qtype in (MCQ_ZH2EN, SPELLING):
@@ -115,6 +131,8 @@ def hint_ladder(q: Question) -> list[str]:
             ladder.append(f"音标 {phon}")
         if blanked:
             ladder.append(blanked)
+        if more:
+            ladder.append(more)
         ladder.append(form)
         return ladder
     # CLOZE
@@ -123,22 +141,44 @@ def hint_ladder(q: Question) -> list[str]:
         ladder.append(f"释义：{meaning}")
     if phon:
         ladder.append(f"音标 {phon}")
+    if more:
+        ladder.append(more)
     ladder.append(form)
     return ladder
 
 
+# 「新词性 + 编号」边界（如 "…分配 n. 1. 发行物…"），按此先分段再拆义项
+_POS_NUM_SPLIT = re.compile(
+    r"\s+(?=(?:n|v|vt|vi|adj|ad|adv|prep|conj|pron|num|int|aux|art|abbr)\.\s*\d+\.)"
+)
+
+
 def senses_of(meaning: str) -> list[str]:
-    """把合并释义拆成义项列表：编号优先（「1. … 2. …」），分号次之；拆不出返回整串。"""
+    """把合并释义拆成义项列表。
+
+    多词性结构（「v. 1.… n. 1.…」）先按新词性+编号边界分段，
+    段内再按编号/分号切——避免在「3. 分配 n. 1.」中间切出残片。
+    """
     if not meaning:
         return []
-    parts = [p.strip() for p in re.split(r"\s*\d+\.\s*", meaning) if p.strip()]
-    # 孤立词性前缀（"n." / "vt."）并入其后第一段
-    if len(parts) >= 2 and re.fullmatch(r"[a-zA-Z]{1,4}\.?", parts[0]):
-        parts[1] = f"{parts[0]} {parts[1]}"
-        parts = parts[1:]
-    if len(parts) < 2:
-        parts = [p.strip() for p in re.split(r"[;；]", meaning) if len(p.strip()) >= 2]
-    return parts if parts else [meaning]
+    out: list[str] = []
+    for section in _POS_NUM_SPLIT.split(meaning):
+        section = section.strip()
+        if not section:
+            continue
+        parts = [p.strip() for p in re.split(r"\s*\d+\.\s*", section) if p.strip()]
+        # 孤立词性前缀（"n." / "vt."）并入其后第一段
+        if len(parts) >= 2 and re.fullmatch(r"[a-zA-Z]{1,4}\.?", parts[0]):
+            parts[1] = f"{parts[0]} {parts[1]}"
+            parts = parts[1:]
+        if len(parts) < 2:
+            parts = [p.strip() for p in re.split(r"[;；]", section) if len(p.strip()) >= 2]
+        out.extend(parts if parts else [section])
+    # 段内完全拆不出编号/分号时，退化为整体
+    if not out:
+        return [meaning]
+    # 合并后仍含未拆开的多词性粘连（如 "分配 n." 残留）时不再细分（保持简单）
+    return out
 
 
 def _pick_sense(meaning: str, rng: random.Random) -> str:

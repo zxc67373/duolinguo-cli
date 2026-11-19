@@ -316,3 +316,41 @@ def test_build_zh2en_prompt_is_sense():
     q = quiz.build_question(words[0], words, quiz.MCQ_ZH2EN, rng=random.Random(4))
     assert q.prompt in quiz.senses_of(words[0]["meaning"])
     assert q.answer == "word01"
+
+
+def test_senses_of_multi_pos_no_fragments():
+    """多词性结构（v. 1.… n. 1.…）不得切出「分配 n.」类残片。"""
+    m = ("v. 1. (报刊等)发行，发布，颁布 2. 排出，(使)流出 3. 分配 "
+         "n. 1. 发行物，(报刊)期号 2. 问题，议题，争论点 3. 河口，出口")
+    senses = quiz.senses_of(m)
+    assert "分配" in senses
+    assert not any(s.endswith("n.") or s.endswith("v.") for s in senses)  # 无残片
+    assert any(s.startswith("n.") for s in senses)  # 第二词性段保留
+    assert all("1." not in s and "2." not in s for s in senses)  # 编号已消费
+
+
+def test_multi_line_example_cloze_and_hints():
+    """多行例句：挖空取含目标词的行；提示阶梯含「另例」级。"""
+    words = make_words(8)
+    words[0]["example"] = (
+        "You should word01 carefully.  你应该仔细。\n"
+        "He will word01 the plan tomorrow.  他明天会执行计划。\n"
+        "They word01 the issue yesterday.  他们昨天处理了该问题。"
+    )
+    qz = quiz.build_question(words[0], words, quiz.CLOZE, rng=RNG)
+    assert "word01" not in qz.prompt  # 主例句挖空
+    assert "He will" not in qz.prompt  # 只挖第一句，不拼接
+
+    ladder = quiz.hint_ladder(qz)
+    more_idx = next(i for i, s in enumerate(ladder) if s.startswith("另例："))
+    assert "He will word01" in ladder[more_idx]  # 另例完整给出（含词）
+    assert "word01" not in ladder[-1]  # 词形仍在最后且不泄答案
+
+    # 英译中同样有另例级
+    q1 = quiz.build_question(words[0], words, quiz.MCQ_EN2ZH, rng=RNG)
+    l1 = quiz.hint_ladder(q1)
+    assert any(s.startswith("另例：") for s in l1)
+    # 无另例的词 → 阶梯不含「另例」
+    words[1]["example"] = "Only one sentence here.  只有一句。"
+    q2 = quiz.build_question(words[1], words, quiz.MCQ_ZH2EN, rng=RNG)
+    assert not any(s.startswith("另例：") for s in quiz.hint_ladder(q2))
