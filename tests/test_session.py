@@ -578,3 +578,21 @@ def test_due_forecast_counts(conn, sample_book):
     assert fc["today"] == 1
     assert dict(fc["days"]).get(soon) == 1
     assert len(fc["days"]) == 1  # 远期的 12-31 不算进 7 天窗口
+
+
+def test_feedback_shows_full_meaning(capsys):
+    """选择题反馈补完整释义（义项出题只见一个义项）。"""
+    from duolinguo_cli import quiz
+    from duolinguo_cli.display import print_feedback
+
+    words = [
+        {"id": i, "word": f"w{i}", "phonetic": "", "meaning": f"释义{i}", "unit": 1,
+         "example": ""}
+        for i in range(1, 9)
+    ]
+    words[0]["meaning"] = "n. 1. 资产，财产 2. 有价值的特性"
+    q = quiz.build_question(words[0], words, quiz.MCQ_EN2ZH, rng=random.Random(2))
+    print_feedback(False, 0, q, will_retry=True)
+    out = capsys.readouterr().out
+    assert "完整释义" in out
+    assert "资产" in out

@@ -386,3 +386,28 @@ def test_import_enrichment_source_index():
     # abandon 在 CET4 内且有音标
     if "abandon" in idx:
         assert idx["abandon"]["phonetic"]
+
+
+def test_hint_ladder_includes_all_meanings():
+    """多义词提示给「全部意思」；单义词不给（免得白送答案）；拼写/填空题面已全义不重复。"""
+    words = make_words(8)
+    words[0]["meaning"] = "n. 1. 资产，财产 2. 有价值的特性(技能)"
+
+    # 英译中：多义 → 有「全部意思」级
+    q1 = quiz.build_question(words[0], words, quiz.MCQ_EN2ZH, rng=RNG)
+    l1 = quiz.hint_ladder(q1)
+    assert any(s.startswith("全部意思：") for s in l1)
+    assert "资产" in next(s for s in l1 if s.startswith("全部意思"))
+
+    # 中译英：题干单义 → 补全义
+    q2 = quiz.build_question(words[0], words, quiz.MCQ_ZH2EN, rng=RNG)
+    assert any(s.startswith("全部意思：") for s in quiz.hint_ladder(q2))
+
+    # 单义词英译中：全义==答案 → 不给（避免直接送答案）
+    words[1]["meaning"] = "唯一释义"
+    q3 = quiz.build_question(words[1], words, quiz.MCQ_EN2ZH, rng=RNG)
+    assert not any(s.startswith("全部意思：") for s in quiz.hint_ladder(q3))
+
+    # 拼写题：题面本就是完整释义 → 不重复
+    q4 = quiz.build_question(words[0], words, quiz.SPELLING, rng=RNG)
+    assert not any(s.startswith("全部意思：") for s in quiz.hint_ladder(q4))

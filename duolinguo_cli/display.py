@@ -133,10 +133,13 @@ def print_hint(q: Question, level: int) -> None:
 
 
 def print_correction_begin(q: Question) -> None:
-    """拼写答错：给出正确答案，要求重新输入。"""
+    """拼写答错：给出正确答案（含完整释义），要求重新输入。"""
     phonetic = q.word.get("phonetic", "")
     extra = f"  {phonetic}" if phonetic else ""
     console.print(f"[red]正确拼写：[/][bold]{q.answer}[/]{extra}")
+    meaning = q.word.get("meaning", "")
+    if meaning:
+        console.print(f"[dim]{meaning}[/]")
     console.print("[dim]请重新输入以继续[/]")
 
 
@@ -149,7 +152,7 @@ def print_correction_ok() -> None:
 
 
 def print_feedback(correct: bool, xp: int, q: Question, will_retry: bool) -> None:
-    """即时反馈：答对绿色、答错红色并展示正确答案。"""
+    """即时反馈：答对绿色、答错红色并展示正确答案 + 完整释义。"""
     if correct:
         console.print(f"[bold green]✓ 答对了[/]  +{xp} XP")
     else:
@@ -159,6 +162,11 @@ def print_feedback(correct: bool, xp: int, q: Question, will_retry: bool) -> Non
         if will_retry:
             line += "  [dim]稍后重练[/]"
         console.print(line)
+    # 选择题反馈补完整释义（义项级出题只展示一个义项，学词要见全貌）
+    if q.qtype in (MCQ_EN2ZH, MCQ_ZH2EN):
+        meaning = q.word.get("meaning", "")
+        if meaning and meaning != q.answer:
+            console.print(f"[dim]完整释义：{meaning}[/]")
 
 
 def print_no_content(mode: str = "learn") -> None:

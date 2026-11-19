@@ -123,6 +123,9 @@ def hint_ladder(q: Question) -> list[str]:
             ladder.append(f"句子翻译：{sent_zh}")
         if more:
             ladder.append(more)
+        # 多义词给「全部意思」（单义词=答案本身，给了就白送，跳过）
+        if meaning and meaning != q.answer:
+            ladder.append(f"全部意思：{meaning}")
         ladder.append(form)
         return ladder
     if q.qtype in (MCQ_ZH2EN, SPELLING):
@@ -133,6 +136,9 @@ def hint_ladder(q: Question) -> list[str]:
             ladder.append(blanked)
         if more:
             ladder.append(more)
+        # 中译英题干只有单个义项 → 补全词的全部意思（拼写题题面本就是全义，跳过）
+        if q.qtype == MCQ_ZH2EN and meaning:
+            ladder.append(f"全部意思：{meaning}")
         ladder.append(form)
         return ladder
     # CLOZE
