@@ -153,22 +153,26 @@ def hint_ladder(q: Question) -> list[str]:
     return ladder
 
 
-# 「新词性 + 编号」边界（如 "…分配 n. 1. 发行物…"），按此先分段再拆义项
-_POS_NUM_SPLIT = re.compile(
-    r"\s+(?=(?:n|v|vt|vi|adj|ad|adv|prep|conj|pron|num|int|aux|art|abbr)\.\s*\d+\.)"
+# 词性边界（零宽切分，兼容 "容忍a." 这类无空格粘连；a.=形容词老词性）
+_POS_SPLIT = re.compile(
+    r"(?=(?:n|v|vt|vi|adj|ad|adv|prep|conj|pron|num|int|aux|art|abbr|a)\.)"
 )
+_POS_ONLY = re.compile(r"^(?:[a-z]{1,4}\.\s*)+$")
 
 
 def senses_of(meaning: str) -> list[str]:
     """把合并释义拆成义项列表。
 
-    多词性结构（「v. 1.… n. 1.…」）先按新词性+编号边界分段，
-    段内再按编号/分号切——避免在「3. 分配 n. 1.」中间切出残片。
+    分层策略（全库 5.7 万词审计后的结构）：
+    ① 按词性边界分段（「vt.… a.… vi.」各成段，含无空格粘连）
+    ② 段内按编号「1. 2.」切；单编号义项保留已去编号的结果（不回退原文）
+    ③ 段内再按分号、「||」短语边界细切
+    ④ 丢弃纯词性残片（如孤零零的 "vi."）
     """
     if not meaning:
         return []
     out: list[str] = []
-    for section in _POS_NUM_SPLIT.split(meaning):
+    for section in _POS_SPLIT.split(meaning):
         section = section.strip()
         if not section:
             continue
@@ -177,15 +181,20 @@ def senses_of(meaning: str) -> list[str]:
         if len(parts) >= 2 and re.fullmatch(r"[a-zA-Z]{1,4}\.?", parts[0]):
             parts[1] = f"{parts[0]} {parts[1]}"
             parts = parts[1:]
-        if len(parts) < 2:
-            parts = [p.strip() for p in re.split(r"[;；]", section) if len(p.strip()) >= 2]
-        # 「||」短语边界再切（如 "…容纳 || admit of …容纳得下"）
+        # 编号没切出变化（本无编号）→ 退分号
+        if not parts or (len(parts) == 1 and parts[0] == section):
+            parts = [p.strip() for p in re.split(r"[;；]", section) if len(p.strip()) >= 2] or [
+                section
+            ]
         finer: list[str] = []
         for p in parts:
             finer.extend(
                 seg.strip() for seg in re.split(r"\s*\|\|\s*", p) if seg.strip()
             )
-        out.extend(finer if finer else parts)
+        for seg in finer:
+            if _POS_ONLY.fullmatch(seg):
+                continue  # 丢弃 "vi." 之类纯词性残片
+            out.append(seg)
     if not out:
         return [meaning]
     return out

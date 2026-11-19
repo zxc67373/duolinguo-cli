@@ -411,3 +411,26 @@ def test_hint_ladder_includes_all_meanings():
     # 拼写题：题面本就是完整释义 → 不重复
     q4 = quiz.build_question(words[0], words, quiz.SPELLING, rng=RNG)
     assert not any(s.startswith("全部意思：") for s in quiz.hint_ladder(q4))
+
+
+def test_senses_single_number_not_reverted():
+    """单编号义项不得回退成带编号原文（partition 案例）。"""
+    m = "v. 1. 分裂，分割 2. 分隔，隔开 n. 1. 分割，隔开"
+    senses = quiz.senses_of(m)
+    assert "n. 分割，隔开" in senses
+    assert not any("1." in s or "2." in s for s in senses)
+    # 纯编号开头（belladonna 案例）也要去编号
+    assert quiz.senses_of("1. 2.顛茄製劑") == ["顛茄製劑"]
+
+
+def test_senses_no_space_pos_boundary():
+    """无空格词性粘连可切（endure「容忍a.」、use「耗费 n.」案例）。"""
+    s1 = quiz.senses_of("vt.用；耗费 n.用")
+    assert "vt.用" in s1 and "n.用" in s1
+    s2 = quiz.senses_of(
+        "vt.   (耐心地) 忍受,容忍a.  忍耐b.  对<做…事>忍耐,忍受<做…事> vi."
+    )
+    assert len(s2) == 2
+    assert s2[0].startswith("vt.")
+    assert s2[1].startswith("a.")
+    assert not any(s.strip() == "vi." for s in s2)  # 孤词性残片被丢弃
