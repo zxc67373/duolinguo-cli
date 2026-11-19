@@ -195,6 +195,20 @@ def books_use(slug: str) -> None:
     console.print(f"[green]已切换到词书[/] {slug}")
 
 
+@books_group.command("delete")
+@click.argument("slug")
+def books_delete(slug: str) -> None:
+    """删除自建（导入）词书。"""
+    conn = db.get_conn()
+    try:
+        books.delete_book(conn, slug)
+    except ValueError as e:
+        raise click.ClickException(str(e)) from e
+    finally:
+        conn.close()
+    console.print(f"[green]已删除词书[/] {slug}")
+
+
 @books_group.command("import")
 @click.argument("path", type=click.Path(path_type=str))
 @click.option("--name", default=None, help="词书展示名（默认用文件名）")

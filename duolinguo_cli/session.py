@@ -50,11 +50,14 @@ def compose_queue(
     - learn：到期复习优先占一半核心名额，新词补足；核心预算预留约 1/4 给
       「历史召回」——学过但今天没碰过的词（错题优先），到期再久也随机重现；
       核心没用满时召回补足，召回池耗尽再用剩余到期/新词补；
-    - review：只要到期复习词。
+    - review：只要到期复习词；
+    - wrong：错题本专项重练（按错次降序）。
     """
     if mode == "review":
         due = db.fetch_due(conn, book_id, today, count)
         return [(row, False) for row in due]
+    if mode == "wrong":
+        return [(row, False) for row in db.fetch_wrong_words(conn, book_id, count)]
 
     rng = rng or random.Random()
 
@@ -112,8 +115,8 @@ def _all_words(conn: sqlite3.Connection, book_id: int) -> list[dict]:
     return [dict(r) for r in rows]
 
 
-def _ask(q: quiz.Question, input_fn) -> tuple[bool, str]:
-    """向用户提问，返回 (是否答对, 作答原文)。q 退出抛 QuitSession。
+def _ask(q: quiz.Question, input_fn) -> tuple[bool, str, int]:
+    """向用户提问，返回 (是否答对, 作答原文, 用过的提示级数)。q 退出抛 QuitSession。
 
     - `?`（半/全角均可）：所有题型通用的渐进提示，按题型阶梯逐级给，不直接给答案
     - 拼写答错当场订正：显示答案，必须重新输入正确才放行
@@ -139,7 +142,7 @@ def _ask(q: quiz.Question, input_fn) -> tuple[bool, str]:
             ok = quiz.grade_spelling(text, q.answer)
             if not ok:
                 _correct_spelling(q, input_fn)
-            return ok, text
+            return ok, text, hint_level
 
         # 选择题：输 1-4，或直接输入选项原文（如拼出目标单词）也算选中
         idx = None
@@ -151,7 +154,7 @@ def _ask(q: quiz.Question, input_fn) -> tuple[bool, str]:
         if idx is None or idx >= len(q.options or []):
             display.console.print("[yellow]请输入 1-4，或直接输入选项内容[/]")
             continue
-        return idx == q.answer_index, q.options[idx]
+        return idx == q.answer_index, q.options[idx], hint_level
 
 
 def _match_option_text(q: quiz.Question, key: str) -> int | None:
@@ -187,11 +190,12 @@ def _apply_answer(
     qtype: str,
     response: str,
     today: str,
+    rating: int | None = None,
 ) -> None:
-    """推进 SRS 状态并落库（进度 + 答题日志）。"""
+    """推进 SRS 状态并落库（进度 + 答题日志）。rating 显式传 Hard/Good/Easy。"""
     prog = db.get_progress(conn, word_id)
     state = srs.WordState.from_row(prog) if prog else srs.WordState()
-    state = srs.schedule(state, correct, today)
+    state = srs.schedule(state, correct, today, rating=rating)
     db.upsert_progress(
         conn,
         word_id,
@@ -273,9 +277,13 @@ def run_session(
             )
             q = quiz.build_question(target, all_words, qtype, rng=rng)
             display.print_question(idx, len(queue), q)
-            correct, response = _ask(q, input_fn)
+            correct, response, hints_used = _ask(q, input_fn)
 
-            _apply_answer(conn, target["id"], correct, q.qtype, response, today)
+            # 提示感知评分：用过提示答对 → FSRS Hard（间隔比 Good 短）
+            rating = (srs.HARD if hints_used else srs.GOOD) if correct else None
+            _apply_answer(
+                conn, target["id"], correct, q.qtype, response, today, rating=rating
+            )
             xp = gamify.xp_for(q.qtype, correct)
             gamify.record_answer(conn, today, is_new=is_new, correct=correct, xp=xp)
 
@@ -329,11 +337,14 @@ def run_session(
             display.console.print(f"\n[bold magenta]订正 {n}/{len(retry_list)}[/]")
             display.print_question(result.answered + 1, result.answered + len(retry_list), q)
             try:
-                correct, response = _ask(q, input_fn)
+                correct, response, hints_used = _ask(q, input_fn)
             except QuitSession:
                 result.quit_early = True
                 break
-            _apply_answer(conn, target["id"], correct, q.qtype, response, today)
+            rating = (srs.HARD if hints_used else srs.GOOD) if correct else None
+            _apply_answer(
+                conn, target["id"], correct, q.qtype, response, today, rating=rating
+            )
             xp = gamify.xp_for(q.qtype, correct)
             gamify.record_retry(conn, today, correct=correct, xp=xp)
             conn.commit()

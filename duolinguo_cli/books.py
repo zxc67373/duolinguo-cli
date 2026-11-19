@@ -237,12 +237,65 @@ def import_from_file(
     if not unique:
         raise ValueError("没有可用词条（有效行 ≥ 1 才能建词书）")
 
+    # 自动补全：缺的音标/例句按单词从内置词书回填
+    enrich = _enrichment_index()
+    for e in unique:
+        src = enrich.get(e["word"].lower())
+        if not src:
+            continue
+        if not e.get("phonetic") and src.get("phonetic"):
+            e["phonetic"] = src["phonetic"]
+        if not e.get("example") and src.get("example"):
+            e["example"] = src["example"]
+
     display = name or path.stem
     slug = _make_slug(conn, display, path)
     book_id = db.insert_book(conn, name=display, slug=slug, source="imported")
     added = db.insert_words(conn, book_id, unique)
     conn.commit()
     return db.get_book(conn, slug), added, errors
+
+
+def _enrichment_index() -> dict:
+    """内置词书的 {word_lower: {phonetic, example}} 索引（进程内缓存）。"""
+    idx: dict[str, dict] = {}
+    for data in load_builtin_jsons():
+        for w in data["words"]:
+            k = w["word"].lower()
+            if k not in idx:
+                idx[k] = {
+                    "phonetic": w.get("phonetic", ""),
+                    "example": w.get("example", ""),
+                }
+    return idx
+
+
+def delete_book(conn: sqlite3.Connection, slug: str) -> None:
+    """删除自建（导入）词书及其进度/日志；内置词书不可删（下次运行会重新入库）。"""
+    book = db.get_book(conn, slug)
+    if not book:
+        raise ValueError(f"词书不存在：{slug}")
+    if book["source"] != "imported":
+        raise ValueError("内置词书不能删除（可换用其他词书）")
+    word_ids = [
+        r["id"]
+        for r in conn.execute("SELECT id FROM words WHERE book_id = ?", (book["id"],))
+    ]
+    if word_ids:
+        marks = ",".join("?" * len(word_ids))
+        conn.execute(f"DELETE FROM word_progress WHERE word_id IN ({marks})", word_ids)
+        conn.execute(f"DELETE FROM review_log WHERE word_id IN ({marks})", word_ids)
+    conn.execute("DELETE FROM words WHERE book_id = ?", (book["id"],))
+    conn.execute("DELETE FROM books WHERE id = ?", (book["id"],))
+    # 清理相关设置
+    conn.execute("DELETE FROM settings WHERE key = ?", (f"book_order:{slug}",))
+    conn.execute(
+        "DELETE FROM settings WHERE key LIKE ?", (f"unit_bonus:{book['id']}:%",)
+    )
+    cur = db.get_setting(conn, "current_book")
+    if cur == slug:
+        conn.execute("DELETE FROM settings WHERE key = ?", ("current_book",))
+    conn.commit()
 
 
 # ---------------------------------------------------------------- 当前词书

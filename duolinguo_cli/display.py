@@ -164,6 +164,8 @@ def print_feedback(correct: bool, xp: int, q: Question, will_retry: bool) -> Non
 def print_no_content(mode: str = "learn") -> None:
     if mode == "review":
         console.print("[yellow]当前没有到期需要复习的单词[/]")
+    elif mode == "wrong":
+        console.print("[yellow]暂无错题记录，继续加油[/]")
     else:
         console.print("[yellow]今天没有可学/可复习的内容了，休息一下吧[/]")
 
@@ -266,6 +268,51 @@ def _forgetting_risk(conn, book_id: int, today: str, limit: int = 10) -> list[di
     return items[:limit]
 
 
+def _due_forecast(conn, book_id: int, today: str) -> dict:
+    """未来 7 天到期分布 + 逾期/今日到期统计（Anki 式预报）。"""
+    from datetime import timedelta
+
+    today_d = date.fromisoformat(today)
+    rows = conn.execute(
+        """
+        SELECT p.due_at FROM word_progress p
+        JOIN words w ON w.id = p.word_id
+        WHERE w.book_id = ? AND p.status != 'new' AND p.due_at != ''
+        """,
+        (book_id,),
+    ).fetchall()
+    days = {(today_d + timedelta(days=i)).isoformat(): 0 for i in range(1, 8)}
+    overdue = today_due = 0
+    for r in rows:
+        d = r["due_at"]
+        if d < today:
+            overdue += 1
+        elif d == today:
+            today_due += 1
+        elif d in days:
+            days[d] += 1
+    return {
+        "overdue": overdue,
+        "today": today_due,
+        "days": [(k, v) for k, v in days.items() if v > 0],
+    }
+
+
+def print_due_forecast(fc: dict) -> None:
+    """渲染到期预报。"""
+    head = (
+        f"📅 到期预报：[red]已逾期 {fc['overdue']}[/] · "
+        f"[yellow]今日到期 {fc['today']}[/]"
+    )
+    console.print(head)
+    if not fc["days"]:
+        console.print("  [dim]未来 7 天暂无到期词[/]")
+        return
+    for day, n in fc["days"]:
+        bar = "█" * min(20, max(1, round(n / 2)))
+        console.print(f"  {day} {bar} {n} 词")
+
+
 def show_stats(conn) -> None:
     """渲染完整统计视图（概况 + 临近遗忘 + 近 14 天 + 关卡进度）。"""
     books.ensure_builtins(conn)
@@ -287,6 +334,9 @@ def show_stats(conn) -> None:
         if risk:
             console.print()
             print_forgetting_risk(risk)
+        fc = _due_forecast(conn, book["id"], today)
+        console.print()
+        print_due_forecast(fc)
     recent = conn.execute(
         "SELECT * FROM daily_stats ORDER BY date DESC LIMIT 14"
     ).fetchall()

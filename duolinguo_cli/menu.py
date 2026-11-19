@@ -17,6 +17,7 @@ MENU_ITEMS: list[tuple[str, str]] = [
     ("4", "学习统计"),
     ("5", "导入词表（CSV/TXT）"),
     ("6", "设置（每日目标等）"),
+    ("7", "错题重刷（按错次专项练）"),
     ("0", "退出"),
 ]
 
@@ -173,8 +174,10 @@ def run_menu(conn=None, input_fn=input) -> None:
                     _import_book(conn, input_fn)
                 elif choice == "6":
                     _settings(conn, input_fn)
+                elif choice == "7":
+                    _learn(conn, "wrong", input_fn)
                 else:
-                    display.console.print("[yellow]无效选择，请输入 0-6[/]")
+                    display.console.print("[yellow]无效选择，请输入 0-7[/]")
             except (KeyboardInterrupt, EOFError):
                 display.console.print("\n[yellow]已退出[/]")
                 return

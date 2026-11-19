@@ -204,6 +204,23 @@ def fetch_due(conn: sqlite3.Connection, book_id: int, today: str, limit: int) ->
     ).fetchall()
 
 
+def fetch_wrong_words(
+    conn: sqlite3.Connection, book_id: int, limit: int
+) -> list[sqlite3.Row]:
+    """错题本：本词书答错过的词，按错次降序（错得越多越先）。"""
+    return conn.execute(
+        """
+        SELECT w.*, COUNT(*) AS wrongs
+        FROM review_log rl JOIN words w ON w.id = rl.word_id
+        WHERE w.book_id = ? AND rl.correct = 0
+        GROUP BY w.id
+        ORDER BY wrongs DESC, MAX(rl.reviewed_at) DESC
+        LIMIT ?
+        """,
+        (book_id, limit),
+    ).fetchall()
+
+
 def fetch_recall_candidates(
     conn: sqlite3.Connection, book_id: int, today: str
 ) -> tuple[list[sqlite3.Row], list[sqlite3.Row]]:

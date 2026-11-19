@@ -300,7 +300,7 @@ def test_ask_spelling_wrong_then_corrected():
 
     q = _spelling_question()
     inputs = iter(["word01x", "word01"])  # 首答错 → 订正输入正确
-    correct, resp = _ask(q, lambda p: next(inputs))
+    correct, resp, _h = _ask(q, lambda p: next(inputs))
     assert correct is False
     assert resp == "word01x"  # 判分以首次作答为准
     # 订正过程消耗了第二次输入
@@ -317,7 +317,7 @@ def test_ask_spelling_correction_retries_until_right():
 
     q = _spelling_question()
     inputs = iter(["bad1", "", "nope", "word01"])  # 首答错 → 订正：空、错、对
-    correct, resp = _ask(q, lambda p: next(inputs))
+    correct, resp, _h = _ask(q, lambda p: next(inputs))
     assert correct is False and resp == "bad1"  # 判分以首次作答为准
     with pytest.raises(StopIteration):  # 4 个输入全部按序消耗
         next(inputs)
@@ -362,7 +362,7 @@ def test_ask_fullwidth_question_mark_shows_hint(capsys):
 
     q = _spelling_question()  # word01, 音标 /w1/
     inputs = iter(["？", "word01"])  # 全角问号 → 提示 → 答对
-    correct, resp = _ask(q, lambda p: next(inputs))
+    correct, resp, _h = _ask(q, lambda p: next(inputs))
     assert correct is True and resp == "word01"
     out = capsys.readouterr().out
     assert "/w1/" in out  # 第 1 级提示：音标
@@ -376,7 +376,7 @@ def test_ask_hint_progressive_without_answer(capsys):
 
     q = _spelling_question()
     inputs = iter(["?", "?", "word01"])
-    correct, _ = _ask(q, lambda p: next(inputs))
+    correct, _resp, _h = _ask(q, lambda p: next(inputs))
     out = capsys.readouterr().out
     assert correct is True
     assert "音标 /w1/" in out  # 第 1 级
@@ -397,7 +397,7 @@ def test_ask_fullwidth_digit_answers_mcq():
     q = quiz.build_question(words[0], words, quiz.MCQ_EN2ZH, rng=random.Random(5))
     assert q.options is not None
     fullwidth = chr(0xFF10 + (q.answer_index + 1))  # 半角数字 → 全角
-    correct, resp = _ask(q, lambda p: fullwidth)
+    correct, resp, _h = _ask(q, lambda p: fullwidth)
     assert correct is True
     assert resp == q.answer
 
@@ -418,11 +418,11 @@ def test_ask_mcq_accepts_option_text():
         "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
         "ＡＢＣＤＥＦＧＨＩＪＫＬＭＮＯＰＱＲＳＴＵＶＷＸＹＺ",
     )
-    correct, resp = _ask(q, lambda p: q.answer.upper().translate(fw))
+    correct, resp, _h = _ask(q, lambda p: q.answer.upper().translate(fw))
     assert correct is True and resp == q.answer
     # 输入错误选项的原文 → 判错（仍算作选中该项）
     wrong_opt = next(o for o in q.options if o != q.answer)
-    correct2, resp2 = _ask(q, lambda p: wrong_opt)
+    correct2, resp2, _h2 = _ask(q, lambda p: wrong_opt)
     assert correct2 is False and resp2 == wrong_opt
 
 
@@ -437,7 +437,7 @@ def test_ask_mcq_rejects_unknown_text_then_accepts_number():
     ]
     q = quiz.build_question(words[0], words, quiz.MCQ_EN2ZH, rng=random.Random(3))
     inputs = iter(["zzz-not-an-option", str(q.answer_index + 1)])
-    correct, resp = _ask(q, lambda p: next(inputs))
+    correct, resp, _h = _ask(q, lambda p: next(inputs))
     assert correct is True and resp == q.answer
 
 
@@ -514,3 +514,67 @@ def test_forgetting_risk_report(conn, sample_book, scripted, monkeypatch):
     assert rs == sorted(rs)  # 升序：最危险的在前
     assert all(0 <= x["retrievability"] <= 1 for x in risk)
     assert all("word" in x and "meaning" in x for x in risk)
+
+
+def test_compose_queue_wrong_mode(conn, sample_book):
+    """错题本模式：按错次降序返回答错过的词；无错题返回空。"""
+    words = db.fetch_new(conn, sample_book["id"], 4)
+    # word01 错 2 次，word02 错 1 次
+    for _ in range(2):
+        db.add_review_log(conn, words[0]["id"], "2026-11-10 10:00:00", "spelling", False, "x")
+    db.add_review_log(conn, words[1]["id"], "2026-11-11 10:00:00", "mcq_en2zh", False, "2")
+    conn.commit()
+    queue = session.compose_queue(
+        conn, sample_book["id"], TODAY, count=10, mode="wrong"
+    )
+    assert [w["word"] for w, _ in queue] == ["word01", "word02"]  # 错次降序
+    assert all(not is_new for _, is_new in queue)
+
+    # 新库无错题 → 空
+    db2_words = db.fetch_new(conn, sample_book["id"], 0)
+    assert db2_words == []
+    empty_id = db.insert_book(conn, "无错题", "no_wrong")
+    assert session.compose_queue(conn, empty_id, TODAY, count=5, mode="wrong") == []
+
+
+def test_ask_returns_hint_count():
+    """_ask 返回用过的提示级数（供 FSRS Hard 评分）。"""
+    from duolinguo_cli import quiz
+    from duolinguo_cli.session import _ask
+
+    words = [
+        {"id": i, "word": f"word{i:02d}", "phonetic": f"/w{i}/", "meaning": f"释义{i}",
+         "example": "", "unit": 1}
+        for i in range(1, 9)
+    ]
+    q = quiz.build_question(words[0], words, quiz.MCQ_EN2ZH, rng=random.Random(3))
+    inputs = iter(["?", str(q.answer_index + 1)])  # 用一次提示后作答
+    correct, _resp, hints = _ask(q, lambda p: next(inputs))
+    assert correct is True and hints == 1
+    inputs2 = iter([str(q.answer_index + 1)])
+    _c, _r, h2 = _ask(q, lambda p: next(inputs2))
+    assert h2 == 0
+
+
+def test_due_forecast_counts(conn, sample_book):
+    """到期预报：逾期/今日/未来7天分布统计。"""
+    from duolinguo_cli.display import _due_forecast
+
+    words = db.fetch_new(conn, sample_book["id"], 6)
+    today = db.today_str()
+    # 1 逾期、1 今日、1 后天、3 未来7天外
+    db.upsert_progress(conn, words[0]["id"], "learning", 2.5, 1, 1, 0, "2026-01-01", "2026-01-01")
+    db.upsert_progress(conn, words[1]["id"], "learning", 2.5, 1, 1, 0, today, "2026-01-01")
+    db.upsert_progress(conn, words[2]["id"], "learning", 2.5, 2, 1, 0, "2026-12-31", "2026-01-01")
+    conn.commit()
+    # words[2] due 远期 → 不在7天窗口；造一个窗口内的
+    from datetime import date, timedelta
+
+    soon = (date.fromisoformat(today) + timedelta(days=2)).isoformat()
+    db.upsert_progress(conn, words[3]["id"], "learning", 2.5, 2, 1, 0, soon, "2026-01-01")
+    conn.commit()
+    fc = _due_forecast(conn, sample_book["id"], today)
+    assert fc["overdue"] == 1
+    assert fc["today"] == 1
+    assert dict(fc["days"]).get(soon) == 1
+    assert len(fc["days"]) == 1  # 远期的 12-31 不算进 7 天窗口

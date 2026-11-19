@@ -374,3 +374,15 @@ def test_zh2en_prompt_blanks_answer_word_in_phrase():
     q = quiz.build_question(words[0], words, quiz.MCQ_ZH2EN, rng=random.Random(6))
     assert q.answer == "admit"
     assert "admit" not in q.prompt.lower().replace("______", "")  # 题干不露答案
+
+
+def test_import_enrichment_source_index():
+    """_enrichment_index 从内置词书提供音标/例句回填数据。"""
+    from duolinguo_cli import books
+
+    idx = books._enrichment_index()
+    if not idx:
+        pytest.skip("无内置词书")
+    # abandon 在 CET4 内且有音标
+    if "abandon" in idx:
+        assert idx["abandon"]["phonetic"]

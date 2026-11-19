@@ -140,15 +140,21 @@ def _recall_stability(difficulty: float, stability: float, r: float, rating: int
     )
 
 
-def schedule(state: WordState, correct: bool, today: str) -> WordState:
+def schedule(
+    state: WordState, correct: bool, today: str, rating: int | None = None
+) -> WordState:
     """按 FSRS-6 推进记忆状态，返回新状态（不修改入参）。
 
     - 答错 → Again(1)：稳定度按遗忘公式回撤，明天再来
-    - 答对 → Good(3)：稳定度按召回公式增长，间隔拉长
+    - 答对 → 默认 Good(3)；调用方可显式传 Hard(2)/Easy(4)
+      （如用过提示记 Hard，间隔比 Good 短）
     - 同日重复复习（如错词当场重练）走短期稳定度分支
     - 旧数据：stability=0 时以 interval_days 作为初始 S 平滑接入
     """
-    rating = GOOD if correct else AGAIN
+    if correct:
+        rating = rating if rating in (HARD, GOOD, EASY) else GOOD
+    else:
+        rating = AGAIN
     last_date = state.last_reviewed_at[:10] if state.last_reviewed_at else ""
     days_since = None
     if last_date:

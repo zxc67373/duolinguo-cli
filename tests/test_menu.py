@@ -206,3 +206,16 @@ def test_menu_learn_quit_stops_loop(builtinless_conn, monkeypatch):
 
     row = db.get_daily(conn2, db.today_str())
     assert row is None or row["answered"] == 0  # 第一题即退
+
+
+def test_menu_wrong_drill_no_wrong_words(builtinless_conn, monkeypatch):
+    """菜单 7 错题重刷：无错题时提示并回菜单。"""
+    db.insert_book(builtinless_conn, "错题书", "wrong_book")
+    db.insert_words(
+        builtinless_conn,
+        db.get_book(builtinless_conn, "wrong_book")["id"],
+        [{"word": f"x{i}", "meaning": f"释{i}"} for i in range(1, 5)],
+        unit_size=20,
+    )
+    builtinless_conn.commit()
+    run_menu(builtinless_conn, ["7", "0"], monkeypatch)  # 不崩即通过

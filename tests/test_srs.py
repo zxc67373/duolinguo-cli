@@ -106,3 +106,18 @@ def test_answer_wrong_interval_always_one():
                           last_reviewed_at="2026-11-11")
     bad = srs.schedule(state, False, TODAY)
     assert bad.interval_days == 1
+
+
+def test_explicit_hard_rating_shortens_interval():
+    """显式 Hard 评分（如用过提示）→ 稳定度/间隔小于 Good。"""
+    base = srs.WordState(stability=5.0, difficulty=3.0, interval_days=5,
+                         last_reviewed_at="2026-11-10")
+    good = srs.schedule(base, True, TODAY, rating=srs.GOOD)
+    hard = srs.schedule(base, True, TODAY, rating=srs.HARD)
+    assert hard.stability < good.stability
+    assert hard.interval_days <= good.interval_days
+    # 传错值（如 None）回退 Good；答错强制 Again 忽略传入值
+    none = srs.schedule(base, True, TODAY, rating=None)
+    assert none.stability == good.stability
+    wrong = srs.schedule(base, False, TODAY, rating=srs.GOOD)
+    assert wrong.interval_days == 1

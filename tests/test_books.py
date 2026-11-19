@@ -386,3 +386,45 @@ def test_ensure_builtins_syncs_meaning_and_phonetic(tmp_path, monkeypatch, conn)
     row = conn.execute("SELECT * FROM words").fetchone()
     assert row["meaning"] == "n. 诉讼；套装 vt. 适合；相配"
     assert row["phonetic"] == "/suːt/"
+
+
+def test_import_enriches_missing_fields(conn, tmp_path):
+    """导入缺音标/例句的词表 → 从内置词书按单词自动回填。"""
+    p = tmp_path / "enrich.csv"
+    p.write_text("abandon,v. 放弃\nnonexistentwordxyz,n. 不存在\n", encoding="utf-8")
+    book, added, _ = books.import_from_file(conn, p)
+    assert added == 2
+    rows = {
+        r["word"]: r
+        for r in conn.execute("SELECT * FROM words WHERE book_id = ?", (book["id"],))
+    }
+    if books.load_builtin_jsons():  # 有内置词书才可回填
+        assert rows["abandon"]["phonetic"]  # 音标已回填
+        assert rows["abandon"]["example"]   # 例句已回填
+        assert rows["nonexistentwordxyz"]["phonetic"] == ""  # 查不到不瞎填
+
+
+def test_delete_imported_book(conn, tmp_path):
+    """删除导入词书：词/进度/日志一并清；内置词书拒绝删除。"""
+    p = tmp_path / "del.csv"
+    p.write_text("alpha,n. 甲\nbeta,n. 乙\n", encoding="utf-8")
+    book, _, _ = books.import_from_file(conn, p)
+    # 给 alpha 记进度
+    wid = conn.execute(
+        "SELECT id FROM words WHERE book_id = ? AND word = 'alpha'", (book["id"],)
+    ).fetchone()["id"]
+    db.upsert_progress(conn, wid, "learning", 2.5, 1, 1, 0, "2026-11-20", "2026-11-13")
+    db.add_review_log(conn, wid, "2026-11-13", "spelling", False, "x")
+    conn.commit()
+    books.delete_book(conn, book["slug"])
+    assert db.get_book(conn, book["slug"]) is None
+    assert db.get_progress(conn, wid) is None
+    assert conn.execute("SELECT COUNT(*) c FROM review_log").fetchone()["c"] == 0
+    # 内置词书拒绝
+    books.ensure_builtins(conn)
+    builtin = next(r for r in db.list_books(conn) if r["source"] == "builtin")
+    with pytest.raises(ValueError, match="内置"):
+        books.delete_book(conn, builtin["slug"])
+    # 不存在的书
+    with pytest.raises(ValueError, match="不存在"):
+        books.delete_book(conn, "ghost")
