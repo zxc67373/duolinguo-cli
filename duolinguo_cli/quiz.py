@@ -154,10 +154,12 @@ def hint_ladder(q: Question) -> list[str]:
 
 
 # 词性边界（零宽切分，兼容 "容忍a." 这类无空格粘连；a.=形容词老词性）
+# (?<![A-Za-z]) 防止切进 "adv." 内部（否则 v. 被误认、留下 "ad" 残片）
 _POS_SPLIT = re.compile(
-    r"(?=(?:n|v|vt|vi|adj|ad|adv|prep|conj|pron|num|int|aux|art|abbr|a)\.)"
+    r"(?<![A-Za-z])(?=(?:adv|adj|abbr|prep|conj|pron|num|int|aux|art|vt|vi|ad|n|v|a)\.)"
 )
-_POS_ONLY = re.compile(r"^(?:[a-z]{1,4}\.\s*)+$")
+# 纯词性段（"vi." / "vt. vi."）或裸词性字母残片（"ad"）
+_POS_ONLY = re.compile(r"^(?:[a-z]{1,4}\.?\s*)+$")
 
 
 def senses_of(meaning: str) -> list[str]:
@@ -241,14 +243,10 @@ def build_question(
         distractors = pick_distractors(target, candidates, rng=rng)
         if len(distractors) >= DISTRACTOR_COUNT:
             if qtype == MCQ_EN2ZH:
+                # 正确项=完整释义（一次性给出该词所有意思），干扰项同样为各词全义
                 prompt = f"{word_text}  {phonetic}".strip()
-                # 义项级出题：正确项随机取目标词的一个义项，干扰项各取其一个义项
-                answer = _pick_sense(meaning, rng)
-                options = [_pick_sense(d["meaning"], rng) for d in distractors] + [answer]
-                if len({normalize(o) for o in options}) < DISTRACTOR_COUNT + 1:
-                    # 义项撞车 → 回退整义出题
-                    answer = meaning
-                    options = [d["meaning"] for d in distractors] + [meaning]
+                answer = meaning
+                options = [d["meaning"] for d in distractors] + [meaning]
             else:
                 # 题干用单个义项；若义项里含目标词（如短语 "admit of"）则挖空防泄题
                 sense = _pick_sense(meaning, rng)

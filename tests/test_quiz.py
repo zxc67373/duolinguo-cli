@@ -293,21 +293,20 @@ def test_senses_of_single():
     assert quiz.senses_of("") == []
 
 
-def test_build_mcq_uses_single_sense():
-    """英译中：正确项是目标词的某一个义项（不再是整串合并释义）。"""
+def test_build_mcq_en2zh_full_meaning():
+    """英译中：正确项=完整释义（一次性给出该词所有意思），干扰项同样为全义。"""
     words = make_words(8)
     words[0]["meaning"] = "n. 1. 概念，观念 2. 想法，见解"
     q = quiz.build_question(words[0], words, quiz.MCQ_EN2ZH, rng=random.Random(9))
-    assert q.answer in quiz.senses_of(words[0]["meaning"])
+    assert q.answer == words[0]["meaning"]  # 选项即全义
     assert len(q.options) == 4
     assert len({quiz.normalize(o) for o in q.options}) == 4  # 无撞车
     assert q.options[q.answer_index] == q.answer
-    # 干扰项是其他词的义项（整串或义项均可）
+    # 干扰项也是各自词的完整释义
     for i, opt in enumerate(q.options):
         if i != q.answer_index:
-            assert opt in quiz.senses_of(words[i % 4 + 1]["meaning"]) or len(
-                quiz.senses_of(words[i % 4 + 1]["meaning"])
-            ) >= 1
+            meanings = {w["meaning"] for w in words}
+            assert opt in meanings
 
 
 def test_build_zh2en_prompt_is_sense():
@@ -389,15 +388,14 @@ def test_import_enrichment_source_index():
 
 
 def test_hint_ladder_includes_all_meanings():
-    """多义词提示给「全部意思」；单义词不给（免得白送答案）；拼写/填空题面已全义不重复。"""
+    """中译英题干单义 → 提示给「全部意思」；英译中选项本身就是全义不再重复给。"""
     words = make_words(8)
     words[0]["meaning"] = "n. 1. 资产，财产 2. 有价值的特性(技能)"
 
-    # 英译中：多义 → 有「全部意思」级
+    # 英译中：选项=完整释义 → 阶梯无需「全部意思」级
     q1 = quiz.build_question(words[0], words, quiz.MCQ_EN2ZH, rng=RNG)
-    l1 = quiz.hint_ladder(q1)
-    assert any(s.startswith("全部意思：") for s in l1)
-    assert "资产" in next(s for s in l1 if s.startswith("全部意思"))
+    assert q1.answer == words[0]["meaning"]
+    assert not any(s.startswith("全部意思：") for s in quiz.hint_ladder(q1))
 
     # 中译英：题干单义 → 补全义
     q2 = quiz.build_question(words[0], words, quiz.MCQ_ZH2EN, rng=RNG)

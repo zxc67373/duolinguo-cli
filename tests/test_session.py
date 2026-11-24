@@ -581,7 +581,7 @@ def test_due_forecast_counts(conn, sample_book):
 
 
 def test_feedback_shows_full_meaning(capsys):
-    """选择题反馈补完整释义（义项出题只见一个义项）。"""
+    """中译英反馈补完整释义（题干只给单义项）；英译中选项本身即全义。"""
     from duolinguo_cli import quiz
     from duolinguo_cli.display import print_feedback
 
@@ -591,8 +591,11 @@ def test_feedback_shows_full_meaning(capsys):
         for i in range(1, 9)
     ]
     words[0]["meaning"] = "n. 1. 资产，财产 2. 有价值的特性"
-    q = quiz.build_question(words[0], words, quiz.MCQ_EN2ZH, rng=random.Random(2))
+    # 中译英：题干单义 → 反馈附全义
+    q = quiz.build_question(words[0], words, quiz.MCQ_ZH2EN, rng=random.Random(2))
     print_feedback(False, 0, q, will_retry=True)
     out = capsys.readouterr().out
-    assert "完整释义" in out
-    assert "资产" in out
+    assert "完整释义" in out and "资产" in out
+    # 英译中：正确答案就是全义 → 以答案形式呈现，不重复附行
+    q2 = quiz.build_question(words[0], words, quiz.MCQ_EN2ZH, rng=random.Random(2))
+    assert q2.answer == words[0]["meaning"]
