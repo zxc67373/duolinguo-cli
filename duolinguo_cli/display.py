@@ -162,8 +162,8 @@ def print_feedback(correct: bool, xp: int, q: Question, will_retry: bool) -> Non
         if will_retry:
             line += "  [dim]稍后重练[/]"
         console.print(line)
-    # 选择题反馈补完整释义（义项级出题只展示一个义项，学词要见全貌）
-    if q.qtype in (MCQ_EN2ZH, MCQ_ZH2EN):
+    # 选择题/填空题反馈补完整释义（学词要见全貌）
+    if q.qtype in (MCQ_EN2ZH, MCQ_ZH2EN, CLOZE):
         meaning = q.word.get("meaning", "")
         if meaning and meaning != q.answer:
             console.print(f"[dim]完整释义：{meaning}[/]")

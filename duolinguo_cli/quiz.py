@@ -71,6 +71,20 @@ def pick_distractors(
     return (same_unit + rest)[:n]
 
 
+def make_cloze_prompt(example: str, word: str) -> str | None:
+    """填空题题面：挖空后的**纯英文**部分（翻译留给提示阶梯）。
+
+    挖空落在中文部分（罕见）或句中无该词 → None（调用方降级）。
+    """
+    blanked = make_cloze(example, word)
+    if not blanked:
+        return None
+    en = re.split(r"\s{2,}", blanked, maxsplit=1)[0].strip()
+    if "______" not in en:
+        return None
+    return en
+
+
 def example_lines(example: str) -> list[str]:
     """例句字段按行拆分（首行=主例句，其余=另例）。"""
     return [ln.strip() for ln in (example or "").split("\n") if ln.strip()]
@@ -141,8 +155,10 @@ def hint_ladder(q: Question) -> list[str]:
             ladder.append(f"全部意思：{meaning}")
         ladder.append(form)
         return ladder
-    # CLOZE
+    # CLOZE：题面只有纯英文 → 首级提示给句子翻译，其后释义/音标/另例/词形
     ladder = []
+    if sent_zh:
+        ladder.append(f"句子翻译：{sent_zh}")
     if meaning:
         ladder.append(f"释义：{meaning}")
     if phon:
@@ -222,7 +238,7 @@ def build_question(
     example = target.get("example", "")
 
     if qtype == CLOZE:
-        blanked = make_cloze(example, word_text)
+        blanked = make_cloze_prompt(example, word_text)
         if blanked:
             distractors = pick_distractors(target, candidates, rng=rng)
             if len(distractors) >= DISTRACTOR_COUNT:

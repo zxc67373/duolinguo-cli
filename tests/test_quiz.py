@@ -194,7 +194,11 @@ def test_build_cloze():
     assert q.options is not None and len(q.options) == 4
     assert q.options[q.answer_index] == "word01"
     assert q.hint == "/w1/"  # 音标进提示阶梯
-    assert quiz.hint_ladder(q)[0].startswith("释义")
+    # 题面纯英文（翻译留给提示）
+    assert not any("\u4e00" <= ch <= "\u9fff" for ch in q.prompt)
+    assert "这是示例句" not in q.prompt
+    # 首级提示=句子翻译
+    assert quiz.hint_ladder(q)[0].startswith("句子翻译")
 
 
 def test_build_cloze_degrades_to_mcq():
@@ -233,12 +237,14 @@ def test_hint_ladder_progressive_and_no_leak():
         assert "______" in ladder[1]
         assert all("word01" not in step for step in ladder)
 
-    # 填空：①释义 → ②音标 → ③首字母
+    # 填空（题面纯英文）：①句子翻译 → ②释义 → ③音标 → … → 首字母
     qc = quiz.build_question(words[0], words, quiz.CLOZE, rng=RNG)
     lc = quiz.hint_ladder(qc)
-    assert lc[0].startswith("释义")
-    assert lc[1].startswith("音标")
-    assert "首字母" in lc[2]
+    assert lc[0].startswith("句子翻译")
+    assert any(s.startswith("释义") for s in lc)
+    assert any(s.startswith("音标") for s in lc)
+    assert "首字母" in lc[-1]
+    assert not any("\u4e00" <= ch <= "\u9fff" for ch in qc.prompt)  # 题面无中文
 
     # 无例句 → 挖空句级别自动跳过；未挖空的句子绝不出现
     words[0]["example"] = "Nothing relevant here.  无关句。"
