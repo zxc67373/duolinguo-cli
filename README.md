@@ -142,7 +142,7 @@ duolinguo config current_book cet4_core
 ## 开发
 
 ```bash
-pytest tests/ -q    # 142 个测试
+pytest tests/ -q    # 146 个测试
 ruff check .
 ```
 
